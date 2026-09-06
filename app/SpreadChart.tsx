@@ -15,6 +15,8 @@ export default function SpreadChart({ series }: { series: Series[] }) {
     if (all.length < 2) return null;
     const ts = all.map((p) => p[0]);
     const t0 = Math.min(...ts), t1 = Math.max(...ts);
+    // 点が少ない、または時間幅が1時間未満のうちは線として意味をなさないので描かない
+    if (t1 - t0 < 3600 || series.some((s) => s.points.length < 3)) return null;
     const vs = all.map((p) => p[1]).filter((v) => v > 0);
     // スプレッドは社によって 5 桁以上開くため対数目盛を使う
     const lo = Math.log10(Math.max(Math.min(...vs) * 0.7, 1e-5));
