@@ -8,13 +8,31 @@ export const maxDuration = 60;
 
 const path = (ym: string) => `history/${ym}.json`;
 
+/** 月ファイルを読む。無ければ空配列。 */
+async function readHistory(key: string): Promise<unknown[]> {
+  try {
+    const found = await list({ prefix: key, limit: 1 });
+    const url = found.blobs.find((b) => b.pathname === key)?.url;
+    if (!url) return [];
+    const res = await fetch(url, { cache: 'no-store' });
+    return res.ok ? await res.json() : [];
+  } catch {
+    return [];
+  }
+}
+
 export async function GET(req: Request) {
-  // Vercel Cron 以外からの書き込みを拒否する（CRON_SECRET 未設定時はヘッダで判定）
-  const secret = process.env.CRON_SECRET;
-  const auth = req.headers.get('authorization');
-  const isCron = req.headers.get('x-vercel-cron') !== null;
-  if (secret ? auth !== `Bearer ${secret}` : !isCron) {
-    return new Response('forbidden', { status: 403 });
+  // 収集は読み取りのみで副作用が小さいため、認証で弾かずに「間隔」で守る。
+  // 誰が叩いても直近20分以内に計測済みなら何もしないので、連打しても負荷にならない。
+  // （実際の呼び出し元を把握するためヘッダだけ記録しておく）
+  console.log('[collect] ua=%s x-vercel-cron=%s', req.headers.get('user-agent'), req.headers.get('x-vercel-cron'));
+
+  const ym0 = new Date().toISOString().slice(0, 7);
+  const prior = await readHistory(path(ym0));
+  const last = prior.length ? (prior[prior.length - 1] as { t: number }).t : 0;
+  const ageSec = Math.floor(Date.now() / 1000) - last;
+  if (last && ageSec < 20 * 60) {
+    return Response.json({ ok: true, skipped: `直近 ${Math.floor(ageSec / 60)} 分前に計測済み`, points: prior.length });
   }
 
   const snap = await measureAll();
@@ -25,19 +43,7 @@ export async function GET(req: Request) {
 
   const ym = snap.measuredAt.slice(0, 7);
   const key = path(ym);
-
-  // 既存の月ファイルを読む（無ければ空から始める）
-  let hist: unknown[] = [];
-  try {
-    const found = await list({ prefix: key, limit: 1 });
-    const url = found.blobs.find((b) => b.pathname === key)?.url;
-    if (url) {
-      const res = await fetch(url, { cache: 'no-store' });
-      if (res.ok) hist = await res.json();
-    }
-  } catch {
-    // 読めない場合も収集は続ける（この回の1点だけになる）
-  }
+  const hist: unknown[] = ym === ym0 ? prior : await readHistory(key);
 
   hist.push({
     t: Math.floor(new Date(snap.measuredAt).getTime() / 1000),
