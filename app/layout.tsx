@@ -19,14 +19,29 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <header className="site-header">
           <div className="wrap">
-            <Link href="/" className="brand">
-              販売所ウォッチ<span>hanbaijo.com</span>
+            <Link href="/" className="brand" aria-label="販売所ウォッチ トップページ">
+              <svg className="mark" viewBox="0 0 30 30" aria-hidden="true">
+                {/* 上段=販売所（広いスプレッド） 下段=取引所（狭いスプレッド） */}
+                <rect x="1" y="6" width="7" height="5" rx="1.5" className="m-bar" />
+                <rect x="8.6" y="6" width="12.8" height="5" rx="1.5" className="m-dealer" />
+                <rect x="22" y="6" width="7" height="5" rx="1.5" className="m-bar" />
+                <rect x="1" y="19" width="13" height="5" rx="1.5" className="m-bar" />
+                <rect x="14.6" y="19" width="1.8" height="5" rx="0.9" className="m-exchange" />
+                <rect x="17" y="19" width="12" height="5" rx="1.5" className="m-bar" />
+              </svg>
+              <span className="brand-text">
+                <span className="brand-name">販売所ウォッチ</span>
+                <span className="brand-sub">スプレッド実測 · hanbaijo.com</span>
+              </span>
             </Link>
             <nav>
               <Link href="/articles">解説</Link>
               <Link href="/method">計測方法</Link>
               <Link href="/about">このサイトについて</Link>
             </nav>
+            <span className="live" title="各社の公開APIから自動で取得しています">
+              <i /> 自動計測
+            </span>
           </div>
         </header>
         <main className="wrap">{children}</main>
