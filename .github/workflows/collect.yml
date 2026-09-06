@@ -1,0 +1,33 @@
+name: collect rates
+
+on:
+  schedule:
+    # 30 分ごと（UTC 指定・実際の起動は数分ずれることがある）
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: 収集
+        run: node scripts/collect.mjs
+      - name: コミット
+        run: |
+          git config user.name  "hanbaijo-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data
+          git diff --staged --quiet && echo "変更なし" && exit 0
+          git commit -m "data: $(date -u +%Y-%m-%dT%H:%MZ) [skip ci]"
+          git push
