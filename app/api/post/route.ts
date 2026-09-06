@@ -1,7 +1,7 @@
 import { put, list } from '@vercel/blob';
 import { measureAll } from '@/lib/exchanges.mjs';
 import { nowPost } from '@/lib/postText.mjs';
-import { postTweet } from '@/lib/xClient.mjs';
+import { postTweet, whoAmI } from '@/lib/xClient.mjs';
 
 // X への自動投稿。Vercel Cron から1日数回呼ばれる。
 // 直近の投稿記録を Blob に残し、同じ内容を続けて出さないようにする。
@@ -38,6 +38,23 @@ export async function GET(req: Request) {
   const state0 = await readState();
   if (state0.lastAt && Date.now() - Date.parse(state0.lastAt) < 3 * 60 * 60 * 1000) {
     return Response.json({ ok: true, skipped: '前回投稿から3時間未満' });
+  }
+
+  // 投稿先が意図したアカウントであることを毎回確かめる。
+  // 別アカウントのトークンが入っている場合はここで止まる（誤投稿の防止）。
+  const expected = (process.env.X_EXPECTED_USERNAME ?? 'hanbaijyo18').toLowerCase();
+  let me;
+  try {
+    me = await whoAmI();
+  } catch (e) {
+    return Response.json({ ok: false, error: `投稿先の確認に失敗: ${(e as Error).message}` }, { status: 502 });
+  }
+  if (me.username.toLowerCase() !== expected) {
+    console.log('[post] 投稿先が違うため中止 expected=@%s actual=@%s', expected, me.username);
+    return Response.json({
+      ok: false,
+      blocked: `投稿先が @${expected} ではなく @${me.username} のため中止しました`,
+    }, { status: 409 });
   }
 
   const snap = await measureAll();
