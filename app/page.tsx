@@ -2,6 +2,8 @@ import Link from 'next/link';
 import { measureAll } from '@/lib/exchanges.mjs';
 import { recent } from '@/lib/history';
 import { jpy, pct, jst } from '@/lib/format';
+import { MARKET_CATALOG } from '@/lib/market-data/catalog';
+import { estimateOneWaySpreadCost } from '@/lib/market-data/cost';
 import SpreadChart, { type Series } from './SpreadChart';
 
 export const revalidate = 60;
@@ -11,17 +13,21 @@ const EXCHANGE_COLOR = 'var(--series-exchange)';
 
 export default async function Home() {
   const snap = await measureAll();
-  const live = snap.rows.filter((r) => !r.error);
-  const dealers = live.filter((r) => r.venue === 'dealer');
-  const exchanges = live.filter((r) => r.venue === 'exchange');
-  const worstDealer = dealers.reduce((a, b) => (a && a.spreadPct! > b.spreadPct! ? a : b), dealers[0]);
-  const bestExchange = exchanges[0];
-  // 100万円分を買うときの実質コスト（片道）
-  const costOn = (pctVal: number) => (1_000_000 * pctVal) / 100 / 2;
-  const yen = (v: number) => (v < 1 ? '1円未満' : jpy(v) + '円');
+  const live = snap.rows.filter((row) => !row.error);
+  const dealers = live.filter((row) => row.venue === 'dealer');
+  const exchanges = live.filter((row) => row.venue === 'exchange');
+  const widestDealer = dealers.reduce(
+    (current, row) => (current && current.spreadPct! > row.spreadPct! ? current : row),
+    dealers[0],
+  );
+  const narrowestExchange = exchanges[0];
+  const yen = (value: number) => (value < 1 ? '1円未満' : `${jpy(value)}円`);
   const gap =
-    worstDealer && bestExchange ? costOn(worstDealer.spreadPct!) - costOn(bestExchange.spreadPct!) : null;
-  const maxPct = Math.max(...live.map((r) => r.spreadPct!), 0.0001);
+    widestDealer && narrowestExchange
+      ? estimateOneWaySpreadCost(1_000_000, widestDealer.spreadPct!) -
+        estimateOneWaySpreadCost(1_000_000, narrowestExchange.spreadPct!)
+      : null;
+  const maxPct = Math.max(...live.map((row) => row.spreadPct!), 0.0001);
 
   const points = await recent(7);
   const series: Series[] = [
@@ -30,9 +36,11 @@ export default async function Home() {
       label: '販売所',
       color: DEALER_COLOR,
       points: points
-        .map((p) => {
-          const v = p.s['bitflyer-dealer'];
-          return v ? ([p.t, ((v[1] - v[0]) / ((v[0] + v[1]) / 2)) * 100] as [number, number]) : null;
+        .map((point) => {
+          const value = point.s['bitflyer-dealer'];
+          return value
+            ? ([point.t, ((value[1] - value[0]) / ((value[0] + value[1]) / 2)) * 100] as [number, number])
+            : null;
         })
         .filter(Boolean) as [number, number][],
     },
@@ -41,12 +49,12 @@ export default async function Home() {
       label: '取引所（最狭）',
       color: EXCHANGE_COLOR,
       points: points
-        .map((p) => {
-          const vals = Object.entries(p.s)
+        .map((point) => {
+          const values = Object.entries(point.s)
             .filter(([id]) => !id.endsWith('-dealer'))
-            .map(([, v]) => ((v[1] - v[0]) / ((v[0] + v[1]) / 2)) * 100)
-            .filter((v) => v > 0);
-          return vals.length ? ([p.t, Math.min(...vals)] as [number, number]) : null;
+            .map(([, value]) => ((value[1] - value[0]) / ((value[0] + value[1]) / 2)) * 100)
+            .filter((value) => value > 0);
+          return values.length ? ([point.t, Math.min(...values)] as [number, number]) : null;
         })
         .filter(Boolean) as [number, number][],
     },
@@ -54,124 +62,258 @@ export default async function Home() {
 
   return (
     <>
-      <h1>販売所と取引所で、ビットコインの売買コストはどれだけ違うのか</h1>
-      <p className="lede">
-        国内の暗号資産取引所について、スプレッド（買値と売値の差＝実質的な売買コスト）を各社の公開APIから
-        <strong>30分ごとに自動計測</strong>し、加工せずそのまま掲載しています。記事の手動集計ではないため、
-        「いま現在」の数字が表示されます。
-      </p>
-
-      {worstDealer && bestExchange && (
-        <div className="hero">
-          <div className="hero-row">
-            <div>
-              <div className="hero-label">販売所（{worstDealer.name.replace(' かんたん販売所', '')}）</div>
-              <div className="hero-num dealer">{pct(worstDealer.spreadPct!)}</div>
-              <div className="hero-sub">100万円の購入で約 {yen(costOn(worstDealer.spreadPct!))} の負担</div>
-            </div>
-            <div>
-              <div className="hero-label">取引所（最も狭い {bestExchange.name}）</div>
-              <div className="hero-num exchange">{pct(bestExchange.spreadPct!)}</div>
-              <div className="hero-sub">100万円の購入で約 {yen(costOn(bestExchange.spreadPct!))} の負担</div>
-            </div>
-            {gap !== null && gap > 100 && (
-              <div>
-                <div className="hero-label">100万円あたりの差額</div>
-                <div className="hero-num">{jpy(gap)}円</div>
-                <div className="hero-sub">同じ銘柄・同じ瞬間の比較</div>
-              </div>
-            )}
+      <section className="home-hero">
+        <div className="hero-copy">
+          <p className="eyebrow"><span /> INDEPENDENT COST INTELLIGENCE</p>
+          <h1>見えない取引コストを、<br /><em>測って比べる。</em></h1>
+          <p className="hero-lede">
+            スプレッド、手数料、金利、為替コスト。金融商品の「無料」の奥にある負担を、
+            実測データと明示した計算式で可視化します。
+          </p>
+          <div className="hero-actions">
+            <a className="button primary" href="#live-data">最新の実測値を見る</a>
+            <Link className="button secondary" href="/method">数字の作り方</Link>
           </div>
-          <p className="hero-note">
-            最終計測: {jst(snap.measuredAt)}　／　銘柄: ビットコイン（BTC/JPY）　／　
-            負担額は「買ってすぐ売った場合の往復コストの半分」を片道分として算出しています。
+          <p className="hero-proof">
+            <span>広告と順位を分離</span><span>取得失敗も公開</span><span>計算方法を明示</span>
           </p>
         </div>
-      )}
 
-      <h2>全社のスプレッド一覧</h2>
-      <div className="legend">
-        <span><i style={{ background: EXCHANGE_COLOR }} />取引所（板・利用者どうしの売買）</span>
-        <span><i style={{ background: DEALER_COLOR }} />販売所（業者が提示するレート）</span>
-      </div>
-      <div className="card table-scroll">
-        <table className="rates">
-          <thead>
-            <tr>
-              <th>取引所</th>
-              <th>形式</th>
-              <th className="num">買値（ask）</th>
-              <th className="num">売値（bid）</th>
-              <th className="num">スプレッド</th>
-              <th className="num">率</th>
-              <th className="bar-cell">　</th>
-            </tr>
-          </thead>
-          <tbody>
-            {snap.rows.map((r) => (
-              <tr key={r.id}>
-                <td className="ex-name">{r.name}</td>
-                <td>
-                  <span className={`venue-tag ${r.venue}`}>{r.venue === 'dealer' ? '販売所' : '取引所'}</span>
-                </td>
-                {r.error ? (
-                  <td colSpan={5} className="err">取得できませんでした（{r.error}）</td>
-                ) : (
-                  <>
-                    <td className="num">{jpy(r.ask!)}</td>
-                    <td className="num">{jpy(r.bid!)}</td>
-                    <td className="num">{jpy(r.spread!)}</td>
-                    <td className="num"><strong>{pct(r.spreadPct!)}</strong></td>
-                    <td className="bar-cell">
-                      <div className={`bar ${r.venue}`} style={{ width: `${Math.max((r.spreadPct! / maxPct) * 100, 1.2)}%` }} />
-                    </td>
-                  </>
-                )}
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-      <p className="muted" style={{ marginTop: 10 }}>
-        スプレッドの狭い順に並べています。掲載順は実測値のみで機械的に決まり、広告の有無とは無関係です。
-        棒の長さは行間で比較するためのもので、対数ではなく実数の比です。
-      </p>
+        <aside className="live-console" aria-label="最新のBTCスプレッド計測サマリー">
+          <div className="console-head">
+            <span><i /> LIVE MEASUREMENT</span>
+            <strong>BTC / JPY</strong>
+          </div>
+          {widestDealer && narrowestExchange ? (
+            <>
+              <div className="console-compare">
+                <div>
+                  <span className="console-label">販売所</span>
+                  <strong className="dealer-value">{pct(widestDealer.spreadPct!)}</strong>
+                  <small>{widestDealer.name.replace(' かんたん販売所', '')}</small>
+                </div>
+                <span className="compare-arrow" aria-hidden="true">→</span>
+                <div>
+                  <span className="console-label">取引所 最狭</span>
+                  <strong className="exchange-value">{pct(narrowestExchange.spreadPct!)}</strong>
+                  <small>{narrowestExchange.name}</small>
+                </div>
+              </div>
+              <div className="console-impact">
+                <span>100万円購入時の推定差額</span>
+                <strong>{gap !== null && gap > 0 ? `${jpy(gap)}円` : '—'}</strong>
+              </div>
+            </>
+          ) : (
+            <p className="console-unavailable">現在、一部のデータ取得に時間がかかっています。</p>
+          )}
+          <div className="console-foot">
+            <span>取得成功 {live.length} / {snap.rows.length}</span>
+            <time dateTime={snap.measuredAt}>{jst(snap.measuredAt)}</time>
+          </div>
+        </aside>
+      </section>
 
-      <h2>直近7日間の推移</h2>
-      <SpreadChart series={series} />
-
-      <h2>なぜこれだけ差がつくのか</h2>
-      <div className="callout">
-        <p style={{ margin: 0 }}>
-          <strong>販売所</strong>は、取引所の会社が提示する価格で売買する仕組みです。手数料は「無料」と表示されることが多いのですが、
-          買値と売値の差（スプレッド）が会社の収益になっているため、そこに実質的なコストが含まれています。
-        </p>
-        <p style={{ margin: '10px 0 0' }}>
-          <strong>取引所</strong>は、利用者どうしが板で売買する仕組みです。売買手数料は別途かかりますが（多くの社で 0.01〜0.15% 程度）、
-          スプレッド自体は数円まで縮むことがあります。上の表の差は、この構造の違いから生まれています。
-        </p>
-      </div>
-      <p style={{ marginTop: 14 }}>
-        詳しくは <Link href="/articles/hanbaijo-torihikijo">販売所と取引所は何が違うのか</Link> と{' '}
-        <Link href="/method">計測方法</Link> をご覧ください。
-      </p>
-
-      <h2>各社の公式サイト</h2>
-      <ul className="cta-list">
-        {[...exchanges, ...dealers]
-          .filter((r, i, a) => a.findIndex((x) => x.name.split(' ')[0] === r.name.split(' ')[0]) === i)
-          .map((r) => (
-            <li key={r.id}>
-              <a href={r.url} target="_blank" rel="nofollow sponsored noopener">
-                <span>{r.name.replace(' かんたん販売所', '')}</span>
-                <span className="go">公式サイトを見る →</span>
-              </a>
-            </li>
+      <section className="market-radar" aria-labelledby="market-radar-title">
+        <div className="section-heading compact">
+          <div>
+            <p className="section-index">COVERAGE</p>
+            <h2 id="market-radar-title">計測対象を、金融商品全体へ</h2>
+          </div>
+          <Link href="/markets">対象と進捗を見る →</Link>
+        </div>
+        <div className="market-grid">
+          {MARKET_CATALOG.map((market) => (
+            <div className={`market-card ${market.stage}`} key={market.code}>
+              <div className="market-card-top">
+                <span>{market.code}</span>
+                <b>{market.stageLabel}</b>
+              </div>
+              <strong>{market.name}</strong>
+              <p>{market.shortNote}</p>
+            </div>
           ))}
-      </ul>
-      <p className="muted" style={{ marginTop: 10 }}>
-        上記リンクには広告が含まれる場合があります。口座開設の可否・手数料・取扱銘柄などの条件は各社の公式サイトで必ずご確認ください。
-      </p>
+        </div>
+      </section>
+
+      <section className="section-block" id="live-data">
+        <div className="section-heading">
+          <div>
+            <p className="section-index">01 / LIVE DATA</p>
+            <h2>BTC/JPY スプレッド実測</h2>
+            <p>同じ銘柄・同じ時刻の気配値を、各社の公開APIから取得しています。</p>
+          </div>
+          <div className="measure-stamp">
+            <span>最終計測</span>
+            <strong>{jst(snap.measuredAt)}</strong>
+          </div>
+        </div>
+
+        <div className="insight-grid">
+          {widestDealer && (
+            <div className="insight-card warm">
+              <span className="insight-kicker">販売所スプレッド</span>
+              <strong>{pct(widestDealer.spreadPct!)}</strong>
+              <p>100万円の購入で約 {yen(estimateOneWaySpreadCost(1_000_000, widestDealer.spreadPct!))}</p>
+            </div>
+          )}
+          {narrowestExchange && (
+            <div className="insight-card cool">
+              <span className="insight-kicker">取引所 最狭スプレッド</span>
+              <strong>{pct(narrowestExchange.spreadPct!)}</strong>
+              <p>100万円の購入で約 {yen(estimateOneWaySpreadCost(1_000_000, narrowestExchange.spreadPct!))}</p>
+            </div>
+          )}
+          <div className="insight-card neutral">
+            <span className="insight-kicker">データ品質</span>
+            <strong>{Math.round((live.length / Math.max(snap.rows.length, 1)) * 100)}%</strong>
+            <p>{live.length}件取得成功・失敗値は補完しません</p>
+          </div>
+        </div>
+
+        <div className="data-panel">
+          <div className="data-panel-head">
+            <div>
+              <h3>全社比較</h3>
+              <p>スプレッドが狭い順。掲載順位は実測値だけで決まります。</p>
+            </div>
+            <div className="legend">
+              <span><i style={{ background: EXCHANGE_COLOR }} />取引所</span>
+              <span><i style={{ background: DEALER_COLOR }} />販売所</span>
+            </div>
+          </div>
+          <div className="table-scroll">
+            <table className="rates">
+              <thead>
+                <tr>
+                  <th>サービス</th>
+                  <th>形式</th>
+                  <th className="num">買値（ask）</th>
+                  <th className="num">売値（bid）</th>
+                  <th className="num">値幅</th>
+                  <th className="num">スプレッド率</th>
+                  <th className="bar-cell">比較</th>
+                </tr>
+              </thead>
+              <tbody>
+                {snap.rows.map((row) => (
+                  <tr key={row.id}>
+                    <td className="ex-name">{row.name}</td>
+                    <td>
+                      <span className={`venue-tag ${row.venue}`}>
+                        {row.venue === 'dealer' ? '販売所' : '取引所'}
+                      </span>
+                    </td>
+                    {row.error ? (
+                      <td colSpan={5} className="err">取得できませんでした（{row.error}）</td>
+                    ) : (
+                      <>
+                        <td className="num">{jpy(row.ask!)}</td>
+                        <td className="num">{jpy(row.bid!)}</td>
+                        <td className="num">{jpy(row.spread!)}</td>
+                        <td className="num"><strong>{pct(row.spreadPct!)}</strong></td>
+                        <td className="bar-cell">
+                          <div
+                            className={`bar ${row.venue}`}
+                            style={{ width: `${Math.max((row.spreadPct! / maxPct) * 100, 1.2)}%` }}
+                          />
+                        </td>
+                      </>
+                    )}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="panel-note">
+            金額換算は、買ってすぐ売った場合の往復スプレッドの半分を「片道分」として試算しています。
+            実際の約定価格や別途手数料とは異なる場合があります。
+          </p>
+        </div>
+      </section>
+
+      <section className="section-block">
+        <div className="section-heading">
+          <div>
+            <p className="section-index">02 / HISTORY</p>
+            <h2>瞬間値ではなく、時間で見る</h2>
+            <p>狭い時間、広がる時間、データが取れない時間。そのすべてを履歴に残します。</p>
+          </div>
+          <span className="chart-period">直近7日間</span>
+        </div>
+        <SpreadChart series={series} />
+      </section>
+
+      <section className="method-band">
+        <div>
+          <p className="section-index inverse">03 / OUR STANDARD</p>
+          <h2>比べる前に、数字の種類を分ける。</h2>
+          <p>
+            APIから取得した「実測値」、各社資料に記載された「公称値」、条件を置いて計算した「試算値」。
+            出どころの違う数字を混ぜないことが、比較の出発点です。
+          </p>
+          <Link className="text-link-light" href="/method">計測・算出ルールを読む →</Link>
+        </div>
+        <ol className="standard-list">
+          <li><b>01</b><span><strong>実測値</strong>取得時刻と取得元を表示</span></li>
+          <li><b>02</b><span><strong>公称値</strong>公式情報と確認日を記載</span></li>
+          <li><b>03</b><span><strong>試算値</strong>前提条件と計算式を公開</span></li>
+        </ol>
+      </section>
+
+      <section className="section-block learn-section">
+        <div className="section-heading compact">
+          <div>
+            <p className="section-index">04 / LEARN</p>
+            <h2>数字を、自分で判断できる知識へ</h2>
+          </div>
+          <Link href="/articles">すべての記事を見る →</Link>
+        </div>
+        <div className="feature-articles">
+          <Link href="/articles/spread-toha" className="feature-article main-feature">
+            <span>基礎知識 · 暗号資産</span>
+            <h3>スプレッドとは何か<br />—「手数料無料」の正体</h3>
+            <p>表示されない負担がどこに含まれているかを、数字で追います。</p>
+            <b>読む →</b>
+          </Link>
+          <div className="feature-stack">
+            <Link href="/articles/hanbaijo-torihikijo" className="feature-article">
+              <span>仕組み</span>
+              <h3>販売所と取引所は何が違うのか</h3>
+              <b>読む →</b>
+            </Link>
+            <Link href="/articles/spread-hirogaru-toki" className="feature-article">
+              <span>データの見方</span>
+              <h3>スプレッドが広がるのはどんなときか</h3>
+              <b>読む →</b>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="official-section">
+        <div className="section-heading compact">
+          <div>
+            <p className="section-index">SOURCE LINKS</p>
+            <h2>計測対象の公式サイト</h2>
+          </div>
+        </div>
+        <ul className="official-grid">
+          {[...exchanges, ...dealers]
+            .filter((row, index, all) => all.findIndex((item) => item.name.split(' ')[0] === row.name.split(' ')[0]) === index)
+            .map((row) => (
+              <li key={row.id}>
+                <a href={row.url} target="_blank" rel="nofollow sponsored noopener">
+                  <span>{row.name.replace(' かんたん販売所', '')}</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </li>
+            ))}
+        </ul>
+        <p className="ad-disclosure">
+          広告を含む場合があります。申込条件・手数料・取扱商品は、リンク先の公式サイトで必ず確認してください。
+        </p>
+      </section>
     </>
   );
 }

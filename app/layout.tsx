@@ -8,13 +8,29 @@ const GA_ID = 'G-J7HHCQK42T';
 export const metadata: Metadata = {
   metadataBase: new URL('https://hanbaijo.com'),
   title: {
-    default: '販売所ウォッチ｜暗号資産の販売所スプレッドを30分ごとに自動計測',
-    template: '%s｜販売所ウォッチ',
+    default: '金融コストウォッチ｜見えない取引コストを、測って比べる',
+    template: '%s｜金融コストウォッチ',
   },
   description:
-    '国内の暗号資産取引所について、販売所と取引所のスプレッド（実質的な売買コスト）を公開APIから30分ごとに自動計測し、そのまま掲載しています。手動集計ではありません。',
-  openGraph: { type: 'website', locale: 'ja_JP', siteName: '販売所ウォッチ' },
+    '暗号資産を起点に、FX・CFD・株式・先物まで。スプレッドや手数料など、金融商品の見えにくい取引コストを実測・整理する独立系データメディアです。',
+  openGraph: {
+    type: 'website',
+    locale: 'ja_JP',
+    siteName: '金融コストウォッチ',
+    title: '金融コストウォッチ｜見えない取引コストを、測って比べる',
+    description: '金融商品の見えにくい取引コストを、実測データと明示した計算方法で可視化します。',
+  },
 };
+
+function BrandMark() {
+  return (
+    <svg className="brand-mark" viewBox="0 0 44 44" aria-hidden="true">
+      <rect width="44" height="44" rx="13" className="brand-mark-bg" />
+      <path d="M9 30.5h5.5V22H9v8.5Zm10.25 0h5.5V13h-5.5v17.5Zm10.25 0H35V18h-5.5v12.5Z" className="brand-mark-bars" />
+      <path d="M9 34.5h26" className="brand-mark-rule" />
+    </svg>
+  );
+}
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -30,48 +46,55 @@ gtag('config', '${GA_ID}');`}
       </head>
       <body>
         <header className="site-header">
-          <div className="wrap">
-            <Link href="/" className="brand" aria-label="販売所ウォッチ トップページ">
-              <svg className="mark" viewBox="0 0 30 30" aria-hidden="true">
-                {/* 上段=販売所（広いスプレッド） 下段=取引所（狭いスプレッド） */}
-                <rect x="1" y="6" width="7" height="5" rx="1.5" className="m-bar" />
-                <rect x="8.6" y="6" width="12.8" height="5" rx="1.5" className="m-dealer" />
-                <rect x="22" y="6" width="7" height="5" rx="1.5" className="m-bar" />
-                <rect x="1" y="19" width="13" height="5" rx="1.5" className="m-bar" />
-                <rect x="14.6" y="19" width="1.8" height="5" rx="0.9" className="m-exchange" />
-                <rect x="17" y="19" width="12" height="5" rx="1.5" className="m-bar" />
-              </svg>
-              <span className="brand-text">
-                <span className="brand-name">販売所ウォッチ</span>
-                <span className="brand-sub">スプレッド実測 · hanbaijo.com</span>
+          <div className="site-shell header-inner">
+            <Link href="/" className="brand" aria-label="金融コストウォッチ トップページ">
+              <BrandMark />
+              <span className="brand-copy">
+                <span className="brand-name">金融コストウォッチ</span>
+                <span className="brand-domain">hanbaijo.com</span>
               </span>
             </Link>
-            <nav>
-              <Link href="/articles">解説</Link>
+            <nav aria-label="メインナビゲーション">
+              <Link href="/markets">対象商品</Link>
+              <Link href="/articles">知る</Link>
               <Link href="/method">計測方法</Link>
-              <Link href="/about">このサイトについて</Link>
+              <Link href="/about">運営方針</Link>
             </nav>
-            <span className="live" title="各社の公開APIから自動で取得しています">
-              <i /> 自動計測
+            <span className="live-pill" title="暗号資産の公開APIを30分ごとに自動計測しています">
+              <i /> BTC計測中
             </span>
           </div>
         </header>
-        <main className="wrap">{children}</main>
+        <main className="site-shell">{children}</main>
         <footer className="site-footer">
-          <div className="wrap">
-            <p>
-              当サイトは暗号資産の売買コストに関する計測値を掲載する情報サイトです。特定の暗号資産や取引所の購入・利用を推奨するものではなく、
-              投資勧誘を目的としたものではありません。掲載する数値は各社の公開APIから自動取得したものですが、正確性・完全性を保証するものではありません。
-              取引の判断はご自身の責任で行ってください。
-            </p>
-            <p>
-              当サイトはアフィリエイトプログラムを利用しており、リンク経由の口座開設等により運営者が報酬を受け取る場合があります。
-              ただし報酬の有無は掲載順位・計測値に一切影響しません（掲載順はスプレッドの実測値のみで機械的に決定しています）。
-            </p>
-            <p style={{ marginTop: 16 }}>
-              <Link href="/method">計測方法</Link>　<Link href="/about">このサイトについて</Link>　<Link href="/disclaimer">免責事項</Link>　<Link href="/contact">お問い合わせ</Link>
-            </p>
-            <p style={{ marginTop: 10 }}>© {new Date().getFullYear()} 販売所ウォッチ</p>
+          <div className="site-shell footer-grid">
+            <div className="footer-brand">
+              <BrandMark />
+              <div>
+                <strong>金融コストウォッチ</strong>
+                <p>見えない取引コストを、測って比べる。</p>
+              </div>
+            </div>
+            <div className="footer-links" aria-label="フッターナビゲーション">
+              <Link href="/markets">対象商品</Link>
+              <Link href="/articles">解説記事</Link>
+              <Link href="/method">計測方法</Link>
+              <Link href="/about">このサイトについて</Link>
+              <Link href="/disclaimer">免責事項</Link>
+              <Link href="/contact">お問い合わせ</Link>
+            </div>
+            <div className="footer-notes">
+              <p>
+                当サイトは金融商品のコストに関する計測値・公表値・試算値を掲載する情報サイトです。
+                特定の金融商品や事業者の利用を推奨するものではなく、投資勧誘を目的としません。
+                取引条件は各社の公式情報を確認し、最終的な判断はご自身の責任で行ってください。
+              </p>
+              <p>
+                当サイトはアフィリエイトプログラムを利用し、リンク経由の申込み等で報酬を受け取る場合があります。
+                広告の有無や報酬額は、実測値・計算結果・掲載順位に影響しません。
+              </p>
+            </div>
+            <p className="copyright">© {new Date().getFullYear()} hanbaijo.com</p>
           </div>
         </footer>
       </body>

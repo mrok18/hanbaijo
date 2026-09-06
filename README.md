@@ -1,68 +1,67 @@
-# hanbaijo.com — 販売所ウォッチ
+# hanbaijo.com — 金融コストウォッチ
 
-国内暗号資産取引所の「販売所」「取引所」のスプレッドを公開APIから自動計測して掲載するサイト。
+金融商品の見えにくい取引コストを、実測データ・公式情報・再現可能な試算で可視化するデータメディアです。
+現在は暗号資産のBTC/JPYスプレッドを公開し、FX、CFD、株式、先物へ対象を拡張しています。
 
-- サイト本体: Next.js（App Router）/ Vercel
-- 定期収集: GitHub Actions（30分ごと）→ `data/` にコミット
-- データベース不要・月額費用なし
+## 現在の構成
 
-## 仕組み
-
-| | どこで動くか | 何をするか |
+| 機能 | 実行場所 | 内容 |
 |---|---|---|
-| トップページの一覧表 | Vercel の関数（60秒キャッシュ） | アクセス時に各社APIを直接呼ぶ。常に最新 |
-| 推移グラフ | GitHub Actions → `data/history/YYYY-MM.json` | 30分ごとに追記。サイトは GitHub から実行時に読む |
+| Webサイト | Vercel / Next.js 14 App Router | 一覧は最大60秒キャッシュで各社APIを呼び出す |
+| 履歴収集 | Vercel Cron `/api/collect` | 30分ごとにBTC/JPYを計測する |
+| 履歴保存 | Vercel Blob `hanbaijo-blob` | `history/YYYY-MM.json` に追記する |
+| X投稿 | Vercel Cron `/api/post` | 9時・13時・19時（JST）。投稿先ガードあり |
+| GA4 | Google Analytics | `G-J7HHCQK42T` |
 
-収集コミットは `[skip ci]` を付けているため、データ更新でサイトの再デプロイは発生しない。
+`.github/workflows/collect.yml` は手動実行専用で、通常の定期収集はVercel Cronが担当します。
 
-## 初回セットアップ（Kaz の作業）
+## ローカル開発
 
-1. GitHub に private リポジトリを作り、このディレクトリを push する。
-2. Vercel でそのリポジトリを Import する（設定は既定のままでよい）。
-3. Vercel の Environment Variables に以下を登録する。
-   - `NEXT_PUBLIC_REPO_SLUG` = `<GitHubのユーザー名>/<リポジトリ名>`
-   - `NEXT_PUBLIC_REPO_BRANCH` = `main`
-   （※private リポジトリの場合、履歴JSONの実行時取得が失敗する。グラフを出すにはリポジトリを public にするか、
-   `lib/history.ts` を GitHub API + トークン方式に変更する必要がある。まずは public 推奨）
-4. Vercel の Settings → Domains に `hanbaijo.com` を追加し、表示される DNS レコードを
-   ドメイン管理画面（お名前.com 等）に設定する。
-5. GitHub の Settings → Actions → General → Workflow permissions を
-   「Read and write permissions」に変更する（収集結果をコミットするため）。
-6. Actions タブから `collect rates` を一度手動実行し、`data/` が更新されることを確認する。
+PowerShell:
 
-## ローカルでの確認
-
-```bash
-npm install
-npm run dev            # 実APIを叩く（要ネットワーク）
-MOCK_RATES=1 npm run dev   # 固定データで画面だけ確認する
-npm run collect        # 収集を1回だけ手で実行
+```powershell
+npm ci
+$env:MOCK_RATES='1'
+npm run dev
 ```
 
-## 取引所を追加するとき
+実APIで確認する場合だけ `MOCK_RATES` を外します。固定データでの本番ビルド確認:
 
-`lib/exchanges.mjs` の `SOURCES` 配列に1件足すだけでよい。サイトの表・収集・計測方法ページの全てに自動で反映される。
-
-```js
-{
-  id: 'xxx',
-  name: '表示名',
-  venue: 'exchange',   // または 'dealer'（販売所）
-  url: 'https://...',  // 公式サイト。アフィリエイトリンクに差し替える箇所
-  async fetch() {
-    const d = await fetchJson('https://...');
-    return { bid: n(d.bid), ask: n(d.ask) };
-  },
-}
+```powershell
+$env:MOCK_RATES='1'
+npm run build
 ```
 
-## アフィリエイトリンクの差し替え
+## コードの入口
 
-`lib/exchanges.mjs` の各社 `url` を ASP から発行されたリンクに置き換える。
-トップページのリンクには `rel="nofollow sponsored"` が付与済み。
+- `app/page.tsx`: トップページと現在のBTC実測表示
+- `app/markets/page.tsx`: 対象商品と開発状況
+- `lib/exchanges.mjs`: 暗号資産の取得アダプター
+- `lib/history.ts`: Vercel Blobから履歴を読む処理
+- `lib/market-data/`: 金融商品共通の型、カタログ、コスト計算
+- `app/api/collect/route.ts`: 定期収集
+- `app/api/post/route.ts`: X投稿
+- `docs/PRODUCT_PLAN.md`: 拡張方針と公開ゲート
 
-## 運用上の注意
+## データの表示ルール
 
-- 販売所のレートは bitFlyer 以外は公開APIがない。追加する場合はスクレイピングとなり、画面変更で壊れる。
-- ある社の取得が失敗しても、その行だけ「取得できませんでした」と表示され、他社の掲載は継続する。
-- 全社の取得に失敗した場合、収集スクリプトは書き込みをせず異常終了する（誤ったデータを残さないため）。
+- `observed`（実測値）: API等から取得時刻とともに保存した値
+- `published`（公称値）: 公式サイト・交付書面に記載された値
+- `estimated`（試算値）: 条件と計算式を明示して算出した値
+
+取得失敗は直前値や他社データで補完しません。広告契約の有無や報酬額は、実測値・計算結果・機械的な並び順に反映しません。
+
+## データ提供元を追加するとき
+
+暗号資産は `lib/exchanges.mjs` の `SOURCES` に追加します。FX以降は `lib/market-data/types.ts` の共通形式へ正規化し、次を確認してから有効化します。
+
+1. 提供元が正式にAPIまたはデータ配信を案内していること
+2. 自動取得、保存、サイト上での再掲載が利用条件に適合すること
+3. Bid/Ask、時刻、通貨ペア、価格単位を検証できること
+4. 欠測時に推測値を返さないこと
+
+## 公開運用
+
+ASP審査が終わるまでは本番環境を変更しません。作業は `codex/cross-asset-redesign` ブランチで行い、`main`へのマージ、Vercelデプロイ、公開リンクの差し替えは審査後の公開確認を経て実施します。
+
+セキュリティ設定の変更は、内容と影響範囲を提示し、承認後に実施します。
