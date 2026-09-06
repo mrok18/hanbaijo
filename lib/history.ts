@@ -1,15 +1,15 @@
-// 履歴は GitHub 上の data/history/*.json を実行時に読む。
-// 収集コミットでサイトを再ビルドしなくて済むよう、あえてリポジトリから直接取得している。
-const REPO = process.env.NEXT_PUBLIC_REPO_SLUG ?? '';
-const BRANCH = process.env.NEXT_PUBLIC_REPO_BRANCH ?? 'main';
+// 履歴は Vercel Blob に蓄積している（収集は /api/collect を Vercel Cron が30分ごとに叩く）。
+import { list } from '@vercel/blob';
 
 export interface Point { t: number; s: Record<string, [number, number]> }
 
 async function month(ym: string): Promise<Point[]> {
-  if (!REPO) return [];
-  const url = `https://raw.githubusercontent.com/${REPO}/${BRANCH}/data/history/${ym}.json`;
+  const key = `history/${ym}.json`;
   try {
-    const res = await fetch(url, { next: { revalidate: 900 } });
+    const found = await list({ prefix: key, limit: 1 });
+    const url = found.blobs.find((b) => b.pathname === key)?.url;
+    if (!url) return [];
+    const res = await fetch(url, { next: { revalidate: 300 } });
     if (!res.ok) return [];
     return (await res.json()) as Point[];
   } catch {
@@ -17,7 +17,7 @@ async function month(ym: string): Promise<Point[]> {
   }
 }
 
-/** 直近 days 日分の計測点を古い順に返す。月をまたぐ場合は 2 ファイルを結合する。 */
+/** 直近 days 日分の計測点を古い順に返す。月をまたぐ場合は2ファイルを結合する。 */
 export async function recent(days = 7): Promise<Point[]> {
   const now = new Date();
   const prev = new Date(now.getFullYear(), now.getMonth() - 1, 1);
