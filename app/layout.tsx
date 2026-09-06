@@ -1,6 +1,9 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Script from 'next/script';
+
+const GA_ID = 'G-J7HHCQK42T';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://hanbaijo.com'),
@@ -16,6 +19,15 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ja">
+      <head>
+        <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
+        <Script id="ga4" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${GA_ID}');`}
+        </Script>
+      </head>
       <body>
         <header className="site-header">
           <div className="wrap">
