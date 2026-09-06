@@ -1,0 +1,101 @@
+{
+ "measuredAt": "2026-09-06T07:06:15.587Z",
+ "rows": [
+  {
+   "id": "bitbank",
+   "name": "bitbank",
+   "venue": "exchange",
+   "url": "https://bitbank.cc/",
+   "bid": 12491427,
+   "ask": 12491428,
+   "mid": 12491427.5,
+   "spread": 1,
+   "spreadPct": 0.000008005490165155262,
+   "error": null
+  },
+  {
+   "id": "gmo",
+   "name": "GMOコイン",
+   "venue": "exchange",
+   "url": "https://coin.z.com/jp/",
+   "bid": 12489902,
+   "ask": 12489903,
+   "mid": 12489902.5,
+   "spread": 1,
+   "spreadPct": 0.00000800646762454711,
+   "error": null
+  },
+  {
+   "id": "zaif",
+   "name": "Zaif",
+   "venue": "exchange",
+   "url": "https://zaif.jp/",
+   "bid": 12480250,
+   "ask": 12480255,
+   "mid": 12480252.5,
+   "spread": 5,
+   "spreadPct": 0.00004006329198868372,
+   "error": null
+  },
+  {
+   "id": "coincheck",
+   "name": "Coincheck",
+   "venue": "exchange",
+   "url": "https://coincheck.com/",
+   "bid": 12491543,
+   "ask": 12493199,
+   "mid": 12492371,
+   "spread": 1656,
+   "spreadPct": 0.013256090457127796,
+   "error": null
+  },
+  {
+   "id": "bittrade",
+   "name": "BitTrade",
+   "venue": "exchange",
+   "url": "https://www.bittrade.co.jp/",
+   "bid": 12489758,
+   "ask": 12491978,
+   "mid": 12490868,
+   "spread": 2220,
+   "spreadPct": 0.01777298423136006,
+   "error": null
+  },
+  {
+   "id": "bitflyer",
+   "name": "bitFlyer",
+   "venue": "exchange",
+   "url": "https://bitflyer.com/",
+   "bid": 12482800,
+   "ask": 12486665,
+   "mid": 12484732.5,
+   "spread": 3865,
+   "spreadPct": 0.03095781187141975,
+   "error": null
+  },
+  {
+   "id": "okj",
+   "name": "OKJ",
+   "venue": "exchange",
+   "url": "https://www.okcoin.jp/",
+   "bid": 12483129,
+   "ask": 12487228,
+   "mid": 12485178.5,
+   "spread": 4099,
+   "spreadPct": 0.03283092828828999,
+   "error": null
+  },
+  {
+   "id": "bitflyer-dealer",
+   "name": "bitFlyer かんたん販売所",
+   "venue": "dealer",
+   "url": "https://bitflyer.com/",
+   "bid": 12115715,
+   "ask": 12865141,
+   "mid": 12490428,
+   "spread": 749426,
+   "spreadPct": 6.000002561961848,
+   "error": null
+  }
+ ]
+}
