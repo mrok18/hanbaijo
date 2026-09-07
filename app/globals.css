@@ -518,6 +518,7 @@ article li + li { margin-top: 8px; }
 .provider-offer .affiliate-card { min-height: 250px; }
 .provider-compact-hero { min-height: 0; padding-top: clamp(38px, 5vw, 58px); padding-bottom: clamp(38px, 5vw, 58px); }
 .stock-provider-hero { background: #123f46; }
+.fx-provider-hero { background: #12305c; }
 .provider-headline { max-width: 720px; margin: 20px 0 0; color: var(--signal); font-size: clamp(20px, 2.5vw, 31px); font-weight: 800; line-height: 1.45; }
 .provider-fact-value { display: block; margin: 0 0 8px; color: var(--blue); font: 850 23px/1.2 ui-monospace, SFMono-Regular, Consolas, monospace; }
 .provider-no-ad { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(35px, 7vw, 80px); margin-top: 75px; padding: 28px; border: 1px solid var(--line); border-radius: 17px; background: var(--paper); }

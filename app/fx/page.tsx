@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
+import { FX_PROVIDER_LIST } from '@/lib/fx-providers';
 
 export const metadata = {
   title: 'FXの取引コスト比較｜スプレッド・スワップ・約定を読む',
@@ -10,8 +11,11 @@ export const metadata = {
 const REVIEW_TARGETS = [
   { name: 'FXTF', scope: 'FX・ノックアウトオプション', status: '公式条件を整理済み・データ許諾を照会中', href: '/fx/fxtf' },
   { name: 'シストレセレクト365', scope: 'FX自動売買', status: '公式条件を整理済み・データ許諾を照会中', href: '/fx/systre-select-365' },
+  { name: 'MATSUI FX', scope: 'FX', status: '公式条件を整理済み・広告提携審査中', href: '/fx/matsui' },
+  { name: 'GMOクリック証券 FXネオ', scope: 'FX', status: '公式条件を整理済み・広告提携審査中', href: '/fx/gmo-click' },
+  { name: 'LIGHT FX', scope: 'FX', status: '公式条件を整理済み・広告提携審査中', href: '/fx/lightfx' },
+  { name: 'ヒロセ通商 LION FX', scope: 'FX', status: '公式条件を整理済み・広告提携審査中', href: '/fx/lion-fx' },
   { name: 'サクソバンク証券', scope: 'FX・CFD・株式・先物', status: 'OpenAPIの商用条件を確認予定' },
-  { name: '松井証券 / LIGHT FXほか', scope: '主要FX口座', status: '公式条件を調査中' },
 ] as const;
 
 export default function FxPage() {
@@ -105,10 +109,27 @@ export default function FxPage() {
         </div>
       </section>
 
+      <section className="fx-section" aria-labelledby="fx-provider-directory">
+        <div className="section-heading">
+          <div>
+            <p className="section-index">04 / COST FACT SHEETS</p>
+            <h2 id="fx-provider-directory">FX会社別に、適用条件まで確認する</h2>
+            <p>広告のスプレッドだけでなく、最小数量・ロスカット・適用時間外を確認します。現在は広告リンクなしです。</p>
+          </div>
+        </div>
+        <div className="provider-directory">
+          {FX_PROVIDER_LIST.map((provider) => (
+            <Link href={`/fx/${provider.slug}`} key={provider.slug}>
+              <span>2026-09-07 確認</span><h3>{provider.name}</h3><p>{provider.minTrade}</p><b>コストシートを見る →</b>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       <section className="fx-section" aria-labelledby="fx-partner-title">
         <div className="section-heading">
           <div>
-            <p className="section-index">04 / PARTNERED SERVICES</p>
+            <p className="section-index">05 / PARTNERED SERVICES</p>
             <h2 id="fx-partner-title">取引条件を公式サイトで確認する</h2>
             <p>以下はA8.netで提携済みの広告です。報酬額は、比較結果や掲載順位に反映しません。</p>
           </div>
