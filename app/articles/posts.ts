@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'dmm-cfd-commodity-lot-list', category: 'CFD・DMM CFD', title: 'DMM CFD商品14銘柄の1Lot一覧｜単位を間違えない早見表', desc: '金・銀・原油・天然ガス・農産物の1Lot単位と証拠金計算を一覧化する。' },
   { slug: 'dmm-cfd-natural-gas-vs-oil', category: 'CFD・DMM CFD', title: 'DMM CFDの天然ガスと原油｜1Lotの値動きと証拠金を比較', desc: '天然ガス100MMBtu、原油10バレルの取引単位と必要証拠金・価格調整額を比較する。' },
   { slug: 'dmm-cfd-agriculture-trading-hours', category: 'CFD・DMM CFD', title: 'DMM CFD農産物の取引時間｜コーン・大豆・小麦の休止時間', desc: '農産物CFDの分割された取引時間、夏冬時間、祝日・時間外注文の注意点を整理する。' },
   { slug: 'dmm-cfd-gold-vs-oil-cost', category: 'CFD・DMM CFD', title: 'DMM CFDの金と原油は何が違う？証拠金・調整額を比較', desc: '同じ商品CFDでも異なる取引単位、必要証拠金、金利調整額・価格調整額を整理する。' },
