@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'dmm-cfd-gold-vs-oil-cost', category: 'CFD・DMM CFD', title: 'DMM CFDの金と原油は何が違う？証拠金・調整額を比較', desc: '同じ商品CFDでも異なる取引単位、必要証拠金、金利調整額・価格調整額を整理する。' },
   { slug: 'nikkei225-futures-sq-settlement', category: '先物', title: '日経225先物のSQとは？取引最終日と最終決済を整理', desc: '第2金曜日、前営業日の取引終了、SQ値による差金決済を時系列で確認する。' },
   { slug: 'nikkei225-futures-night-session', category: '先物', title: '日経225先物の取引時間｜ナイトセッションは何日扱い？', desc: '日中8時45分〜15時45分、夜間17時〜翌6時と、取引日・祝日取引の考え方を整理する。' },
   { slug: 'matsui-nisa-fees', category: 'NISA・松井証券', title: '松井証券NISAは手数料無料？為替・信託報酬まで確認', desc: '日本株・米国株・投資信託の売買手数料0円と、別途残る為替手数料・信託報酬を分ける。' },
