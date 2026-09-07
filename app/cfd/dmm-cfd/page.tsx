@@ -17,7 +17,7 @@ export default function DmmCfdPage() {
           <p className="lede">取引手数料が無料でも、スプレッドと保有中の調整額は残ります。株価指数と商品で異なる証拠金率・取引単位も分けて整理します。</p>
           <div className="hero-actions">
             <Link className="button primary" href="/articles/dmm-cfd-total-cost">総コストを確認</Link>
-            <Link className="button secondary" href="/articles/dmm-cfd-margin-leverage">必要証拠金を計算</Link>
+            <Link className="button secondary" href="/tools/cfd-margin-calculator">必要証拠金を計算</Link>
             <Link className="button secondary" href="/cfd">CFD比較へ戻る</Link>
           </div>
         </div>
@@ -72,6 +72,7 @@ export default function DmmCfdPage() {
         <h2>DMM CFDの計算ガイド</h2>
         <div className="provider-fact-grid">
           <article><b>MARGIN</b><h3><Link href="/articles/dmm-cfd-margin-leverage">必要証拠金を銘柄別に計算</Link></h3><p>日本225・米国ナスダック100・金・原油を同じ1Lotで比べ、取引単位と円換算の違いを確認します。</p></article>
+          <article><b>CALCULATOR</b><h3><Link href="/tools/cfd-margin-calculator">14商品を自分の条件で試算</Link></h3><p>商品価格、Lot数、米ドル円を入力し、取引総額と必要証拠金を円換算します。</p></article>
           <article><b>TOTAL COST</b><h3><Link href="/articles/dmm-cfd-total-cost">手数料0円の先を確認</Link></h3><p>スプレッド、金利調整額、価格調整額、約定差を取引期間ごとに分けます。</p></article>
           <article><b>MARGIN SAFETY</b><h3><Link href="/articles/dmm-cfd-margin-call-losscut">追証とロスカットを区別</Link></h3><p>証拠金維持率100％の追加証拠金と、50％のロスカットを判定時点から整理します。</p></article>
           <article><b>CFD VS FUTURES</b><h3><Link href="/articles/cfd-vs-futures-nikkei225">日本225と先物を比較</Link></h3><p>店頭・取引所、期限、取引単位、証拠金、コストの違いを確認します。</p></article>

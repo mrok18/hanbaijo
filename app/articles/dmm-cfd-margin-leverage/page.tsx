@@ -74,6 +74,7 @@ export default function Page() {
       </section>
 
       <p><Link href="/cfd/dmm-cfd">DMM CFDのコストシートを見る →</Link></p>
+      <p><Link href="/tools/cfd-margin-calculator">商品CFD証拠金計算機を使う →</Link></p>
       <p><Link href="/articles/dmm-cfd-total-cost">DMM CFDの総コストを確認する →</Link></p>
       <p><Link href="/articles/dmm-cfd-margin-call-losscut">DMM CFDの追証とロスカットを確認する →</Link></p>
 
