@@ -1,7 +1,9 @@
 import Link from 'next/link';
+import AffiliateOfferCard from '@/components/AffiliateOfferCard';
+import type { AffiliateOffer } from '@/lib/affiliates';
 import type { FxProvider } from '@/lib/fx-providers';
 
-export default function FxProviderFactSheet({ provider }: { provider: FxProvider }) {
+export default function FxProviderFactSheet({ provider, affiliateOffer }: { provider: FxProvider; affiliateOffer?: AffiliateOffer }) {
   return (
     <div className="provider-page fx-provider-page">
       <section className="provider-hero provider-compact-hero fx-provider-hero">
@@ -21,7 +23,7 @@ export default function FxProviderFactSheet({ provider }: { provider: FxProvider
           <dl>
             <div><dt>最低数量</dt><dd>{provider.minTrade}</dd></div>
             <div><dt>比較の焦点</dt><dd>{provider.costFocus}</dd></div>
-            <div><dt>広告リンク</dt><dd>掲載なし</dd></div>
+            <div><dt>広告リンク</dt><dd>{affiliateOffer ? '掲載あり' : '掲載なし'}</dd></div>
           </dl>
         </aside>
       </section>
@@ -59,6 +61,19 @@ export default function FxProviderFactSheet({ provider }: { provider: FxProvider
         <div><span>DATA PERMISSION</span><h2>自動計測は、利用条件の確認後に開始します。</h2></div>
         <p>公開ページを機械取得して保存・再掲載することはせず、提供元から商用利用条件を確認できたデータだけを実測値として掲載します。</p>
       </section>
+
+      {affiliateOffer && (
+        <>
+          <section className="provider-offer" aria-label={`${provider.name}の広告`}>
+            <div className="section-heading">
+              <div><p className="section-index">ADVERTISEMENT</p><h2>最新の取引条件を公式サイトで確認する</h2></div>
+              <p>以下はA8.netの提携広告です。掲載報酬は、公称値・試算値・将来の実測順位に影響しません。</p>
+            </div>
+            <AffiliateOfferCard offer={affiliateOffer} />
+          </section>
+          <p className="affiliate-disclosure">FXは元本および利益が保証されず、預けた証拠金を上回る損失が生じる場合があります。契約締結前交付書面を確認してください。</p>
+        </>
+      )}
 
       <p className="provider-back"><Link href="/fx">FXコスト比較へ戻る →</Link></p>
     </div>

@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import AffiliateOfferCard from '@/components/AffiliateOfferCard';
+import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
   title: '松井証券のFX専用口座と総合口座の違い｜株・NISAも使う場合',
@@ -62,7 +64,12 @@ export default function Page() {
         <li>先物：銘柄ごとの手数料、取引単位、必要証拠金</li>
       </ul>
 
-      <div className="callout"><strong>広告提携と比較評価は分離します</strong><p>金融コストウォッチは松井証券の広告プログラムと提携済みですが、正式な広告リンクは準備中です。提携状況や報酬額を公称値・試算・掲載順位へ反映しません。</p></div>
+      <div className="callout"><strong>広告提携と比較評価は分離します</strong><p>金融コストウォッチは松井証券の広告プログラムと提携しています。提携状況や報酬額を公称値・試算・掲載順位へ反映しません。</p></div>
+
+      <section className="article-affiliate" aria-label="松井証券の広告">
+        <AffiliateOfferCard offer={AFFILIATE_OFFERS['matsui-fx']} />
+        <p className="affiliate-disclosure">広告リンクから申込みが成立すると、当サイトが報酬を受け取る場合があります。口座の申込条件と取引リスクは公式サイトで確認してください。</p>
+      </section>
 
       <section className="article-sources" aria-labelledby="sources">
         <h2 id="sources">参照した公式資料</h2>

@@ -11,7 +11,7 @@ export const metadata = {
 const REVIEW_TARGETS = [
   { name: 'FXTF', scope: 'FX・ノックアウトオプション', status: '公式条件のみ掲載・自動計測対象外', href: '/fx/fxtf' },
   { name: 'シストレセレクト365', scope: 'FX自動売買', status: '公式条件を整理済み・データ許諾を照会中', href: '/fx/systre-select-365' },
-  { name: 'MATSUI FX', scope: 'FX', status: '公式条件を整理済み・広告提携済み（リンク準備中）', href: '/fx/matsui' },
+  { name: 'MATSUI FX', scope: 'FX', status: '公式条件を整理済み・広告掲載中', href: '/fx/matsui' },
   { name: 'GMOクリック証券 FXネオ', scope: 'FX', status: '公式条件を整理済み・広告提携審査中', href: '/fx/gmo-click' },
   { name: 'LIGHT FX', scope: 'FX', status: '公式条件を整理済み・広告提携審査中', href: '/fx/lightfx' },
   { name: 'ヒロセ通商 LION FX', scope: 'FX', status: '公式条件を整理済み・広告提携審査中', href: '/fx/lion-fx' },
@@ -154,6 +154,7 @@ export default function FxPage() {
           </div>
         </div>
         <div className="affiliate-grid">
+          <AffiliateOfferCard offer={AFFILIATE_OFFERS['matsui-fx']} />
           <AffiliateOfferCard offer={AFFILIATE_OFFERS.fxtf} />
           <AffiliateOfferCard offer={AFFILIATE_OFFERS['systre-select-365']} />
         </div>
