@@ -68,6 +68,18 @@ export const SOURCE_REGISTRY: readonly SourceRegistryItem[] = [
     note: '公開ページは参考レートと明記され、公開APIは未確認。掲載情報は許可なく転載・公開できないため、取得・蓄積・再掲載の書面許可前は取得しない。',
     reviewedAt: '2026-09-07',
   },
+  {
+    id: 'saxo-japan-openapi',
+    assetClass: 'fx',
+    providerName: 'サクソバンク証券',
+    method: 'authenticated-api',
+    documentationUrl: 'https://www.home.saxo/ja-jp/platforms/api',
+    approval: 'contract-required',
+    canCollect: false,
+    canRepublish: false,
+    note: '正式OpenAPIあり。個人口座は指定初回預託額・API手数料なしだが無料利用は私的使用目的に限定。商用の保存・統計加工・再掲載契約が確認できるまでは取得しない。',
+    reviewedAt: '2026-09-07',
+  },
 ] as const;
 
 export const ENABLED_SOURCES = SOURCE_REGISTRY.filter((source) => source.canCollect && source.canRepublish);
