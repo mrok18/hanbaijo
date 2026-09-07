@@ -76,6 +76,8 @@ export default function DmmCfdPage() {
           <article><b>MARGIN SAFETY</b><h3><Link href="/articles/dmm-cfd-margin-call-losscut">追証とロスカットを区別</Link></h3><p>証拠金維持率100％の追加証拠金と、50％のロスカットを判定時点から整理します。</p></article>
           <article><b>CFD VS FUTURES</b><h3><Link href="/articles/cfd-vs-futures-nikkei225">日本225と先物を比較</Link></h3><p>店頭・取引所、期限、取引単位、証拠金、コストの違いを確認します。</p></article>
           <article><b>ADJUSTMENT</b><h3><Link href="/articles/cfd-price-adjustment">価格調整額の仕組み</Link></h3><p>参照限月の切替と受払いを、計算式と公式例から整理します。</p></article>
+          <article><b>TRADING HOURS</b><h3><Link href="/articles/dmm-cfd-trading-hours">銘柄別の取引時間</Link></h3><p>夏時間・冬時間、毎営業日のメンテナンス、取引時間外の注文を整理します。</p></article>
+          <article><b>CALENDAR</b><h3><Link href="/articles/dmm-cfd-adjustment-calendar">調整額カレンダーの読み方</Link></h3><p>金利調整額と価格調整額の対象銘柄、発生タイミング、注文取消しを確認します。</p></article>
         </div>
       </section>
 

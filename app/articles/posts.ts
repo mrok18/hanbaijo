@@ -1,4 +1,6 @@
 export const POSTS = [
+  { slug: 'dmm-cfd-trading-hours', category: 'CFD・DMM CFD', title: 'DMM CFDの取引時間｜夏時間・冬時間と約定しない時間', desc: '日本225、米国指数、金・原油などの取引時間と、毎営業日のメンテナンス、祝日の注意点を整理する。' },
+  { slug: 'dmm-cfd-adjustment-calendar', category: 'CFD・DMM CFD', title: 'DMM CFDの調整額カレンダー｜金利・価格調整の違い', desc: '金・銀の金利調整額と、指数・原油などの価格調整額を、発生日と注文への影響から整理する。' },
   { slug: 'systre-select-365-losscut-margin-shortage', category: 'FX自動売買', title: 'シストレセレクト365のロスカット｜有効比率100％と証拠金不足', desc: '1分ごとのロスカット、150％のアラート、取引終了後の証拠金不足を分ける。' },
   { slug: 'systre-select-365-vs-otc-fx', category: 'FX自動売買', title: 'シストレセレクト365と店頭FXの違い｜取引所FXを選ぶ意味', desc: '価格提示、スワップ、手数料、証拠金から、くりっく365と店頭FXの違いを整理する。' },
   { slug: 'matsui-fx-margin-call-losscut', category: 'FX・松井証券', title: 'MATSUI FXの追証とロスカット｜選べる50～90％を整理', desc: '取引終了時100％の追証判定と、個人口座で選べる50～90％のロスカット率を分ける。' },
