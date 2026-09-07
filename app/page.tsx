@@ -314,14 +314,14 @@ export default async function Home() {
             <b>読む →</b>
           </Link>
           <div className="feature-stack">
-            <Link href="/articles/spread-hirogaru-toki" className="feature-article">
-              <span>FX・暗号資産</span>
-              <h3>スプレッドが広がるのはどんなときか</h3>
+            <Link href="/articles/fx-spread-time" className="feature-article">
+              <span>FX · 時間帯</span>
+              <h3>FXのスプレッドが広がりやすい時間帯</h3>
               <b>読む →</b>
             </Link>
-            <Link href="/articles/spread-toha" className="feature-article">
-              <span>基礎知識</span>
-              <h3>スプレッドとは何か</h3>
+            <Link href="/articles/cfd-price-adjustment" className="feature-article">
+              <span>CFD · 保有コスト</span>
+              <h3>価格調整額の仕組みと計算方法</h3>
               <b>読む →</b>
             </Link>
           </div>

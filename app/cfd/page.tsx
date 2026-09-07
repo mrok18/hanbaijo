@@ -8,7 +8,7 @@ export const metadata = {
 };
 
 const CFD_TARGETS = [
-  { name: 'DMM CFD', scope: '株価指数・商品', status: '広告提携済み・データ条件確認中' },
+  { name: 'DMM CFD', scope: '株価指数・商品', status: '公式条件を整理済み・データ許諾を照会中', href: '/cfd/dmm-cfd' },
   { name: 'サクソバンク証券', scope: '株価指数・商品・個別株', status: 'OpenAPIの商用条件を確認予定' },
   { name: 'Plus500証券', scope: '株価指数・商品・個別株', status: '提携審査中' },
 ] as const;
@@ -92,7 +92,7 @@ export default function CfdPage() {
               <tbody>
                 {CFD_TARGETS.map((target) => (
                   <tr key={target.name}>
-                    <td className="ex-name">{target.name}</td>
+                    <td className="ex-name">{'href' in target ? <Link href={target.href}>{target.name}</Link> : target.name}</td>
                     <td>{target.scope}</td>
                     <td><span className="research-badge">{target.status}</span></td>
                   </tr>

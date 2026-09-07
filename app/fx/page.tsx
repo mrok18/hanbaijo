@@ -8,8 +8,8 @@ export const metadata = {
 };
 
 const REVIEW_TARGETS = [
-  { name: 'FXTF', scope: 'FX・ノックアウトオプション', status: 'データ利用条件を確認中' },
-  { name: 'シストレセレクト365', scope: 'FX自動売買', status: '比較項目を設計中' },
+  { name: 'FXTF', scope: 'FX・ノックアウトオプション', status: '公式条件を整理済み・データ許諾を照会中', href: '/fx/fxtf' },
+  { name: 'シストレセレクト365', scope: 'FX自動売買', status: '公式条件を整理済み・データ許諾を照会中', href: '/fx/systre-select-365' },
   { name: 'サクソバンク証券', scope: 'FX・CFD・株式・先物', status: 'OpenAPIの商用条件を確認予定' },
   { name: '松井証券 / LIGHT FXほか', scope: '主要FX口座', status: '公式条件を調査中' },
 ] as const;
@@ -93,7 +93,7 @@ export default function FxPage() {
               <tbody>
                 {REVIEW_TARGETS.map((target) => (
                   <tr key={target.name}>
-                    <td className="ex-name">{target.name}</td>
+                    <td className="ex-name">{'href' in target ? <Link href={target.href}>{target.name}</Link> : target.name}</td>
                     <td>{target.scope}</td>
                     <td><span className="research-badge">{target.status}</span></td>
                   </tr>
