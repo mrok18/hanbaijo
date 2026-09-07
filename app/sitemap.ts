@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'fx/minimum-trade-unit-comparison',
     'fx/losscut-comparison',
     'fx/usdjpy-spread-comparison',
+    'fx/swap-calendar-comparison',
     'fx/jfx',
     'fx/minna-fx',
     'fx/au-kabucom-fx',

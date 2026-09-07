@@ -9,7 +9,7 @@ export const metadata = {
 };
 
 const REVIEW_TARGETS = [
-  { name: 'FXTF', scope: 'FX・ノックアウトオプション', status: '公式条件を整理済み・データ許諾を照会中', href: '/fx/fxtf' },
+  { name: 'FXTF', scope: 'FX・ノックアウトオプション', status: '公式条件のみ掲載・自動計測対象外', href: '/fx/fxtf' },
   { name: 'シストレセレクト365', scope: 'FX自動売買', status: '公式条件を整理済み・データ許諾を照会中', href: '/fx/systre-select-365' },
   { name: 'MATSUI FX', scope: 'FX', status: '公式条件を整理済み・広告提携審査中', href: '/fx/matsui' },
   { name: 'GMOクリック証券 FXネオ', scope: 'FX', status: '公式条件を整理済み・広告提携審査中', href: '/fx/gmo-click' },
@@ -117,11 +117,12 @@ export default function FxPage() {
           <div>
             <p className="section-index">04 / COMPARISON GUIDES</p>
             <h2 id="fx-guide-comparison">条件差を、共通の軸で比べる</h2>
-            <p>スプレッド、最低取引単位、ロスカットを、それぞれ独立した比較表で確認できます。</p>
+            <p>スプレッド、スワップ、最低取引単位、ロスカットを、それぞれ独立した比較表で確認できます。</p>
           </div>
         </div>
         <div className="provider-directory comparison-guide-directory">
           <Link href="/fx/usdjpy-spread-comparison"><span>USD/JPY SPREAD</span><h3>米ドル円スプレッドを比較</h3><p>時間帯・数量条件・1万通貨コスト</p><b>9社比較を見る →</b></Link>
+          <Link href="/fx/swap-calendar-comparison"><span>SWAP CALENDAR</span><h3>スワップの表示ルールを比較</h3><p>表示単位・付与日数・実現タイミング</p><b>9社比較を見る →</b></Link>
           <Link href="/fx/minimum-trade-unit-comparison"><span>TRADE SIZE</span><h3>最低取引単位を比較</h3><p>1通貨・1,000通貨を必要資金へ換算</p><b>8社比較を見る →</b></Link>
           <Link href="/fx/losscut-comparison"><span>RISK RULE</span><h3>ロスカット基準を比較</h3><p>維持率・使用率・追証を分けて確認</p><b>8社比較を見る →</b></Link>
         </div>

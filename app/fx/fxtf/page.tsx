@@ -27,7 +27,7 @@ export default function FxtfPage() {
             <div><dt>商品</dt><dd>FXTF GX-FX</dd></div>
             <div><dt>通貨ペア</dt><dd>29</dd></div>
             <div><dt>最低単位</dt><dd>1,000通貨</dd></div>
-            <div><dt>データ</dt><dd>再掲載許諾を照会中</dd></div>
+            <div><dt>データ</dt><dd>公称情報のみ・実測対象外</dd></div>
           </dl>
         </aside>
       </section>
@@ -69,6 +69,8 @@ export default function FxtfPage() {
         <div><span>SOURCE</span><strong>FXTF公式情報</strong></div>
         <a href="https://www.fxtrade.co.jp/gx-intro/" target="_blank" rel="noopener noreferrer">GX-FX取引概要を確認 ↗</a>
       </section>
+
+      <p className="provider-data-note">FXTFからの書面回答に基づき、取引ツール等のレート・Bid・Ask・スプレッドの自動取得、継続保存、統計加工、第三者向け再掲載は行いません。本ページは公式サイトで公表された取引条件を、同社のアフィリエイト広告ガイドラインの範囲で整理しています。</p>
 
       <section className="provider-offer" aria-label="FXTFの広告">
         <div>
