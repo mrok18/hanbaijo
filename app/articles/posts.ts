@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'matsui-fx-auto-trading-cost', category: 'FX・自動売買', title: 'MATSUI FX自動売買は100円から？必要資金を計算', desc: '複数注文の必要証拠金と評価損を分け、100円で始める場合にも必要な余裕資金を整理する。' },
   { slug: 'matsui-fx-one-currency', category: 'FX・松井証券', title: 'MATSUI FXは100円から？1通貨の必要証拠金と損益', desc: '100円の意味を、為替レート・取引数量・レバレッジコースに分けて具体的に計算する。' },
   { slug: 'matsui-account-types', category: '証券・FX', title: '松井証券のFX専用口座と総合口座の違い', desc: 'FXだけを始める場合と、株・NISA・先物も利用する場合で異なる口座開設の入口を整理する。' },
   { slug: 'fx-zero-spread-total-cost', category: 'FX', title: 'FXの0.0銭は本当に無料？別手数料まで総額で確認', desc: 'ゼロスプレッドと取引コスト0円を区別し、数量連動手数料や約定差を含めて判断する。' },

@@ -86,6 +86,7 @@ export default function Page() {
       </section>
 
       <p><Link href="/fx/matsui">MATSUI FXのコストシートを見る →</Link></p>
+      <p><Link href="/articles/matsui-fx-auto-trading-cost">自動売買に必要な資金を計算する →</Link></p>
       <p><Link href="/fx/minimum-trade-unit-comparison">FX各社の最低取引単位を比較する →</Link></p>
     </article>
   );
