@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export const metadata = {
   title: 'FXの最低取引単位比較｜1通貨・1,000通貨の必要資金を試算',
-  description: 'MATSUI FX、GMOクリック証券、LIGHT FX、ヒロセ通商の最低取引単位を比較。米ドル円150円・レバレッジ25倍の共通条件で理論証拠金も試算します。',
+  description: '国内FX8社の最低取引単位を比較。米ドル円150円・レバレッジ25倍の共通条件で、1通貨・1,000通貨の取引金額と理論証拠金を試算します。',
 };
 
 const PROVIDERS = [
@@ -42,6 +42,42 @@ const PROVIDERS = [
     exception: '一部通貨ペアは取引単位が異なる',
     source: 'https://hirose-fx.co.jp/category/hirose/lionfx/lfx/',
   },
+  {
+    name: 'JFX MATRIX TRADER',
+    href: '/fx/jfx',
+    minimum: '基本1,000通貨',
+    notional: '15万円',
+    margin: '6,000円',
+    exception: 'MXN/JPY・NOK/JPYなど6通貨ペアは1万通貨から',
+    source: 'https://www.jfx.co.jp/trading_rule/index.html',
+  },
+  {
+    name: 'みんなのFX',
+    href: '/fx/minna-fx',
+    minimum: '基本1,000通貨',
+    notional: '15万円',
+    margin: '6,000円',
+    exception: 'RUB/JPY・HUF/JPY等は1万通貨から',
+    source: 'https://min-fx.jp/lineup/fx/service/outline/',
+  },
+  {
+    name: '三菱UFJ eスマート証券 FX',
+    href: '/fx/au-kabucom-fx',
+    minimum: 'ミニ1,000通貨',
+    notional: '15万円',
+    margin: '6,000円',
+    exception: 'ZAR/JPY・HUF/JPYのミニは1万通貨から',
+    source: 'https://kabu.com/item/fx/sys/rule.html',
+  },
+  {
+    name: 'サクソバンク証券 FX',
+    href: '/fx/saxo',
+    minimum: '基本1,000通貨',
+    notional: '15万円',
+    margin: '6,000円',
+    exception: 'マイナー・エマージング通貨は最小数量が異なる場合あり',
+    source: 'https://www.home.saxo/ja-jp/rates-and-conditions/forex/trading-conditions',
+  },
 ] as const;
 
 export default function Page() {
@@ -51,7 +87,7 @@ export default function Page() {
         <div>
           <p className="page-kicker">FX MINIMUM TRADE SIZE / PUBLISHED DATA</p>
           <h1>FXの最低取引単位を、<br /><em>必要資金に直す。</em></h1>
-          <p className="lede">「1通貨」と「1,000通貨」では、最初に持つポジションが1,000倍違います。4社の公式条件をそろえ、米ドル円の同じ価格で資金差を試算しました。</p>
+          <p className="lede">「1通貨」と「1,000通貨」では、最初に持つポジションが1,000倍違います。8社の公式条件をそろえ、米ドル円の同じ価格で資金差を試算しました。</p>
         </div>
         <aside>
           <span>CHECKED</span><strong>2026-09-07</strong>

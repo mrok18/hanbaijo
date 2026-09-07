@@ -15,7 +15,10 @@ const REVIEW_TARGETS = [
   { name: 'GMOクリック証券 FXネオ', scope: 'FX', status: '公式条件を整理済み・広告提携審査中', href: '/fx/gmo-click' },
   { name: 'LIGHT FX', scope: 'FX', status: '公式条件を整理済み・広告提携審査中', href: '/fx/lightfx' },
   { name: 'ヒロセ通商 LION FX', scope: 'FX', status: '公式条件を整理済み・広告提携審査中', href: '/fx/lion-fx' },
-  { name: 'サクソバンク証券', scope: 'FX・CFD・株式・先物', status: 'OpenAPIの商用条件を確認予定' },
+  { name: 'JFX MATRIX TRADER', scope: 'FX', status: '公式条件を整理済み・広告提携審査中', href: '/fx/jfx' },
+  { name: 'みんなのFX', scope: 'FX', status: '公式条件を整理済み・広告提携審査中', href: '/fx/minna-fx' },
+  { name: '三菱UFJ eスマート証券 FX', scope: 'FX', status: '公式条件を整理済み・広告提携審査中', href: '/fx/au-kabucom-fx' },
+  { name: 'サクソバンク証券', scope: 'FX・CFD・株式・先物', status: '公式条件を整理済み・広告提携審査中', href: '/fx/saxo' },
 ] as const;
 
 export default function FxPage() {
@@ -97,7 +100,7 @@ export default function FxPage() {
               <tbody>
                 {REVIEW_TARGETS.map((target) => (
                   <tr key={target.name}>
-                    <td className="ex-name">{'href' in target ? <Link href={target.href}>{target.name}</Link> : target.name}</td>
+                    <td className="ex-name"><Link href={target.href}>{target.name}</Link></td>
                     <td>{target.scope}</td>
                     <td><span className="research-badge">{target.status}</span></td>
                   </tr>
@@ -114,7 +117,7 @@ export default function FxPage() {
           <div>
             <p className="section-index">04 / MINIMUM TRADE SIZE</p>
             <h2 id="fx-unit-comparison">1通貨と1,000通貨の差を、必要資金で見る</h2>
-            <p>米ドル円150円・レバレッジ25倍の共通条件で、4社の最低取引単位を円換算しました。</p>
+            <p>米ドル円150円・レバレッジ25倍の共通条件で、8社の最低取引単位を円換算しました。</p>
           </div>
           <Link className="text-link" href="/fx/minimum-trade-unit-comparison">最低取引単位を比較 →</Link>
         </div>
