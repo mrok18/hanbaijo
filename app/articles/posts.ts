@@ -1,4 +1,6 @@
 export const POSTS = [
+  { slug: 'dmm-kabu-us-stock-fee', category: '米国株・DMM 株', title: 'DMM 株の米国株手数料はいくら？為替25銭まで計算', desc: '0ドルになる条件、0.495％・上限22ドルの取引手数料、円貨決済の為替コストを分けて試算する。' },
+  { slug: 'dmm-kabu-domestic-round-trip-fee', category: '国内株・DMM 株', title: 'DMM 株の国内株手数料｜買って売る往復コストを計算', desc: '1注文ごとの料金表を使い、5万円から300万円超までの買付・売却合計を具体的に計算する。' },
   { slug: 'dmm-fx-margin-call-losscut', category: 'FX・DMM FX', title: 'DMM FXの追証とロスカットの違い｜100％と50％を整理', desc: '毎営業日の追加証拠金判定と、リアルタイムのロスカットを分け、証拠金維持率の読み方を整理する。' },
   { slug: 'dmm-fx-mini-normal-large', category: 'FX・DMM FX', title: 'DMM FXのミニ・通常・ラージの違い｜取引単位とコスト', desc: '1Lotの通貨数、必要証拠金、損益、原則固定スプレッドの対象を同じ条件で比較する。' },
   { slug: 'matsui-fx-auto-trading-cost', category: 'FX・自動売買', title: 'MATSUI FX自動売買は100円から？必要資金を計算', desc: '複数注文の必要証拠金と評価損を分け、100円で始める場合にも必要な余裕資金を整理する。' },
