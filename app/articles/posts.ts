@@ -1,4 +1,6 @@
 export const POSTS = [
+  { slug: 'matsui-fx-margin-call-losscut', category: 'FX・松井証券', title: 'MATSUI FXの追証とロスカット｜選べる50～90％を整理', desc: '取引終了時100％の追証判定と、個人口座で選べる50～90％のロスカット率を分ける。' },
+  { slug: 'matsui-fx-spread-rules', category: 'FX・松井証券', title: 'MATSUI FXのスプレッドは0.1銭？時間・数量・注文条件', desc: '縮小スプレッドと通常スプレッドを、コアタイム、数量上限、注文種類から整理する。' },
   { slug: 'fxtf-minimum-unit-margin', category: 'FX・FXTF', title: 'FXTFは1,000通貨から？GX・MT4のLotと必要証拠金', desc: 'GXとMT4で異なるLot表記を通貨数へ直し、1,000通貨の必要証拠金と値動きによる損益を計算する。' },
   { slug: 'fxtf-gx-mt4-mt5-difference', category: 'FX・FXTF', title: 'FXTF GX・MT4・MT5の違い｜取引商品とツールを比較', desc: 'TradingView、EA、MT5の提供商品を整理し、取引目的に合うシステムを選ぶ。' },
   { slug: 'dmm-cfd-margin-call-losscut', category: 'CFD・DMM CFD', title: 'DMM CFDの追証とロスカットの違い｜100％・50％を整理', desc: '追加証拠金、マージンカット、リアルタイムのロスカットについて、判定時点と解消方法を分ける。' },
