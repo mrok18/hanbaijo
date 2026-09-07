@@ -87,9 +87,10 @@ export default function StocksPage() {
       <section className="fx-section">
         <div className="section-heading"><div>
           <p className="section-index">04 / LEARN</p>
-          <h2>先に、計算できる状態にする</h2>
+          <h2>比較表と計算方法を使い分ける</h2>
         </div></div>
         <div className="affiliate-grid">
+          <article className="affiliate-card"><div className="affiliate-card-head"><span>COMPARE</span><b>2026-09-07確認</b></div><p className="affiliate-category">DOMESTIC STOCK FEES</p><h3>国内株4社の手数料</h3><p>GMOクリック証券、楽天証券、松井証券、DMM 株を同じ売買例で比較します。</p><Link href="/stocks/domestic-fee-comparison">比較表を見る →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>GUIDE</span><b>国内株</b></div><p className="affiliate-category">ROUND-TRIP COST</p><h3>往復コストの計算</h3><p>買付と売却の手数料、板の価格差を1つの式で整理します。</p><Link href="/articles/stock-round-trip-cost">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>GUIDE</span><b>米国株</b></div><p className="affiliate-category">FX CONVERSION</p><h3>為替コストの計算</h3><p>1ドルあたりの為替コストを、購入金額全体の円負担へ直します。</p><Link href="/articles/us-stock-fx-cost">記事を読む →</Link></article>
         </div>
@@ -105,9 +106,9 @@ export default function StocksPage() {
       </section>
 
       <section className="fx-next">
-        <div><span>NEXT</span><h2>自分の売買金額で比べる。</h2></div>
-        <p>国内株と米国株のプリセットで、手数料・為替・保有コストを円換算できます。</p>
-        <Link className="button primary" href="/tools/cost-calculator">無料計算機を開く</Link>
+        <div><span>NEXT</span><h2>4社の料金体系を比べる。</h2></div>
+        <p>同日売買と日をまたぐ売買で結果が変わる理由まで確認できます。</p>
+        <Link className="button primary" href="/stocks/domestic-fee-comparison">国内株比較を見る</Link>
       </section>
     </div>
   );

@@ -3,7 +3,7 @@
 import { useMemo, useState } from 'react';
 import { calculateRoundTripCost, type RoundTripCostInput } from '@/lib/market-data/cost';
 
-type PresetId = 'crypto' | 'fx' | 'cfd' | 'domestic-stock' | 'us-stock';
+type PresetId = 'crypto' | 'fx' | 'cfd' | 'domestic-stock' | 'us-stock' | 'futures';
 
 interface Preset {
   id: PresetId;
@@ -42,6 +42,12 @@ const PRESETS: readonly Preset[] = [
     label: '米国株',
     note: '円から購入する例',
     values: { notionalYen: 1_000_000, spreadPct: 0.05, tradingFeePct: 0.45, fixedFeesYen: 0, annualHoldingRatePct: 0, holdingDays: 0, fxConversionPct: 0.5 },
+  },
+  {
+    id: 'futures',
+    label: '先物',
+    note: '日経225miniの例',
+    values: { notionalYen: 4_000_000, spreadPct: 0.0125, tradingFeePct: 0, fixedFeesYen: 77, annualHoldingRatePct: 0, holdingDays: 0, fxConversionPct: 0 },
   },
 ] as const;
 

@@ -87,9 +87,10 @@ export default function FuturesPage() {
       <section className="fx-section">
         <div className="section-heading"><div>
           <p className="section-index">04 / LEARN</p>
-          <h2>金額の構造を、2段階で理解する</h2>
+          <h2>会社比較と金額構造をつなげる</h2>
         </div></div>
         <div className="affiliate-grid">
+          <article className="affiliate-card"><div className="affiliate-card-head"><span>COMPARE</span><b>2026-09-07確認</b></div><p className="affiliate-category">NIKKEI 225 FEES</p><h3>先物2社の手数料</h3><p>松井証券と楽天証券の標準手数料を、片道・往復で比較します。</p><Link href="/futures/nikkei225-fee-comparison">比較表を見る →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>GUIDE</span><b>計算</b></div><p className="affiliate-category">TICK VALUE</p><h3>1ティックの損益</h3><p>取引単位と呼値から、最小の値動きが何円になるかを計算します。</p><Link href="/articles/futures-tick-value">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>GUIDE</span><b>リスク</b></div><p className="affiliate-category">MARGIN</p><h3>証拠金と取引金額</h3><p>証拠金が小さく見える理由と、損益が取引金額に連動する点を整理します。</p><Link href="/articles/futures-margin">記事を読む →</Link></article>
         </div>
@@ -105,9 +106,9 @@ export default function FuturesPage() {
       </section>
 
       <section className="fx-next">
-        <div><span>NEXT</span><h2>証拠金より先に、倍率を確認する。</h2></div>
-        <p>呼値 × 取引単位 × 枚数で、最小の値動きが何円になるかを計算できます。</p>
-        <Link className="button primary" href="/articles/futures-tick-value">計算例を見る</Link>
+        <div><span>NEXT</span><h2>手数料と1ティックを並べる。</h2></div>
+        <p>手数料の差が、商品の最小値動き何回分に当たるかを確認できます。</p>
+        <Link className="button primary" href="/futures/nikkei225-fee-comparison">先物比較を見る</Link>
       </section>
     </div>
   );

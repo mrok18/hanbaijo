@@ -4,7 +4,7 @@ import CostCalculator from './CostCalculator';
 
 export const metadata: Metadata = {
   title: '取引コスト計算機｜スプレッド・手数料・金利を円換算',
-  description: '暗号資産、FX、CFD、株式のスプレッド、手数料、保有コスト、為替コストを同じ条件で円換算できる無料計算機です。',
+  description: '暗号資産、FX、CFD、株式、先物のスプレッド、手数料、保有コスト、為替コストを同じ条件で円換算できる無料計算機です。',
 };
 
 export default function CostCalculatorPage() {
@@ -18,7 +18,7 @@ export default function CostCalculatorPage() {
           同じ取引金額・保有期間にそろえて、買ってから売るまでの概算負担を計算します。
         </p>
         <div className="calculator-proof">
-          <span>登録不要</span><span>入力は端末内で計算</span><span>広告順位に不使用</span>
+          <span>登録不要</span><span>株式・先物にも対応</span><span>入力は端末内で計算</span><span>広告順位に不使用</span>
         </div>
       </header>
 
@@ -44,7 +44,8 @@ export default function CostCalculatorPage() {
         </div>
         <div>
           <p>
-            プリセットは計算方法を理解するための例です。実際の手数料、スプレッド、金利等は、商品、注文方法、時間帯、口座区分により変動します。
+            プリセットは計算方法を理解するための例です。先物の例は日経225を40,000円、miniを1枚、価格差を1ティック、往復手数料を77円と仮定しています。
+            実際の手数料、スプレッド、金利等は、商品、注文方法、時間帯、口座区分により変動します。
             利用前に各社の公式情報を確認してください。
           </p>
           <p>

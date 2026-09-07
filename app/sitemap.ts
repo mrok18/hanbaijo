@@ -4,7 +4,13 @@ import { POSTS } from './articles/posts';
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://hanbaijo.com';
   const now = new Date();
-  const detailRoutes = ['fx/fxtf', 'fx/systre-select-365', 'cfd/dmm-cfd'];
+  const detailRoutes = [
+    'fx/fxtf',
+    'fx/systre-select-365',
+    'cfd/dmm-cfd',
+    'stocks/domestic-fee-comparison',
+    'futures/nikkei225-fee-comparison',
+  ];
   return [
     { url: base, lastModified: now, changeFrequency: 'hourly', priority: 1 },
     ...['fx', 'cfd', 'stocks', 'futures', 'markets', 'tools/cost-calculator', 'articles', 'method', 'about', 'disclaimer', 'contact'].map((p) => ({
