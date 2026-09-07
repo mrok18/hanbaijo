@@ -25,11 +25,11 @@ export const SOURCE_REGISTRY: readonly SourceRegistryItem[] = [
     assetClass: 'fx',
     providerName: 'OANDA証券',
     method: 'authenticated-api',
-    documentationUrl: 'https://www.oanda.jp/platform/api',
+    documentationUrl: 'https://help.oanda.jp/oanda/faq/show/720?site_domain=default',
     approval: 'contract-required',
     canCollect: false,
     canRepublish: false,
-    note: '正式REST APIあり。口座・API契約・アクセストークンが必要。サイトでの時系列再掲載条件は別途確認する。',
+    note: '正式REST APIあり。ただしGold会員（前月50万米ドル相当以上の取引）・プロコース・NYサーバー残高25万円以上を継続して満たし、API契約とトークンが必要。再掲載条件も別途確認が必要なためMVP候補から除外。',
     reviewedAt: '2026-09-07',
   },
   {
@@ -41,7 +41,7 @@ export const SOURCE_REGISTRY: readonly SourceRegistryItem[] = [
     approval: 'permission-required',
     canCollect: false,
     canRepublish: false,
-    note: '5秒更新の公開ページはあるが、関連サービス規約に蓄積・加工・二次利用の禁止があるため、書面確認前は取得しない。',
+    note: '5秒更新の公開ページはあるが公開APIは未確認。FXアプリ規約には蓄積・加工・二次利用の禁止があり、公開Webの扱いも含め書面確認前は取得しない。',
     reviewedAt: '2026-09-07',
   },
   {
@@ -53,7 +53,7 @@ export const SOURCE_REGISTRY: readonly SourceRegistryItem[] = [
     approval: 'permission-required',
     canCollect: false,
     canRepublish: false,
-    note: '公開レートページはあるが、取引サービスの情報利用条項で第三者提供・営業利用・加工・再配信が制限されるため、許可確認前は取得しない。',
+    note: '公開レートページはあるが公開APIは未確認。サイト利用条件で無断転載・複製が制限されるため、自動取得・保存・加工・商用掲載の書面許可前は取得しない。',
     reviewedAt: '2026-09-07',
   },
   {
@@ -65,7 +65,7 @@ export const SOURCE_REGISTRY: readonly SourceRegistryItem[] = [
     approval: 'permission-required',
     canCollect: false,
     canRepublish: false,
-    note: '公開ページは参考レートと明記。公式APIおよび蓄積・再掲載許諾を確認できるまでは取得しない。',
+    note: '公開ページは参考レートと明記され、公開APIは未確認。掲載情報は許可なく転載・公開できないため、取得・蓄積・再掲載の書面許可前は取得しない。',
     reviewedAt: '2026-09-07',
   },
 ] as const;
