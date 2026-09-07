@@ -1,4 +1,6 @@
 export const POSTS = [
+  { slug: 'dmm-cfd-total-cost', category: 'CFD・DMM CFD', title: 'DMM CFDは手数料0円？スプレッド・調整額の総コスト', desc: '売買手数料0円と総コストを区別し、スプレッド、金利調整額、価格調整額、約定差を整理する。' },
+  { slug: 'dmm-cfd-margin-leverage', category: 'CFD・DMM CFD', title: 'DMM CFDの必要証拠金はいくら？日本225・金・原油で計算', desc: '指数10倍・商品20倍の計算式と銘柄ごとの取引単位を使い、1Lotの必要額を試算する。' },
   { slug: 'systre-select-365-total-cost', category: 'FX自動売買', title: 'シストレセレクト365の手数料は0円？総コストを確認', desc: '初回990円の利用料、売買手数料、スプレッド、スワップを分け、自動売買の総負担を整理する。' },
   { slug: 'systre-select-365-recommended-margin', category: 'FX自動売買', title: 'シストレセレクト365の推奨証拠金とは？最大DDを計算', desc: '現在の証拠金基準額と過去1年の最大ドローダウンから、ストラテジー運用資金の目安を計算する。' },
   { slug: 'dmm-kabu-us-stock-fee', category: '米国株・DMM 株', title: 'DMM 株の米国株手数料はいくら？為替25銭まで計算', desc: '0ドルになる条件、0.495％・上限22ドルの取引手数料、円貨決済の為替コストを分けて試算する。' },

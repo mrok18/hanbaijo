@@ -103,10 +103,25 @@ export default function CfdPage() {
         </div>
       </section>
 
+      <section className="fx-section">
+        <div className="section-heading">
+          <div>
+            <p className="section-index">04 / DMM CFD GUIDES</p>
+            <h2>必要証拠金と総コストを、数字で確認</h2>
+            <p>取引単位の違いと保有期間中の負担を、公式ルールに沿って分けて計算します。</p>
+          </div>
+        </div>
+        <div className="provider-fact-grid">
+          <article><b>MARGIN</b><h3><Link href="/articles/dmm-cfd-margin-leverage">DMM CFDの必要証拠金</Link></h3><p>指数10倍・商品20倍の計算式を、日本225・金・原油へ当てはめます。</p></article>
+          <article><b>TOTAL COST</b><h3><Link href="/articles/dmm-cfd-total-cost">DMM CFDの総コスト</Link></h3><p>売買手数料0円と、スプレッド・調整額・約定差を切り分けます。</p></article>
+          <article><b>ADJUSTMENT</b><h3><Link href="/articles/cfd-price-adjustment">CFDの価格調整額</Link></h3><p>限月切替で受払いが発生する理由と、確認すべき日程を整理します。</p></article>
+        </div>
+      </section>
+
       <section className="fx-section" aria-labelledby="cfd-partner-title">
         <div className="section-heading">
           <div>
-            <p className="section-index">04 / PARTNERED SERVICE</p>
+            <p className="section-index">05 / PARTNERED SERVICE</p>
             <h2 id="cfd-partner-title">最新の取引条件を公式サイトで確認する</h2>
             <p>以下はA8.netで提携済みの広告です。比較評価とは分離して掲載しています。</p>
           </div>

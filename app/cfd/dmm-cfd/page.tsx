@@ -16,7 +16,8 @@ export default function DmmCfdPage() {
           <h1>DMM CFDの負担を、<br />手数料0円の先まで確認。</h1>
           <p className="lede">取引手数料が無料でも、スプレッドと保有中の調整額は残ります。株価指数と商品で異なる証拠金率・取引単位も分けて整理します。</p>
           <div className="hero-actions">
-            <Link className="button secondary" href="/articles/cfd-price-adjustment">価格調整額を理解する</Link>
+            <Link className="button primary" href="/articles/dmm-cfd-total-cost">総コストを確認</Link>
+            <Link className="button secondary" href="/articles/dmm-cfd-margin-leverage">必要証拠金を計算</Link>
             <Link className="button secondary" href="/cfd">CFD比較へ戻る</Link>
           </div>
         </div>
@@ -66,6 +67,16 @@ export default function DmmCfdPage() {
         </div>
       </section>
 
+      <section className="provider-section">
+        <p className="section-index">03 / PRACTICAL GUIDES</p>
+        <h2>DMM CFDの計算ガイド</h2>
+        <div className="provider-fact-grid">
+          <article><b>MARGIN</b><h3><Link href="/articles/dmm-cfd-margin-leverage">必要証拠金を銘柄別に計算</Link></h3><p>日本225・米国ナスダック100・金・原油を同じ1Lotで比べ、取引単位と円換算の違いを確認します。</p></article>
+          <article><b>TOTAL COST</b><h3><Link href="/articles/dmm-cfd-total-cost">手数料0円の先を確認</Link></h3><p>スプレッド、金利調整額、価格調整額、約定差を取引期間ごとに分けます。</p></article>
+          <article><b>ADJUSTMENT</b><h3><Link href="/articles/cfd-price-adjustment">価格調整額の仕組み</Link></h3><p>参照限月の切替と受払いを、計算式と公式例から整理します。</p></article>
+        </div>
+      </section>
+
       <section className="provider-source">
         <div><span>SOURCES</span><strong>DMM CFD公式情報</strong></div>
         <div className="provider-source-links">
@@ -76,7 +87,7 @@ export default function DmmCfdPage() {
 
       <section className="provider-offer" aria-label="DMM CFDの広告">
         <div>
-          <p className="section-index">03 / OFFICIAL SITE</p>
+          <p className="section-index">04 / OFFICIAL SITE</p>
           <h2>対象銘柄と最新条件を確認</h2>
           <p>以下はA8.netの提携広告です。掲載報酬は、事実確認や将来の実測順位に影響しません。</p>
         </div>
