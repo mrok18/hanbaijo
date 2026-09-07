@@ -80,6 +80,8 @@ export default function DmmCfdPage() {
           <article><b>CALENDAR</b><h3><Link href="/articles/dmm-cfd-adjustment-calendar">調整額カレンダーの読み方</Link></h3><p>金利調整額と価格調整額の対象銘柄、発生タイミング、注文取消しを確認します。</p></article>
           <article><b>GOLD VS OIL</b><h3><Link href="/articles/dmm-cfd-gold-vs-oil-cost">金と原油のコスト比較</Link></h3><p>取引単位、必要証拠金、金利調整額と価格調整額の違いを同じ表で確認します。</p></article>
           <article><b>AGRICULTURE</b><h3><Link href="/articles/dmm-cfd-agriculture-trading-hours">農産物CFDの取引時間</Link></h3><p>コーン・大豆・小麦などの途中休止、夏時間・冬時間を一覧で確認します。</p></article>
+          <article><b>ENERGY</b><h3><Link href="/articles/dmm-cfd-natural-gas-vs-oil">天然ガスと原油を比較</Link></h3><p>1Lotの取引単位、必要証拠金、価格調整額を同じ条件で整理します。</p></article>
+          <article><b>14 PRODUCTS</b><h3><Link href="/articles/dmm-cfd-commodity-lot-list">商品14銘柄の1Lot一覧</Link></h3><p>貴金属、エネルギー、農産物の取引単位を一つの早見表で確認します。</p></article>
         </div>
       </section>
 
