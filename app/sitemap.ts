@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'fx/lion-fx',
     'fx/minimum-trade-unit-comparison',
     'fx/losscut-comparison',
+    'fx/usdjpy-spread-comparison',
     'fx/jfx',
     'fx/minna-fx',
     'fx/au-kabucom-fx',
