@@ -1,4 +1,6 @@
 export const POSTS = [
+  { slug: 'systre-select-365-total-cost', category: 'FX自動売買', title: 'シストレセレクト365の手数料は0円？総コストを確認', desc: '初回990円の利用料、売買手数料、スプレッド、スワップを分け、自動売買の総負担を整理する。' },
+  { slug: 'systre-select-365-recommended-margin', category: 'FX自動売買', title: 'シストレセレクト365の推奨証拠金とは？最大DDを計算', desc: '現在の証拠金基準額と過去1年の最大ドローダウンから、ストラテジー運用資金の目安を計算する。' },
   { slug: 'dmm-kabu-us-stock-fee', category: '米国株・DMM 株', title: 'DMM 株の米国株手数料はいくら？為替25銭まで計算', desc: '0ドルになる条件、0.495％・上限22ドルの取引手数料、円貨決済の為替コストを分けて試算する。' },
   { slug: 'dmm-kabu-domestic-round-trip-fee', category: '国内株・DMM 株', title: 'DMM 株の国内株手数料｜買って売る往復コストを計算', desc: '1注文ごとの料金表を使い、5万円から300万円超までの買付・売却合計を具体的に計算する。' },
   { slug: 'dmm-fx-margin-call-losscut', category: 'FX・DMM FX', title: 'DMM FXの追証とロスカットの違い｜100％と50％を整理', desc: '毎営業日の追加証拠金判定と、リアルタイムのロスカットを分け、証拠金維持率の読み方を整理する。' },

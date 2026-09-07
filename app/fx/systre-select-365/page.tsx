@@ -73,9 +73,19 @@ export default function SystrePage() {
         </div>
       </section>
 
+      <section className="provider-section" aria-labelledby="systre-related-guides">
+        <p className="section-index">03 / RELATED GUIDES</p>
+        <h2 id="systre-related-guides">稼働前に資金と総コストを確認</h2>
+        <div className="provider-directory">
+          <Link href="/articles/systre-select-365-recommended-margin"><span>GUIDE</span><h3>推奨証拠金と最大DD</h3><p>現在の証拠金基準額と過去1年の最大ドローダウンを分けて計算します。</p><b>記事を読む →</b></Link>
+          <Link href="/articles/systre-select-365-total-cost"><span>GUIDE</span><h3>手数料0円の外側にあるコスト</h3><p>初回利用料、スプレッド、スワップ、取引回数による総負担を整理します。</p><b>記事を読む →</b></Link>
+          <Link href="/articles/fx-swap-three-days"><span>GUIDE</span><h3>スワップが複数日分付く理由</h3><p>建玉を持ち越す自動売買で確認したい、付与日数の変則を解説します。</p><b>記事を読む →</b></Link>
+        </div>
+      </section>
+
       <section className="provider-offer" aria-label="シストレセレクト365の広告">
         <div>
-          <p className="section-index">03 / OFFICIAL SITE</p>
+          <p className="section-index">04 / OFFICIAL SITE</p>
           <h2>ストラテジーと最新条件を確認</h2>
           <p>以下はA8.netの提携広告です。掲載報酬は、事実確認や将来の実測順位に影響しません。</p>
         </div>
