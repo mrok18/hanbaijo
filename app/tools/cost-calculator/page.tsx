@@ -29,6 +29,7 @@ export default function CostCalculatorPage() {
         <Link href="/articles/dmm-cfd-margin-leverage">CFDの必要証拠金</Link>
         <Link href="/articles/dmm-cfd-adjustment-calendar">調整額カレンダー</Link>
         <Link href="/articles/dmm-cfd-trading-hours">銘柄別の取引時間</Link>
+        <Link href="/tools/cfd-margin-calculator">商品CFD証拠金計算機</Link>
       </nav>
 
       <section className="calculator-explain">
