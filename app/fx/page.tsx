@@ -109,10 +109,21 @@ export default function FxPage() {
         </div>
       </section>
 
+      <section className="fx-section" aria-labelledby="fx-unit-comparison">
+        <div className="section-heading">
+          <div>
+            <p className="section-index">04 / MINIMUM TRADE SIZE</p>
+            <h2 id="fx-unit-comparison">1通貨と1,000通貨の差を、必要資金で見る</h2>
+            <p>米ドル円150円・レバレッジ25倍の共通条件で、4社の最低取引単位を円換算しました。</p>
+          </div>
+          <Link className="text-link" href="/fx/minimum-trade-unit-comparison">最低取引単位を比較 →</Link>
+        </div>
+      </section>
+
       <section className="fx-section" aria-labelledby="fx-provider-directory">
         <div className="section-heading">
           <div>
-            <p className="section-index">04 / COST FACT SHEETS</p>
+            <p className="section-index">05 / COST FACT SHEETS</p>
             <h2 id="fx-provider-directory">FX会社別に、適用条件まで確認する</h2>
             <p>広告のスプレッドだけでなく、最小数量・ロスカット・適用時間外を確認します。現在は広告リンクなしです。</p>
           </div>
@@ -129,7 +140,7 @@ export default function FxPage() {
       <section className="fx-section" aria-labelledby="fx-partner-title">
         <div className="section-heading">
           <div>
-            <p className="section-index">05 / PARTNERED SERVICES</p>
+            <p className="section-index">06 / PARTNERED SERVICES</p>
             <h2 id="fx-partner-title">取引条件を公式サイトで確認する</h2>
             <p>以下はA8.netで提携済みの広告です。報酬額は、比較結果や掲載順位に反映しません。</p>
           </div>

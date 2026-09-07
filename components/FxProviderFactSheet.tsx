@@ -12,7 +12,7 @@ export default function FxProviderFactSheet({ provider }: { provider: FxProvider
           <p className="lede">{provider.summary}</p>
           <div className="hero-actions">
             <Link className="button primary" href="/tools/cost-calculator">取引数量で試算</Link>
-            <Link className="button secondary" href="/fx">FX比較へ戻る</Link>
+            <Link className="button secondary" href="/fx/minimum-trade-unit-comparison">最低取引単位を比較</Link>
           </div>
         </div>
         <aside className="provider-stamp">

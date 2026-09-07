@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'fx/gmo-click',
     'fx/lightfx',
     'fx/lion-fx',
+    'fx/minimum-trade-unit-comparison',
     'cfd/dmm-cfd',
     'stocks/domestic-fee-comparison',
     'stocks/gmo-click',

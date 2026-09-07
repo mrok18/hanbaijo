@@ -445,6 +445,7 @@ article li + li { margin-top: 8px; }
 .comparison-intro aside strong { display: block; margin-top: 9px; font: 800 24px/1 ui-monospace, SFMono-Regular, Consolas, monospace; }
 .comparison-intro aside p { margin: 15px 0 0; color: rgba(255, 255, 255, .63); font-size: 13px; }
 .futures-comparison-intro h1 em { color: #c55e2a; }
+.fx-unit-comparison-intro h1 em { color: #278cc7; }
 .comparison-result { padding-top: 30px; }
 .comparison-result-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 25px; margin-bottom: 22px; }
 .comparison-result-head h2 { margin: 0; font-size: clamp(27px, 3.4vw, 41px); }
@@ -458,6 +459,7 @@ article li + li { margin-top: 8px; }
 .comparison-table .result-value { color: var(--blue); font-size: 17px; font-weight: 850; }
 .comparison-scope { color: var(--muted); font-size: 13px; font-weight: 750; }
 .futures-fee-table thead th[colspan] { text-align: center; }
+.fx-unit-table { min-width: 980px; }
 .comparison-section { padding-top: 88px; }
 .comparison-section > h2, .split-explain h2 { margin: 0; font-size: clamp(27px, 3.5vw, 41px); }
 .split-explain { display: grid; grid-template-columns: .85fr 1.15fr; gap: clamp(45px, 8vw, 100px); align-items: start; }
