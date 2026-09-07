@@ -41,7 +41,8 @@ export default function Page() {
         <p>内容は2026年9月7日に確認しました。</p>
       </section>
 
-      <p><Link href="/fx/losscut-comparison">FX8社のロスカット基準比較を見る →</Link></p>
+      <p><Link href="/fx/losscut-comparison">FX9社のロスカット基準比較を見る →</Link></p>
+      <p><Link href="/articles/dmm-fx-margin-call-losscut">DMM FXの追証とロスカットを具体例で見る →</Link></p>
       <p><Link href="/articles/fx-required-margin">必要証拠金の計算方法を見る →</Link></p>
     </article>
   );

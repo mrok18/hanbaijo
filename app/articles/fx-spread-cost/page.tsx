@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import AffiliateOfferCard from '@/components/AffiliateOfferCard';
+import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
   title: 'FXのスプレッドを円に直す方法',
@@ -50,7 +52,13 @@ export default function Page() {
         </p>
       </div>
 
+      <section className="article-affiliate" aria-label="FXTFの広告">
+        <AffiliateOfferCard offer={AFFILIATE_OFFERS.fxtf} />
+        <p className="affiliate-disclosure">広告リンクから申込みが成立すると、当サイトが報酬を受け取る場合があります。計算方法や比較順位とは分けて掲載しています。</p>
+      </section>
+
       <p><Link href="/tools/cost-calculator">取引コスト計算機で試す →</Link></p>
+      <p><Link href="/fx/usdjpy-spread-comparison">米ドル円スプレッド10社比較を見る →</Link></p>
       <p><Link href="/fx">FXコスト比較へ戻る →</Link></p>
     </article>
   );

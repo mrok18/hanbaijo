@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import AffiliateOfferCard from '@/components/AffiliateOfferCard';
+import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
   title: 'FXのスワップが3日分・4日分付くのはなぜ？',
@@ -31,6 +33,11 @@ export default function Page() {
 
       <div className="callout"><strong>将来の受取額は固定されません</strong><p>政策金利だけでなく市場状況や会社の提示条件でも変動し、受取から支払いへ転じる場合があります。過去カレンダーは将来の金額を保証しません。</p></div>
 
+      <section className="article-affiliate" aria-label="FXTFの広告">
+        <AffiliateOfferCard offer={AFFILIATE_OFFERS.fxtf} />
+        <p className="affiliate-disclosure">広告リンクから申込みが成立すると、当サイトが報酬を受け取る場合があります。スワップの解説や比較結果とは分けて掲載しています。</p>
+      </section>
+
       <section className="article-sources" aria-labelledby="sources">
         <h2 id="sources">参照した公式資料</h2>
         <ul>
@@ -41,7 +48,8 @@ export default function Page() {
         <p>内容は2026年9月7日に確認しました。</p>
       </section>
 
-      <p><Link href="/fx/swap-calendar-comparison">スワップカレンダー9社比較を見る →</Link></p>
+      <p><Link href="/fx/swap-calendar-comparison">スワップカレンダー10社比較を見る →</Link></p>
+      <p><Link href="/fx/fxtf">FXTFのコストシートを見る →</Link></p>
       <p><Link href="/articles/fx-swap-calculation">スワップの計算方法を見る →</Link></p>
     </article>
   );

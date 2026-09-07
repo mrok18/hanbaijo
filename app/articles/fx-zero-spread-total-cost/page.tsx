@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import AffiliateOfferCard from '@/components/AffiliateOfferCard';
+import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
   title: 'FXの0.0銭は本当に無料？別手数料まで総額で確認',
@@ -31,6 +33,11 @@ export default function Page() {
 
       <div className="callout"><strong>当サイトでは「ゼロコスト」と表現しません</strong><p>スプレッド、手数料、約定、保有費を分離し、確認できた公称条件だけを掲載します。FXTFの取引レートは同社回答に従い、自動取得・継続保存・統計加工・再掲載を行いません。</p></div>
 
+      <section className="article-affiliate" aria-label="FXTFの広告">
+        <AffiliateOfferCard offer={AFFILIATE_OFFERS.fxtf} />
+        <p className="affiliate-disclosure">広告リンクから申込みが成立すると、当サイトが報酬を受け取る場合があります。ゼロスプレッドの検証や注意点とは分けて掲載しています。</p>
+      </section>
+
       <section className="article-sources" aria-labelledby="sources">
         <h2 id="sources">参照した公式資料</h2>
         <ul>
@@ -40,7 +47,8 @@ export default function Page() {
         <p>内容・条件は2026年9月7日に確認しました。</p>
       </section>
 
-      <p><Link href="/fx/usdjpy-spread-comparison">米ドル円スプレッド9社比較を見る →</Link></p>
+      <p><Link href="/fx/usdjpy-spread-comparison">米ドル円スプレッド10社比較を見る →</Link></p>
+      <p><Link href="/fx/fxtf">FXTFのコストシートを見る →</Link></p>
       <p><Link href="/tools/cost-calculator">取引数量から円額を試算する →</Link></p>
     </article>
   );

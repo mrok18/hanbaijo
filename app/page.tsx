@@ -143,11 +143,11 @@ export default async function Home() {
 
       <section className="fx-launch" aria-labelledby="fx-launch-title">
         <div className="fx-launch-copy">
-          <p className="section-index inverse">NOW BUILDING / FX</p>
+          <p className="section-index inverse">COMPARE / FX</p>
           <h2 id="fx-launch-title">FXは「0.2銭」だけでは比べない。</h2>
           <p>
             公称スプレッドを円換算し、約定・スワップ・時間帯による変化まで分けて比較します。
-            実測レートは利用許諾後に追加し、現在は比較基準と計算機を先行公開しています。
+            10社の公称条件を比較し、実測レートは利用許諾を確認できた提供元から追加します。
           </p>
           <Link href="/fx">FXコスト比較ページへ →</Link>
         </div>

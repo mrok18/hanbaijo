@@ -30,9 +30,9 @@ export default function StocksPage() {
             比較表に必要な項目がそろった段階で追加します。
           </p>
           <dl>
-            <div><dt>国内株</dt><dd>計算基準を公開</dd></div>
-            <div><dt>米国株</dt><dd>為替コストを公開</dd></div>
-            <div><dt>会社比較</dt><dd>公式条件を調査中</dd></div>
+            <div><dt>国内株</dt><dd>4社比較を公開</dd></div>
+            <div><dt>米国株</dt><dd>手数料・為替を公開</dd></div>
+            <div><dt>会社別</dt><dd>4社のシートを公開</dd></div>
           </dl>
         </aside>
       </section>
@@ -95,6 +95,8 @@ export default function StocksPage() {
           <article className="affiliate-card"><div className="affiliate-card-head"><span>GUIDE</span><b>国内株</b></div><p className="affiliate-category">ROUND-TRIP COST</p><h3>往復コストの計算</h3><p>買付と売却の手数料、板の価格差を1つの式で整理します。</p><Link href="/articles/stock-round-trip-cost">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>GUIDE</span><b>米国株</b></div><p className="affiliate-category">FX CONVERSION</p><h3>為替コストの計算</h3><p>1ドルあたりの為替コストを、購入金額全体の円負担へ直します。</p><Link href="/articles/us-stock-fx-cost">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>GUIDE</span><b>松井証券</b></div><p className="affiliate-category">ACCOUNT TYPES</p><h3>FX専用口座と総合口座</h3><p>FXだけ使う場合と、株・NISA・先物へ広げる場合の入口を整理します。</p><Link href="/articles/matsui-account-types">記事を読む →</Link></article>
+          <article className="affiliate-card"><div className="affiliate-card-head"><span>GUIDE</span><b>DMM 株</b></div><p className="affiliate-category">DOMESTIC ROUND TRIP</p><h3>国内株の往復手数料</h3><p>1注文ごとの料金表から、買付と売却の合計額を計算します。</p><Link href="/articles/dmm-kabu-domestic-round-trip-fee">記事を読む →</Link></article>
+          <article className="affiliate-card"><div className="affiliate-card-head"><span>GUIDE</span><b>DMM 株</b></div><p className="affiliate-category">US STOCK TOTAL COST</p><h3>米国株の手数料と為替</h3><p>0.495％の手数料と片道25銭の為替コストを分けて計算します。</p><Link href="/articles/dmm-kabu-us-stock-fee">記事を読む →</Link></article>
         </div>
       </section>
 
@@ -111,7 +113,7 @@ export default function StocksPage() {
         <div className="section-heading"><div>
           <p className="section-index">05 / COST FACT SHEETS</p>
           <h2 id="stock-provider-directory">証券会社別に、無料条件まで確認する</h2>
-          <p>比較表の数字を、対象外取引や追加費用まで掘り下げます。現在は広告リンクなしで掲載しています。</p>
+          <p>比較表の数字を、対象外取引や追加費用まで会社別に掘り下げます。広告リンクの有無は各ページで明示します。</p>
         </div></div>
         <div className="provider-directory">
           {STOCK_PROVIDER_LIST.map((provider) => (

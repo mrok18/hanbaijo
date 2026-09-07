@@ -59,6 +59,7 @@ export default function Page() {
       </section>
 
       <p><Link href="/tools/cost-calculator">米国株プリセットで試す →</Link></p>
+      <p><Link href="/articles/dmm-kabu-us-stock-fee">DMM 株の米国株手数料と為替コストを見る →</Link></p>
       <p><Link href="/stocks">株式コスト比較へ戻る →</Link></p>
     </article>
   );
