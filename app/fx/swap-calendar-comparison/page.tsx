@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'FXスワップカレンダー9社比較｜表示単位・付与日数の見方',
-  description: 'FX9サービスのスワップポイントについて、公式の確認場所、米ドル円の表示単位、更新・付与タイミングを比較。金額を同条件へ直す方法も解説します。',
+  title: 'FXスワップカレンダー10社比較｜表示単位・付与日数の見方',
+  description: 'FX10サービスのスワップポイントについて、公式の確認場所、米ドル円の表示単位、更新・付与タイミングを比較。金額を同条件へ直す方法も解説します。',
 };
 
 const PROVIDERS = [
@@ -17,6 +17,10 @@ const PROVIDERS = [
   {
     name: 'GMOクリック証券 FXネオ', href: '/fx/gmo-click', where: '公式スワップカレンダー', unit: '1万通貨あたり', timing: 'NYクローズ後に発生',
     note: '反映処理後、現金として授受。祝日等でロールオーバーされない営業日あり', source: 'https://www.click-sec.com/corp/guide/fxneo/swplog/',
+  },
+  {
+    name: 'DMM FX', href: '/fx/dmm-fx', where: '公式スワップカレンダー', unit: '1Lotあたり', timing: '営業日切替後に付与',
+    note: '通常1Lotは1万通貨、ミニは1,000通貨。夏時間6時・冬時間7時に営業日切替', source: 'https://fx.dmm.com/fx/service/swapcalendar/',
   },
   {
     name: 'LIGHT FX', href: '/fx/lightfx', where: '公式スワップカレンダー', unit: '1Lot＝1万通貨', timing: '18:00公表',
@@ -51,7 +55,7 @@ export default function Page() {
         <div>
           <p className="page-kicker">FX SWAP CALENDAR / PUBLISHED DATA</p>
           <h1>スワップの金額より先に、<br /><em>単位と付与日数をそろえる。</em></h1>
-          <p className="lede">同じ「100円」でも、1,000通貨か1万通貨か、1日分か3日分かで意味が変わります。9社の公式な確認場所と表示ルールを整理しました。</p>
+          <p className="lede">同じ「100円」でも、1,000通貨か1万通貨か、1日分か3日分かで意味が変わります。10社の公式な確認場所と表示ルールを整理しました。</p>
         </div>
         <aside>
           <span>CHECKED</span><strong>2026-09-07</strong>
@@ -61,7 +65,7 @@ export default function Page() {
 
       <section className="comparison-result" aria-labelledby="fx-swap-title">
         <div className="comparison-result-head">
-          <div><p className="section-index">01 / WHERE TO CHECK</p><h2 id="fx-swap-title">9社の確認場所と表示単位</h2></div>
+          <div><p className="section-index">01 / WHERE TO CHECK</p><h2 id="fx-swap-title">10社の確認場所と表示単位</h2></div>
           <span className="comparison-scope">米ドル/円を基準に整理</span>
         </div>
         <div className="data-panel"><div className="table-scroll">

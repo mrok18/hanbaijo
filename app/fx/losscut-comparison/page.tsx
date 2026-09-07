@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'FX8社のロスカット基準比較｜追証・アラートとの違い',
-  description: '国内FX8社の個人口座について、ロスカットの判定指標・発動基準・追証やアラートを公式取引ルールから比較します。',
+  title: 'FX9社のロスカット基準比較｜追証・アラートとの違い',
+  description: '国内FX9社の個人口座について、ロスカットの判定指標・発動基準・追証やアラートを公式取引ルールから比較します。',
 };
 
 const PROVIDERS = [
@@ -15,6 +15,11 @@ const PROVIDERS = [
     name: 'GMOクリック証券 FXネオ', href: '/fx/gmo-click', metric: '証拠金維持率', trigger: '50%を下回る',
     before: 'アラート100%。NYクローズ時点で100%未満は追加証拠金',
     note: '強制決済時は原則1万通貨あたり税込500円', source: 'https://www.click-sec.com/corp/guide/fxneo/rule/',
+  },
+  {
+    name: 'DMM FX', href: '/fx/dmm-fx', metric: '証拠金維持率', trigger: '50%以下',
+    before: '営業日終了時点で100%未満は追加証拠金',
+    note: '未約定注文を取消し、全未決済ポジションを強制決済', source: 'https://fx.dmm.com/support/faqs/article/00128/',
   },
   {
     name: 'LIGHT FX', href: '/fx/lightfx', metric: '証拠金維持率', trigger: '100%以下',
@@ -55,7 +60,7 @@ export default function Page() {
         <div>
           <p className="page-kicker">FX LOSSCUT RULES / PUBLISHED DATA</p>
           <h1>ロスカット率を、<br /><em>同じ数字だと思わない。</em></h1>
-          <p className="lede">「維持率100%」と「使用率100%」では、数字の向きが逆です。8社の個人口座について、判定指標、強制決済、アラート・追証を分けて整理しました。</p>
+          <p className="lede">「維持率100%」と「使用率100%」では、数字の向きが逆です。9社の個人口座について、判定指標、強制決済、アラート・追証を分けて整理しました。</p>
         </div>
         <aside>
           <span>CHECKED</span><strong>2026-09-07</strong>

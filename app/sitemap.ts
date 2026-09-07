@@ -7,6 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const detailRoutes = [
     'fx/fxtf',
     'fx/systre-select-365',
+    'fx/dmm-fx',
     'fx/matsui',
     'fx/gmo-click',
     'fx/lightfx',

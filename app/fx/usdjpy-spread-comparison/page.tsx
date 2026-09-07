@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: '米ドル円スプレッド9社比較｜1万通貨の公称コストと時間帯',
-  description: '国内FX9サービスの米ドル/円について、公称スプレッド、適用時間、時間外水準、数量条件を公式情報から比較し、1万通貨の円額へ換算します。',
+  title: '米ドル円スプレッド10社比較｜1万通貨の公称コストと時間帯',
+  description: '国内FX10サービスの米ドル/円について、公称スプレッド、適用時間、時間外水準、数量条件を公式情報から比較し、1万通貨の円額へ換算します。',
 };
 
 const PROVIDERS = [
@@ -30,6 +30,11 @@ const PROVIDERS = [
     name: 'GMOクリック証券 FXネオ', href: '/fx/gmo-click', spread: '0.2銭', cost: '20円', hours: '9:00〜翌3:00', offHours: '3.8銭',
     condition: '通常銘柄の公称値。大口銘柄は原則固定の対象外',
     source: 'https://www.click-sec.com/corp/guide/fxneo/commission_list/',
+  },
+  {
+    name: 'DMM FX', href: '/fx/dmm-fx', spread: '0.2銭', cost: '20円', hours: '9:00〜翌5:00', offHours: '0.2〜3.9銭',
+    condition: '通常USD/JPYの公称値。ミニ・ラージ通貨ペアは原則固定の対象外',
+    source: 'https://fx.dmm.com/fx/aboutfx/spread/',
   },
   {
     name: 'ヒロセ通商 LION FX', href: '/fx/lion-fx', spread: '0.2銭', cost: '20円', hours: '9:00〜翌3:00', offHours: '5.9銭',

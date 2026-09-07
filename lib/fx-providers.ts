@@ -18,6 +18,23 @@ export interface FxProvider {
 }
 
 export const FX_PROVIDERS: Record<string, FxProvider> = {
+  'dmm-fx': {
+    slug: 'dmm-fx',
+    name: 'DMM FX',
+    headline: '通常・ミニ・ラージで、1Lotの通貨数が変わる。',
+    summary: '取引手数料0円だけでなく、通常通貨ペアとミニ通貨ペアの最低数量、スプレッド、追証とロスカットの違いを整理します。',
+    minTrade: 'ミニ1,000通貨単位',
+    costFocus: '取引手数料0円。通常・ミニ・ラージの取引条件を分離',
+    caution: '通常通貨ペアの1Lotは1万通貨、ミニ通貨ペアは1,000通貨です。ミニ・ラージ通貨ペアには基準スプレッド（原則固定）がありません。',
+    facts: [
+      { label: '最低取引単位', value: '1,000通貨', note: 'ミニ通貨ペア' },
+      { label: '通常1Lot', value: '1万通貨', note: '通常・ラージ通貨ペア' },
+      { label: '取引手数料', value: '0円', note: 'スプレッドは別' },
+      { label: 'ロスカット', value: '維持率50%以下', note: '全未決済ポジションを強制決済' },
+    ],
+    checks: ['通常・ミニ・ラージの取引単位', 'スプレッドのコアタイムと例外', '維持率100%未満の追加証拠金', '維持率50%以下のロスカットと元本超過リスク'],
+    sources: [{ label: 'サービス概要', href: 'https://fx.dmm.com/fx/service/outline/' }, { label: '取引単位', href: 'https://fx.dmm.com/support/faqs/article/00194/' }, { label: '重要事項', href: 'https://fx.dmm.com/policy/risk/' }],
+  },
   matsui: {
     slug: 'matsui',
     name: 'MATSUI FX',

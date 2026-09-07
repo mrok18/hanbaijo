@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'FXの最低取引単位比較｜1通貨・1,000通貨の必要資金を試算',
-  description: '国内FX8社の最低取引単位を比較。米ドル円150円・レバレッジ25倍の共通条件で、1通貨・1,000通貨の取引金額と理論証拠金を試算します。',
+  title: 'FX9社の最低取引単位比較｜1通貨・1,000通貨の必要資金',
+  description: '国内FX9社の最低取引単位を比較。米ドル円150円・レバレッジ25倍の共通条件で、1通貨・1,000通貨の取引金額と理論証拠金を試算します。',
 };
 
 const PROVIDERS = [
@@ -14,6 +14,15 @@ const PROVIDERS = [
     margin: '6円',
     exception: '1通貨単位から取引可能',
     source: 'https://www.matsui.co.jp/fx/',
+  },
+  {
+    name: 'DMM FX',
+    href: '/fx/dmm-fx',
+    minimum: 'ミニ1,000通貨',
+    notional: '15万円',
+    margin: '6,000円',
+    exception: '通常・ラージ通貨ペアは1万通貨。ミニは4通貨ペア',
+    source: 'https://fx.dmm.com/fx/service/outline/',
   },
   {
     name: 'GMOクリック証券 FXネオ',
@@ -87,7 +96,7 @@ export default function Page() {
         <div>
           <p className="page-kicker">FX MINIMUM TRADE SIZE / PUBLISHED DATA</p>
           <h1>FXの最低取引単位を、<br /><em>必要資金に直す。</em></h1>
-          <p className="lede">「1通貨」と「1,000通貨」では、最初に持つポジションが1,000倍違います。8社の公式条件をそろえ、米ドル円の同じ価格で資金差を試算しました。</p>
+          <p className="lede">「1通貨」と「1,000通貨」では、最初に持つポジションが1,000倍違います。9社の公式条件をそろえ、米ドル円の同じ価格で資金差を試算しました。</p>
         </div>
         <aside>
           <span>CHECKED</span><strong>2026-09-07</strong>
