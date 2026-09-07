@@ -3,7 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import type { AffiliateOffer } from '@/lib/affiliates';
 import type { FxProvider } from '@/lib/fx-providers';
 
-export default function FxProviderFactSheet({ provider, affiliateOffer }: { provider: FxProvider; affiliateOffer?: AffiliateOffer }) {
+export default function FxProviderFactSheet({ provider, affiliateOffer, relatedArticles = [] }: { provider: FxProvider; affiliateOffer?: AffiliateOffer; relatedArticles?: { href: string; title: string; description: string }[] }) {
   return (
     <div className="provider-page fx-provider-page">
       <section className="provider-hero provider-compact-hero fx-provider-hero">
@@ -73,6 +73,18 @@ export default function FxProviderFactSheet({ provider, affiliateOffer }: { prov
           </section>
           <p className="affiliate-disclosure">FXは元本および利益が保証されず、預けた証拠金を上回る損失が生じる場合があります。契約締結前交付書面を確認してください。</p>
         </>
+      )}
+
+      {relatedArticles.length > 0 && (
+        <section className="provider-section" aria-labelledby={`${provider.slug}-related-guides`}>
+          <p className="section-index">RELATED GUIDES</p>
+          <h2 id={`${provider.slug}-related-guides`}>このサービスを検討する前に読む</h2>
+          <div className="provider-directory">
+            {relatedArticles.map((article) => (
+              <Link href={article.href} key={article.href}><span>GUIDE</span><h3>{article.title}</h3><p>{article.description}</p><b>記事を読む →</b></Link>
+            ))}
+          </div>
+        </section>
       )}
 
       <p className="provider-back"><Link href="/fx">FXコスト比較へ戻る →</Link></p>

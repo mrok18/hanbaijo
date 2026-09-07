@@ -3,4 +3,9 @@ import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 import { FX_PROVIDERS } from '@/lib/fx-providers';
 
 export const metadata = { title: 'MATSUI FXの取引コスト・最小取引単位', description: 'MATSUI FXの1通貨単位、取引手数料、レバレッジコース、スプレッドの確認方法を公式情報から整理します。' };
-export default function Page() { return <FxProviderFactSheet provider={FX_PROVIDERS.matsui} affiliateOffer={AFFILIATE_OFFERS['matsui-fx']} />; }
+export default function Page() {
+  return <FxProviderFactSheet provider={FX_PROVIDERS.matsui} affiliateOffer={AFFILIATE_OFFERS['matsui-fx']} relatedArticles={[
+    { href: '/articles/matsui-fx-one-currency', title: 'MATSUI FXは100円から？', description: '1通貨の必要証拠金と、為替が1円動いたときの損益を計算します。' },
+    { href: '/articles/matsui-account-types', title: 'FX専用口座と総合口座の違い', description: 'FXだけ使う場合と、株・NISA・先物へ広げる場合の入口を整理します。' },
+  ]} />;
+}
