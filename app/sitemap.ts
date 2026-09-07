@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'fx/lightfx',
     'fx/lion-fx',
     'fx/minimum-trade-unit-comparison',
+    'fx/losscut-comparison',
     'fx/jfx',
     'fx/minna-fx',
     'fx/au-kabucom-fx',

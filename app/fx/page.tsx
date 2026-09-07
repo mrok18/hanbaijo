@@ -112,14 +112,17 @@ export default function FxPage() {
         </div>
       </section>
 
-      <section className="fx-section" aria-labelledby="fx-unit-comparison">
+      <section className="fx-section" aria-labelledby="fx-guide-comparison">
         <div className="section-heading">
           <div>
-            <p className="section-index">04 / MINIMUM TRADE SIZE</p>
-            <h2 id="fx-unit-comparison">1通貨と1,000通貨の差を、必要資金で見る</h2>
-            <p>米ドル円150円・レバレッジ25倍の共通条件で、8社の最低取引単位を円換算しました。</p>
+            <p className="section-index">04 / COMPARISON GUIDES</p>
+            <h2 id="fx-guide-comparison">条件差を、共通の軸で比べる</h2>
+            <p>最低取引単位とロスカットを、それぞれ独立した比較表で確認できます。</p>
           </div>
-          <Link className="text-link" href="/fx/minimum-trade-unit-comparison">最低取引単位を比較 →</Link>
+        </div>
+        <div className="provider-directory comparison-guide-directory">
+          <Link href="/fx/minimum-trade-unit-comparison"><span>TRADE SIZE</span><h3>最低取引単位を比較</h3><p>1通貨・1,000通貨を必要資金へ換算</p><b>8社比較を見る →</b></Link>
+          <Link href="/fx/losscut-comparison"><span>RISK RULE</span><h3>ロスカット基準を比較</h3><p>維持率・使用率・追証を分けて確認</p><b>8社比較を見る →</b></Link>
         </div>
       </section>
 
