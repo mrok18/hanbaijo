@@ -1,4 +1,6 @@
 export const POSTS = [
+  { slug: 'systre-select-365-losscut-margin-shortage', category: 'FX自動売買', title: 'シストレセレクト365のロスカット｜有効比率100％と証拠金不足', desc: '1分ごとのロスカット、150％のアラート、取引終了後の証拠金不足を分ける。' },
+  { slug: 'systre-select-365-vs-otc-fx', category: 'FX自動売買', title: 'シストレセレクト365と店頭FXの違い｜取引所FXを選ぶ意味', desc: '価格提示、スワップ、手数料、証拠金から、くりっく365と店頭FXの違いを整理する。' },
   { slug: 'matsui-fx-margin-call-losscut', category: 'FX・松井証券', title: 'MATSUI FXの追証とロスカット｜選べる50～90％を整理', desc: '取引終了時100％の追証判定と、個人口座で選べる50～90％のロスカット率を分ける。' },
   { slug: 'matsui-fx-spread-rules', category: 'FX・松井証券', title: 'MATSUI FXのスプレッドは0.1銭？時間・数量・注文条件', desc: '縮小スプレッドと通常スプレッドを、コアタイム、数量上限、注文種類から整理する。' },
   { slug: 'fxtf-minimum-unit-margin', category: 'FX・FXTF', title: 'FXTFは1,000通貨から？GX・MT4のLotと必要証拠金', desc: 'GXとMT4で異なるLot表記を通貨数へ直し、1,000通貨の必要証拠金と値動きによる損益を計算する。' },
