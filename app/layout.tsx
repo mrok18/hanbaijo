@@ -56,6 +56,8 @@ gtag('config', '${GA_ID}');`}
             </Link>
             <nav aria-label="メインナビゲーション">
               <Link href="/fx">FX</Link>
+              <Link href="/stocks">株式</Link>
+              <Link href="/futures">先物</Link>
               <Link href="/markets">対象商品</Link>
               <Link href="/tools/cost-calculator">計算機</Link>
               <Link href="/articles">知る</Link>
@@ -80,6 +82,8 @@ gtag('config', '${GA_ID}');`}
             <div className="footer-links" aria-label="フッターナビゲーション">
               <Link href="/fx">FXコスト比較</Link>
               <Link href="/cfd">CFDコスト比較</Link>
+              <Link href="/stocks">株式コスト比較</Link>
+              <Link href="/futures">先物コスト比較</Link>
               <Link href="/markets">対象商品</Link>
               <Link href="/tools/cost-calculator">取引コスト計算機</Link>
               <Link href="/articles">解説記事</Link>

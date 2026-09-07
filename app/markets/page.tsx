@@ -39,7 +39,7 @@ export default function Markets() {
         <ol className="roadmap-list">
           <li>
             <b>01</b>
-            <div><strong>FXの実測を追加</strong><p>USD/JPYなど主要通貨ペアから開始し、平均値だけでなく中央値・上位5%・時間帯別の広がりを残します。</p></div>
+            <div><strong>各商品の比較基準を公開</strong><p>FX、CFD、株式、先物について、何を同じ条件にそろえるかを先に公開します。</p></div>
           </li>
           <li>
             <b>02</b>
@@ -47,7 +47,7 @@ export default function Markets() {
           </li>
           <li>
             <b>03</b>
-            <div><strong>CFD、株式、先物へ展開</strong><p>各市場で比較可能な指標を定義してからデータを公開します。</p></div>
+            <div><strong>許諾済みデータを実測へ</strong><p>保存・加工・商用公開の条件を確認できた提供元から、時間帯別の計測を追加します。</p></div>
           </li>
         </ol>
       </section>
