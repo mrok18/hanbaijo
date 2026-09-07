@@ -75,6 +75,7 @@ export default function Page() {
 
       <p><Link href="/cfd/dmm-cfd">DMM CFDのコストシートを見る →</Link></p>
       <p><Link href="/articles/dmm-cfd-total-cost">DMM CFDの総コストを確認する →</Link></p>
+      <p><Link href="/articles/dmm-cfd-margin-call-losscut">DMM CFDの追証とロスカットを確認する →</Link></p>
 
       <section className="article-affiliate" aria-label="関連する広告">
         <AffiliateOfferCard offer={AFFILIATE_OFFERS['dmm-cfd']} />

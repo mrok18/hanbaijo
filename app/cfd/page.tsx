@@ -114,6 +114,8 @@ export default function CfdPage() {
         <div className="provider-fact-grid">
           <article><b>MARGIN</b><h3><Link href="/articles/dmm-cfd-margin-leverage">DMM CFDの必要証拠金</Link></h3><p>指数10倍・商品20倍の計算式を、日本225・金・原油へ当てはめます。</p></article>
           <article><b>TOTAL COST</b><h3><Link href="/articles/dmm-cfd-total-cost">DMM CFDの総コスト</Link></h3><p>売買手数料0円と、スプレッド・調整額・約定差を切り分けます。</p></article>
+          <article><b>MARGIN SAFETY</b><h3><Link href="/articles/dmm-cfd-margin-call-losscut">DMM CFDの追証とロスカット</Link></h3><p>維持率100％と50％の違いを、判定時点・解消方法・強制決済から整理します。</p></article>
+          <article><b>CFD VS FUTURES</b><h3><Link href="/articles/cfd-vs-futures-nikkei225">日経225 CFDと先物の違い</Link></h3><p>取引単位、期限、証拠金、価格形成を同じ表で比較します。</p></article>
           <article><b>ADJUSTMENT</b><h3><Link href="/articles/cfd-price-adjustment">CFDの価格調整額</Link></h3><p>限月切替で受払いが発生する理由と、確認すべき日程を整理します。</p></article>
         </div>
       </section>

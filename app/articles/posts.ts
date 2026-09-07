@@ -1,4 +1,6 @@
 export const POSTS = [
+  { slug: 'dmm-cfd-margin-call-losscut', category: 'CFD・DMM CFD', title: 'DMM CFDの追証とロスカットの違い｜100％・50％を整理', desc: '追加証拠金、マージンカット、リアルタイムのロスカットについて、判定時点と解消方法を分ける。' },
+  { slug: 'cfd-vs-futures-nikkei225', category: 'CFD・先物', title: '日経225 CFDと先物の違い｜取引単位・期限・コストを比較', desc: '店頭取引と取引所取引、取引単位、限月、証拠金、スプレッド・手数料の違いを整理する。' },
   { slug: 'dmm-cfd-total-cost', category: 'CFD・DMM CFD', title: 'DMM CFDは手数料0円？スプレッド・調整額の総コスト', desc: '売買手数料0円と総コストを区別し、スプレッド、金利調整額、価格調整額、約定差を整理する。' },
   { slug: 'dmm-cfd-margin-leverage', category: 'CFD・DMM CFD', title: 'DMM CFDの必要証拠金はいくら？日本225・金・原油で計算', desc: '指数10倍・商品20倍の計算式と銘柄ごとの取引単位を使い、1Lotの必要額を試算する。' },
   { slug: 'systre-select-365-total-cost', category: 'FX自動売買', title: 'シストレセレクト365の手数料は0円？総コストを確認', desc: '初回990円の利用料、売買手数料、スプレッド、スワップを分け、自動売買の総負担を整理する。' },
