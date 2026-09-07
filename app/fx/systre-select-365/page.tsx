@@ -79,6 +79,8 @@ export default function SystrePage() {
         <div className="provider-directory">
           <Link href="/articles/systre-select-365-vs-otc-fx"><span>GUIDE</span><h3>取引所FXと店頭FXの違い</h3><p>価格提示、スワップ、手数料、証拠金の違いを同じ表で確認します。</p><b>記事を読む →</b></Link>
           <Link href="/articles/systre-select-365-losscut-margin-shortage"><span>GUIDE</span><h3>ロスカットと証拠金不足</h3><p>有効比率100％、150％のアラート、取引終了後の不足を区別します。</p><b>記事を読む →</b></Link>
+          <Link href="/articles/systre-select-365-strategy-selection"><span>GUIDE</span><h3>ストラテジーの選び方</h3><p>利益率だけでなく、最大DD、リスクリターン率、必要資金を並べます。</p><b>記事を読む →</b></Link>
+          <Link href="/articles/systre-select-365-stop-switch"><span>GUIDE</span><h3>停止・入替えの確認</h3><p>稼働停止後の建玉と、複数ストラテジー運用時の両建てを確認します。</p><b>記事を読む →</b></Link>
           <Link href="/articles/systre-select-365-recommended-margin"><span>GUIDE</span><h3>推奨証拠金と最大DD</h3><p>現在の証拠金基準額と過去1年の最大ドローダウンを分けて計算します。</p><b>記事を読む →</b></Link>
           <Link href="/articles/systre-select-365-total-cost"><span>GUIDE</span><h3>手数料0円の外側にあるコスト</h3><p>初回利用料、スプレッド、スワップ、取引回数による総負担を整理します。</p><b>記事を読む →</b></Link>
           <Link href="/articles/fx-swap-three-days"><span>GUIDE</span><h3>スワップが複数日分付く理由</h3><p>建玉を持ち越す自動売買で確認したい、付与日数の変則を解説します。</p><b>記事を読む →</b></Link>

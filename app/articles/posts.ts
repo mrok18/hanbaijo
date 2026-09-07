@@ -1,4 +1,6 @@
 export const POSTS = [
+  { slug: 'systre-select-365-strategy-selection', category: 'FX自動売買', title: 'シストレセレクト365のストラテジー選び｜利益率だけで決めない', desc: '最大ドローダウン、リスクリターン率、取引回数、推奨証拠金からストラテジーを比較する。' },
+  { slug: 'systre-select-365-stop-switch', category: 'FX自動売買', title: 'シストレセレクト365の停止・入替え｜建玉を残さない確認手順', desc: '稼働停止、未決済ポジション、複数ストラテジーの両建て、サービス解約前の確認を整理する。' },
   { slug: 'matsui-fx-swap-calendar', category: 'FX・松井証券', title: 'MATSUI FXのスワップ付与時間｜1万通貨表示の計算方法', desc: '夏時間6時10分・冬時間7時10分以降の付与、付与日数、1通貨や100通貨へ換算する方法を整理する。' },
   { slug: 'matsui-fx-auto-trading-stop-restart', category: 'FX・松井証券', title: 'MATSUI FX自動売買の停止・再開｜建玉と注文はどうなる？', desc: '3つの運用停止方法、自動停止の条件、余力不足後に必要な再開操作を整理する。' },
   { slug: 'dmm-fx-swap-calendar', category: 'FX・DMM FX', title: 'DMM FXのスワップ付与日はいつ？0日・3日・4日の見方', desc: '営業日の切替時刻、通常の3日分、祝日による0日・4日分をスワップカレンダーから確認する。' },
