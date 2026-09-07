@@ -64,18 +64,18 @@ export default async function Home() {
     <>
       <section className="home-hero">
         <div className="hero-copy">
-          <p className="eyebrow"><span /> INDEPENDENT COST INTELLIGENCE</p>
-          <h1>見えない取引コストを、<br /><em>測って比べる。</em></h1>
+          <p className="eyebrow"><span /> FX / CFD / STOCKS / CRYPTO</p>
+          <h1>投資の利益を削るコストを、<br /><em>同じ条件で比べる。</em></h1>
           <p className="hero-lede">
-            スプレッド、手数料、金利、為替コスト。金融商品の「無料」の奥にある負担を、
-            実測データと明示した計算式で可視化します。
+            FXを起点に、CFD、株式、先物、暗号資産まで。スプレッド、手数料、金利、為替コストを、
+            公称値・実測値・試算値に分けて可視化します。
           </p>
           <div className="hero-actions">
-            <a className="button primary" href="#live-data">最新の実測値を見る</a>
+            <Link className="button primary" href="/fx">FXコスト比較を見る</Link>
             <Link className="button secondary" href="/tools/cost-calculator">コストを試算</Link>
           </div>
           <p className="hero-proof">
-            <span>広告と順位を分離</span><span>取得失敗も公開</span><span>計算方法を明示</span>
+            <span>FX比較ページ公開</span><span>広告と順位を分離</span><span>BTC実測は継続稼働</span>
           </p>
         </div>
 
@@ -120,19 +120,42 @@ export default async function Home() {
             <p className="section-index">COVERAGE</p>
             <h2 id="market-radar-title">計測対象を、金融商品全体へ</h2>
           </div>
-          <Link href="/markets">対象と進捗を見る →</Link>
+          <Link href="/markets">対象と整備状況を見る →</Link>
         </div>
         <div className="market-grid">
-          {MARKET_CATALOG.map((market) => (
-            <div className={`market-card ${market.stage}`} key={market.code}>
+          {MARKET_CATALOG.map((market) => market.href ? (
+            <Link className={`market-card ${market.stage}`} href={market.href} key={market.code}>
               <div className="market-card-top">
                 <span>{market.code}</span>
                 <b>{market.stageLabel}</b>
               </div>
               <strong>{market.name}</strong>
               <p>{market.shortNote}</p>
+            </Link>
+          ) : (
+            <div className={`market-card ${market.stage}`} key={market.code}>
+              <div className="market-card-top"><span>{market.code}</span><b>{market.stageLabel}</b></div>
+              <strong>{market.name}</strong><p>{market.shortNote}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="fx-launch" aria-labelledby="fx-launch-title">
+        <div className="fx-launch-copy">
+          <p className="section-index inverse">NOW BUILDING / FX</p>
+          <h2 id="fx-launch-title">FXは「0.2銭」だけでは比べない。</h2>
+          <p>
+            公称スプレッドを円換算し、約定・スワップ・時間帯による変化まで分けて比較します。
+            実測レートは利用許諾後に追加し、現在は比較基準と計算機を先行公開しています。
+          </p>
+          <Link href="/fx">FXコスト比較ページへ →</Link>
+        </div>
+        <div className="fx-launch-grid">
+          <article><span>SPREAD</span><strong>円換算</strong><p>銭・pipsを取引数量ごとの負担へ</p></article>
+          <article><span>EXECUTION</span><strong>約定品質</strong><p>表示価格と約定価格を分けて評価</p></article>
+          <article><span>HOLDING</span><strong>スワップ</strong><p>受取と支払を保有日数で比較</p></article>
+          <article><span>DATA</span><strong>許諾確認中</strong><p>確認できた提供元だけ自動計測</p></article>
         </div>
       </section>
 
@@ -153,9 +176,9 @@ export default async function Home() {
       <section className="section-block" id="live-data">
         <div className="section-heading">
           <div>
-            <p className="section-index">01 / LIVE DATA</p>
+            <p className="section-index">DATA LAB / LIVE</p>
             <h2>BTC/JPY スプレッド実測</h2>
-            <p>同じ銘柄・同じ時刻の気配値を、各社の公開APIから取得しています。</p>
+            <p>データ計測基盤の稼働例として、同じ銘柄・同じ時刻の気配値を各社の公開APIから取得しています。</p>
           </div>
           <div className="measure-stamp">
             <span>最終計測</span>
@@ -284,21 +307,21 @@ export default async function Home() {
           <Link href="/articles">すべての記事を見る →</Link>
         </div>
         <div className="feature-articles">
-          <Link href="/articles/spread-toha" className="feature-article main-feature">
-            <span>基礎知識 · 暗号資産</span>
-            <h3>スプレッドとは何か<br />—「手数料無料」の正体</h3>
-            <p>表示されない負担がどこに含まれているかを、数字で追います。</p>
+          <Link href="/articles/fx-spread-cost" className="feature-article main-feature">
+            <span>FX · 計算方法</span>
+            <h3>FXの0.2銭は、<br />実際に何円なのか</h3>
+            <p>銭・pipsの表示を、取引数量ごとの円額へ換算します。</p>
             <b>読む →</b>
           </Link>
           <div className="feature-stack">
-            <Link href="/articles/hanbaijo-torihikijo" className="feature-article">
-              <span>仕組み</span>
-              <h3>販売所と取引所は何が違うのか</h3>
+            <Link href="/articles/spread-hirogaru-toki" className="feature-article">
+              <span>FX・暗号資産</span>
+              <h3>スプレッドが広がるのはどんなときか</h3>
               <b>読む →</b>
             </Link>
-            <Link href="/articles/spread-hirogaru-toki" className="feature-article">
-              <span>データの見方</span>
-              <h3>スプレッドが広がるのはどんなときか</h3>
+            <Link href="/articles/spread-toha" className="feature-article">
+              <span>基礎知識</span>
+              <h3>スプレッドとは何か</h3>
               <b>読む →</b>
             </Link>
           </div>

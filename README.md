@@ -1,7 +1,7 @@
 # hanbaijo.com — 金融コストウォッチ
 
 金融商品の見えにくい取引コストを、実測データ・公式情報・再現可能な試算で可視化するデータメディアです。
-現在は暗号資産のBTC/JPYスプレッドを公開し、FX、CFD、株式、先物へ対象を拡張しています。
+現在はFXの比較方法・コスト試算と暗号資産のBTC/JPYスプレッドを公開し、CFD、株式、先物へ対象を拡張しています。
 
 ## 現在の構成
 
@@ -30,12 +30,15 @@ npm run dev
 
 ```powershell
 $env:MOCK_RATES='1'
+$env:CRON_SECRET='ローカル確認専用の十分に長いランダム文字列'
 npm run build
 ```
 
 ## コードの入口
 
 - `app/page.tsx`: トップページと現在のBTC実測表示
+- `app/fx/page.tsx`: FXの比較軸、試算例、調査対象
+- `app/articles/fx-spread-cost/page.tsx`: FXスプレッドの円換算ガイド
 - `app/markets/page.tsx`: 対象商品と開発状況
 - `app/tools/cost-calculator/`: 金融商品共通の往復コスト計算機
 - `lib/exchanges.mjs`: 暗号資産の取得アダプター
@@ -64,7 +67,7 @@ npm run build
 
 ## 公開運用
 
-ASP審査が終わるまでは本番環境を変更しません。作業は `codex/cross-asset-redesign` ブランチで行い、`main`へのマージ、Vercelデプロイ、公開リンクの差し替えは審査後の公開確認を経て実施します。
+ASP審査でサイト内容を確認できるよう、FXの比較方法、計算機、解説記事を先行公開します。実測FXレートは、提供元から自動取得・保存・再掲載の許諾を確認できたものだけ追加します。公開環境は `main` をVercelへ自動デプロイし、反映後に主要ページとCron APIの認証状態を確認します。
 
 セキュリティ設定の変更は、内容と影響範囲を提示し、承認後に実施します。
 

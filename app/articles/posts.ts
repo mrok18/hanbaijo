@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'fx-spread-cost', category: 'FX', title: 'FXのスプレッドを円に直す方法', desc: '0.2銭という表示が、取引数量ごとに何円の負担になるかを計算する。' },
   { slug: 'hanbaijo-torihikijo', category: '暗号資産', title: '販売所と取引所は何が違うのか', desc: '同じ会社の中に2つの買い方がある理由と、コスト差が生まれる仕組み。' },
   { slug: 'spread-toha', category: '基礎知識', title: 'スプレッドとは何か — 「手数料無料」の正体', desc: '表示されない手数料がどこに含まれているかを、数字で追う。' },
   { slug: 'spread-hirogaru-toki', category: 'データの見方', title: 'スプレッドが広がるのはどんなときか', desc: '早朝・週末・相場急変時に何が起きているか。' },

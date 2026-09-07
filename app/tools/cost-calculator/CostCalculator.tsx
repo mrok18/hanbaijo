@@ -22,8 +22,8 @@ const PRESETS: readonly Preset[] = [
   {
     id: 'fx',
     label: 'FX',
-    note: '7日間保有する例',
-    values: { notionalYen: 1_000_000, spreadPct: 0.02, tradingFeePct: 0, fixedFeesYen: 0, annualHoldingRatePct: 1.5, holdingDays: 7, fxConversionPct: 0 },
+    note: 'USD/JPY 0.2銭相当の例',
+    values: { notionalYen: 1_000_000, spreadPct: 0.0013, tradingFeePct: 0, fixedFeesYen: 0, annualHoldingRatePct: 0, holdingDays: 0, fxConversionPct: 0 },
   },
   {
     id: 'cfd',
@@ -56,7 +56,7 @@ const FIELDS: readonly {
   help: string;
 }[] = [
   { key: 'notionalYen', label: '取引金額', unit: '円', step: 10000, help: 'レバレッジではなく、実際の取引総額を入力' },
-  { key: 'spreadPct', label: 'スプレッド', unit: '%', step: 0.01, help: '買値と売値の差を取引金額に対する率で入力' },
+  { key: 'spreadPct', label: 'スプレッド', unit: '%', step: 0.0001, help: '例: USD/JPYが150円、0.2銭なら約0.0013%' },
   { key: 'tradingFeePct', label: '往復の取引手数料率', unit: '%', step: 0.01, help: '買付と売却の合計。無料なら0' },
   { key: 'fixedFeesYen', label: 'その他の固定費', unit: '円', step: 1, help: '入出金・送金など、今回含めたい固定額の合計' },
   { key: 'annualHoldingRatePct', label: '年間の保有コスト率', unit: '%', step: 0.1, help: '金利・価格調整額などの年率換算。なければ0' },
@@ -65,8 +65,9 @@ const FIELDS: readonly {
 ] as const;
 
 export default function CostCalculator() {
-  const [activePreset, setActivePreset] = useState<PresetId>('crypto');
-  const [input, setInput] = useState<RoundTripCostInput>({ ...PRESETS[0].values });
+  const fxPreset = PRESETS.find((preset) => preset.id === 'fx')!;
+  const [activePreset, setActivePreset] = useState<PresetId>('fx');
+  const [input, setInput] = useState<RoundTripCostInput>({ ...fxPreset.values });
 
   const result = useMemo(() => calculateRoundTripCost(input), [input]);
   const hasNotional = input.notionalYen > 0;

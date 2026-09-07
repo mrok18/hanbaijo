@@ -55,6 +55,7 @@ gtag('config', '${GA_ID}');`}
               </span>
             </Link>
             <nav aria-label="メインナビゲーション">
+              <Link href="/fx">FX</Link>
               <Link href="/markets">対象商品</Link>
               <Link href="/tools/cost-calculator">計算機</Link>
               <Link href="/articles">知る</Link>
@@ -77,6 +78,7 @@ gtag('config', '${GA_ID}');`}
               </div>
             </div>
             <div className="footer-links" aria-label="フッターナビゲーション">
+              <Link href="/fx">FXコスト比較</Link>
               <Link href="/markets">対象商品</Link>
               <Link href="/tools/cost-calculator">取引コスト計算機</Link>
               <Link href="/articles">解説記事</Link>

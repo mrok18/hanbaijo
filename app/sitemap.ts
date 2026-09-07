@@ -6,7 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   return [
     { url: base, lastModified: now, changeFrequency: 'hourly', priority: 1 },
-    ...['markets', 'tools/cost-calculator', 'articles', 'method', 'about', 'disclaimer', 'contact'].map((p) => ({
+    ...['fx', 'markets', 'tools/cost-calculator', 'articles', 'method', 'about', 'disclaimer', 'contact'].map((p) => ({
       url: `${base}/${p}`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.6,
     })),
     ...POSTS.map((p) => ({

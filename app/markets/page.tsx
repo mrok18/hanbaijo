@@ -28,7 +28,7 @@ export default function Markets() {
             <ul>
               {market.metrics.map((metric) => <li key={metric}>{metric}</li>)}
             </ul>
-            {market.stage === 'live' && <Link href="/#live-data">現在の実測値を見る →</Link>}
+            {market.href && <Link href={market.href}>{market.stage === 'live' ? '現在の実測値を見る' : '公開中の内容を見る'} →</Link>}
           </section>
         ))}
       </div>
