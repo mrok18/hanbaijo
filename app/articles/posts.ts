@@ -1,4 +1,6 @@
 export const POSTS = [
+  { slug: 'dmm-fx-swap-calendar', category: 'FX・DMM FX', title: 'DMM FXのスワップ付与日はいつ？0日・3日・4日の見方', desc: '営業日の切替時刻、通常の3日分、祝日による0日・4日分をスワップカレンダーから確認する。' },
+  { slug: 'dmm-fx-slippage-orders', category: 'FX・DMM FX', title: 'DMM FXのスリッページ｜即時・指値・逆指値の違い', desc: '注文価格と約定価格がずれる条件、許容幅、注文不成立との関係を注文種類ごとに整理する。' },
   { slug: 'dmm-cfd-trading-hours', category: 'CFD・DMM CFD', title: 'DMM CFDの取引時間｜夏時間・冬時間と約定しない時間', desc: '日本225、米国指数、金・原油などの取引時間と、毎営業日のメンテナンス、祝日の注意点を整理する。' },
   { slug: 'dmm-cfd-adjustment-calendar', category: 'CFD・DMM CFD', title: 'DMM CFDの調整額カレンダー｜金利・価格調整の違い', desc: '金・銀の金利調整額と、指数・原油などの価格調整額を、発生日と注文への影響から整理する。' },
   { slug: 'systre-select-365-losscut-margin-shortage', category: 'FX自動売買', title: 'シストレセレクト365のロスカット｜有効比率100％と証拠金不足', desc: '1分ごとのロスカット、150％のアラート、取引終了後の証拠金不足を分ける。' },
