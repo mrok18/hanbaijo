@@ -1,4 +1,6 @@
 export const POSTS = [
+  { slug: 'matsui-fx-swap-calendar', category: 'FX・松井証券', title: 'MATSUI FXのスワップ付与時間｜1万通貨表示の計算方法', desc: '夏時間6時10分・冬時間7時10分以降の付与、付与日数、1通貨や100通貨へ換算する方法を整理する。' },
+  { slug: 'matsui-fx-auto-trading-stop-restart', category: 'FX・松井証券', title: 'MATSUI FX自動売買の停止・再開｜建玉と注文はどうなる？', desc: '3つの運用停止方法、自動停止の条件、余力不足後に必要な再開操作を整理する。' },
   { slug: 'dmm-fx-swap-calendar', category: 'FX・DMM FX', title: 'DMM FXのスワップ付与日はいつ？0日・3日・4日の見方', desc: '営業日の切替時刻、通常の3日分、祝日による0日・4日分をスワップカレンダーから確認する。' },
   { slug: 'dmm-fx-slippage-orders', category: 'FX・DMM FX', title: 'DMM FXのスリッページ｜即時・指値・逆指値の違い', desc: '注文価格と約定価格がずれる条件、許容幅、注文不成立との関係を注文種類ごとに整理する。' },
   { slug: 'dmm-cfd-trading-hours', category: 'CFD・DMM CFD', title: 'DMM CFDの取引時間｜夏時間・冬時間と約定しない時間', desc: '日本225、米国指数、金・原油などの取引時間と、毎営業日のメンテナンス、祝日の注意点を整理する。' },
