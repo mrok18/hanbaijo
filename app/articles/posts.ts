@@ -1,4 +1,6 @@
 export const POSTS = [
+  { slug: 'dmm-fx-margin-call-losscut', category: 'FX・DMM FX', title: 'DMM FXの追証とロスカットの違い｜100％と50％を整理', desc: '毎営業日の追加証拠金判定と、リアルタイムのロスカットを分け、証拠金維持率の読み方を整理する。' },
+  { slug: 'dmm-fx-mini-normal-large', category: 'FX・DMM FX', title: 'DMM FXのミニ・通常・ラージの違い｜取引単位とコスト', desc: '1Lotの通貨数、必要証拠金、損益、原則固定スプレッドの対象を同じ条件で比較する。' },
   { slug: 'matsui-fx-auto-trading-cost', category: 'FX・自動売買', title: 'MATSUI FX自動売買は100円から？必要資金を計算', desc: '複数注文の必要証拠金と評価損を分け、100円で始める場合にも必要な余裕資金を整理する。' },
   { slug: 'matsui-fx-one-currency', category: 'FX・松井証券', title: 'MATSUI FXは100円から？1通貨の必要証拠金と損益', desc: '100円の意味を、為替レート・取引数量・レバレッジコースに分けて具体的に計算する。' },
   { slug: 'matsui-account-types', category: '証券・FX', title: '松井証券のFX専用口座と総合口座の違い', desc: 'FXだけを始める場合と、株・NISA・先物も利用する場合で異なる口座開設の入口を整理する。' },
