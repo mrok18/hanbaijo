@@ -93,6 +93,8 @@ export default function FuturesPage() {
           <article className="affiliate-card"><div className="affiliate-card-head"><span>COMPARE</span><b>2026-09-07確認</b></div><p className="affiliate-category">NIKKEI 225 FEES</p><h3>先物2社の手数料</h3><p>松井証券と楽天証券の標準手数料を、片道・往復で比較します。</p><Link href="/futures/nikkei225-fee-comparison">比較表を見る →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>GUIDE</span><b>計算</b></div><p className="affiliate-category">TICK VALUE</p><h3>1ティックの損益</h3><p>取引単位と呼値から、最小の値動きが何円になるかを計算します。</p><Link href="/articles/futures-tick-value">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>GUIDE</span><b>リスク</b></div><p className="affiliate-category">MARGIN</p><h3>証拠金と取引金額</h3><p>証拠金が小さく見える理由と、損益が取引金額に連動する点を整理します。</p><Link href="/articles/futures-margin">記事を読む →</Link></article>
+          <article className="affiliate-card"><div className="affiliate-card-head"><span>GUIDE</span><b>期限</b></div><p className="affiliate-category">SQ SETTLEMENT</p><h3>SQと最終決済</h3><p>取引最終日、第2金曜日、SQ値による差金決済を時系列で確認します。</p><Link href="/articles/nikkei225-futures-sq-settlement">記事を読む →</Link></article>
+          <article className="affiliate-card"><div className="affiliate-card-head"><span>GUIDE</span><b>時間</b></div><p className="affiliate-category">NIGHT SESSION</p><h3>日中・夜間の取引時間</h3><p>17時から翌6時までのナイトセッションと取引日の区切りを整理します。</p><Link href="/articles/nikkei225-futures-night-session">記事を読む →</Link></article>
         </div>
       </section>
 
