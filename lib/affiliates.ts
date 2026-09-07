@@ -1,0 +1,39 @@
+export interface AffiliateOffer {
+  id: 'fxtf' | 'systre-select-365' | 'dmm-cfd';
+  name: string;
+  category: string;
+  description: string;
+  linkLabel: string;
+  href: string;
+  impressionSrc: string;
+}
+
+export const AFFILIATE_OFFERS: Record<AffiliateOffer['id'], AffiliateOffer> = {
+  fxtf: {
+    id: 'fxtf',
+    name: 'FXTF',
+    category: 'FX・CFD・ノックアウトオプション',
+    description: 'FX、CFD、ノックアウトオプションを検討するときの公式情報と取引条件を確認できます。',
+    linkLabel: 'FXTFの公式情報を確認',
+    href: 'https://px.a8.net/svt/ejp?a8mat=4BC5IR+GC8AGI+48D0+6A4FM',
+    impressionSrc: 'https://www17.a8.net/0.gif?a8mat=4BC5IR+GC8AGI+48D0+6A4FM',
+  },
+  'systre-select-365': {
+    id: 'systre-select-365',
+    name: 'シストレセレクト365',
+    category: 'FX自動売買',
+    description: '自動売買を検討する場合は、仕組み、コスト、リスク、取引条件を公式情報で確認してください。',
+    linkLabel: 'FX自動売買なら「シストレセレクト365」',
+    href: 'https://px.a8.net/svt/ejp?a8mat=4BC5IR+GCTQ2A+34QW+BWVTE',
+    impressionSrc: 'https://www14.a8.net/0.gif?a8mat=4BC5IR+GCTQ2A+34QW+BWVTE',
+  },
+  'dmm-cfd': {
+    id: 'dmm-cfd',
+    name: 'DMM CFD',
+    category: '株価指数・商品CFD',
+    description: '取扱銘柄、スプレッド、調整額、取引時間など、最新の取引条件を公式ページで確認できます。',
+    linkLabel: '【PR】DMM CFD',
+    href: 'https://px.a8.net/svt/ejp?a8mat=4BC5IS+1SBLE+1WP2+NTJWY',
+    impressionSrc: 'https://www14.a8.net/0.gif?a8mat=4BC5IS+1SBLE+1WP2+NTJWY',
+  },
+};

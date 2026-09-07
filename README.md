@@ -38,6 +38,7 @@ npm run build
 
 - `app/page.tsx`: トップページと現在のBTC実測表示
 - `app/fx/page.tsx`: FXの比較軸、試算例、調査対象
+- `app/cfd/page.tsx`: CFDの比較軸、調査対象、提携広告
 - `app/articles/fx-spread-cost/page.tsx`: FXスプレッドの円換算ガイド
 - `app/markets/page.tsx`: 対象商品と開発状況
 - `app/tools/cost-calculator/`: 金融商品共通の往復コスト計算機

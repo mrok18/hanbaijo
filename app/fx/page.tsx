@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import AffiliateOfferCard from '@/components/AffiliateOfferCard';
+import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
   title: 'FXの取引コスト比較｜スプレッド・スワップ・約定を読む',
@@ -101,6 +103,24 @@ export default function FxPage() {
           </div>
           <p className="panel-note">許諾前のレートを推測・転載して空欄を埋めることはしません。確認できた公称値と実測値から順次追加します。</p>
         </div>
+      </section>
+
+      <section className="fx-section" aria-labelledby="fx-partner-title">
+        <div className="section-heading">
+          <div>
+            <p className="section-index">04 / PARTNERED SERVICES</p>
+            <h2 id="fx-partner-title">取引条件を公式サイトで確認する</h2>
+            <p>以下はA8.netで提携済みの広告です。報酬額は、比較結果や掲載順位に反映しません。</p>
+          </div>
+        </div>
+        <div className="affiliate-grid">
+          <AffiliateOfferCard offer={AFFILIATE_OFFERS.fxtf} />
+          <AffiliateOfferCard offer={AFFILIATE_OFFERS['systre-select-365']} />
+        </div>
+        <p className="affiliate-disclosure">
+          広告リンク経由で申込み等が行われた場合、当サイトが報酬を受け取ることがあります。
+          取引条件やリスクはリンク先の公式情報を必ず確認してください。
+        </p>
       </section>
 
       <section className="fx-next">

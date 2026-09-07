@@ -79,6 +79,7 @@ gtag('config', '${GA_ID}');`}
             </div>
             <div className="footer-links" aria-label="フッターナビゲーション">
               <Link href="/fx">FXコスト比較</Link>
+              <Link href="/cfd">CFDコスト比較</Link>
               <Link href="/markets">対象商品</Link>
               <Link href="/tools/cost-calculator">取引コスト計算機</Link>
               <Link href="/articles">解説記事</Link>
