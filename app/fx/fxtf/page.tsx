@@ -16,6 +16,8 @@ export default function FxtfPage() {
           <h1>FXTFのコストを、<br />4項目に分けて確認。</h1>
           <p className="lede">FXTF GX-FXは、スプレッドだけでなく建玉連動手数料がある点を含めて総額を見ます。公式条件を、取引前に確認する順番で整理しました。</p>
           <div className="hero-actions">
+            <Link className="button primary" href="/articles/fxtf-gx-mt4-mt5-difference">取引ツールを比較</Link>
+            <Link className="button secondary" href="/articles/fxtf-minimum-unit-margin">1,000通貨を計算</Link>
             <Link className="button secondary" href="/tools/cost-calculator">自分の数量で試算</Link>
             <Link className="button secondary" href="/fx">FX比較へ戻る</Link>
           </div>
@@ -65,6 +67,16 @@ export default function FxtfPage() {
         </div>
       </section>
 
+      <section className="provider-section">
+        <p className="section-index">03 / PRACTICAL GUIDES</p>
+        <h2>FXTFを選ぶ前の計算ガイド</h2>
+        <div className="provider-fact-grid">
+          <article><b>PLATFORM</b><h3><Link href="/articles/fxtf-gx-mt4-mt5-difference">GX・MT4・MT5の違い</Link></h3><p>TradingView、EA、取引商品を比較。MT5のFXは確認時点でComing Soonです。</p></article>
+          <article><b>TRADE SIZE</b><h3><Link href="/articles/fxtf-minimum-unit-margin">1,000通貨の必要資金</Link></h3><p>GXの0.1LotとMT4標準の0.01Lotを、同じ通貨数量に直して計算します。</p></article>
+          <article><b>TOTAL COST</b><h3><Link href="/articles/fx-zero-spread-total-cost">0.0銭の総コスト</Link></h3><p>ゼロスプレッドと建玉連動手数料を分け、取引数量ごとの負担を確認します。</p></article>
+        </div>
+      </section>
+
       <section className="provider-source">
         <div><span>SOURCE</span><strong>FXTF公式情報</strong></div>
         <a href="https://www.fxtrade.co.jp/gx-intro/" target="_blank" rel="noopener noreferrer">GX-FX取引概要を確認 ↗</a>
@@ -74,7 +86,7 @@ export default function FxtfPage() {
 
       <section className="provider-offer" aria-label="FXTFの広告">
         <div>
-          <p className="section-index">03 / OFFICIAL SITE</p>
+          <p className="section-index">04 / OFFICIAL SITE</p>
           <h2>最新条件は公式サイトで最終確認</h2>
           <p>以下はA8.netの提携広告です。掲載報酬は、事実確認や将来の実測順位に影響しません。</p>
         </div>

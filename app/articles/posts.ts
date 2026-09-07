@@ -1,4 +1,6 @@
 export const POSTS = [
+  { slug: 'fxtf-minimum-unit-margin', category: 'FX・FXTF', title: 'FXTFは1,000通貨から？GX・MT4のLotと必要証拠金', desc: 'GXとMT4で異なるLot表記を通貨数へ直し、1,000通貨の必要証拠金と値動きによる損益を計算する。' },
+  { slug: 'fxtf-gx-mt4-mt5-difference', category: 'FX・FXTF', title: 'FXTF GX・MT4・MT5の違い｜取引商品とツールを比較', desc: 'TradingView、EA、MT5の提供商品を整理し、取引目的に合うシステムを選ぶ。' },
   { slug: 'dmm-cfd-margin-call-losscut', category: 'CFD・DMM CFD', title: 'DMM CFDの追証とロスカットの違い｜100％・50％を整理', desc: '追加証拠金、マージンカット、リアルタイムのロスカットについて、判定時点と解消方法を分ける。' },
   { slug: 'cfd-vs-futures-nikkei225', category: 'CFD・先物', title: '日経225 CFDと先物の違い｜取引単位・期限・コストを比較', desc: '店頭取引と取引所取引、取引単位、限月、証拠金、スプレッド・手数料の違いを整理する。' },
   { slug: 'dmm-cfd-total-cost', category: 'CFD・DMM CFD', title: 'DMM CFDは手数料0円？スプレッド・調整額の総コスト', desc: '売買手数料0円と総コストを区別し、スプレッド、金利調整額、価格調整額、約定差を整理する。' },
