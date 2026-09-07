@@ -79,6 +79,7 @@ export default function DmmCfdPage() {
           <article><b>TRADING HOURS</b><h3><Link href="/articles/dmm-cfd-trading-hours">銘柄別の取引時間</Link></h3><p>夏時間・冬時間、毎営業日のメンテナンス、取引時間外の注文を整理します。</p></article>
           <article><b>CALENDAR</b><h3><Link href="/articles/dmm-cfd-adjustment-calendar">調整額カレンダーの読み方</Link></h3><p>金利調整額と価格調整額の対象銘柄、発生タイミング、注文取消しを確認します。</p></article>
           <article><b>GOLD VS OIL</b><h3><Link href="/articles/dmm-cfd-gold-vs-oil-cost">金と原油のコスト比較</Link></h3><p>取引単位、必要証拠金、金利調整額と価格調整額の違いを同じ表で確認します。</p></article>
+          <article><b>AGRICULTURE</b><h3><Link href="/articles/dmm-cfd-agriculture-trading-hours">農産物CFDの取引時間</Link></h3><p>コーン・大豆・小麦などの途中休止、夏時間・冬時間を一覧で確認します。</p></article>
         </div>
       </section>
 
