@@ -43,7 +43,7 @@ export default function Markets() {
           </li>
           <li>
             <b>02</b>
-            <div><strong>同じ金額条件のコスト計算機</strong><p>取引金額と保有期間を揃え、スプレッド・手数料・金利を円換算します。</p></div>
+            <div><strong>同じ金額条件のコスト計算機</strong><p>取引金額と保有期間を揃え、スプレッド・手数料・金利を円換算します。<br /><Link href="/tools/cost-calculator">公開版を使う →</Link></p></div>
           </li>
           <li>
             <b>03</b>

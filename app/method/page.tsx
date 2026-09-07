@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { SOURCES } from '@/lib/exchanges.mjs';
 
 export const metadata = { title: '計測・算出方法' };
@@ -47,6 +48,19 @@ export default function Method() {
       <p>
         「100万円の購入で約○円」は、100万円分を買った直後に同じ価格帯で売った場合の往復スプレッドを求め、
         その半分を片道分として試算しています。売買手数料、入出金手数料、送金手数料や実際の価格変動は含みません。
+      </p>
+
+      <h2>取引コスト計算機の計算式</h2>
+      <div className="formula-box">
+        <code>往復コスト = スプレッド負担 + 取引手数料 + 固定費 + 保有コスト + 為替コスト</code>
+        <code>保有コスト = 取引金額 × 年率 ÷ 365 × 保有日数</code>
+        <code>実質コスト率 = 往復コスト ÷ 取引金額 × 100</code>
+        <small>計算式バージョン: round-trip-total-v1</small>
+      </div>
+      <p>
+        計算機の値はすべて利用者が入力した条件による「試算値」です。初期表示の入力例は特定事業者の料金ではありません。
+        金利収入や税金、約定時の価格変動は含めず、負担となる非負のコストだけを合算します。
+        <Link href="/tools/cost-calculator"> 取引コスト計算機を開く →</Link>
       </p>
 
       <h2>取得頻度と保存</h2>

@@ -72,7 +72,7 @@ export default async function Home() {
           </p>
           <div className="hero-actions">
             <a className="button primary" href="#live-data">最新の実測値を見る</a>
-            <Link className="button secondary" href="/method">数字の作り方</Link>
+            <Link className="button secondary" href="/tools/cost-calculator">コストを試算</Link>
           </div>
           <p className="hero-proof">
             <span>広告と順位を分離</span><span>取得失敗も公開</span><span>計算方法を明示</span>
@@ -134,6 +134,20 @@ export default async function Home() {
             </div>
           ))}
         </div>
+      </section>
+
+      <section className="tool-promo" aria-labelledby="tool-promo-title">
+        <div>
+          <p className="section-index inverse">FREE TOOL / ESTIMATED DATA</p>
+          <h2 id="tool-promo-title">違う商品のコストを、<br />同じものさしで。</h2>
+          <p>取引金額と保有期間をそろえ、スプレッド・手数料・金利・為替コストを円換算します。</p>
+          <Link href="/tools/cost-calculator">取引コスト計算機を使う →</Link>
+        </div>
+        <dl>
+          <div><dt>暗号資産</dt><dd>スプレッド・売買手数料</dd></div>
+          <div><dt>FX / CFD</dt><dd>スプレッド・保有金利</dd></div>
+          <div><dt>株式</dt><dd>売買・為替・信用コスト</dd></div>
+        </dl>
       </section>
 
       <section className="section-block" id="live-data">

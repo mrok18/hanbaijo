@@ -37,6 +37,7 @@ npm run build
 
 - `app/page.tsx`: トップページと現在のBTC実測表示
 - `app/markets/page.tsx`: 対象商品と開発状況
+- `app/tools/cost-calculator/`: 金融商品共通の往復コスト計算機
 - `lib/exchanges.mjs`: 暗号資産の取得アダプター
 - `lib/history.ts`: Vercel Blobから履歴を読む処理
 - `lib/market-data/`: 金融商品共通の型、カタログ、コスト計算
