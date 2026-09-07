@@ -421,6 +421,13 @@ article li + li { margin-top: 8px; }
 .formula-box { display: grid; gap: 7px; margin: 22px 0; padding: 22px; border-radius: 13px; background: var(--night); color: #fff; }
 .formula-box code { color: var(--signal); font-size: 13px; white-space: normal; }
 .formula-box small { color: rgba(255, 255, 255, .56); font-size: 10.5px; }
+.article-sources { margin-top: 54px; padding-top: 4px; border-top: 1px solid var(--line); }
+.article-sources h2 { margin-top: 35px; font-size: 21px; }
+.article-sources ul { padding-left: 20px; }
+.article-sources li, .article-sources p { font-size: 11.5px; }
+.article-sources p { color: var(--muted); }
+.article-affiliate { margin-top: 52px; padding-top: 30px; border-top: 1px solid var(--line); }
+.article-affiliate .affiliate-card { min-height: 240px; }
 
 /* Cost calculator */
 .calculator-page { padding-bottom: 20px; }
