@@ -22,6 +22,7 @@ PowerShell:
 ```powershell
 npm ci
 $env:MOCK_RATES='1'
+$env:CRON_SECRET='ローカル確認専用の十分に長いランダム文字列'
 npm run dev
 ```
 
@@ -65,3 +66,9 @@ npm run build
 ASP審査が終わるまでは本番環境を変更しません。作業は `codex/cross-asset-redesign` ブランチで行い、`main`へのマージ、Vercelデプロイ、公開リンクの差し替えは審査後の公開確認を経て実施します。
 
 セキュリティ設定の変更は、内容と影響範囲を提示し、承認後に実施します。
+
+### Cron APIの認証
+
+`/api/collect`、`/api/post`、`/api/x-whoami` はすべて `Authorization: Bearer <CRON_SECRET>` を要求します。
+`CRON_SECRET` が未設定の場合も処理は実行されません。本番へ反映する前に、VercelのProduction環境へ十分に長いランダム値を設定してください。
+Vercel Cronは設定済みの `CRON_SECRET` をBearerトークンとして自動送信します。

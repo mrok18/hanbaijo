@@ -1,5 +1,6 @@
 import { put, list } from '@vercel/blob';
 import { measureAll } from '@/lib/exchanges.mjs';
+import { requireCronAuthorization } from '@/lib/cronAuth';
 
 // Vercel Cron から30分ごとに呼ばれる収集エンドポイント。
 // 結果を Blob の history/YYYY-MM.json に追記する。
@@ -22,10 +23,8 @@ async function readHistory(key: string): Promise<unknown[]> {
 }
 
 export async function GET(req: Request) {
-  // 収集は読み取りのみで副作用が小さいため、認証で弾かずに「間隔」で守る。
-  // 誰が叩いても直近20分以内に計測済みなら何もしないので、連打しても負荷にならない。
-  // （実際の呼び出し元を把握するためヘッダだけ記録しておく）
-  console.log('[collect] ua=%s x-vercel-cron=%s', req.headers.get('user-agent'), req.headers.get('x-vercel-cron'));
+  const unauthorized = requireCronAuthorization(req);
+  if (unauthorized) return unauthorized;
 
   const ym0 = new Date().toISOString().slice(0, 7);
   const prior = await readHistory(path(ym0));

@@ -2,6 +2,7 @@ import { put, list } from '@vercel/blob';
 import { measureAll } from '@/lib/exchanges.mjs';
 import { nowPost } from '@/lib/postText.mjs';
 import { postTweet, whoAmI } from '@/lib/xClient.mjs';
+import { requireCronAuthorization } from '@/lib/cronAuth';
 
 // X への自動投稿。Vercel Cron から1日数回呼ばれる。
 // 直近の投稿記録を Blob に残し、同じ内容を続けて出さないようにする。
@@ -23,17 +24,8 @@ async function readState(): Promise<{ lastText?: string; lastAt?: string }> {
 }
 
 export async function GET(req: Request) {
-  // 投稿は公開される副作用があるため、収集より厳しく守る。
-  // ①呼び出し元が Vercel Cron であること ②前回投稿から3時間以上あいていること の両方。
-  const ua = req.headers.get('user-agent') ?? '';
-  const secret = process.env.CRON_SECRET;
-  const auth = req.headers.get('authorization');
-  const fromCron = /vercel-cron/i.test(ua) || req.headers.get('x-vercel-cron') !== null;
-  const okSecret = secret ? auth === `Bearer ${secret}` : false;
-  if (!fromCron && !okSecret) {
-    console.log('[post] 拒否 ua=%s', ua);
-    return new Response('forbidden', { status: 403 });
-  }
+  const unauthorized = requireCronAuthorization(req);
+  if (unauthorized) return unauthorized;
 
   const state0 = await readState();
   if (state0.lastAt && Date.now() - Date.parse(state0.lastAt) < 3 * 60 * 60 * 1000) {
