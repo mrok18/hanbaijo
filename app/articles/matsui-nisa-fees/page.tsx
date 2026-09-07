@@ -1,0 +1,9 @@
+import Link from 'next/link';
+import AffiliateOfferCard from '@/components/AffiliateOfferCard';
+import { AFFILIATE_OFFERS } from '@/lib/affiliates';
+export const metadata={title:'松井証券NISAは手数料無料？為替・信託報酬まで確認',description:'松井証券NISAの日本株・米国株・投資信託の売買手数料と、為替手数料・信託報酬など別途残る費用を整理します。'};
+export default function Page(){return <article><p className="page-kicker">MATSUI / NISA COST</p><h1>松井証券NISAは手数料無料？<br/>為替・信託報酬まで確認</h1><p className="lede">松井証券のNISAは、制度が続く限り日本株・米国株・投資信託の売買手数料が無料です。ただし、商品内部の費用や通貨交換まで一律0円という意味ではありません。</p>
+<h2>無料になるもの・別途確認するもの</h2><div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th>商品</th><th>インターネット売買手数料</th><th>別途確認</th></tr></thead><tbody><tr><td className="ex-name">日本株</td><td>0円</td><td>単元未満株・電話注文の条件</td></tr><tr><td className="ex-name">米国株</td><td>0円</td><td>円貨取引の為替手数料、米国配当課税</td></tr><tr><td className="ex-name">投資信託</td><td>0円</td><td>信託報酬等の保有中費用</td></tr></tbody></table></div></div>
+<div className="callout"><strong>米国株は一時的な手数料拘束に注意</strong><p>NISAでも取引終了後の一括処理まで通常口座と同額が拘束される場合があります。最終的な手数料負担と買付余力の一時拘束を分けて確認します。</p></div>
+<h2>NISAでできないこと</h2><ul><li>NISA口座で信用取引はできない</li><li>NISA保有株は信用・先物等の代用有価証券にできない</li><li>NISA保有株は貸株の対象外</li><li>米国で源泉徴収される配当税はNISAでも残る</li></ul>
+<section className="article-sources" aria-labelledby="sources"><h2 id="sources">参照した公式資料</h2><ul><li><a href="https://www.matsui.co.jp/nisa/fee/" target="_blank" rel="noopener noreferrer">松井証券「新NISA 手数料」</a></li><li><a href="https://www.matsui.co.jp/nisa/rule/" target="_blank" rel="noopener noreferrer">松井証券「NISA口座 取引ルール」</a></li></ul><p>制度・費用は2026年9月7日に確認しました。</p></section><p><Link href="/articles/matsui-account-types">総合口座とFX口座の違いを見る →</Link></p><section className="article-affiliate" aria-label="関連する広告"><AffiliateOfferCard offer={AFFILIATE_OFFERS['matsui-fx']} /><p className="affiliate-disclosure">松井証券への広告リンクです。申込み成立時に当サイトが報酬を受け取る場合があります。</p></section></article>}
