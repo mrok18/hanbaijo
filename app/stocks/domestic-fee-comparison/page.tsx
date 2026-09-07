@@ -8,6 +8,7 @@ export const metadata = {
 const PROVIDERS = [
   {
     name: 'GMOクリック証券',
+    href: '/stocks/gmo-click',
     model: '約定代金にかかわらず0円',
     sameDay: '0円',
     separateDays: '0円',
@@ -16,6 +17,7 @@ const PROVIDERS = [
   },
   {
     name: '楽天証券',
+    href: '/stocks/rakuten',
     model: 'ゼロコースは約定代金にかかわらず0円',
     sameDay: '0円',
     separateDays: '0円',
@@ -24,6 +26,7 @@ const PROVIDERS = [
   },
   {
     name: '松井証券',
+    href: '/stocks/matsui',
     model: '1日の約定代金合計で決まるボックスレート',
     sameDay: '1,100円',
     separateDays: '0円',
@@ -32,6 +35,7 @@ const PROVIDERS = [
   },
   {
     name: 'DMM 株',
+    href: '/stocks/dmm-kabu',
     model: '1注文ごとの約定代金で決まる',
     sameDay: '396円',
     separateDays: '396円',
@@ -69,7 +73,7 @@ export default function Page() {
             <tbody>
               {PROVIDERS.map((provider) => (
                 <tr key={provider.name}>
-                  <td className="ex-name">{provider.name}</td>
+                  <td className="ex-name"><Link href={provider.href}>{provider.name}</Link></td>
                   <td><strong>{provider.model}</strong><small>{provider.note}</small></td>
                   <td className="num result-value">{provider.sameDay}</td>
                   <td className="num result-value">{provider.separateDays}</td>

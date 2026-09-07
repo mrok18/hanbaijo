@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { STOCK_PROVIDER_LIST } from '@/lib/stock-providers';
 
 export const metadata = {
   title: '株式の取引コスト比較｜国内株・米国株の手数料と為替を読む',
@@ -103,6 +104,21 @@ export default function StocksPage() {
           <li><a href="https://www.jpx.co.jp/equities/trading/domestic/07.html" target="_blank" rel="noopener noreferrer">日本取引所グループ「呼値の単位」</a></li>
         </ul>
         <p>制度・用語は2026年9月7日に確認。個別会社の最新条件は各社公式サイトを確認してください。</p>
+      </section>
+
+      <section className="fx-section" aria-labelledby="stock-provider-directory">
+        <div className="section-heading"><div>
+          <p className="section-index">05 / COST FACT SHEETS</p>
+          <h2 id="stock-provider-directory">証券会社別に、無料条件まで確認する</h2>
+          <p>比較表の数字を、対象外取引や追加費用まで掘り下げます。現在は広告リンクなしで掲載しています。</p>
+        </div></div>
+        <div className="provider-directory">
+          {STOCK_PROVIDER_LIST.map((provider) => (
+            <Link href={`/stocks/${provider.slug}`} key={provider.slug}>
+              <span>2026-09-07 確認</span><h3>{provider.shortName}</h3><p>{provider.feeModel}</p><b>コストシートを見る →</b>
+            </Link>
+          ))}
+        </div>
       </section>
 
       <section className="fx-next">

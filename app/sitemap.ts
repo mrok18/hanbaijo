@@ -9,6 +9,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'fx/systre-select-365',
     'cfd/dmm-cfd',
     'stocks/domestic-fee-comparison',
+    'stocks/gmo-click',
+    'stocks/rakuten',
+    'stocks/matsui',
+    'stocks/dmm-kabu',
     'futures/nikkei225-fee-comparison',
   ];
   return [

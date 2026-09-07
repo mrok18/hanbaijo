@@ -516,6 +516,22 @@ article li + li { margin-top: 8px; }
 .provider-offer h2 { margin: 0 0 15px; font-size: clamp(27px, 3vw, 38px); }
 .provider-offer > div > p:not(.section-index) { color: var(--muted); font-size: 13px; }
 .provider-offer .affiliate-card { min-height: 250px; }
+.provider-compact-hero { min-height: 0; padding-top: clamp(38px, 5vw, 58px); padding-bottom: clamp(38px, 5vw, 58px); }
+.stock-provider-hero { background: #123f46; }
+.provider-headline { max-width: 720px; margin: 20px 0 0; color: var(--signal); font-size: clamp(20px, 2.5vw, 31px); font-weight: 800; line-height: 1.45; }
+.provider-fact-value { display: block; margin: 0 0 8px; color: var(--blue); font: 850 23px/1.2 ui-monospace, SFMono-Regular, Consolas, monospace; }
+.provider-no-ad { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(35px, 7vw, 80px); margin-top: 75px; padding: 28px; border: 1px solid var(--line); border-radius: 17px; background: var(--paper); }
+.provider-no-ad span { color: var(--signal-dark); font: 800 10px/1 ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing: .12em; }
+.provider-no-ad h2 { margin: 9px 0 0; font-size: 23px; }
+.provider-no-ad p { margin: 0; color: var(--muted); font-size: 14px; }
+.provider-back { margin-top: 30px; }
+.provider-directory { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.provider-directory > a { display: flex; flex-direction: column; min-height: 220px; padding: 22px; border: 1px solid var(--line); border-radius: 15px; background: var(--paper); color: var(--ink); text-decoration: none; transition: transform .18s ease, border-color .18s ease; }
+.provider-directory > a:hover { transform: translateY(-3px); border-color: var(--blue); }
+.provider-directory span { color: var(--signal-dark); font: 800 10px/1 ui-monospace, SFMono-Regular, Consolas, monospace; }
+.provider-directory h3 { margin: 52px 0 8px; font-size: 20px; }
+.provider-directory p { margin: 0; color: var(--muted); font-size: 13px; }
+.provider-directory b { margin-top: auto; padding-top: 18px; color: var(--blue); font-size: 12px; }
 
 /* Cost calculator */
 .calculator-page { padding-bottom: 20px; }
@@ -626,6 +642,7 @@ article li + li { margin-top: 8px; }
   .comparison-sources > p { grid-column: 1; }
   .provider-stamp { max-width: 650px; }
   .provider-fact-grid { grid-template-columns: repeat(2, 1fr); }
+  .provider-directory { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 720px) {
@@ -676,10 +693,12 @@ article li + li { margin-top: 8px; }
   .calculator-caution { grid-template-columns: 1fr; gap: 25px; }
   .provider-hero { min-height: 0; margin-top: 18px; padding: 42px 28px; }
   .provider-fact-grid, .provider-offer { grid-template-columns: 1fr; }
+  .provider-no-ad { grid-template-columns: 1fr; }
   .provider-fact-grid article { min-height: 190px; }
   .provider-fact-grid h3 { margin-top: 34px; }
   .provider-source { align-items: flex-start; flex-direction: column; }
   .provider-source-links { justify-content: flex-start; }
+  .provider-directory { grid-template-columns: 1fr; }
   .comparison-intro { padding-top: 50px; }
   .comparison-result-head { align-items: flex-start; flex-direction: column; }
   .compact-labels { width: 100%; }
