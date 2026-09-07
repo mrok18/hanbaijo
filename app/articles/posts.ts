@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'matsui-account-types', category: '証券・FX', title: '松井証券のFX専用口座と総合口座の違い', desc: 'FXだけを始める場合と、株・NISA・先物も利用する場合で異なる口座開設の入口を整理する。' },
   { slug: 'fx-zero-spread-total-cost', category: 'FX', title: 'FXの0.0銭は本当に無料？別手数料まで総額で確認', desc: 'ゼロスプレッドと取引コスト0円を区別し、数量連動手数料や約定差を含めて判断する。' },
   { slug: 'fx-swap-three-days', category: 'FX', title: 'FXのスワップが3日分・4日分付くのはなぜ？', desc: 'ロールオーバーと受渡日の関係、土日・祝日をまたぐ変則付与の確認方法を整理する。' },
   { slug: 'fx-margin-ratio-vs-usage', category: 'FX', title: '証拠金維持率と使用率の違い｜100%の意味は逆', desc: '維持率と使用率の計算方向を分け、ロスカットまでの余力を読み違えない方法。' },

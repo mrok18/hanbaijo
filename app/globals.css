@@ -466,6 +466,7 @@ article li + li { margin-top: 8px; }
 .fx-losscut-table { min-width: 1180px; }
 .fx-spread-table { min-width: 1250px; }
 .fx-swap-table { min-width: 1180px; }
+.matsui-account-table { min-width: 1040px; }
 .comparison-section { padding-top: 88px; }
 .comparison-section > h2, .split-explain h2 { margin: 0; font-size: clamp(27px, 3.5vw, 41px); }
 .split-explain { display: grid; grid-template-columns: .85fr 1.15fr; gap: clamp(45px, 8vw, 100px); align-items: start; }
