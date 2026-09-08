@@ -65,6 +65,7 @@ export default function Page() {
 
     <p><Link href="/articles/jfx-lot-trade-unit">JFXの1Lotと最低取引単位を見る →</Link></p>
     <p><Link href="/articles/jfx-beginner-vs-matrix-trader">100通貨のビギナーFXと本口座を比較する →</Link></p>
+    <p><Link href="/articles/jfx-deposit-methods-comparison">クイック入金と銀行振込を比較する →</Link></p>
     <p><Link href="/articles/jfx-deposit-not-reflected">入金が反映されない場合の確認手順を見る →</Link></p>
     <p><Link href="/articles/jfx-fees-total-cost">入出金・取引手数料と実質コストを見る →</Link></p>
     <p><Link href="/tools/fx-position-size-calculator">許容損失から取引数量を計算する →</Link></p>

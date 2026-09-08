@@ -60,6 +60,7 @@ export default function Page() {
     </ul><p>入金条件・問い合わせ情報は2026年9月8日に公式ページで確認しました。対応銀行、時間、操作方法は変更される場合があります。</p></section>
 
     <p><Link href="/articles/jfx-account-opening-flow">口座開設から初回入金までを見る →</Link></p>
+    <p><Link href="/articles/jfx-deposit-methods-comparison">クイック入金と銀行振込の条件を比較する →</Link></p>
     <p><Link href="/articles/jfx-fees-total-cost">JFXの入出金手数料と実質コストを見る →</Link></p>
     <p><Link href="/articles/jfx-trading-hours-maintenance">取引・メンテナンス時間を見る →</Link></p>
     <p><Link href="/fx/jfx">JFXの取引条件一覧へ →</Link></p>
