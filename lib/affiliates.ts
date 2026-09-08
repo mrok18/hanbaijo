@@ -1,5 +1,5 @@
 export interface AffiliateOffer {
-  id: 'fxtf' | 'systre-select-365' | 'dmm-cfd' | 'matsui-fx' | 'jfx' | 'tossy';
+  id: 'fxtf' | 'systre-select-365' | 'dmm-cfd' | 'matsui-fx' | 'jfx' | 'tossy' | 'ablenet-vps';
   name: string;
   category: string;
   description: string;
@@ -62,5 +62,14 @@ export const AFFILIATE_OFFERS: Record<AffiliateOffer['id'], AffiliateOffer> = {
     linkLabel: '【PR】ウルトラ投資アプリ【TOSSY】',
     href: 'https://px.a8.net/svt/ejp?a8mat=4BC5IS+16VZM+1WP2+1HL85U',
     impressionSrc: 'https://www19.a8.net/0.gif?a8mat=4BC5IS+16VZM+1WP2+1HL85U',
+  },
+  'ablenet-vps': {
+    id: 'ablenet-vps',
+    name: 'ABLENET VPS',
+    category: 'FX自動売買・Windows VPS',
+    description: 'MT4・MT5・EAの常時稼働を検討するときに、Windowsプラン、RDSライセンス、メモリ、試用条件を公式情報で確認できます。',
+    linkLabel: 'FX自動売買におすすめ【ABLENET VPS】',
+    href: 'https://px.a8.net/svt/ejp?a8mat=4BC5IS+S2+4NIK+60OXE',
+    impressionSrc: 'https://www14.a8.net/0.gif?a8mat=4BC5IS+S2+4NIK+60OXE',
   },
 };

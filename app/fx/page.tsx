@@ -123,6 +123,7 @@ export default function FxPage() {
           </div>
         </div>
         <div className="provider-directory comparison-guide-directory">
+          <Link href="/fx/ablenet-vps"><span>AUTO TRADING VPS</span><h3>VPSの月額総コストを確認</h3><p>本体料金・RDS・必要メモリを分けて比較</p><b>ABLENET VPSを見る →</b></Link>
           <Link href="/fx/usdjpy-spread-comparison"><span>USD/JPY SPREAD</span><h3>米ドル円スプレッドを比較</h3><p>時間帯・数量条件・1万通貨コスト</p><b>10社比較を見る →</b></Link>
           <Link href="/fx/swap-calendar-comparison"><span>SWAP CALENDAR</span><h3>スワップの表示ルールを比較</h3><p>表示単位・付与日数・実現タイミング</p><b>10社比較を見る →</b></Link>
           <Link href="/fx/minimum-trade-unit-comparison"><span>TRADE SIZE</span><h3>最低取引単位を比較</h3><p>1通貨・1,000通貨を必要資金へ換算</p><b>9社比較を見る →</b></Link>
@@ -161,6 +162,7 @@ export default function FxPage() {
           <AffiliateOfferCard offer={AFFILIATE_OFFERS.tossy} />
           <AffiliateOfferCard offer={AFFILIATE_OFFERS.fxtf} />
           <AffiliateOfferCard offer={AFFILIATE_OFFERS['systre-select-365']} />
+          <AffiliateOfferCard offer={AFFILIATE_OFFERS['ablenet-vps']} />
         </div>
         <p className="affiliate-disclosure">
           広告リンク経由で申込み等が行われた場合、当サイトが報酬を受け取ることがあります。
