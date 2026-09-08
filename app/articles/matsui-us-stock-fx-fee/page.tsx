@@ -42,6 +42,7 @@ export default function Page() {
       <li><a href="https://support.matsui.co.jp/faq/show/35810" target="_blank" rel="noopener noreferrer">松井証券Q&amp;A「米国株の手数料はどのように計算しますか」</a></li>
     </ul><p>取引条件は2026年9月8日に確認しました。条件変更時は公式情報を優先してください。</p></section>
 
+    <p><Link href="/tools/matsui-us-stock-cost-calculator">松井証券の米国株往復コストを計算する →</Link></p>
     <p><Link href="/articles/us-stock-fx-cost">為替コストの一般的な計算方法を見る →</Link></p>
     <p><Link href="/articles/matsui-us-stock-trading-hours">松井証券の米国株取引時間を見る →</Link></p>
     <p><Link href="/stocks/matsui">松井証券の株式コストシートへ →</Link></p>

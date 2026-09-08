@@ -43,6 +43,7 @@ export default function Page() {
       <li><a href="https://www.matsui.co.jp/news/2026/detail_0728_01.html" target="_blank" rel="noopener noreferrer">松井証券「米国株の取引時間を23時間に拡大します」</a></li>
     </ul><p>取引時間と今後の予定は2026年9月8日に確認しました。</p></section>
 
+    <p><Link href="/tools/matsui-us-stock-cost-calculator">米国株の往復コストを計算する →</Link></p>
     <p><Link href="/articles/matsui-us-stock-fx-fee">松井証券の米国株為替コストを見る →</Link></p>
     <p><Link href="/stocks/matsui">松井証券の株式コストシートへ →</Link></p>
     <section className="article-affiliate" aria-label="関連する広告"><AffiliateOfferCard offer={AFFILIATE_OFFERS['matsui-fx']} /><p className="affiliate-disclosure">松井証券への広告リンクです。申込み成立時に当サイトが報酬を受け取る場合があります。</p></section>
