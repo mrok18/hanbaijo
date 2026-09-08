@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'dmm-cfd-index-vs-commodity', category: 'CFD・DMM CFD', title: 'DMM CFDのIndexとCommodityの違い｜22銘柄・証拠金を比較', desc: '株価指数8銘柄と商品14銘柄を、レバレッジ、取引単位、円換算、調整額、入金方法から比較する。' },
   { slug: 'dmm-cfd-account-opening-documents', category: '商品CFD・DMM CFD', title: 'DMM CFDの口座開設に必要なもの｜本人確認・審査・開始まで', desc: '本人確認とマイナンバーの組合せ、スマホと郵送の違い、審査から取引開始までを整理する。' },
   { slug: 'dmm-cfd-deposit-minimum-quick', category: '商品CFD・DMM CFD', title: 'DMM CFDの最低入金額はいくら？クイック入金と振込を比較', desc: '初回最低入金額、クイック入金5,000円以上、振込手数料、出金条件と必要証拠金を分けて確認する。' },
   { slug: 'dmm-cfd-tick-value-profit-loss', category: '商品CFD・DMM CFD', title: 'DMM CFDは1ティックいくら？商品14銘柄の損益早見表', desc: '商品14銘柄の1Lot取引単位と呼値から、最小値幅の米ドル・円損益、総コスト回収に必要なティック数を計算する。' },

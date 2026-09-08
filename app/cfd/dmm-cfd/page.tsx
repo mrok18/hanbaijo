@@ -71,6 +71,8 @@ export default function DmmCfdPage() {
         <p className="section-index">03 / PRACTICAL GUIDES</p>
         <h2>DMM CFDの計算ガイド</h2>
         <div className="provider-fact-grid">
+          <article><b>INDEX VS COMMODITY</b><h3><Link href="/articles/dmm-cfd-index-vs-commodity">22銘柄と証拠金の違い</Link></h3><p>Index 8銘柄・Commodity 14銘柄を、レバレッジと円換算から比較します。</p></article>
+          <article><b>22 PRODUCTS / TOOL</b><h3><Link href="/tools/dmm-cfd-22-products-calculator">22銘柄の証拠金を計算</Link></h3><p>1ポイント・1ティック損益、必要証拠金、口座資金の使用率をまとめて試算します。</p></article>
           <article><b>ACCOUNT / DOCUMENTS</b><h3><Link href="/articles/dmm-cfd-account-opening-documents">口座開設の必要書類と流れ</Link></h3><p>本人確認・マイナンバーの組合せ、審査後の受取り、最短即日の条件を確認します。</p></article>
           <article><b>DEPOSIT / MINIMUM</b><h3><Link href="/articles/dmm-cfd-deposit-minimum-quick">最低入金額と入金方法</Link></h3><p>初回入金の制限、クイック入金5,000円以上、振込・出金条件を区別します。</p></article>
           <article><b>14 PRODUCTS / TICK VALUE</b><h3><Link href="/articles/dmm-cfd-tick-value-profit-loss">商品14銘柄の1ティック損益</Link></h3><p>公式の取引単位と呼値から、最小値幅を米ドル・円の損益へ換算します。</p></article>

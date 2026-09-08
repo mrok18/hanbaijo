@@ -4,6 +4,7 @@ import { POSTS } from './articles/posts';
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://hanbaijo.com';
   const detailRoutes = [
+    'tools/dmm-cfd-22-products-calculator',
     'tools/dmm-cfd-tick-value-calculator',
     'fx/fxtf',
     'fx/systre-select-365',
