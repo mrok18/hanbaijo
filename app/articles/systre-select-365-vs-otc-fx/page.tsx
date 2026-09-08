@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import AffiliateOfferCard from '@/components/AffiliateOfferCard';
+import ArticleStructuredData from '@/components/ArticleStructuredData';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
@@ -18,6 +19,7 @@ const ROWS = [
 export default function Page() {
   return (
     <article>
+      <ArticleStructuredData slug="systre-select-365-vs-otc-fx" publishedAt="2026-09-07" />
       <p className="page-kicker">SYSTRE SELECT 365 / MARKET STRUCTURE</p>
       <h1>シストレセレクト365と店頭FXの違い<br />取引所FXを選ぶ意味</h1>
       <p className="lede">シストレセレクト365は、店頭FXではなく東京金融取引所の「くりっく365」で自動売買します。違いは自動・手動だけではなく、価格を提示する仕組み、スワップ、手数料、証拠金にあります。</p>

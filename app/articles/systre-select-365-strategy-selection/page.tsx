@@ -1,11 +1,13 @@
 import Link from 'next/link';
 import AffiliateOfferCard from '@/components/AffiliateOfferCard';
+import ArticleStructuredData from '@/components/ArticleStructuredData';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = { title: 'シストレセレクト365のストラテジー選び｜利益率だけで決めない', description: 'シストレセレクト365のストラテジーを、利益率、最大ドローダウン、リスクリターン率、取引回数、推奨証拠金から比較します。' };
 
 export default function Page() {
   return <article>
+    <ArticleStructuredData slug="systre-select-365-strategy-selection" publishedAt="2026-09-07" />
     <p className="page-kicker">SYSTRE SELECT 365 / STRATEGY</p>
     <h1>ストラテジーの選び方<br />利益率だけで決めない</h1>
     <p className="lede">ランキング上位でも、将来の利益は保証されません。利益の大きさと、その利益を得るまでに経験した損失幅を同じ期間で比べます。</p>

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import AffiliateOfferCard from '@/components/AffiliateOfferCard';
+import ArticleStructuredData from '@/components/ArticleStructuredData';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
@@ -16,6 +17,7 @@ const FUND_EXAMPLES = [
 export default function Page() {
   return (
     <article>
+      <ArticleStructuredData slug="matsui-fx-auto-trading-cost" publishedAt="2026-09-07" />
       <p className="page-kicker">MATSUI FX AUTO TRADING</p>
       <h1>MATSUI FX自動売買は100円から？<br />必要資金とロスカットを計算</h1>
       <p className="lede">MATSUI FXの自動売買は1通貨単位から設定できます。ただし、リピート注文はレンジ内へ複数の注文を置くため、「1注文を出せる金額」と「設定全体を運用できる資金」は別です。</p>

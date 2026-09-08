@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import AffiliateOfferCard from '@/components/AffiliateOfferCard';
+import ArticleStructuredData from '@/components/ArticleStructuredData';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
@@ -17,6 +18,7 @@ const COSTS = [
 export default function Page() {
   return (
     <article>
+      <ArticleStructuredData slug="systre-select-365-total-cost" publishedAt="2026-09-07" />
       <p className="page-kicker">SYSTRE SELECT 365 / TOTAL COST</p>
       <h1>シストレセレクト365の手数料は0円？<br />利用料・スプレッドまで確認</h1>
       <p className="lede">売買手数料は0円ですが、運用の総コストが必ず0円になるわけではありません。初回のサービス利用料、売値と買値の差、建玉を持ち越したときのスワップを分けて確認します。</p>

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import AffiliateOfferCard from '@/components/AffiliateOfferCard';
+import ArticleStructuredData from '@/components/ArticleStructuredData';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
@@ -16,6 +17,7 @@ const EXAMPLES = [
 export default function Page() {
   return (
     <article>
+      <ArticleStructuredData slug="systre-select-365-recommended-margin" publishedAt="2026-09-07" />
       <p className="page-kicker">SYSTRE SELECT 365 / MARGIN</p>
       <h1>シストレセレクト365の推奨証拠金とは？<br />最大DDから運用資金を計算</h1>
       <p className="lede">推奨証拠金は、注文を出すための最低額ではありません。現在の証拠金基準額に、ストラテジーが過去1年間に経験した最大ドローダウンを加えた「運用を続けるための目安」です。</p>

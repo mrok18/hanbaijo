@@ -1,11 +1,13 @@
 import Link from 'next/link';
 import AffiliateOfferCard from '@/components/AffiliateOfferCard';
+import ArticleStructuredData from '@/components/ArticleStructuredData';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = { title: 'シストレセレクト365の停止・入替え｜建玉を残さない確認手順', description: 'シストレセレクト365の稼働停止、ストラテジー入替え、未決済ポジション、両建て、サービス解約前の確認点を整理します。' };
 
 export default function Page() {
   return <article>
+    <ArticleStructuredData slug="systre-select-365-stop-switch" publishedAt="2026-09-07" />
     <p className="page-kicker">SYSTRE SELECT 365 / CONTROL</p>
     <h1>停止・入替えの確認<br />建玉を残さないための手順</h1>
     <p className="lede">ストラテジーの稼働を止めることと、保有ポジションを決済することは同じではありません。停止後に未決済建玉が残っていないかを口座画面で確認します。</p>

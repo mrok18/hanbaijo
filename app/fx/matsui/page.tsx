@@ -5,6 +5,7 @@ import { FX_PROVIDERS } from '@/lib/fx-providers';
 export const metadata = { title: 'MATSUI FXの取引コスト・最小取引単位', description: 'MATSUI FXの1通貨単位、取引手数料、レバレッジコース、スプレッドの確認方法を公式情報から整理します。' };
 export default function Page() {
   return <FxProviderFactSheet provider={FX_PROVIDERS.matsui} affiliateOffer={AFFILIATE_OFFERS['matsui-fx']} relatedArticles={[
+    { href: '/articles/systre-select-365-vs-matsui-auto-trading', title: 'シストレセレクト365と比較', description: 'リピート型と選択型、1通貨と1万通貨、費用・必要資金の違いを比較します。' },
     { href: '/articles/matsui-simultaneous-account-opening', title: '総合口座と同時に申込める口座', description: 'FX・NISA・信用・先物を同時申込みする場合と、後から追加する場合を整理します。' },
     { href: '/articles/jfx-vs-matsui-fx', title: '松井証券FXとJFXを比較', description: '1通貨の少額取引とスキャルピング環境を、スプレッド条件まで含めて比較します。' },
     { href: '/tools/matsui-fx-margin-calculator', title: 'FX証拠金維持率計算機', description: '必要証拠金、維持率、追証・ロスカット水準までの余力を試算します。' },

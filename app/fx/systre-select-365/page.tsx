@@ -77,6 +77,7 @@ export default function SystrePage() {
         <p className="section-index">03 / RELATED GUIDES</p>
         <h2 id="systre-related-guides">稼働前に資金と総コストを確認</h2>
         <div className="provider-directory">
+          <Link href="/articles/systre-select-365-vs-matsui-auto-trading"><span>COMPARE</span><h3>MATSUI FX自動売買と比較</h3><p>選択型とリピート型、1万通貨と1通貨、利用料と必要資金を同じ軸で比べます。</p><b>記事を読む →</b></Link>
           <Link href="/articles/systre-select-365-account-opening-flow"><span>START</span><h3>口座開設から稼働まで</h3><p>口座の有無で異なる申込経路、カード登録、入金、初回稼働を順番に確認します。</p><b>記事を読む →</b></Link>
           <Link href="/articles/systre-select-365-start-operation-flow"><span>HOW TO</span><h3>ランキングから稼働する手順</h3><p>成績期間、最大DD、数量、リスクメーターを確認して稼働する流れを整理します。</p><b>記事を読む →</b></Link>
           <Link href="/articles/systre-select-365-vs-otc-fx"><span>GUIDE</span><h3>取引所FXと店頭FXの違い</h3><p>価格提示、スワップ、手数料、証拠金の違いを同じ表で確認します。</p><b>記事を読む →</b></Link>

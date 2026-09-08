@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import AffiliateOfferCard from '@/components/AffiliateOfferCard';
+import ArticleStructuredData from '@/components/ArticleStructuredData';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
@@ -17,6 +18,7 @@ const NEW_ACCOUNT_STEPS = [
 export default function Page() {
   return (
     <article>
+      <ArticleStructuredData slug="systre-select-365-account-opening-flow" publishedAt="2026-09-08" />
       <p className="page-kicker">SYSTRE SELECT 365 / ACCOUNT OPENING</p>
       <h1>シストレセレクト365の始め方<br />口座開設から稼働まで</h1>
       <p className="lede">申込画面へ進む前に、自分がフジトミ証券のくりっく365口座を持っているかを確認します。口座の有無で最初の入口は異なりますが、カード登録、ログイン、入金、ストラテジー稼働という順序は共通です。</p>

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import AffiliateOfferCard from '@/components/AffiliateOfferCard';
+import ArticleStructuredData from '@/components/ArticleStructuredData';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
@@ -10,6 +11,7 @@ export const metadata = {
 export default function Page() {
   return (
     <article>
+      <ArticleStructuredData slug="matsui-fx-auto-trading-stop-restart" publishedAt="2026-09-07" />
       <p className="page-kicker">MATSUI FX / AUTO TRADING CONTROL</p>
       <h1>MATSUI FX自動売買の停止・再開<br />建玉と注文はどうなる？</h1>
       <p className="lede">「運用停止」は必ずしも全決済ではありません。停止時に建玉を残すか、決済注文を残すかで、その後のリスクと手作業が変わります。</p>

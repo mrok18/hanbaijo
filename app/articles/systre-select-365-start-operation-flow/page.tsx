@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import AffiliateOfferCard from '@/components/AffiliateOfferCard';
+import ArticleStructuredData from '@/components/ArticleStructuredData';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
@@ -17,6 +18,7 @@ const FLOW = [
 export default function Page() {
   return (
     <article>
+      <ArticleStructuredData slug="systre-select-365-start-operation-flow" publishedAt="2026-09-08" />
       <p className="page-kicker">SYSTRE SELECT 365 / OPERATION FLOW</p>
       <h1>シストレセレクト365の基本操作<br />ランキングから稼働まで</h1>
       <p className="lede">「成績上位のキャラクターを選ぶ」だけでは、運用に必要な資金や損失幅が見えません。ランキングから詳細画面、数量設定、稼働後の記録までを一つの流れとして整理します。</p>

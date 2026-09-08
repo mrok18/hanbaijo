@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import AffiliateOfferCard from '@/components/AffiliateOfferCard';
+import ArticleStructuredData from '@/components/ArticleStructuredData';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
@@ -10,6 +11,7 @@ export const metadata = {
 export default function Page() {
   return (
     <article>
+      <ArticleStructuredData slug="systre-select-365-losscut-margin-shortage" publishedAt="2026-09-07" />
       <p className="page-kicker">SYSTRE SELECT 365 / RISK CONTROL</p>
       <h1>シストレセレクト365のロスカット<br />有効比率100％と証拠金不足</h1>
       <p className="lede">自動売買でもロスカットは自動的に回避されません。フジトミ証券のくりっく365では、1分ごとの確認で有効比率が100％以下になると全建玉の決済注文が発注されます。</p>
