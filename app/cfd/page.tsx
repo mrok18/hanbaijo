@@ -114,6 +114,8 @@ export default function CfdPage() {
           </div>
         </div>
         <div className="provider-fact-grid">
+          <article><b>DMM / ACCOUNT OPENING</b><h3><Link href="/articles/dmm-cfd-account-opening-documents">DMM CFDの必要書類</Link></h3><p>本人確認・マイナンバー提出から審査、取引開始までの流れを確認します。</p></article>
+          <article><b>DMM / DEPOSIT</b><h3><Link href="/articles/dmm-cfd-deposit-minimum-quick">DMM CFDの最低入金額</Link></h3><p>サービスの最低入金額と、クイック入金の操作下限を分けて整理します。</p></article>
           <article><b>DMM / 14 PRODUCTS</b><h3><Link href="/articles/dmm-cfd-tick-value-profit-loss">商品14銘柄の1ティック損益</Link></h3><p>取引単位と呼値を使い、最小値幅が円でいくらになるか確認します。</p></article>
           <article><b>DMM / TICK TOOL</b><h3><Link href="/tools/dmm-cfd-tick-value-calculator">DMM CFD損益計算機</Link></h3><p>14銘柄の買い・売り、値動き、コスト差引後を同じ式で計算します。</p></article>
           <article><b>COMMODITY / PRICE MOVE</b><h3><Link href="/articles/commodity-cfd-one-dollar-profit-loss">商品CFDは1ドルでいくら動く？</Link></h3><p>共通4商品の取引単位から、1Lotの円換算損益を比較します。</p></article>

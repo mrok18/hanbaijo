@@ -71,6 +71,8 @@ export default function DmmCfdPage() {
         <p className="section-index">03 / PRACTICAL GUIDES</p>
         <h2>DMM CFDの計算ガイド</h2>
         <div className="provider-fact-grid">
+          <article><b>ACCOUNT / DOCUMENTS</b><h3><Link href="/articles/dmm-cfd-account-opening-documents">口座開設の必要書類と流れ</Link></h3><p>本人確認・マイナンバーの組合せ、審査後の受取り、最短即日の条件を確認します。</p></article>
+          <article><b>DEPOSIT / MINIMUM</b><h3><Link href="/articles/dmm-cfd-deposit-minimum-quick">最低入金額と入金方法</Link></h3><p>初回入金の制限、クイック入金5,000円以上、振込・出金条件を区別します。</p></article>
           <article><b>14 PRODUCTS / TICK VALUE</b><h3><Link href="/articles/dmm-cfd-tick-value-profit-loss">商品14銘柄の1ティック損益</Link></h3><p>公式の取引単位と呼値から、最小値幅を米ドル・円の損益へ換算します。</p></article>
           <article><b>14 PRODUCTS / CALCULATOR</b><h3><Link href="/tools/dmm-cfd-tick-value-calculator">1ティック損益を計算</Link></h3><p>買い・売り、Lot数、米ドル円、総コストから差引損益まで試算します。</p></article>
           <article><b>COMMODITY / PRICE MOVE</b><h3><Link href="/articles/commodity-cfd-one-dollar-profit-loss">1ドルの値動き損益を確認</Link></h3><p>金・銀・原油・天然ガスの1Lot単位から、円換算損益を比較します。</p></article>
