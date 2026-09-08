@@ -53,6 +53,7 @@ export default function Page() {
     <h2>逆指値があっても上限は保証されない</h2>
     <p>経済指標、要人発言、週明けの窓開けなどでは、逆指値より不利な価格で約定することがあります。金融庁も、相場急変時にはロスカットが適用されても証拠金を上回る損失が生じる可能性を案内しています。計算結果は上限保証ではなく、平常時の計画値として使います。</p>
 
+    <p><Link href="/tools/risk-reward-calculator">利確・損切り幅から損益分岐勝率を計算する →</Link></p>
     <p><Link href="/tools/fx-pip-value-calculator">自分の取引数量で1pipsの損益を計算する →</Link></p>
     <p><Link href="/tools/fx-position-size-calculator">FX取引数量計算機で自分の条件を入力する →</Link></p>
     <p><Link href="/articles/fx-required-margin">必要証拠金の計算方法を見る →</Link></p>
