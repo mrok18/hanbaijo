@@ -17,7 +17,7 @@ export default function FuturesPage() {
             1ティックの損益、限月まで確認し、実質的な負担とリスクを見ます。
           </p>
           <div className="hero-actions">
-            <Link className="button primary" href="/articles/futures-tick-value">1ティックを計算</Link>
+            <Link className="button primary" href="/tools/matsui-futures-cost-calculator">損益と手数料を計算</Link>
             <Link className="button secondary" href="/articles/futures-margin">証拠金を理解する</Link>
           </div>
         </div>
@@ -90,6 +90,7 @@ export default function FuturesPage() {
           <h2>会社比較と金額構造をつなげる</h2>
         </div></div>
         <div className="affiliate-grid">
+          <article className="affiliate-card"><div className="affiliate-card-head"><span>TOOL</span><b>独自計算</b></div><p className="affiliate-category">FUTURES COST CALCULATOR</p><h3>値幅・枚数から損益計算</h3><p>商品と通常・一日先物を選び、値幅損益、往復手数料、損益分岐を試算します。</p><Link href="/tools/matsui-futures-cost-calculator">計算する →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>GUIDE</span><b>松井証券</b></div><p className="affiliate-category">STANDARD VS DAY</p><h3>通常先物と一日先物</h3><p>ラージ・mini・マイクロの片道、往復、1ティック比を同じ条件で比べます。</p><Link href="/articles/matsui-futures-normal-vs-day">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>COMPARE</span><b>2026-09-07確認</b></div><p className="affiliate-category">NIKKEI 225 FEES</p><h3>先物2社の手数料</h3><p>松井証券と楽天証券の標準手数料を、片道・往復で比較します。</p><Link href="/futures/nikkei225-fee-comparison">比較表を見る →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>GUIDE</span><b>計算</b></div><p className="affiliate-category">TICK VALUE</p><h3>1ティックの損益</h3><p>取引単位と呼値から、最小の値動きが何円になるかを計算します。</p><Link href="/articles/futures-tick-value">記事を読む →</Link></article>

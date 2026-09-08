@@ -55,6 +55,7 @@ export default function Page() {
         <p>取引単位と呼値は2026年9月7日に確認。</p>
       </section>
 
+      <p><Link href="/tools/matsui-futures-cost-calculator">先物の値幅損益と往復手数料を計算する →</Link></p>
       <p><Link href="/futures">先物コスト比較へ戻る →</Link></p>
     </article>
   );

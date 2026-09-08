@@ -40,6 +40,7 @@ export default function Page() {
       <li><a href="https://www.matsui.co.jp/fop/d-futures/rule/" target="_blank" rel="noopener noreferrer">松井証券「一日先物取引 取引ルール」</a></li>
     </ul><p>手数料と制度は2026年9月8日に確認しました。</p></section>
 
+    <p><Link href="/tools/matsui-futures-cost-calculator">値幅・枚数から損益と手数料を計算する →</Link></p>
     <p><Link href="/articles/futures-tick-value">日経225先物の1ティック損益を見る →</Link></p>
     <p><Link href="/futures/nikkei225-fee-comparison">証券会社別の標準手数料を比較する →</Link></p>
     <p><Link href="/futures">先物コストガイドへ戻る →</Link></p>
