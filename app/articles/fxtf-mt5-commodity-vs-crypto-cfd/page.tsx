@@ -72,7 +72,9 @@ export default function Page() {
 
     <p><Link href="/fx/fxtf">FXTFの取引条件を見る →</Link></p>
     <p><Link href="/articles/fxtf-mt5-btc-cfd-cost">BTC/JPY 0.01Lotの証拠金・手数料を見る →</Link></p>
+    <p><Link href="/articles/fxtf-mt5-btc-jpy-vs-usd">BTC/JPYとBTC/USDの証拠金計算を比較する →</Link></p>
     <p><Link href="/articles/fxtf-mt5-gold-cfd-margin">金CFD 1Lotの必要証拠金を見る →</Link></p>
+    <p><Link href="/articles/fxtf-mt5-silver-cfd-margin">銀CFD 1Lotの必要証拠金を見る →</Link></p>
     <p><Link href="/articles/fxtf-mt5-oil-natural-gas-margin">原油・天然ガスCFDを比較する →</Link></p>
     <p><Link href="/tools/fxtf-mt5-margin-calculator">FXTF MT5証拠金計算機で試算する →</Link></p>
     <p><Link href="/articles/fxtf-gx-mt4-mt5-difference">GX・MT4・MT5の違いを見る →</Link></p>

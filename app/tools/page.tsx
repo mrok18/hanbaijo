@@ -6,7 +6,7 @@ export const metadata = {
 };
 
 const tools = [
-  { href: '/tools/fxtf-mt5-margin-calculator', tag: 'CFD / FXTF MT5', title: 'FXTF MT5証拠金計算機', description: '商品CFD4銘柄とBTC/JPYについて、価格、Lot数、米ドル円から想定元本と個人の必要証拠金を計算します。', scope: '金・銀・原油・天然ガス・BTC' },
+  { href: '/tools/fxtf-mt5-margin-calculator', tag: 'CFD / FXTF MT5', title: 'FXTF MT5証拠金計算機', description: '商品CFD4銘柄とBTC/JPY・BTC/USDについて、価格、Lot数、円換算レートから想定元本と個人の必要証拠金を計算します。', scope: '商品4銘柄・BTC 2通貨建て' },
   { href: '/tools/jfx-fxtf-cost-comparison', tag: 'FX / PROVIDER COMPARE', title: 'JFX・FXTFコスト比較計算機', description: '同じ数量・往復回数で、スプレッド、想定約定差、FXTFの建玉連動手数料を円換算して比較します。', scope: '2社の総コストを比較' },
   { href: '/tools/fx-vps-cost-calculator', tag: 'FX AUTO TRADING', title: 'FX自動売買 VPSコスト計算機', description: 'VPS本体、RDSライセンス、取引回数から月額・年額・1往復あたりのインフラ費を計算します。', scope: 'VPSと自宅PCを比較' },
   { href: '/tools/jfx-scalping-cost-calculator', tag: 'FX / JFX', title: 'JFX短期売買コスト計算機', description: '米ドル/円の時間帯別スプレッド、数量、往復回数、想定スリッページから累積コストを計算します。', scope: '0.2銭・早朝5.9銭' },

@@ -75,6 +75,7 @@ export default function Page() {
     </section>
 
     <p><Link href="/articles/fxtf-mt5-commodity-vs-crypto-cfd">FXTF MT5の商品・暗号資産CFD比較 →</Link></p>
+    <p><Link href="/articles/fxtf-mt5-btc-jpy-vs-usd">BTC/JPYとBTC/USDの違いを見る →</Link></p>
     <p><Link href="/articles/fxtf-position-fee-calculation">建玉連動手数料の仕組みを詳しく見る →</Link></p>
     <p><Link href="/fx/fxtf">FXTFの取引条件一覧へ →</Link></p>
     <p><Link href="/cfd">CFDの比較方法へ戻る →</Link></p>

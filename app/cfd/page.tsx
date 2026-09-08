@@ -116,7 +116,9 @@ export default function CfdPage() {
         <div className="provider-fact-grid">
           <article><b>FXTF MT5</b><h3><Link href="/articles/fxtf-mt5-commodity-vs-crypto-cfd">商品CFDと暗号資産CFD</Link></h3><p>個人レバレッジ20倍・2倍、1Lot、建玉連動手数料を比較します。</p></article>
           <article><b>BITCOIN CFD</b><h3><Link href="/articles/fxtf-mt5-btc-cfd-cost">BTC/JPY 0.01Lotの費用</Link></h3><p>必要証拠金、新規時の建玉連動手数料、保有中の負担を分けます。</p></article>
+          <article><b>BTC PAIRS</b><h3><Link href="/articles/fxtf-mt5-btc-jpy-vs-usd">BTC/JPYとBTC/USD</Link></h3><p>同じ0.01BTCでも異なる、必要証拠金の円換算レートを整理します。</p></article>
           <article><b>GOLD CFD</b><h3><Link href="/articles/fxtf-mt5-gold-cfd-margin">金1Lotの必要証拠金</Link></h3><p>金価格と米ドル円を掛け、証拠金・手数料・スワップを円換算します。</p></article>
+          <article><b>SILVER CFD</b><h3><Link href="/articles/fxtf-mt5-silver-cfd-margin">銀1Lotの必要証拠金</Link></h3><p>10トロイオンス、証拠金、建玉連動手数料、スプレッドを計算します。</p></article>
           <article><b>ENERGY CFD</b><h3><Link href="/articles/fxtf-mt5-oil-natural-gas-margin">原油・天然ガスを比較</Link></h3><p>1Lotの中身、証拠金、建玉連動手数料、持越し費用を比較します。</p></article>
           <article><b>MARGIN TOOL</b><h3><Link href="/tools/fxtf-mt5-margin-calculator">FXTF MT5証拠金計算機</Link></h3><p>金・銀・原油・天然ガス・BTCを、取引画面の価格から円換算します。</p></article>
           <article><b>SIX ASSETS</b><h3><Link href="/cfd/tossy">TOSSYの6資産と証拠金率</Link></h3><p>株・暗号資産の現物ではなく、FXと5種類のCFDを扱うサービスとして整理します。</p></article>

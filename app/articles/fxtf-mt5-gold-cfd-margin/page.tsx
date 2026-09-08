@@ -65,6 +65,7 @@ export default function Page() {
     </ul><p>条件は2026年9月8日に公式情報で確認しました。価格例は現在レートではありません。取引条件は変更される場合があるため、発注前にMT5画面と最新資料を確認してください。</p></section>
 
     <section className="article-affiliate" aria-label="FXTFの広告"><AffiliateOfferCard offer={AFFILIATE_OFFERS.fxtf} /><p className="affiliate-disclosure">A8.netの提携広告です。広告報酬は計算や評価には影響しません。商品CFDは元本や利益が保証されず、相場急変時には証拠金を上回る損失が生じる可能性があります。</p></section>
+    <p><Link href="/articles/fxtf-mt5-silver-cfd-margin">銀CFD 1Lotの必要証拠金を見る →</Link></p>
     <p><Link href="/articles/fxtf-mt5-oil-natural-gas-margin">原油・天然ガスCFDの証拠金比較 →</Link></p>
     <p><Link href="/articles/fxtf-mt5-commodity-vs-crypto-cfd">FXTF MT5の商品・暗号資産CFD比較 →</Link></p>
     <p><Link href="/fx/fxtf">FXTFの取引条件一覧へ →</Link></p>
