@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import AffiliateOfferCard from '@/components/AffiliateOfferCard';
+import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
   title: 'DMM 株の国内株手数料｜買って売る往復コストを計算',
@@ -81,6 +83,11 @@ export default function Page() {
           <li><a href="https://kabu.dmm.com/jp/stock/outline/" target="_blank" rel="noopener noreferrer">DMM 株「商品概要・取引ルール」</a></li>
         </ul>
         <p>料金は2026年9月7日に確認しました。注文前に公式料金表と契約締結前交付書面を確認してください。</p>
+      </section>
+
+      <section className="article-affiliate" aria-label="DMM 株の広告">
+        <AffiliateOfferCard offer={AFFILIATE_OFFERS['dmm-kabu']} />
+        <p className="affiliate-disclosure">上記はA8.netの提携広告です。広告報酬は料金表、計算式、比較内容には影響しません。投資には価格変動等による損失の可能性があります。</p>
       </section>
 
       <p><Link href="/stocks/dmm-kabu">DMM 株のコストシートを見る →</Link></p>

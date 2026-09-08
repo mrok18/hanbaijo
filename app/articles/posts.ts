@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'dmm-cfd-tick-value-profit-loss', category: '商品CFD・DMM CFD', title: 'DMM CFDは1ティックいくら？商品14銘柄の損益早見表', desc: '商品14銘柄の1Lot取引単位と呼値から、最小値幅の米ドル・円損益、総コスト回収に必要なティック数を計算する。' },
   { slug: 'commodity-cfd-one-dollar-profit-loss', category: '商品CFD・基礎計算', title: '商品CFDは1ドル動くといくら？金・銀・原油・天然ガスの損益', desc: '1Lotの取引単位と米ドル円から、1ドル・0.1ドルの値動き損益、証拠金5％目安、コスト回収値幅を計算する。' },
   { slug: 'fxtf-vs-dmm-cfd-commodity', category: '商品CFD・比較', title: 'FXTF MT5とDMM CFDの商品CFDを比較｜金・銀・原油・天然ガス', desc: '共通4商品の1Lot、証拠金、スプレッド、新規手数料、スワップ・調整額と、取扱銘柄数の違いを整理する。' },
   { slug: 'fxtf-vs-dmm-cfd-gold', category: '商品CFD・比較', title: 'FXTF MT5とDMM CFDの金CFDを比較｜1Lot・証拠金・総コスト', desc: '同じ1トロイオンス・証拠金率5％の金CFDを、スプレッド、新規手数料、スワップ・金利調整額から比較する。' },

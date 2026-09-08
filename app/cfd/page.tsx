@@ -114,6 +114,8 @@ export default function CfdPage() {
           </div>
         </div>
         <div className="provider-fact-grid">
+          <article><b>DMM / 14 PRODUCTS</b><h3><Link href="/articles/dmm-cfd-tick-value-profit-loss">商品14銘柄の1ティック損益</Link></h3><p>取引単位と呼値を使い、最小値幅が円でいくらになるか確認します。</p></article>
+          <article><b>DMM / TICK TOOL</b><h3><Link href="/tools/dmm-cfd-tick-value-calculator">DMM CFD損益計算機</Link></h3><p>14銘柄の買い・売り、値動き、コスト差引後を同じ式で計算します。</p></article>
           <article><b>COMMODITY / PRICE MOVE</b><h3><Link href="/articles/commodity-cfd-one-dollar-profit-loss">商品CFDは1ドルでいくら動く？</Link></h3><p>共通4商品の取引単位から、1Lotの円換算損益を比較します。</p></article>
           <article><b>COMMODITY / RISK TOOL</b><h3><Link href="/tools/commodity-cfd-price-move-calculator">商品CFD値動き損益計算機</Link></h3><p>買い・売りの値動き、総コスト、証拠金、口座資金への影響を計算します。</p></article>
           <article><b>COMMODITY / PROVIDER COMPARE</b><h3><Link href="/articles/fxtf-vs-dmm-cfd-commodity">FXTFとDMMの商品CFD</Link></h3><p>共通4商品の1Lot、証拠金、手数料、持越し費用を横断比較します。</p></article>
@@ -141,7 +143,7 @@ export default function CfdPage() {
           <div>
             <p className="section-index">05 / PARTNERED SERVICE</p>
             <h2 id="cfd-partner-title">最新の取引条件を公式サイトで確認する</h2>
-            <p>以下はA8.netで提携済みの広告です。比較評価とは分離して掲載しています。</p>
+            <p>以下はA8.netまたはアクセストレードの提携広告です。比較評価とは分離して掲載しています。</p>
           </div>
         </div>
         <div className="affiliate-grid">

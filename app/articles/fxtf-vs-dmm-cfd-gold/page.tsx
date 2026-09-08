@@ -60,7 +60,7 @@ export default function Page() {
     <section className="article-affiliate" aria-label="FXTFとDMM CFDの広告"><div className="affiliate-grid">
       <AffiliateOfferCard offer={AFFILIATE_OFFERS.fxtf} />
       <AffiliateOfferCard offer={AFFILIATE_OFFERS['dmm-cfd']} />
-    </div><p className="affiliate-disclosure">上記はA8.netの提携広告です。広告報酬は計算式や比較内容には影響しません。CFDは元本および利益が保証されず、証拠金を上回る損失が生じる可能性があります。</p></section>
+    </div><p className="affiliate-disclosure">上記はA8.netまたはアクセストレードの提携広告です。広告報酬は計算式や比較内容には影響しません。CFDは元本および利益が保証されず、証拠金を上回る損失が生じる可能性があります。</p></section>
     <p><Link href="/articles/fxtf-vs-dmm-cfd-commodity">金・銀・原油・天然ガスの2社比較 →</Link></p>
     <p><Link href="/tools/commodity-cfd-provider-cost-comparison">4商品対応の2社比較計算機 →</Link></p>
     <p><Link href="/articles/fxtf-mt5-gold-cfd-margin">FXTF MT5の金1Lotを詳しく計算 →</Link></p>

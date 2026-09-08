@@ -64,7 +64,7 @@ export default function Page() {
     <section className="article-affiliate" aria-label="FXTFとDMM CFDの広告"><div className="affiliate-grid">
       <AffiliateOfferCard offer={AFFILIATE_OFFERS.fxtf} />
       <AffiliateOfferCard offer={AFFILIATE_OFFERS['dmm-cfd']} />
-    </div><p className="affiliate-disclosure">上記はA8.netの提携広告です。広告報酬は比較軸・計算式・評価には影響しません。商品CFDは元本および利益が保証されず、証拠金を上回る損失が生じる可能性があります。</p></section>
+    </div><p className="affiliate-disclosure">上記はA8.netまたはアクセストレードの提携広告です。広告報酬は比較軸・計算式・評価には影響しません。商品CFDは元本および利益が保証されず、証拠金を上回る損失が生じる可能性があります。</p></section>
     <p><Link href="/articles/commodity-cfd-one-dollar-profit-loss">1ドルの値動き損益を商品別に確認 →</Link></p>
     <p><Link href="/tools/commodity-cfd-price-move-calculator">商品CFD値動き損益計算機 →</Link></p>
     <p><Link href="/articles/fxtf-vs-dmm-cfd-gold">両社の金CFDだけを詳しく比較 →</Link></p>

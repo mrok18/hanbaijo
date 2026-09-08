@@ -90,6 +90,6 @@ export default function GoldCfdProviderCostCalculator() {
       <AffiliateOfferCard offer={AFFILIATE_OFFERS.fxtf} />
       <AffiliateOfferCard offer={AFFILIATE_OFFERS['dmm-cfd']} />
     </section>
-    <p className="affiliate-disclosure">上記はA8.netの提携広告です。広告報酬は入力値・計算式・比較結果には影響しません。CFDは元本および利益が保証されず、証拠金を上回る損失が生じる可能性があります。</p>
+    <p className="affiliate-disclosure">上記はA8.netまたはアクセストレードの提携広告です。広告報酬は入力値・計算式・比較結果には影響しません。CFDは元本および利益が保証されず、証拠金を上回る損失が生じる可能性があります。</p>
   </div>;
 }

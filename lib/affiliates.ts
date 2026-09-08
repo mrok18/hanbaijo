@@ -1,11 +1,12 @@
 export interface AffiliateOffer {
-  id: 'fxtf' | 'systre-select-365' | 'dmm-cfd' | 'matsui-fx' | 'jfx' | 'tossy' | 'ablenet-vps';
+  id: 'fxtf' | 'systre-select-365' | 'dmm-cfd' | 'dmm-kabu' | 'matsui-fx' | 'jfx' | 'tossy' | 'ablenet-vps';
   name: string;
   category: string;
   description: string;
   linkLabel: string;
   href: string;
   impressionSrc: string;
+  network?: 'a8' | 'accesstrade';
 }
 
 export const AFFILIATE_OFFERS: Record<AffiliateOffer['id'], AffiliateOffer> = {
@@ -32,9 +33,19 @@ export const AFFILIATE_OFFERS: Record<AffiliateOffer['id'], AffiliateOffer> = {
     name: 'DMM CFD',
     category: '株価指数・商品CFD',
     description: '取扱銘柄、スプレッド、調整額、取引時間など、最新の取引条件を公式ページで確認できます。',
-    linkLabel: '【PR】DMM CFD',
-    href: 'https://px.a8.net/svt/ejp?a8mat=4BC5IS+1SBLE+1WP2+NTJWY',
-    impressionSrc: 'https://www14.a8.net/0.gif?a8mat=4BC5IS+1SBLE+1WP2+NTJWY',
+    linkLabel: '全銘柄の取引手数料が0円の【DMM CFD】',
+    href: 'https://h.accesstrade.net/sp/cc?rk=01006ko600oyio',
+    impressionSrc: 'https://h.accesstrade.net/sp/rr?rk=01006ko600oyio',
+    network: 'accesstrade',
+  },
+  'dmm-kabu': {
+    id: 'dmm-kabu',
+    name: 'DMM 株',
+    category: '日本株・米国株・NISA',
+    description: '国内株、米国株、NISAの手数料、為替コスト、取引条件を公式ページで確認できます。',
+    linkLabel: '株取引を始めるなら【DMM 株】！(PR)',
+    href: 'https://px.a8.net/svt/ejp?a8mat=4BC72Z+9ALMR6+1WP2+15Q9SI',
+    impressionSrc: 'https://www14.a8.net/0.gif?a8mat=4BC72Z+9ALMR6+1WP2+15Q9SI',
   },
   'matsui-fx': {
     id: 'matsui-fx',

@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import AffiliateOfferCard from '@/components/AffiliateOfferCard';
+import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
   title: 'DMM 株の米国株手数料はいくら？為替25銭まで計算',
@@ -74,6 +76,11 @@ export default function Page() {
           <li><a href="https://kabu.dmm.com/support/faqs/article/00166/" target="_blank" rel="noopener noreferrer">DMM 株「米国株式（現物取引）で発生する費用」</a></li>
         </ul>
         <p>料金は2026年9月7日に確認しました。取引前に公式料金表と適用為替レートを確認してください。</p>
+      </section>
+
+      <section className="article-affiliate" aria-label="DMM 株の広告">
+        <AffiliateOfferCard offer={AFFILIATE_OFFERS['dmm-kabu']} />
+        <p className="affiliate-disclosure">上記はA8.netの提携広告です。広告報酬は料金表、計算式、比較内容には影響しません。米国株は株価と為替の変動により損失が生じる可能性があります。</p>
       </section>
 
       <p><Link href="/stocks/dmm-kabu">DMM 株のコストシートを見る →</Link></p>

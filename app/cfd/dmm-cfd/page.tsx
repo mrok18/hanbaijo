@@ -71,6 +71,8 @@ export default function DmmCfdPage() {
         <p className="section-index">03 / PRACTICAL GUIDES</p>
         <h2>DMM CFDの計算ガイド</h2>
         <div className="provider-fact-grid">
+          <article><b>14 PRODUCTS / TICK VALUE</b><h3><Link href="/articles/dmm-cfd-tick-value-profit-loss">商品14銘柄の1ティック損益</Link></h3><p>公式の取引単位と呼値から、最小値幅を米ドル・円の損益へ換算します。</p></article>
+          <article><b>14 PRODUCTS / CALCULATOR</b><h3><Link href="/tools/dmm-cfd-tick-value-calculator">1ティック損益を計算</Link></h3><p>買い・売り、Lot数、米ドル円、総コストから差引損益まで試算します。</p></article>
           <article><b>COMMODITY / PRICE MOVE</b><h3><Link href="/articles/commodity-cfd-one-dollar-profit-loss">1ドルの値動き損益を確認</Link></h3><p>金・銀・原油・天然ガスの1Lot単位から、円換算損益を比較します。</p></article>
           <article><b>COMMODITY / RISK TOOL</b><h3><Link href="/tools/commodity-cfd-price-move-calculator">商品CFDの値動き損益を計算</Link></h3><p>新規価格と決済価格から、コスト差引後と口座資金への影響を試算します。</p></article>
           <article><b>COMMODITY / PROVIDER COMPARE</b><h3><Link href="/articles/fxtf-vs-dmm-cfd-commodity">FXTF MT5と共通4商品を比較</Link></h3><p>同じ1Lotの単位と、手数料・スワップ・調整額の違いを整理します。</p></article>
@@ -105,7 +107,7 @@ export default function DmmCfdPage() {
         <div>
           <p className="section-index">04 / OFFICIAL SITE</p>
           <h2>対象銘柄と最新条件を確認</h2>
-          <p>以下はA8.netの提携広告です。掲載報酬は、事実確認や将来の実測順位に影響しません。</p>
+          <p>以下はアクセストレードの提携広告です。掲載報酬は、事実確認や将来の実測順位に影響しません。</p>
         </div>
         <AffiliateOfferCard offer={AFFILIATE_OFFERS['dmm-cfd']} />
       </section>
