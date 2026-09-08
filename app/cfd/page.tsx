@@ -114,6 +114,8 @@ export default function CfdPage() {
           </div>
         </div>
         <div className="provider-fact-grid">
+          <article><b>COMMODITY / PRICE MOVE</b><h3><Link href="/articles/commodity-cfd-one-dollar-profit-loss">商品CFDは1ドルでいくら動く？</Link></h3><p>共通4商品の取引単位から、1Lotの円換算損益を比較します。</p></article>
+          <article><b>COMMODITY / RISK TOOL</b><h3><Link href="/tools/commodity-cfd-price-move-calculator">商品CFD値動き損益計算機</Link></h3><p>買い・売りの値動き、総コスト、証拠金、口座資金への影響を計算します。</p></article>
           <article><b>COMMODITY / PROVIDER COMPARE</b><h3><Link href="/articles/fxtf-vs-dmm-cfd-commodity">FXTFとDMMの商品CFD</Link></h3><p>共通4商品の1Lot、証拠金、手数料、持越し費用を横断比較します。</p></article>
           <article><b>COMMODITY / COST TOOL</b><h3><Link href="/tools/commodity-cfd-provider-cost-comparison">商品CFD 2社比較計算機</Link></h3><p>金・銀・原油・天然ガスを、同じ取引条件で円換算します。</p></article>
           <article><b>GOLD / PROVIDER COMPARE</b><h3><Link href="/articles/fxtf-vs-dmm-cfd-gold">FXTFとDMMの金CFD</Link></h3><p>同じ1Lot・証拠金率5％を、手数料と保有費までそろえて比較します。</p></article>

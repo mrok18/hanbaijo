@@ -54,7 +54,7 @@ export default function GoldCfdProviderCostCalculator() {
         <div className="field-grid">
           <label><span>金価格（USD／トロイオンス）</span><input type="number" min="0" step="0.01" placeholder="取引画面の価格" value={goldPrice} onChange={e => setGoldPrice(e.target.value === '' ? '' : Number(e.target.value))} /></label>
           <label><span>米ドル円</span><input type="number" min="0" step="0.001" placeholder="円換算レート" value={usdJpy} onChange={e => setUsdJpy(e.target.value === '' ? '' : Number(e.target.value))} /></label>
-          <label><span>Lot数</span><input type="number" min="0" step="0.1" value={lots} onChange={e => setLots(Number(e.target.value))} /></label>
+          <label><span>Lot数</span><input type="number" min="1" step="1" value={lots} onChange={e => setLots(Number(e.target.value))} /></label>
           <label><span>保有日数</span><input type="number" min="0" step="1" value={holdingDays} onChange={e => setHoldingDays(Number(e.target.value))} /><small>調整額が発生する日数を入力</small></label>
           <label><span>FXTF スプレッド（USD／oz）</span><input type="number" min="0" step="0.01" placeholder="Ask−Bid" value={fxtfSpread} onChange={e => setFxtfSpread(e.target.value === '' ? '' : Number(e.target.value))} /></label>
           <label><span>FXTF 新規時の手数料合計（円）</span><input type="number" min="0" step="1" placeholder="最新ランク表から入力" value={fxtfOpeningFee} onChange={e => setFxtfOpeningFee(e.target.value === '' ? '' : Number(e.target.value))} /><small>既存建玉を含むランクで算出した注文全体の金額</small></label>

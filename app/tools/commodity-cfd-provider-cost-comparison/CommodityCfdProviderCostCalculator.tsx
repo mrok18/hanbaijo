@@ -76,7 +76,7 @@ export default function CommodityCfdProviderCostCalculator() {
           </select><small>{product.symbol}</small></label>
           <label><span>{product.name}価格（USD／{product.unit}）</span><input type="number" min="0" step="0.001" placeholder="取引画面の価格" value={price} onChange={e => setPrice(e.target.value === '' ? '' : Number(e.target.value))} /></label>
           <label><span>米ドル円</span><input type="number" min="0" step="0.001" placeholder="円換算レート" value={usdJpy} onChange={e => setUsdJpy(e.target.value === '' ? '' : Number(e.target.value))} /></label>
-          <label><span>Lot数</span><input type="number" min="0" step="0.1" value={lots} onChange={e => setLots(Number(e.target.value))} /><small>取引数量：{yen.format(result.unitCount)}{product.unit}</small></label>
+          <label><span>Lot数</span><input type="number" min="1" step="1" value={lots} onChange={e => setLots(Number(e.target.value))} /><small>取引数量：{yen.format(result.unitCount)}{product.unit}</small></label>
           <label><span>FXTF スプレッド（USD／{product.unit}）</span><input type="number" min="0" step="0.001" placeholder="Ask−Bid" value={fxtfSpread} onChange={e => setFxtfSpread(e.target.value === '' ? '' : Number(e.target.value))} /></label>
           <label><span>FXTF 新規時の手数料合計（円）</span><input type="number" min="0" step="1" placeholder="最新ランク表から入力" value={fxtfOpeningFee} onChange={e => setFxtfOpeningFee(e.target.value === '' ? '' : Number(e.target.value))} /><small>既存建玉を含むランクで注文全体を算出</small></label>
           <label><span>FXTF 比較期間中の支払スワップ合計（円）</span><input type="number" min="0" step="1" value={fxtfHoldingTotal} onChange={e => setFxtfHoldingTotal(Number(e.target.value))} /><small>受取または発生なしの場合は0</small></label>
@@ -99,6 +99,7 @@ export default function CommodityCfdProviderCostCalculator() {
     <div className="callout"><strong>調整額は同じ比較期間の「支払合計」を入力</strong><p>金・銀のDMM CFDは金利調整額、原油・天然ガスは価格調整額です。発生頻度が異なるため、日額へ無理に直さず、比較期間中に発生する支払総額を入力します。受取調整額、スリッページ、税金は計算に含みません。</p></div>
 
     <nav className="calculator-proof" aria-label="計算根拠と関連記事">
+      <Link href="/tools/commodity-cfd-price-move-calculator">商品CFD値動き損益計算機</Link>
       <Link href="/articles/fxtf-vs-dmm-cfd-commodity">商品CFD 2社比較記事</Link>
       <Link href="/articles/fxtf-vs-dmm-cfd-gold">金CFDの詳細比較</Link>
       <Link href="/articles/dmm-cfd-commodity-lot-list">DMM 14商品のLot一覧</Link>
