@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import AffiliateOfferCard from '@/components/AffiliateOfferCard';
+import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
   title: 'JFX口座開設前の確認7項目｜スキャルピング・Lot・必要資金',
@@ -78,5 +80,6 @@ export default function Page() {
     <p><Link href="/articles/jfx-demo-account-guide">デモ口座で確認できる範囲を見る →</Link></p>
     <p><Link href="/tools/jfx-scalping-cost-calculator">時間帯・数量・回数からスプレッド負担を計算する →</Link></p>
     <p><Link href="/fx/jfx">JFXの取引条件と全ガイドを見る →</Link></p>
+    <section className="article-affiliate" aria-label="JFXの広告"><AffiliateOfferCard offer={AFFILIATE_OFFERS.jfx} /><p className="affiliate-disclosure">JFXへの広告リンクです。申込み後に所定の取引条件を満たすと当サイトが報酬を受け取る場合があります。記事の確認項目や評価とは分けて掲載しています。</p></section>
   </article>;
 }

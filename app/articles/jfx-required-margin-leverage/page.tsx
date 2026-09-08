@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import AffiliateOfferCard from '@/components/AffiliateOfferCard';
+import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
   title: 'JFXの必要証拠金はいくら？最大・実効レバレッジを計算',
@@ -74,5 +76,6 @@ export default function Page() {
     <p><Link href="/articles/jfx-losscut-margin-shortage">ロスカットと不足金のルールを見る →</Link></p>
     <p><Link href="/articles/jfx-deposit-methods-comparison">JFXの入金方法を見る →</Link></p>
     <p><Link href="/fx/jfx">JFXの取引条件一覧へ →</Link></p>
+    <section className="article-affiliate" aria-label="JFXの広告"><AffiliateOfferCard offer={AFFILIATE_OFFERS.jfx} /><p className="affiliate-disclosure">JFXへの広告リンクです。申込み後に所定の取引条件を満たすと当サイトが報酬を受け取る場合があります。証拠金の計算例やリスク説明とは分けて掲載しています。</p></section>
   </article>;
 }

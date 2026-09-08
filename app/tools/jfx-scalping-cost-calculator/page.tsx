@@ -2,6 +2,8 @@
 
 import Link from 'next/link';
 import { useMemo, useState } from 'react';
+import AffiliateOfferCard from '@/components/AffiliateOfferCard';
+import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 const presets = [
   { label: '米ドル/円 9時〜翌3時（0.2銭）', spread: 0.2 },
@@ -37,5 +39,6 @@ export default function Page() {
     </div></section><section className="calculator-result"><div className="result-head"><span>TOTAL COST</span><h2>累積コストの目安</h2></div><div className="total-cost"><strong>{yen.format(result.total)}</strong><span>円</span></div><p>1往復のスプレッド相当額：約{yen.format(result.spreadPerTrade)}円</p><p>1往復の想定約定差：約{yen.format(result.slippagePerTrade)}円</p><p>1往復の合計：約{yen.format(result.perTrade)}円</p><p>回収に必要な値幅：約{yen.format(result.breakEvenPips)}pips</p><p>計算式：（スプレッド＋想定約定差）÷100 × 通貨数 × 往復回数</p></section></div></div>
     <div className="callout"><strong>公称値と実際の約定コストは異なります</strong><p>米ドル/円0.2銭は9時〜翌3時、5.9銭は3時〜9時の公式掲載値で、原則固定・例外ありです。相場急変、指標発表、流動性低下、大口注文では提示幅や約定価格が変わる可能性があります。計算結果は利益や約定価格を保証しません。</p></div>
     <nav className="calculator-proof" aria-label="計算根拠と関連記事"><Link href="/articles/jfx-scalping-spread-cost">JFX短期売買コスト解説</Link><Link href="/articles/jfx-losscut-margin-shortage">JFXのロスカットと不足金</Link><Link href="/fx/jfx">JFX取引条件一覧</Link><Link href="/tools/fx-pip-value-calculator">pips損益計算</Link><a href="https://www.jfx.co.jp/trading_rule/spread/" target="_blank" rel="noopener noreferrer">JFX公式スプレッド</a></nav>
+    <section className="article-affiliate" aria-label="JFXの広告"><AffiliateOfferCard offer={AFFILIATE_OFFERS.jfx} /><p className="affiliate-disclosure">JFXへの広告リンクです。申込み後に所定の取引条件を満たすと当サイトが報酬を受け取る場合があります。入力値や計算結果とは分けて掲載しています。</p></section>
   </div>;
 }

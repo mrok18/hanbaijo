@@ -1,5 +1,5 @@
 export interface AffiliateOffer {
-  id: 'fxtf' | 'systre-select-365' | 'dmm-cfd' | 'matsui-fx';
+  id: 'fxtf' | 'systre-select-365' | 'dmm-cfd' | 'matsui-fx' | 'jfx';
   name: string;
   category: string;
   description: string;
@@ -44,5 +44,14 @@ export const AFFILIATE_OFFERS: Record<AffiliateOffer['id'], AffiliateOffer> = {
     linkLabel: '松井証券',
     href: 'https://px.a8.net/svt/ejp?a8mat=4BC5IS+3KMEQ+3XCC+64C3M',
     impressionSrc: 'https://www10.a8.net/0.gif?a8mat=4BC5IS+3KMEQ+3XCC+64C3M',
+  },
+  jfx: {
+    id: 'jfx',
+    name: 'JFX MATRIX TRADER',
+    category: 'FX・短期売買',
+    description: '取引単位、時間帯別スプレッド、注文機能、必要証拠金など、最新の取引条件を公式サイトで確認できます。',
+    linkLabel: 'MATRIX TRADER',
+    href: 'https://px.a8.net/svt/ejp?a8mat=4BC5IR+GDF5O2+25B2+5YRHE',
+    impressionSrc: 'https://www19.a8.net/0.gif?a8mat=4BC5IR+GDF5O2+25B2+5YRHE',
   },
 };

@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import AffiliateOfferCard from '@/components/AffiliateOfferCard';
+import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
   title: 'JFXの口座開設に必要なもの｜本人確認・マイナンバー・初回入金',
@@ -72,5 +74,6 @@ export default function Page() {
     <p><Link href="/articles/jfx-fees-total-cost">入出金・取引手数料と実質コストを見る →</Link></p>
     <p><Link href="/tools/fx-position-size-calculator">許容損失から取引数量を計算する →</Link></p>
     <p><Link href="/fx/jfx">JFXの取引条件一覧へ →</Link></p>
+    <section className="article-affiliate" aria-label="JFXの広告"><AffiliateOfferCard offer={AFFILIATE_OFFERS.jfx} /><p className="affiliate-disclosure">JFXへの広告リンクです。申込み後に所定の取引条件を満たすと当サイトが報酬を受け取る場合があります。口座開設手順や必要資金の説明とは分けて掲載しています。</p></section>
   </article>;
 }

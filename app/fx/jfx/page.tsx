@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import FxProviderFactSheet from '@/components/FxProviderFactSheet';
+import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 import { FX_PROVIDERS } from '@/lib/fx-providers';
 
 const provider = FX_PROVIDERS.jfx;
@@ -37,7 +38,7 @@ export default function Page() {
   ];
   const pick = (hrefs: string[]) => hrefs.map((href) => articles.find((article) => article.href === href)!);
 
-  return <FxProviderFactSheet provider={provider} relatedSections={[
+  return <FxProviderFactSheet provider={provider} affiliateOffer={AFFILIATE_OFFERS.jfx} relatedSections={[
     {
       id: 'before-opening',
       label: 'START',
