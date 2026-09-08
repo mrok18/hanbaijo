@@ -46,6 +46,7 @@ export default function Page() {
 
     <p><Link href="/tools/fx-pip-value-calculator">通貨数から1pipsの損益を計算する →</Link></p>
     <p><Link href="/tools/fx-position-size-calculator">許容損失から取引数量を逆算する →</Link></p>
+    <p><Link href="/articles/jfx-required-margin-leverage">1Lotの必要証拠金と実効レバレッジを見る →</Link></p>
     <p><Link href="/articles/jfx-losscut-margin-shortage">JFXのロスカットと不足金を確認する →</Link></p>
     <p><Link href="/fx/jfx">JFXの取引条件一覧へ →</Link></p>
   </article>;

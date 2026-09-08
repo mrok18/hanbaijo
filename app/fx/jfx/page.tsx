@@ -12,6 +12,7 @@ export const metadata = {
 export default function Page() {
   if (!provider) notFound();
   return <FxProviderFactSheet provider={provider} relatedArticles={[
+    { href: '/articles/jfx-required-margin-leverage', title: '必要証拠金と実効レバレッジを計算', description: '米ドル円1,000通貨の公式例から、最大倍率と口座全体の実効倍率を分けます。' },
     { href: '/articles/jfx-deposit-methods-comparison', title: 'クイック入金と銀行振込を比較', description: '最低金額、約380行、手数料、反映時間、振込名義の違いを整理します。' },
     { href: '/articles/jfx-demo-account-guide', title: 'JFXデモ口座でできること', description: '利用期間、仮想資金、デモレート、土日利用と本番口座との差を整理します。' },
     { href: '/articles/jfx-mt5-tradingview-matrix-trader', title: 'MT5・TradingView・MATRIX TRADERを比較', description: '分析専用チャートと実際の発注・口座管理画面の役割を分けます。' },

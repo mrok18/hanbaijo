@@ -67,6 +67,7 @@ export default function Page() {
     </ul><p>入金条件は2026年9月8日に公式ページで確認しました。対応金融機関、利用時間、手数料は変更される場合があります。</p></section>
 
     <p><Link href="/articles/jfx-account-opening-flow">口座開設から初回入金までを見る →</Link></p>
+    <p><Link href="/articles/jfx-required-margin-leverage">必要証拠金と実効レバレッジを計算する →</Link></p>
     <p><Link href="/articles/jfx-fees-total-cost">JFXの無料手数料と実質コストを見る →</Link></p>
     <p><Link href="/articles/jfx-lot-trade-unit">JFXの1Lotと必要資金を見る →</Link></p>
     <p><Link href="/fx/jfx">JFXの取引条件一覧へ →</Link></p>
