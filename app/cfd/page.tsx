@@ -114,6 +114,8 @@ export default function CfdPage() {
           </div>
         </div>
         <div className="provider-fact-grid">
+          <article><b>COMMODITY / PROVIDER COMPARE</b><h3><Link href="/articles/fxtf-vs-dmm-cfd-commodity">FXTFとDMMの商品CFD</Link></h3><p>共通4商品の1Lot、証拠金、手数料、持越し費用を横断比較します。</p></article>
+          <article><b>COMMODITY / COST TOOL</b><h3><Link href="/tools/commodity-cfd-provider-cost-comparison">商品CFD 2社比較計算機</Link></h3><p>金・銀・原油・天然ガスを、同じ取引条件で円換算します。</p></article>
           <article><b>GOLD / PROVIDER COMPARE</b><h3><Link href="/articles/fxtf-vs-dmm-cfd-gold">FXTFとDMMの金CFD</Link></h3><p>同じ1Lot・証拠金率5％を、手数料と保有費までそろえて比較します。</p></article>
           <article><b>GOLD / COST TOOL</b><h3><Link href="/tools/gold-cfd-provider-cost-comparison">金CFD 2社比較計算機</Link></h3><p>同時点のスプレッド、新規手数料、保有費を手入力して円換算します。</p></article>
           <article><b>FXTF MT5</b><h3><Link href="/articles/fxtf-mt5-commodity-vs-crypto-cfd">商品CFDと暗号資産CFD</Link></h3><p>個人レバレッジ20倍・2倍、1Lot、建玉連動手数料を比較します。</p></article>

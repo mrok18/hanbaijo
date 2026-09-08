@@ -71,6 +71,8 @@ export default function DmmCfdPage() {
         <p className="section-index">03 / PRACTICAL GUIDES</p>
         <h2>DMM CFDの計算ガイド</h2>
         <div className="provider-fact-grid">
+          <article><b>COMMODITY / PROVIDER COMPARE</b><h3><Link href="/articles/fxtf-vs-dmm-cfd-commodity">FXTF MT5と共通4商品を比較</Link></h3><p>同じ1Lotの単位と、手数料・スワップ・調整額の違いを整理します。</p></article>
+          <article><b>COMMODITY / COST TOOL</b><h3><Link href="/tools/commodity-cfd-provider-cost-comparison">商品CFD 2社の総コストを計算</Link></h3><p>金・銀・原油・天然ガスの価格差と保有費を同じ条件で円換算します。</p></article>
           <article><b>GOLD / PROVIDER COMPARE</b><h3><Link href="/articles/fxtf-vs-dmm-cfd-gold">FXTF MT5と金1Lotを比較</Link></h3><p>共通の取引単位・証拠金率と、手数料・保有費の違いを整理します。</p></article>
           <article><b>GOLD / COST TOOL</b><h3><Link href="/tools/gold-cfd-provider-cost-comparison">金CFD 2社の総コストを計算</Link></h3><p>両社の取引画面で確認した条件を、同じLot数・保有日数で円換算します。</p></article>
           <article><b>MARGIN</b><h3><Link href="/articles/dmm-cfd-margin-leverage">必要証拠金を銘柄別に計算</Link></h3><p>日本225・米国ナスダック100・金・原油を同じ1Lotで比べ、取引単位と円換算の違いを確認します。</p></article>

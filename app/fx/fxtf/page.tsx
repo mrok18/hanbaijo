@@ -71,6 +71,8 @@ export default function FxtfPage() {
         <p className="section-index">03 / PRACTICAL GUIDES</p>
         <h2>FXTFを選ぶ前の計算ガイド</h2>
         <div className="provider-directory comparison-guide-directory">
+          <Link href="/articles/fxtf-vs-dmm-cfd-commodity"><span>COMMODITY / PROVIDER COMPARE</span><h3>DMM CFDと共通4商品を比較</h3><p>1Lot、手数料、持越し費用の違い</p><b>記事を読む →</b></Link>
+          <Link href="/tools/commodity-cfd-provider-cost-comparison"><span>COMMODITY / COST TOOL</span><h3>商品CFD 2社の総コスト</h3><p>金・銀・原油・天然ガスを同条件で計算</p><b>計算する →</b></Link>
           <Link href="/articles/fxtf-vs-dmm-cfd-gold"><span>GOLD / PROVIDER COMPARE</span><h3>DMM CFDと金1Lotを比較</h3><p>証拠金、新規手数料、保有費の違い</p><b>記事を読む →</b></Link>
           <Link href="/tools/gold-cfd-provider-cost-comparison"><span>GOLD / COST TOOL</span><h3>金CFD 2社の総コスト</h3><p>取引画面の条件を手入力して円換算</p><b>計算する →</b></Link>
           <Link href="/articles/jfx-vs-fxtf"><span>PROVIDER COMPARE</span><h3>JFXとFXTFを比較</h3><p>スキャルピング、MT4・EA、手数料を比較</p><b>記事を読む →</b></Link>

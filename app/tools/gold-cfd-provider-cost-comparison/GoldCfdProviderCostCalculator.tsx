@@ -78,6 +78,7 @@ export default function GoldCfdProviderCostCalculator() {
     <div className="callout"><strong>比較する時刻と売買方向をそろえる</strong><p>この計算機はライブレートを取得しません。両社の取引画面を同時点で確認し、同じ売買方向の支払調整額を入力してください。証拠金は5％での下限目安です。スリッページ、受取調整額、税金は計算に含みません。</p></div>
 
     <nav className="calculator-proof" aria-label="計算根拠と関連記事">
+      <Link href="/tools/commodity-cfd-provider-cost-comparison">4商品対応の2社比較計算機</Link>
       <Link href="/articles/fxtf-vs-dmm-cfd-gold">FXTFとDMMの金CFD比較</Link>
       <Link href="/articles/fxtf-mt5-gold-cfd-margin">FXTF金CFDの計算</Link>
       <Link href="/articles/dmm-cfd-gold-vs-silver">DMM金・銀比較</Link>

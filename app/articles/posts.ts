@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'fxtf-vs-dmm-cfd-commodity', category: '商品CFD・比較', title: 'FXTF MT5とDMM CFDの商品CFDを比較｜金・銀・原油・天然ガス', desc: '共通4商品の1Lot、証拠金、スプレッド、新規手数料、スワップ・調整額と、取扱銘柄数の違いを整理する。' },
   { slug: 'fxtf-vs-dmm-cfd-gold', category: '商品CFD・比較', title: 'FXTF MT5とDMM CFDの金CFDを比較｜1Lot・証拠金・総コスト', desc: '同じ1トロイオンス・証拠金率5％の金CFDを、スプレッド、新規手数料、スワップ・金利調整額から比較する。' },
   { slug: 'fxtf-mt5-btc-jpy-vs-usd', category: '暗号資産CFD・FXTF', title: 'FXTF MT5のBTC/JPYとBTC/USDを比較｜証拠金の円換算が違う', desc: '0.01Lot、必要証拠金の参照レート、スプレッドの円換算、建玉連動手数料の違いを整理する。' },
   { slug: 'fxtf-mt5-silver-cfd-margin', category: '商品CFD・FXTF', title: 'FXTF MT5の銀CFDは1Lotいくら？必要証拠金・手数料・スワップ', desc: '銀1Lot＝10トロイオンスの想定元本、必要証拠金、建玉連動手数料、スプレッド、スワップを計算する。' },
