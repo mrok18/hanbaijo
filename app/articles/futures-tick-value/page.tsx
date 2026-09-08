@@ -56,6 +56,7 @@ export default function Page() {
       </section>
 
       <p><Link href="/tools/matsui-futures-cost-calculator">先物の値幅損益と往復手数料を計算する →</Link></p>
+      <p><Link href="/tools/nikkei225-position-size-calculator">許容損失から先物の適正枚数を計算する →</Link></p>
       <p><Link href="/articles/nikkei225-micro-profit-loss">日経225マイクロの損益早見表を見る →</Link></p>
       <p><Link href="/futures">先物コスト比較へ戻る →</Link></p>
     </article>
