@@ -87,6 +87,8 @@ export default function FxtfMt5MarginCalculator() {
 
     <nav className="calculator-proof" aria-label="計算根拠と関連記事">
       <Link href="/articles/fxtf-mt5-btc-cfd-cost">BTC/JPY 0.01Lotの解説</Link>
+      <Link href="/articles/fxtf-mt5-gold-cfd-margin">金1Lotの必要証拠金</Link>
+      <Link href="/articles/fxtf-mt5-oil-natural-gas-margin">原油・天然ガスの比較</Link>
       <Link href="/articles/fxtf-mt5-commodity-vs-crypto-cfd">商品・暗号資産CFD比較</Link>
       <Link href="/articles/fxtf-position-fee-calculation">建玉連動手数料の計算</Link>
       <a href="https://www.fxtrade.co.jp/crypto/mt5/lever/" target="_blank" rel="noopener noreferrer">FXTF公式 暗号資産証拠金</a>

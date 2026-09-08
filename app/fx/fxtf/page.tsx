@@ -76,6 +76,8 @@ export default function FxtfPage() {
           <Link href="/articles/fxtf-mt4-ea-vps-start"><span>EA START GUIDE</span><h3>MT4でEA自動売買を始める</h3><p>0.01Lot、バックテスト、VPS、停止監視</p><b>記事を読む →</b></Link>
           <Link href="/articles/fxtf-mt5-commodity-vs-crypto-cfd"><span>MT5 / CFD</span><h3>商品CFDと暗号資産CFDを比較</h3><p>1Lot、証拠金率、建玉連動手数料</p><b>記事を読む →</b></Link>
           <Link href="/articles/fxtf-mt5-btc-cfd-cost"><span>MT5 / BITCOIN CFD</span><h3>BTC/JPY 0.01Lotを計算</h3><p>必要証拠金、建玉連動手数料、保有費</p><b>記事を読む →</b></Link>
+          <Link href="/articles/fxtf-mt5-gold-cfd-margin"><span>MT5 / GOLD CFD</span><h3>金1Lotの必要資金を計算</h3><p>ドル円換算、手数料、スワップ</p><b>記事を読む →</b></Link>
+          <Link href="/articles/fxtf-mt5-oil-natural-gas-margin"><span>MT5 / ENERGY CFD</span><h3>原油と天然ガスを比較</h3><p>10バレルと100mmBtuの違い</p><b>記事を読む →</b></Link>
           <Link href="/tools/fxtf-mt5-margin-calculator"><span>MT5 / MARGIN TOOL</span><h3>商品・BTCの証拠金を試算</h3><p>取引画面の価格とLot数を手入力</p><b>計算する →</b></Link>
           <Link href="/articles/fxtf-account-opening-flow"><span>START GUIDE</span><h3>口座開設と必要書類</h3><p>スマホ確認・メール・郵送の提出方法</p><b>記事を読む →</b></Link>
           <Link href="/articles/fxtf-position-fee-calculation"><span>POSITION FEE</span><h3>建玉連動手数料の計算</h3><p>保有数量を含めるランク判定を確認</p><b>記事を読む →</b></Link>
