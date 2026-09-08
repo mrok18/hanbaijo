@@ -64,6 +64,7 @@ export default function Page() {
     </ul><p>口座開設・入金条件は2026年9月8日に公式ページで確認しました。審査基準や必要書類、キャンペーン、取引条件は変更される場合があります。</p></section>
 
     <p><Link href="/articles/jfx-lot-trade-unit">JFXの1Lotと最低取引単位を見る →</Link></p>
+    <p><Link href="/articles/jfx-beginner-vs-matrix-trader">100通貨のビギナーFXと本口座を比較する →</Link></p>
     <p><Link href="/articles/jfx-fees-total-cost">入出金・取引手数料と実質コストを見る →</Link></p>
     <p><Link href="/tools/fx-position-size-calculator">許容損失から取引数量を計算する →</Link></p>
     <p><Link href="/fx/jfx">JFXの取引条件一覧へ →</Link></p>

@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'jfx-beginner-vs-matrix-trader', category: 'FX・JFX', title: 'JFXビギナーFXとMATRIX TRADERの違い｜100通貨・1,000通貨', desc: '最低取引単位、通貨ペア、分析ツール、キャンペーンからミニ口座と本口座を比較する。' },
   { slug: 'jfx-account-opening-flow', category: 'FX・JFX', title: 'JFXの口座開設に必要なもの｜本人確認・初回入金', desc: 'スマホ本人確認、必要書類、審査、ID受取、初回入金1万円から取引開始までを整理する。' },
   { slug: 'jfx-quick-order-settings', category: 'FX・JFX', title: 'JFXクイック注文の設定｜全決済・両建て・決済pip差', desc: '確認画面、Lot数、両建て、許容設定、全決済方式、決済pip差の誤操作防止ポイントを整理する。' },
   { slug: 'jfx-order-slippage-rules', category: 'FX・JFX', title: 'JFXの注文方法とスリッページ｜成行・ストリーミング・逆指値', desc: '約定優先、許容スリップ、注文不成立、許容スプレッドの違いを基本注文ごとに整理する。' },
