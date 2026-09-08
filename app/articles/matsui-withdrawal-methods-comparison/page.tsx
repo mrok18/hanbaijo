@@ -62,6 +62,7 @@ export default function Page() {
     </ul><p>出金条件は2026年9月8日に公式ページで確認しました。利用時間、上限、手数料は変更される場合があります。</p></section>
 
     <p><Link href="/articles/matsui-deposit-methods-comparison">松井証券の入金方法を見る →</Link></p>
+    <p><Link href="/articles/matsui-withdrawal-unavailable">出金できない・減額された場合の確認手順を見る →</Link></p>
     <p><Link href="/articles/matsui-ekyc-required-documents">口座開設のeKYCと必要書類を見る →</Link></p>
     <p><Link href="/stocks/matsui">松井証券の国内株コストを見る →</Link></p>
     <p><Link href="/fx/matsui">MATSUI FXの取引条件を見る →</Link></p>

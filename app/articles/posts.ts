@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'matsui-withdrawal-unavailable', category: '証券・松井証券', title: '松井証券で出金できない原因｜出金可能額・受渡日を確認', desc: '売却代金の受渡、商品口座からの振替、受付時間、当日入金、取引状況、登録銀行を順に切り分ける。' },
   { slug: 'matsui-withdrawal-methods-comparison', category: '証券・松井証券', title: '松井証券の出金方法を比較｜翌営業日・即時・MATSUI Bank', desc: '3種類の出金を、着金時期、手数料、金額上限、取消可否、ゆうちょ銀行の制限で比較する。' },
   { slug: 'matsui-deposit-methods-comparison', category: '証券・松井証券', title: '松井証券の入金方法を比較｜手数料・反映時間', desc: 'スイープ、MATSUI Bank、ネットリンク、らくらく振替、定期入金、銀行振込を比較する。' },
   { slug: 'matsui-ekyc-required-documents', category: '証券・松井証券', title: '松井証券の口座開設に必要な書類｜eKYC・マイナンバー', desc: '最短即日のeKYC、オンラインアップロード、郵送の違いと書類不備の防止点を整理する。' },
