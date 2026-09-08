@@ -59,7 +59,7 @@ gtag('config', '${GA_ID}');`}
               <Link href="/stocks">株式</Link>
               <Link href="/futures">先物</Link>
               <Link href="/markets">対象商品</Link>
-              <Link href="/tools/cost-calculator">計算機</Link>
+              <Link href="/tools">計算機</Link>
               <Link href="/articles">知る</Link>
               <Link href="/method">計測方法</Link>
               <Link href="/about">運営方針</Link>
@@ -85,7 +85,7 @@ gtag('config', '${GA_ID}');`}
               <Link href="/stocks">株式コスト比較</Link>
               <Link href="/futures">先物コスト比較</Link>
               <Link href="/markets">対象商品</Link>
-              <Link href="/tools/cost-calculator">取引コスト計算機</Link>
+              <Link href="/tools">計算ツール一覧</Link>
               <Link href="/articles">解説記事</Link>
               <Link href="/method">計測方法</Link>
               <Link href="/about">このサイトについて</Link>
