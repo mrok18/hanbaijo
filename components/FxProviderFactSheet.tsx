@@ -3,7 +3,26 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import type { AffiliateOffer } from '@/lib/affiliates';
 import type { FxProvider } from '@/lib/fx-providers';
 
-export default function FxProviderFactSheet({ provider, affiliateOffer, relatedArticles = [] }: { provider: FxProvider; affiliateOffer?: AffiliateOffer; relatedArticles?: { href: string; title: string; description: string }[] }) {
+type RelatedArticle = {
+  href: string;
+  title: string;
+  description: string;
+};
+
+type RelatedSection = {
+  id: string;
+  label: string;
+  title: string;
+  description: string;
+  articles: RelatedArticle[];
+};
+
+export default function FxProviderFactSheet({ provider, affiliateOffer, relatedArticles = [], relatedSections = [] }: {
+  provider: FxProvider;
+  affiliateOffer?: AffiliateOffer;
+  relatedArticles?: RelatedArticle[];
+  relatedSections?: RelatedSection[];
+}) {
   return (
     <div className="provider-page fx-provider-page">
       <section className="provider-hero provider-compact-hero fx-provider-hero">
@@ -82,6 +101,34 @@ export default function FxProviderFactSheet({ provider, affiliateOffer, relatedA
           <div className="provider-directory">
             {relatedArticles.map((article) => (
               <Link href={article.href} key={article.href}><span>GUIDE</span><h3>{article.title}</h3><p>{article.description}</p><b>記事を読む →</b></Link>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {relatedSections.length > 0 && (
+        <section className="provider-section" aria-labelledby={`${provider.slug}-guide-hub`}>
+          <p className="section-index">GUIDE DIRECTORY</p>
+          <div className="section-heading provider-guide-intro">
+            <div><h2 id={`${provider.slug}-guide-hub`}>目的からJFXの情報を探す</h2></div>
+            <p>口座開設前の比較から、必要資金、取引コスト、操作方法まで、いま確認したいテーマから選べます。</p>
+          </div>
+          <div className="provider-guide-groups">
+            {relatedSections.map((section, sectionIndex) => (
+              <section className="provider-guide-group" aria-labelledby={`${provider.slug}-${section.id}`} key={section.id}>
+                <div className="provider-guide-group-head">
+                  <div>
+                    <span>{String(sectionIndex + 1).padStart(2, '0')} / {section.label}</span>
+                    <h3 id={`${provider.slug}-${section.id}`}>{section.title}</h3>
+                  </div>
+                  <p>{section.description}</p>
+                </div>
+                <div className="provider-directory">
+                  {section.articles.map((article) => (
+                    <Link href={article.href} key={article.href}><span>GUIDE</span><h3>{article.title}</h3><p>{article.description}</p><b>記事を読む →</b></Link>
+                  ))}
+                </div>
+              </section>
             ))}
           </div>
         </section>

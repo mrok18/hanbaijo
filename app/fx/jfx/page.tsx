@@ -5,13 +5,13 @@ import { FX_PROVIDERS } from '@/lib/fx-providers';
 const provider = FX_PROVIDERS.jfx;
 
 export const metadata = {
-  title: `${provider.name}の取引コスト・最低取引単位`,
-  description: provider.summary,
+  title: `${provider.name}の取引コスト・口座開設ガイド`,
+  description: 'JFX MATRIX TRADERの取引コスト、必要証拠金、入出金、注文方法、口座開設前の確認項目を公式情報に基づいて整理します。',
 };
 
 export default function Page() {
   if (!provider) notFound();
-  return <FxProviderFactSheet provider={provider} relatedArticles={[
+  const articles = [
     { href: '/articles/jfx-before-account-opening-checklist', title: '口座開設前の7項目をまとめて確認', description: 'スキャルピング、Lot、コスト、ツール、必要資金、入出金、本人確認を判断順に整理します。' },
     { href: '/articles/jfx-required-margin-leverage', title: '必要証拠金と実効レバレッジを計算', description: '米ドル円1,000通貨の公式例から、最大倍率と口座全体の実効倍率を分けます。' },
     { href: '/articles/jfx-deposit-methods-comparison', title: 'クイック入金と銀行振込を比較', description: '最低金額、約380行、手数料、反映時間、振込名義の違いを整理します。' },
@@ -34,5 +34,63 @@ export default function Page() {
     { href: '/articles/jfx-scalping-spread-cost', title: 'JFXの時間帯別スプレッドを計算', description: '米ドル/円0.2銭と早朝5.9銭を、取引数量と回数から円コストへ換算します。' },
     { href: '/articles/fx-spread-cost', title: 'スプレッドを円に直す方法', description: '銭・pips表示を実際の取引数量に応じた円の負担へ直します。' },
     { href: '/articles/fx-spread-time', title: 'スプレッドが広がりやすい時間帯', description: '早朝、経済指標、急変時に広告表示から外れる理由を整理します。' },
+  ];
+  const pick = (hrefs: string[]) => hrefs.map((href) => articles.find((article) => article.href === href)!);
+
+  return <FxProviderFactSheet provider={provider} relatedSections={[
+    {
+      id: 'before-opening',
+      label: 'START',
+      title: '申込み前に比べる',
+      description: '口座の特徴、開設手続き、デモ環境、他社との違いを先に確認するための入口です。',
+      articles: pick([
+        '/articles/jfx-before-account-opening-checklist',
+        '/articles/jfx-account-opening-flow',
+        '/articles/jfx-demo-account-guide',
+        '/articles/jfx-beginner-vs-matrix-trader',
+        '/articles/jfx-vs-dmm-fx',
+        '/articles/jfx-vs-matsui-fx',
+      ]),
+    },
+    {
+      id: 'funding-risk',
+      label: 'MONEY & RISK',
+      title: '資金とリスクを確認する',
+      description: '取引を始める前に、必要資金、取引単位、ロスカット、入出金の条件を数字で確認します。',
+      articles: pick([
+        '/articles/jfx-required-margin-leverage',
+        '/articles/jfx-lot-trade-unit',
+        '/articles/jfx-losscut-margin-shortage',
+        '/articles/jfx-hedging-margin-cost',
+        '/articles/jfx-deposit-methods-comparison',
+        '/articles/jfx-withdrawal-time-rules',
+      ]),
+    },
+    {
+      id: 'cost',
+      label: 'TOTAL COST',
+      title: '取引コストを計算する',
+      description: '手数料0円だけで判断せず、スプレッド、スワップ、時間帯と取引回数を合計して比べます。',
+      articles: pick([
+        '/articles/jfx-fees-total-cost',
+        '/articles/jfx-scalping-spread-cost',
+        '/articles/jfx-swap-transfer-tax',
+        '/articles/fx-spread-cost',
+        '/articles/fx-spread-time',
+      ]),
+    },
+    {
+      id: 'tools',
+      label: 'OPERATION',
+      title: '操作とツールを調べる',
+      description: 'チャート、注文設定、取引時間、入金トラブルなど、利用開始後につまずきやすい点を解決します。',
+      articles: pick([
+        '/articles/jfx-mt5-tradingview-matrix-trader',
+        '/articles/jfx-quick-order-settings',
+        '/articles/jfx-order-slippage-rules',
+        '/articles/jfx-trading-hours-maintenance',
+        '/articles/jfx-deposit-not-reflected',
+      ]),
+    },
   ]} />;
 }
