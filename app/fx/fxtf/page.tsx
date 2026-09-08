@@ -72,6 +72,7 @@ export default function FxtfPage() {
         <h2>FXTFを選ぶ前の計算ガイド</h2>
         <div className="provider-directory comparison-guide-directory">
           <Link href="/articles/jfx-vs-fxtf"><span>PROVIDER COMPARE</span><h3>JFXとFXTFを比較</h3><p>スキャルピング、MT4・EA、手数料を比較</p><b>記事を読む →</b></Link>
+          <Link href="/tools/jfx-fxtf-cost-comparison"><span>COST CALCULATOR</span><h3>JFX・FXTFを同条件で計算</h3><p>スプレッドと建玉連動手数料を円換算</p><b>計算する →</b></Link>
           <Link href="/articles/fxtf-account-opening-flow"><span>START GUIDE</span><h3>口座開設と必要書類</h3><p>スマホ確認・メール・郵送の提出方法</p><b>記事を読む →</b></Link>
           <Link href="/articles/fxtf-position-fee-calculation"><span>POSITION FEE</span><h3>建玉連動手数料の計算</h3><p>保有数量を含めるランク判定を確認</p><b>記事を読む →</b></Link>
           <Link href="/articles/fxtf-losscut-50-100"><span>LOSS CUT</span><h3>50％・100％の違い</h3><p>GXとMT4の判定条件を比較</p><b>記事を読む →</b></Link>

@@ -65,6 +65,7 @@ export default function Page() {
     </ul><p>比較条件は2026年9月8日に各社公式ページで確認しました。本記事は公開情報のみを整理し、FXTFの取引ツールからレートを取得・保存・再配信していません。取引条件は変更されるため、申込・発注前に最新情報を確認してください。</p></section>
 
     <p className="affiliate-disclosure">FXは元本および利益が保証されず、預けた証拠金を上回る損失が生じる場合があります。契約締結前交付書面を確認してください。</p>
+    <p><Link href="/tools/jfx-fxtf-cost-comparison">JFX・FXTFの総コストを同条件で計算する →</Link></p>
     <p><Link href="/fx/jfx">JFXの取引条件を見る →</Link></p>
     <p><Link href="/fx/fxtf">FXTFの取引条件を見る →</Link></p>
     <p><Link href="/articles/jfx-mt5-tradingview-matrix-trader">JFXの3つのツールを比較する →</Link></p>
