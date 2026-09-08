@@ -43,6 +43,7 @@ export default function Page() {
     </ul><p>取引条件は2026年9月8日に確認しました。条件変更時は公式情報を優先してください。</p></section>
 
     <p><Link href="/articles/us-stock-fx-cost">為替コストの一般的な計算方法を見る →</Link></p>
+    <p><Link href="/articles/matsui-us-stock-trading-hours">松井証券の米国株取引時間を見る →</Link></p>
     <p><Link href="/stocks/matsui">松井証券の株式コストシートへ →</Link></p>
     <section className="article-affiliate" aria-label="関連する広告"><AffiliateOfferCard offer={AFFILIATE_OFFERS['matsui-fx']} /><p className="affiliate-disclosure">松井証券への広告リンクです。申込み成立時に当サイトが報酬を受け取る場合があります。</p></section>
   </article>;
