@@ -8,6 +8,7 @@ export const metadata = {
 };
 
 const CFD_TARGETS = [
+  { name: 'FXTF MT5', scope: '商品・暗号資産CFD', status: '公式条件を整理済み・広告掲載中', href: '/articles/fxtf-mt5-commodity-vs-crypto-cfd' },
   { name: 'DMM CFD', scope: '株価指数・商品', status: '公式条件を整理済み・データ許諾を照会中', href: '/cfd/dmm-cfd' },
   { name: 'TOSSY', scope: 'FX・株式・指数・商品・暗号資産CFD', status: '公式条件を整理済み・広告掲載中', href: '/cfd/tossy' },
   { name: 'サクソバンク証券', scope: '株価指数・商品・個別株', status: 'OpenAPIの商用条件を確認予定' },
@@ -113,6 +114,7 @@ export default function CfdPage() {
           </div>
         </div>
         <div className="provider-fact-grid">
+          <article><b>FXTF MT5</b><h3><Link href="/articles/fxtf-mt5-commodity-vs-crypto-cfd">商品CFDと暗号資産CFD</Link></h3><p>個人レバレッジ20倍・2倍、1Lot、建玉連動手数料を比較します。</p></article>
           <article><b>SIX ASSETS</b><h3><Link href="/cfd/tossy">TOSSYの6資産と証拠金率</Link></h3><p>株・暗号資産の現物ではなく、FXと5種類のCFDを扱うサービスとして整理します。</p></article>
           <article><b>MARGIN</b><h3><Link href="/articles/dmm-cfd-margin-leverage">DMM CFDの必要証拠金</Link></h3><p>指数10倍・商品20倍の計算式を、日本225・金・原油へ当てはめます。</p></article>
           <article><b>TOTAL COST</b><h3><Link href="/articles/dmm-cfd-total-cost">DMM CFDの総コスト</Link></h3><p>売買手数料0円と、スプレッド・調整額・約定差を切り分けます。</p></article>
@@ -131,6 +133,7 @@ export default function CfdPage() {
           </div>
         </div>
         <div className="affiliate-grid">
+          <AffiliateOfferCard offer={AFFILIATE_OFFERS.fxtf} />
           <AffiliateOfferCard offer={AFFILIATE_OFFERS.tossy} />
           <AffiliateOfferCard offer={AFFILIATE_OFFERS['dmm-cfd']} />
         </div>

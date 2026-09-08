@@ -74,6 +74,7 @@ export default function FxtfPage() {
           <Link href="/articles/jfx-vs-fxtf"><span>PROVIDER COMPARE</span><h3>JFXとFXTFを比較</h3><p>スキャルピング、MT4・EA、手数料を比較</p><b>記事を読む →</b></Link>
           <Link href="/tools/jfx-fxtf-cost-comparison"><span>COST CALCULATOR</span><h3>JFX・FXTFを同条件で計算</h3><p>スプレッドと建玉連動手数料を円換算</p><b>計算する →</b></Link>
           <Link href="/articles/fxtf-mt4-ea-vps-start"><span>EA START GUIDE</span><h3>MT4でEA自動売買を始める</h3><p>0.01Lot、バックテスト、VPS、停止監視</p><b>記事を読む →</b></Link>
+          <Link href="/articles/fxtf-mt5-commodity-vs-crypto-cfd"><span>MT5 / CFD</span><h3>商品CFDと暗号資産CFDを比較</h3><p>1Lot、証拠金率、建玉連動手数料</p><b>記事を読む →</b></Link>
           <Link href="/articles/fxtf-account-opening-flow"><span>START GUIDE</span><h3>口座開設と必要書類</h3><p>スマホ確認・メール・郵送の提出方法</p><b>記事を読む →</b></Link>
           <Link href="/articles/fxtf-position-fee-calculation"><span>POSITION FEE</span><h3>建玉連動手数料の計算</h3><p>保有数量を含めるランク判定を確認</p><b>記事を読む →</b></Link>
           <Link href="/articles/fxtf-losscut-50-100"><span>LOSS CUT</span><h3>50％・100％の違い</h3><p>GXとMT4の判定条件を比較</p><b>記事を読む →</b></Link>

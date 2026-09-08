@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'fxtf-mt5-commodity-vs-crypto-cfd', category: 'CFD・FXTF', title: 'FXTF MT5の商品CFDと暗号資産CFDを比較｜証拠金・1Lot・手数料', desc: '商品20倍と暗号資産2倍の個人レバレッジ、1Lot、必要証拠金、建玉連動手数料を比較する。' },
   { slug: 'fxtf-mt4-ea-vps-start', category: 'FX自動売買・FXTF', title: 'FXTF MT4でEA自動売買を始める手順｜VPS・コスト・停止対策', desc: 'PC版MT4、0.01Lot、バックテスト、建玉連動手数料、VPS、停止監視までを運用順に整理する。' },
   { slug: 'jfx-vs-fxtf', category: 'FX・比較', title: 'JFXとFXTFを比較｜スキャルピング・MT4・手数料の違い', desc: 'JFXのスキャルピング環境とFXTFのGX・MT4を、取引単位、発注方法、EA、TradingView、建玉連動手数料から比較する。' },
   { slug: 'systre-select-365-vs-matsui-auto-trading', category: 'FX自動売買・比較', title: 'シストレセレクト365とMATSUI FX自動売買を比較', desc: '選択型とリピート型、1万通貨と1通貨、利用料、対象通貨、必要資金の考え方から2つの自動売買を比較する。' },
