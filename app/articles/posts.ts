@@ -1,4 +1,8 @@
 export const POSTS = [
+  { slug: 'fx-vps-auto-start-update', category: 'FX自動売買・VPS', title: 'FX VPS再起動後にEAを止めない｜自動起動と更新手順', desc: 'Windows更新やメンテナンス後にMT4・MT5・EAが停止したままにならないよう、自動起動、更新時間、ログ確認を整理する。' },
+  { slug: 'fx-vps-vs-home-pc', category: 'FX自動売買・VPS', title: 'FX自動売買はVPSと自宅PCどちら？費用と停止リスク', desc: 'VPSの本体・RDS料金と、自宅PCの電気代・停電・再起動・遠隔復旧を同じ比較軸で整理する。' },
+  { slug: 'fx-vps-rds-license', category: 'FX自動売買・VPS', title: 'FX VPSのRDSライセンスとは？月1,320円を計算', desc: 'Windows ServerでMT4・MT5を使う場合のRDSライセンスを、必要になる接続、人数、月額・年額から整理する。' },
+  { slug: 'ablenet-win1-vs-win2', category: 'FX自動売買・VPS', title: 'ABLENET Win1とWin2の違い｜MT4・MT5何個まで？', desc: 'CPU、メモリ、MT4・MT5稼働目安、契約時・更新後料金、RDS込み年額からWin1とWin2を比較する。' },
   { slug: 'fx-vps-total-cost', category: 'FX自動売買・VPS', title: 'FX自動売買VPSの費用はいくら？RDS込み総コスト', desc: 'VPS本体料金だけでなく、WindowsのRDSライセンス、契約更新後の料金、取引回数あたりのインフラ費まで計算する。' },
   { slug: 'tossy-cfd-not-spot', category: 'CFD・TOSSY', title: 'TOSSYの株式・暗号資産は現物？6資産とCFDの違い', desc: 'TOSSYで扱う株式、為替、暗号資産、株価指数、商品資源を、現物保有ではなく差金決済取引として整理する。' },
   { slug: 'jfx-before-account-opening-checklist', category: 'FX・JFX', title: 'JFX口座開設前の確認7項目｜スキャルピング・Lot・必要資金', desc: '取引スタイル、Lot例外、スプレッド、ツール、実効レバレッジ、入出金、本人確認を一つの判断導線にまとめる。' },

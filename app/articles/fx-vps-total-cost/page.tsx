@@ -28,6 +28,6 @@ export default function Page() {
 
     <section className="article-affiliate" aria-label="ABLENET VPSの広告"><AffiliateOfferCard offer={AFFILIATE_OFFERS['ablenet-vps']} /><p className="affiliate-disclosure">広告リンクから申込みが成立すると、当サイトが報酬を受け取る場合があります。料金計算、必要スペック、運用リスクとは分けて掲載しています。</p></section>
     <section className="article-sources" aria-labelledby="sources"><h2 id="sources">参照した公式資料</h2><ul><li><a href="https://www.ablenet.jp/vps/fx_guide.html" target="_blank" rel="noopener noreferrer">ABLENET VPS「FX自動売買ユーザー利用ガイド」</a></li><li><a href="https://www.ablenet.jp/vps/service/plan_fee.html" target="_blank" rel="noopener noreferrer">ABLENET VPS「ご利用料金」</a></li><li><a href="https://www.ablenet.jp/vps/faq/faq01.html" target="_blank" rel="noopener noreferrer">ABLENET VPS「お申込み時のFAQ」</a></li><li><a href="https://www.ablenet.jp/vps/service/campaign_memory.html" target="_blank" rel="noopener noreferrer">ABLENET VPS「メモリ増量キャンペーン」</a></li></ul><p>料金、仕様、稼働目安は2026年9月8日に確認しました。キャンペーンやプラン条件は変更される場合があります。</p></section>
-    <p><Link href="/tools/fx-vps-cost-calculator">VPS総コストを自分の条件で計算する →</Link></p><p><Link href="/fx/ablenet-vps">ABLENET VPSの公式条件一覧を見る →</Link></p>
+    <p><Link href="/tools/fx-vps-cost-calculator">VPS総コストを自分の条件で計算する →</Link></p><p><Link href="/articles/ablenet-win1-vs-win2">ABLENETのWin1とWin2を比較する →</Link></p><p><Link href="/articles/fx-vps-rds-license">RDSライセンスが必要な条件を確認する →</Link></p><p><Link href="/articles/fx-vps-vs-home-pc">VPSと自宅PCの費用・停止リスクを比較する →</Link></p><p><Link href="/fx/ablenet-vps">ABLENET VPSの公式条件一覧を見る →</Link></p>
   </article>;
 }
