@@ -77,6 +77,7 @@ export default function Page() {
       </section>
 
       <div className="comparison-actions">
+        <Link className="button primary" href="/articles/matsui-futures-normal-vs-day">松井証券の通常・一日先物を比較</Link>
         <Link className="button primary" href="/tools/cost-calculator">先物プリセットで試算</Link>
         <Link className="button secondary" href="/futures">先物コスト比較へ戻る</Link>
       </div>

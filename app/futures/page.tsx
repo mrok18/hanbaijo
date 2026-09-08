@@ -90,6 +90,7 @@ export default function FuturesPage() {
           <h2>会社比較と金額構造をつなげる</h2>
         </div></div>
         <div className="affiliate-grid">
+          <article className="affiliate-card"><div className="affiliate-card-head"><span>GUIDE</span><b>松井証券</b></div><p className="affiliate-category">STANDARD VS DAY</p><h3>通常先物と一日先物</h3><p>ラージ・mini・マイクロの片道、往復、1ティック比を同じ条件で比べます。</p><Link href="/articles/matsui-futures-normal-vs-day">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>COMPARE</span><b>2026-09-07確認</b></div><p className="affiliate-category">NIKKEI 225 FEES</p><h3>先物2社の手数料</h3><p>松井証券と楽天証券の標準手数料を、片道・往復で比較します。</p><Link href="/futures/nikkei225-fee-comparison">比較表を見る →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>GUIDE</span><b>計算</b></div><p className="affiliate-category">TICK VALUE</p><h3>1ティックの損益</h3><p>取引単位と呼値から、最小の値動きが何円になるかを計算します。</p><Link href="/articles/futures-tick-value">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>GUIDE</span><b>リスク</b></div><p className="affiliate-category">MARGIN</p><h3>証拠金と取引金額</h3><p>証拠金が小さく見える理由と、損益が取引金額に連動する点を整理します。</p><Link href="/articles/futures-margin">記事を読む →</Link></article>
