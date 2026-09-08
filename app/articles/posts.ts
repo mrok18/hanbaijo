@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'us-stock-loss-yen-depreciation', category: '米国株・為替', title: '米国株が下がっても円換算で利益？円安と損益分岐ドル円', desc: '株価下落と円安を同時に計算し、円換算で利益が残るドル円の境界とコストの影響を整理する。' },
   { slug: 'us-stock-profit-yen-appreciation', category: '米国株・為替', title: '米国株が上がったのに円換算で損？円高と損益分岐ドル円', desc: '株価上昇率と円高を同時に計算し、売買コストを含む円換算損益の見方を整理する。' },
   { slug: 'risk-reward-break-even-win-rate', category: '資金管理・計算', title: 'リスクリワード1対2の損益分岐勝率は？コスト込みで計算', desc: '損失と利益の比率から、取引コストを反映した損益分岐勝率と期待値を計算する。' },
   { slug: 'fx-one-pip-value', category: 'FX・基礎計算', title: 'FXの1pipsはいくら？1,000通貨・1万通貨の損益早見表', desc: 'クロス円とドルストレートの1pipsを、取引数量と円換算レートから具体的に計算する。' },

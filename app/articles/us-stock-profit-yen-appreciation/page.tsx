@@ -62,6 +62,7 @@ export default function Page() {
     <div className="callout"><strong>株価チャートだけでは円の損益は分かりません</strong><p>購入時と売却時の為替レート、取引数量、往復コストまで同じ単位の円へ換算して比較してください。計算結果は概算であり、実際の約定額や利益を保証するものではありません。</p></div>
 
     <p><Link href="/articles/us-stock-fx-cost">米国株の為替コスト計算を見る →</Link></p>
+    <p><Link href="/articles/us-stock-loss-yen-depreciation">反対に、株安でも円安で利益になる条件を見る →</Link></p>
     <p><Link href="/articles/matsui-us-stock-fx-fee">松井証券の米国株為替コストを見る →</Link></p>
     <p><Link href="/articles/dmm-kabu-us-stock-fee">DMM 株の米国株手数料を見る →</Link></p>
     <p><Link href="/stocks">株式コスト比較へ戻る →</Link></p>
