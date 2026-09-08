@@ -67,6 +67,7 @@ export default function Page() {
     </ul><p>口座開設条件は2026年9月8日に公式ページで確認しました。申込方法・受付基準・同時開設対象は変更される場合があります。</p></section>
 
     <p><Link href="/articles/matsui-account-types">FX専用口座と総合口座の違いを見る →</Link></p>
+    <p><Link href="/articles/matsui-ekyc-required-documents">eKYCと必要書類を確認する →</Link></p>
     <p><Link href="/articles/matsui-nisa-fees">松井証券NISAで無料になる費用を見る →</Link></p>
     <p><Link href="/stocks/matsui">松井証券の国内株コストを見る →</Link></p>
     <p><Link href="/fx/matsui">MATSUI FXの取引条件を見る →</Link></p>
