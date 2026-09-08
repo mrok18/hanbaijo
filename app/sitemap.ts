@@ -21,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'fx/au-kabucom-fx',
     'fx/saxo',
     'cfd/dmm-cfd',
+    'cfd/tossy',
     'stocks/domestic-fee-comparison',
     'stocks/gmo-click',
     'stocks/rakuten',

@@ -9,6 +9,7 @@ export const metadata = {
 
 const CFD_TARGETS = [
   { name: 'DMM CFD', scope: '株価指数・商品', status: '公式条件を整理済み・データ許諾を照会中', href: '/cfd/dmm-cfd' },
+  { name: 'TOSSY', scope: 'FX・株式・指数・商品・暗号資産CFD', status: '公式条件を整理済み・広告掲載中', href: '/cfd/tossy' },
   { name: 'サクソバンク証券', scope: '株価指数・商品・個別株', status: 'OpenAPIの商用条件を確認予定' },
   { name: 'Plus500証券', scope: '株価指数・商品・個別株', status: '提携審査中' },
 ] as const;
@@ -106,12 +107,13 @@ export default function CfdPage() {
       <section className="fx-section">
         <div className="section-heading">
           <div>
-            <p className="section-index">04 / DMM CFD GUIDES</p>
-            <h2>必要証拠金と総コストを、数字で確認</h2>
-            <p>取引単位の違いと保有期間中の負担を、公式ルールに沿って分けて計算します。</p>
+            <p className="section-index">04 / COST GUIDES</p>
+            <h2>サービスと商品の違いを、数字で確認</h2>
+            <p>取引単位の違い、証拠金率、保有期間中の負担を、公式ルールに沿って分けて確認します。</p>
           </div>
         </div>
         <div className="provider-fact-grid">
+          <article><b>SIX ASSETS</b><h3><Link href="/cfd/tossy">TOSSYの6資産と証拠金率</Link></h3><p>株・暗号資産の現物ではなく、FXと5種類のCFDを扱うサービスとして整理します。</p></article>
           <article><b>MARGIN</b><h3><Link href="/articles/dmm-cfd-margin-leverage">DMM CFDの必要証拠金</Link></h3><p>指数10倍・商品20倍の計算式を、日本225・金・原油へ当てはめます。</p></article>
           <article><b>TOTAL COST</b><h3><Link href="/articles/dmm-cfd-total-cost">DMM CFDの総コスト</Link></h3><p>売買手数料0円と、スプレッド・調整額・約定差を切り分けます。</p></article>
           <article><b>MARGIN SAFETY</b><h3><Link href="/articles/dmm-cfd-margin-call-losscut">DMM CFDの追証とロスカット</Link></h3><p>維持率100％と50％の違いを、判定時点・解消方法・強制決済から整理します。</p></article>
@@ -128,7 +130,8 @@ export default function CfdPage() {
             <p>以下はA8.netで提携済みの広告です。比較評価とは分離して掲載しています。</p>
           </div>
         </div>
-        <div className="affiliate-grid single">
+        <div className="affiliate-grid">
+          <AffiliateOfferCard offer={AFFILIATE_OFFERS.tossy} />
           <AffiliateOfferCard offer={AFFILIATE_OFFERS['dmm-cfd']} />
         </div>
         <p className="affiliate-disclosure">

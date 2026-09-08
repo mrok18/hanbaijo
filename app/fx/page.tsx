@@ -10,6 +10,7 @@ export const metadata = {
 
 const REVIEW_TARGETS = [
   { name: 'DMM FX', scope: 'FX', status: '公式条件を整理済み・広告提携済み（コード待ち）', href: '/fx/dmm-fx' },
+  { name: 'TOSSY', scope: 'FX・株式・指数・商品・暗号資産CFD', status: '公式条件を整理済み・広告掲載中', href: '/cfd/tossy' },
   { name: 'FXTF', scope: 'FX・ノックアウトオプション', status: '公式条件のみ掲載・自動計測対象外', href: '/fx/fxtf' },
   { name: 'シストレセレクト365', scope: 'FX自動売買', status: '公式条件を整理済み・データ許諾を照会中', href: '/fx/systre-select-365' },
   { name: 'MATSUI FX', scope: 'FX', status: '公式条件を整理済み・広告掲載中', href: '/fx/matsui' },
@@ -157,6 +158,7 @@ export default function FxPage() {
         <div className="affiliate-grid">
           <AffiliateOfferCard offer={AFFILIATE_OFFERS['matsui-fx']} />
           <AffiliateOfferCard offer={AFFILIATE_OFFERS.jfx} />
+          <AffiliateOfferCard offer={AFFILIATE_OFFERS.tossy} />
           <AffiliateOfferCard offer={AFFILIATE_OFFERS.fxtf} />
           <AffiliateOfferCard offer={AFFILIATE_OFFERS['systre-select-365']} />
         </div>

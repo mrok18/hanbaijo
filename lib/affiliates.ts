@@ -1,5 +1,5 @@
 export interface AffiliateOffer {
-  id: 'fxtf' | 'systre-select-365' | 'dmm-cfd' | 'matsui-fx' | 'jfx';
+  id: 'fxtf' | 'systre-select-365' | 'dmm-cfd' | 'matsui-fx' | 'jfx' | 'tossy';
   name: string;
   category: string;
   description: string;
@@ -53,5 +53,14 @@ export const AFFILIATE_OFFERS: Record<AffiliateOffer['id'], AffiliateOffer> = {
     linkLabel: 'MATRIX TRADER',
     href: 'https://px.a8.net/svt/ejp?a8mat=4BC5IR+GDF5O2+25B2+5YRHE',
     impressionSrc: 'https://www19.a8.net/0.gif?a8mat=4BC5IR+GDF5O2+25B2+5YRHE',
+  },
+  tossy: {
+    id: 'tossy',
+    name: 'ウルトラ投資アプリ TOSSY',
+    category: 'FX・株式CFD・指数CFD・商品CFD・暗号資産CFD',
+    description: '6つのアセット区分を1つのアプリで扱う差金決済取引サービスです。最新の取引条件とリスクを公式情報で確認できます。',
+    linkLabel: '【PR】ウルトラ投資アプリ【TOSSY】',
+    href: 'https://px.a8.net/svt/ejp?a8mat=4BC5IS+16VZM+1WP2+1HL85U',
+    impressionSrc: 'https://www19.a8.net/0.gif?a8mat=4BC5IS+16VZM+1WP2+1HL85U',
   },
 };
