@@ -62,6 +62,7 @@ export default function Page() {
     <div className="callout"><strong>円安が株価下落を帳消しにするとは限りません</strong><p>必要な円安幅は株価下落率とコストで変わります。将来の株価や為替を前提にせず、複数のレートで損益を試算してください。計算結果は概算であり、実際の約定額や利益を保証するものではありません。</p></div>
 
     <p><Link href="/articles/us-stock-profit-yen-appreciation">反対に、株高でも円高で損になる条件を見る →</Link></p>
+    <p><Link href="/articles/us-stock-yen-sensitivity">ドル円が1円動いた場合の損益早見表を見る →</Link></p>
     <p><Link href="/articles/us-stock-fx-cost">米国株の為替コスト計算を見る →</Link></p>
     <p><Link href="/articles/matsui-us-stock-fx-fee">松井証券の米国株為替コストを見る →</Link></p>
     <p><Link href="/articles/dmm-kabu-us-stock-fee">DMM 株の米国株手数料を見る →</Link></p>
