@@ -106,13 +106,13 @@ export const FX_PROVIDERS: Record<string, FxProvider> = {
   jfx: {
     slug: 'jfx',
     name: 'JFX MATRIX TRADER',
-    headline: '52通貨ペア。基本1,000通貨単位から。',
+    headline: '52取引銘柄。通常46＋大口6を分けて確認。',
     summary: '通貨ペア数、最低取引単位、通常取引とロスカット時の手数料を、公式取引ルールから整理します。',
     minTrade: '基本1,000通貨単位',
     costFocus: '取引・入出金・ロスカットの各手数料とスプレッドを分離',
     caution: 'MXN/JPY、NOK/JPY、SEK/JPY、CNH/JPY、CZK/JPY、THB/JPYは1Lotが1万通貨です。',
     facts: [
-      { label: '通貨ペア', value: '52種類', note: '公式取引ルール掲載' },
+      { label: '取引銘柄', value: '通常46＋大口6', note: '大口6は通常銘柄と通貨ペアが重複' },
       { label: '最低取引単位', value: '基本1,000通貨', note: '一部は1万通貨' },
       { label: '取引手数料', value: '0円', note: 'インターネット取引' },
       { label: 'ロスカット手数料', value: '0円', note: 'スプレッド等は別' },

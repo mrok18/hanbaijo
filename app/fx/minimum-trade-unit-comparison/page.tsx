@@ -58,7 +58,7 @@ const PROVIDERS = [
     notional: '15万円',
     margin: '6,000円',
     exception: 'MXN/JPY・NOK/JPYなど6通貨ペアは1万通貨から',
-    source: 'https://www.jfx.co.jp/trading_rule/index.html',
+    source: 'https://www.jfx.co.jp/trading_rule/',
   },
   {
     name: 'みんなのFX',
@@ -159,6 +159,7 @@ export default function Page() {
       </section>
 
       <div className="comparison-actions">
+        <Link className="button secondary" href="/articles/jfx-lot-trade-unit">JFXの1Lot例外を詳しく見る</Link>
         <Link className="button primary" href="/tools/cost-calculator">自分の数量でコストを試算</Link>
         <Link className="button secondary" href="/fx">FXコスト比較へ戻る</Link>
       </div>

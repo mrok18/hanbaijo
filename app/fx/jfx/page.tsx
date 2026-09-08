@@ -12,6 +12,7 @@ export const metadata = {
 export default function Page() {
   if (!provider) notFound();
   return <FxProviderFactSheet provider={provider} relatedArticles={[
+    { href: '/articles/jfx-lot-trade-unit', title: 'JFXの1Lotと通貨数の例外', description: '基本1,000通貨と6通貨ペアの1万通貨を分け、損益とスプレッド相当額を計算します。' },
     { href: '/articles/jfx-losscut-margin-shortage', title: 'JFXのロスカットと不足金', description: '有効証拠金と必要証拠金の基準、判定間隔、急変時に不足金が残る場合を整理します。' },
     { href: '/articles/jfx-scalping-spread-cost', title: 'JFXの時間帯別スプレッドを計算', description: '米ドル/円0.2銭と早朝5.9銭を、取引数量と回数から円コストへ換算します。' },
     { href: '/articles/fx-spread-cost', title: 'スプレッドを円に直す方法', description: '銭・pips表示を実際の取引数量に応じた円の負担へ直します。' },
