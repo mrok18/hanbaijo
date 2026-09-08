@@ -82,6 +82,7 @@ export default function Page() {
       </section>
 
       <p><Link href="/fx/matsui">MATSUI FXのコストシートを見る →</Link></p>
+      <p><Link href="/articles/matsui-simultaneous-account-opening">総合口座と同時に申込める口座を見る →</Link></p>
       <p><Link href="/articles/matsui-fx-one-currency">1通貨の必要証拠金と損益を見る →</Link></p>
       <p><Link href="/stocks/matsui">松井証券の国内株手数料を見る →</Link></p>
     </article>
