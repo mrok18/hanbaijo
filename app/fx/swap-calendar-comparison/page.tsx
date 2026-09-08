@@ -112,6 +112,7 @@ export default function Page() {
       </section>
 
       <div className="comparison-actions">
+        <Link className="button secondary" href="/articles/jfx-swap-transfer-tax">JFXのスワップ振替を詳しく見る</Link>
         <Link className="button primary" href="/articles/fx-swap-calculation">スワップの計算方法</Link>
         <Link className="button secondary" href="/fx">FXコスト比較へ戻る</Link>
       </div>
