@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'jfx-losscut-margin-shortage', category: 'FX・JFX', title: 'JFXのロスカット基準は？有効証拠金・必要証拠金と不足金', desc: '数秒間隔の判定、全ポジション決済、レート停止時の扱い、不足金の差入れ期限を公式書面から整理する。' },
   { slug: 'jfx-scalping-spread-cost', category: 'FX・JFX', title: 'JFXはスキャルピング向き？米ドル円の時間帯別スプレッドを計算', desc: '米ドル/円0.2銭と早朝5.9銭を、1,000通貨・1万通貨・取引回数ごとの円コストへ換算する。' },
   { slug: 'nikkei225-micro-profit-loss', category: '先物・日経225', title: '日経225マイクロは1円・1ティックでいくら？損益早見表', desc: '日経225マイクロ先物の10倍という取引単位と5円の呼値から、1枚の値動き損益と手数料分岐を計算する。' },
   { slug: 'fx-swap-spread-break-even-days', category: 'FX・スワップ', title: 'FXスワップでスプレッドを回収するまで何日？損益分岐を計算', desc: 'スプレッド相当額を1日分の受取スワップで割り、初期コスト回収日数と為替変動の影響を計算する。' },

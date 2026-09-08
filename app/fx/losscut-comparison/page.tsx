@@ -34,7 +34,7 @@ const PROVIDERS = [
   {
     name: 'JFX MATRIX TRADER', href: '/fx/jfx', metric: '有効比率', trigger: '100%未満',
     before: '200%未満でアラートメール',
-    note: '判定には1〜10秒程度かかる場合あり。ロスカット手数料0円', source: 'https://www.jfx.co.jp/trading_rule/index.html',
+    note: '判定には1〜10秒程度かかる場合あり。ロスカット手数料0円', source: 'https://www.jfx.co.jp/trading_rule/',
   },
   {
     name: 'みんなのFX', href: '/fx/minna-fx', metric: '証拠金維持率', trigger: '100%以下',
@@ -117,6 +117,7 @@ export default function Page() {
       </section>
 
       <div className="comparison-actions">
+        <Link className="button secondary" href="/articles/jfx-losscut-margin-shortage">JFXの判定と不足金を詳しく見る</Link>
         <Link className="button primary" href="/fx/minimum-trade-unit-comparison">最低取引単位も比較</Link>
         <Link className="button secondary" href="/fx">FXコスト比較へ戻る</Link>
       </div>
