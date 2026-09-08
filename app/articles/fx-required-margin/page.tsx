@@ -56,6 +56,7 @@ export default function Page() {
         <p>制度内容は2026年9月7日に確認しました。</p>
       </section>
 
+      <p><Link href="/tools/fx-position-size-calculator">許容損失から取引数量を逆算する →</Link></p>
       <p><Link href="/tools/cost-calculator">取引コスト計算機を開く →</Link></p>
       <p><Link href="/fx">FXコスト比較へ戻る →</Link></p>
 
