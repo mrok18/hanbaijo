@@ -3,7 +3,6 @@ import { POSTS } from './articles/posts';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://hanbaijo.com';
-  const now = new Date();
   const detailRoutes = [
     'fx/fxtf',
     'fx/systre-select-365',
@@ -31,15 +30,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'futures/nikkei225-fee-comparison',
   ];
   return [
-    { url: base, lastModified: now, changeFrequency: 'hourly', priority: 1 },
+    { url: base, changeFrequency: 'hourly', priority: 1 },
     ...['fx', 'cfd', 'stocks', 'futures', 'markets', 'tools', 'tools/cost-calculator', 'tools/jfx-scalping-cost-calculator', 'tools/fx-vps-cost-calculator', 'tools/nikkei225-margin-buffer-calculator', 'tools/nikkei225-position-size-calculator', 'tools/trading-break-even-calculator', 'tools/fx-swap-break-even-calculator', 'tools/cfd-margin-calculator', 'tools/fx-position-size-calculator', 'tools/fx-pip-value-calculator', 'tools/risk-reward-calculator', 'tools/us-stock-fx-profit-calculator', 'tools/matsui-fx-spread-calculator', 'tools/matsui-fx-margin-calculator', 'tools/matsui-us-stock-cost-calculator', 'tools/matsui-futures-cost-calculator', 'tools/matsui-box-rate-calculator', 'articles', 'method', 'about', 'disclaimer', 'contact'].map((p) => ({
-      url: `${base}/${p}`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.6,
+      url: `${base}/${p}`, changeFrequency: 'monthly' as const, priority: 0.6,
     })),
     ...POSTS.map((p) => ({
-      url: `${base}/articles/${p.slug}`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.7,
+      url: `${base}/articles/${p.slug}`, changeFrequency: 'monthly' as const, priority: 0.7,
     })),
     ...detailRoutes.map((p) => ({
-      url: `${base}/${p}`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.8,
+      url: `${base}/${p}`, changeFrequency: 'monthly' as const, priority: 0.8,
     })),
   ];
 }

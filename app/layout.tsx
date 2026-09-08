@@ -5,6 +5,17 @@ import Script from 'next/script';
 
 const GA_ID = 'G-J7HHCQK42T';
 
+const websiteJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': 'https://hanbaijo.com/#website',
+  url: 'https://hanbaijo.com/',
+  name: '金融コストウォッチ',
+  alternateName: 'hanbaijo.com',
+  description: '金融商品の見えにくい取引コストを、実測データと明示した計算方法で可視化する独立系データメディアです。',
+  inLanguage: 'ja-JP',
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://hanbaijo.com'),
   title: {
@@ -36,6 +47,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ja">
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd).replace(/</g, '\\u003c') }}
+        />
         <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
         <Script id="ga4" strategy="afterInteractive">
           {`window.dataLayer = window.dataLayer || [];

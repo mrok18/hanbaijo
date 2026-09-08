@@ -1,4 +1,6 @@
 export const POSTS = [
+  { slug: 'systre-select-365-start-operation-flow', category: 'FX自動売買', title: 'シストレセレクト365の基本操作｜ランキングから稼働まで', desc: 'ランキング、成績期間、最大ドローダウン、数量、リスクメーターを確認し、ストラテジーを稼働するまでの順序を整理する。' },
+  { slug: 'systre-select-365-account-opening-flow', category: 'FX自動売買', title: 'シストレセレクト365の始め方｜口座開設から稼働まで', desc: 'くりっく365口座の有無で異なる申込経路、本人確認、カード登録、入金、ストラテジー稼働までを整理する。' },
   { slug: 'fxtf-trading-hours-swap-cutoff', category: 'FX・FXTF', title: 'FXTFの取引時間とメンテナンス｜スワップ判定は何時？', desc: 'GX・MT4の夏冬の取引停止時間、NY17時のスワップ判定、EA利用時の週末確認を整理する。' },
   { slug: 'fxtf-losscut-50-100', category: 'FX・FXTF', title: 'FXTFのロスカットは50％・100％｜GXとMT4の違い', desc: '通常時50％と日次判定100％を区別し、GXとMT4の判定時刻・境界条件の違いを整理する。' },
   { slug: 'fxtf-position-fee-calculation', category: 'FX・FXTF', title: 'FXTFの建玉連動手数料とは？保有中の数量を含めて計算', desc: '新規注文だけでなく同一銘柄・同一売買方向の保有数量を加える手数料ランクの計算方法を整理する。' },
