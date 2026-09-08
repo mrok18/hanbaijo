@@ -12,6 +12,7 @@ export const metadata = {
 export default function Page() {
   if (!provider) notFound();
   return <FxProviderFactSheet provider={provider} relatedArticles={[
+    { href: '/articles/jfx-trading-hours-maintenance', title: 'JFXの取引時間とメンテナンス', description: '夏時間・冬時間、毎営業日の日締め、土日の注文受付を整理します。' },
     { href: '/articles/jfx-beginner-vs-matrix-trader', title: 'ビギナーFXとMATRIX TRADERを比較', description: '100通貨のミニ口座と1,000通貨の本口座を、取扱商品・分析環境まで比較します。' },
     { href: '/articles/jfx-account-opening-flow', title: 'JFXの口座開設に必要なもの', description: '本人確認・マイナンバー・審査・初回入金1万円から取引開始までを整理します。' },
     { href: '/articles/jfx-quick-order-settings', title: 'JFXクイック注文の設定と注意点', description: '全決済、両建て、許容設定、決済pip差を発注前の確認順に整理します。' },
