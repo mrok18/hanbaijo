@@ -85,6 +85,7 @@ export default function Page() {
         <p>取引条件は2026年9月7日に確認しました。注文前に公式画面の最新値を確認してください。</p>
       </section>
 
+      <p><Link href="/tools/matsui-fx-margin-calculator">必要証拠金と維持率を入力して計算する →</Link></p>
       <p><Link href="/fx/matsui">MATSUI FXのコストシートを見る →</Link></p>
       <p><Link href="/articles/matsui-fx-auto-trading-cost">自動売買に必要な資金を計算する →</Link></p>
       <p><Link href="/fx/minimum-trade-unit-comparison">FX各社の最低取引単位を比較する →</Link></p>

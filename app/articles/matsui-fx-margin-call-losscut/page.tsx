@@ -73,6 +73,7 @@ export default function Page() {
         <p>制度は2026年9月7日に確認しました。実際に追証が発生した場合は、お客様サイトに表示される期限・金額を優先してください。</p>
       </section>
 
+      <p><Link href="/tools/matsui-fx-margin-calculator">必要証拠金・維持率・ロスカット余力を計算する →</Link></p>
       <p><Link href="/fx/matsui">MATSUI FXのコストシートを見る →</Link></p>
       <p><Link href="/articles/matsui-fx-one-currency">1通貨の必要証拠金を計算する →</Link></p>
       <p><Link href="/fx/losscut-comparison">FX会社のロスカットルールを比較する →</Link></p>
