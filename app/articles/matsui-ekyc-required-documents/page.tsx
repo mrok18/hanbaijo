@@ -63,6 +63,7 @@ export default function Page() {
     </ul><p>必要書類・申込条件は2026年9月8日に公式ページで確認しました。利用可能書類、対応環境、処理時間は変更される場合があります。</p></section>
 
     <p><Link href="/articles/matsui-simultaneous-account-opening">同時に申込める商品口座を見る →</Link></p>
+    <p><Link href="/articles/matsui-deposit-methods-comparison">口座開設後の入金方法を比較する →</Link></p>
     <p><Link href="/articles/matsui-account-types">FX専用口座と総合口座を比較する →</Link></p>
     <p><Link href="/stocks/matsui">松井証券の国内株コストを見る →</Link></p>
     <p><Link href="/fx/matsui">MATSUI FXの取引条件を見る →</Link></p>

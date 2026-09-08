@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'matsui-deposit-methods-comparison', category: '証券・松井証券', title: '松井証券の入金方法を比較｜手数料・反映時間', desc: 'スイープ、MATSUI Bank、ネットリンク、らくらく振替、定期入金、銀行振込を比較する。' },
   { slug: 'matsui-ekyc-required-documents', category: '証券・松井証券', title: '松井証券の口座開設に必要な書類｜eKYC・マイナンバー', desc: '最短即日のeKYC、オンラインアップロード、郵送の違いと書類不備の防止点を整理する。' },
   { slug: 'matsui-simultaneous-account-opening', category: '証券・松井証券', title: '松井証券で同時開設できる口座｜NISA・FX・信用・先物', desc: '総合口座と同時に開設・申込みできる口座、追加口座、商品別審査の違いを整理する。' },
   { slug: 'jfx-demo-account-guide', category: 'FX・JFX', title: 'JFXデモ口座でできること｜利用期間・仮想資金・本番との違い', desc: '約3カ月の利用期間、仮想資金、デモレート、土日利用、ロスカット、本番移行の手順を整理する。' },
