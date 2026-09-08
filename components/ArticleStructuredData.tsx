@@ -2,7 +2,7 @@ import { POSTS } from '@/app/articles/posts';
 
 interface ArticleStructuredDataProps {
   slug: string;
-  publishedAt: string;
+  publishedAt?: string;
   modifiedAt?: string;
 }
 
@@ -19,8 +19,7 @@ export default function ArticleStructuredData({ slug, publishedAt, modifiedAt }:
         '@id': `${url}#article`,
         headline: post.title,
         description: post.desc,
-        datePublished: publishedAt,
-        dateModified: modifiedAt ?? publishedAt,
+        ...(publishedAt ? { datePublished: publishedAt, dateModified: modifiedAt ?? publishedAt } : {}),
         inLanguage: 'ja-JP',
         articleSection: post.category,
         mainEntityOfPage: { '@type': 'WebPage', '@id': url },

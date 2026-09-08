@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'jfx-vs-fxtf', category: 'FX・比較', title: 'JFXとFXTFを比較｜スキャルピング・MT4・手数料の違い', desc: 'JFXのスキャルピング環境とFXTFのGX・MT4を、取引単位、発注方法、EA、TradingView、建玉連動手数料から比較する。' },
   { slug: 'systre-select-365-vs-matsui-auto-trading', category: 'FX自動売買・比較', title: 'シストレセレクト365とMATSUI FX自動売買を比較', desc: '選択型とリピート型、1万通貨と1通貨、利用料、対象通貨、必要資金の考え方から2つの自動売買を比較する。' },
   { slug: 'systre-select-365-start-operation-flow', category: 'FX自動売買', title: 'シストレセレクト365の基本操作｜ランキングから稼働まで', desc: 'ランキング、成績期間、最大ドローダウン、数量、リスクメーターを確認し、ストラテジーを稼働するまでの順序を整理する。' },
   { slug: 'systre-select-365-account-opening-flow', category: 'FX自動売買', title: 'シストレセレクト365の始め方｜口座開設から稼働まで', desc: 'くりっく365口座の有無で異なる申込経路、本人確認、カード登録、入金、ストラテジー稼働までを整理する。' },
