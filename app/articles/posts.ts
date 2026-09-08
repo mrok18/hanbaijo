@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'fxtf-mt5-btc-cfd-cost', category: '暗号資産CFD・FXTF', title: 'FXTF MT5のビットコインCFDは0.01Lotでいくら？証拠金・手数料', desc: 'BTC/JPY 0.01Lotの想定元本、必要証拠金、建玉連動手数料、スプレッド、保有費を分けて計算する。' },
   { slug: 'fxtf-mt5-commodity-vs-crypto-cfd', category: 'CFD・FXTF', title: 'FXTF MT5の商品CFDと暗号資産CFDを比較｜証拠金・1Lot・手数料', desc: '商品20倍と暗号資産2倍の個人レバレッジ、1Lot、必要証拠金、建玉連動手数料を比較する。' },
   { slug: 'fxtf-mt4-ea-vps-start', category: 'FX自動売買・FXTF', title: 'FXTF MT4でEA自動売買を始める手順｜VPS・コスト・停止対策', desc: 'PC版MT4、0.01Lot、バックテスト、建玉連動手数料、VPS、停止監視までを運用順に整理する。' },
   { slug: 'jfx-vs-fxtf', category: 'FX・比較', title: 'JFXとFXTFを比較｜スキャルピング・MT4・手数料の違い', desc: 'JFXのスキャルピング環境とFXTFのGX・MT4を、取引単位、発注方法、EA、TradingView、建玉連動手数料から比較する。' },
