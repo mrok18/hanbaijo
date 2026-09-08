@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'jfx-order-slippage-rules', category: 'FX・JFX', title: 'JFXの注文方法とスリッページ｜成行・ストリーミング・逆指値', desc: '約定優先、許容スリップ、注文不成立、許容スプレッドの違いを基本注文ごとに整理する。' },
   { slug: 'jfx-vs-dmm-fx', category: 'FX・比較', title: 'JFXとDMM FXを比較｜取引単位・時間帯・ロスカット', desc: '1,000通貨対応、通常・ミニ銘柄、米ドル円スプレッドの適用時間、ロスカット基準の違いを整理する。' },
   { slug: 'jfx-vs-matsui-fx', category: 'FX・比較', title: 'JFXと松井証券FXを比較｜少額練習か短期売買か', desc: '最低取引単位、米ドル円スプレッド、レバレッジ、自動売買、スキャルピングの違いから用途別に比較する。' },
   { slug: 'jfx-withdrawal-time-rules', category: 'FX・JFX', title: 'JFXの出金はいつ反映？時間・金額・取消条件', desc: 'リアルタイム出金と通常出金の金額、即時着金の時間、時間外処理、手数料、依頼後の取消可否を比較する。' },
