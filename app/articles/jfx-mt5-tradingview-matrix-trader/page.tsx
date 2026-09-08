@@ -58,6 +58,7 @@ export default function Page() {
     </ul><p>ツール仕様は2026年9月8日に公式ページで確認しました。提供機能・利用条件は変更される場合があります。</p></section>
 
     <p><Link href="/articles/jfx-quick-order-settings">MATRIX TRADERのクイック注文設定を見る →</Link></p>
+    <p><Link href="/articles/jfx-demo-account-guide">MATRIX TRADERのデモ口座で練習できる範囲を見る →</Link></p>
     <p><Link href="/articles/jfx-order-slippage-rules">注文方法と約定ルールを見る →</Link></p>
     <p><Link href="/articles/jfx-scalping-spread-cost">JFXの時間帯別コストを見る →</Link></p>
     <p><Link href="/fx/jfx">JFXの取引条件一覧へ →</Link></p>
