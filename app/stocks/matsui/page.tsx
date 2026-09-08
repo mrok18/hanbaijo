@@ -4,6 +4,7 @@ import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = { title: '松井証券の国内株手数料・ボックスレート', description: '松井証券の国内株ボックスレートを、1日の約定代金合計と年齢条件に分けて公式情報から整理します。' };
 export default function Page() { return <StockProviderFactSheet provider={STOCK_PROVIDERS.matsui} affiliateOffer={AFFILIATE_OFFERS['matsui-fx']} relatedArticles={[
+  { href: '/articles/matsui-withdrawal-methods-comparison', title: '3種類の出金方法を比較', description: '翌営業日、即時出金、MATSUI Bankを手数料・上限・取消可否で比較します。' },
   { href: '/articles/matsui-deposit-methods-comparison', title: '6種類の入金方法を比較', description: '手数料、リアルタイム反映、事前設定、銀行振込の違いを整理します。' },
   { href: '/articles/matsui-ekyc-required-documents', title: '口座開設のeKYCと必要書類', description: 'マイナンバー、本人確認、オンライン・郵送の違いと不備防止を整理します。' },
   { href: '/articles/matsui-simultaneous-account-opening', title: '総合口座と同時に申込める口座', description: 'NISA・FX・信用・先物と、自動開設される米国株・投資信託口座を整理します。' },

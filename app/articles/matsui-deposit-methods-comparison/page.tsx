@@ -46,6 +46,8 @@ export default function Page() {
     <p>銀行振込入金では、利用者ごとに用意された専用の入金先銀行口座を確認して送金します。営業日の日中は通常30〜60分で反映されますが、銀行や松井証券側の確認状況、時間外、休日では遅れる可能性があります。</p>
     <div className="formula-box"><code>実質入金コスト ＝ 銀行の振込手数料 ＋ 入金待ちによる機会コスト</code><small>無料の即時入金が使える場合でも、焦って予定外の取引を増やさないことが大切です。</small></div>
 
+    <p><Link href="/articles/matsui-withdrawal-methods-comparison">翌営業日・即時・MATSUI Bankの出金方法を見る →</Link></p>
+
     <h2>目的別の選び方</h2>
     <div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th>目的</th><th>候補</th></tr></thead><tbody>
       <tr><td className="ex-name">取引直前に手動入金</td><td>MATSUI Bank・ネットリンク・らくらく振替</td></tr>
