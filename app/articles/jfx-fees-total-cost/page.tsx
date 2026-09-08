@@ -48,6 +48,7 @@ export default function Page() {
     </ul><p>取引条件は2026年9月8日に公式ページで確認しました。スプレッド、スワップ、受付時間などは変更される場合があるため、利用前に最新情報を確認してください。</p></section>
 
     <p><Link href="/tools/jfx-scalping-cost-calculator">JFXの取引回数込みコストを計算する →</Link></p>
+    <p><Link href="/articles/jfx-withdrawal-time-rules">JFXの出金時間と取消条件を確認する →</Link></p>
     <p><Link href="/articles/jfx-lot-trade-unit">JFXの1Lotと通貨数を確認する →</Link></p>
     <p><Link href="/articles/jfx-losscut-margin-shortage">JFXのロスカットと不足金を確認する →</Link></p>
     <p><Link href="/fx/jfx">JFXの取引条件一覧へ →</Link></p>
