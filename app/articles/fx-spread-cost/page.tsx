@@ -57,6 +57,7 @@ export default function Page() {
         <p className="affiliate-disclosure">広告リンクから申込みが成立すると、当サイトが報酬を受け取る場合があります。計算方法や比較順位とは分けて掲載しています。</p>
       </section>
 
+      <p><Link href="/tools/fx-pip-value-calculator">1pipsの損益とスプレッド相当額を計算する →</Link></p>
       <p><Link href="/tools/cost-calculator">取引コスト計算機で試す →</Link></p>
       <p><Link href="/fx/usdjpy-spread-comparison">米ドル円スプレッド10社比較を見る →</Link></p>
       <p><Link href="/fx">FXコスト比較へ戻る →</Link></p>
