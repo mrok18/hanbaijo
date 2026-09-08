@@ -51,6 +51,8 @@ export default function Page() {
     </ul><p>商品区分、証拠金率、手数料、資金振替の条件は2026年9月8日に公式資料で確認しました。取引条件は変更される場合があります。</p></section>
 
     <p><Link href="/cfd/tossy">TOSSYの6資産・証拠金・横断リスクを確認する →</Link></p>
+    <p><Link href="/articles/tossy-margin-by-asset">6資産の必要証拠金を同じ金額で比較する →</Link></p>
+    <p><Link href="/articles/tossy-margin-call-losscut">追証とロスカットの連動を確認する →</Link></p>
     <p><Link href="/articles/dmm-cfd-total-cost">CFDのスプレッドと調整額を詳しく見る →</Link></p>
     <p><Link href="/tools/cfd-margin-calculator">商品CFDの必要証拠金を概算する →</Link></p>
 

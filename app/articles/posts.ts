@@ -1,4 +1,8 @@
 export const POSTS = [
+  { slug: 'tossy-margin-call-losscut', category: 'CFD・TOSSY', title: 'TOSSYの追証・ロスカット｜6資産へ及ぶマージンカット', desc: 'ロスカットと追加証拠金を区別し、未解消時に他のアセット区分まで強制決済される仕組みを整理する。' },
+  { slug: 'tossy-fees-total-cost', category: 'CFD・TOSSY', title: 'TOSSYの手数料は無料？スプレッド・調整額まで計算', desc: '口座管理費・取引手数料0円だけで判断せず、スプレッド、金利・権利・価格調整、スリッページを整理する。' },
+  { slug: 'tossy-margin-by-asset', category: 'CFD・TOSSY', title: 'TOSSYの必要証拠金｜6資産を100万円取引で比較', desc: 'FX、株式、株価指数、バラエティ、商品、暗号資産CFDの証拠金率を同じ取引金額で比較する。' },
+  { slug: 'tossy-account-opening-flow', category: 'CFD・TOSSY', title: 'TOSSYの口座開設手順｜必要書類と取引開始前の確認', desc: '申込、本人確認、審査、ログイン情報取得、入金、商品別書面確認までを順番に整理する。' },
   { slug: 'fx-vps-auto-start-update', category: 'FX自動売買・VPS', title: 'FX VPS再起動後にEAを止めない｜自動起動と更新手順', desc: 'Windows更新やメンテナンス後にMT4・MT5・EAが停止したままにならないよう、自動起動、更新時間、ログ確認を整理する。' },
   { slug: 'fx-vps-vs-home-pc', category: 'FX自動売買・VPS', title: 'FX自動売買はVPSと自宅PCどちら？費用と停止リスク', desc: 'VPSの本体・RDS料金と、自宅PCの電気代・停電・再起動・遠隔復旧を同じ比較軸で整理する。' },
   { slug: 'fx-vps-rds-license', category: 'FX自動売買・VPS', title: 'FX VPSのRDSライセンスとは？月1,320円を計算', desc: 'Windows ServerでMT4・MT5を使う場合のRDSライセンスを、必要になる接続、人数、月額・年額から整理する。' },
