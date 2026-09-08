@@ -60,6 +60,7 @@ export default function Page() {
         <p>内容・数値は2026年9月7日に確認しました。</p>
       </section>
 
+      <p><Link href="/tools/fx-swap-break-even-calculator">スワップで初期コストを回収する日数を計算する →</Link></p>
       <p><Link href="/tools/cost-calculator">取引コスト計算機で試算する →</Link></p>
       <p><Link href="/fx">FXコスト比較へ戻る →</Link></p>
 
