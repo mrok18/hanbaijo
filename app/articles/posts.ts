@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'jfx-hedging-margin-cost', category: 'FX・JFX', title: 'JFXの両建ては証拠金が片側分？コストと危険性', desc: '同数量は片側分、多い方で計算される証拠金と、スプレッド・スワップ差・設定・ロスカットの注意点を整理する。' },
   { slug: 'jfx-swap-transfer-tax', category: 'FX・JFX', title: 'JFXのスワップ振替とは？出金と税金の注意点', desc: '決済せず1円単位でスワップを確定する仕組みと、未実現・確定申告・休日や年末の取引日の違いを整理する。' },
   { slug: 'jfx-fees-total-cost', category: 'FX・JFX', title: 'JFXの手数料は本当に無料？実質コストを整理', desc: '取引・入出金・ロスカット手数料と、スプレッド・スワップ・スリッページなど残るコストを分けて確認する。' },
   { slug: 'jfx-lot-trade-unit', category: 'FX・JFX', title: 'JFXの1Lotはいくら？1,000通貨・1万通貨の例外', desc: '基本1Lot＝1,000通貨と6通貨ペアの1万通貨例外を分け、値動き損益・pips・スプレッド相当額を計算する。' },

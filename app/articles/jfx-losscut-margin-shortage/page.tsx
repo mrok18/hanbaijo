@@ -43,6 +43,7 @@ export default function Page() {
 
     <p><Link href="/tools/fx-position-size-calculator">許容損失から取引数量を逆算する →</Link></p>
     <p><Link href="/tools/jfx-scalping-cost-calculator">JFXの短期売買コストを計算する →</Link></p>
+    <p><Link href="/articles/jfx-hedging-margin-cost">JFXの両建て証拠金とロスカットを確認する →</Link></p>
     <p><Link href="/fx/losscut-comparison">FX各社のロスカット基準を比較する →</Link></p>
     <p><Link href="/fx/jfx">JFXの取引条件一覧へ →</Link></p>
   </article>;
