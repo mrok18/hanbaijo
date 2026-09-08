@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'fx-one-pip-value', category: 'FX・基礎計算', title: 'FXの1pipsはいくら？1,000通貨・1万通貨の損益早見表', desc: 'クロス円とドルストレートの1pipsを、取引数量と円換算レートから具体的に計算する。' },
   { slug: 'fx-position-size-calculation', category: 'FX・リスク管理', title: 'FXの適正ロット・取引数量の決め方｜許容損失から逆算', desc: '口座資金、許容損失率、損切り幅、1pipsの損益から、取引数量を通貨単位で逆算する。' },
   { slug: 'matsui-futures-normal-vs-day', category: '先物・松井証券', title: '松井証券の先物手数料｜通常と一日先物を往復比較', desc: '日経225先物・mini・マイクロの片道と往復手数料、1ティックに対する比率を比較する。' },
   { slug: 'matsui-us-stock-trading-hours', category: '米国株・松井証券', title: '松井証券の米国株取引時間｜プレマーケットと23時間化予定', desc: '夏時間・冬時間のプレマーケットと通常取引時間、2026年12月予定の23時間化を時系列で整理する。' },
