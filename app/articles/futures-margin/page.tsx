@@ -61,6 +61,7 @@ export default function Page() {
       </section>
 
       <p><Link href="/articles/futures-tick-value">1ティックの計算も読む →</Link></p>
+      <p><Link href="/tools/nikkei225-margin-buffer-calculator">証拠金余力を値幅・ティックへ換算する →</Link></p>
       <p><Link href="/futures">先物コスト比較へ戻る →</Link></p>
     </article>
   );

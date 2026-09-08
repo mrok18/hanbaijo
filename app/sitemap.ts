@@ -30,7 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
   return [
     { url: base, lastModified: now, changeFrequency: 'hourly', priority: 1 },
-    ...['fx', 'cfd', 'stocks', 'futures', 'markets', 'tools', 'tools/cost-calculator', 'tools/trading-break-even-calculator', 'tools/fx-swap-break-even-calculator', 'tools/cfd-margin-calculator', 'tools/fx-position-size-calculator', 'tools/fx-pip-value-calculator', 'tools/risk-reward-calculator', 'tools/us-stock-fx-profit-calculator', 'tools/matsui-fx-spread-calculator', 'tools/matsui-fx-margin-calculator', 'tools/matsui-us-stock-cost-calculator', 'tools/matsui-futures-cost-calculator', 'tools/matsui-box-rate-calculator', 'articles', 'method', 'about', 'disclaimer', 'contact'].map((p) => ({
+    ...['fx', 'cfd', 'stocks', 'futures', 'markets', 'tools', 'tools/cost-calculator', 'tools/nikkei225-margin-buffer-calculator', 'tools/trading-break-even-calculator', 'tools/fx-swap-break-even-calculator', 'tools/cfd-margin-calculator', 'tools/fx-position-size-calculator', 'tools/fx-pip-value-calculator', 'tools/risk-reward-calculator', 'tools/us-stock-fx-profit-calculator', 'tools/matsui-fx-spread-calculator', 'tools/matsui-fx-margin-calculator', 'tools/matsui-us-stock-cost-calculator', 'tools/matsui-futures-cost-calculator', 'tools/matsui-box-rate-calculator', 'articles', 'method', 'about', 'disclaimer', 'contact'].map((p) => ({
       url: `${base}/${p}`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.6,
     })),
     ...POSTS.map((p) => ({

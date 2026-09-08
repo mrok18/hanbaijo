@@ -6,6 +6,7 @@ export const metadata = {
 };
 
 const tools = [
+  { href: '/tools/nikkei225-margin-buffer-calculator', tag: 'FUTURES RISK', title: '日経225先物 証拠金余力計算機', description: '口座資金、必要証拠金、枚数から、資金余力が何円・何ティックの逆行に相当するか計算します。', scope: 'ラージ・mini・マイクロ' },
   { href: '/tools/fx-swap-break-even-calculator', tag: 'FX SWAP', title: 'FXスワップ損益分岐日数計算機', description: '通貨数、スプレッド、1日分のスワップから、初期コストを回収する付与日数と保有後の差引損益を計算します。', scope: '受取・支払に対応' },
   { href: '/tools/trading-break-even-calculator', tag: 'ALL MARKETS', title: '取引コスト損益分岐計算機', description: '取引金額、スプレッド、往復手数料、保有コストから、回収に必要な利益率と1単位あたりの値幅を計算します。', scope: '手数料負けの境界' },
   { href: '/tools/cost-calculator', tag: 'ALL MARKETS', title: '取引コスト計算機', description: 'FX、暗号資産、CFD、株式、先物のスプレッド、手数料、保有費用、為替コストを一つの円金額へまとめます。', scope: '複数商品・汎用' },
@@ -23,7 +24,7 @@ const tools = [
 
 export default function Page() {
   return <div className="fx-page">
-    <section className="fx-hero"><div><p className="page-kicker">FINANCIAL COST TOOLKIT</p><h1>取引条件を、<br /><em>円の負担へ。</em></h1><p className="lede">広告の見出しだけでは分からないコストを、取引金額・数量・保有条件に合わせて試算します。入力値はブラウザ内で計算され、サーバーへ保存しません。</p><div className="hero-actions"><Link className="button primary" href="/tools/cost-calculator">汎用計算機を開く</Link><Link className="button secondary" href="/method">算出方法を確認</Link></div></div><aside className="fx-status-panel"><span>TOOL STATUS</span><strong>13種類を公開中</strong><p>汎用計算に加え、公式の取引単位・料金体系を反映したサービス別計算機を順次追加しています。</p><dl><div><dt>対象</dt><dd>FX・CFD・株・先物</dd></div><div><dt>入力保存</dt><dd>なし</dd></div><div><dt>利用料</dt><dd>無料</dd></div></dl></aside></section>
+    <section className="fx-hero"><div><p className="page-kicker">FINANCIAL COST TOOLKIT</p><h1>取引条件を、<br /><em>円の負担へ。</em></h1><p className="lede">広告の見出しだけでは分からないコストを、取引金額・数量・保有条件に合わせて試算します。入力値はブラウザ内で計算され、サーバーへ保存しません。</p><div className="hero-actions"><Link className="button primary" href="/tools/cost-calculator">汎用計算機を開く</Link><Link className="button secondary" href="/method">算出方法を確認</Link></div></div><aside className="fx-status-panel"><span>TOOL STATUS</span><strong>14種類を公開中</strong><p>汎用計算に加え、公式の取引単位・料金体系を反映したサービス別計算機を順次追加しています。</p><dl><div><dt>対象</dt><dd>FX・CFD・株・先物</dd></div><div><dt>入力保存</dt><dd>なし</dd></div><div><dt>利用料</dt><dd>無料</dd></div></dl></aside></section>
 
     <section className="fx-section"><div className="section-heading"><div><p className="section-index">01 / CALCULATORS</p><h2>目的から計算機を選ぶ</h2><p>商品横断の概算と、サービス固有条件の計算を分けています。</p></div></div><div className="affiliate-grid">{tools.map((tool, index) => <article className="affiliate-card" key={tool.href}><div className="affiliate-card-head"><span>TOOL {String(index + 1).padStart(2, '0')}</span><b>{tool.scope}</b></div><p className="affiliate-category">{tool.tag}</p><h3>{tool.title}</h3><p>{tool.description}</p><Link href={tool.href}>計算する →</Link></article>)}</div></section>
 
