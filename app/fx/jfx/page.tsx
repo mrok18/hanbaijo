@@ -11,5 +11,9 @@ export const metadata = {
 
 export default function Page() {
   if (!provider) notFound();
-  return <FxProviderFactSheet provider={provider} />;
+  return <FxProviderFactSheet provider={provider} relatedArticles={[
+    { href: '/articles/jfx-scalping-spread-cost', title: 'JFXの時間帯別スプレッドを計算', description: '米ドル/円0.2銭と早朝5.9銭を、取引数量と回数から円コストへ換算します。' },
+    { href: '/articles/fx-spread-cost', title: 'スプレッドを円に直す方法', description: '銭・pips表示を実際の取引数量に応じた円の負担へ直します。' },
+    { href: '/articles/fx-spread-time', title: 'スプレッドが広がりやすい時間帯', description: '早朝、経済指標、急変時に広告表示から外れる理由を整理します。' },
+  ]} />;
 }
