@@ -12,6 +12,7 @@ export const metadata = {
 export default function Page() {
   if (!provider) notFound();
   return <FxProviderFactSheet provider={provider} relatedArticles={[
+    { href: '/articles/jfx-vs-dmm-fx', title: 'JFXとDMM FXを比較', description: '1,000通貨対応、米ドル円の時間帯別スプレッド、ロスカット基準を比較します。' },
     { href: '/articles/jfx-vs-matsui-fx', title: 'JFXと松井証券FXを比較', description: '1通貨の少額取引とスキャルピング環境を、スプレッド条件まで含めて比較します。' },
     { href: '/articles/jfx-withdrawal-time-rules', title: 'JFXの出金時間と取消条件', description: 'リアルタイム出金と通常出金の金額、着金時間、取消可否を比較します。' },
     { href: '/articles/jfx-hedging-margin-cost', title: 'JFXの両建て証拠金とコスト', description: '片側分で計算される必要証拠金と、スプレッド・スワップ差・ロスカットの注意点を整理します。' },

@@ -8,6 +8,7 @@ export const metadata = {
 
 export default function Page() {
   return <FxProviderFactSheet provider={FX_PROVIDERS['dmm-fx']} relatedArticles={[
+    { href: '/articles/jfx-vs-dmm-fx', title: 'DMM FXとJFXを比較', description: 'ミニ銘柄とJFXの1,000通貨、時間帯別スプレッド、ロスカット基準を比較します。' },
     { href: '/articles/dmm-fx-mini-normal-large', title: 'ミニ・通常・ラージの違い', description: '1Lotの通貨数、必要証拠金、損益、スプレッド条件を同じ表で比較します。' },
     { href: '/articles/dmm-fx-margin-call-losscut', title: '追証とロスカットの違い', description: '維持率100％未満の追加証拠金判定と、50％以下のロスカットを分けて確認します。' },
     { href: '/articles/dmm-fx-swap-calendar', title: 'スワップ付与日の見方', description: '営業日の切替、0日・3日・4日分、祝日の変則付与をカレンダーから確認します。' },
