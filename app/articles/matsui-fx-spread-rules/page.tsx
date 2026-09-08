@@ -68,6 +68,7 @@ export default function Page() {
         <p>条件は2026年9月7日に確認しました。取引時は公式一覧と取引画面の提示値を優先してください。</p>
       </section>
 
+      <p><Link href="/tools/matsui-fx-spread-calculator">通貨数・取引回数からスプレッドコストを計算する →</Link></p>
       <p><Link href="/fx/matsui">MATSUI FXのコストシートを見る →</Link></p>
       <p><Link href="/articles/matsui-fx-one-currency">MATSUI FXの1通貨取引を計算する →</Link></p>
       <p><Link href="/articles/fx-spread-cost">FXスプレッドを円換算する →</Link></p>

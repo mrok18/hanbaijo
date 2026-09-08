@@ -30,7 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
   return [
     { url: base, lastModified: now, changeFrequency: 'hourly', priority: 1 },
-    ...['fx', 'cfd', 'stocks', 'futures', 'markets', 'tools', 'tools/cost-calculator', 'tools/cfd-margin-calculator', 'tools/matsui-us-stock-cost-calculator', 'tools/matsui-futures-cost-calculator', 'tools/matsui-box-rate-calculator', 'articles', 'method', 'about', 'disclaimer', 'contact'].map((p) => ({
+    ...['fx', 'cfd', 'stocks', 'futures', 'markets', 'tools', 'tools/cost-calculator', 'tools/cfd-margin-calculator', 'tools/matsui-fx-spread-calculator', 'tools/matsui-us-stock-cost-calculator', 'tools/matsui-futures-cost-calculator', 'tools/matsui-box-rate-calculator', 'articles', 'method', 'about', 'disclaimer', 'contact'].map((p) => ({
       url: `${base}/${p}`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.6,
     })),
     ...POSTS.map((p) => ({
