@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'fx-swap-spread-break-even-days', category: 'FX・スワップ', title: 'FXスワップでスプレッドを回収するまで何日？損益分岐を計算', desc: 'スプレッド相当額を1日分の受取スワップで割り、初期コスト回収日数と為替変動の影響を計算する。' },
   { slug: 'trading-cost-break-even-return', category: '資金管理・計算', title: '取引コストの損益分岐点は何％？手数料負けしない値幅を計算', desc: '往復手数料、スプレッド、保有コストを取引金額に対する比率へ直し、利益に必要な値幅を計算する。' },
   { slug: 'us-stock-yen-sensitivity', category: '米国株・為替', title: '米国株はドル円が1円動くといくら変わる？為替感応度早見表', desc: '保有する米国株のドル評価額から、ドル円が1円・5円・10円動いた場合の円換算額の変化を計算する。' },
   { slug: 'us-stock-loss-yen-depreciation', category: '米国株・為替', title: '米国株が下がっても円換算で利益？円安と損益分岐ドル円', desc: '株価下落と円安を同時に計算し、円換算で利益が残るドル円の境界とコストの影響を整理する。' },

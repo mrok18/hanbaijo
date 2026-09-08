@@ -61,6 +61,7 @@ export default function Page() {
       </section>
 
       <p><Link href="/tools/fx-swap-break-even-calculator">スワップで初期コストを回収する日数を計算する →</Link></p>
+      <p><Link href="/articles/fx-swap-spread-break-even-days">スプレッド回収日数の具体例を見る →</Link></p>
       <p><Link href="/tools/cost-calculator">取引コスト計算機で試算する →</Link></p>
       <p><Link href="/fx">FXコスト比較へ戻る →</Link></p>
 

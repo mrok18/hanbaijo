@@ -52,6 +52,7 @@ export default function Page() {
       <p><Link href="/fx/fxtf">FXTFのコストシートを見る →</Link></p>
       <p><Link href="/articles/fx-swap-calculation">スワップの計算方法を見る →</Link></p>
       <p><Link href="/tools/fx-swap-break-even-calculator">付与日数と差引損益を計算する →</Link></p>
+      <p><Link href="/articles/fx-swap-spread-break-even-days">スワップの損益分岐日数を見る →</Link></p>
     </article>
   );
 }
