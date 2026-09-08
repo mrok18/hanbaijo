@@ -13,6 +13,7 @@ const tools = [
   { href: '/tools/fx-position-size-calculator', tag: 'FX RISK', title: 'FX取引数量計算機', description: '口座資金、許容リスク率、損切り幅から、1回の損失を予算内に収める取引数量を逆算します。', scope: '損失額から数量を逆算' },
   { href: '/tools/fx-pip-value-calculator', tag: 'FX PIPS', title: 'FX pips損益計算機', description: '取引数量、決済通貨、円換算レートから、1pipsの損益、値幅損益、スプレッド相当額を円換算します。', scope: '円絡み・外貨決済対応' },
   { href: '/tools/risk-reward-calculator', tag: 'ALL MARKETS', title: '損益比・損益分岐勝率計算機', description: '利確幅、損切り幅、往復コスト、想定勝率から、リスクリワード比と取引期待値を計算します。', scope: 'コスト込み期待値' },
+  { href: '/tools/us-stock-fx-profit-calculator', tag: 'US STOCK', title: '米国株 円換算損益計算機', description: '買値・売値、購入時・売却時のドル円、売買手数料、為替コストから、円換算損益を計算します。', scope: '株価と為替を分離' },
   { href: '/tools/matsui-us-stock-cost-calculator', tag: 'US STOCK', title: '米国株往復コスト計算機', description: '松井証券の米国株について、売買手数料、円貨決済の為替コスト、値幅損益を円換算します。', scope: 'NISA・外貨決済対応' },
   { href: '/tools/matsui-box-rate-calculator', tag: 'JAPAN STOCK', title: 'ボックスレート計算機', description: '松井証券の現物買付、現物売却、信用取引を1日単位で合算し、国内株手数料を判定します。', scope: '年齢条件対応' },
   { href: '/tools/matsui-futures-cost-calculator', tag: 'FUTURES', title: '日経225先物コスト計算機', description: 'ラージ、mini、マイクロの値幅損益、往復手数料、差引後損益、手数料分岐ティックを計算します。', scope: '通常・一日先物対応' },
@@ -20,7 +21,7 @@ const tools = [
 
 export default function Page() {
   return <div className="fx-page">
-    <section className="fx-hero"><div><p className="page-kicker">FINANCIAL COST TOOLKIT</p><h1>取引条件を、<br /><em>円の負担へ。</em></h1><p className="lede">広告の見出しだけでは分からないコストを、取引金額・数量・保有条件に合わせて試算します。入力値はブラウザ内で計算され、サーバーへ保存しません。</p><div className="hero-actions"><Link className="button primary" href="/tools/cost-calculator">汎用計算機を開く</Link><Link className="button secondary" href="/method">算出方法を確認</Link></div></div><aside className="fx-status-panel"><span>TOOL STATUS</span><strong>10種類を公開中</strong><p>汎用計算に加え、公式の取引単位・料金体系を反映したサービス別計算機を順次追加しています。</p><dl><div><dt>対象</dt><dd>FX・CFD・株・先物</dd></div><div><dt>入力保存</dt><dd>なし</dd></div><div><dt>利用料</dt><dd>無料</dd></div></dl></aside></section>
+    <section className="fx-hero"><div><p className="page-kicker">FINANCIAL COST TOOLKIT</p><h1>取引条件を、<br /><em>円の負担へ。</em></h1><p className="lede">広告の見出しだけでは分からないコストを、取引金額・数量・保有条件に合わせて試算します。入力値はブラウザ内で計算され、サーバーへ保存しません。</p><div className="hero-actions"><Link className="button primary" href="/tools/cost-calculator">汎用計算機を開く</Link><Link className="button secondary" href="/method">算出方法を確認</Link></div></div><aside className="fx-status-panel"><span>TOOL STATUS</span><strong>11種類を公開中</strong><p>汎用計算に加え、公式の取引単位・料金体系を反映したサービス別計算機を順次追加しています。</p><dl><div><dt>対象</dt><dd>FX・CFD・株・先物</dd></div><div><dt>入力保存</dt><dd>なし</dd></div><div><dt>利用料</dt><dd>無料</dd></div></dl></aside></section>
 
     <section className="fx-section"><div className="section-heading"><div><p className="section-index">01 / CALCULATORS</p><h2>目的から計算機を選ぶ</h2><p>商品横断の概算と、サービス固有条件の計算を分けています。</p></div></div><div className="affiliate-grid">{tools.map((tool, index) => <article className="affiliate-card" key={tool.href}><div className="affiliate-card-head"><span>TOOL {String(index + 1).padStart(2, '0')}</span><b>{tool.scope}</b></div><p className="affiliate-category">{tool.tag}</p><h3>{tool.title}</h3><p>{tool.description}</p><Link href={tool.href}>計算する →</Link></article>)}</div></section>
 

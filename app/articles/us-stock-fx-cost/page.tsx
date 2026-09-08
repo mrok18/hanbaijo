@@ -58,6 +58,7 @@ export default function Page() {
         <p>仕組みは2026年9月7日に確認。25銭は計算例であり、特定サービスの現在条件として比較掲載するものではありません。</p>
       </section>
 
+      <p><Link href="/tools/us-stock-fx-profit-calculator">購入時・売却時の為替を分けて損益計算する →</Link></p>
       <p><Link href="/tools/cost-calculator">米国株プリセットで試す →</Link></p>
       <p><Link href="/articles/dmm-kabu-us-stock-fee">DMM 株の米国株手数料と為替コストを見る →</Link></p>
       <p><Link href="/stocks">株式コスト比較へ戻る →</Link></p>
