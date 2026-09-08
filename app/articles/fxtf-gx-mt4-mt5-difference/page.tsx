@@ -76,6 +76,8 @@ export default function Page() {
 
       <p><Link href="/fx/fxtf">FXTFのコストシートを見る →</Link></p>
       <p><Link href="/articles/fxtf-minimum-unit-margin">FXTFの最小取引単位と必要証拠金を見る →</Link></p>
+      <p><Link href="/articles/fxtf-position-fee-calculation">建玉連動手数料の計算方法を見る →</Link></p>
+      <p><Link href="/articles/fxtf-trading-hours-swap-cutoff">GX・MT4の取引時間を比較する →</Link></p>
 
       <section className="article-affiliate" aria-label="FXTFの広告">
         <AffiliateOfferCard offer={AFFILIATE_OFFERS.fxtf} />

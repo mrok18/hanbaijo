@@ -80,6 +80,8 @@ export default function Page() {
 
       <p><Link href="/fx/fxtf">FXTFのコストシートを見る →</Link></p>
       <p><Link href="/articles/fxtf-gx-mt4-mt5-difference">FXTF GX・MT4・MT5の違いを見る →</Link></p>
+      <p><Link href="/articles/fxtf-losscut-50-100">証拠金維持率50％・100％の違いを見る →</Link></p>
+      <p><Link href="/articles/fxtf-position-fee-calculation">取引数量から建玉連動手数料を確認する →</Link></p>
       <p><Link href="/articles/fx-zero-spread-total-cost">0.0銭と総コストの違いを見る →</Link></p>
 
       <section className="article-affiliate" aria-label="FXTFの広告">

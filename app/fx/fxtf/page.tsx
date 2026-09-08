@@ -24,7 +24,7 @@ export default function FxtfPage() {
         </div>
         <aside className="provider-stamp">
           <span>OFFICIAL FACTS</span>
-          <strong>2026.09.07 確認</strong>
+          <strong>2026.09.08 確認</strong>
           <dl>
             <div><dt>商品</dt><dd>FXTF GX-FX</dd></div>
             <div><dt>通貨ペア</dt><dd>29</dd></div>
@@ -70,10 +70,14 @@ export default function FxtfPage() {
       <section className="provider-section">
         <p className="section-index">03 / PRACTICAL GUIDES</p>
         <h2>FXTFを選ぶ前の計算ガイド</h2>
-        <div className="provider-fact-grid">
-          <article><b>PLATFORM</b><h3><Link href="/articles/fxtf-gx-mt4-mt5-difference">GX・MT4・MT5の違い</Link></h3><p>TradingView、EA、取引商品を比較。MT5のFXは確認時点でComing Soonです。</p></article>
-          <article><b>TRADE SIZE</b><h3><Link href="/articles/fxtf-minimum-unit-margin">1,000通貨の必要資金</Link></h3><p>GXの0.1LotとMT4標準の0.01Lotを、同じ通貨数量に直して計算します。</p></article>
-          <article><b>TOTAL COST</b><h3><Link href="/articles/fx-zero-spread-total-cost">0.0銭の総コスト</Link></h3><p>ゼロスプレッドと建玉連動手数料を分け、取引数量ごとの負担を確認します。</p></article>
+        <div className="provider-directory comparison-guide-directory">
+          <Link href="/articles/fxtf-account-opening-flow"><span>START GUIDE</span><h3>口座開設と必要書類</h3><p>スマホ確認・メール・郵送の提出方法</p><b>記事を読む →</b></Link>
+          <Link href="/articles/fxtf-position-fee-calculation"><span>POSITION FEE</span><h3>建玉連動手数料の計算</h3><p>保有数量を含めるランク判定を確認</p><b>記事を読む →</b></Link>
+          <Link href="/articles/fxtf-losscut-50-100"><span>LOSS CUT</span><h3>50％・100％の違い</h3><p>GXとMT4の判定条件を比較</p><b>記事を読む →</b></Link>
+          <Link href="/articles/fxtf-trading-hours-swap-cutoff"><span>TRADING HOURS</span><h3>取引時間とスワップ判定</h3><p>夏冬のメンテナンス時刻を整理</p><b>記事を読む →</b></Link>
+          <Link href="/articles/fxtf-gx-mt4-mt5-difference"><span>PLATFORM</span><h3>GX・MT4・MT5の違い</h3><p>TradingView、EA、取引商品を比較</p><b>記事を読む →</b></Link>
+          <Link href="/articles/fxtf-minimum-unit-margin"><span>TRADE SIZE</span><h3>1,000通貨の必要資金</h3><p>異なるLot表記を通貨数量へ換算</p><b>記事を読む →</b></Link>
+          <Link href="/articles/fx-zero-spread-total-cost"><span>TOTAL COST</span><h3>0.0銭の総コスト</h3><p>スプレッドと手数料を分けて計算</p><b>記事を読む →</b></Link>
         </div>
       </section>
 
