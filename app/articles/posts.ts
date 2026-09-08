@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'matsui-us-stock-fx-fee', category: '米国株・松井証券', title: '松井証券の米国株は為替手数料0円？円貨決済25銭との違い', desc: '米ドルの事前両替0円と、円貨決済時の1ドル25銭を分け、取引金額ごとの負担を計算する。' },
   { slug: 'dmm-cfd-gold-vs-silver', category: 'CFD・DMM CFD', title: 'DMM CFDの金と銀｜1Lot・必要証拠金・金利調整額を比較', desc: '金1トロイオンス、銀10トロイオンスの取引単位と値動き・保有コストを比較する。' },
   { slug: 'dmm-cfd-commodity-lot-list', category: 'CFD・DMM CFD', title: 'DMM CFD商品14銘柄の1Lot一覧｜単位を間違えない早見表', desc: '金・銀・原油・天然ガス・農産物の1Lot単位と証拠金計算を一覧化する。' },
   { slug: 'dmm-cfd-natural-gas-vs-oil', category: 'CFD・DMM CFD', title: 'DMM CFDの天然ガスと原油｜1Lotの値動きと証拠金を比較', desc: '天然ガス100MMBtu、原油10バレルの取引単位と必要証拠金・価格調整額を比較する。' },

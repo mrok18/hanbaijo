@@ -38,9 +38,9 @@ export const AFFILIATE_OFFERS: Record<AffiliateOffer['id'], AffiliateOffer> = {
   },
   'matsui-fx': {
     id: 'matsui-fx',
-    name: 'MATSUI FX',
-    category: 'FX',
-    description: '最低取引単位、スプレッド、スワップ、ロスカットなど、最新の取引条件を公式サイトで確認できます。',
+    name: '松井証券',
+    category: '証券・FX',
+    description: '株式、NISA、FXなど、利用する商品の最新の取引条件を公式サイトで確認できます。',
     linkLabel: '松井証券',
     href: 'https://px.a8.net/svt/ejp?a8mat=4BC5IS+3KMEQ+3XCC+64C3M',
     impressionSrc: 'https://www10.a8.net/0.gif?a8mat=4BC5IS+3KMEQ+3XCC+64C3M',

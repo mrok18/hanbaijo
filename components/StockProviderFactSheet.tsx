@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import type { StockProvider } from '@/lib/stock-providers';
+import AffiliateOfferCard from '@/components/AffiliateOfferCard';
+import type { AffiliateOffer } from '@/lib/affiliates';
 
-export default function StockProviderFactSheet({ provider, relatedArticles = [] }: { provider: StockProvider; relatedArticles?: { href: string; title: string; description: string }[] }) {
+export default function StockProviderFactSheet({ provider, relatedArticles = [], affiliateOffer }: { provider: StockProvider; relatedArticles?: { href: string; title: string; description: string }[]; affiliateOffer?: AffiliateOffer }) {
   return (
     <div className="provider-page stock-provider-page">
       <section className="provider-hero provider-compact-hero stock-provider-hero">
@@ -20,7 +22,7 @@ export default function StockProviderFactSheet({ provider, relatedArticles = [] 
           <strong>公式情報を 2026-09-07 確認</strong>
           <dl>
             <div><dt>料金体系</dt><dd>{provider.feeModel}</dd></div>
-            <div><dt>広告リンク</dt><dd>掲載なし</dd></div>
+            <div><dt>広告リンク</dt><dd>{affiliateOffer ? '掲載あり・PR明示' : '掲載なし'}</dd></div>
             <div><dt>比較順位</dt><dd>報酬の影響なし</dd></div>
           </dl>
         </aside>
@@ -57,10 +59,17 @@ export default function StockProviderFactSheet({ provider, relatedArticles = [] 
         </div>
       </section>
 
-      <section className="provider-no-ad">
-        <div><span>AD STATUS</span><h2>このページに広告リンクはありません。</h2></div>
-        <p>将来広告を掲載する場合も、公称値・試算値・実測値の評価とは分離し、広告であることを明示します。</p>
-      </section>
+      {affiliateOffer ? (
+        <section className="article-affiliate" aria-label="関連する広告">
+          <AffiliateOfferCard offer={affiliateOffer} />
+          <p className="affiliate-disclosure">広告リンク経由で申込みが成立した場合、当サイトが報酬を受け取ることがあります。比較内容や公称値の評価とは分離しています。</p>
+        </section>
+      ) : (
+        <section className="provider-no-ad">
+          <div><span>AD STATUS</span><h2>このページに広告リンクはありません。</h2></div>
+          <p>将来広告を掲載する場合も、公称値・試算値・実測値の評価とは分離し、広告であることを明示します。</p>
+        </section>
+      )}
 
       {relatedArticles.length > 0 && (
         <section className="provider-section" aria-labelledby={`${provider.slug}-related-guides`}>
