@@ -12,6 +12,7 @@ export const metadata = {
 export default function Page() {
   if (!provider) notFound();
   return <FxProviderFactSheet provider={provider} relatedArticles={[
+    { href: '/articles/jfx-quick-order-settings', title: 'JFXクイック注文の設定と注意点', description: '全決済、両建て、許容設定、決済pip差を発注前の確認順に整理します。' },
     { href: '/articles/jfx-order-slippage-rules', title: 'JFXの注文方法とスリッページ', description: '成行・ストリーミング・指値・逆指値を、価格のずれと注文不成立の違いから整理します。' },
     { href: '/articles/jfx-vs-dmm-fx', title: 'JFXとDMM FXを比較', description: '1,000通貨対応、米ドル円の時間帯別スプレッド、ロスカット基準を比較します。' },
     { href: '/articles/jfx-vs-matsui-fx', title: 'JFXと松井証券FXを比較', description: '1通貨の少額取引とスキャルピング環境を、スプレッド条件まで含めて比較します。' },

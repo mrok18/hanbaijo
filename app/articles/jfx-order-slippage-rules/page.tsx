@@ -56,6 +56,7 @@ export default function Page() {
     </ul><p>注文仕様は2026年9月8日に公式資料で確認しました。取引ツールや条件は変更される場合があるため、発注前に最新の取引画面・説明書をご確認ください。</p></section>
 
     <p><Link href="/tools/jfx-scalping-cost-calculator">JFXのスキャルピングコストを計算する →</Link></p>
+    <p><Link href="/articles/jfx-quick-order-settings">クイック注文の全決済・両建て設定を確認する →</Link></p>
     <p><Link href="/articles/jfx-scalping-spread-cost">JFXの時間帯別スプレッドを確認する →</Link></p>
     <p><Link href="/articles/jfx-fees-total-cost">JFXの無料手数料と実質コストを見る →</Link></p>
     <p><Link href="/fx/jfx">JFXの取引条件一覧へ →</Link></p>
