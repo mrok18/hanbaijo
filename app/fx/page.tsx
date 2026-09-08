@@ -16,7 +16,7 @@ const REVIEW_TARGETS = [
   { name: 'GMOクリック証券 FXネオ', scope: 'FX', status: '公式条件を整理済み・広告提携審査中', href: '/fx/gmo-click' },
   { name: 'LIGHT FX', scope: 'FX', status: '公式条件を整理済み・広告提携審査中', href: '/fx/lightfx' },
   { name: 'ヒロセ通商 LION FX', scope: 'FX', status: '公式条件を整理済み・広告提携審査中', href: '/fx/lion-fx' },
-  { name: 'JFX MATRIX TRADER', scope: 'FX', status: '公式条件を整理済み・広告提携審査中', href: '/fx/jfx' },
+  { name: 'JFX MATRIX TRADER', scope: 'FX', status: '公式条件を整理済み・A8.net提携済み', href: '/fx/jfx' },
   { name: 'みんなのFX', scope: 'FX', status: '公式条件を整理済み・広告提携審査中', href: '/fx/minna-fx' },
   { name: '三菱UFJ eスマート証券 FX', scope: 'FX', status: '公式条件を整理済み・広告提携審査中', href: '/fx/au-kabucom-fx' },
   { name: 'サクソバンク証券', scope: 'FX・CFD・株式・先物', status: '公式条件を整理済み・広告提携審査中', href: '/fx/saxo' },

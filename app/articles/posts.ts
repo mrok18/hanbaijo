@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'jfx-fees-total-cost', category: 'FX・JFX', title: 'JFXの手数料は本当に無料？実質コストを整理', desc: '取引・入出金・ロスカット手数料と、スプレッド・スワップ・スリッページなど残るコストを分けて確認する。' },
   { slug: 'jfx-lot-trade-unit', category: 'FX・JFX', title: 'JFXの1Lotはいくら？1,000通貨・1万通貨の例外', desc: '基本1Lot＝1,000通貨と6通貨ペアの1万通貨例外を分け、値動き損益・pips・スプレッド相当額を計算する。' },
   { slug: 'jfx-losscut-margin-shortage', category: 'FX・JFX', title: 'JFXのロスカット基準は？有効証拠金・必要証拠金と不足金', desc: '数秒間隔の判定、全ポジション決済、レート停止時の扱い、不足金の差入れ期限を公式書面から整理する。' },
   { slug: 'jfx-scalping-spread-cost', category: 'FX・JFX', title: 'JFXはスキャルピング向き？米ドル円の時間帯別スプレッドを計算', desc: '米ドル/円0.2銭と早朝5.9銭を、1,000通貨・1万通貨・取引回数ごとの円コストへ換算する。' },

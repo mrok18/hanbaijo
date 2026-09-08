@@ -118,7 +118,7 @@ export const FX_PROVIDERS: Record<string, FxProvider> = {
       { label: 'ロスカット手数料', value: '0円', note: 'スプレッド等は別' },
     ],
     checks: ['通貨ペアごとの1Lotの数量', '公称スプレッドの適用時間と例外', '必要証拠金の当日額', 'ロールオーバー時のメンテナンス'],
-    sources: [{ label: 'MATRIX TRADER取引ルール', href: 'https://www.jfx.co.jp/trading_rule/' }, { label: '時間帯別スプレッド', href: 'https://www.jfx.co.jp/trading_rule/spread/' }, { label: 'スキャルピング方針', href: 'https://www.jfx.co.jp/landing/scalping/' }],
+    sources: [{ label: 'MATRIX TRADER取引ルール', href: 'https://www.jfx.co.jp/trading_rule/' }, { label: '時間帯別スプレッド', href: 'https://www.jfx.co.jp/trading_rule/spread/' }, { label: '入出金条件', href: 'https://www.jfx.co.jp/payment/' }, { label: 'スキャルピング方針', href: 'https://www.jfx.co.jp/landing/scalping/' }],
   },
   'minna-fx': {
     slug: 'minna-fx',
