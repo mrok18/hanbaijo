@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'jfx-mt5-tradingview-matrix-trader', category: 'FX・JFX', title: 'JFXのMT5・TradingView・MATRIX TRADERの違い', desc: '発注、口座情報、レート受信、チャート分析の役割から3つのツールを比較する。' },
   { slug: 'jfx-deposit-not-reflected', category: 'FX・JFX', title: 'JFXの入金が反映されない原因｜クイック入金・銀行振込', desc: '銀行引落し、終了操作、通信、口座番号、振込名義、メンテナンスを順番に切り分ける。' },
   { slug: 'jfx-trading-hours-maintenance', category: 'FX・JFX', title: 'JFXの取引時間｜夏時間・冬時間・メンテナンスと土日の注文', desc: '月曜開始・土曜終了、日締めによる通信切断、週末の予約注文、時間指定注文の違いを整理する。' },
   { slug: 'jfx-beginner-vs-matrix-trader', category: 'FX・JFX', title: 'JFXビギナーFXとMATRIX TRADERの違い｜100通貨・1,000通貨', desc: '最低取引単位、通貨ペア、分析ツール、キャンペーンからミニ口座と本口座を比較する。' },

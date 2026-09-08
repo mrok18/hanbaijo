@@ -54,6 +54,7 @@ export default function Page() {
     </ul><p>注文機能は2026年9月8日に公式資料で確認しました。利用端末やツールの版によって操作方法が異なるため、最新の取引画面・マニュアルもご確認ください。</p></section>
 
     <p><Link href="/articles/jfx-order-slippage-rules">JFXの注文方法とスリッページを見る →</Link></p>
+    <p><Link href="/articles/jfx-mt5-tradingview-matrix-trader">MT5・TradingViewと発注画面の違いを見る →</Link></p>
     <p><Link href="/tools/jfx-scalping-cost-calculator">JFXのスキャルピングコストを計算する →</Link></p>
     <p><Link href="/articles/jfx-lot-trade-unit">JFXの1Lotと通貨数を確認する →</Link></p>
     <p><Link href="/fx/jfx">JFXの取引条件一覧へ →</Link></p>

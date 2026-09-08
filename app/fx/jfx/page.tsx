@@ -12,6 +12,7 @@ export const metadata = {
 export default function Page() {
   if (!provider) notFound();
   return <FxProviderFactSheet provider={provider} relatedArticles={[
+    { href: '/articles/jfx-mt5-tradingview-matrix-trader', title: 'MT5・TradingView・MATRIX TRADERを比較', description: '分析専用チャートと実際の発注・口座管理画面の役割を分けます。' },
     { href: '/articles/jfx-deposit-not-reflected', title: 'JFXの入金が反映されない場合', description: 'クイック入金と銀行振込を、引落し・終了操作・名義・口座番号から切り分けます。' },
     { href: '/articles/jfx-trading-hours-maintenance', title: 'JFXの取引時間とメンテナンス', description: '夏時間・冬時間、毎営業日の日締め、土日の注文受付を整理します。' },
     { href: '/articles/jfx-beginner-vs-matrix-trader', title: 'ビギナーFXとMATRIX TRADERを比較', description: '100通貨のミニ口座と1,000通貨の本口座を、取扱商品・分析環境まで比較します。' },
