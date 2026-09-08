@@ -71,6 +71,8 @@ export default function FxtfPage() {
         <p className="section-index">03 / PRACTICAL GUIDES</p>
         <h2>FXTFを選ぶ前の計算ガイド</h2>
         <div className="provider-directory comparison-guide-directory">
+          <Link href="/articles/fxtf-vs-dmm-cfd-gold"><span>GOLD / PROVIDER COMPARE</span><h3>DMM CFDと金1Lotを比較</h3><p>証拠金、新規手数料、保有費の違い</p><b>記事を読む →</b></Link>
+          <Link href="/tools/gold-cfd-provider-cost-comparison"><span>GOLD / COST TOOL</span><h3>金CFD 2社の総コスト</h3><p>取引画面の条件を手入力して円換算</p><b>計算する →</b></Link>
           <Link href="/articles/jfx-vs-fxtf"><span>PROVIDER COMPARE</span><h3>JFXとFXTFを比較</h3><p>スキャルピング、MT4・EA、手数料を比較</p><b>記事を読む →</b></Link>
           <Link href="/tools/jfx-fxtf-cost-comparison"><span>COST CALCULATOR</span><h3>JFX・FXTFを同条件で計算</h3><p>スプレッドと建玉連動手数料を円換算</p><b>計算する →</b></Link>
           <Link href="/articles/fxtf-mt4-ea-vps-start"><span>EA START GUIDE</span><h3>MT4でEA自動売買を始める</h3><p>0.01Lot、バックテスト、VPS、停止監視</p><b>記事を読む →</b></Link>

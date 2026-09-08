@@ -114,6 +114,8 @@ export default function CfdPage() {
           </div>
         </div>
         <div className="provider-fact-grid">
+          <article><b>GOLD / PROVIDER COMPARE</b><h3><Link href="/articles/fxtf-vs-dmm-cfd-gold">FXTFとDMMの金CFD</Link></h3><p>同じ1Lot・証拠金率5％を、手数料と保有費までそろえて比較します。</p></article>
+          <article><b>GOLD / COST TOOL</b><h3><Link href="/tools/gold-cfd-provider-cost-comparison">金CFD 2社比較計算機</Link></h3><p>同時点のスプレッド、新規手数料、保有費を手入力して円換算します。</p></article>
           <article><b>FXTF MT5</b><h3><Link href="/articles/fxtf-mt5-commodity-vs-crypto-cfd">商品CFDと暗号資産CFD</Link></h3><p>個人レバレッジ20倍・2倍、1Lot、建玉連動手数料を比較します。</p></article>
           <article><b>BITCOIN CFD</b><h3><Link href="/articles/fxtf-mt5-btc-cfd-cost">BTC/JPY 0.01Lotの費用</Link></h3><p>必要証拠金、新規時の建玉連動手数料、保有中の負担を分けます。</p></article>
           <article><b>BTC PAIRS</b><h3><Link href="/articles/fxtf-mt5-btc-jpy-vs-usd">BTC/JPYとBTC/USD</Link></h3><p>同じ0.01BTCでも異なる、必要証拠金の円換算レートを整理します。</p></article>
