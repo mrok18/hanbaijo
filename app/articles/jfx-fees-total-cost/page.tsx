@@ -51,6 +51,7 @@ export default function Page() {
     <p><Link href="/articles/jfx-withdrawal-time-rules">JFXの出金時間と取消条件を確認する →</Link></p>
     <p><Link href="/articles/jfx-lot-trade-unit">JFXの1Lotと通貨数を確認する →</Link></p>
     <p><Link href="/articles/jfx-losscut-margin-shortage">JFXのロスカットと不足金を確認する →</Link></p>
+    <p><Link href="/articles/jfx-account-opening-flow">口座開設の必要書類と初回入金を見る →</Link></p>
     <p><Link href="/fx/jfx">JFXの取引条件一覧へ →</Link></p>
   </article>;
 }
