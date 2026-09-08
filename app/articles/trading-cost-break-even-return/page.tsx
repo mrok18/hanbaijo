@@ -58,6 +58,7 @@ export default function Page() {
     <p>価格が1％上がっても、往復コストが0.8％なら手取り利益率は概算0.2％です。さらに税金や為替変動があれば、口座上の最終損益は変わります。商品を比較するときは「手数料無料」という表示ではなく、同じ取引金額と保有期間で総額を揃えます。</p>
     <div className="callout"><strong>損益分岐点は利益目標ではありません</strong><p>損益がゼロになる境界を示すだけで、値上がりや約定を保証するものではありません。スリッページ、急変時のスプレッド拡大、税金など計算外の要素もあります。</p></div>
 
+    <p><Link href="/tools/trading-break-even-calculator">専用計算機で損益分岐率と必要値幅を計算する →</Link></p>
     <p><Link href="/tools/cost-calculator">共通取引コスト計算機で総額を試す →</Link></p>
     <p><Link href="/articles/risk-reward-break-even-win-rate">リスクリワードと損益分岐勝率を見る →</Link></p>
     <p><Link href="/articles/stock-round-trip-cost">国内株の往復コストを見る →</Link></p>
