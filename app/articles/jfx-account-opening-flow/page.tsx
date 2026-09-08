@@ -55,6 +55,8 @@ export default function Page() {
       <li>初回入金1万円と、取引に必要な余裕資金を分けて考えている</li>
     </ul>
 
+    <p><Link href="/articles/jfx-before-account-opening-checklist">申込み前に取引条件7項目をまとめて確認する →</Link></p>
+
     <section className="article-sources" aria-labelledby="sources"><h2 id="sources">参照した公式資料</h2><ul>
       <li><a href="https://www.jfx.co.jp/startup/" target="_blank" rel="noopener noreferrer">JFX「個人のお客様・口座開設の流れ」</a></li>
       <li><a href="https://info.jfx.co.jp/jfxapl/MatrixThanks/MatrixThanks.html" target="_blank" rel="noopener noreferrer">JFX「本人確認書類について」</a></li>

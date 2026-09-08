@@ -38,6 +38,7 @@ export default function Page() {
 
     <p><Link href="/tools/fx-pip-value-calculator">取引数量からpips損益を計算する →</Link></p>
     <p><Link href="/tools/jfx-scalping-cost-calculator">JFXの時間帯別スプレッドを取引回数まで計算する →</Link></p>
+    <p><Link href="/articles/jfx-before-account-opening-checklist">JFX口座開設前の7項目を確認する →</Link></p>
     <p><Link href="/articles/jfx-trading-hours-maintenance">JFXの取引時間と日締めメンテナンスを見る →</Link></p>
     <p><Link href="/articles/jfx-order-slippage-rules">成行・ストリーミング・逆指値の約定ルールを見る →</Link></p>
     <p><Link href="/articles/fx-spread-cost">スプレッドを円に直す方法 →</Link></p>

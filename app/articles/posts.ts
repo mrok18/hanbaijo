@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'jfx-before-account-opening-checklist', category: 'FX・JFX', title: 'JFX口座開設前の確認7項目｜スキャルピング・Lot・必要資金', desc: '取引スタイル、Lot例外、スプレッド、ツール、実効レバレッジ、入出金、本人確認を一つの判断導線にまとめる。' },
   { slug: 'jfx-required-margin-leverage', category: 'FX・JFX', title: 'JFXの必要証拠金はいくら？最大・実効レバレッジ', desc: '米ドル円1,000通貨の公式例から、想定元本、必要証拠金、最大レバレッジ、実効レバレッジを計算する。' },
   { slug: 'jfx-deposit-methods-comparison', category: 'FX・JFX', title: 'JFXの入金方法を比較｜クイック入金と銀行振込', desc: '最低1万円・約380行のクイック入金と、1万円未満にも使える銀行振込を手数料・反映時間で比較する。' },
   { slug: 'matsui-withdrawal-unavailable', category: '証券・松井証券', title: '松井証券で出金できない原因｜出金可能額・受渡日を確認', desc: '売却代金の受渡、商品口座からの振替、受付時間、当日入金、取引状況、登録銀行を順に切り分ける。' },
