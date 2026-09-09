@@ -82,6 +82,7 @@ export default function Page() {
         当サイトは、公表値・試算値・実測値を混ぜず、広告報酬を比較順位へ反映しません。
       </p>
       <ul>
+        <li><Link href="/articles/fx-multiple-accounts-cost-risk">FX口座を複数持つ場合の資金・損益管理</Link></li>
         <li><Link href="/fx/usdjpy-spread-comparison">米ドル円スプレッド10社比較</Link></li>
         <li><Link href="/fx/minimum-trade-unit-comparison">最低取引単位比較</Link></li>
         <li><Link href="/fx/losscut-comparison">ロスカット基準比較</Link></li>
