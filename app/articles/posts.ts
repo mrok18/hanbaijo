@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'dmm-kabu-us-stock-order-hours', category: '米国株・DMM 株', title: 'DMM 株の米国株取引時間・注文方法｜逆指値は使える？', desc: '夏時間・冬時間、注文受付、1株単位、成行・指値・IFDONE、逆指値非対応、最長30日の期限、円貨・外貨決済を整理する。' },
   { slug: 'dmm-kabu-order-types-expiration', category: '国内株・DMM 株', title: 'DMM 株の注文方法｜成行・指値・逆指値・OCOと失効条件', desc: '成行、指値、寄付、引け、不成、逆指値、OCO、IOC、注文期限、期限前に失効する条件、NISAの制限を整理する。' },
   { slug: 'dmm-kabu-fractional-shares-buyback', category: '国内株・DMM 株', title: 'DMM 株の単元未満株は売却できる？買取請求・手数料・NISAを整理', desc: '通常売却との違い、買取請求の操作、550円の取次手数料、価格決定、受付停止期間、NISAでの取扱いを整理する。' },
   { slug: 'dmm-kabu-tob-application', category: '国内株・DMM 株', title: 'DMM 株のTOB申込方法｜移管・手数料・NISA株の注意点', desc: '対象銘柄、PCでの申込、他社からの移管、無料範囲、申込取消、NISAから課税口座への振替を整理する。' },
