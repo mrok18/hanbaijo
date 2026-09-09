@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'dmm-kabu-tools-comparison', category: '証券・DMM 株', title: 'DMM 株のアプリ・取引ツール比較｜かんたん・ノーマル・STANDARD・PRO+', desc: 'スマホ2モードとPC2ツールを、注文、チャート、NISA、つみたてかぶ、利用環境で比較する。' },
   { slug: 'dmm-kabu-withdrawal-rules', category: '証券・DMM 株', title: 'DMM 株の出金はいつ？最低2,000円・手数料・売却代金の反映', desc: '最低出金額、手数料、予約時刻、国内株・米国株の売却代金、予約取消しの原因を整理する。' },
   { slug: 'dmm-kabu-deposit-methods', category: '証券・DMM 株', title: 'DMM 株の入金方法｜クイック入金5,000円・振込・反映時間', desc: 'クイック入金と振込入金を、最低金額、手数料、反映時間、同一名義、未反映時の確認手順で比較する。' },
   { slug: 'dmm-kabu-tsumitate-kabu-nisa', category: 'NISA・DMM 株', title: 'DMM 株のつみたてかぶは1,000円から｜NISA・手数料・買付日', desc: '1,000円からの株式積立、NISA対応、設定頻度、買付価格、共同買付、資金不足時の扱いを整理する。' },

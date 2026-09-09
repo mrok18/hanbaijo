@@ -103,6 +103,7 @@ export default function StocksPage() {
           <article className="affiliate-card"><div className="affiliate-card-head"><span>INVEST</span><b>DMM 株</b></div><p className="affiliate-category">TSUMITATE KABU</p><h3>1,000円からの株式積立</h3><p>NISA対応、設定頻度、買付日、単元未満部分と資金不足時の扱いを確認します。</p><Link href="/articles/dmm-kabu-tsumitate-kabu-nisa">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>START</span><b>DMM 株</b></div><p className="affiliate-category">DEPOSIT METHODS</p><h3>クイック入金と振込</h3><p>最低5,000円、手数料、反映時間、入金が反映されない場合を整理します。</p><Link href="/articles/dmm-kabu-deposit-methods">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>CASH</span><b>DMM 株</b></div><p className="affiliate-category">WITHDRAWAL RULES</p><h3>最低出金額と振込日</h3><p>2,000円、予約時間、売却代金の受渡し、取消しになる原因を整理します。</p><Link href="/articles/dmm-kabu-withdrawal-rules">記事を読む →</Link></article>
+          <article className="affiliate-card"><div className="affiliate-card-head"><span>TOOLS</span><b>DMM 株</b></div><p className="affiliate-category">APP &amp; PC</p><h3>4つの取引画面を比較</h3><p>スマホ2モードとPC2ツールを、注文、NISA、積立、分析機能で比較します。</p><Link href="/articles/dmm-kabu-tools-comparison">記事を読む →</Link></article>
         </div>
       </section>
 
