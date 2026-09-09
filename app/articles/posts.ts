@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'dmm-kabu-nisa-fees-products', category: 'NISA・DMM 株', title: 'DMM 株のNISAは手数料無料？国内株・米国株・為替コストを整理', desc: 'NISAで無料になる取引手数料と、米国株の為替コスト、外国配当税、国内株の配当受取方法を整理する。' },
   { slug: 'dmm-kabu-nisa-account-opening', category: 'NISA・DMM 株', title: 'DMM 株のNISA口座開設方法｜同時申込・追加申込・金融機関変更', desc: '新規アカウントとの同時申込、既存利用者の追加申込、他社からの金融機関変更に必要な書類を整理する。' },
   { slug: 'dmm-kabu-account-opening-documents', category: '証券・DMM 株', title: 'DMM 株の口座開設に必要なもの｜本人確認・マイナンバー・開始まで', desc: '本人確認とマイナンバー確認の組合せ、スマホと郵送の違い、審査から取引開始までを整理する。' },
   { slug: 'fx-etax-input-guide', category: 'FX・税金', title: 'FXの確定申告をe-Taxで入力する順番｜先物取引・経費・繰越損失', desc: '年間報告書の準備から、作成コーナーの「先物取引」、必要経費、繰越損失、e-Tax送信までを順番に整理する。' },
