@@ -97,6 +97,7 @@ export default function StocksPage() {
           <article className="affiliate-card"><div className="affiliate-card-head"><span>GUIDE</span><b>松井証券</b></div><p className="affiliate-category">ACCOUNT TYPES</p><h3>FX専用口座と総合口座</h3><p>FXだけ使う場合と、株・NISA・先物へ広げる場合の入口を整理します。</p><Link href="/articles/matsui-account-types">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>GUIDE</span><b>DMM 株</b></div><p className="affiliate-category">DOMESTIC ROUND TRIP</p><h3>国内株の往復手数料</h3><p>1注文ごとの料金表から、買付と売却の合計額を計算します。</p><Link href="/articles/dmm-kabu-domestic-round-trip-fee">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>GUIDE</span><b>DMM 株</b></div><p className="affiliate-category">US STOCK TOTAL COST</p><h3>米国株の手数料と為替</h3><p>0.495％の手数料と片道25銭の為替コストを分けて計算します。</p><Link href="/articles/dmm-kabu-us-stock-fee">記事を読む →</Link></article>
+          <article className="affiliate-card"><div className="affiliate-card-head"><span>START</span><b>DMM 株</b></div><p className="affiliate-category">ACCOUNT OPENING</p><h3>本人確認と必要書類</h3><p>マイナンバーカード1点で進む方法と、画像提出・郵送で必要な組合せを整理します。</p><Link href="/articles/dmm-kabu-account-opening-documents">記事を読む →</Link></article>
         </div>
       </section>
 
