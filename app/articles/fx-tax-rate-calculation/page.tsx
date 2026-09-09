@@ -89,6 +89,7 @@ export default function Page() {
         給与が増えたからFXの税率が累進的に上がるわけではありません。ただし、確定申告の必要性や所得控除などの判定は、他の所得も含めて確認します。
       </p>
       <p><Link href="/articles/fx-profit-under-200k-tax-return">FX所得20万円以下の申告条件 →</Link></p>
+      <p><Link href="/articles/domestic-vs-overseas-fx-tax">国内FXと海外FXの課税方式を比較 →</Link></p>
 
       <h2>損失がある場合</h2>
       <p>

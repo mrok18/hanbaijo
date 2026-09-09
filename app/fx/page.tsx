@@ -123,6 +123,7 @@ export default function FxPage() {
           </div>
         </div>
         <div className="provider-directory comparison-guide-directory">
+          <Link href="/articles/domestic-vs-overseas-fx-tax"><span>DOMESTIC VS OVERSEAS</span><h3>国内FXと海外FXの税務を比較</h3><p>申告分離課税・総合課税・登録確認</p><b>税金と注意点を見る →</b></Link>
           <Link href="/articles/fx-tax-rate-calculation"><span>FX TAX RATE</span><h3>20.315％の内訳を計算</h3><p>所得税・復興特別所得税・地方税</p><b>税額の早見表を見る →</b></Link>
           <Link href="/articles/fx-profit-under-200k-tax-return"><span>200,000 YEN RULE</span><h3>20万円以下の申告要否</h3><p>所得税・住民税・還付申告を分ける</p><b>申告条件を見る →</b></Link>
           <Link href="/articles/fx-tax-deductible-expenses"><span>FX EXPENSES</span><h3>必要経費の判断基準を確認</h3><p>PC・通信費・VPS・書籍・家事按分</p><b>経費ガイドを見る →</b></Link>
