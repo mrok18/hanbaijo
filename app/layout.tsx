@@ -104,6 +104,7 @@ gtag('config', '${GA_ID}');`}
               <Link href="/articles">解説記事</Link>
               <Link href="/method">計測方法</Link>
               <Link href="/about">このサイトについて</Link>
+              <Link href="/privacy">プライバシーポリシー</Link>
               <Link href="/disclaimer">免責事項</Link>
               <Link href="/contact">お問い合わせ</Link>
             </div>
