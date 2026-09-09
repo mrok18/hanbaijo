@@ -117,6 +117,7 @@ export default function CfdPage() {
           <article><b>DMM / 22 PRODUCTS</b><h3><Link href="/articles/dmm-cfd-index-vs-commodity">IndexとCommodityを比較</Link></h3><p>株価指数8銘柄と商品14銘柄のレバレッジ・取引単位・円換算を整理します。</p></article>
           <article><b>DMM / 22 PRODUCT TOOL</b><h3><Link href="/tools/dmm-cfd-22-products-calculator">DMM CFD 22銘柄計算機</Link></h3><p>必要証拠金、1ティック損益、資金使用率を公式条件で計算します。</p></article>
           <article><b>DMM / ACCOUNT OPENING</b><h3><Link href="/articles/dmm-cfd-account-opening-documents">DMM CFDの必要書類</Link></h3><p>本人確認・マイナンバー提出から審査、取引開始までの流れを確認します。</p></article>
+          <article><b>DMM / TAX REPORT</b><h3><Link href="/articles/dmm-cfd-annual-profit-report">年間損益報告書を保存</Link></h3><p>取得時期、PC・スマホの出力、期間損益との使い分けを整理します。</p></article>
           <article><b>DMM / DEPOSIT</b><h3><Link href="/articles/dmm-cfd-deposit-minimum-quick">DMM CFDの最低入金額</Link></h3><p>サービスの最低入金額と、クイック入金の操作下限を分けて整理します。</p></article>
           <article><b>DMM / 14 PRODUCTS</b><h3><Link href="/articles/dmm-cfd-tick-value-profit-loss">商品14銘柄の1ティック損益</Link></h3><p>取引単位と呼値を使い、最小値幅が円でいくらになるか確認します。</p></article>
           <article><b>DMM / TICK TOOL</b><h3><Link href="/tools/dmm-cfd-tick-value-calculator">DMM CFD損益計算機</Link></h3><p>14銘柄の買い・売り、値動き、コスト差引後を同じ式で計算します。</p></article>

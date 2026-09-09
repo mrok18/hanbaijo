@@ -48,6 +48,7 @@ export const POSTS = [
   { slug: 'fpo-fx-practice-checklist', category: 'FX教材・FPO', title: 'FPOのFX教材を読んだ後に確認する実践チェックリスト', desc: '教材で学んだ後に、スプレッド、必要証拠金、損切り、取引記録、税務を実践前に確認する。' },
   { slug: 'dmm-cfd-index-vs-commodity', category: 'CFD・DMM CFD', title: 'DMM CFDのIndexとCommodityの違い｜22銘柄・証拠金を比較', desc: '株価指数8銘柄と商品14銘柄を、レバレッジ、取引単位、円換算、調整額、入金方法から比較する。' },
   { slug: 'dmm-cfd-account-opening-documents', category: '商品CFD・DMM CFD', title: 'DMM CFDの口座開設に必要なもの｜本人確認・審査・開始まで', desc: '本人確認とマイナンバーの組合せ、スマホと郵送の違い、審査から取引開始までを整理する。' },
+  { slug: 'dmm-cfd-annual-profit-report', category: 'CFD・DMM CFD・税金', title: 'DMM CFDの年間損益報告書はいつ？出力方法と確定申告準備', desc: '年間損益・期間損益・約定履歴の違い、PC・スマホでの出力方法、他社取引との合算準備を整理する。' },
   { slug: 'dmm-cfd-deposit-minimum-quick', category: '商品CFD・DMM CFD', title: 'DMM CFDの最低入金額はいくら？クイック入金と振込を比較', desc: '初回最低入金額、クイック入金5,000円以上、振込手数料、出金条件と必要証拠金を分けて確認する。' },
   { slug: 'dmm-cfd-tick-value-profit-loss', category: '商品CFD・DMM CFD', title: 'DMM CFDは1ティックいくら？商品14銘柄の損益早見表', desc: '商品14銘柄の1Lot取引単位と呼値から、最小値幅の米ドル・円損益、総コスト回収に必要なティック数を計算する。' },
   { slug: 'commodity-cfd-one-dollar-profit-loss', category: '商品CFD・基礎計算', title: '商品CFDは1ドル動くといくら？金・銀・原油・天然ガスの損益', desc: '1Lotの取引単位と米ドル円から、1ドル・0.1ドルの値動き損益、証拠金5％目安、コスト回収値幅を計算する。' },
