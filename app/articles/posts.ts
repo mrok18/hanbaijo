@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'dmm-kabu-margin-trading-cost', category: '国内株・DMM 株', title: 'DMM 株の信用取引手数料は無料？金利・貸株料・逆日歩を計算', desc: '0円の売買手数料と、買方金利、貸株料、逆日歩、事務管理費、名義書換料、デイトレ強制決済を整理する。' },
   { slug: 'dmm-kabu-ipo-application', category: '国内株・DMM 株', title: 'DMM 株のIPO申込方法｜前受金不要・完全平等抽選と当選後の手順', desc: '抽選時の資金、完全平等抽選、申込上限、当選・補欠当選後の購入意思表示、NISA口座区分を整理する。' },
   { slug: 'dmm-kabu-dividend-receiving-tax', category: '証券・DMM 株', title: 'DMM 株の配当金はいつ・どこに入る？受取方法と税金を整理', desc: '3つの配当金受取方式、入金時期、税率、特定口座の損益通算、NISAで非課税にする条件を整理する。' },
   { slug: 'dmm-kabu-specific-account-tax', category: '証券・DMM 株', title: 'DMM 株の特定口座｜源泉徴収あり・なし・一般口座と確定申告', desc: '3つの口座区分、年間取引報告書、確定申告、区分を変更できる条件、NISAとの違いを整理する。' },
