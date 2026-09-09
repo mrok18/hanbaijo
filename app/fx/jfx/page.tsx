@@ -32,6 +32,7 @@ export default function Page() {
     { href: '/articles/jfx-withdrawal-time-rules', title: 'JFXの出金時間と取消条件', description: 'リアルタイム出金と通常出金の金額、着金時間、取消可否を比較します。' },
     { href: '/articles/jfx-hedging-margin-cost', title: 'JFXの両建て証拠金とコスト', description: '片側分で計算される必要証拠金と、スプレッド・スワップ差・ロスカットの注意点を整理します。' },
     { href: '/articles/jfx-swap-transfer-tax', title: 'JFXのスワップ振替と税金', description: 'ポジションを決済せずスワップだけを確定・出金する流れと、年末の取引日を整理します。' },
+    { href: '/articles/jfx-swap-calendar', title: 'スワップ付与日と3倍デー', description: '6時59分・5時59分の判定時刻、木曜朝の3日分、祝日の付与日数を確認します。' },
     { href: '/articles/jfx-fees-total-cost', title: 'JFXの無料手数料と実質コスト', description: '取引・入出金・ロスカット手数料と、スプレッドやスワップなど残る負担を分けます。' },
     { href: '/articles/jfx-lot-trade-unit', title: 'JFXの1Lotと通貨数の例外', description: '基本1,000通貨と6通貨ペアの1万通貨を分け、損益とスプレッド相当額を計算します。' },
     { href: '/articles/jfx-losscut-margin-shortage', title: 'JFXのロスカットと不足金', description: '有効証拠金と必要証拠金の基準、判定間隔、急変時に不足金が残る場合を整理します。' },
