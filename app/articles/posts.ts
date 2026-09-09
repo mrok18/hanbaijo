@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'fx-company-selection-cost-checklist', category: 'FX・口座比較', title: 'FX会社はスプレッドだけで選ばない｜口座比較7項目', desc: 'スプレッドの適用時間、数量、約定、スワップ、最低取引単位、ロスカット、入出金を確認する順番を整理する。' },
   { slug: 'fx-spread-difference-annual-cost', category: 'FX・基礎計算', title: 'FXのスプレッド差0.1銭は年間いくら？数量・回数別に比較', desc: '米ドル円のスプレッド差0.1銭を、1,000通貨・1万通貨・10万通貨と1日1回・5回の年間コスト差へ換算する。' },
   { slug: 'fx-spread-monthly-cost', category: 'FX・基礎計算', title: 'FXのスプレッドは月いくら？取引回数別にコストを計算', desc: '米ドル円0.2銭を例に、1,000通貨・1万通貨・10万通貨の1回と月間20日・1日5回の負担を円で計算する。' },
   { slug: 'fx-master-guide-study-order', category: 'FX・学習', title: 'FX初心者は何から勉強する？9章を5段階で読む順番', desc: 'FXの仕組み、口座条件、注文、資金管理、経済、チャート、通貨ペアを、取引を急がず数字で確認する学習順に並べる。' },

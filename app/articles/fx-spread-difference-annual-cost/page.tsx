@@ -83,6 +83,7 @@ export default function Page() {
 
       <h2>月間コストと損益分岐を続けて確認する</h2>
       <ul>
+        <li><Link href="/articles/fx-company-selection-cost-checklist">FX会社を比較する7項目</Link></li>
         <li><Link href="/tools/fx-spread-annual-cost-calculator">FXスプレッド年間コスト比較計算機</Link></li>
         <li><Link href="/articles/fx-spread-monthly-cost">0.2銭の月間スプレッドコスト早見表</Link></li>
         <li><Link href="/fx/usdjpy-spread-comparison">米ドル円スプレッド10社比較</Link></li>

@@ -123,6 +123,7 @@ export default function FxPage() {
           </div>
         </div>
         <div className="provider-directory comparison-guide-directory">
+          <Link href="/articles/fx-company-selection-cost-checklist"><span>7-POINT CHECKLIST</span><h3>FX会社を選ぶ順番を確認</h3><p>スプレッド・約定・スワップ・リスク条件</p><b>口座比較7項目を見る →</b></Link>
           <Link href="/articles/fx-spread-difference-annual-cost"><span>ANNUAL COST GAP</span><h3>0.1銭差を年間コストに換算</h3><p>数量・1日回数・年間240日で比較</p><b>年間早見表を見る →</b></Link>
           <Link href="/articles/fx-spread-monthly-cost"><span>MONTHLY SPREAD COST</span><h3>月間コストを取引回数で計算</h3><p>0.2銭を数量・1日回数・20日で円換算</p><b>月間早見表を見る →</b></Link>
           <Link href="/articles/fpo-fx-master-guide-before-download"><span>FREE FX E-BOOK</span><h3>無料教材の登録条件を確認</h3><p>全128ページの範囲・受取方法・追加案内</p><b>登録前の7項目を見る →</b></Link>

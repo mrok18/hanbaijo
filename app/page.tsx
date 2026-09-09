@@ -72,7 +72,7 @@ export default async function Home() {
           </p>
           <div className="hero-actions">
             <Link className="button primary" href="/fx">FXコスト比較を見る</Link>
-            <Link className="button secondary" href="/tools/cost-calculator">コストを試算</Link>
+            <Link className="button secondary" href="/tools/fx-spread-annual-cost-calculator">年間コスト差を試算</Link>
           </div>
           <p className="hero-proof">
             <span>FX比較ページ公開</span><span>広告と順位を分離</span><span>BTC実測は継続稼働</span>
@@ -163,12 +163,12 @@ export default async function Home() {
         <div>
           <p className="section-index inverse">FREE TOOL / ESTIMATED DATA</p>
           <h2 id="tool-promo-title">違う商品のコストを、<br />同じものさしで。</h2>
-          <p>取引金額と保有期間をそろえ、スプレッド・手数料・金利・為替コストを円換算します。</p>
-          <Link href="/tools/cost-calculator">取引コスト計算機を使う →</Link>
+          <p>2社のスプレッドを数量・取引回数でそろえ、1回・月間・年間の差額を円換算します。</p>
+          <Link href="/tools/fx-spread-annual-cost-calculator">FX年間コスト比較計算機を使う →</Link>
         </div>
         <dl>
           <div><dt>暗号資産</dt><dd>スプレッド・売買手数料</dd></div>
-          <div><dt>FX / CFD</dt><dd>スプレッド・保有金利</dd></div>
+          <div><dt>FX</dt><dd>2社の年間スプレッド差</dd></div>
           <div><dt>株式</dt><dd>売買・為替・信用コスト</dd></div>
         </dl>
       </section>
