@@ -1,5 +1,6 @@
 export const POSTS = [
   { slug: 'dmm-fx-funding-transfer', category: 'FX・DMM FX', title: 'DMM FXの入金方法と証拠金振替｜5,000円・出金・株券担保', desc: 'クイック入金・振込入金、最低額、反映時間、出金、DMM 株からの株券担保振替を整理する。' },
+  { slug: 'dmm-fx-trade-history-csv', category: 'FX・DMM FX・税金', title: 'DMM FXの取引履歴をCSV保存する方法｜約定履歴・期間損益・年間報告書', desc: 'DMM FXの約定履歴をPC・スマホで確認し、CSV・期間損益・年間損益報告書を確定申告用に使い分ける。' },
   { slug: 'tossy-trading-hours-rollover', category: 'CFD・TOSSY', title: 'TOSSYの取引時間とロールオーバー｜休場・持越しを確認', desc: 'TOSSYのアセット別取引時間、日次・週次メンテナンス、ロールオーバー、価格調整額、注文取消しを整理する。' },
   { slug: 'tossy-deposit-withdrawal-transfer', category: 'CFD・TOSSY', title: 'TOSSYの入金・出金・振替方法｜5,000円・2,000円・3営業日を整理', desc: '銀行振込・クイック入金・他サービスからの振替入金、出金条件、反映時間、同名義ルールを整理する。' },
   { slug: 'fx-cfd-futures-margin-comparison', category: 'FX・CFD・先物比較', title: 'FX・CFD・先物の違い｜必要証拠金と1単位の損益を比較', desc: 'FX・CFD・日経225先物を、取引単位、証拠金、最小値動き、ロスカット・追証、期限の違いで比較する。' },
