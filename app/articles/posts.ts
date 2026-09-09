@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'matsui-fx-auto-trading-setting', category: 'FX自動売買・松井証券', title: 'MATSUI FX自動売買の設定方法｜レンジ・値幅・益出し幅を整理', desc: '注文レンジ、注文値幅、益出し幅、注文数量、運用停止ライン、最大100件の制限と必要資金の考え方を解説する。' },
   { slug: 'dmm-kabu-usd-shortage', category: '米国株・DMM 株', title: 'DMM 株の米ドル不足・立替金とは？強制為替取引と制限を解説', desc: '米ドル不足の原因、円貨・外貨決済、強制為替取引、取引・出金制限、解消方法を公式情報で整理する。' },
   { slug: 'dmm-kabu-us-dividend-tax', category: '米国株・DMM 株', title: 'DMM 株の米国株配当金と税金｜入金日・NISA・外国税額控除', desc: '米国10％と国内20.315％の課税、NISAの国内非課税、外国税額控除、ドル入金、入金反映日を整理する。' },
   { slug: 'dmm-kabu-us-stock-order-hours', category: '米国株・DMM 株', title: 'DMM 株の米国株取引時間・注文方法｜逆指値は使える？', desc: '夏時間・冬時間、注文受付、1株単位、成行・指値・IFDONE、逆指値非対応、最長30日の期限、円貨・外貨決済を整理する。' },
