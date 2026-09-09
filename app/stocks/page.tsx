@@ -121,6 +121,7 @@ export default function StocksPage() {
           <article className="affiliate-card"><div className="affiliate-card-head"><span>ORDER</span><b>DMM 株</b></div><p className="affiliate-category">EXECUTION TYPES</p><h3>注文方法と失効条件</h3><p>成行・指値・逆指値・OCO、最長30日の期限と途中失効を整理します。</p><Link href="/articles/dmm-kabu-order-types-expiration">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>US ORDER</span><b>DMM 株</b></div><p className="affiliate-category">US TRADING HOURS</p><h3>米国株の時間と注文</h3><p>夏冬の取引時間、1株単位、IFDONE、逆指値非対応、決済通貨を整理します。</p><Link href="/articles/dmm-kabu-us-stock-order-hours">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>US DIVIDEND</span><b>DMM 株</b></div><p className="affiliate-category">DIVIDEND TAX</p><h3>米国株の配当金と税金</h3><p>米国・国内課税、NISA、外国税額控除、ドル入金と反映日を整理します。</p><Link href="/articles/dmm-kabu-us-dividend-tax">記事を読む →</Link></article>
+          <article className="affiliate-card"><div className="affiliate-card-head"><span>USD ALERT</span><b>DMM 株</b></div><p className="affiliate-category">USD SHORTAGE</p><h3>米ドル不足・立替金</h3><p>強制為替取引、取引・出金制限、円貨・外貨決済、解消手順を整理します。</p><Link href="/articles/dmm-kabu-usd-shortage">記事を読む →</Link></article>
         </div>
       </section>
 
