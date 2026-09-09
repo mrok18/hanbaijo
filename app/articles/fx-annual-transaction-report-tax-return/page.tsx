@@ -101,6 +101,7 @@ export default function Page() {
         <li>提出した確定申告書、計算明細書、繰越損失用付表の控え</li>
       </ul>
       <p><Link href="/articles/fx-tax-deductible-expenses">PC・通信費・VPSなどの必要経費を確認 →</Link></p>
+      <p><Link href="/articles/fx-profit-under-200k-tax-return">FX所得20万円以下の申告条件を確認 →</Link></p>
       <p><Link href="/articles/fx-multiple-accounts-cost-risk">複数口座の資金・損益管理方法を見る →</Link></p>
 
       <section className="article-affiliate" aria-label="提携中のFXサービス">

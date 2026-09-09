@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'fx-profit-under-200k-tax-return', category: 'FX・税金', title: 'FX利益20万円以下なら確定申告は不要？住民税・還付申告の注意', desc: '会社員の所得税申告が不要になる条件と、住民税、還付申告、損失繰越を別々に確認する。' },
   { slug: 'fx-tax-deductible-expenses', category: 'FX・税金', title: 'FXの必要経費にできるものは？PC・通信費・VPS・書籍を整理', desc: 'PC、通信費、VPS、書籍、セミナー、情報サービスと、家事按分、減価償却、領収書の保存を整理する。' },
   { slug: 'fx-annual-transaction-report-tax-return', category: 'FX・税金', title: 'FXの年間取引報告書はどこを見る？複数口座の確定申告準備', desc: '決済損益、スワップ、手数料、集計期間の確認と、複数口座の集計、確定申告書等作成コーナーへの入力準備を整理する。' },
   { slug: 'crypto-tax-reform-start-date', category: '暗号資産・税制', title: '暗号資産の分離課税はいつから？税制改正の対象・20％・損失繰越', desc: '改正金商法の施行日から決まる開始時期、特定暗号資産、20％分離課税、3年繰越、デリバティブの扱いを整理する。' },
