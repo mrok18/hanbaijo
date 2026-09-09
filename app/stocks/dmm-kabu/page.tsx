@@ -5,6 +5,7 @@ import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 export const metadata = { title: 'DMM 株の国内株手数料・コスト', description: 'DMM 株の国内株現物における1注文ごとの手数料と、信用・米国株で異なる条件を公式情報から整理します。' };
 export default function Page() {
   return <StockProviderFactSheet provider={STOCK_PROVIDERS['dmm-kabu']} affiliateOffer={AFFILIATE_OFFERS['dmm-kabu']} relatedArticles={[
+    { href: '/articles/dmm-kabu-tsumitate-kabu-nisa', title: 'つみたてかぶの仕組み', description: '1,000円からの設定、NISA、買付日、単元未満部分と資金不足時の扱いを整理します。' },
     { href: '/articles/dmm-kabu-nisa-fees-products', title: 'NISAの手数料と残るコスト', description: '国内株・米国株の無料範囲と、為替・配当など別に残る負担を整理します。' },
     { href: '/articles/dmm-kabu-nisa-account-opening', title: 'NISA口座の申込方法', description: '同時申込、既存利用者の追加、他社からの金融機関変更を分けて整理します。' },
     { href: '/articles/dmm-kabu-account-opening-documents', title: '口座開設に必要なもの', description: '本人確認とマイナンバー、提出方法、審査から取引開始までを整理します。' },

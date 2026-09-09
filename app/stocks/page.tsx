@@ -100,6 +100,7 @@ export default function StocksPage() {
           <article className="affiliate-card"><div className="affiliate-card-head"><span>START</span><b>DMM 株</b></div><p className="affiliate-category">ACCOUNT OPENING</p><h3>本人確認と必要書類</h3><p>マイナンバーカード1点で進む方法と、画像提出・郵送で必要な組合せを整理します。</p><Link href="/articles/dmm-kabu-account-opening-documents">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>NISA</span><b>DMM 株</b></div><p className="affiliate-category">ACCOUNT APPLICATION</p><h3>NISA口座の申込方法</h3><p>新規同時申込、既存利用者の追加、他社からの金融機関変更を分けて確認します。</p><Link href="/articles/dmm-kabu-nisa-account-opening">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>NISA</span><b>DMM 株</b></div><p className="affiliate-category">FEES &amp; PRODUCTS</p><h3>無料範囲と残るコスト</h3><p>国内株・米国株の売買手数料と、為替・配当など別に残る負担を整理します。</p><Link href="/articles/dmm-kabu-nisa-fees-products">記事を読む →</Link></article>
+          <article className="affiliate-card"><div className="affiliate-card-head"><span>INVEST</span><b>DMM 株</b></div><p className="affiliate-category">TSUMITATE KABU</p><h3>1,000円からの株式積立</h3><p>NISA対応、設定頻度、買付日、単元未満部分と資金不足時の扱いを確認します。</p><Link href="/articles/dmm-kabu-tsumitate-kabu-nisa">記事を読む →</Link></article>
         </div>
       </section>
 
