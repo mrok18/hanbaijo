@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'fx-loss-carryforward-filing', category: 'FX・税金', title: 'FX損失を3年繰り越す確定申告｜取引しない年も必要？', desc: '損失発生年、利益が出た年、取引しない年に必要な連続申告と、計算明細書・繰越損失用付表を整理する。' },
   { slug: 'domestic-vs-overseas-fx-tax', category: 'FX・税金', title: '国内FXと海外FXの税金の違い｜20.315％・総合課税・損失繰越', desc: '申告分離課税と総合課税、損益通算、3年繰越を比較し、金融庁登録と取引の法的区分を確認する。' },
   { slug: 'fx-tax-rate-calculation', category: 'FX・税金', title: '国内FXの税率は20.315％？所得税・住民税の計算方法', desc: '所得税15％、復興特別所得税、地方稅5％の内訳と、必要経費・損益通算後の税額を計算する。' },
   { slug: 'fx-profit-under-200k-tax-return', category: 'FX・税金', title: 'FX利益20万円以下なら確定申告は不要？住民税・還付申告の注意', desc: '会社員の所得税申告が不要になる条件と、住民税、還付申告、損失繰越を別々に確認する。' },
