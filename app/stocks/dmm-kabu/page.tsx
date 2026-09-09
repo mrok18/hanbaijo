@@ -5,6 +5,7 @@ import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 export const metadata = { title: 'DMM 株の国内株手数料・コスト', description: 'DMM 株の国内株現物における1注文ごとの手数料と、信用・米国株で異なる条件を公式情報から整理します。' };
 export default function Page() {
   return <StockProviderFactSheet provider={STOCK_PROVIDERS['dmm-kabu']} affiliateOffer={AFFILIATE_OFFERS['dmm-kabu']} relatedArticles={[
+    { href: '/articles/dmm-kabu-dividend-receiving-tax', title: '配当金の受取方法と税金', description: '3つの方式、入金日、特定口座の損益通算、NISA非課税の条件を整理します。' },
     { href: '/articles/dmm-kabu-specific-account-tax', title: '特定口座と確定申告', description: '源泉徴収あり・なし・一般口座、年間取引報告書、区分変更を整理します。' },
     { href: '/articles/dmm-kabu-stock-transfer', title: '株式の入庫・出庫', description: '無料範囲、必要書類、預り区分、国内株・米国株の期間を整理します。' },
     { href: '/articles/dmmfx-stock-collateral-service', title: '保有株をFX証拠金にする仕組み', description: '原則70％の評価、対象外銘柄、振替時間と強制売却リスクを整理します。' },
