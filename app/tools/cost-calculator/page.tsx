@@ -25,6 +25,7 @@ export default function CostCalculatorPage() {
       <CostCalculator />
 
       <nav className="calculator-proof" aria-label="取引コストの確認資料">
+        <Link href="/articles/fx-spread-monthly-cost">FXの月間スプレッド早見表</Link>
         <Link href="/articles/trading-cost-break-even-return">手数料負けしない損益分岐点</Link>
         <Link href="/articles/dmm-cfd-commodity-lot-list">商品14銘柄の1Lot一覧</Link>
         <Link href="/articles/dmm-cfd-margin-leverage">CFDの必要証拠金</Link>

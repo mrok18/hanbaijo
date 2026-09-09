@@ -58,6 +58,7 @@ export default function Page() {
       </section>
 
       <p><Link href="/tools/fx-pip-value-calculator">1pipsの損益とスプレッド相当額を計算する →</Link></p>
+      <p><Link href="/articles/fx-spread-monthly-cost">取引回数別の月間スプレッドコストを見る →</Link></p>
       <p><Link href="/tools/cost-calculator">取引コスト計算機で試す →</Link></p>
       <p><Link href="/fx/usdjpy-spread-comparison">米ドル円スプレッド10社比較を見る →</Link></p>
       <p><Link href="/fx">FXコスト比較へ戻る →</Link></p>

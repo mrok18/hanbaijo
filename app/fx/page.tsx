@@ -123,6 +123,7 @@ export default function FxPage() {
           </div>
         </div>
         <div className="provider-directory comparison-guide-directory">
+          <Link href="/articles/fx-spread-monthly-cost"><span>MONTHLY SPREAD COST</span><h3>月間コストを取引回数で計算</h3><p>0.2銭を数量・1日回数・20日で円換算</p><b>月間早見表を見る →</b></Link>
           <Link href="/articles/fpo-fx-master-guide-before-download"><span>FREE FX E-BOOK</span><h3>無料教材の登録条件を確認</h3><p>全128ページの範囲・受取方法・追加案内</p><b>登録前の7項目を見る →</b></Link>
           <Link href="/articles/fx-master-guide-study-order"><span>FX STUDY ORDER</span><h3>初心者の学習順を整理</h3><p>仕組み・注文・資金管理から5段階で進む</p><b>学習ロードマップを見る →</b></Link>
           <Link href="/fx/ablenet-vps"><span>AUTO TRADING VPS</span><h3>VPSの月額総コストを確認</h3><p>本体料金・RDS・必要メモリを分けて比較</p><b>ABLENET VPSを見る →</b></Link>
