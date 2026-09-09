@@ -133,6 +133,7 @@ export const POSTS = [
   { slug: 'systre-select-365-stop-switch', category: 'FX自動売買', title: 'シストレセレクト365の停止・入替え｜建玉を残さない確認手順', desc: '稼働停止、未決済ポジション、複数ストラテジーの両建て、サービス解約前の確認を整理する。' },
   { slug: 'matsui-fx-swap-calendar', category: 'FX・松井証券', title: 'MATSUI FXのスワップ付与時間｜1万通貨表示の計算方法', desc: '夏時間6時10分・冬時間7時10分以降の付与、付与日数、1通貨や100通貨へ換算する方法を整理する。' },
   { slug: 'matsui-fx-swap-transfer-tax', category: 'FX・松井証券・税金', title: '松井証券FXのスワップ振替と税金｜受渡日・出金可能額・不足金', desc: 'スワップ振替の操作、受渡日、総合口座への移動、出金可能額と確定申告の確認ポイントを整理する。' },
+  { slug: 'matsui-fx-insufficient-funds', category: 'FX・松井証券・リスク管理', title: '松井証券FXの不足金とは？15時期限・追証・ロスカットとの違い', desc: '決済損による不足金の原因、受渡日15時の解消期限、入金・スワップ振替と追証・ロスカットの違いを整理する。' },
   { slug: 'matsui-fx-auto-trading-stop-restart', category: 'FX・松井証券', title: 'MATSUI FX自動売買の停止・再開｜建玉と注文はどうなる？', desc: '3つの運用停止方法、自動停止の条件、余力不足後に必要な再開操作を整理する。' },
   { slug: 'dmm-fx-swap-calendar', category: 'FX・DMM FX', title: 'DMM FXのスワップ付与日はいつ？0日・3日・4日の見方', desc: '営業日の切替時刻、通常の3日分、祝日による0日・4日分をスワップカレンダーから確認する。' },
   { slug: 'dmm-fx-slippage-orders', category: 'FX・DMM FX', title: 'DMM FXのスリッページ｜即時・指値・逆指値の違い', desc: '注文価格と約定価格がずれる条件、許容幅、注文不成立との関係を注文種類ごとに整理する。' },
