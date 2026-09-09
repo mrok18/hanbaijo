@@ -82,6 +82,17 @@ export default function Method() {
         現在の一覧はスプレッド実測値の狭い順に機械的に表示します。広告掲載の有無、報酬額、事業者との関係は、
         実測値・計算結果・この並び順に影響しません。
       </p>
+
+      <h2>広告リンクのクリック計測</h2>
+      <p>
+        記事と広告の配置を改善するため、提携サービスの広告リンクがクリックされた際に、Google Analyticsへ
+        広告ID、サービス名、広告ネットワーク、クリックされたページのパスをイベントとして送信します。
+        計算機へ入力した数量・金額・条件は送信せず、広告クリックの有無を比較結果や掲載順位にも使用しません。
+      </p>
+      <div className="formula-box">
+        <code>イベント名: affiliate_click</code>
+        <small>送信項目: offer_id / offer_name / affiliate_network / page_path</small>
+      </div>
     </article>
   );
 }
