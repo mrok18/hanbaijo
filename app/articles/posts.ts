@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'fx-spread-difference-annual-cost', category: 'FX・基礎計算', title: 'FXのスプレッド差0.1銭は年間いくら？数量・回数別に比較', desc: '米ドル円のスプレッド差0.1銭を、1,000通貨・1万通貨・10万通貨と1日1回・5回の年間コスト差へ換算する。' },
   { slug: 'fx-spread-monthly-cost', category: 'FX・基礎計算', title: 'FXのスプレッドは月いくら？取引回数別にコストを計算', desc: '米ドル円0.2銭を例に、1,000通貨・1万通貨・10万通貨の1回と月間20日・1日5回の負担を円で計算する。' },
   { slug: 'fx-master-guide-study-order', category: 'FX・学習', title: 'FX初心者は何から勉強する？9章を5段階で読む順番', desc: 'FXの仕組み、口座条件、注文、資金管理、経済、チャート、通貨ペアを、取引を急がず数字で確認する学習順に並べる。' },
   { slug: 'fpo-fx-master-guide-before-download', category: 'FX・学習', title: 'FPO FX投資マスターガイドは無料？登録前に確認する7項目', desc: '全128ページの無料電子書籍について、収録範囲、受取方法、メール登録、追加案内、投資リスク、使い方を公式情報から確認する。' },

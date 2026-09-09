@@ -88,6 +88,7 @@ export default function Page() {
         一方、少額・低頻度なら差は小さく、最低取引単位、注文機能、入出金条件などを優先した方が合う場合もあります。
       </p>
       <ul>
+        <li><Link href="/articles/fx-spread-difference-annual-cost">スプレッド差0.1銭の年間コスト</Link></li>
         <li><Link href="/fx/usdjpy-spread-comparison">米ドル円スプレッド10社比較</Link></li>
         <li><Link href="/articles/fx-spread-time">スプレッドが広がりやすい時間帯</Link></li>
         <li><Link href="/articles/fx-zero-spread-total-cost">0.0銭でも確認したい総コスト</Link></li>
