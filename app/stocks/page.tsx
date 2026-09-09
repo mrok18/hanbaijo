@@ -113,6 +113,7 @@ export default function StocksPage() {
           <article className="affiliate-card"><div className="affiliate-card-head"><span>COST</span><b>DMM 株</b></div><p className="affiliate-category">MARGIN TRADING</p><h3>信用取引の総コスト</h3><p>売買手数料0円の外にある金利、貸株料、逆日歩、管理費を計算します。</p><Link href="/articles/dmm-kabu-margin-trading-cost">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>RISK</span><b>DMM 株</b></div><p className="affiliate-category">MARGIN CALL</p><h3>保証金と追証</h3><p>最低30万円、30％の新規建て、20％の追証判定と解消期限を整理します。</p><Link href="/articles/dmm-kabu-margin-call-maintenance-rate">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>START</span><b>DMM 株</b></div><p className="affiliate-category">MARGIN ACCOUNT</p><h3>信用取引口座の開設</h3><p>総合口座との違い、同時・追加申込、審査、最低保証金を整理します。</p><Link href="/articles/dmm-kabu-margin-account-opening">記事を読む →</Link></article>
+          <article className="affiliate-card"><div className="affiliate-card-head"><span>US</span><b>DMM 株</b></div><p className="affiliate-category">US MARGIN</p><h3>米国株信用の総コスト</h3><p>取引手数料、買方金利、50％の保証金、30％の追証基準を整理します。</p><Link href="/articles/dmm-kabu-us-margin-cost">記事を読む →</Link></article>
         </div>
       </section>
 

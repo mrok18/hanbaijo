@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'dmm-kabu-us-margin-cost', category: '米国株・DMM 株', title: 'DMM 株の米国株信用取引コスト｜手数料・金利・保証金を計算', desc: 'ゲスト・メンバー・プレミアムの取引手数料と買方金利、買建のみ、保証金率50％、追証30％を整理する。' },
   { slug: 'dmm-kabu-margin-account-opening', category: '国内株・DMM 株', title: 'DMM 株の信用取引口座開設｜申込方法・審査・必要資金を確認', desc: '総合口座と同時・追加で申し込む方法、審査期間、必要な経験・知識・資力、最低保証金30万円、NISAとの違いを整理する。' },
   { slug: 'dmm-kabu-margin-call-maintenance-rate', category: '国内株・DMM 株', title: 'DMM 株の追証はいくらから？保証金率30％・維持率20％を計算', desc: '最低保証金30万円、委託保証金率30％、最低預託率20％、追証の判定、期限、入金・返済による解消を整理する。' },
   { slug: 'dmm-kabu-margin-trading-cost', category: '国内株・DMM 株', title: 'DMM 株の信用取引手数料は無料？金利・貸株料・逆日歩を計算', desc: '0円の売買手数料と、買方金利、貸株料、逆日歩、事務管理費、名義書換料、デイトレ強制決済を整理する。' },
