@@ -19,6 +19,7 @@ export default function Page() {
     { href: '/articles/jfx-demo-account-guide', title: 'JFXデモ口座でできること', description: '利用期間、仮想資金、デモレート、土日利用と本番口座との差を整理します。' },
     { href: '/articles/jfx-mt5-tradingview-matrix-trader', title: 'MT5・TradingView・MATRIX TRADERを比較', description: '分析専用チャートと実際の発注・口座管理画面の役割を分けます。' },
     { href: '/articles/jfx-deposit-not-reflected', title: 'JFXの入金が反映されない場合', description: 'クイック入金と銀行振込を、引落し・終了操作・名義・口座番号から切り分けます。' },
+    { href: '/articles/jfx-trade-history-csv-tax-report', title: '取引履歴をCSV保存し損益計算書と照合', description: '約定・注文・入出金履歴の検索、CSV保存、確定申告用資料の照合手順を整理します。' },
     { href: '/articles/jfx-trading-hours-maintenance', title: 'JFXの取引時間とメンテナンス', description: '夏時間・冬時間、毎営業日の日締め、土日の注文受付を整理します。' },
     { href: '/articles/jfx-beginner-vs-matrix-trader', title: 'ビギナーFXとMATRIX TRADERを比較', description: '100通貨のミニ口座と1,000通貨の本口座を、取扱商品・分析環境まで比較します。' },
     { href: '/articles/jfx-account-opening-flow', title: 'JFXの口座開設に必要なもの', description: '本人確認・マイナンバー・審査・初回入金1万円から取引開始までを整理します。' },
