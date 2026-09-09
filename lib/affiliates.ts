@@ -1,5 +1,5 @@
 export interface AffiliateOffer {
-  id: 'fxtf' | 'systre-select-365' | 'dmm-cfd' | 'dmm-kabu' | 'matsui-fx' | 'jfx' | 'tossy' | 'ablenet-vps';
+  id: 'fxtf' | 'systre-select-365' | 'dmm-cfd' | 'dmm-kabu' | 'matsui-fx' | 'jfx' | 'tossy' | 'ablenet-vps' | 'fpo-fx-guide';
   name: string;
   category: string;
   description: string;
@@ -82,5 +82,14 @@ export const AFFILIATE_OFFERS: Record<AffiliateOffer['id'], AffiliateOffer> = {
     linkLabel: 'FX自動売買におすすめ【ABLENET VPS】',
     href: 'https://px.a8.net/svt/ejp?a8mat=4BC5IS+S2+4NIK+60OXE',
     impressionSrc: 'https://www14.a8.net/0.gif?a8mat=4BC5IS+S2+4NIK+60OXE',
+  },
+  'fpo-fx-guide': {
+    id: 'fpo-fx-guide',
+    name: 'FPO FX投資マスターガイド',
+    category: 'FX・無料電子書籍',
+    description: 'FXの仕組み、口座選び、経済指標、注文、チャート、資金管理を全128ページで学べる電子書籍です。登録前に配信条件とリスク表示を確認してください。',
+    linkLabel: '無料のFX投資マスターガイドを確認',
+    href: 'https://px.a8.net/svt/ejp?a8mat=4BC5IR+GBMUUQ+ONS+674EQ',
+    impressionSrc: 'https://www12.a8.net/0.gif?a8mat=4BC5IR+GBMUUQ+ONS+674EQ',
   },
 };
