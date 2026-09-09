@@ -123,6 +123,7 @@ export default function FxPage() {
           </div>
         </div>
         <div className="provider-directory comparison-guide-directory">
+          <Link href="/articles/fx-etax-input-guide"><span>E-TAX INPUT</span><h3>FXの確定申告を入力順に確認</h3><p>先物取引・経費・繰越損失・送信</p><b>e-Tax準備を見る →</b></Link>
           <Link href="/articles/fx-loss-carryforward-filing"><span>LOSS CARRYFORWARD</span><h3>FX損失を3年間繰り越す</h3><p>損失年・無取引年・利益年の連続申告</p><b>必要書類と手順を見る →</b></Link>
           <Link href="/articles/domestic-vs-overseas-fx-tax"><span>DOMESTIC VS OVERSEAS</span><h3>国内FXと海外FXの税務を比較</h3><p>申告分離課税・総合課税・登録確認</p><b>税金と注意点を見る →</b></Link>
           <Link href="/articles/fx-tax-rate-calculation"><span>FX TAX RATE</span><h3>20.315％の内訳を計算</h3><p>所得税・復興特別所得税・地方税</p><b>税額の早見表を見る →</b></Link>

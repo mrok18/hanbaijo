@@ -102,6 +102,7 @@ export default function Page() {
       </ul>
       <p><Link href="/articles/fx-tax-deductible-expenses">PC・通信費・VPSなどの必要経費を確認 →</Link></p>
       <p><Link href="/articles/fx-profit-under-200k-tax-return">FX所得20万円以下の申告条件を確認 →</Link></p>
+      <p><Link href="/articles/fx-etax-input-guide">e-Taxで「先物取引」へ入力する順番を見る →</Link></p>
       <p><Link href="/articles/fx-multiple-accounts-cost-risk">複数口座の資金・損益管理方法を見る →</Link></p>
 
       <section className="article-affiliate" aria-label="提携中のFXサービス">

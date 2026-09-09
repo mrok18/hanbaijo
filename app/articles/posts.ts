@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'fx-etax-input-guide', category: 'FX・税金', title: 'FXの確定申告をe-Taxで入力する順番｜先物取引・経費・繰越損失', desc: '年間報告書の準備から、作成コーナーの「先物取引」、必要経費、繰越損失、e-Tax送信までを順番に整理する。' },
   { slug: 'fx-loss-carryforward-filing', category: 'FX・税金', title: 'FX損失を3年繰り越す確定申告｜取引しない年も必要？', desc: '損失発生年、利益が出た年、取引しない年に必要な連続申告と、計算明細書・繰越損失用付表を整理する。' },
   { slug: 'domestic-vs-overseas-fx-tax', category: 'FX・税金', title: '国内FXと海外FXの税金の違い｜20.315％・総合課税・損失繰越', desc: '申告分離課税と総合課税、損益通算、3年繰越を比較し、金融庁登録と取引の法的区分を確認する。' },
   { slug: 'fx-tax-rate-calculation', category: 'FX・税金', title: '国内FXの税率は20.315％？所得税・住民税の計算方法', desc: '所得税15％、復興特別所得税、地方稅5％の内訳と、必要経費・損益通算後の税額を計算する。' },
