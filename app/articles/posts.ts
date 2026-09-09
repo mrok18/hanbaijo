@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'dmm-kabu-points-cash-exchange', category: '証券・DMM 株', title: 'DMM 株ポイントは何円？1％還元・現金交換・有効期限を計算', desc: '税抜取引手数料1％の計算、1pt＝1円の現金交換、付与日、有効期限、ポイントが付かない条件を整理する。' },
   { slug: 'dmm-kabu-tools-comparison', category: '証券・DMM 株', title: 'DMM 株のアプリ・取引ツール比較｜かんたん・ノーマル・STANDARD・PRO+', desc: 'スマホ2モードとPC2ツールを、注文、チャート、NISA、つみたてかぶ、利用環境で比較する。' },
   { slug: 'dmm-kabu-withdrawal-rules', category: '証券・DMM 株', title: 'DMM 株の出金はいつ？最低2,000円・手数料・売却代金の反映', desc: '最低出金額、手数料、予約時刻、国内株・米国株の売却代金、予約取消しの原因を整理する。' },
   { slug: 'dmm-kabu-deposit-methods', category: '証券・DMM 株', title: 'DMM 株の入金方法｜クイック入金5,000円・振込・反映時間', desc: 'クイック入金と振込入金を、最低金額、手数料、反映時間、同一名義、未反映時の確認手順で比較する。' },
