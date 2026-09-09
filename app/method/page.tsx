@@ -93,6 +93,16 @@ export default function Method() {
         <code>イベント名: affiliate_click</code>
         <small>送信項目: offer_id / offer_name / affiliate_network / page_path</small>
       </div>
+
+      <h2>計算機の利用計測</h2>
+      <p>
+        計算機の改善優先度を判断するため、計算機が操作されたかをGoogle Analyticsへ送信します。
+        計算機を識別するIDとページのパスだけを記録し、入力した金額・数量・条件や計算結果は送信しません。
+      </p>
+      <div className="formula-box">
+        <code>イベント名: calculator_interaction</code>
+        <small>送信項目: calculator_id / page_path</small>
+      </div>
     </article>
   );
 }
