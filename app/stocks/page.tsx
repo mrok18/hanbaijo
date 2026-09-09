@@ -111,6 +111,7 @@ export default function StocksPage() {
           <article className="affiliate-card"><div className="affiliate-card-head"><span>INCOME</span><b>DMM 株</b></div><p className="affiliate-category">DIVIDEND</p><h3>配当金の受取方法と税金</h3><p>証券口座・銀行・郵便局の違いと、NISA非課税、損益通算を整理します。</p><Link href="/articles/dmm-kabu-dividend-receiving-tax">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>APPLY</span><b>DMM 株</b></div><p className="affiliate-category">IPO</p><h3>IPOの申込と抽選</h3><p>前受金不要、完全平等抽選、当選・補欠当選後の購入手続きを整理します。</p><Link href="/articles/dmm-kabu-ipo-application">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>COST</span><b>DMM 株</b></div><p className="affiliate-category">MARGIN TRADING</p><h3>信用取引の総コスト</h3><p>売買手数料0円の外にある金利、貸株料、逆日歩、管理費を計算します。</p><Link href="/articles/dmm-kabu-margin-trading-cost">記事を読む →</Link></article>
+          <article className="affiliate-card"><div className="affiliate-card-head"><span>RISK</span><b>DMM 株</b></div><p className="affiliate-category">MARGIN CALL</p><h3>保証金と追証</h3><p>最低30万円、30％の新規建て、20％の追証判定と解消期限を整理します。</p><Link href="/articles/dmm-kabu-margin-call-maintenance-rate">記事を読む →</Link></article>
         </div>
       </section>
 
