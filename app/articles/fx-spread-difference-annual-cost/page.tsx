@@ -40,7 +40,7 @@ export default function Page() {
       <div className="callout">
         <strong>結論：1万通貨を1日5回なら年間1万2,000円差</strong>
         <p>ただし、公称スプレッドの適用時間、数量上限、約定差が同じという仮定での単純計算です。</p>
-        <Link href="/tools/cost-calculator">自分の数量で取引コストを計算する →</Link>
+        <Link href="/tools/fx-spread-annual-cost-calculator">2社の年間コスト差を計算する →</Link>
       </div>
 
       <h2>0.1銭の差を円へ直す</h2>
@@ -83,6 +83,7 @@ export default function Page() {
 
       <h2>月間コストと損益分岐を続けて確認する</h2>
       <ul>
+        <li><Link href="/tools/fx-spread-annual-cost-calculator">FXスプレッド年間コスト比較計算機</Link></li>
         <li><Link href="/articles/fx-spread-monthly-cost">0.2銭の月間スプレッドコスト早見表</Link></li>
         <li><Link href="/fx/usdjpy-spread-comparison">米ドル円スプレッド10社比較</Link></li>
         <li><Link href="/articles/fx-spread-time">スプレッドが広がりやすい時間帯</Link></li>

@@ -35,7 +35,7 @@ export default function FxPage() {
             同じ条件で比べられる形に整理します。
           </p>
           <div className="hero-actions">
-            <Link className="button primary" href="/tools/cost-calculator">FXコストを試算</Link>
+            <Link className="button primary" href="/tools/fx-spread-annual-cost-calculator">年間コスト差を試算</Link>
             <Link className="button secondary" href="/articles/fx-spread-cost">計算方法を読む</Link>
           </div>
         </div>
