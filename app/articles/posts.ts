@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'dmm-kabu-fractional-shares-buyback', category: '国内株・DMM 株', title: 'DMM 株の単元未満株は売却できる？買取請求・手数料・NISAを整理', desc: '通常売却との違い、買取請求の操作、550円の取次手数料、価格決定、受付停止期間、NISAでの取扱いを整理する。' },
   { slug: 'dmm-kabu-tob-application', category: '国内株・DMM 株', title: 'DMM 株のTOB申込方法｜移管・手数料・NISA株の注意点', desc: '対象銘柄、PCでの申込、他社からの移管、無料範囲、申込取消、NISAから課税口座への振替を整理する。' },
   { slug: 'dmm-kabu-us-margin-vip-courses', category: '米国株・DMM 株', title: 'DMM 株の米国株信用メンバー・プレミアム条件｜金利差を計算', desc: 'ゲスト・メンバー・プレミアムを、入庫額、米ドル残高、平均建玉、手数料、買方金利、適用期間で比較する。' },
   { slug: 'dmm-kabu-us-margin-call', category: '米国株・DMM 株', title: 'DMM 株の米国株信用の追証｜30％・2,500ドルと解消期限', desc: '追証予定と確定の時刻、最低預託率30％、最低保証金2,500ドル、翌々国内営業日15時30分の期限、返済による解消を整理する。' },
