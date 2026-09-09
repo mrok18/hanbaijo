@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'dmm-kabu-shareholder-benefit', category: '国内株・DMM 株', title: 'DMM 株の株主優待はいつ？権利付き最終日と探し方を整理', desc: '株主優待の権利付き最終日・権利落ち日、アプリでの探し方、現物・信用・単元未満株の違いを整理する。' },
   { slug: 'jfx-allowed-spread-setting', category: 'FX・JFX', title: 'JFX許容スプレッド設定とは？急拡大時の注文を止める方法', desc: '許容スプレッドと許容スリップの違い、設定手順、注文不成立の条件、米ドル円のコスト例を整理する。' },
   { slug: 'matsui-fx-auto-trading-setting', category: 'FX自動売買・松井証券', title: 'MATSUI FX自動売買の設定方法｜レンジ・値幅・益出し幅を整理', desc: '注文レンジ、注文値幅、益出し幅、注文数量、運用停止ライン、最大100件の制限と必要資金の考え方を解説する。' },
   { slug: 'dmm-kabu-usd-shortage', category: '米国株・DMM 株', title: 'DMM 株の米ドル不足・立替金とは？強制為替取引と制限を解説', desc: '米ドル不足の原因、円貨・外貨決済、強制為替取引、取引・出金制限、解消方法を公式情報で整理する。' },

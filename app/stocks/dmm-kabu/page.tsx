@@ -19,6 +19,7 @@ export default function Page() {
     { href: '/articles/dmm-kabu-margin-trading-cost', title: '信用取引の総コスト', description: '0円手数料の外にある金利、貸株料、逆日歩、管理費を計算します。' },
     { href: '/articles/dmm-kabu-ipo-application', title: 'IPOの申込方法', description: '前受金不要、完全平等抽選、当選・補欠当選後の購入手続きを整理します。' },
     { href: '/articles/dmm-kabu-dividend-receiving-tax', title: '配当金の受取方法と税金', description: '3つの方式、入金日、特定口座の損益通算、NISA非課税の条件を整理します。' },
+    { href: '/articles/dmm-kabu-shareholder-benefit', title: '株主優待の権利日と探し方', description: '権利付き最終日、アプリの検索条件、信用取引・単元未満株の注意点を整理します。' },
     { href: '/articles/dmm-kabu-specific-account-tax', title: '特定口座と確定申告', description: '源泉徴収あり・なし・一般口座、年間取引報告書、区分変更を整理します。' },
     { href: '/articles/dmm-kabu-stock-transfer', title: '株式の入庫・出庫', description: '無料範囲、必要書類、預り区分、国内株・米国株の期間を整理します。' },
     { href: '/articles/dmmfx-stock-collateral-service', title: '保有株をFX証拠金にする仕組み', description: '原則70％の評価、対象外銘柄、振替時間と強制売却リスクを整理します。' },
