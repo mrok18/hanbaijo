@@ -124,6 +124,7 @@ export default function FxPage() {
         </div>
         <div className="provider-directory comparison-guide-directory">
           <Link href="/articles/fpo-fx-master-guide-before-download"><span>FREE FX E-BOOK</span><h3>無料教材の登録条件を確認</h3><p>全128ページの範囲・受取方法・追加案内</p><b>登録前の7項目を見る →</b></Link>
+          <Link href="/articles/fx-master-guide-study-order"><span>FX STUDY ORDER</span><h3>初心者の学習順を整理</h3><p>仕組み・注文・資金管理から5段階で進む</p><b>学習ロードマップを見る →</b></Link>
           <Link href="/fx/ablenet-vps"><span>AUTO TRADING VPS</span><h3>VPSの月額総コストを確認</h3><p>本体料金・RDS・必要メモリを分けて比較</p><b>ABLENET VPSを見る →</b></Link>
           <Link href="/fx/usdjpy-spread-comparison"><span>USD/JPY SPREAD</span><h3>米ドル円スプレッドを比較</h3><p>時間帯・数量条件・1万通貨コスト</p><b>10社比較を見る →</b></Link>
           <Link href="/fx/swap-calendar-comparison"><span>SWAP CALENDAR</span><h3>スワップの表示ルールを比較</h3><p>表示単位・付与日数・実現タイミング</p><b>10社比較を見る →</b></Link>
