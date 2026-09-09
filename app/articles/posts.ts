@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'dmmfx-stock-collateral-service', category: '株式・FX・DMM', title: 'DMMFX株券担保サービスとは？評価率70％・対象株・強制売却リスク', desc: 'DMM 株の保有株をDMM FXの証拠金へ使う仕組み、70％評価、対象外、振替時間、強制売却リスクを整理する。' },
   { slug: 'dmm-kabu-points-cash-exchange', category: '証券・DMM 株', title: 'DMM 株ポイントは何円？1％還元・現金交換・有効期限を計算', desc: '税抜取引手数料1％の計算、1pt＝1円の現金交換、付与日、有効期限、ポイントが付かない条件を整理する。' },
   { slug: 'dmm-kabu-tools-comparison', category: '証券・DMM 株', title: 'DMM 株のアプリ・取引ツール比較｜かんたん・ノーマル・STANDARD・PRO+', desc: 'スマホ2モードとPC2ツールを、注文、チャート、NISA、つみたてかぶ、利用環境で比較する。' },
   { slug: 'dmm-kabu-withdrawal-rules', category: '証券・DMM 株', title: 'DMM 株の出金はいつ？最低2,000円・手数料・売却代金の反映', desc: '最低出金額、手数料、予約時刻、国内株・米国株の売却代金、予約取消しの原因を整理する。' },

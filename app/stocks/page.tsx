@@ -105,6 +105,7 @@ export default function StocksPage() {
           <article className="affiliate-card"><div className="affiliate-card-head"><span>CASH</span><b>DMM 株</b></div><p className="affiliate-category">WITHDRAWAL RULES</p><h3>最低出金額と振込日</h3><p>2,000円、予約時間、売却代金の受渡し、取消しになる原因を整理します。</p><Link href="/articles/dmm-kabu-withdrawal-rules">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>TOOLS</span><b>DMM 株</b></div><p className="affiliate-category">APP &amp; PC</p><h3>4つの取引画面を比較</h3><p>スマホ2モードとPC2ツールを、注文、NISA、積立、分析機能で比較します。</p><Link href="/articles/dmm-kabu-tools-comparison">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>POINT</span><b>DMM 株</b></div><p className="affiliate-category">CASH BACK</p><h3>1％還元を円換算</h3><p>税抜手数料からの計算、現金交換、付与日、有効期限を確認します。</p><Link href="/articles/dmm-kabu-points-cash-exchange">記事を読む →</Link></article>
+          <article className="affiliate-card"><div className="affiliate-card-head"><span>CROSS</span><b>DMM 株 × FX</b></div><p className="affiliate-category">STOCK COLLATERAL</p><h3>株券担保の70％評価</h3><p>対象株、振替日程、株価下落とFX不足による強制売却リスクを確認します。</p><Link href="/articles/dmmfx-stock-collateral-service">記事を読む →</Link></article>
         </div>
       </section>
 
