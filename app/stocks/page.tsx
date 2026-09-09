@@ -98,6 +98,7 @@ export default function StocksPage() {
           <article className="affiliate-card"><div className="affiliate-card-head"><span>GUIDE</span><b>DMM 株</b></div><p className="affiliate-category">DOMESTIC ROUND TRIP</p><h3>国内株の往復手数料</h3><p>1注文ごとの料金表から、買付と売却の合計額を計算します。</p><Link href="/articles/dmm-kabu-domestic-round-trip-fee">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>GUIDE</span><b>DMM 株</b></div><p className="affiliate-category">US STOCK TOTAL COST</p><h3>米国株の手数料と為替</h3><p>0.495％の手数料と片道25銭の為替コストを分けて計算します。</p><Link href="/articles/dmm-kabu-us-stock-fee">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>START</span><b>DMM 株</b></div><p className="affiliate-category">ACCOUNT OPENING</p><h3>本人確認と必要書類</h3><p>マイナンバーカード1点で進む方法と、画像提出・郵送で必要な組合せを整理します。</p><Link href="/articles/dmm-kabu-account-opening-documents">記事を読む →</Link></article>
+          <article className="affiliate-card"><div className="affiliate-card-head"><span>NISA</span><b>DMM 株</b></div><p className="affiliate-category">ACCOUNT APPLICATION</p><h3>NISA口座の申込方法</h3><p>新規同時申込、既存利用者の追加、他社からの金融機関変更を分けて確認します。</p><Link href="/articles/dmm-kabu-nisa-account-opening">記事を読む →</Link></article>
         </div>
       </section>
 
