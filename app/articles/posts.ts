@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'fx-profit-loss-offset-tax', category: 'FX・税金', title: 'FXの損益通算は何とできる？CFD・先物・株・暗号資産を整理', desc: '国内FXと一定のCFD・先物、株式、暗号資産の損益通算可否と、3年間の損失繰越に必要な申告を整理する。' },
   { slug: 'fx-multiple-accounts-cost-risk', category: 'FX・口座管理', title: 'FX口座を複数持つメリット・デメリット｜資金と損益の管理方法', desc: '2社以上を使い分ける利点と、証拠金の分散、ロスカット、損益集計、管理負担などの注意点を整理する。' },
   { slug: 'fx-company-selection-cost-checklist', category: 'FX・口座比較', title: 'FX会社はスプレッドだけで選ばない｜口座比較7項目', desc: 'スプレッドの適用時間、数量、約定、スワップ、最低取引単位、ロスカット、入出金を確認する順番を整理する。' },
   { slug: 'fx-spread-difference-annual-cost', category: 'FX・基礎計算', title: 'FXのスプレッド差0.1銭は年間いくら？数量・回数別に比較', desc: '米ドル円のスプレッド差0.1銭を、1,000通貨・1万通貨・10万通貨と1日1回・5回の年間コスト差へ換算する。' },

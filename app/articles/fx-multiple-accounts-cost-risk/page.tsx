@@ -90,6 +90,7 @@ export default function Page() {
         複数口座を利用する場合は、各社の年間取引報告書等を集め、口座単位ではなく対象取引全体で確認します。
         個別事情で申告要否や必要書類が変わるため、最終判断は税務署または税理士へ確認してください。
       </p>
+      <p><Link href="/articles/fx-profit-loss-offset-tax">FX・CFD・先物・株・暗号資産の損益通算を確認 →</Link></p>
 
       <h2>2社目を開く前のチェックリスト</h2>
       <ol>
