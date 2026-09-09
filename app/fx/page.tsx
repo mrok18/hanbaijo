@@ -9,7 +9,7 @@ export const metadata = {
 };
 
 const REVIEW_TARGETS = [
-  { name: 'DMM FX', scope: 'FX', status: '公式条件を整理済み・広告提携済み（コード待ち）', href: '/fx/dmm-fx' },
+  { name: 'DMM FX', scope: 'FX', status: '公式条件を整理済み・広告提携状況を確認中', href: '/fx/dmm-fx' },
   { name: 'TOSSY', scope: 'FX・株式・指数・商品・暗号資産CFD', status: '公式条件を整理済み・広告掲載中', href: '/cfd/tossy' },
   { name: 'FXTF', scope: 'FX・ノックアウトオプション', status: '公式条件のみ掲載・自動計測対象外', href: '/fx/fxtf' },
   { name: 'シストレセレクト365', scope: 'FX自動売買', status: '公式条件を整理済み・データ許諾を照会中', href: '/fx/systre-select-365' },
@@ -136,6 +136,10 @@ export default function FxPage() {
           <Link href="/articles/fx-cfd-futures-margin-comparison"><span>CROSS-ASSET MARGIN</span><h3>FX・CFD・先物の証拠金を比較</h3><p>取引単位・1単位損益・追証と期限</p><b>3商品の違いを見る →</b></Link>
           <Link href="/articles/fx-spread-difference-annual-cost"><span>ANNUAL COST GAP</span><h3>0.1銭差を年間コストに換算</h3><p>数量・1日回数・年間240日で比較</p><b>年間早見表を見る →</b></Link>
           <Link href="/articles/fx-spread-monthly-cost"><span>MONTHLY SPREAD COST</span><h3>月間コストを取引回数で計算</h3><p>0.2銭を数量・1日回数・20日で円換算</p><b>月間早見表を見る →</b></Link>
+          <Link href="/articles/jfx-swap-calendar"><span>JFX SWAP CALENDAR</span><h3>JFXの3倍デーと付与時刻</h3><p>6時59分・5時59分、祝日の付与日数</p><b>JFXの予定表を見る →</b></Link>
+          <Link href="/articles/dmm-fx-trading-hours-maintenance"><span>DMM FX SESSION</span><h3>DMM FXの取引時間を確認</h3><p>夏時間・冬時間・営業日切替・週末メンテナンス</p><b>取引時間を見る →</b></Link>
+          <Link href="/articles/matsui-fx-leverage-margin"><span>MATSUI MARGIN</span><h3>松井証券FXの証拠金を計算</h3><p>25倍・10倍・5倍・1倍の必要証拠金</p><b>レバレッジを比較 →</b></Link>
+          <Link href="/articles/matsui-fx-insufficient-funds"><span>MATSUI SHORTAGE</span><h3>松井証券FXの不足金を確認</h3><p>受渡日15時・入金・追証との違い</p><b>解消手順を見る →</b></Link>
           <Link href="/articles/fpo-fx-master-guide-before-download"><span>FREE FX E-BOOK</span><h3>無料教材の登録条件を確認</h3><p>全128ページの範囲・受取方法・追加案内</p><b>登録前の7項目を見る →</b></Link>
           <Link href="/articles/fpo-fx-practice-checklist"><span>PRACTICE CHECKLIST</span><h3>教材の後に実践前チェック</h3><p>数量・コスト・損切り・記録</p><b>チェックリストを見る →</b></Link>
           <Link href="/articles/fx-master-guide-study-order"><span>FX STUDY ORDER</span><h3>初心者の学習順を整理</h3><p>仕組み・注文・資金管理から5段階で進む</p><b>学習ロードマップを見る →</b></Link>
