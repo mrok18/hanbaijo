@@ -14,6 +14,7 @@ export default function Page() {
     { href: '/articles/matsui-fx-spread-rules', title: 'スプレッド0.1銭の条件', description: 'コアタイム、数量上限、注文種類から縮小・通常スプレッドを分けます。' },
     { href: '/articles/matsui-fx-margin-call-losscut', title: '追証とロスカットの違い', description: '100％の追証判定と、選べる50～90％のロスカット率を整理します。' },
     { href: '/articles/matsui-fx-insufficient-funds', title: '不足金の解消方法', description: '決済損による不足金を、15時期限、入金、スワップ振替、追証との違いから確認します。' },
+    { href: '/articles/matsui-fx-leverage-margin', title: '必要証拠金とレバレッジを計算', description: '25倍・10倍・5倍・1倍の証拠金率、1万通貨の概算、実効レバレッジを整理します。' },
     { href: '/articles/matsui-fx-auto-trading-cost', title: '自動売買は100円から？', description: '複数注文の必要証拠金と評価損を分け、設定全体に必要な資金を計算します。' },
     { href: '/articles/matsui-fx-auto-trading-stop-restart', title: '自動売買の停止・再開', description: '停止時に建玉と決済注文を残すか、全決済するかを3つの選択肢で整理します。' },
     { href: '/articles/matsui-fx-swap-calendar', title: 'スワップ付与時間と計算', description: '1万通貨表示を実際の取引数量へ換算し、付与日数と受払額を確認します。' },
