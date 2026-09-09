@@ -51,6 +51,7 @@ export default function Page() {
     <p><Link href="/articles/fx-spread-cost">スプレッドを取引数量ごとの円に直す →</Link></p>
     <p><Link href="/articles/fx-required-margin">必要証拠金と取引金額の違いを見る →</Link></p>
     <p><Link href="/articles/fx-master-guide-study-order">全9章を5段階で読む学習順を見る →</Link></p>
+    <p><Link href="/articles/fpo-fx-practice-checklist">教材を読んだ後の実践前チェックを見る →</Link></p>
 
     <h2>教材を読んだ後に数字で確かめる</h2>
     <div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th>学んだ項目</th><th>次に確認する数字</th><th>当サイトの機能</th></tr></thead><tbody>

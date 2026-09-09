@@ -45,6 +45,7 @@ export const POSTS = [
   { slug: 'fx-spread-monthly-cost', category: 'FX・基礎計算', title: 'FXのスプレッドは月いくら？取引回数別にコストを計算', desc: '米ドル円0.2銭を例に、1,000通貨・1万通貨・10万通貨の1回と月間20日・1日5回の負担を円で計算する。' },
   { slug: 'fx-master-guide-study-order', category: 'FX・学習', title: 'FX初心者は何から勉強する？9章を5段階で読む順番', desc: 'FXの仕組み、口座条件、注文、資金管理、経済、チャート、通貨ペアを、取引を急がず数字で確認する学習順に並べる。' },
   { slug: 'fpo-fx-master-guide-before-download', category: 'FX・学習', title: 'FPO FX投資マスターガイドは無料？登録前に確認する7項目', desc: '全128ページの無料電子書籍について、収録範囲、受取方法、メール登録、追加案内、投資リスク、使い方を公式情報から確認する。' },
+  { slug: 'fpo-fx-practice-checklist', category: 'FX教材・FPO', title: 'FPOのFX教材を読んだ後に確認する実践チェックリスト', desc: '教材で学んだ後に、スプレッド、必要証拠金、損切り、取引記録、税務を実践前に確認する。' },
   { slug: 'dmm-cfd-index-vs-commodity', category: 'CFD・DMM CFD', title: 'DMM CFDのIndexとCommodityの違い｜22銘柄・証拠金を比較', desc: '株価指数8銘柄と商品14銘柄を、レバレッジ、取引単位、円換算、調整額、入金方法から比較する。' },
   { slug: 'dmm-cfd-account-opening-documents', category: '商品CFD・DMM CFD', title: 'DMM CFDの口座開設に必要なもの｜本人確認・審査・開始まで', desc: '本人確認とマイナンバーの組合せ、スマホと郵送の違い、審査から取引開始までを整理する。' },
   { slug: 'dmm-cfd-deposit-minimum-quick', category: '商品CFD・DMM CFD', title: 'DMM CFDの最低入金額はいくら？クイック入金と振込を比較', desc: '初回最低入金額、クイック入金5,000円以上、振込手数料、出金条件と必要証拠金を分けて確認する。' },
