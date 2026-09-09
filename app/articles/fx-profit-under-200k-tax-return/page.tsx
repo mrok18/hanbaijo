@@ -87,6 +87,7 @@ export default function Page() {
         <li>所得税、住民税、損失繰越の必要手続きを別々に確認する</li>
       </ol>
       <p><Link href="/articles/fx-annual-transaction-report-tax-return">年間取引報告書の集計手順を見る →</Link></p>
+      <p><Link href="/articles/fx-tax-rate-calculation">国内FXの税率20.315％の計算方法 →</Link></p>
 
       <h2>出典と確認日</h2>
       <ul>
