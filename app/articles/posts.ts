@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'dmm-kabu-ipo-application', category: '国内株・DMM 株', title: 'DMM 株のIPO申込方法｜前受金不要・完全平等抽選と当選後の手順', desc: '抽選時の資金、完全平等抽選、申込上限、当選・補欠当選後の購入意思表示、NISA口座区分を整理する。' },
   { slug: 'dmm-kabu-dividend-receiving-tax', category: '証券・DMM 株', title: 'DMM 株の配当金はいつ・どこに入る？受取方法と税金を整理', desc: '3つの配当金受取方式、入金時期、税率、特定口座の損益通算、NISAで非課税にする条件を整理する。' },
   { slug: 'dmm-kabu-specific-account-tax', category: '証券・DMM 株', title: 'DMM 株の特定口座｜源泉徴収あり・なし・一般口座と確定申告', desc: '3つの口座区分、年間取引報告書、確定申告、区分を変更できる条件、NISAとの違いを整理する。' },
   { slug: 'dmm-kabu-stock-transfer', category: '証券・DMM 株', title: 'DMM 株の株式移管｜入庫・出庫手数料と国内株・米国株の期間', desc: '他社との株式移管を、手数料、必要書類、預り区分、国内株・米国株の期間、NISA移管不可で整理する。' },
