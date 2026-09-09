@@ -115,6 +115,7 @@ export default function StocksPage() {
           <article className="affiliate-card"><div className="affiliate-card-head"><span>START</span><b>DMM 株</b></div><p className="affiliate-category">MARGIN ACCOUNT</p><h3>信用取引口座の開設</h3><p>総合口座との違い、同時・追加申込、審査、最低保証金を整理します。</p><Link href="/articles/dmm-kabu-margin-account-opening">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>US</span><b>DMM 株</b></div><p className="affiliate-category">US MARGIN</p><h3>米国株信用の総コスト</h3><p>取引手数料、買方金利、50％の保証金、30％の追証基準を整理します。</p><Link href="/articles/dmm-kabu-us-margin-cost">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>US RISK</span><b>DMM 株</b></div><p className="affiliate-category">US MARGIN CALL</p><h3>米国株信用の追証</h3><p>30％・2,500ドルの基準、判定時刻、建玉返済と解消期限を整理します。</p><Link href="/articles/dmm-kabu-us-margin-call">記事を読む →</Link></article>
+          <article className="affiliate-card"><div className="affiliate-card-head"><span>VIP</span><b>DMM 株</b></div><p className="affiliate-category">US MARGIN COURSES</p><h3>米国株信用の優遇条件</h3><p>入庫・残高・平均建玉の条件と、メンバー・プレミアムの節約額を計算します。</p><Link href="/articles/dmm-kabu-us-margin-vip-courses">記事を読む →</Link></article>
         </div>
       </section>
 
