@@ -120,6 +120,7 @@ export default function StocksPage() {
           <article className="affiliate-card"><div className="affiliate-card-head"><span>ODD LOT</span><b>DMM 株</b></div><p className="affiliate-category">FRACTIONAL SHARES</p><h3>単元未満株の買取請求</h3><p>通常売却との違い、550円の手数料、価格決定、受付停止期間を整理します。</p><Link href="/articles/dmm-kabu-fractional-shares-buyback">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>ORDER</span><b>DMM 株</b></div><p className="affiliate-category">EXECUTION TYPES</p><h3>注文方法と失効条件</h3><p>成行・指値・逆指値・OCO、最長30日の期限と途中失効を整理します。</p><Link href="/articles/dmm-kabu-order-types-expiration">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>US ORDER</span><b>DMM 株</b></div><p className="affiliate-category">US TRADING HOURS</p><h3>米国株の時間と注文</h3><p>夏冬の取引時間、1株単位、IFDONE、逆指値非対応、決済通貨を整理します。</p><Link href="/articles/dmm-kabu-us-stock-order-hours">記事を読む →</Link></article>
+          <article className="affiliate-card"><div className="affiliate-card-head"><span>US DIVIDEND</span><b>DMM 株</b></div><p className="affiliate-category">DIVIDEND TAX</p><h3>米国株の配当金と税金</h3><p>米国・国内課税、NISA、外国税額控除、ドル入金と反映日を整理します。</p><Link href="/articles/dmm-kabu-us-dividend-tax">記事を読む →</Link></article>
         </div>
       </section>
 
