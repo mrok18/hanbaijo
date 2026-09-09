@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'dmm-kabu-deposit-methods', category: '証券・DMM 株', title: 'DMM 株の入金方法｜クイック入金5,000円・振込・反映時間', desc: 'クイック入金と振込入金を、最低金額、手数料、反映時間、同一名義、未反映時の確認手順で比較する。' },
   { slug: 'dmm-kabu-tsumitate-kabu-nisa', category: 'NISA・DMM 株', title: 'DMM 株のつみたてかぶは1,000円から｜NISA・手数料・買付日', desc: '1,000円からの株式積立、NISA対応、設定頻度、買付価格、共同買付、資金不足時の扱いを整理する。' },
   { slug: 'dmm-kabu-nisa-fees-products', category: 'NISA・DMM 株', title: 'DMM 株のNISAは手数料無料？国内株・米国株・為替コストを整理', desc: 'NISAで無料になる取引手数料と、米国株の為替コスト、外国配当税、国内株の配当受取方法を整理する。' },
   { slug: 'dmm-kabu-nisa-account-opening', category: 'NISA・DMM 株', title: 'DMM 株のNISA口座開設方法｜同時申込・追加申込・金融機関変更', desc: '新規アカウントとの同時申込、既存利用者の追加申込、他社からの金融機関変更に必要な書類を整理する。' },
