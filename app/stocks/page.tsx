@@ -118,6 +118,7 @@ export default function StocksPage() {
           <article className="affiliate-card"><div className="affiliate-card-head"><span>VIP</span><b>DMM 株</b></div><p className="affiliate-category">US MARGIN COURSES</p><h3>米国株信用の優遇条件</h3><p>入庫・残高・平均建玉の条件と、メンバー・プレミアムの節約額を計算します。</p><Link href="/articles/dmm-kabu-us-margin-vip-courses">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>SELL</span><b>DMM 株</b></div><p className="affiliate-category">TOB</p><h3>公開買付けの申込</h3><p>対象銘柄、PC申込、他社からの移管、NISA株の課税口座振替を整理します。</p><Link href="/articles/dmm-kabu-tob-application">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>ODD LOT</span><b>DMM 株</b></div><p className="affiliate-category">FRACTIONAL SHARES</p><h3>単元未満株の買取請求</h3><p>通常売却との違い、550円の手数料、価格決定、受付停止期間を整理します。</p><Link href="/articles/dmm-kabu-fractional-shares-buyback">記事を読む →</Link></article>
+          <article className="affiliate-card"><div className="affiliate-card-head"><span>ORDER</span><b>DMM 株</b></div><p className="affiliate-category">EXECUTION TYPES</p><h3>注文方法と失効条件</h3><p>成行・指値・逆指値・OCO、最長30日の期限と途中失効を整理します。</p><Link href="/articles/dmm-kabu-order-types-expiration">記事を読む →</Link></article>
         </div>
       </section>
 
