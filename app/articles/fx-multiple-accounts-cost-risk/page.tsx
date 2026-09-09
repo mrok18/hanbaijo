@@ -91,6 +91,7 @@ export default function Page() {
         個別事情で申告要否や必要書類が変わるため、最終判断は税務署または税理士へ確認してください。
       </p>
       <p><Link href="/articles/fx-profit-loss-offset-tax">FX・CFD・先物・株・暗号資産の損益通算を確認 →</Link></p>
+      <p><Link href="/articles/fx-annual-transaction-report-tax-return">複数口座の年間取引報告書を集計する手順 →</Link></p>
 
       <h2>2社目を開く前のチェックリスト</h2>
       <ol>

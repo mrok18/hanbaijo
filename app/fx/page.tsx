@@ -123,6 +123,7 @@ export default function FxPage() {
           </div>
         </div>
         <div className="provider-directory comparison-guide-directory">
+          <Link href="/articles/fx-annual-transaction-report-tax-return"><span>ANNUAL REPORT</span><h3>年間取引報告書を集計</h3><p>決済損益・スワップ・手数料・複数口座</p><b>確定申告準備を見る →</b></Link>
           <Link href="/articles/fx-profit-loss-offset-tax"><span>FX TAX GUIDE</span><h3>損益通算と3年繰越を確認</h3><p>CFD・先物・株・暗号資産との区分</p><b>税務の整理を見る →</b></Link>
           <Link href="/articles/fx-multiple-accounts-cost-risk"><span>MULTIPLE ACCOUNTS</span><h3>2社利用の資金・損益を管理</h3><p>証拠金分散・ロスカット・年間集計</p><b>メリットと注意点を見る →</b></Link>
           <Link href="/articles/fx-company-selection-cost-checklist"><span>7-POINT CHECKLIST</span><h3>FX会社を選ぶ順番を確認</h3><p>スプレッド・約定・スワップ・リスク条件</p><b>口座比較7項目を見る →</b></Link>

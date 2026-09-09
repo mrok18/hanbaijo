@@ -98,6 +98,7 @@ export default function Page() {
         <li>必要経費を計上する場合の領収書・利用記録</li>
         <li>前年以前の繰越損失がある場合の申告書控え</li>
       </ul>
+      <p><Link href="/articles/fx-annual-transaction-report-tax-return">FX年間取引報告書の確認・集計手順を見る →</Link></p>
       <p>
         申告要否、必要経費、海外事業者、法人取引などは個別事情で結論が変わります。不明点は所轄税務署または税理士へ確認してください。
       </p>
