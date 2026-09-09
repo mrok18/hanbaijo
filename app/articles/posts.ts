@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'dmm-kabu-tob-application', category: '国内株・DMM 株', title: 'DMM 株のTOB申込方法｜移管・手数料・NISA株の注意点', desc: '対象銘柄、PCでの申込、他社からの移管、無料範囲、申込取消、NISAから課税口座への振替を整理する。' },
   { slug: 'dmm-kabu-us-margin-vip-courses', category: '米国株・DMM 株', title: 'DMM 株の米国株信用メンバー・プレミアム条件｜金利差を計算', desc: 'ゲスト・メンバー・プレミアムを、入庫額、米ドル残高、平均建玉、手数料、買方金利、適用期間で比較する。' },
   { slug: 'dmm-kabu-us-margin-call', category: '米国株・DMM 株', title: 'DMM 株の米国株信用の追証｜30％・2,500ドルと解消期限', desc: '追証予定と確定の時刻、最低預託率30％、最低保証金2,500ドル、翌々国内営業日15時30分の期限、返済による解消を整理する。' },
   { slug: 'dmm-kabu-us-margin-cost', category: '米国株・DMM 株', title: 'DMM 株の米国株信用取引コスト｜手数料・金利・保証金を計算', desc: 'ゲスト・メンバー・プレミアムの取引手数料と買方金利、買建のみ、保証金率50％、追証30％を整理する。' },
