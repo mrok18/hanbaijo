@@ -54,6 +54,7 @@ export const POSTS = [
   { slug: 'minna-fx-spread-light-pair', category: 'FX・みんなのFX', title: 'みんなのFXのスプレッド｜LIGHTペア・時間帯・例外を比較', desc: 'USD/JPY LIGHT・通常ペアの提示値、適用時間、取引上限、原則固定の例外と実質コストを整理する。' },
   { slug: 'minna-fx-trading-hours-maintenance', category: 'FX・みんなのFX', title: 'みんなのFXの取引時間｜夏時間・冬時間・メンテナンス', desc: '取引時間、日次・週次メンテナンス、予約注文と約定の違いを公式サービス概要で整理する。' },
   { slug: 'minna-fx-swap-points-calendar', category: 'FX・みんなのFX', title: 'みんなのFXのスワップポイント｜付与日・途中受取・計算方法', desc: 'スワップの付与条件、途中受取、日々変動する金額の見方と高金利通貨のリスクを整理する。' },
+  { slug: 'minna-fx-slippage-execution', category: 'FX・みんなのFX', title: 'みんなのFXのスリッページ設定｜約定率と許容幅の考え方', desc: 'スリッページの意味、許容幅、約定率、表示スプレッドと実績値を分けて確認する方法を整理する。' },
   { slug: 'minna-fx-deposit-transfer', category: 'FX・みんなのFX', title: 'みんなのFXの入金・振替｜銀行振込とダイレクト入金の違い', desc: '入金口座、ダイレクト入金、FX口座への振替、反映されないときの確認順を公式情報で整理する。' },
   { slug: 'minna-fx-losscut', category: 'FX・みんなのFX', title: 'みんなのFXのロスカット｜証拠金維持率100％以下と不足金', desc: '証拠金維持率、自動ロスカット、未約定注文の取消しと不足金リスクを公式情報で整理する。' },
   { slug: 'saxo-products-overview', category: 'FX・サクソバンク証券', title: 'サクソバンク証券の取扱商品｜FX・CFD・海外株・先物を口座で整理', desc: 'FX、CFD、外国株式、ETF、先物、オプションを商品ごとのリスクと確認項目で整理する。' },
