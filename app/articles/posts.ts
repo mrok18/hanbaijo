@@ -43,6 +43,7 @@ export const POSTS = [
   { slug: 'fx-tax-deductible-expenses', category: 'FX・税金', title: 'FXの必要経費にできるものは？PC・通信費・VPS・書籍を整理', desc: 'PC、通信費、VPS、書籍、セミナー、情報サービスと、家事按分、減価償却、領収書の保存を整理する。' },
   { slug: 'fx-annual-transaction-report-tax-return', category: 'FX・税金', title: 'FXの年間取引報告書はどこを見る？複数口座の確定申告準備', desc: '決済損益、スワップ、手数料、集計期間の確認と、複数口座の集計、確定申告書等作成コーナーへの入力準備を整理する。' },
   { slug: 'fx-annual-report-provider-comparison', category: 'FX・税金・比較', title: 'FX年間損益報告書はいつ出る？DMM FX・松井証券・JFX・TOSSYを比較', desc: '4社の年間損益報告書・期間損益の確認時期、場所、保存方法を比較し、複数口座の確定申告準備を整理する。' },
+  { slug: 'gmo-click-fx-neo-trading-rules', category: 'FX・GMOクリック証券', title: 'GMOクリック証券FXネオの取引ルール｜1,000通貨・50％ロスカット・時間', desc: 'FXネオの取引単位、注文受付時間、取引時間、証拠金維持率50％の自動ロスカット、入金・メンテナンスを整理する。' },
   { slug: 'crypto-tax-reform-start-date', category: '暗号資産・税制', title: '暗号資産の分離課税はいつから？税制改正の対象・20％・損失繰越', desc: '改正金商法の施行日から決まる開始時期、特定暗号資産、20％分離課税、3年繰越、デリバティブの扱いを整理する。' },
   { slug: 'fx-profit-loss-offset-tax', category: 'FX・税金', title: 'FXの損益通算は何とできる？CFD・先物・株・暗号資産を整理', desc: '国内FXと一定のCFD・先物、株式、暗号資産の損益通算可否と、3年間の損失繰越に必要な申告を整理する。' },
   { slug: 'fx-multiple-accounts-cost-risk', category: 'FX・口座管理', title: 'FX口座を複数持つメリット・デメリット｜資金と損益の管理方法', desc: '2社以上を使い分ける利点と、証拠金の分散、ロスカット、損益集計、管理負担などの注意点を整理する。' },
