@@ -63,7 +63,7 @@ export const MARKET_CATALOG: readonly MarketCatalogItem[] = [
     id: 'crypto',
     code: 'CRYPTO',
     name: '暗号資産',
-    href: '/#live-data',
+    href: '/crypto',
     stage: 'live',
     stageLabel: 'LIVE',
     shortNote: 'BTC/JPY スプレッド実測',
