@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { POSTS } from './posts';
+import ArticleDirectory from '@/components/ArticleDirectory';
 
 export const metadata: Metadata = {
   title: '金融コストの解説記事一覧',
@@ -74,18 +75,7 @@ export default function Articles() {
           {featured.map((p) => p && <article className="featured-card" key={p.slug}><span>{p.category}</span><Link href={`/articles/${p.slug}`}>{p.title}</Link><p>{p.desc}</p></article>)}
         </div>
       </section>
-      <ul className="post-list article-index">
-        {remaining.map((p) => (
-          <li key={p.slug}>
-            <span>{p.category}</span>
-            <div>
-              <Link href={`/articles/${p.slug}`}>{p.title}</Link>
-              <p>{p.desc}</p>
-            </div>
-            <b aria-hidden="true">→</b>
-          </li>
-        ))}
-      </ul>
+      <ArticleDirectory posts={remaining} />
     </div>
   );
 }
