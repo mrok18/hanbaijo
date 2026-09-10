@@ -52,6 +52,7 @@ export const POSTS = [
   { slug: 'minna-fx-trading-unit', category: 'FX・みんなのFX', title: 'みんなのFXの取引単位｜1Lot＝1万通貨・0.1Lotからの始め方', desc: 'みんなのFXの1Lotと0.1Lot、1,000通貨取引の考え方を公式情報で整理し、必要証拠金を数量別に確認する。' },
   { slug: 'minna-fx-account-opening-flow', category: 'FX・みんなのFX', title: 'みんなのFXの口座開設｜必要書類・審査・取引開始までの流れ', desc: '申込入力、本人確認、審査、入金、取引開始までを順番に整理し、提出前の不備を防ぐ。' },
   { slug: 'minna-fx-spread-light-pair', category: 'FX・みんなのFX', title: 'みんなのFXのスプレッド｜LIGHTペア・時間帯・例外を比較', desc: 'USD/JPY LIGHT・通常ペアの提示値、適用時間、取引上限、原則固定の例外と実質コストを整理する。' },
+  { slug: 'minna-fx-trading-hours-maintenance', category: 'FX・みんなのFX', title: 'みんなのFXの取引時間｜夏時間・冬時間・メンテナンス', desc: '取引時間、日次・週次メンテナンス、予約注文と約定の違いを公式サービス概要で整理する。' },
   { slug: 'minna-fx-deposit-transfer', category: 'FX・みんなのFX', title: 'みんなのFXの入金・振替｜銀行振込とダイレクト入金の違い', desc: '入金口座、ダイレクト入金、FX口座への振替、反映されないときの確認順を公式情報で整理する。' },
   { slug: 'minna-fx-losscut', category: 'FX・みんなのFX', title: 'みんなのFXのロスカット｜証拠金維持率100％以下と不足金', desc: '証拠金維持率、自動ロスカット、未約定注文の取消しと不足金リスクを公式情報で整理する。' },
   { slug: 'saxo-products-overview', category: 'FX・サクソバンク証券', title: 'サクソバンク証券の取扱商品｜FX・CFD・海外株・先物を口座で整理', desc: 'FX、CFD、外国株式、ETF、先物、オプションを商品ごとのリスクと確認項目で整理する。' },
