@@ -19,6 +19,7 @@ export default function Page() {
     { href: '/articles/matsui-fx-auto-trading-stop-restart', title: '自動売買の停止・再開', description: '停止時に建玉と決済注文を残すか、全決済するかを3つの選択肢で整理します。' },
     { href: '/articles/matsui-fx-swap-calendar', title: 'スワップ付与時間と計算', description: '1万通貨表示を実際の取引数量へ換算し、付与日数と受払額を確認します。' },
     { href: '/articles/matsui-fx-swap-transfer-tax', title: 'スワップ振替と税金', description: '受渡日、総合口座への振替、出金可能額、不足金と申告資料を整理します。' },
+    { href: '/articles/matsui-fx-annual-profit-report', title: '年間損益と確定申告', description: '期間損益照会の確認方法、年間取引報告書がない場合の保存、損失繰越を整理します。' },
     { href: '/articles/matsui-fx-one-currency', title: 'MATSUI FXは100円から？', description: '1通貨の必要証拠金と、為替が1円動いたときの損益を計算します。' },
     { href: '/articles/matsui-fx-one-currency-order', title: '1通貨の注文方法と0.0001入力', description: '1万通貨単位で表示される数量欄の換算、PC・スマホの入力手順を確認します。' },
     { href: '/articles/matsui-account-types', title: 'FX専用口座と総合口座の違い', description: 'FXだけ使う場合と、株・NISA・先物へ広げる場合の入口を整理します。' },

@@ -136,6 +136,7 @@ export const POSTS = [
   { slug: 'systre-select-365-stop-switch', category: 'FX自動売買', title: 'シストレセレクト365の停止・入替え｜建玉を残さない確認手順', desc: '稼働停止、未決済ポジション、複数ストラテジーの両建て、サービス解約前の確認を整理する。' },
   { slug: 'matsui-fx-swap-calendar', category: 'FX・松井証券', title: 'MATSUI FXのスワップ付与時間｜1万通貨表示の計算方法', desc: '夏時間6時10分・冬時間7時10分以降の付与、付与日数、1通貨や100通貨へ換算する方法を整理する。' },
   { slug: 'matsui-fx-swap-transfer-tax', category: 'FX・松井証券・税金', title: '松井証券FXのスワップ振替と税金｜受渡日・出金可能額・不足金', desc: 'スワップ振替の操作、受渡日、総合口座への移動、出金可能額と確定申告の確認ポイントを整理する。' },
+  { slug: 'matsui-fx-annual-profit-report', category: 'FX・松井証券・税金', title: '松井証券FXの年間損益を確認する方法｜期間損益照会と確定申告', desc: 'FXお客様サイト・アプリで年間損益を確認する方法、期間指定、未決済建玉、年間取引報告書がない場合の保存方法を整理する。' },
   { slug: 'matsui-fx-insufficient-funds', category: 'FX・松井証券・リスク管理', title: '松井証券FXの不足金とは？15時期限・追証・ロスカットとの違い', desc: '決済損による不足金の原因、受渡日15時の解消期限、入金・スワップ振替と追証・ロスカットの違いを整理する。' },
   { slug: 'matsui-fx-leverage-margin', category: 'FX・松井証券・証拠金', title: '松井証券FXの必要証拠金とレバレッジ｜25倍・10倍・5倍・1倍を計算', desc: '4つのレバレッジコースと証拠金率、必要証拠金の計算式、1万通貨の例、維持率の見方を整理する。' },
   { slug: 'matsui-fx-auto-trading-stop-restart', category: 'FX・松井証券', title: 'MATSUI FX自動売買の停止・再開｜建玉と注文はどうなる？', desc: '3つの運用停止方法、自動停止の条件、余力不足後に必要な再開操作を整理する。' },
