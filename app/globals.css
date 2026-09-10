@@ -346,6 +346,9 @@ article li + li { margin-top: 8px; }
 .article-search span { color: var(--muted); font-size: 12px; font-weight: 700; }
 .article-search input { width: 100%; padding: 13px 15px; border: 1px solid var(--line-strong); border-radius: 5px; background: var(--paper); color: var(--ink); font: inherit; }
 .article-search input:focus { outline: 2px solid var(--blue); outline-offset: 2px; }
+.article-categories { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.article-categories button { padding: 7px 11px; border: 1px solid var(--line-strong); border-radius: 999px; background: var(--paper); color: var(--muted); font: 700 11px/1.2 inherit; cursor: pointer; }
+.article-categories button:hover, .article-categories button.active { border-color: var(--blue); background: var(--blue-pale); color: var(--blue-dark); }
 .empty-search { margin-top: 28px; padding: 22px; border: 1px dashed var(--line-strong); color: var(--muted); }
 .cta-list { display: grid; gap: 8px; list-style: none; padding: 0; }
 .cta-list a { display: flex; align-items: center; justify-content: space-between; gap: 15px; padding: 13px 16px; border: 1px solid var(--line); border-radius: 10px; background: var(--paper); color: var(--ink); font-size: 13px; text-decoration: none; }
