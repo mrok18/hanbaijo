@@ -348,6 +348,10 @@ article li + li { margin-top: 8px; }
 .article-search input:focus { outline: 2px solid var(--blue); outline-offset: 2px; }
 .article-categories { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
 .article-categories button { padding: 7px 11px; border: 1px solid var(--line-strong); border-radius: 999px; background: var(--paper); color: var(--muted); font: 700 11px/1.2 inherit; cursor: pointer; }
+.empty-search { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 18px; padding: 18px; border: 1px dashed var(--line-strong); color: var(--muted); }
+.empty-search p { margin: 0; }
+.empty-search button { padding: 8px 12px; border: 1px solid var(--line-strong); border-radius: 4px; background: var(--paper); color: var(--ink); font: 700 11px/1.2 inherit; cursor: pointer; }
+.empty-search button:hover { border-color: var(--blue); color: var(--blue); }
 .article-categories button:hover, .article-categories button.active { border-color: var(--blue); background: var(--blue-pale); color: var(--blue-dark); }
 .empty-search { margin-top: 28px; padding: 22px; border: 1px dashed var(--line-strong); color: var(--muted); }
 .cta-list { display: grid; gap: 8px; list-style: none; padding: 0; }
@@ -760,6 +764,7 @@ article li + li { margin-top: 8px; }
   .official-grid { grid-template-columns: 1fr; }
   .article-index li { grid-template-columns: 1fr auto; gap: 6px 14px; }
   .article-index li > span { grid-column: 1 / -1; }
+  .empty-search { align-items: flex-start; flex-direction: column; }
   .field-grid { grid-template-columns: 1fr; }
   .field-grid label.wide { grid-column: 1; }
   .calculator-intro h1 { font-size: clamp(40px, 12vw, 56px); }
