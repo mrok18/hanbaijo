@@ -339,7 +339,7 @@ article li + li { margin-top: 8px; }
 .featured-card > a { margin-top: 13px; color: var(--ink); font-size: 14px; line-height: 1.55; font-weight: 750; text-decoration: none; }
 .featured-card > a:hover { color: var(--blue); }
 .featured-card > p { margin: auto 0 0; color: var(--muted); font-size: 12px; line-height: 1.65; }
-.article-directory-head { display: flex; align-items: end; justify-content: space-between; gap: 20px; margin-top: 58px; }
+.article-directory-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; margin-top: 58px; }
 .article-directory-head h2 { margin: 4px 0 0; }
 .article-directory-head > span { color: var(--muted); font-size: 12px; }
 .article-search { display: grid; gap: 8px; margin-top: 20px; }
