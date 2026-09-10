@@ -1,9 +1,15 @@
 import Link from 'next/link';
+import type { Metadata } from 'next';
 import { measureAll } from '@/lib/exchanges.mjs';
 import { jpy, pct, jst } from '@/lib/format';
 import { estimateOneWaySpreadCost } from '@/lib/market-data/cost';
 
 export const revalidate = 60;
+export const metadata: Metadata = {
+  title: '暗号資産のスプレッド実測｜BTC/JPYの販売所・取引所比較',
+  description: 'BTC/JPYの公開APIから取得した気配値をもとに、暗号資産の販売所・取引所スプレッドと片道コストを比較します。',
+  alternates: { canonical: '/crypto' },
+};
 
 export default async function CryptoPage() {
   const snap = await measureAll();

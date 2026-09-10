@@ -73,6 +73,7 @@ gtag('config', '${GA_ID}');`}
               <Link href="/fx">FX</Link>
               <Link href="/stocks">株式</Link>
               <Link href="/futures">先物</Link>
+              <Link href="/crypto">暗号資産</Link>
               <Link href="/markets">対象商品</Link>
               <Link href="/tools">計算機</Link>
               <Link href="/articles">知る</Link>
@@ -99,6 +100,7 @@ gtag('config', '${GA_ID}');`}
               <Link href="/cfd">CFDコスト比較</Link>
               <Link href="/stocks">株式コスト比較</Link>
               <Link href="/futures">先物コスト比較</Link>
+              <Link href="/crypto">暗号資産コスト比較</Link>
               <Link href="/markets">対象商品</Link>
               <Link href="/tools">計算ツール一覧</Link>
               <Link href="/articles">解説記事</Link>
