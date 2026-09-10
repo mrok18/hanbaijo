@@ -55,7 +55,7 @@ export default function Articles() {
     'financial-product-cost-comparison',
     'small-budget-investing-costs',
     'gmo-coin-trading-fees',
-    'gmo-coin-api-public-private',
+    'jfx-before-account-opening-checklist',
     'minna-fx-account-opening-flow',
   ];
   const featured = featuredSlugs.map((slug) => POSTS.find((post) => post.slug === slug)).filter(Boolean);

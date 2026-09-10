@@ -20,7 +20,7 @@ export default function ArticleDirectory({ posts }: { posts: readonly Post[] }) 
 
   return <section aria-labelledby="all-articles-title">
     <div className="article-directory-head"><div><p className="section-index">ALL ARTICLES</p><h2 id="all-articles-title">すべての記事</h2></div><span aria-live="polite">{filtered.length} / {posts.length}件</span></div>
-    <label className="article-search"><span>記事を検索</span><input type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="例：スプレッド、入金、ロスカット" /></label>
+    <label className="article-search"><span>記事を検索</span><input aria-label="記事をキーワードで検索" type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="例：スプレッド、入金、ロスカット" /></label>
     <div className="article-categories" aria-label="カテゴリで絞り込む">{categories.map((item) => <button type="button" key={item} className={category === item ? 'active' : ''} aria-pressed={category === item} onClick={() => setCategory(item)}>{item}</button>)}</div>
     <ul className="post-list article-index">
       {filtered.map((post) => <li key={post.slug}><span>{post.category}</span><div><Link href={`/articles/${post.slug}`}>{post.title}</Link><p>{post.desc}</p></div><b aria-hidden="true">→</b></li>)}
