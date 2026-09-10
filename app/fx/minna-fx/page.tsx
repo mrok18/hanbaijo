@@ -17,6 +17,7 @@ export default function Page() {
     { href: '/articles/minna-fx-trading-hours-maintenance', title: '取引時間・メンテナンス', description: '夏時間・冬時間、日次・週次メンテナンス、予約注文の扱いを確認します。' },
     { href: '/articles/minna-fx-swap-points-calendar', title: 'スワップポイント・付与条件', description: 'NYクローズ、途中受取、日々変動する金額とリスクを確認します。' },
     { href: '/articles/minna-fx-slippage-execution', title: 'スリッページ・約定率', description: '許容幅、約定優先と価格優先、実績コストの見方を確認します。' },
+    { href: '/articles/minna-fx-order-types-expiration', title: '注文方法・有効期限', description: '成行、指値、逆指値、OCO・IFOと注文期限を確認します。' },
     { href: '/articles/minna-fx-trading-unit', title: '1Lot・0.1Lotと必要証拠金', description: '1Lot＝10,000通貨、0.1Lot＝1,000通貨の数量を整理します。' },
     { href: '/articles/minna-fx-deposit-transfer', title: '入金・振替と反映遅延', description: '銀行振込・ダイレクト入金からFX口座へ振替する流れを確認します。' },
     { href: '/articles/minna-fx-losscut', title: 'ロスカットと不足金', description: '証拠金維持率100％以下の判定と急変時のリスクを確認します。' },
