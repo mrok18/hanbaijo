@@ -84,6 +84,8 @@ export const POSTS = [
   { slug: 'gmo-coin-crypto-fx', category: '暗号資産FX・GMOコイン', title: 'GMOコイン暗号資産FXとは？2倍レバレッジ・証拠金・リスク', desc: '現物との違い、2倍レバレッジ、必要証拠金、維持率・ロスカットの確認項目を整理する。' },
   { slug: 'gmo-coin-api-public-private', category: '暗号資産・GMOコイン', title: 'GMOコインAPIの使い方｜Public APIとPrivate APIの違い', desc: 'レート・板情報を取得するPublic APIと、残高・注文に使うPrivate APIを権限と管理方法から整理する。' },
   { slug: 'gmo-coin-forex-fx', category: 'FX・GMOコイン', title: 'GMOコイン外国為替FXとは？1通貨・レバレッジ・スワップを確認', desc: '外国為替FXと暗号資産FXを分け、1通貨取引、証拠金、スプレッド、スワップの確認項目を整理する。' },
+  { slug: 'financial-product-cost-comparison', category: '金融商品・比較', title: '金融商品のコスト比較｜FX・CFD・株・先物・暗号資産の見方', desc: '売買・保有・資金移動の3段階に分け、金融商品全般のコストを同じ軸で比較する方法を解説する。' },
+  { slug: 'small-budget-investing-costs', category: '投資初心者・コスト', title: '少額投資のコスト｜100円・1通貨でも確認したい手数料とリスク', desc: '少額取引でも発生するスプレッド、入出金、証拠金、余裕資金を確認する順番を整理する。' },
   { slug: 'crypto-tax-reform-start-date', category: '暗号資産・税制', title: '暗号資産の分離課税はいつから？税制改正の対象・20％・損失繰越', desc: '改正金商法の施行日から決まる開始時期、特定暗号資産、20％分離課税、3年繰越、デリバティブの扱いを整理する。' },
   { slug: 'fx-profit-loss-offset-tax', category: 'FX・税金', title: 'FXの損益通算は何とできる？CFD・先物・株・暗号資産を整理', desc: '国内FXと一定のCFD・先物、株式、暗号資産の損益通算可否と、3年間の損失繰越に必要な申告を整理する。' },
   { slug: 'fx-multiple-accounts-cost-risk', category: 'FX・口座管理', title: 'FX口座を複数持つメリット・デメリット｜資金と損益の管理方法', desc: '2社以上を使い分ける利点と、証拠金の分散、ロスカット、損益集計、管理負担などの注意点を整理する。' },
