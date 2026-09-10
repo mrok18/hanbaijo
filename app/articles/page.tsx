@@ -56,7 +56,7 @@ export default function Articles() {
     'small-budget-investing-costs',
     'gmo-coin-trading-fees',
     'gmo-coin-api-public-private',
-    'gmo-coin-forex-fx',
+    'minna-fx-account-opening-flow',
   ];
   const featured = featuredSlugs.map((slug) => POSTS.find((post) => post.slug === slug)).filter(Boolean);
   const remaining = POSTS.filter((post) => !featuredSlugs.includes(post.slug));
