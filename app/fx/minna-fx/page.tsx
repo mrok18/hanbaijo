@@ -12,6 +12,7 @@ export const metadata = {
 export default function Page() {
   if (!provider) notFound();
   return <FxProviderFactSheet provider={provider} relatedArticles={[
+    { href: '/articles/minna-fx-account-opening-flow', title: '口座開設・必要書類・審査の流れ', description: '申込入力、本人確認、審査、入金、取引開始までを順番に確認します。' },
     { href: '/articles/minna-fx-trading-unit', title: '1Lot・0.1Lotと必要証拠金', description: '1Lot＝10,000通貨、0.1Lot＝1,000通貨の数量を整理します。' },
     { href: '/articles/minna-fx-deposit-transfer', title: '入金・振替と反映遅延', description: '銀行振込・ダイレクト入金からFX口座へ振替する流れを確認します。' },
     { href: '/articles/minna-fx-losscut', title: 'ロスカットと不足金', description: '証拠金維持率100％以下の判定と急変時のリスクを確認します。' },
