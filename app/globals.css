@@ -331,6 +331,14 @@ article li + li { margin-top: 8px; }
 .article-index li { display: grid; grid-template-columns: 100px 1fr auto; align-items: center; gap: 20px; }
 .article-index li > span { align-self: start; padding-top: 4px; color: var(--signal-dark); font: 750 9.5px/1.4 ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing: .04em; }
 .article-index li > b { color: var(--line-strong); font-size: 17px; }
+.featured-articles { margin-top: 52px; padding: 28px; border: 1px solid var(--line); background: var(--paper-soft); }
+.featured-articles .section-heading { margin: 0 0 20px; }
+.featured-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+.featured-card { min-height: 178px; padding: 18px; border: 1px solid var(--line); background: var(--paper); display: flex; flex-direction: column; }
+.featured-card > span { color: var(--signal-dark); font: 750 9.5px/1.4 ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing: .04em; }
+.featured-card > a { margin-top: 13px; color: var(--ink); font-size: 14px; line-height: 1.55; font-weight: 750; text-decoration: none; }
+.featured-card > a:hover { color: var(--blue); }
+.featured-card > p { margin: auto 0 0; color: var(--muted); font-size: 12px; line-height: 1.65; }
 .cta-list { display: grid; gap: 8px; list-style: none; padding: 0; }
 .cta-list a { display: flex; align-items: center; justify-content: space-between; gap: 15px; padding: 13px 16px; border: 1px solid var(--line); border-radius: 10px; background: var(--paper); color: var(--ink); font-size: 13px; text-decoration: none; }
 .cta-list .go { color: var(--muted); font-size: 11px; }
@@ -666,6 +674,8 @@ article li + li { margin-top: 8px; }
 }
 
 @media (max-width: 720px) {
+  .featured-grid { grid-template-columns: repeat(2, 1fr); }
+  .featured-articles { padding: 22px; }
   .site-shell { width: min(100% - 32px, 1180px); }
   .header-inner { height: 66px; gap: 12px; }
   .brand-mark { width: 36px; height: 36px; flex-basis: 36px; }
@@ -726,6 +736,8 @@ article li + li { margin-top: 8px; }
 }
 
 @media (max-width: 470px) {
+  .featured-grid { grid-template-columns: 1fr; }
+  .featured-card { min-height: 145px; }
   .home-hero { padding-top: 52px; }
   .hero-actions { flex-direction: column; align-items: stretch; }
   .market-grid { grid-template-columns: 1fr; }

@@ -50,6 +50,15 @@ const collectionJsonLd = {
 };
 
 export default function Articles() {
+  const featuredSlugs = [
+    'financial-product-cost-comparison',
+    'small-budget-investing-costs',
+    'gmo-coin-trading-fees',
+    'gmo-coin-api-public-private',
+    'gmo-coin-forex-fx',
+  ];
+  const featured = featuredSlugs.map((slug) => POSTS.find((post) => post.slug === slug)).filter(Boolean);
+  const remaining = POSTS.filter((post) => !featuredSlugs.includes(post.slug));
   return (
     <div className="content-page">
       <script
@@ -59,8 +68,14 @@ export default function Articles() {
       <p className="page-kicker">LEARN</p>
       <h1>知る・読み解く</h1>
       <p className="lede">実測値を自分で判断するために、数字の背景にある仕組みを短く、具体的に説明します。</p>
+      <section className="featured-articles" aria-labelledby="featured-title">
+        <div className="section-heading compact"><div><p className="section-index">UPDATED / PICKS</p><h2 id="featured-title">まず読む5本</h2></div><Link href="/method">計測方法を確認 →</Link></div>
+        <div className="featured-grid">
+          {featured.map((p) => p && <article className="featured-card" key={p.slug}><span>{p.category}</span><Link href={`/articles/${p.slug}`}>{p.title}</Link><p>{p.desc}</p></article>)}
+        </div>
+      </section>
       <ul className="post-list article-index">
-        {POSTS.map((p) => (
+        {remaining.map((p) => (
           <li key={p.slug}>
             <span>{p.category}</span>
             <div>
