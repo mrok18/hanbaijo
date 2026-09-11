@@ -66,6 +66,7 @@ export const POSTS = [
   { slug: 'esmart-fx-trading-unit', category: 'FX・三菱UFJ eスマート証券', title: '三菱UFJ eスマート証券 FXの取引単位｜ミニ1,000通貨・通常・大口', desc: '旧auカブコムFXのミニ・通常・大口を、通貨数量と注文上限から整理する。' },
   { slug: 'esmart-fx-deposit-transfer', category: 'FX・三菱UFJ eスマート証券', title: '三菱UFJ eスマート証券 FXの入金・振替｜証券口座から自動振替', desc: '入金経路、証券口座とFX口座の振替、反映確認、外貨入出金の注意点を整理する。' },
   { slug: 'esmart-fx-losscut', category: 'FX・三菱UFJ eスマート証券', title: '三菱UFJ eスマート証券 FXのロスカット｜維持率75％と注文取消し', desc: 'ロスカット基準、未約定注文の取消し、強制決済と不足金リスクを整理する。' },
+  { slug: 'esmart-fx-swap-calendar', category: 'FX・三菱UFJ eスマート証券', title: '三菱UFJ eスマート証券のスワップカレンダーはどこ？付与日・確認方法', desc: 'スマホ・PCで最新値と過去実績を見る手順、夏冬の判定時刻、水曜3日分と祝日変則を整理する。' },
   { slug: 'gmo-click-stock-fees', category: '国内株・GMOクリック証券', title: 'GMOクリック証券の株式手数料｜現物・信用0円の対象外を確認', desc: '国内株現物・信用取引の手数料無料化と、コールセンター・単元未満株・不足金などの対象外を整理する。' },
   { slug: 'gmo-click-stock-funding', category: '国内株・GMOクリック証券', title: 'GMOクリック証券の株式入出金｜証券取引口座の残高と出金名義', desc: '株式資金の管理口座、入出金・振替、出金名義の注意点を公式情報で整理する。' },
   { slug: 'gmo-click-stock-rights', category: '国内株・GMOクリック証券', title: 'GMOクリック証券の株主優待・配当｜権利付最終売買日を確認', desc: '株主優待や配当の権利を得るための権利確定日、権利付最終売買日、現物保有の条件を整理する。' },

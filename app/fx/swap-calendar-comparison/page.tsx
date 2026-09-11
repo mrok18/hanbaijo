@@ -56,7 +56,7 @@ const PROVIDERS = [
     note: '米ドル/円は0.1Lotで表示額の10分の1。売・買と付与日数を確認', source: 'https://min-fx.jp/market/swap/',
   },
   {
-    name: '三菱UFJ eスマート証券 FX', href: '/fx/au-kabucom-fx', where: '取引画面・過去実績', unit: '取引画面で数量を確認', timing: '夏時間5:50・冬時間6:50をまたぐ',
+    name: '三菱UFJ eスマート証券 FX', href: '/articles/esmart-fx-swap-calendar', where: '取引画面・過去実績', unit: '取引画面で数量を確認', timing: '夏時間5:50・冬時間6:50をまたぐ',
     note: '最新値は取引画面で確認。建玉を決済せずスワップのみ振替可能', source: 'https://kabu.com/item/fx/sys/trade_style.html',
   },
   {
