@@ -3,6 +3,8 @@ import type { Metadata } from 'next';
 import { measureAll } from '@/lib/exchanges.mjs';
 import { jpy, pct, jst } from '@/lib/format';
 import { estimateOneWaySpreadCost } from '@/lib/market-data/cost';
+import AffiliateOfferCard from '@/components/AffiliateOfferCard';
+import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const revalidate = 60;
 export const metadata: Metadata = {
@@ -26,5 +28,6 @@ export default async function CryptoPage() {
     <h2>数字の読み方</h2><ul><li>買値（ask）と売値（bid）の差がスプレッドです。</li><li>100万円片道は、スプレッドの半分を片道コストとして試算しています。</li><li>販売所は提示価格、取引所は板の最良気配であり、約定を保証する値ではありません。</li></ul>
     <div className="post-list"><div><Link href="/articles/gmo-coin-trading-fees">GMOコインの手数料｜販売所・取引所・暗号資産FX →</Link><p>サービスごとのコストを公式情報で整理</p></div><div><Link href="/articles/gmo-coin-api-public-private">GMOコインAPIのPublic・Private比較 →</Link><p>自動取得とキー管理の注意点を確認</p></div><div><Link href="/articles/gmo-coin-forex-fx">GMOコイン外国為替FXの取引単位 →</Link><p>暗号資産以外のFX商品も確認</p></div><div><Link href="/articles/bitbank-trading-fees">bitbankの取引手数料と販売所の差 →</Link><p>板取引と提示価格の違いを確認</p></div><div><Link href="/articles/crypto-collateral-loan-risk-checklist">暗号資産担保ローンの確認項目 →</Link><p>担保掛目・LTV・強制決済を整理</p></div><div><Link href="/articles/hanbaijo-torihikijo">販売所と取引所は何が違うのか →</Link><p>暗号資産の基本構造を読む</p></div></div>
     <section className="article-sources" aria-labelledby="sources"><h2 id="sources">データ・参照先</h2><ul><li><a href="https://coin.z.com/jp/" target="_blank" rel="noopener noreferrer">GMOコイン公式サイト</a></li><li><a href="https://bitbank.cc/" target="_blank" rel="noopener noreferrer">bitbank公式サイト</a></li><li><a href="https://bitflyer.com/" target="_blank" rel="noopener noreferrer">bitFlyer公式サイト</a></li></ul><p>公開APIの取得値を自動更新しています。各社の利用規約・API仕様・取引画面をあわせてご確認ください。</p></section>
+    <section className="article-affiliate" aria-label="暗号資産担保ローンの広告"><AffiliateOfferCard offer={AFFILIATE_OFFERS['digital-asset-loan']} /><p className="affiliate-disclosure">暗号資産担保ローンへの広告リンクです。広告の有無や報酬額は、実測値・比較結果・掲載順位に影響しません。</p></section>
   </div>;
 }
