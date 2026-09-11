@@ -10,6 +10,13 @@ export const metadata = {
 export default function Page() {
   return <StockProviderFactSheet provider={STOCK_PROVIDERS.rakuten} relatedArticles={[
     {
+      href: '/articles/rakuten-securities-domestic-stock-fees',
+      title: '信用取引の手数料・金利・貸株料を確認',
+      description: 'ゼロコースの0円条件と、制度・一般信用の保有コストを金額で計算します。',
+      tag: 'MARGIN COST',
+      linkLabel: '信用コストを見る →',
+    },
+    {
       href: '/stocks/domestic-fee-comparison',
       title: '国内株4社の手数料を同条件で比較',
       description: '楽天証券を含む4社を、50万円の買付・売却で比較します。',
