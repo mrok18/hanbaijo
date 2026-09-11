@@ -236,6 +236,7 @@ export const POSTS = [
   { slug: 'crypto-transfer-fee-network', category: '暗号資産', title: '暗号資産の送金手数料とネットワーク｜確認項目を整理', desc: '出金手数料とネットワーク手数料を分け、通貨・ネットワーク・反映条件を送金前に確認する。' },
   { slug: 'crypto-transfer-not-reflected', category: '暗号資産', title: '暗号資産を送金したのに反映されない｜確認順と問い合わせ準備', desc: 'TxID、承認数、ネットワーク、タグ・メモ、最低入金額を確認する順番を整理する。' },
   { slug: 'crypto-tag-memo-missing', category: '暗号資産', title: '暗号資産のタグ・メモを忘れた｜入金反映前に確認すること', desc: 'XRPやATOMなどでタグ・メモを忘れた、間違えたときの確認手順と、サポートへ伝える情報を整理する。' },
+  { slug: 'crypto-minimum-deposit', category: '暗号資産', title: '暗号資産の最低入金額｜少額送金が反映されない理由と確認方法', desc: '最低入金額・最低入庫数量を下回ったときの扱いと、送金前に確認する項目を整理する。' },
   { slug: 'kounyu-tejun', category: '実務', title: 'コストを抑えて買うための手順', desc: '同じ金額を買うのに、どこで差がつくのかを順に確認する。' },
   { slug: 'tesuryo-hyoki', category: '基礎知識', title: '「手数料無料」はなぜ表示できるのか', desc: '表示として誤りではないが、負担がないという意味でもない。その構造。' },
   { slug: 'ita-yomikata', category: '実務', title: '取引所の「板」の読み方', desc: '指値と成行、そしてスプレッドが決まる仕組み。' },
