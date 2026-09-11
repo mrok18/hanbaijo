@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import AffiliateOfferCard from '@/components/AffiliateOfferCard';
+import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
   title: '暗号資産担保ローンとは？BTC・ETHを担保に借りる前の確認項目',
@@ -54,5 +56,6 @@ export default function Page() {
       <li><a href="https://www.fsa.go.jp/singi/singi_kinyu/angoshisanseido_wg/gijishidai/20251107/02.pdf" target="_blank" rel="noopener noreferrer">金融庁・FSB資料「暗号資産の借入れに関連するリスクの指摘」</a></li>
       <li><a href="https://www.fsa.go.jp/singi/singi_kinyu/angoshisanseido_wg/gijiroku/20251107.html" target="_blank" rel="noopener noreferrer">金融庁「暗号資産制度に関するワーキング・グループ」</a></li>
     </ul><p>制度・商品条件は変更される場合があります。確認日：2026年9月11日</p></section>
+    <section className="article-affiliate" aria-label="暗号資産担保ローンの広告"><AffiliateOfferCard offer={AFFILIATE_OFFERS['digital-asset-loan']} /><p className="affiliate-disclosure">暗号資産担保ローンへの広告リンクです。申込み等により当サイトが報酬を受け取る場合があります。記事の評価・計算結果とは分けて掲載しています。</p></section>
   </article>;
 }

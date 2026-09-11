@@ -1,5 +1,5 @@
 export interface AffiliateOffer {
-  id: 'fxtf' | 'systre-select-365' | 'dmm-cfd' | 'dmm-kabu' | 'matsui-fx' | 'jfx' | 'tossy' | 'ablenet-vps' | 'fpo-fx-guide';
+  id: 'fxtf' | 'systre-select-365' | 'dmm-cfd' | 'dmm-kabu' | 'matsui-fx' | 'jfx' | 'tossy' | 'ablenet-vps' | 'fpo-fx-guide' | 'digital-asset-loan';
   name: string;
   category: string;
   description: string;
@@ -10,6 +10,16 @@ export interface AffiliateOffer {
 }
 
 export const AFFILIATE_OFFERS: Record<AffiliateOffer['id'], AffiliateOffer> = {
+  'digital-asset-loan': {
+    id: 'digital-asset-loan',
+    name: 'デジタルアセット担保ローン',
+    category: '暗号資産担保ローン',
+    description: 'ビットコイン・ETHを担保にした借入サービスの公式条件を確認できます。担保掛目、金利、返済、強制決済の条件を必ず確認してください。',
+    linkLabel: 'デジタルアセット担保ローンの公式情報を確認',
+    href: 'https://h.accesstrade.net/sp/cc?rk=0100pbqw00oyio',
+    impressionSrc: 'https://h.accesstrade.net/sp/rr?rk=0100pbqw00oyio',
+    network: 'accesstrade',
+  },
   fxtf: {
     id: 'fxtf',
     name: 'FXTF',
