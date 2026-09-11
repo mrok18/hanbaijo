@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { measureAll } from '@/lib/exchanges.mjs';
 import { recent } from '@/lib/history';
@@ -7,6 +8,10 @@ import { estimateOneWaySpreadCost } from '@/lib/market-data/cost';
 import SpreadChart, { type Series } from './SpreadChart';
 
 export const revalidate = 60;
+
+export const metadata: Metadata = {
+  alternates: { canonical: '/' },
+};
 
 const DEALER_COLOR = 'var(--series-dealer)';
 const EXCHANGE_COLOR = 'var(--series-exchange)';
@@ -112,6 +117,34 @@ export default async function Home() {
             <time dateTime={snap.measuredAt}>{jst(snap.measuredAt)}</time>
           </div>
         </aside>
+      </section>
+
+      <section className="home-paths" aria-labelledby="home-paths-title">
+        <div className="section-heading compact">
+          <div>
+            <p className="section-index">CHOOSE YOUR NEXT STEP</p>
+            <h2 id="home-paths-title">知りたいことから選ぶ</h2>
+          </div>
+          <Link href="/markets">すべての対象商品を見る →</Link>
+        </div>
+        <div className="home-path-grid">
+          <Link className="home-path-card primary-path" href="/fx">
+            <span>01 / COMPARE</span><strong>FX会社を比べる</strong>
+            <p>スプレッド、スワップ、取引単位、ロスカットを同じ軸で確認します。</p><b>FX比較へ →</b>
+          </Link>
+          <Link className="home-path-card" href="/tools">
+            <span>02 / CALCULATE</span><strong>自分の条件で計算</strong>
+            <p>数量、回数、保有日数を入力し、見えにくいコストを円へ換算します。</p><b>無料計算機を選ぶ →</b>
+          </Link>
+          <Link className="home-path-card" href="/stocks/domestic-fee-comparison">
+            <span>03 / STOCKS</span><strong>国内株の手数料比較</strong>
+            <p>50万円の買付・売却を例に、4社の料金体系と適用条件を比べます。</p><b>株式比較へ →</b>
+          </Link>
+          <Link className="home-path-card" href="#live-data">
+            <span>04 / LIVE DATA</span><strong>BTC実測を見る</strong>
+            <p>公開APIから取得した販売所・取引所のスプレッドを確認します。</p><b>最新データへ →</b>
+          </Link>
+        </div>
       </section>
 
       <section className="market-radar" aria-labelledby="market-radar-title">
