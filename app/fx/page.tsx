@@ -38,7 +38,7 @@ export default function FxPage() {
           </p>
           <div className="hero-actions">
             <Link className="button primary" href="/tools/fx-spread-annual-cost-calculator">年間コスト差を試算</Link>
-            <Link className="button secondary" href="/articles/fx-spread-cost">計算方法を読む</Link>
+            <Link className="button secondary" href="/articles/fx-spread-cost">0.2銭が何円か計算</Link>
           </div>
         </div>
         <aside className="fx-status-panel">

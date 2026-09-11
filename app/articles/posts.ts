@@ -231,7 +231,7 @@ export const POSTS = [
   { slug: 'fx-swap-calculation', category: 'FX', title: 'FXスワップポイントの計算方法', desc: '1Lotあたりの表示から、保有数量と付与日数に応じた金額を試算する。' },
   { slug: 'fx-required-margin', category: 'FX', title: 'FXの必要証拠金はいくら？1万通貨で計算', desc: '取引金額・必要証拠金・レバレッジの関係を、米ドル/円の例で整理する。' },
   { slug: 'cfd-price-adjustment', category: 'CFD', title: 'CFDの価格調整額とは？発生日と計算方法', desc: '先物を参照するCFDで発生する価格調整額の仕組みと、確認すべき日程・計算式。' },
-  { slug: 'fx-spread-cost', category: 'FX', title: 'FXのスプレッドを円に直す方法', desc: '0.2銭という表示が、取引数量ごとに何円の負担になるかを計算する。' },
+  { slug: 'fx-spread-cost', category: 'FX', title: '0.2銭は何円？FXスプレッドを数量別に計算', desc: '0.2銭を円へ直し、1,000通貨・1万通貨・10万通貨ごとのスプレッド相当額を計算する。' },
   { slug: 'hanbaijo-torihikijo', category: '暗号資産', title: '販売所と取引所は何が違うのか', desc: '同じ会社の中に2つの買い方がある理由と、コスト差が生まれる仕組み。' },
   { slug: 'spread-toha', category: '基礎知識', title: 'スプレッドとは何か — 「手数料無料」の正体', desc: '表示されない手数料がどこに含まれているかを、数字で追う。' },
   { slug: 'spread-hirogaru-toki', category: 'データの見方', title: 'スプレッドが広がるのはどんなときか', desc: '早朝・週末・相場急変時に何が起きているか。' },
