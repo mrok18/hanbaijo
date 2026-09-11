@@ -4,6 +4,7 @@ import { STOCK_PROVIDER_LIST } from '@/lib/stock-providers';
 export const metadata = {
   title: '株式の取引コスト比較｜国内株・米国株の手数料と為替を読む',
   description: '国内株と米国株のコストを、売買手数料、板の価格差、為替コスト、信用金利に分けて比較します。',
+  alternates: { canonical: '/stocks' },
 };
 
 export default function StocksPage() {
@@ -91,7 +92,7 @@ export default function StocksPage() {
           <h2>比較表と計算方法を使い分ける</h2>
         </div></div>
         <div className="affiliate-grid">
-          <article className="affiliate-card"><div className="affiliate-card-head"><span>COMPARE</span><b>2026-09-07確認</b></div><p className="affiliate-category">DOMESTIC STOCK FEES</p><h3>国内株4社の手数料</h3><p>GMOクリック証券、楽天証券、松井証券、DMM 株を同じ売買例で比較します。</p><Link href="/stocks/domestic-fee-comparison">比較表を見る →</Link></article>
+          <article className="affiliate-card"><div className="affiliate-card-head"><span>COMPARE</span><b>2026-09-11確認</b></div><p className="affiliate-category">DOMESTIC STOCK FEES</p><h3>国内株4社の手数料</h3><p>GMOクリック証券、楽天証券、松井証券、DMM 株を同じ売買例で比較します。</p><Link href="/stocks/domestic-fee-comparison">比較表を見る →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>GUIDE</span><b>国内株</b></div><p className="affiliate-category">ROUND-TRIP COST</p><h3>往復コストの計算</h3><p>買付と売却の手数料、板の価格差を1つの式で整理します。</p><Link href="/articles/stock-round-trip-cost">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>GUIDE</span><b>米国株</b></div><p className="affiliate-category">FX CONVERSION</p><h3>為替コストの計算</h3><p>1ドルあたりの為替コストを、購入金額全体の円負担へ直します。</p><Link href="/articles/us-stock-fx-cost">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>GUIDE</span><b>松井証券</b></div><p className="affiliate-category">ACCOUNT TYPES</p><h3>FX専用口座と総合口座</h3><p>FXだけ使う場合と、株・NISA・先物へ広げる場合の入口を整理します。</p><Link href="/articles/matsui-account-types">記事を読む →</Link></article>
@@ -143,7 +144,7 @@ export default function StocksPage() {
         <div className="provider-directory">
           {STOCK_PROVIDER_LIST.map((provider) => (
             <Link href={`/stocks/${provider.slug}`} key={provider.slug}>
-              <span>2026-09-07 確認</span><h3>{provider.shortName}</h3><p>{provider.feeModel}</p><b>コストシートを見る →</b>
+              <span>{provider.reviewedAt} 確認</span><h3>{provider.shortName}</h3><p>{provider.feeModel}</p><b>コストシートを見る →</b>
             </Link>
           ))}
         </div>
