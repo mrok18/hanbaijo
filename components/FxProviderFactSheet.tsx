@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import type { ReactNode } from 'react';
 import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import type { AffiliateOffer } from '@/lib/affiliates';
 import type { FxProvider } from '@/lib/fx-providers';
@@ -17,18 +18,21 @@ type RelatedSection = {
   articles: RelatedArticle[];
 };
 
-export default function FxProviderFactSheet({ provider, affiliateOffer, relatedArticles = [], relatedSections = [] }: {
+export default function FxProviderFactSheet({ provider, affiliateOffer, relatedArticles = [], relatedSections = [], pageTitle, details, reviewedAt = '2026-09-07' }: {
   provider: FxProvider;
   affiliateOffer?: AffiliateOffer;
   relatedArticles?: RelatedArticle[];
   relatedSections?: RelatedSection[];
+  pageTitle?: ReactNode;
+  details?: ReactNode;
+  reviewedAt?: string;
 }) {
   return (
     <div className="provider-page fx-provider-page">
       <section className="provider-hero provider-compact-hero fx-provider-hero">
         <div>
           <p className="page-kicker">FX COST FACT SHEET</p>
-          <h1>{provider.name}</h1>
+          <h1>{pageTitle ?? provider.name}</h1>
           <p className="provider-headline">{provider.headline}</p>
           <p className="lede">{provider.summary}</p>
           <div className="hero-actions">
@@ -38,7 +42,7 @@ export default function FxProviderFactSheet({ provider, affiliateOffer, relatedA
         </div>
         <aside className="provider-stamp">
           <span>PUBLISHED DATA</span>
-          <strong>公式情報を 2026-09-07 確認</strong>
+          <strong>公式情報を {reviewedAt} 確認</strong>
           <dl>
             <div><dt>最低数量</dt><dd>{provider.minTrade}</dd></div>
             <div><dt>比較の焦点</dt><dd>{provider.costFocus}</dd></div>
@@ -70,6 +74,8 @@ export default function FxProviderFactSheet({ provider, affiliateOffer, relatedA
           <p>スプレッドとスワップは変動します。注文直前の取引画面と契約締結前交付書面を優先してください。</p>
         </div>
       </section>
+
+      {details}
 
       <section className="provider-source" aria-label="公式情報へのリンク">
         <div><span>PRIMARY SOURCES</span><strong>{provider.name} 公式情報</strong></div>
