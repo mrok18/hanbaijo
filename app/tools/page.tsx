@@ -6,6 +6,7 @@ export const metadata = {
 };
 
 const tools = [
+  { href: '/tools/crypto-collateral-ltv-calculator', tag: 'CRYPTO / RISK', title: '暗号資産担保ローンLTV計算機', description: '担保評価額、借入額、価格下落率から、下落後のLTVと警告水準までの余力を概算します。', scope: '担保余力を下落率別に試算' },
   { href: '/tools/fx-tax-calculator', tag: 'FX / TAX', title: '国内FX税金計算シミュレーター', description: '年間確定損益、必要経費、通算損失、繰越損失から、課税所得と所得税・復興特別所得税・地方税を概算します。', scope: '2026年分・20.315％' },
   { href: '/tools/fx-spread-annual-cost-calculator', tag: 'FX / ANNUAL COST', title: 'FXスプレッド年間コスト比較計算機', description: '2つのスプレッド、数量、1日の往復回数、取引日数から、1回・月間・年間のコストと差額を計算します。', scope: '0.1銭差を年間換算' },
   { href: '/tools/dmm-cfd-22-products-calculator', tag: 'CFD / DMM 22 PRODUCTS', title: 'DMM CFD 22銘柄計算機', description: 'Index 8銘柄とCommodity 14銘柄の価格・Lot数・円換算レートから、必要証拠金、1ポイント・1ティック損益、資金使用率を計算します。', scope: '全22銘柄・通貨換算対応' },
