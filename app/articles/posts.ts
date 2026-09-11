@@ -232,6 +232,7 @@ export const POSTS = [
   { slug: 'spread-toha', category: '基礎知識', title: 'スプレッドとは何か — 「手数料無料」の正体', desc: '表示されない手数料がどこに含まれているかを、数字で追う。' },
   { slug: 'spread-hirogaru-toki', category: 'データの見方', title: 'スプレッドが広がるのはどんなときか', desc: '早朝・週末・相場急変時に何が起きているか。' },
   { slug: 'cost-no-uchiwake', category: '暗号資産', title: '暗号資産を買うときにかかるコストの全体像', desc: 'スプレッド以外に、入金・売買・送金・出金でいくらかかるのか。' },
+  { slug: 'crypto-transfer-fee-network', category: '暗号資産', title: '暗号資産の送金手数料とネットワーク｜確認項目を整理', desc: '出金手数料とネットワーク手数料を分け、通貨・ネットワーク・反映条件を送金前に確認する。' },
   { slug: 'kounyu-tejun', category: '実務', title: 'コストを抑えて買うための手順', desc: '同じ金額を買うのに、どこで差がつくのかを順に確認する。' },
   { slug: 'tesuryo-hyoki', category: '基礎知識', title: '「手数料無料」はなぜ表示できるのか', desc: '表示として誤りではないが、負担がないという意味でもない。その構造。' },
   { slug: 'ita-yomikata', category: '実務', title: '取引所の「板」の読み方', desc: '指値と成行、そしてスプレッドが決まる仕組み。' },
