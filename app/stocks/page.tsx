@@ -16,19 +16,20 @@ export default function StocksPage() {
           <h1>「手数料無料」でも、<br /><em>差が出る場所がある。</em></h1>
           <p className="lede">
             株式の負担は、売買手数料だけでは決まりません。板の売値と買値、米国株の為替、
-            信用取引の金利まで分け、同じ売買金額で比べます。
+            信用取引の金利まで分け、同じ売買金額で比べます。まず国内株4社を比べ、
+            気になる条件を自分の売買金額で試算できます。
           </p>
           <div className="hero-actions">
-            <Link className="button primary" href="/tools/cost-calculator">株式コストを試算</Link>
-            <Link className="button secondary" href="/articles/stock-round-trip-cost">計算方法を読む</Link>
+            <Link className="button primary" href="/stocks/domestic-fee-comparison">国内株4社を比較</Link>
+            <Link className="button secondary" href="/tools/cost-calculator">自分の金額で計算</Link>
           </div>
         </div>
         <aside className="fx-status-panel stocks-status-panel">
           <span>DATA STATUS</span>
           <strong>比較方法を公開中</strong>
           <p>
-            現在は公式制度と計算方法を先行公開しています。証券会社ごとの料金は更新日と適用条件を確認し、
-            比較表に必要な項目がそろった段階で追加します。
+            国内株は4社比較を公開しています。比較表で全体を見た後、会社別シートで
+            対象外取引や追加費用まで確認できます。
           </p>
           <dl>
             <div><dt>国内株</dt><dd>4社比較を公開</dd></div>
@@ -36,6 +37,31 @@ export default function StocksPage() {
             <div><dt>会社別</dt><dd>4社のシートを公開</dd></div>
           </dl>
         </aside>
+      </section>
+
+      <section className="home-paths" aria-labelledby="stock-paths-title">
+        <div className="section-heading compact">
+          <div>
+            <p className="section-index">CHOOSE YOUR NEXT STEP</p>
+            <h2 id="stock-paths-title">最短で知りたい答えへ</h2>
+            <p>比較、試算、計算方法の順で、今必要なページから始められます。</p>
+          </div>
+          <Link href="#stock-provider-directory">証券会社別に見る →</Link>
+        </div>
+        <div className="home-path-grid stocks-path-grid">
+          <Link className="home-path-card primary-path" href="/stocks/domestic-fee-comparison">
+            <span>01 / COMPARE</span><strong>国内株4社を比較する</strong>
+            <p>同じ売買例で料金体系をそろえ、無料条件や日をまたぐ場合の違いまで確認します。</p><b>比較表を見る →</b>
+          </Link>
+          <Link className="home-path-card" href="/tools/cost-calculator">
+            <span>02 / CALCULATE</span><strong>自分の金額で計算する</strong>
+            <p>売買金額、手数料、価格差を入力し、買付から売却までの往復コストを試算します。</p><b>無料計算機を使う →</b>
+          </Link>
+          <Link className="home-path-card" href="/articles/stock-round-trip-cost">
+            <span>03 / LEARN</span><strong>計算方法を理解する</strong>
+            <p>売買手数料と板の価格差を、二重計上せず1つの式へまとめる方法を解説します。</p><b>計算式を読む →</b>
+          </Link>
+        </div>
       </section>
 
       <section className="fx-section">
