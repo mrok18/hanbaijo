@@ -1,11 +1,13 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import FxSwapBreakEvenCalculator from './FxSwapBreakEvenCalculator';
 import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'FXスワップ損益分岐日数計算機｜スプレッド回収まで何日？',
   description: '取引通貨数、スプレッド、手数料、1万通貨あたりのスワップと付与日数から、初期コスト回収日数と差引損益を無料計算します。',
+  alternates: { canonical: '/tools/fx-swap-break-even-calculator' },
 };
 
 export default function Page() {

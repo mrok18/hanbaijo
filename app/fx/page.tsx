@@ -1,11 +1,13 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 import { FX_PROVIDER_LIST } from '@/lib/fx-providers';
 
-export const metadata = {
-  title: 'FXの取引コスト比較｜スプレッド・スワップ・約定を読む',
-  description: 'FX会社をスプレッドだけで選ばないために、公称値・実測値・スワップ・約定条件を分けて比較します。',
+export const metadata: Metadata = {
+  title: 'FX会社比較｜スプレッド・スワップ・取引コスト【2026年】',
+  description: 'FX会社をスプレッドだけで選ばないために、年間コスト、スワップ、最小取引単位、ロスカットを共通条件で比較。無料計算機で自分の数量に換算できます。',
+  alternates: { canonical: '/fx' },
 };
 
 const REVIEW_TARGETS = [
@@ -52,6 +54,22 @@ export default function FxPage() {
             <div><dt>試算値</dt><dd>計算機を公開中</dd></div>
           </dl>
         </aside>
+      </section>
+
+      <section className="fx-section" aria-labelledby="fx-calculator-shortcuts">
+        <div className="section-heading">
+          <div>
+            <p className="section-index">START HERE / FREE CALCULATORS</p>
+            <h2 id="fx-calculator-shortcuts">目的に合う数字を、すぐ計算する</h2>
+            <p>入力した条件は端末内で計算します。口座申込みや個人情報の入力は不要です。</p>
+          </div>
+        </div>
+        <div className="provider-directory comparison-guide-directory">
+          <Link href="/tools/fx-spread-annual-cost-calculator"><span>ANNUAL SPREAD COST</span><h3>年間のスプレッド負担</h3><p>数量・1日の取引回数・取引日数から円換算</p><b>年間コストを試算 →</b></Link>
+          <Link href="/tools/fx-swap-break-even-calculator"><span>SWAP BREAK-EVEN</span><h3>スワップの回収日数</h3><p>スプレッドと手数料を何日で回収できるか計算</p><b>回収日数を試算 →</b></Link>
+          <Link href="/tools/fx-position-size-calculator"><span>POSITION SIZE</span><h3>損失上限から取引数量</h3><p>資金・許容損失率・損切り幅からLotを計算</p><b>適正数量を試算 →</b></Link>
+          <Link href="/tools/fx-tax-calculator"><span>FX TAX</span><h3>利益から税額の目安</h3><p>利益と必要経費から課税対象額を整理</p><b>税額を試算 →</b></Link>
+        </div>
       </section>
 
       <section className="fx-section">
@@ -123,6 +141,10 @@ export default function FxPage() {
           </div>
         </div>
         <div className="provider-directory comparison-guide-directory">
+          <Link href="/fx/usdjpy-spread-comparison"><span>USD/JPY SPREAD</span><h3>米ドル円スプレッドを比較</h3><p>時間帯・数量条件・1万通貨コスト</p><b>10社比較を見る →</b></Link>
+          <Link href="/fx/swap-calendar-comparison"><span>SWAP CALENDAR</span><h3>スワップの表示ルールを比較</h3><p>表示単位・付与日数・実現タイミング</p><b>10社比較を見る →</b></Link>
+          <Link href="/fx/minimum-trade-unit-comparison"><span>TRADE SIZE</span><h3>最低取引単位を比較</h3><p>1通貨・1,000通貨を必要資金へ換算</p><b>9社比較を見る →</b></Link>
+          <Link href="/fx/losscut-comparison"><span>RISK RULE</span><h3>ロスカット基準を比較</h3><p>維持率・使用率・追証を分けて確認</p><b>9社比較を見る →</b></Link>
           <Link href="/articles/fx-etax-input-guide"><span>E-TAX INPUT</span><h3>FXの確定申告を入力順に確認</h3><p>先物取引・経費・繰越損失・送信</p><b>e-Tax準備を見る →</b></Link>
           <Link href="/articles/fx-loss-carryforward-filing"><span>LOSS CARRYFORWARD</span><h3>FX損失を3年間繰り越す</h3><p>損失年・無取引年・利益年の連続申告</p><b>必要書類と手順を見る →</b></Link>
           <Link href="/articles/domestic-vs-overseas-fx-tax"><span>DOMESTIC VS OVERSEAS</span><h3>国内FXと海外FXの税務を比較</h3><p>申告分離課税・総合課税・登録確認</p><b>税金と注意点を見る →</b></Link>
@@ -144,10 +166,6 @@ export default function FxPage() {
           <Link href="/articles/fpo-fx-practice-checklist"><span>PRACTICE CHECKLIST</span><h3>教材の後に実践前チェック</h3><p>数量・コスト・損切り・記録</p><b>チェックリストを見る →</b></Link>
           <Link href="/articles/fx-master-guide-study-order"><span>FX STUDY ORDER</span><h3>初心者の学習順を整理</h3><p>仕組み・注文・資金管理から5段階で進む</p><b>学習ロードマップを見る →</b></Link>
           <Link href="/fx/ablenet-vps"><span>AUTO TRADING VPS</span><h3>VPSの月額総コストを確認</h3><p>本体料金・RDS・必要メモリを分けて比較</p><b>ABLENET VPSを見る →</b></Link>
-          <Link href="/fx/usdjpy-spread-comparison"><span>USD/JPY SPREAD</span><h3>米ドル円スプレッドを比較</h3><p>時間帯・数量条件・1万通貨コスト</p><b>10社比較を見る →</b></Link>
-          <Link href="/fx/swap-calendar-comparison"><span>SWAP CALENDAR</span><h3>スワップの表示ルールを比較</h3><p>表示単位・付与日数・実現タイミング</p><b>10社比較を見る →</b></Link>
-          <Link href="/fx/minimum-trade-unit-comparison"><span>TRADE SIZE</span><h3>最低取引単位を比較</h3><p>1通貨・1,000通貨を必要資金へ換算</p><b>9社比較を見る →</b></Link>
-          <Link href="/fx/losscut-comparison"><span>RISK RULE</span><h3>ロスカット基準を比較</h3><p>維持率・使用率・追証を分けて確認</p><b>9社比較を見る →</b></Link>
         </div>
       </section>
 
