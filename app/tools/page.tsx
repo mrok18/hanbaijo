@@ -39,7 +39,32 @@ export default function Page() {
   return <div className="fx-page">
     <section className="fx-hero"><div><p className="page-kicker">FINANCIAL COST TOOLKIT</p><h1>取引条件を、<br /><em>円の負担へ。</em></h1><p className="lede">広告の見出しだけでは分からないコストを、取引金額・数量・保有条件に合わせて試算します。入力値はブラウザ内で計算され、サーバーへ保存しません。</p><div className="hero-actions"><Link className="button primary" href="/tools/cost-calculator">汎用計算機を開く</Link><Link className="button secondary" href="/method">算出方法を確認</Link></div></div><aside className="fx-status-panel"><span>TOOL STATUS</span><strong>27種類を公開中</strong><p>汎用計算に加え、公式の取引単位・料金体系を反映したサービス別計算機を順次追加しています。</p><dl><div><dt>対象</dt><dd>FX・CFD・株・先物・暗号資産</dd></div><div><dt>入力保存</dt><dd>なし</dd></div><div><dt>利用料</dt><dd>無料</dd></div></dl></aside></section>
 
-    <section className="fx-section"><div className="section-heading"><div><p className="section-index">01 / CALCULATORS</p><h2>目的から計算機を選ぶ</h2><p>商品横断の概算と、サービス固有条件の計算を分けています。</p></div></div><div className="affiliate-grid">{tools.map((tool, index) => <article className="affiliate-card" key={tool.href}><div className="affiliate-card-head"><span>TOOL {String(index + 1).padStart(2, '0')}</span><b>{tool.scope}</b></div><p className="affiliate-category">{tool.tag}</p><h3>{tool.title}</h3><p>{tool.description}</p><Link href={tool.href}>計算する →</Link></article>)}</div></section>
+    <section className="home-paths" aria-labelledby="tool-paths-title">
+      <div className="section-heading compact">
+        <div>
+          <p className="section-index">CHOOSE YOUR NEXT STEP</p>
+          <h2 id="tool-paths-title">まずはここから</h2>
+          <p>計算したい対象に合わせて、入口を選べます。</p>
+        </div>
+        <Link href="#calculator-list">全計算機を見る →</Link>
+      </div>
+      <div className="home-path-grid stocks-path-grid">
+        <Link className="home-path-card primary-path" href="/tools/cost-calculator">
+          <span>01 / ALL MARKETS</span><strong>複数商品をまとめて計算</strong>
+          <p>スプレッド、手数料、保有コスト、為替コストを一つの円金額へまとめます。</p><b>汎用計算機を使う →</b>
+        </Link>
+        <Link className="home-path-card" href="/tools/dmm-cfd-22-products-calculator">
+          <span>02 / PRODUCT</span><strong>商品別の条件で計算</strong>
+          <p>DMM CFD 22銘柄など、取引単位や証拠金率を反映して試算します。</p><b>専用計算機を選ぶ →</b>
+        </Link>
+        <Link className="home-path-card" href="/tools/nikkei225-position-size-calculator">
+          <span>03 / RISK &amp; TAX</span><strong>リスクと税金を確認</strong>
+          <p>許容損失から数量を逆算し、FXの年間損益や税額も概算できます。</p><b>リスク計算を見る →</b>
+        </Link>
+      </div>
+    </section>
+
+    <section className="fx-section" id="calculator-list"><div className="section-heading"><div><p className="section-index">01 / CALCULATORS</p><h2>目的から計算機を選ぶ</h2><p>商品横断の概算と、サービス固有条件の計算を分けています。</p></div></div><div className="affiliate-grid">{tools.map((tool, index) => <article className="affiliate-card" key={tool.href}><div className="affiliate-card-head"><span>TOOL {String(index + 1).padStart(2, '0')}</span><b>{tool.scope}</b></div><p className="affiliate-category">{tool.tag}</p><h3>{tool.title}</h3><p>{tool.description}</p><Link href={tool.href}>計算する →</Link></article>)}</div></section>
 
     <section className="calculator-caution"><div><span>CALCULATION POLICY</span><h2>結果は概算値です。</h2></div><div><p>料金や取引単位は確認日現在の公式情報を基準にしています。スプレッド、証拠金、調整額などは相場や日時により変わる場合があります。</p><p>取引前には必ず各社の取引画面、契約締結前交付書面、公式料金表を確認してください。計算結果は将来の利益や損失を保証するものではありません。</p></div></section>
   </div>;
