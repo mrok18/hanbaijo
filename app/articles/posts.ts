@@ -1,4 +1,5 @@
 export const POSTS = [
+  { slug: 'crypto-collateral-loan-tax', category: '暗号資産・税金', title: '暗号資産担保ローンの税金｜借入・返済・担保売却の確認ポイント', desc: '暗号資産担保ローンの借入・返済・追加担保・強制決済を税務記録の観点から整理し、公式資料と税制改正の確認方法を案内する。' },
   { slug: 'crypto-collateral-loan-risk-checklist', category: '暗号資産・ローン', title: '暗号資産担保ローンとは？BTC・ETHを担保に借りる前の確認項目', desc: '暗号資産を売却せず借りる仕組みを、担保掛目、金利、追加担保、強制決済、税務と事業者リスクから整理する。' },
   { slug: 'dmm-fx-funding-transfer', category: 'FX・DMM FX', title: 'DMM FXの入金方法と証拠金振替｜5,000円・出金・株券担保', desc: 'クイック入金・振込入金、最低額、反映時間、出金、DMM 株からの株券担保振替を整理する。' },
   { slug: 'dmm-fx-trading-hours-maintenance', category: 'FX・DMM FX', title: 'DMM FXの取引時間｜夏時間・冬時間・メンテナンスと注文の扱い', desc: '夏時間・冬時間の取引時間、土曜メンテナンス、営業日切替、予約注文と即時注文の扱いを整理する。' },

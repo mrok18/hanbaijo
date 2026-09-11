@@ -54,7 +54,7 @@ export default function Articles() {
   const featuredSlugs = [
     'financial-product-cost-comparison',
     'small-budget-investing-costs',
-    'crypto-collateral-loan-risk-checklist',
+    'crypto-collateral-loan-tax',
     'jfx-before-account-opening-checklist',
     'minna-fx-account-opening-flow',
   ];

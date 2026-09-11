@@ -86,6 +86,7 @@ export default function Page() {
         <li>改正金商法の施行日と対象銘柄の公表を確認する</li>
         <li>適用年の国税庁資料が出た段階で申告方法を更新する</li>
       </ol>
+      <p><Link href="/articles/crypto-collateral-loan-tax">暗号資産担保ローンの借入・返済と税務記録を確認する →</Link></p>
 
       <h2>誤解しやすい点</h2>
       <ul>
