@@ -88,6 +88,7 @@ export default function Page() {
       <p><Link href="/articles/dmm-kabu-us-stock-fee">DMM 株の米国株手数料を詳しく見る →</Link></p>
       <p><Link href="/articles/matsui-us-stock-fx-fee">松井証券の事前両替と円貨決済の違いを見る →</Link></p>
       <p><Link href="/articles/us-stock-fx-cost">米国株の為替コスト計算を確認する →</Link></p>
+      <p><Link href="/articles/foreign-stock-trading-fees">外国株式の手数料を米国・中国・ASEAN市場で比較する →</Link></p>
       <p><Link href="/stocks">株式コスト比較のトップへ →</Link></p>
     </article>
   );
