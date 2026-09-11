@@ -46,6 +46,31 @@ export default function CfdPage() {
         </aside>
       </section>
 
+      <section className="home-paths" aria-labelledby="cfd-paths-title">
+        <div className="section-heading compact">
+          <div>
+            <p className="section-index">CHOOSE YOUR NEXT STEP</p>
+            <h2 id="cfd-paths-title">知りたいコストから始める</h2>
+            <p>商品を比べる、必要証拠金を計算する、保有中の負担を確認する、の順に進めます。</p>
+          </div>
+          <Link href="/method">表示ルールを確認 →</Link>
+        </div>
+        <div className="home-path-grid cfd-path-grid">
+          <Link className="home-path-card primary-path" href="/articles/dmm-cfd-index-vs-commodity">
+            <span>01 / COMPARE</span><strong>CFDの商品を比較する</strong>
+            <p>株価指数と商品を、取引単位・レバレッジ・円換算の同じ軸で見比べます。</p><b>商品比較を見る →</b>
+          </Link>
+          <Link className="home-path-card" href="/tools/dmm-cfd-22-products-calculator">
+            <span>02 / CALCULATE</span><strong>必要証拠金を計算する</strong>
+            <p>DMM CFDの22銘柄から選び、価格・数量・証拠金率を入力して概算します。</p><b>計算機を使う →</b>
+          </Link>
+          <Link className="home-path-card" href="/articles/dmm-cfd-total-cost">
+            <span>03 / HOLDING COST</span><strong>保有中の負担を確認する</strong>
+            <p>手数料0円の外側にあるスプレッド、調整額、約定差を分けて確認します。</p><b>総コストを読む →</b>
+          </Link>
+        </div>
+      </section>
+
       <section className="fx-section">
         <div className="section-heading">
           <div>
