@@ -3,6 +3,7 @@ import Link from 'next/link';
 export const metadata = {
   title: '先物の取引コスト比較｜手数料・呼値・証拠金・限月を読む',
   description: '株価指数先物を中心に、手数料、1ティックの損益、証拠金、SQと限月を分けて整理します。',
+  alternates: { canonical: '/futures' },
 };
 
 export default function FuturesPage() {
@@ -34,6 +35,31 @@ export default function FuturesPage() {
             <div><dt>会社比較</dt><dd>公式条件を調査中</dd></div>
           </dl>
         </aside>
+      </section>
+
+      <section className="home-paths" aria-labelledby="futures-paths-title">
+        <div className="section-heading compact">
+          <div>
+            <p className="section-index">CHOOSE YOUR NEXT STEP</p>
+            <h2 id="futures-paths-title">知りたい条件から始める</h2>
+            <p>会社の手数料を比べる、値幅から損益を計算する、限月とSQを確認する、の順に進めます。</p>
+          </div>
+          <Link href="/method">表示ルールを確認 →</Link>
+        </div>
+        <div className="home-path-grid futures-path-grid">
+          <Link className="home-path-card primary-path" href="/futures/nikkei225-fee-comparison">
+            <span>01 / COMPARE</span><strong>先物2社の手数料を比較する</strong>
+            <p>松井証券と楽天証券の片道・往復手数料を、同じ商品区分で確認します。</p><b>比較表を見る →</b>
+          </Link>
+          <Link className="home-path-card" href="/tools/matsui-futures-cost-calculator">
+            <span>02 / CALCULATE</span><strong>値幅と枚数から損益を計算する</strong>
+            <p>ラージ・mini・マイクロを選び、1ティック損益と手数料を試算します。</p><b>計算機を使う →</b>
+          </Link>
+          <Link className="home-path-card" href="/articles/nikkei225-futures-sq-settlement">
+            <span>03 / CONTRACT</span><strong>限月とSQの流れを確認する</strong>
+            <p>取引最終日からSQ決済まで、いつ建玉を整理するかを時系列で確認します。</p><b>決済ルールを読む →</b>
+          </Link>
+        </div>
       </section>
 
       <section className="fx-section">

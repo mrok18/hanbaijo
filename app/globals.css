@@ -405,6 +405,7 @@ article li + li { margin-top: 8px; }
 .stocks-page, .futures-page { font-size: 16px; }
 .stocks-path-grid { grid-template-columns: repeat(3, 1fr); }
 .cfd-path-grid { grid-template-columns: repeat(3, 1fr); }
+.futures-path-grid { grid-template-columns: repeat(3, 1fr); }
 .fx-hero { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(350px, .88fr); align-items: center; gap: clamp(45px, 7vw, 90px); min-height: 570px; padding: 45px 0 60px; border-bottom: 1px solid var(--line); }
 .fx-hero .page-kicker { margin: 0 0 20px; }
 .fx-hero h1 { margin: 0; font-size: clamp(45px, 6vw, 76px); line-height: 1.14; letter-spacing: -.055em; }
