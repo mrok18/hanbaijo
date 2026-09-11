@@ -238,6 +238,7 @@ export const POSTS = [
   { slug: 'crypto-tag-memo-missing', category: '暗号資産', title: '暗号資産のタグ・メモを忘れた｜入金反映前に確認すること', desc: 'XRPやATOMなどでタグ・メモを忘れた、間違えたときの確認手順と、サポートへ伝える情報を整理する。' },
   { slug: 'crypto-minimum-deposit', category: '暗号資産', title: '暗号資産の最低入金額｜少額送金が反映されない理由と確認方法', desc: '最低入金額・最低入庫数量を下回ったときの扱いと、送金前に確認する項目を整理する。' },
   { slug: 'crypto-transfer-cancel', category: '暗号資産', title: '暗号資産の送金は取り消せる？完了前後の確認と対処', desc: '送金を取り消せる条件と、完了後に誤送金へ気づいた場合の対処を整理する。' },
+  { slug: 'rakuten-securities-domestic-stock-fees', category: '国内株・楽天証券', title: '楽天証券の日本株手数料は0円？ゼロコース・信用取引・確認方法', desc: '楽天証券の国内株手数料を3コースで比較し、現物・信用の無料条件と手数料コースの確認・変更方法を整理する。' },
   { slug: 'kounyu-tejun', category: '実務', title: 'コストを抑えて買うための手順', desc: '同じ金額を買うのに、どこで差がつくのかを順に確認する。' },
   { slug: 'tesuryo-hyoki', category: '基礎知識', title: '「手数料無料」はなぜ表示できるのか', desc: '表示として誤りではないが、負担がないという意味でもない。その構造。' },
   { slug: 'ita-yomikata', category: '実務', title: '取引所の「板」の読み方', desc: '指値と成行、そしてスプレッドが決まる仕組み。' },
