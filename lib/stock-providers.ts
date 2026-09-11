@@ -8,6 +8,7 @@ export interface StockProvider {
   slug: string;
   name: string;
   shortName: string;
+  reviewedAt: string;
   headline: string;
   summary: string;
   feeModel: string;
@@ -16,6 +17,7 @@ export interface StockProvider {
   facts: readonly StockProviderFact[];
   checks: readonly string[];
   sources: readonly { label: string; href: string }[];
+  faqs?: readonly { question: string; answer: string }[];
 }
 
 export const STOCK_PROVIDERS: Record<string, StockProvider> = {
@@ -23,6 +25,7 @@ export const STOCK_PROVIDERS: Record<string, StockProvider> = {
     slug: 'gmo-click',
     name: 'GMOクリック証券',
     shortName: 'GMOクリック証券',
+    reviewedAt: '2026-09-07',
     headline: '国内株の取引手数料は、約定代金にかかわらず0円。',
     summary: '現物・信用の通常インターネット取引を中心に、0円の対象外と信用取引の保有コストを分けて確認します。',
     feeModel: '約定代金にかかわらず0円',
@@ -41,24 +44,45 @@ export const STOCK_PROVIDERS: Record<string, StockProvider> = {
     slug: 'rakuten',
     name: '楽天証券',
     shortName: '楽天証券',
+    reviewedAt: '2026-09-11',
     headline: 'ゼロコースなら、国内株の現物・信用手数料は0円。',
     summary: '無料条件となるコース選択とSOR・Rクロスへの同意を含め、0円という数字の適用範囲を確認します。',
     feeModel: 'ゼロコースは約定代金にかかわらず0円',
     bestFor: 'SOR利用条件を理解したうえで、国内株の通常手数料を0円にしたい人',
     caution: 'ゼロコースの設定と、SOR（Rクロスを含む）の利用同意が必要です。IFA口座などは条件が異なります。',
     facts: [
-      { label: '現物取引', value: '0円', note: 'ゼロコース' },
-      { label: '信用取引', value: '0円', note: 'ゼロコース' },
-      { label: '適用条件', value: 'コース選択', note: 'SOR・Rクロスへの同意' },
-      { label: '対象金額', value: '制限なし', note: 'ゼロコースの通常取引' },
+      { label: '現物取引手数料', value: '0円', note: 'ゼロコース・約定代金にかかわらず' },
+      { label: '信用取引手数料', value: '0円', note: 'ゼロコース・約定代金にかかわらず' },
+      { label: 'ゼロコースの条件', value: 'SOR利用', note: 'Rクロスを含む利用同意が必要' },
+      { label: '信用の保有コスト', value: '別途発生', note: '金利・貸株料などは取引手数料に含まれない' },
     ],
-    checks: ['ゼロコースの選択状況', 'SOR・Rクロスの仕組みと利用同意', '単元未満株は別の取引条件を確認', '電話注文・IFA口座などは別条件'],
-    sources: [{ label: '現物取引手数料', href: 'https://www.rakuten-sec.co.jp/web/domestic/stock/commission.html' }, { label: '手数料一覧', href: 'https://www.rakuten-sec.co.jp/web/commission/' }],
+    checks: ['ゼロコースの選択状況', 'SOR・Rクロスの仕組みと利用同意', '信用取引の金利・貸株料などの保有コスト', '単元未満株・電話注文・IFA口座などの別条件'],
+    sources: [
+      { label: '現物取引手数料', href: 'https://www.rakuten-sec.co.jp/web/domestic/stock/commission.html' },
+      { label: '信用取引の手数料・金利・貸株料', href: 'https://www.rakuten-sec.co.jp/web/domestic/margin/commission.html' },
+      { label: 'SOR注文の基本ルール', href: 'https://www.rakuten-sec.co.jp/web/domestic/sor/rule/ground_rules.html' },
+      { label: '手数料一覧', href: 'https://www.rakuten-sec.co.jp/web/commission/' },
+    ],
+    faqs: [
+      {
+        question: '楽天証券の国内株手数料は本当に0円ですか？',
+        answer: 'ゼロコースを選ぶと、国内株の現物取引と信用取引の取引手数料は約定代金にかかわらず0円です。ゼロコースにはSOR（Rクロスを含む）の利用同意が必要です。',
+      },
+      {
+        question: '楽天証券の信用取引は、取引手数料以外も0円ですか？',
+        answer: 'いいえ。ゼロコースで取引手数料が0円でも、買方金利、貸株料、品貸料などの信用取引固有の費用は別に確認する必要があります。',
+      },
+      {
+        question: 'ゼロコースではSORとRクロスを使う必要がありますか？',
+        answer: '楽天証券の公式説明では、ゼロコースの設定にSOR（Rクロスを含む）の利用同意が必要です。Rクロスは現物取引のみが対象で、信用取引は対象外です。',
+      },
+    ],
   },
   matsui: {
     slug: 'matsui',
     name: '松井証券',
     shortName: '松井証券',
+    reviewedAt: '2026-09-07',
     headline: '1日の約定代金合計50万円までは、手数料0円。',
     summary: '1注文ごとではなく、現物と信用を合わせた1日の約定代金合計で決まるボックスレートを整理します。',
     feeModel: '1日の約定代金合計で決まる定額制',
@@ -77,6 +101,7 @@ export const STOCK_PROVIDERS: Record<string, StockProvider> = {
     slug: 'dmm-kabu',
     name: 'DMM 株',
     shortName: 'DMM 株',
+    reviewedAt: '2026-09-07',
     headline: '国内株現物は、1注文55円から880円。',
     summary: '1日の合計ではなく、1注文の約定代金に応じて決まる現物手数料と、信用・米国株の別条件を整理します。',
     feeModel: '1注文ごとの約定代金で決まる段階制',

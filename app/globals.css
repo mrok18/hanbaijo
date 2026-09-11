@@ -544,6 +544,10 @@ article li + li { margin-top: 8px; }
 .provider-source a { color: var(--ink); font-size: 13px; font-weight: 750; text-decoration: none; }
 .provider-source a:hover { color: var(--blue); }
 .provider-source-links { display: flex; gap: 10px 20px; flex-wrap: wrap; justify-content: flex-end; }
+.provider-faq-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 34px; border-top: 1px solid var(--line); }
+.provider-faq-list article { padding: 26px 0 28px; border-bottom: 1px solid var(--line); }
+.provider-faq-list h3 { margin: 0 0 10px; font-size: 18px; line-height: 1.5; }
+.provider-faq-list p { margin: 0; color: var(--ink-soft); font-size: 14px; line-height: 1.85; }
 .provider-offer { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(38px, 6vw, 75px); align-items: center; margin-top: 90px; }
 .provider-offer h2 { margin: 0 0 15px; font-size: clamp(27px, 3vw, 38px); }
 .provider-offer > div > p:not(.section-index) { color: var(--muted); font-size: 13px; }
@@ -743,6 +747,7 @@ article li + li { margin-top: 8px; }
   .provider-fact-grid h3 { margin-top: 34px; }
   .provider-source { align-items: flex-start; flex-direction: column; }
   .provider-source-links { justify-content: flex-start; }
+  .provider-faq-list { grid-template-columns: 1fr; }
   .provider-directory { grid-template-columns: 1fr; }
   .comparison-intro { padding-top: 50px; }
   .comparison-result-head { align-items: flex-start; flex-direction: column; }

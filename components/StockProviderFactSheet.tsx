@@ -3,13 +3,37 @@ import type { StockProvider } from '@/lib/stock-providers';
 import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import type { AffiliateOffer } from '@/lib/affiliates';
 
-export default function StockProviderFactSheet({ provider, relatedArticles = [], affiliateOffer }: { provider: StockProvider; relatedArticles?: { href: string; title: string; description: string }[]; affiliateOffer?: AffiliateOffer }) {
+type RelatedResource = {
+  href: string;
+  title: string;
+  description: string;
+  tag?: string;
+  linkLabel?: string;
+};
+
+export default function StockProviderFactSheet({ provider, relatedArticles = [], affiliateOffer }: { provider: StockProvider; relatedArticles?: RelatedResource[]; affiliateOffer?: AffiliateOffer }) {
+  const faqJsonLd = provider.faqs?.length ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: provider.faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+    })),
+  } : null;
+
   return (
     <div className="provider-page stock-provider-page">
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd).replace(/</g, '\\u003c') }}
+        />
+      )}
       <section className="provider-hero provider-compact-hero stock-provider-hero">
         <div>
           <p className="page-kicker">STOCK COST FACT SHEET</p>
-          <h1>{provider.name}</h1>
+          <h1>{provider.name}の国内株手数料と取引コスト</h1>
           <p className="provider-headline">{provider.headline}</p>
           <p className="lede">{provider.summary}</p>
           <div className="hero-actions">
@@ -19,7 +43,7 @@ export default function StockProviderFactSheet({ provider, relatedArticles = [],
         </div>
         <aside className="provider-stamp">
           <span>PUBLISHED DATA</span>
-          <strong>公式情報を 2026-09-07 確認</strong>
+          <strong>公式情報を {provider.reviewedAt} 確認</strong>
           <dl>
             <div><dt>料金体系</dt><dd>{provider.feeModel}</dd></div>
             <div><dt>広告リンク</dt><dd>{affiliateOffer ? '掲載あり・PR明示' : '掲載なし'}</dd></div>
@@ -59,6 +83,21 @@ export default function StockProviderFactSheet({ provider, relatedArticles = [],
         </div>
       </section>
 
+      {provider.faqs && provider.faqs.length > 0 && (
+        <section className="provider-section" aria-labelledby={`${provider.slug}-faq`}>
+          <p className="section-index">FAQ / COST CHECK</p>
+          <h2 id={`${provider.slug}-faq`}>{provider.name}の手数料でよくある確認</h2>
+          <div className="provider-faq-list">
+            {provider.faqs.map((faq) => (
+              <article key={faq.question}>
+                <h3>{faq.question}</h3>
+                <p>{faq.answer}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
+
       {affiliateOffer ? (
         <section className="article-affiliate" aria-label="関連する広告">
           <AffiliateOfferCard offer={affiliateOffer} />
@@ -77,7 +116,7 @@ export default function StockProviderFactSheet({ provider, relatedArticles = [],
           <h2 id={`${provider.slug}-related-guides`}>このサービスを検討する前に読む</h2>
           <div className="provider-directory">
             {relatedArticles.map((article) => (
-              <Link href={article.href} key={article.href}><span>GUIDE</span><h3>{article.title}</h3><p>{article.description}</p><b>記事を読む →</b></Link>
+              <Link href={article.href} key={article.href}><span>{article.tag ?? 'GUIDE'}</span><h3>{article.title}</h3><p>{article.description}</p><b>{article.linkLabel ?? '記事を読む →'}</b></Link>
             ))}
           </div>
         </section>
