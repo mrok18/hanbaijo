@@ -164,6 +164,7 @@ export default async function Home() {
           <p className="section-index inverse">FREE TOOL / ESTIMATED DATA</p>
           <h2 id="tool-promo-title">違う商品のコストを、<br />同じものさしで。</h2>
           <p>2社のスプレッドを数量・取引回数でそろえ、1回・月間・年間の差額を円換算します。</p>
+          <p><Link href="/tools/crypto-collateral-ltv-calculator">暗号資産担保ローンのLTVを試算する →</Link></p>
           <Link href="/tools/fx-spread-annual-cost-calculator">FX年間コスト比較計算機を使う →</Link>
         </div>
         <dl>
