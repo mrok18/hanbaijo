@@ -5,8 +5,19 @@ export const metadata = {
   description: '暗号資産担保ローンの仕組み、担保評価、金利、追加担保、強制決済、事業者リスクを中立的に整理します。',
 };
 
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: '暗号資産担保ローンは暗号資産の売却と同じですか？', acceptedAnswer: { '@type': 'Answer', text: '担保を預けて借入を受けるため、仕組みは売却と異なります。ただし返済や強制決済で暗号資産を売却する場合は、税務上の確認が必要です。' } },
+    { '@type': 'Question', name: '暗号資産担保ローンで価格が下落するとどうなりますか？', acceptedAnswer: { '@type': 'Answer', text: '担保評価額が下がるとLTVが上がり、追加担保や一部返済を求められたり、条件によって担保が強制決済されたりします。' } },
+    { '@type': 'Question', name: '担保掛目だけでサービスを比較してよいですか？', acceptedAnswer: { '@type': 'Answer', text: '担保掛目だけでなく、金利、手数料、警告水準、強制決済、返済期限、事業者の管理体制を同じ項目で比較します。' } },
+  ],
+};
+
 export default function Page() {
   return <article>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd).replace(/</g, '\\u003c') }} />
     <p className="page-kicker">CRYPTO / COLLATERAL LOAN</p>
     <h1>暗号資産担保ローンとは？<br />BTC・ETHを担保に借りる前の確認項目</h1>
     <p className="lede">暗号資産を売却せずに資金を借りられる商品でも、価格下落時には担保不足や強制決済が起こり得ます。金利だけでなく、担保評価・返済・事業者リスクを順番に確認します。</p>
