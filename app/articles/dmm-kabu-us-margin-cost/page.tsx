@@ -59,6 +59,7 @@ export default function Page() {
       <tr><td className="ex-name">追証</td><td>なし</td><td>最低預託率30％</td></tr>
       <tr><td className="ex-name">保有期限</td><td>期限なし</td><td>原則無期限、期日前倒しあり</td></tr>
     </tbody></table></div></div>
+    <p><Link href="/articles/us-stock-margin-fee-comparison">米国株信用の手数料を3社で比較 →</Link></p>
     <p><Link href="/articles/dmm-kabu-us-stock-fee">米国株現物の手数料・為替コスト →</Link></p>
 
     <h2>取引前チェックリスト</h2>
