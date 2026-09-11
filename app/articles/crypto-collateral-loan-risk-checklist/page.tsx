@@ -47,6 +47,7 @@ export default function Page() {
     <h2>当サイトでの比較方針</h2>
     <p>広告報酬の有無で順位を決めず、担保掛目・金利・警告水準・強制決済条件を同じ項目で並べます。個別サービスの条件は承認済み広告主の公式資料を確認したうえで、別ページに追加します。</p>
     <p><Link href="/crypto">暗号資産のスプレッド実測と関連ガイドを見る →</Link></p>
+    <p><Link href="/tools/crypto-collateral-ltv-calculator">担保評価額と下落率からLTVを試算する →</Link></p>
     <p><Link href="/articles/gmo-coin-trading-fees">暗号資産の売買手数料を確認する →</Link></p>
 
     <section className="article-sources" aria-labelledby="sources"><h2 id="sources">参照した公的資料</h2><ul>
