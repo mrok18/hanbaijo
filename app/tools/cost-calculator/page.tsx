@@ -5,11 +5,41 @@ import CostCalculator from './CostCalculator';
 export const metadata: Metadata = {
   title: '取引コスト計算機｜スプレッド・手数料・金利を円換算',
   description: '暗号資産、FX、CFD、株式、先物のスプレッド、手数料、保有コスト、為替コストを同じ条件で円換算できる無料計算機です。',
+  alternates: { canonical: '/tools/cost-calculator' },
 };
 
+const FAQS = [
+  {
+    question: '取引金額には、証拠金と実際の取引総額のどちらを入力しますか？',
+    answer: '実際の取引総額を入力します。レバレッジ取引でも、必要証拠金ではなく、数量と価格を掛けた想定元本を使うことでスプレッドや手数料を円換算できます。',
+  },
+  {
+    question: 'スプレッドは往復コストとして入力しますか？',
+    answer: 'この計算機のスプレッド欄には、買値と売値の差を取引金額に対する割合で入力します。買ってすぐ売る場合は、その価格差全体が概算の往復負担になります。',
+  },
+  {
+    question: '計算結果は実際の支払額と同じですか？',
+    answer: '概算値です。実際の約定価格、時間帯によるスプレッド変動、端数処理、口座区分、税金などは結果と異なる場合があります。取引前に各社の最新条件を確認してください。',
+  },
+] as const;
+
 export default function CostCalculatorPage() {
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: FAQS.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+    })),
+  };
+
   return (
     <div className="calculator-page">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd).replace(/</g, '\\u003c') }}
+      />
       <header className="calculator-intro">
         <p className="page-kicker">FREE COST CALCULATOR</p>
         <h1>取引コストを、<br /><em>ひとつの金額に。</em></h1>
@@ -23,6 +53,12 @@ export default function CostCalculatorPage() {
       </header>
 
       <CostCalculator />
+
+      <div className="comparison-actions" aria-label="用途別の計算と比較">
+        <Link className="button primary" href="/tools/fx-spread-annual-cost-calculator">FXの年間コスト差を計算</Link>
+        <Link className="button secondary" href="/tools/fx-swap-break-even-calculator">スワップの回収日数を計算</Link>
+        <Link className="button secondary" href="/stocks/domestic-fee-comparison">国内株4社の手数料を比較</Link>
+      </div>
 
       <nav className="calculator-proof" aria-label="取引コストの確認資料">
         <Link href="/articles/fx-spread-monthly-cost">FXの月間スプレッド早見表</Link>
@@ -62,6 +98,19 @@ export default function CostCalculatorPage() {
             この結果は将来の利益・損失を示すものではなく、投資判断を勧誘するものでもありません。
             算出区分と詳しい考え方は<Link href="/method">計測・算出方法</Link>で公開しています。
           </p>
+        </div>
+      </section>
+
+      <section className="calculator-explain" aria-labelledby="cost-calculator-faq">
+        <p className="section-index">FAQ / COST CALCULATOR</p>
+        <h2 id="cost-calculator-faq">取引コスト計算でよくある質問</h2>
+        <div className="provider-faq-list">
+          {FAQS.map((faq) => (
+            <article key={faq.question}>
+              <h3>{faq.question}</h3>
+              <p>{faq.answer}</p>
+            </article>
+          ))}
         </div>
       </section>
     </div>

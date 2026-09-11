@@ -649,6 +649,7 @@ article li + li { margin-top: 8px; }
 .calculator-result > p { margin: 15px 0 0; color: rgba(255, 255, 255, .42); font-size: 9.5px; }
 .calculator-explain { padding: 95px 0 0; }
 .calculator-explain h2 { margin: 0; font-size: clamp(26px, 3vw, 37px); }
+.calculator-explain .provider-faq-list { margin-top: 26px; }
 .explain-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 26px; }
 .explain-grid article { min-height: 210px; padding: 22px; border: 1px solid var(--line); border-radius: 14px; background: var(--paper); }
 .explain-grid article > b { color: var(--blue); font: 800 10px/1 ui-monospace, SFMono-Regular, Consolas, monospace; }
