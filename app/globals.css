@@ -347,12 +347,12 @@ article li + li { margin-top: 8px; }
 .article-index li > b { color: var(--line-strong); font-size: 17px; }
 .featured-articles { margin-top: 52px; padding: 28px; border: 1px solid var(--line); background: var(--paper-soft); }
 .featured-articles .section-heading { margin: 0 0 20px; }
-.featured-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+.featured-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
 .featured-card { min-height: 178px; padding: 18px; border: 1px solid var(--line); background: var(--paper); display: flex; flex-direction: column; }
 .featured-card > span { color: var(--signal-dark); font: 750 9.5px/1.4 ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing: .04em; }
-.featured-card > a { margin-top: 13px; color: var(--ink); font-size: 14px; line-height: 1.55; font-weight: 750; text-decoration: none; }
+.featured-card > a { margin-top: 13px; color: var(--ink); font-size: 16px; line-height: 1.55; font-weight: 750; text-decoration: none; }
 .featured-card > a:hover { color: var(--blue); }
-.featured-card > p { margin: auto 0 0; color: var(--muted); font-size: 12px; line-height: 1.65; }
+.featured-card > p { margin: auto 0 0; color: var(--muted); font-size: 13.5px; line-height: 1.65; }
 .article-directory-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; margin-top: 58px; }
 .article-directory-head h2 { margin: 4px 0 0; }
 .article-directory-head > span { color: var(--muted); font-size: 12px; }
