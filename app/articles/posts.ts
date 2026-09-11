@@ -173,6 +173,7 @@ export const POSTS = [
   { slug: 'fx-one-pip-value', category: 'FX・基礎計算', title: 'FXの1pipsはいくら？1,000通貨・1万通貨の損益早見表', desc: 'クロス円とドルストレートの1pipsを、取引数量と円換算レートから具体的に計算する。' },
   { slug: 'fx-position-size-calculation', category: 'FX・リスク管理', title: 'FXの適正ロット・取引数量の決め方｜許容損失から逆算', desc: '口座資金、許容損失率、損切り幅、1pipsの損益から、取引数量を通貨単位で逆算する。' },
   { slug: 'matsui-futures-normal-vs-day', category: '先物・松井証券', title: '松井証券の先物手数料｜通常と一日先物を往復比較', desc: '日経225先物・mini・マイクロの片道と往復手数料、1ティックに対する比率を比較する。' },
+  { slug: 'matsui-futures-fees', category: '先物・松井証券', title: '松井証券の先物手数料｜通常・一日先物の違いと往復コスト', desc: '日経225先物・mini・マイクロの手数料を通常先物と一日先物に分け、往復コストの計算方法を整理する。' },
   { slug: 'matsui-us-stock-trading-hours', category: '米国株・松井証券', title: '松井証券の米国株取引時間｜プレマーケットと23時間化予定', desc: '夏時間・冬時間のプレマーケットと通常取引時間、2026年12月予定の23時間化を時系列で整理する。' },
   { slug: 'matsui-us-stock-fx-fee', category: '米国株・松井証券', title: '松井証券の米国株は為替手数料0円？円貨決済25銭との違い', desc: '米ドルの事前両替0円と、円貨決済時の1ドル25銭を分け、取引金額ごとの負担を計算する。' },
   { slug: 'dmm-cfd-gold-vs-silver', category: 'CFD・DMM CFD', title: 'DMM CFDの金と銀｜1Lot・必要証拠金・金利調整額を比較', desc: '金1トロイオンス、銀10トロイオンスの取引単位と値動き・保有コストを比較する。' },
