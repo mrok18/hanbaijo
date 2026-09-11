@@ -240,6 +240,7 @@ export const POSTS = [
   { slug: 'crypto-transfer-cancel', category: '暗号資産', title: '暗号資産の送金は取り消せる？完了前後の確認と対処', desc: '送金を取り消せる条件と、完了後に誤送金へ気づいた場合の対処を整理する。' },
   { slug: 'rakuten-securities-domestic-stock-fees', category: '国内株・楽天証券', title: '楽天証券の日本株手数料は0円？ゼロコース・信用取引・確認方法', desc: '楽天証券の国内株手数料を3コースで比較し、現物・信用の無料条件と手数料コースの確認・変更方法を整理する。' },
   { slug: 'rakuten-fx-fees-total-cost', category: 'FX・楽天証券', title: '楽天証券FXの手数料は無料？スプレッド・スワップを円換算', desc: '楽天FXの取引手数料と実質コストを整理し、米ドル/円の時間帯・数量別スプレッドを円換算する。' },
+  { slug: 'us-stock-fee-comparison', category: '米国株・比較', title: '米国株の手数料を3社比較｜DMM 株・松井証券・楽天証券', desc: '3社の0.495％・上限22ドルの売買手数料と、円貨決済・事前両替の為替コストを比較する。' },
   { slug: 'kounyu-tejun', category: '実務', title: 'コストを抑えて買うための手順', desc: '同じ金額を買うのに、どこで差がつくのかを順に確認する。' },
   { slug: 'tesuryo-hyoki', category: '基礎知識', title: '「手数料無料」はなぜ表示できるのか', desc: '表示として誤りではないが、負担がないという意味でもない。その構造。' },
   { slug: 'ita-yomikata', category: '実務', title: '取引所の「板」の読み方', desc: '指値と成行、そしてスプレッドが決まる仕組み。' },

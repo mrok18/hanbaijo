@@ -28,12 +28,12 @@ export default function StocksPage() {
           <span>DATA STATUS</span>
           <strong>比較方法を公開中</strong>
           <p>
-            国内株は4社比較を公開しています。比較表で全体を見た後、会社別シートで
-            対象外取引や追加費用まで確認できます。
+            国内株は4社、米国株は3社の比較を公開しています。比較表で全体を見た後、
+            会社別シートや解説記事で対象外取引、為替、追加費用まで確認できます。
           </p>
           <dl>
             <div><dt>国内株</dt><dd>4社比較を公開</dd></div>
-            <div><dt>米国株</dt><dd>手数料・為替を公開</dd></div>
+            <div><dt>米国株</dt><dd>3社比較を公開</dd></div>
             <div><dt>会社別</dt><dd>4社のシートを公開</dd></div>
           </dl>
         </aside>
@@ -119,6 +119,7 @@ export default function StocksPage() {
         </div></div>
         <div className="affiliate-grid">
           <article className="affiliate-card"><div className="affiliate-card-head"><span>COMPARE</span><b>2026-09-11確認</b></div><p className="affiliate-category">DOMESTIC STOCK FEES</p><h3>国内株4社の手数料</h3><p>GMOクリック証券、楽天証券、松井証券、DMM 株を同じ売買例で比較します。</p><Link href="/stocks/domestic-fee-comparison">比較表を見る →</Link></article>
+          <article className="affiliate-card"><div className="affiliate-card-head"><span>COMPARE</span><b>2026-09-12確認</b></div><p className="affiliate-category">US STOCK FEES</p><h3>米国株3社の手数料</h3><p>DMM 株、松井証券、楽天証券を、売買手数料と決済方法別の為替コストで比較します。</p><Link href="/articles/us-stock-fee-comparison">比較表を見る →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>GUIDE</span><b>国内株</b></div><p className="affiliate-category">ROUND-TRIP COST</p><h3>往復コストの計算</h3><p>買付と売却の手数料、板の価格差を1つの式で整理します。</p><Link href="/articles/stock-round-trip-cost">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>GUIDE</span><b>米国株</b></div><p className="affiliate-category">FX CONVERSION</p><h3>為替コストの計算</h3><p>1ドルあたりの為替コストを、購入金額全体の円負担へ直します。</p><Link href="/articles/us-stock-fx-cost">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>GUIDE</span><b>松井証券</b></div><p className="affiliate-category">ACCOUNT TYPES</p><h3>FX専用口座と総合口座</h3><p>FXだけ使う場合と、株・NISA・先物へ広げる場合の入口を整理します。</p><Link href="/articles/matsui-account-types">記事を読む →</Link></article>
