@@ -30,6 +30,7 @@ export default function Page() {
       <p className="page-kicker">MATSUI ACCOUNT GUIDE</p>
       <h1>松井証券のFX専用口座と総合口座は、何が違う？</h1>
       <p className="lede">松井証券の口座開設では、総合口座とFX専用口座を選べます。FXだけを使うのか、今後は株式・投資信託・先物なども扱うのかで、最初の入口が変わります。</p>
+      <div className="callout"><strong>結論：FXだけなら専用口座、株・NISAも使うなら総合口座</strong><p>FX専用口座ではFXのみを取引できます。他の商品を始める場合は、総合口座への切替と商品ごとの追加申込が必要です。</p></div>
 
       <h2>取引できる商品の範囲が違う</h2>
       <div className="data-panel"><div className="table-scroll">
