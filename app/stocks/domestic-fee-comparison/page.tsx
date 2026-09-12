@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: '国内株式の手数料を4社比較｜松井証券・楽天・GMO・DMM【2026年】',
-  description: '松井証券の国内株手数料を楽天証券、GMOクリック証券、DMM 株と比較。10万円・50万円・100万円の同日往復と別日売却で、ボックスレートと0円条件の違いを確認できます。',
+  title: '国内株式の売買手数料を4社比較｜松井証券・楽天・GMO・DMM【2026年】',
+  description: '国内株式の売買手数料を、松井証券、楽天証券、GMOクリック証券、DMM 株で比較。10万円・50万円・100万円の同日往復と別日売却で、ボックスレートと0円条件の違いを確認できます。',
   alternates: { canonical: '/stocks/domestic-fee-comparison' },
 };
 
@@ -112,7 +112,7 @@ export default function Page() {
       <header className="comparison-intro">
         <div>
           <p className="page-kicker">DOMESTIC STOCK / PUBLISHED DATA</p>
-          <h1>松井証券・楽天・GMO・DMMの<br /><em>国内株手数料を4社比較。</em></h1>
+          <h1>松井証券・楽天・GMO・DMMの<br /><em>国内株式の売買手数料を4社比較。</em></h1>
           <p className="lede">10万円・50万円・100万円で買い、同じ金額で売る例にそろえました。料金体系が「1注文ごと」か「1日定額」かで、取引日による差も確認します。</p>
         </div>
         <aside>
