@@ -145,6 +145,7 @@ export default function FxPage() {
           <Link href="/fx/swap-calendar-comparison"><span>SWAP CALENDAR</span><h3>スワップの表示ルールを比較</h3><p>表示単位・付与日数・実現タイミング</p><b>10社比較を見る →</b></Link>
           <Link href="/fx/minimum-trade-unit-comparison"><span>TRADE SIZE</span><h3>最低取引単位を比較</h3><p>1通貨・1,000通貨を必要資金へ換算</p><b>9社比較を見る →</b></Link>
           <Link href="/fx/losscut-comparison"><span>RISK RULE</span><h3>ロスカット基準を比較</h3><p>維持率・使用率・追証を分けて確認</p><b>9社比較を見る →</b></Link>
+          <Link href="/articles/rakuten-fx-fees-total-cost"><span>RAKUTEN FX FEES</span><h3>楽天証券FXの手数料を確認</h3><p>無料の範囲・0.2銭の円換算・スワップ</p><b>総コストを見る →</b></Link>
           <Link href="/articles/fx-etax-input-guide"><span>E-TAX INPUT</span><h3>FXの確定申告を入力順に確認</h3><p>先物取引・経費・繰越損失・送信</p><b>e-Tax準備を見る →</b></Link>
           <Link href="/articles/fx-loss-carryforward-filing"><span>LOSS CARRYFORWARD</span><h3>FX損失を3年間繰り越す</h3><p>損失年・無取引年・利益年の連続申告</p><b>必要書類と手順を見る →</b></Link>
           <Link href="/articles/domestic-vs-overseas-fx-tax"><span>DOMESTIC VS OVERSEAS</span><h3>国内FXと海外FXの税務を比較</h3><p>申告分離課税・総合課税・登録確認</p><b>税金と注意点を見る →</b></Link>

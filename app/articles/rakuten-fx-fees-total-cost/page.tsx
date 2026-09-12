@@ -4,6 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: '楽天証券FXの手数料は無料？スプレッド・スワップを円換算',
   description: '楽天FXの取引手数料と実質コストを整理。米ドル/円の時間帯・注文数量別スプレッドを1,000通貨から円換算し、スワップやスリッページも確認します。',
+  alternates: { canonical: '/articles/rakuten-fx-fees-total-cost' },
 };
 
 const SPREAD_COSTS = [
@@ -13,9 +14,47 @@ const SPREAD_COSTS = [
   ['100万通貨', '2,000円', '3万8,000円'],
 ] as const;
 
+const FAQS = [
+  {
+    question: '楽天証券FXの取引手数料は無料ですか？',
+    answer: '楽天FXの取引手数料は無料です。ただし、売値と買値の差であるスプレッド、保有中のスワップポイント、注文価格と約定価格のずれは損益に影響します。',
+  },
+  {
+    question: '楽天FXの0.2銭は1,000通貨で何円ですか？',
+    answer: '0.2銭は0.002円なので、1,000通貨では2円、1万通貨では20円に相当します。米ドル/円の0.2銭は200万通貨までのコアタイムにおける公称値で、実際の提示幅や約定結果は市場状況により変動します。',
+  },
+  {
+    question: '楽天FXと楽天MT4は同じ条件ですか？',
+    answer: '取引手数料はいずれも無料ですが、数量表示、スプレッド、注文上限などの取引条件は同じとは限りません。利用するサービスの注文画面と公式ルールを個別に確認してください。',
+  },
+] as const;
+
 export default function Page() {
+  const articleJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: metadata.title,
+    description: metadata.description,
+    datePublished: '2026-09-12',
+    dateModified: '2026-09-12',
+    mainEntityOfPage: 'https://hanbaijo.com/articles/rakuten-fx-fees-total-cost',
+    author: { '@type': 'Organization', name: '金融コストウォッチ' },
+    publisher: { '@type': 'Organization', name: '金融コストウォッチ' },
+  };
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: FAQS.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+    })),
+  };
+
   return (
     <article>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd).replace(/</g, '\\u003c') }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd).replace(/</g, '\\u003c') }} />
       <p className="page-kicker">RAKUTEN FX / TOTAL COST</p>
       <h1>楽天証券FXの手数料は無料？<br />スプレッド・スワップを円換算</h1>
       <p className="lede">楽天FXの取引手数料は無料です。ただし、売値と買値の差であるスプレッドや、保有中のスワップポイント、注文価格と約定価格のずれは損益に影響します。「手数料0円」と「取引コスト0円」を分けて確認します。</p>
@@ -64,6 +103,14 @@ export default function Page() {
 
       <h2>楽天MT4は条件を分けて確認する</h2>
       <p>楽天MT4も公式ルール上の取引手数料は無料ですが、注文画面の数量表示やスプレッド、注文上限は楽天FXと同じとは限りません。MT4では数量「1」が10万通貨、1,000通貨は「0.01」となるため、楽天FXの数量入力と混同しないようにします。</p>
+
+      <h2>楽天証券FXの手数料に関するFAQ</h2>
+      {FAQS.map((faq) => (
+        <section key={faq.question}>
+          <h3>{faq.question}</h3>
+          <p>{faq.answer}</p>
+        </section>
+      ))}
 
       <section className="article-sources" aria-labelledby="sources">
         <h2 id="sources">参照した公式資料</h2>
