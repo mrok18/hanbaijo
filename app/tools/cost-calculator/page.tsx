@@ -61,6 +61,7 @@ export default function CostCalculatorPage() {
       </div>
 
       <nav className="calculator-proof" aria-label="取引コストの確認資料">
+        <Link href="/articles/stock-round-trip-cost">株の売買手数料の仕組み</Link>
         <Link href="/articles/fx-spread-monthly-cost">FXの月間スプレッド早見表</Link>
         <Link href="/articles/trading-cost-break-even-return">手数料負けしない損益分岐点</Link>
         <Link href="/articles/dmm-cfd-commodity-lot-list">商品14銘柄の1Lot一覧</Link>
