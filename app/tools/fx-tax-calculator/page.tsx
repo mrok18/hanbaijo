@@ -3,6 +3,7 @@ import Link from 'next/link';
 import FxTaxCalculator from './FxTaxCalculator';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/tools/fx-tax-calculator' },
   title: '国内FX税金計算シミュレーター｜必要経費・損失繰越に対応',
   description: '国内FXの年間確定損益、必要経費、同年の通算損失、前年以前の繰越損失から、課税所得と税額20.315％の内訳を無料計算します。',
 };

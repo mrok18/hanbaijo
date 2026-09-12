@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { MARKET_CATALOG } from '@/lib/market-data/catalog';
 
 export const metadata = {
+  alternates: { canonical: '/markets' },
   title: '対象商品と開発状況',
   description: '金融コストウォッチが扱う金融商品、比較するコスト、データ整備の進捗を公開します。',
 };

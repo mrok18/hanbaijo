@@ -1,6 +1,7 @@
 import CommodityCfdPriceMoveCalculator from './CommodityCfdPriceMoveCalculator';
 
 export const metadata = {
+  alternates: { canonical: '/tools/commodity-cfd-price-move-calculator' },
   title: '商品CFD値動き損益計算機｜金・銀・原油・天然ガス',
   description: '金・銀・原油・天然ガスについて、新規価格、決済価格、売買方向、Lot数、ドル円、総コストから円換算損益と損益分岐値幅を計算します。',
 };

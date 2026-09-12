@@ -1,4 +1,4 @@
-export const metadata = { title: 'お問い合わせ' };
+export const metadata = { alternates: { canonical: '/contact' }, title: 'お問い合わせ' };
 
 export default function Contact() {
   return (

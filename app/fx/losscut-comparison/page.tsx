@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/fx/losscut-comparison' },
   title: 'FX9社のロスカット基準比較｜追証・アラートとの違い',
   description: '国内FX9社の個人口座について、ロスカットの判定指標・発動基準・追証やアラートを公式取引ルールから比較します。',
 };

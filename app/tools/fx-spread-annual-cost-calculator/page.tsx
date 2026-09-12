@@ -5,6 +5,7 @@ import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 import FxSpreadAnnualCostCalculator from './FxSpreadAnnualCostCalculator';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/tools/fx-spread-annual-cost-calculator' },
   title: 'FXスプレッド年間コスト比較計算機｜0.1銭差を円換算',
   description: '2つのFXスプレッド、取引数量、1日の往復回数、取引日数から、1回・月間・年間のコストと差額を無料計算します。',
 };

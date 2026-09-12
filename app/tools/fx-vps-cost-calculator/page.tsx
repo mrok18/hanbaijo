@@ -4,6 +4,7 @@ import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 import FxVpsCostCalculator from './FxVpsCostCalculator';
 
 export const metadata = {
+  alternates: { canonical: '/tools/fx-vps-cost-calculator' },
   title: 'FX自動売買VPSコスト計算機｜RDS・年額・1取引あたり',
   description: 'VPS本体、RDSライセンス、更新後価格、取引回数、自宅PC電気代を入力し、FX自動売買の月額・年額インフラ費を計算します。',
 };

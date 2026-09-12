@@ -1,6 +1,7 @@
 import JfxFxtfCostCalculator from './JfxFxtfCostCalculator';
 
 export const metadata = {
+  alternates: { canonical: '/tools/jfx-fxtf-cost-comparison' },
   title: 'JFX・FXTFコスト比較計算機｜スプレッドと建玉連動手数料',
   description: '取引数量と往復回数をそろえ、JFXのスプレッドとFXTFのスプレッド・建玉連動手数料・想定約定差を円換算して比較します。',
 };

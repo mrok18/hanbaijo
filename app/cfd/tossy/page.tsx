@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/cfd/tossy' },
   title: 'TOSSYの取引コスト・証拠金率｜6資産はすべて差金決済',
   description: 'ウルトラ投資アプリTOSSYのFX、株式CFD、株価指数CFD、バラエティCFD、商品CFD、暗号資産CFDを、証拠金率・コスト・横断リスクから整理します。',
 };

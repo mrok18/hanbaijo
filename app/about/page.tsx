@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export const metadata = { title: 'このサイトについて' };
+export const metadata = { alternates: { canonical: '/about' }, title: 'このサイトについて' };
 
 export default function About() {
   return (

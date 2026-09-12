@@ -2,6 +2,7 @@ import FxProviderFactSheet from '@/components/FxProviderFactSheet';
 import { FX_PROVIDERS } from '@/lib/fx-providers';
 
 export const metadata = {
+  alternates: { canonical: '/fx/dmm-fx' },
   title: 'DMM FXの取引単位・手数料・ロスカット',
   description: 'DMM FXの通常・ミニ・ラージ通貨ペアについて、最低取引単位、取引手数料、必要証拠金、追証、ロスカットを公式情報から整理します。',
 };

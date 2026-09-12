@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/cfd' },
   title: 'CFDの取引コスト比較｜スプレッド・調整額・金利を読む',
   description: 'CFDを手数料だけで選ばないために、スプレッド、価格調整額、金利調整額、取引条件を分けて整理します。',
 };

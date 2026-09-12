@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/tools' },
   title: '金融コスト計算ツール｜FX・CFD・株式・先物・暗号資産',
   description: 'FX・CFD・米国株・国内株・先物・暗号資産のスプレッド、手数料、証拠金、為替コスト、値幅損益を円換算できる無料計算ツールの一覧です。',
 };

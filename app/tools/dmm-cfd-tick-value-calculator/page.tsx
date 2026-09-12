@@ -1,6 +1,7 @@
 import DmmCfdTickValueCalculator from './DmmCfdTickValueCalculator';
 
 export const metadata = {
+  alternates: { canonical: '/tools/dmm-cfd-tick-value-calculator' },
   title: 'DMM CFD 1ティック損益計算機｜商品14銘柄対応',
   description: 'DMM CFDの商品14銘柄について、新規・決済価格、売買方向、Lot数、米ドル円から、1ティック価値、円換算損益、コスト差引後を計算します。',
 };

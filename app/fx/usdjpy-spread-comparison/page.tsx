@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/fx/usdjpy-spread-comparison' },
   title: '米ドル円スプレッド10社比較｜1万通貨の公称コストと時間帯',
   description: '国内FX10サービスの米ドル/円について、公称スプレッド、適用時間、時間外水準、数量条件を公式情報から比較し、1万通貨の円額へ換算します。',
 };

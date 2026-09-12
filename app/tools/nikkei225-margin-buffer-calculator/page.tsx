@@ -4,6 +4,7 @@ import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 import NikkeiMarginBufferCalculator from './NikkeiMarginBufferCalculator';
 
 export const metadata = {
+  alternates: { canonical: '/tools/nikkei225-margin-buffer-calculator' },
   title: '日経225先物 証拠金余力計算機｜何円・何ティックの逆行に耐える？',
   description: '口座資金、1枚の必要証拠金、枚数、残しておく資金から、日経225先物・mini・マイクロの値動き余力を円とティックで概算します。',
 };

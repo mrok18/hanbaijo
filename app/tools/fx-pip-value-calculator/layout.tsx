@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/tools/fx-pip-value-calculator' },
   title: 'FX pips損益計算機｜1pipsはいくら？',
   description: 'FXの取引数量、決済通貨、円換算レート、値幅から、1pipsあたりと指定pipsの損益を円換算します。',
 };

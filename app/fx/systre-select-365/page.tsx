@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/fx/systre-select-365' },
   title: 'シストレセレクト365の費用は？利用料・手数料・推奨証拠金を確認',
   description: 'シストレセレクト365の初回利用料、売買手数料、推奨証拠金、自動売買を選ぶ前の確認点を公式情報から整理します。',
 };

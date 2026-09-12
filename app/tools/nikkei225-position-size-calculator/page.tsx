@@ -4,6 +4,7 @@ import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 import NikkeiPositionSizeCalculator from './NikkeiPositionSizeCalculator';
 
 export const metadata = {
+  alternates: { canonical: '/tools/nikkei225-position-size-calculator' },
   title: '日経225先物 適正枚数計算機｜許容損失から枚数を逆算',
   description: '口座資金、許容リスク率、損切り幅、スリッページ、必要証拠金から、日経225先物・mini・マイクロの最大枚数を概算します。',
 };

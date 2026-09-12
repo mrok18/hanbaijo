@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/futures/nikkei225-fee-comparison' },
   title: '日経225先物の手数料比較｜ラージ・mini・マイクロ',
   description: '松井証券と楽天証券の日経225先物、mini、マイクロの標準手数料を、片道と往復で比較します。',
 };

@@ -6,6 +6,7 @@ import { FX_PROVIDERS } from '@/lib/fx-providers';
 const provider = FX_PROVIDERS.jfx;
 
 export const metadata = {
+  alternates: { canonical: '/fx/jfx' },
   title: `${provider.name}の取引コスト・口座開設ガイド`,
   description: 'JFX MATRIX TRADERの取引コスト、必要証拠金、入出金、注文方法、口座開設前の確認項目を公式情報に基づいて整理します。',
 };

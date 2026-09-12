@@ -4,6 +4,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/tools/trading-break-even-calculator' },
   title: '取引コスト損益分岐計算機｜手数料負けしない利益率・値幅',
   description: '取引金額、数量、スプレッド、往復手数料、保有コストから、損益分岐率、回収に必要な利益額、1単位あたりの必要値幅を無料計算します。',
 };

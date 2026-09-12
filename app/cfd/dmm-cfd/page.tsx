@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/cfd/dmm-cfd' },
   title: 'DMM CFDの取引コストは？手数料・証拠金・調整額を確認',
   description: 'DMM CFDの取引手数料、株価指数・商品CFDの証拠金率、1Lotの単位、価格調整額などを公式情報から整理します。',
 };

@@ -5,6 +5,7 @@ import { FX_PROVIDERS } from '@/lib/fx-providers';
 const provider = FX_PROVIDERS.saxo;
 
 export const metadata = {
+  alternates: { canonical: '/fx/saxo' },
   title: `${provider.name}の取引コスト・最低取引単位`,
   description: provider.summary,
 };

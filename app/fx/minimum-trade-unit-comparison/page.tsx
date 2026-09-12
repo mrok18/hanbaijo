@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/fx/minimum-trade-unit-comparison' },
   title: 'FX9社の最低取引単位比較｜1通貨・1,000通貨の必要資金',
   description: '国内FX9社の最低取引単位を比較。米ドル円150円・レバレッジ25倍の共通条件で、1通貨・1,000通貨の取引金額と理論証拠金を試算します。',
 };

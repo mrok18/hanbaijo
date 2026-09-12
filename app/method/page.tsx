@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { SOURCES } from '@/lib/exchanges.mjs';
 
-export const metadata = { title: '計測・算出方法' };
+export const metadata = { alternates: { canonical: '/method' }, title: '計測・算出方法' };
 
 export default function Method() {
   return (

@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/fx/ablenet-vps' },
   title: 'ABLENET VPSのFX自動売買費用｜RDS込み月額と必要スペック',
   description: 'ABLENET VPSのWindowsプランを、契約時・更新後料金、RDSライセンス、MT4・MT5の稼働目安、セキュリティ運用から整理します。',
 };

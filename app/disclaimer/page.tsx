@@ -1,4 +1,4 @@
-export const metadata = { title: '免責事項' };
+export const metadata = { alternates: { canonical: '/disclaimer' }, title: '免責事項' };
 
 export default function Disclaimer() {
   return (

@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/fx/fxtf' },
   title: 'FXTFの取引コストは？手数料・最小単位・証拠金を確認',
   description: 'FXTF GX-FXの取引手数料、最低取引単位、必要証拠金、スプレッドとスワップの確認点を公式情報から整理します。',
 };
