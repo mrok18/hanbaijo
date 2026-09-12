@@ -4,6 +4,7 @@ import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = { title: '松井証券の国内株手数料・ボックスレート', description: '松井証券の国内株ボックスレートを、1日の約定代金合計と年齢条件に分けて公式情報から整理します。' };
 export default function Page() { return <StockProviderFactSheet provider={STOCK_PROVIDERS.matsui} affiliateOffer={AFFILIATE_OFFERS['matsui-fx']} relatedArticles={[
+  { href: '/stocks/domestic-fee-comparison', title: '国内株4社の手数料を比較', description: '松井証券、楽天証券、GMOクリック証券、DMM 株を、同日往復と別日売却の条件で比べます。' },
   { href: '/articles/matsui-withdrawal-unavailable', title: '出金できない原因を順番に確認', description: '出金可能額、受渡日、振替、当日入金、登録銀行を切り分けます。' },
   { href: '/articles/matsui-withdrawal-methods-comparison', title: '3種類の出金方法を比較', description: '翌営業日、即時出金、MATSUI Bankを手数料・上限・取消可否で比較します。' },
   { href: '/articles/matsui-deposit-methods-comparison', title: '6種類の入金方法を比較', description: '手数料、リアルタイム反映、事前設定、銀行振込の違いを整理します。' },

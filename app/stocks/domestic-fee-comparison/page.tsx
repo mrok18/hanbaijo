@@ -2,12 +2,16 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: '国内株式の手数料を4社比較｜10万・50万・100万円【2026年】',
-  description: 'GMOクリック証券、楽天証券、松井証券、DMM 株の国内株式手数料を、10万円・50万円・100万円の同日往復で比較。1注文制と1日定額、0円の条件も確認できます。',
+  title: '国内株式の手数料を4社比較｜松井証券・楽天・GMO・DMM【2026年】',
+  description: '松井証券の国内株手数料を楽天証券、GMOクリック証券、DMM 株と比較。10万円・50万円・100万円の同日往復と別日売却で、ボックスレートと0円条件の違いを確認できます。',
   alternates: { canonical: '/stocks/domestic-fee-comparison' },
 };
 
 const FAQS = [
+  {
+    question: '松井証券の国内株手数料は、他社より高いですか？',
+    answer: '取引金額、売買日、年齢で変わるため、一律にはいえません。26歳以上が50万円を同日に買って売る例では、松井証券は1日合計100万円となり1,100円です。同条件ではGMOクリック証券が0円、楽天証券はゼロコースなら0円、DMM 株は396円ですが、松井証券も買付日と売却日を分ければ各日50万円で無料枠内です。25歳以下はボックスレート手数料が無料です。',
+  },
   {
     question: '50万円の国内株を買って売ると、手数料はいくらですか？',
     answer: '通常のインターネット現物取引を前提にすると、GMOクリック証券は0円、楽天証券はゼロコースなら0円です。松井証券は同日に買付・売却すると1日の約定代金合計が100万円となり1,100円、別日に50万円ずつ売買すると各日無料枠内です。DMM 株は1注文198円のため往復396円です。',
@@ -108,7 +112,7 @@ export default function Page() {
       <header className="comparison-intro">
         <div>
           <p className="page-kicker">DOMESTIC STOCK / PUBLISHED DATA</p>
-          <h1>国内株式の手数料を、<br /><em>金額別に4社比較。</em></h1>
+          <h1>松井証券・楽天・GMO・DMMの<br /><em>国内株手数料を4社比較。</em></h1>
           <p className="lede">10万円・50万円・100万円で買い、同じ金額で売る例にそろえました。料金体系が「1注文ごと」か「1日定額」かで、取引日による差も確認します。</p>
         </div>
         <aside>
@@ -171,15 +175,15 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="comparison-section split-explain">
-        <div><p className="section-index">03 / WHY IT CHANGES</p><h2>松井証券は、売る日で試算が変わる</h2></div>
+      <section className="comparison-section split-explain" aria-labelledby="matsui-fee-comparison">
+        <div><p className="section-index">03 / MATSUI COMPARISON</p><h2 id="matsui-fee-comparison">松井証券の手数料を3社と比較：取引日で順位が変わる</h2></div>
         <div>
-          <p>松井証券のボックスレートは、現物と信用を合わせた「1日の約定代金合計」で決まります。</p>
+          <p>26歳以上が50万円を同日に買って売る場合、松井証券は1,100円です。同条件のGMOクリック証券は0円、楽天証券はゼロコースなら0円、DMM 株は396円になります。</p>
           <ul>
             <li>同日：買付50万円＋売却50万円＝1日合計100万円 → 1,100円</li>
             <li>別日：買付日50万円、売却日50万円 → 各日とも無料枠内</li>
           </ul>
-          <p>25歳以下はボックスレート手数料が無料です。年齢、取引経路、口座区分も比較条件に含める必要があります。</p>
+          <p>松井証券のボックスレートは、現物と信用を合わせた「1日の約定代金合計」で決まります。25歳以下は無料のため、会社名だけでなく年齢、取引日、取引経路、口座区分をそろえて比較することが大切です。</p>
         </div>
       </section>
 
