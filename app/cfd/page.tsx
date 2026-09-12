@@ -166,7 +166,7 @@ export default function CfdPage() {
           <article><b>MARGIN SAFETY</b><h3><Link href="/articles/dmm-cfd-margin-call-losscut">DMM CFDの追証とロスカット</Link></h3><p>維持率100％と50％の違いを、判定時点・解消方法・強制決済から整理します。</p></article>
           <article><b>CFD VS FUTURES</b><h3><Link href="/articles/cfd-vs-futures-nikkei225">日経225 CFDと先物の違い</Link></h3><p>取引単位、期限、証拠金、価格形成を同じ表で比較します。</p></article>
           <article><b>CROSS-ASSET MARGIN</b><h3><Link href="/articles/fx-cfd-futures-margin-comparison">FX・CFD・先物の証拠金比較</Link></h3><p>必要証拠金、1単位の損益、追証・ロスカットを共通軸で整理します。</p></article>
-          <article><b>ADJUSTMENT</b><h3><Link href="/articles/cfd-price-adjustment">CFDの価格調整額</Link></h3><p>限月切替で受払いが発生する理由と、確認すべき日程を整理します。</p></article>
+          <article><b>ADJUSTMENT</b><h3><Link href="/articles/cfd-price-adjustment">CFDの3種類の調整額</Link></h3><p>価格・金利・権利調整額を、対象商品と発生時点から整理します。</p></article>
         </div>
       </section>
 

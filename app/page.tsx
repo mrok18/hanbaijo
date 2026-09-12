@@ -355,7 +355,7 @@ export default async function Home() {
             </Link>
             <Link href="/articles/cfd-price-adjustment" className="feature-article">
               <span>CFD · 保有コスト</span>
-              <h3>価格調整額の仕組みと計算方法</h3>
+              <h3>CFDの価格・金利・権利調整額</h3>
               <b>読む →</b>
             </Link>
           </div>
