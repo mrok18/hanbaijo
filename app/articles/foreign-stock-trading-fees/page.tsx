@@ -91,6 +91,6 @@ export default function Page() {
     <p><Link href="/articles/us-stock-fee-comparison">米国株の手数料を3社で比較する →</Link></p>
     <p><Link href="/articles/us-stock-margin-fee-comparison">米国株信用取引の手数料を3社で比較する →</Link></p>
     <p><Link href="/articles/us-stock-fx-cost">米国株の為替コストを計算する →</Link></p>
-    <p><Link href="/stocks">株式コスト比較のトップへ →</Link></p>
+    <p><Link href="/stocks">国内株・米国株の株式手数料ガイドへ →</Link></p>
   </article>;
 }

@@ -141,7 +141,7 @@ export default function Page() {
       <p><Link href="/tools/cost-calculator">取引コスト計算機で試す →</Link></p>
       <p><Link href="/stocks/domestic-fee-comparison">国内株4社の手数料を比較する →</Link></p>
       <p><Link href="/articles/dmm-kabu-domestic-round-trip-fee">DMM 株の往復手数料を具体例で見る →</Link></p>
-      <p><Link href="/stocks">株式コスト比較へ戻る →</Link></p>
+      <p><Link href="/stocks">国内株・米国株の株式手数料ガイドへ戻る →</Link></p>
     </article>
   );
 }

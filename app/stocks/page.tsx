@@ -1,23 +1,60 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { STOCK_PROVIDER_LIST } from '@/lib/stock-providers';
 
-export const metadata = {
-  title: '株式の取引コスト比較｜国内株・米国株の手数料と為替を読む',
-  description: '国内株と米国株のコストを、売買手数料、板の価格差、為替コスト、信用金利に分けて比較します。',
+export const metadata: Metadata = {
+  title: '株式手数料ガイド｜国内株・米国株・信用取引のコスト比較',
+  description: '株式手数料の仕組みと計算方法を解説。国内株、米国株・外国株式、信用取引に分け、売買手数料、為替コスト、金利を比較できる専門ページへ案内します。',
   alternates: { canonical: '/stocks' },
 };
 
 export default function StocksPage() {
+  const collectionJsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'CollectionPage',
+        '@id': 'https://hanbaijo.com/stocks#webpage',
+        url: 'https://hanbaijo.com/stocks',
+        name: metadata.title,
+        description: metadata.description,
+        inLanguage: 'ja-JP',
+        mainEntity: { '@id': 'https://hanbaijo.com/stocks#guides' },
+      },
+      {
+        '@type': 'ItemList',
+        '@id': 'https://hanbaijo.com/stocks#guides',
+        name: '株式手数料の比較・解説ページ',
+        numberOfItems: 4,
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: '国内株式の手数料比較', url: 'https://hanbaijo.com/stocks/domestic-fee-comparison' },
+          { '@type': 'ListItem', position: 2, name: '米国株の手数料比較', url: 'https://hanbaijo.com/articles/us-stock-fee-comparison' },
+          { '@type': 'ListItem', position: 3, name: '外国株式の売買手数料比較', url: 'https://hanbaijo.com/articles/foreign-stock-trading-fees' },
+          { '@type': 'ListItem', position: 4, name: '株の手数料の仕組みと計算方法', url: 'https://hanbaijo.com/articles/stock-round-trip-cost' },
+        ],
+      },
+      {
+        '@type': 'BreadcrumbList',
+        '@id': 'https://hanbaijo.com/stocks#breadcrumb',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: '金融コストウォッチ', item: 'https://hanbaijo.com/' },
+          { '@type': 'ListItem', position: 2, name: '株式手数料ガイド', item: 'https://hanbaijo.com/stocks' },
+        ],
+      },
+    ],
+  };
+
   return (
     <div className="fx-page stocks-page">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd).replace(/</g, '\\u003c') }} />
       <section className="fx-hero">
         <div>
           <p className="page-kicker">STOCK COST GUIDE</p>
-          <h1>「手数料無料」でも、<br /><em>差が出る場所がある。</em></h1>
+          <h1>株式手数料の仕組みと比較<br /><em>国内株・米国株・信用取引</em></h1>
           <p className="lede">
-            株式の負担は、売買手数料だけでは決まりません。板の売値と買値、米国株の為替、
-            信用取引の金利まで分け、同じ売買金額で比べます。まず国内株4社を比べ、
-            気になる条件を自分の売買金額で試算できます。
+            株式の手数料は、国内株、米国株・外国株式、現物・信用で確認項目が変わります。
+            売買手数料だけでなく、板の価格差、為替コスト、信用金利まで分け、
+            知りたい対象に合う比較表と計算方法へ案内します。
           </p>
           <div className="hero-actions">
             <Link className="button primary" href="/stocks/domestic-fee-comparison">国内株4社を比較</Link>
@@ -43,23 +80,23 @@ export default function StocksPage() {
         <div className="section-heading compact">
           <div>
             <p className="section-index">CHOOSE YOUR NEXT STEP</p>
-            <h2 id="stock-paths-title">最短で知りたい答えへ</h2>
-            <p>比較、試算、計算方法の順で、今必要なページから始められます。</p>
+            <h2 id="stock-paths-title">株の手数料を目的別に調べる</h2>
+            <p>国内株、米国株・外国株式、手数料の仕組みを混ぜずに確認できます。</p>
           </div>
           <Link href="#stock-provider-directory">証券会社別に見る →</Link>
         </div>
         <div className="home-path-grid stocks-path-grid">
           <Link className="home-path-card primary-path" href="/stocks/domestic-fee-comparison">
-            <span>01 / COMPARE</span><strong>国内株4社を比較する</strong>
+            <span>01 / DOMESTIC</span><strong>国内株式の手数料を比較</strong>
             <p>同じ売買例で料金体系をそろえ、無料条件や日をまたぐ場合の違いまで確認します。</p><b>比較表を見る →</b>
           </Link>
-          <Link className="home-path-card" href="/tools/cost-calculator">
-            <span>02 / CALCULATE</span><strong>自分の金額で計算する</strong>
-            <p>売買金額、手数料、価格差を入力し、買付から売却までの往復コストを試算します。</p><b>無料計算機を使う →</b>
+          <Link className="home-path-card" href="/articles/foreign-stock-trading-fees">
+            <span>02 / GLOBAL</span><strong>米国株・外国株式の手数料を比較</strong>
+            <p>米国株、中国株、ASEAN株を、売買手数料、為替、現地費用に分けて確認します。</p><b>市場別の比較を見る →</b>
           </Link>
           <Link className="home-path-card" href="/articles/stock-round-trip-cost">
-            <span>03 / LEARN</span><strong>計算方法を理解する</strong>
-            <p>売買手数料と板の価格差を、二重計上せず1つの式へまとめる方法を解説します。</p><b>計算式を読む →</b>
+            <span>03 / LEARN</span><strong>株の手数料の仕組みを知る</strong>
+            <p>1注文制・1日定額・条件付き0円と、買付から売却までの往復計算を解説します。</p><b>仕組みと計算式を読む →</b>
           </Link>
         </div>
       </section>
