@@ -4,6 +4,7 @@ import ArticleStructuredData from '@/components/ArticleStructuredData';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/systre-select-365-start-operation-flow' },
   title: 'シストレセレクト365の基本操作｜ランキングから稼働まで',
   description: 'ランキングの成績期間、最大ドローダウン、数量、リスクメーターを確認し、シストレセレクト365を稼働するまでの順序を解説します。',
 };

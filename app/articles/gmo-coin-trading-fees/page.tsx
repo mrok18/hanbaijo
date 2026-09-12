@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: 'GMOコインの取引手数料｜販売所・取引所・暗号資産FXを比較', description: 'GMOコインの販売所、取引所、暗号資産FXを、手数料とスプレッドの違いから整理します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/gmo-coin-trading-fees' }, title: 'GMOコインの取引手数料｜販売所・取引所・暗号資産FXを比較', description: 'GMOコインの販売所、取引所、暗号資産FXを、手数料とスプレッドの違いから整理します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">GMOコイン / COST</p><h1>GMOコインの取引手数料<br />販売所・取引所・暗号資産FXを比較</h1>

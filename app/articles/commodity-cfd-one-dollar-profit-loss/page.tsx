@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/commodity-cfd-one-dollar-profit-loss' },
   title: '商品CFDは1ドル動くといくら？金・銀・原油・天然ガスの損益',
   description: '商品CFDの価格が1ドル動いた場合の1Lotの損益を、金・銀・原油・天然ガスの取引単位と米ドル円から計算します。',
 };

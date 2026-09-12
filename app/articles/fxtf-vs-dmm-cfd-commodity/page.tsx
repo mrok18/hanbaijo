@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/fxtf-vs-dmm-cfd-commodity' },
   title: 'FXTF MT5とDMM CFDの商品CFDを比較｜金・銀・原油・天然ガス',
   description: 'FXTF MT5とDMM CFDの商品CFDを、共通4銘柄の1Lot、証拠金、スプレッド、手数料、スワップ・調整額、取扱銘柄数で比較します。',
 };

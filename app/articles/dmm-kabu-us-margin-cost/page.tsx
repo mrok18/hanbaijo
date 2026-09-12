@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-kabu-us-margin-cost' },
   title: 'DMM 株の米国株信用取引コスト｜手数料・金利・保証金を計算',
   description: 'DMM 株の米国株信用取引について、ゲスト・メンバー・プレミアムの取引手数料と買方金利、買建のみ、保証金率50％、追証30％を整理します。',
 };

@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/matsui-fx-one-currency' },
   title: 'MATSUI FXは100円から？1通貨の必要証拠金と損益を計算',
   description: 'MATSUI FXの1通貨取引について、100円の意味、必要証拠金、1円動いたときの損益を具体例で解説します。',
 };

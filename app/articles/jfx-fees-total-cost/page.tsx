@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/articles/jfx-fees-total-cost' },
   title: 'JFXの手数料は本当に無料？スプレッド・入出金・スワップまで整理',
   description: 'JFX MATRIX TRADERの取引手数料、入出金手数料、ロスカット手数料と、スプレッド・スワップ・スリッページなど実際に残るコストを整理します。',
 };

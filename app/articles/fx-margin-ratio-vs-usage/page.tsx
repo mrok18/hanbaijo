@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/articles/fx-margin-ratio-vs-usage' },
   title: '証拠金維持率と使用率の違い｜100%の意味は逆',
   description: 'FXの証拠金維持率と証拠金使用率について、計算の向きとロスカット基準の読み方を具体例で解説します。',
 };

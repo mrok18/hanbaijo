@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/articles/jfx-deposit-not-reflected' },
   title: 'JFXの入金が反映されない原因｜クイック入金・銀行振込の確認手順',
   description: 'JFXのクイック入金や銀行振込がMATRIX TRADERへ反映されない場合に、銀行引落し、終了操作、口座番号、名義、時間帯を順番に確認します。',
 };

@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-kabu-specific-account-tax' },
   title: 'DMM 株の特定口座｜源泉徴収あり・なし・一般口座と確定申告',
   description: 'DMM 株の特定口座について、源泉徴収あり・なし・一般口座の違い、年間取引報告書、確定申告、区分変更、NISAとの違いを整理します。',
 };

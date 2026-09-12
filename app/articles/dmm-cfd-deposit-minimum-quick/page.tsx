@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-cfd-deposit-minimum-quick' },
   title: 'DMM CFDの最低入金額はいくら？クイック入金と振込を比較',
   description: 'DMM CFDの初回最低入金額、クイック入金の下限・手数料・反映時間、振込入金、出金条件を公式情報から整理します。',
 };

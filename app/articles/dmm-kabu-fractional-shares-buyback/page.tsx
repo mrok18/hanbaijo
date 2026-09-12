@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-kabu-fractional-shares-buyback' },
   title: 'DMM 株の単元未満株は売却できる？買取請求・手数料・NISAを整理',
   description: 'DMM 株で生じた単元未満株について、通常売却との違い、買取請求の操作、550円の取次手数料、価格決定、受付停止期間、NISAでの取扱いを整理します。',
 };

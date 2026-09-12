@@ -4,6 +4,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/articles/fx-multiple-accounts-cost-risk' },
   title: 'FX口座を複数持つメリット・デメリット｜資金と損益の管理方法',
   description: 'FX口座を2社以上使い分けるメリットと、証拠金の分散、ロスカット、損益集計、休眠口座、管理負担などの注意点を整理します。',
 };

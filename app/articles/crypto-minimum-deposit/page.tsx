@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 
-export const metadata: Metadata = { title: '暗号資産の最低入金額｜少額送金が反映されない理由と確認方法', description: '暗号資産の最低入金額・最低入庫数量を下回ったときの扱いと、送金前に確認する項目を整理します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/crypto-minimum-deposit' }, title: '暗号資産の最低入金額｜少額送金が反映されない理由と確認方法', description: '暗号資産の最低入金額・最低入庫数量を下回ったときの扱いと、送金前に確認する項目を整理します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">CRYPTO / MINIMUM DEPOSIT</p>

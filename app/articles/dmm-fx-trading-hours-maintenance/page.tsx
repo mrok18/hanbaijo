@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-fx-trading-hours-maintenance' },
   title: 'DMM FXの取引時間｜夏時間・冬時間・メンテナンスと注文の扱い',
   description: 'DMM FXの夏時間・冬時間の取引時間、土曜メンテナンス、営業日切替、指値注文と即時注文の扱いを公式情報で整理します。',
 };

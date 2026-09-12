@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/jfx-vs-fxtf' },
   title: 'JFXとFXTFを比較｜スキャルピング・MT4・手数料の違い',
   description: 'JFXとFXTFを、最低取引単位、発注ツール、スキャルピング、EA、TradingView、建玉連動手数料から公式条件で比較します。',
 };

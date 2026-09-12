@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/articles/jfx-swap-transfer-tax' },
   title: 'JFXのスワップ振替とは？決済せず出金する方法と税金の注意点',
   description: 'JFX MATRIX TRADERのスワップ振替を整理。ポジションを決済せず1円単位で確定・出金する流れ、未実現スワップとの違い、確定申告と年末の注意点を解説します。',
 };

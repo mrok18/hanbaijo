@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/articles/jfx-beginner-vs-matrix-trader' },
   title: 'JFXビギナーFXとMATRIX TRADERの違い｜100通貨・1,000通貨を比較',
   description: 'JFXのビギナーFX（ミニ口座）とMATRIX TRADER（本口座）を、最低取引単位、通貨ペア、分析ツール、キャンペーンから比較します。',
 };

@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/tossy-margin-call-losscut' },
   title: 'TOSSYの追証・ロスカット｜6資産へ及ぶマージンカット',
   description: 'TOSSYの追加証拠金、マージンカット、ロスカットを区別し、1区分の証拠金不足が他のアセット区分へ及ぶ仕組みを整理します。',
 };

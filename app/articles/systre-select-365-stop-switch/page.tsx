@@ -3,7 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import ArticleStructuredData from '@/components/ArticleStructuredData';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
-export const metadata = { title: 'シストレセレクト365の停止・入替え｜建玉を残さない確認手順', description: 'シストレセレクト365の稼働停止、ストラテジー入替え、未決済ポジション、両建て、サービス解約前の確認点を整理します。' };
+export const metadata = { alternates: { canonical: '/articles/systre-select-365-stop-switch' }, title: 'シストレセレクト365の停止・入替え｜建玉を残さない確認手順', description: 'シストレセレクト365の稼働停止、ストラテジー入替え、未決済ポジション、両建て、サービス解約前の確認点を整理します。' };
 
 export default function Page() {
   return <article>

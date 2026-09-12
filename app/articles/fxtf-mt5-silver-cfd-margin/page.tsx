@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/fxtf-mt5-silver-cfd-margin' },
   title: 'FXTF MT5の銀CFDは1Lotいくら？必要証拠金・手数料・スワップ',
   description: 'FXTF MT5の銀CFD（XAG/USD）について、1Lot＝10トロイオンスの取引単位、必要証拠金、建玉連動手数料、スプレッド、スワップを計算します。',
 };

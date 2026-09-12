@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/tossy-deposit-withdrawal-transfer' },
   title: 'TOSSYの入金・出金・振替方法｜5,000円・2,000円・3営業日を整理',
   description: 'TOSSYの銀行振込・クイック入金・他サービスからの振替入金、出金条件、反映時間、同名義ルールを公式説明書で整理します。',
 };

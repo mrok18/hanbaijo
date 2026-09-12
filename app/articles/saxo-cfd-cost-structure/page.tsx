@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: 'サクソバンク証券CFDのコスト｜手数料無料・スプレッド・調整額', description: 'サクソバンク証券CFDの手数料、スプレッド、調整額、証拠金を分けて確認し、保有期間別の総コストを考える方法を解説します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/saxo-cfd-cost-structure' }, title: 'サクソバンク証券CFDのコスト｜手数料無料・スプレッド・調整額', description: 'サクソバンク証券CFDの手数料、スプレッド、調整額、証拠金を分けて確認し、保有期間別の総コストを考える方法を解説します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">SAXO / CFD COST</p><h1>サクソバンク証券CFDのコスト<br />手数料無料でも確認する項目</h1>

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: '三菱UFJ eスマート証券 FXの入金・振替｜証券口座から自動振替', description: '三菱UFJ eスマート証券 FXの入金経路、証券口座とFX口座の振替、反映確認、外貨入出金の注意点を整理します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/esmart-fx-deposit-transfer' }, title: '三菱UFJ eスマート証券 FXの入金・振替｜証券口座から自動振替', description: '三菱UFJ eスマート証券 FXの入金経路、証券口座とFX口座の振替、反映確認、外貨入出金の注意点を整理します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">三菱UFJ eスマート証券 FX / FUNDING</p><h1>三菱UFJ eスマート証券 FXの入金<br />証券口座からの振替を確認</h1>

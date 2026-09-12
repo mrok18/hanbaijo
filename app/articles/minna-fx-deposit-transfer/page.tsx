@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: 'みんなのFXの入金・振替｜銀行振込とダイレクト入金の違い', description: 'みんなのFXの入金口座、ダイレクト入金、FX口座への振替、反映されないときの確認順を公式情報で整理します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/minna-fx-deposit-transfer' }, title: 'みんなのFXの入金・振替｜銀行振込とダイレクト入金の違い', description: 'みんなのFXの入金口座、ダイレクト入金、FX口座への振替、反映されないときの確認順を公式情報で整理します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">みんなのFX / FUNDING</p>

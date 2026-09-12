@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/nikkei225-micro-profit-loss' },
   title: '日経225マイクロは1円・1ティックでいくら？損益早見表',
   description: '日経225マイクロ先物1枚の1円、1ティック、10円、100円の値動き損益を計算し、mini・ラージとの違いや往復手数料の回収値幅を解説します。',
 };

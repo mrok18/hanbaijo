@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/articles/jfx-mt5-tradingview-matrix-trader' },
   title: 'JFXのMT5・TradingView・MATRIX TRADERの違い｜発注できるツールは？',
   description: 'JFXのMT5チャート、TradingView、MATRIX TRADERを、発注、口座情報、レート、分析機能、利用条件から比較します。',
 };

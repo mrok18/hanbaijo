@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/jfx-required-margin-leverage' },
   title: 'JFXの必要証拠金はいくら？最大・実効レバレッジを計算',
   description: 'JFX MATRIX TRADERの必要証拠金、最大レバレッジ、実効レバレッジの違いを、米ドル円1,000通貨の公式例から計算します。',
 };

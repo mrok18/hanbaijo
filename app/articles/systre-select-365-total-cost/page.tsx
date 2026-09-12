@@ -4,6 +4,7 @@ import ArticleStructuredData from '@/components/ArticleStructuredData';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/systre-select-365-total-cost' },
   title: 'シストレセレクト365の手数料は0円？総コストを確認',
   description: 'シストレセレクト365の初回利用料990円、売買手数料0円、スプレッド、スワップポイント、取引回数による総コストを解説します。',
 };

@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-kabu-nisa-account-opening' },
   title: 'DMM 株のNISA口座開設方法｜同時申込・追加申込・金融機関変更',
   description: 'DMM 株のNISA口座について、新規アカウントとの同時申込、既存利用者の追加申込、他社からの金融機関変更に必要な書類と注意点を整理します。',
 };

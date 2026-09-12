@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmmfx-stock-collateral-service' },
   title: 'DMMFX株券担保サービスとは？評価率70％・対象株・強制売却リスク',
   description: 'DMM 株の保有株をDMM FXの証拠金に使う株券担保サービスについて、70％評価、対象銘柄、振替時間、NISA対象外、強制売却リスクを整理します。',
 };

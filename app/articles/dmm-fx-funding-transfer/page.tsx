@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-fx-funding-transfer' },
   title: 'DMM FXの入金方法と証拠金振替｜5,000円・出金・株券担保',
   description: 'DMM FXのクイック入金・振込入金、最低額、反映時間、出金、DMM 株からの株券担保振替を公式条件から整理します。',
 };

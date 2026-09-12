@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/articles/minna-fx-trading-hours-maintenance' },
   title: 'みんなのFXの取引時間｜夏時間・冬時間・メンテナンス',
   description: 'みんなのFXの取引時間、日次・週次メンテナンス、予約注文と約定の違いを公式サービス概要で整理します。',
 };

@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/ablenet-win1-vs-win2' },
   title: 'ABLENET Win1とWin2の違い｜MT4・MT5何個まで？',
   description: 'ABLENET VPSのWin1とWin2を、CPU、メモリ、MT4・MT5稼働目安、契約時・更新後料金、RDS込み年額で比較します。',
 };

@@ -4,6 +4,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/articles/fx-tax-deductible-expenses' },
   title: 'FXの必要経費にできるものは？PC・通信費・VPS・書籍を整理',
   description: 'FXの利益計算で必要経費になり得るPC、通信費、VPS、書籍、セミナー、情報サービスと、家事按分、減価償却、領収書の保存を整理します。',
 };

@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/fx-zero-spread-total-cost' },
   title: 'FXの0.0銭は本当に無料？別手数料まで総額で確認',
   description: 'FXのゼロスプレッドと取引コスト0円の違いを、建玉連動手数料、数量条件、適用時間、約定差に分けて解説します。',
 };

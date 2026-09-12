@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/articles/futures-margin' },
   title: '先物の証拠金と取引金額は何が違う？',
   description: '先物の証拠金を購入代金と混同しないために、取引金額、損益、VaR方式、証券会社の設定額を整理します。',
 };

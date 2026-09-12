@@ -4,6 +4,7 @@ import ArticleStructuredData from '@/components/ArticleStructuredData';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/systre-select-365-vs-otc-fx' },
   title: 'シストレセレクト365と店頭FXの違い｜取引所FXを選ぶ意味',
   description: 'シストレセレクト365が使う取引所FXくりっく365と店頭FXについて、価格提示、スワップ、手数料、証拠金、口座の違いを整理します。',
 };

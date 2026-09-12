@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-kabu-margin-account-opening' },
   title: 'DMM 株の信用取引口座開設｜申込方法・審査・必要資金を確認',
   description: 'DMM 株の国内信用取引口座について、総合口座と同時・追加で申し込む方法、審査期間、必要な知識・経験、最低保証金30万円、NISAとの違いを整理します。',
 };

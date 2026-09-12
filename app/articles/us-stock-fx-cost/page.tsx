@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/articles/us-stock-fx-cost' },
   title: '米国株の為替コストを円で計算する方法',
   description: '米国株の円貨決済と外貨決済を整理し、1ドルあたりの為替コストを取引金額全体の円負担へ換算します。',
 };

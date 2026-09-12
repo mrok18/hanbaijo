@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: 'GMOコインの入出金｜即時入金・振込・出金手数料と反映時間', description: 'GMOコインの日本円・暗号資産の入出金を、手数料、反映、名義の注意点で整理します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/gmo-coin-deposit-withdrawal' }, title: 'GMOコインの入出金｜即時入金・振込・出金手数料と反映時間', description: 'GMOコインの日本円・暗号資産の入出金を、手数料、反映、名義の注意点で整理します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">GMOコイン / FUNDING</p><h1>GMOコインの入出金<br />即時入金・振込・出金手数料</h1>

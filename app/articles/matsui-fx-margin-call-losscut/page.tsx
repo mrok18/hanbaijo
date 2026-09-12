@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/matsui-fx-margin-call-losscut' },
   title: 'MATSUI FXの追証とロスカット｜選べる50～90％を整理',
   description: 'MATSUI FXの追証、ロスカット、リアルタイム維持率について、100％の追証判定と個人口座で選べる50～90％のロスカット率を整理します。',
 };

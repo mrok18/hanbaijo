@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/tossy-cfd-not-spot' },
   title: 'TOSSYの株式・暗号資産は現物？6資産とCFDの違い',
   description: 'TOSSYで扱う株式、為替、暗号資産、株価指数、バラエティ、商品資源について、現物保有ではなく差金決済取引である点と証拠金・コストを整理します。',
 };

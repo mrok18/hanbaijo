@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: 'GMOコインAPIの使い方｜Public APIとPrivate APIの違い', description: 'GMOコインの公開APIと認証APIを、取得できる情報、申込手順、キー管理の注意点で整理します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/gmo-coin-api-public-private' }, title: 'GMOコインAPIの使い方｜Public APIとPrivate APIの違い', description: 'GMOコインの公開APIと認証APIを、取得できる情報、申込手順、キー管理の注意点で整理します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">GMOコイン / API</p><h1>GMOコインAPIの使い方<br />PublicとPrivateの違い</h1>

@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/us-stock-yen-sensitivity' },
   title: '米国株はドル円が1円動くといくら変わる？為替感応度早見表',
   description: '保有する米国株のドル評価額から、ドル円が1円・5円・10円動いた場合の円換算額の変化を早見表と計算式で解説します。',
 };

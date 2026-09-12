@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-kabu-withdrawal-rules' },
   title: 'DMM 株の出金はいつ？最低2,000円・手数料・売却代金の反映',
   description: 'DMM 株の出金について、最低出金額、手数料、受付時間、着金日、国内株・米国株の売却代金、出金取消しの原因を整理します。',
 };

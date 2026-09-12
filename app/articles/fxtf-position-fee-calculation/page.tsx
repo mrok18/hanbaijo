@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/fxtf-position-fee-calculation' },
   title: 'FXTFの建玉連動手数料とは？保有中の数量を含めて計算',
   description: 'FXTFの建玉連動手数料を、新規注文、同一銘柄・同一売買方向の保有数量、手数料ランク、1万通貨あたり金額に分けて計算します。',
 };

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: '岡三オンラインくりっく株365の配当相当額｜金利との違い', description: 'くりっく株365の金利相当額・配当相当額の仕組み、買いと売りの方向、実績値の確認方法を整理します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/okasan-kabu365-dividend' }, title: '岡三オンラインくりっく株365の配当相当額｜金利との違い', description: 'くりっく株365の金利相当額・配当相当額の仕組み、買いと売りの方向、実績値の確認方法を整理します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">岡三オンライン / CARRY</p><h1>くりっく株365の配当相当額<br />金利相当額と合わせて確認</h1>

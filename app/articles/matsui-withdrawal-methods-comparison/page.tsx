@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/matsui-withdrawal-methods-comparison' },
   title: '松井証券の出金方法を比較｜翌営業日・即時出金・MATSUI Bank',
   description: '松井証券の通常出金、即時出金、MATSUI Bank出金を、着金時期・手数料・上限・取消可否で比較します。',
 };

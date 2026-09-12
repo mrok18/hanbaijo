@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/matsui-us-stock-trading-hours' },
   title: '松井証券の米国株取引時間｜プレマーケットと23時間化予定',
   description: '松井証券の米国株について、夏時間・冬時間のプレマーケットと通常取引時間、2026年12月予定の23時間取引を整理します。',
 };

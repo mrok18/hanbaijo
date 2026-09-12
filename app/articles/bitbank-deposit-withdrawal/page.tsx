@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: 'bitbankの入出金｜日本円出金手数料・最低額・暗号資産送金', description: 'bitbankの日本円出金手数料と最低額、暗号資産のネットワーク手数料、出金前の確認項目を整理します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/bitbank-deposit-withdrawal' }, title: 'bitbankの入出金｜日本円出金手数料・最低額・暗号資産送金', description: 'bitbankの日本円出金手数料と最低額、暗号資産のネットワーク手数料、出金前の確認項目を整理します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">bitbank / FUNDING</p><h1>bitbankの入出金<br />日本円と暗号資産の手数料</h1>

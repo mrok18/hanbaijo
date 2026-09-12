@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/matsui-fx-annual-profit-report' },
   title: '松井証券FXの年間損益を確認する方法｜期間損益照会と確定申告',
   description: '松井証券FXの年間損益をFXお客様サイト・アプリで確認する方法、期間損益照会の期間指定、未決済建玉の扱い、損失繰越を公式情報で整理します。',
 };

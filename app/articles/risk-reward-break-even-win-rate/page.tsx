@@ -2,7 +2,7 @@ import Link from 'next/link';
 import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
-export const metadata = { title: 'リスクリワード1対2の損益分岐勝率は？コスト込みで計算', description: '利益と損失の比率から損益分岐勝率を計算し、スプレッドや売買手数料を含めると必要勝率がどう変わるかを具体例で解説します。' };
+export const metadata = { alternates: { canonical: '/articles/risk-reward-break-even-win-rate' }, title: 'リスクリワード1対2の損益分岐勝率は？コスト込みで計算', description: '利益と損失の比率から損益分岐勝率を計算し、スプレッドや売買手数料を含めると必要勝率がどう変わるかを具体例で解説します。' };
 const ROWS = [
   { ratio: '1：0.5', rate: '66.7％', note: '利益が損失の半分' }, { ratio: '1：1', rate: '50.0％', note: '利益と損失が同額' },
   { ratio: '1：1.5', rate: '40.0％', note: '利益が損失の1.5倍' }, { ratio: '1：2', rate: '33.3％', note: '利益が損失の2倍' },

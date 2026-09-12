@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: 'サクソバンク証券とTradingView｜対応口座と資金振替の確認', description: 'サクソバンク証券でTradingViewを使う場合の対応口座、SaxoTraderでの事前振替、発注前の確認項目を整理します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/saxo-tradingview-account-transfer' }, title: 'サクソバンク証券とTradingView｜対応口座と資金振替の確認', description: 'サクソバンク証券でTradingViewを使う場合の対応口座、SaxoTraderでの事前振替、発注前の確認項目を整理します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">SAXO / TRADINGVIEW</p><h1>サクソバンク証券とTradingView<br />対応口座・資金振替を確認</h1>

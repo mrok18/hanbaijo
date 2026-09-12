@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/articles/us-stock-margin-fee-comparison' },
   title: '米国株信用取引の手数料を3社比較｜DMM 株・松井証券・楽天証券',
   description: '米国株信用取引の手数料、買方金利、売建対応をDMM 株・松井証券・楽天証券で比較。1万ドルを30日保有する概算も整理します。',
 };

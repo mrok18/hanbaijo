@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/fx-one-pip-value' },
   title: 'FXの1pipsはいくら？1,000通貨・1万通貨の損益早見表',
   description: 'FXの1pipsの金額を、クロス円とドルストレート、1通貨・1,000通貨・1万通貨で計算します。円換算の方法も解説します。',
 };

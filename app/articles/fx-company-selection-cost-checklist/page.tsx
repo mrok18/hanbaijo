@@ -4,6 +4,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/articles/fx-company-selection-cost-checklist' },
   title: 'FX会社はスプレッドだけで選ばない｜口座比較7項目',
   description: 'FX会社を比較するときに、スプレッドの適用時間、数量、約定、スワップ、最低取引単位、ロスカット、入出金を確認する順番を整理します。',
 };

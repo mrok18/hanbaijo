@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/jfx-scalping-spread-cost' },
   title: 'JFXはスキャルピング向き？米ドル円の時間帯別スプレッドを計算',
   description: 'JFX MATRIX TRADERの米ドル/円0.2銭と早朝5.9銭を、1,000通貨・1万通貨の円コストへ換算。手数料、注文機能、スリッページも整理します。',
 };

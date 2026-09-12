@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-kabu-account-opening-documents' },
   title: 'DMM 株の口座開設に必要なもの｜本人確認・マイナンバー・開始まで',
   description: 'DMM 株の口座開設に必要な本人確認書類とマイナンバー確認書類、提出方法ごとの組合せ、審査から取引開始までの流れを整理します。',
 };

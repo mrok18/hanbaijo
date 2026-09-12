@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/fx-swap-three-days' },
   title: 'FXのスワップが3日分・4日分付くのはなぜ？',
   description: 'FXのスワップポイントが複数日分まとめて付与される理由を、ロールオーバー、受渡日、土日・祝日の関係から解説します。',
 };

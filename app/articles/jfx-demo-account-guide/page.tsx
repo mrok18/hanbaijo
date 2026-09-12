@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/articles/jfx-demo-account-guide' },
   title: 'JFXデモ口座でできること｜利用期間・仮想資金・本番との違い',
   description: 'JFX MATRIX TRADERのデモ口座について、約3カ月の利用期間、1万～1,000万円の仮想資金、デモレート、土日利用、本番口座との違いを整理します。',
 };

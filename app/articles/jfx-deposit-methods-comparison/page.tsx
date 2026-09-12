@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/articles/jfx-deposit-methods-comparison' },
   title: 'JFXの入金方法を比較｜クイック入金と銀行振込の違い',
   description: 'JFX MATRIX TRADERのクイック入金と銀行振込を、最低金額、手数料、反映時間、対応銀行、振込名義の注意点で比較します。',
 };

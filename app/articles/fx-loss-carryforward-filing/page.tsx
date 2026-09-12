@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/articles/fx-loss-carryforward-filing' },
   title: 'FX損失を3年繰り越す確定申告｜取引しない年も必要？',
   description: '国内FX等の損失繰越について、損失が出た年、利益が出た年、取引しない年に必要な申告と、計算明細書・申告書付表を時系列で整理します。',
 };

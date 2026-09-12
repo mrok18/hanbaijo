@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/cfd-vs-futures-nikkei225' },
   title: '日経225 CFDと先物の違い｜取引単位・期限・コストを比較',
   description: '日経225を対象とするCFDと取引所先物について、取引相手、取引単位、限月、証拠金、スプレッド・手数料の違いを整理します。',
 };

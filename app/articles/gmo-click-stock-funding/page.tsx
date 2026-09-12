@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: 'GMOクリック証券の株式入出金｜証券取引口座の残高と出金名義', description: 'GMOクリック証券の株式資金の管理口座、入出金・振替、出金名義の注意点を公式情報で整理します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/gmo-click-stock-funding' }, title: 'GMOクリック証券の株式入出金｜証券取引口座の残高と出金名義', description: 'GMOクリック証券の株式資金の管理口座、入出金・振替、出金名義の注意点を公式情報で整理します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">GMO CLICK / STOCK FUNDING</p><h1>GMOクリック証券の株式入出金<br />残高と出金名義を確認</h1>

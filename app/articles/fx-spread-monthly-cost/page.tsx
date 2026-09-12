@@ -4,6 +4,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/articles/fx-spread-monthly-cost' },
   title: 'FXのスプレッドは月いくら？取引回数別にコストを計算',
   description: '米ドル円0.2銭を例に、1,000通貨・1万通貨・10万通貨の1回と月間20日・1日5回のスプレッドコストを円で計算します。',
 };

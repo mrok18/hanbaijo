@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-fx-swap-calendar' },
   title: 'DMM FXのスワップ付与日はいつ？0日・3日・4日の見方',
   description: 'DMM FXのスワップポイントについて、営業日の切替時刻、付与日数0日・3日・4日の理由、カレンダーの読み方を整理します。',
 };

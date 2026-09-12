@@ -3,7 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import ArticleStructuredData from '@/components/ArticleStructuredData';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
-export const metadata = { title: 'シストレセレクト365のストラテジー選び｜利益率だけで決めない', description: 'シストレセレクト365のストラテジーを、利益率、最大ドローダウン、リスクリターン率、取引回数、推奨証拠金から比較します。' };
+export const metadata = { alternates: { canonical: '/articles/systre-select-365-strategy-selection' }, title: 'シストレセレクト365のストラテジー選び｜利益率だけで決めない', description: 'シストレセレクト365のストラテジーを、利益率、最大ドローダウン、リスクリターン率、取引回数、推奨証拠金から比較します。' };
 
 export default function Page() {
   return <article>

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-fx-mini-normal-large' },
   title: 'DMM FXのミニ・通常・ラージの違い｜取引単位とコスト',
   description: 'DMM FXのミニ・通常・ラージ通貨ペアについて、1Lotの通貨数、必要証拠金、損益、注文上限、スプレッド条件の違いを解説します。',
 };

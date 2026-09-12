@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/jfx-allowed-spread-setting' },
   title: 'JFX許容スプレッド設定とは？急拡大時の注文を止める方法',
   description: 'JFX MATRIX TRADERの許容スプレッドを、許容スリップとの違い、設定手順、注文が不成立になる条件、米ドル円のコスト例から整理します。',
 };

@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/tossy-account-opening-flow' },
   title: 'TOSSYの口座開設手順｜必要書類と取引開始前の確認',
   description: 'TOSSYの申込、本人確認、審査、ログイン情報取得、入金、商品別書面の確認までを順番に整理します。',
 };

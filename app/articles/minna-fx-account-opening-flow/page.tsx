@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: 'みんなのFXの口座開設｜必要書類・審査・取引開始までの流れ', description: 'みんなのFXの口座開設を、申込入力、本人確認、審査、入金、取引開始までの順番で整理します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/minna-fx-account-opening-flow' }, title: 'みんなのFXの口座開設｜必要書類・審査・取引開始までの流れ', description: 'みんなのFXの口座開設を、申込入力、本人確認、審査、入金、取引開始までの順番で整理します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">みんなのFX / START</p><h1>みんなのFXの口座開設<br />必要書類と取引開始まで</h1>

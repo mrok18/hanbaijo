@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/fx-master-guide-study-order' },
   title: 'FX初心者は何から勉強する？9章を5段階で読む順番',
   description: 'FXの仕組み、口座条件、注文、資金管理、経済、チャート、通貨ペアを、取引を急がず数字で確認する学習順に並べます。',
 };

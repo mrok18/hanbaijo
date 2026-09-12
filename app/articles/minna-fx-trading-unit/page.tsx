@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: 'みんなのFXの取引単位｜1Lot＝1万通貨・0.1Lotからの始め方', description: 'みんなのFXの1Lotと0.1Lot、1,000通貨取引の考え方を公式情報で整理し、必要証拠金を数量別に確認する方法を解説します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/minna-fx-trading-unit' }, title: 'みんなのFXの取引単位｜1Lot＝1万通貨・0.1Lotからの始め方', description: 'みんなのFXの1Lotと0.1Lot、1,000通貨取引の考え方を公式情報で整理し、必要証拠金を数量別に確認する方法を解説します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">みんなのFX / UNIT</p>

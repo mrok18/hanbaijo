@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/fxtf-account-opening-flow' },
   title: 'FXTFの口座開設手順｜必要書類・提出先・取引開始まで',
   description: 'FXTFのスマホ本人確認と通常開設を分け、必要書類、アップロード・メール・郵送の提出先、審査後の取引開始までを整理します。',
 };

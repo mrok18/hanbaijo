@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/articles/futures-tick-value' },
   title: '先物の1ティックはいくら？日経225で計算',
   description: '日経225先物、mini、マイクロの取引単位と呼値から、1ティックあたりの損益額を計算します。',
 };

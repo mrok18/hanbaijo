@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/articles/crypto-transfer-fee-network' },
   title: '暗号資産の送金手数料とネットワーク｜確認項目を整理',
   description: '暗号資産を取引所やウォレットへ送る前に、事業者の出金手数料とネットワーク手数料、対応ネットワーク、反映条件を分けて確認します。',
 };

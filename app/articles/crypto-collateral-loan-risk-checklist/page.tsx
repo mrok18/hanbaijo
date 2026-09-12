@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/crypto-collateral-loan-risk-checklist' },
   title: '暗号資産担保ローンとは？BTC・ETHを担保に借りる前の確認項目',
   description: '暗号資産担保ローンの仕組み、担保評価、金利、追加担保、強制決済、事業者リスクを中立的に整理します。',
 };

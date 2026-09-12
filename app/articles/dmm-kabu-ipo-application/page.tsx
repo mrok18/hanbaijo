@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-kabu-ipo-application' },
   title: 'DMM 株のIPO申込方法｜前受金不要・完全平等抽選と当選後の手順',
   description: 'DMM 株のIPOについて、抽選申込時の資金、完全平等抽選、申込上限、当選・補欠当選後の購入意思表示、NISA口座区分を整理します。',
 };

@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/fx-swap-spread-break-even-days' },
   title: 'FXスワップでスプレッドを回収するまで何日？損益分岐を計算',
   description: 'FXのスプレッド相当額を1日分の受取スワップで割り、初期コスト回収日数、1,000通貨と1万通貨の違い、為替変動の影響を計算します。',
 };

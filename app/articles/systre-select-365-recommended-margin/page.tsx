@@ -4,6 +4,7 @@ import ArticleStructuredData from '@/components/ArticleStructuredData';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/systre-select-365-recommended-margin' },
   title: 'シストレセレクト365の推奨証拠金とは？最大DDを計算',
   description: 'シストレセレクト365の推奨証拠金について、現在の証拠金基準額と過去1年間の最大ドローダウンの関係、複数ストラテジーの必要資金を解説します。',
 };

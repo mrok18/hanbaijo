@@ -1,5 +1,5 @@
 import Link from 'next/link';
-export const metadata = { title: '用語集' };
+export const metadata = { alternates: { canonical: '/articles/yogo' }, title: '用語集' };
 
 const TERMS: [string, string][] = [
   ['スプレッド', '買値（ask）と売値（bid）の差。実質的な売買コストにあたる。当サイトはこの値を各社について30分ごとに自動計測している。'],

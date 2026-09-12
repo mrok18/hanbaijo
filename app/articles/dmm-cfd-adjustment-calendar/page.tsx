@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-cfd-adjustment-calendar' },
   title: 'DMM CFDの調整額カレンダー｜金利・価格調整の違い',
   description: 'DMM CFDの金利調整額と価格調整額について、対象銘柄、発生タイミング、未約定注文への影響を公式情報から整理します。',
 };

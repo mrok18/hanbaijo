@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/articles/jfx-hedging-margin-cost' },
   title: 'JFXの両建ては証拠金が片側分？スプレッド・スワップとロスカットを整理',
   description: 'JFX MATRIX TRADERの両建てを解説。同数量は片側分、多い方で計算される必要証拠金、スプレッドとスワップ差、初期設定、ロスカットの注意点を整理します。',
 };

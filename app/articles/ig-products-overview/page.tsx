@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: 'IG証券の取扱商品｜FX・株価指数・株式・商品CFDを整理', description: 'IG証券のFX、株価指数CFD、株式CFD、商品CFD、債券先物CFDを商品別に整理し、証拠金とリスクの違いを解説します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/ig-products-overview' }, title: 'IG証券の取扱商品｜FX・株価指数・株式・商品CFDを整理', description: 'IG証券のFX、株価指数CFD、株式CFD、商品CFD、債券先物CFDを商品別に整理し、証拠金とリスクの違いを解説します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">IG証券 / PRODUCTS</p><h1>IG証券の取扱商品<br />FX・CFDを同じ基準で比較</h1>

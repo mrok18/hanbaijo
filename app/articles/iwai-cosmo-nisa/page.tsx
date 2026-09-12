@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: '岩井コスモ証券のNISA｜国内株・米国株の手数料と対象商品', description: '岩井コスモ証券ネット取引のNISAについて、国内株・米国株の手数料表示、対象商品、課税口座との違いを確認します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/iwai-cosmo-nisa' }, title: '岩井コスモ証券のNISA｜国内株・米国株の手数料と対象商品', description: '岩井コスモ証券ネット取引のNISAについて、国内株・米国株の手数料表示、対象商品、課税口座との違いを確認します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">岩井コスモ証券 / NISA</p><h1>岩井コスモ証券のNISA<br />手数料と対象商品を確認</h1>

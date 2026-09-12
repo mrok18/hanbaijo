@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/matsui-ekyc-required-documents' },
   title: '松井証券の口座開設に必要な書類｜eKYC・マイナンバー・郵送の違い',
   description: '松井証券の個人口座開設で必要な本人確認書類とマイナンバー確認書類、eKYC、オンラインアップロード、郵送の違いと不備防止を整理します。',
 };

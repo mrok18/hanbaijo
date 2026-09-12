@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/articles/jfx-quick-order-settings' },
   title: 'JFXクイック注文の設定｜全決済・両建て・決済pip差の注意点',
   description: 'JFX MATRIX TRADERのクイック注文で確認したいLot数、許容スリップ、許容スプレッド、両建て、全決済方式、決済pip差を整理します。',
 };

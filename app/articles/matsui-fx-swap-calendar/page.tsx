@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/matsui-fx-swap-calendar' },
   title: 'MATSUI FXのスワップ付与時間｜1万通貨表示の計算方法',
   description: 'MATSUI FXのスワップポイントについて、付与時間、付与日数、1万通貨あたり表示を1通貨・100通貨へ換算する方法を整理します。',
 };

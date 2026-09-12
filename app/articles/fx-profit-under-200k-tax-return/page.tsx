@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/articles/fx-profit-under-200k-tax-return' },
   title: 'FX利益20万円以下なら確定申告は不要？住民税・還付申告の注意',
   description: '会社員のFX所得が20万円以下の場合に所得税の確定申告が不要になる条件と、住民税、還付申告、損失繰越の注意点を整理します。',
 };

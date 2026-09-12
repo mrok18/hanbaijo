@@ -4,6 +4,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/articles/fx-spread-difference-annual-cost' },
   title: 'FXのスプレッド差0.1銭は年間いくら？数量・回数別に比較',
   description: 'FX会社の米ドル円スプレッド差0.1銭を、1,000通貨・1万通貨・10万通貨と1日1回・5回の年間コスト差へ換算します。',
 };

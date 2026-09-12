@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/fx-vps-total-cost' },
   title: 'FX自動売買VPSの費用はいくら？RDS込み総コスト',
   description: 'ABLENET VPSを例に、Windows VPS本体、RDSライセンス、契約更新後価格、取引回数あたりの費用、自宅PCとの比較方法を解説します。',
 };

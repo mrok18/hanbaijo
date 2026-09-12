@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/fpo-fx-practice-checklist' },
   title: 'FPOのFX教材を読んだ後に確認する実践チェックリスト',
   description: 'FPOのFX投資マスターガイドで基礎を学んだ後、スプレッド、必要証拠金、損切り、取引記録、税務を実践前に確認するチェックリスト。',
 };

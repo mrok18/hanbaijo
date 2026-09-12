@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/matsui-fx-one-currency-order' },
   title: '松井証券FXの1通貨注文方法｜0.0001入力と数量表示の注意点',
   description: '松井証券FXで1通貨を注文する入力方法、1万通貨単位表示からの換算、注文前に確認する証拠金・スプレッド・損益を整理する。',
 };

@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-cfd-account-opening-documents' },
   title: 'DMM CFDの口座開設に必要なもの｜本人確認・審査・開始まで',
   description: 'DMM CFDの口座開設に必要な本人確認書類とマイナンバー、申込みから審査・取引開始までの流れ、提出方法による違いを整理します。',
 };

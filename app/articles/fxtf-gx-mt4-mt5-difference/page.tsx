@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/fxtf-gx-mt4-mt5-difference' },
   title: 'FXTF GX・MT4・MT5の違い｜取引商品とツールを比較',
   description: 'FXTF GX、FXTF MT4、FXTF MT5の取引商品、TradingView連携、EA、対応端末を比較。2026年9月時点のMT5提供範囲も整理します。',
 };

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: 'bitbankの取引所・販売所｜初心者が使い分けるポイント', description: 'bitbankの取引所と販売所の使い分けを、価格の決まり方、端数、手数料、注文のしやすさから整理します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/bitbank-spot-trading' }, title: 'bitbankの取引所・販売所｜初心者が使い分けるポイント', description: 'bitbankの取引所と販売所の使い分けを、価格の決まり方、端数、手数料、注文のしやすさから整理します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">bitbank / SPOT</p><h1>bitbankの取引所と販売所<br />使い分けのポイント</h1>

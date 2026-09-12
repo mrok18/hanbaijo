@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/matsui-withdrawal-unavailable' },
   title: '松井証券で出金できない原因｜出金可能額・受渡日・受付時間を確認',
   description: '松井証券で出金できない、減額された、着金しない場合に、出金可能額、受渡日、振替、受付時間、登録銀行を順番に確認します。',
 };

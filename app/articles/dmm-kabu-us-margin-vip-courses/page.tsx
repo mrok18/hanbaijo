@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-kabu-us-margin-vip-courses' },
   title: 'DMM 株の米国株信用メンバー・プレミアム条件｜金利差を計算',
   description: 'DMM 株の米国株信用におけるゲスト・メンバー・プレミアムコースを、入庫額、米ドル残高、平均建玉、手数料、買方金利、適用期間で比較します。',
 };

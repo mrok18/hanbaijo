@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/articles/jfx-vs-dmm-fx' },
   title: 'JFXとDMM FXを比較｜取引単位・スプレッド・ロスカットの違い',
   description: 'JFX MATRIX TRADERとDMM FXを公式条件で比較。1,000通貨対応、通常・ミニ銘柄、米ドル円スプレッドの時間帯、ロスカット基準を整理します。',
 };

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: '立花証券ストックハウスの入出金｜買付余力・振替・出金を確認', description: '立花証券ストックハウスの入金、買付余力、信用保証金、出金依頼の確認順を整理します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/tachibana-stockhouse-funding' }, title: '立花証券ストックハウスの入出金｜買付余力・振替・出金を確認', description: '立花証券ストックハウスの入金、買付余力、信用保証金、出金依頼の確認順を整理します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">STOCKHOUSE / FUNDING</p><h1>ストックハウスの入出金<br />買付余力と保証金を確認</h1>

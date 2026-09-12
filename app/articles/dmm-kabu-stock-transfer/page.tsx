@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-kabu-stock-transfer' },
   title: 'DMM 株の株式移管｜入庫・出庫手数料と国内株・米国株の期間',
   description: 'DMM 株への株式入庫と他社への出庫について、手数料、必要書類、特定・一般口座、国内株と米国株の期間、NISA移管不可を整理します。',
 };

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/articles/light-fx-trading-rules' },
   title: 'LIGHT FXの取引時間と0.1Lot｜メンテナンス・入出金を整理',
   description: 'LIGHT FXの最小取引単位0.1Lot、夏冬の取引時間、日次・週次メンテナンス、入出金口座と必要資金の確認方法を公式情報で整理します。',
 };

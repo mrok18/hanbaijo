@@ -4,6 +4,7 @@ import ArticleStructuredData from '@/components/ArticleStructuredData';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/matsui-fx-auto-trading-stop-restart' },
   title: 'MATSUI FX自動売買の停止・再開｜建玉と注文はどうなる？',
   description: 'MATSUI FX自動売買の3つの運用停止方法、自動停止条件、建玉・未約定注文の扱い、再開操作を公式ルールから整理します。',
 };

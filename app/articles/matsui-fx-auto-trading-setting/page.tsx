@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/matsui-fx-auto-trading-setting' },
   title: 'MATSUI FX自動売買の設定方法｜レンジ・値幅・益出し幅を整理',
   description: '松井証券MATSUI FXのリピート注文について、注文レンジ、注文値幅、益出し幅、注文数量、運用停止ライン、最大100件の制限と必要資金の考え方を解説します。',
 };

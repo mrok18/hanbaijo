@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/fx-vps-rds-license' },
   title: 'FX VPSのRDSライセンスとは？月1,320円を計算',
   description: 'ABLENETのWindows VPSでMT4・MT5を使う場合のRDSライセンスを、必要になる接続、利用人数、月額・年額、注意点から整理します。',
 };

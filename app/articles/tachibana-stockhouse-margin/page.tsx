@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: '立花証券ストックハウスの信用取引｜手数料・金利・貸株料', description: '立花証券ストックハウスの信用取引について、個別・定額コース、金利・貸株料、追証や強制決済の費用を整理します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/tachibana-stockhouse-margin' }, title: '立花証券ストックハウスの信用取引｜手数料・金利・貸株料', description: '立花証券ストックハウスの信用取引について、個別・定額コース、金利・貸株料、追証や強制決済の費用を整理します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">STOCKHOUSE / MARGIN</p><h1>ストックハウスの信用取引<br />手数料以外のコストを確認</h1>

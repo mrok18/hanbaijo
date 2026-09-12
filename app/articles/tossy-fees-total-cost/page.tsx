@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/tossy-fees-total-cost' },
   title: 'TOSSYの手数料は無料？スプレッド・調整額まで計算',
   description: 'TOSSYの口座管理費・取引手数料無料と、スプレッド、スワップ、金利・権利・価格調整、スリッページを区別して総コストを整理します。',
 };

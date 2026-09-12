@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-cfd-commodity-lot-list' },
   title: 'DMM CFD商品14銘柄の1Lot一覧｜単位を間違えない早見表',
   description: 'DMM CFD商品14銘柄の1Lot取引単位、対応する物理量、必要証拠金の計算方法を一覧で確認できます。',
 };

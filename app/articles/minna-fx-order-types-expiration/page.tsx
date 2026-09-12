@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/articles/minna-fx-order-types-expiration' },
   title: 'みんなのFXの注文方法｜成行・指値・逆指値・OCO・IFO',
   description: 'みんなのFXの注文種別、注文の有効期限、メンテナンス中の予約注文と約定の違いを公式情報で整理します。',
 };

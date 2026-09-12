@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/matsui-fx-swap-transfer-tax' },
   title: '松井証券FXのスワップ振替と税金｜受渡日・出金可能額・不足金',
   description: '松井証券FXのスワップ振替の操作、受渡日、総合口座への移動、出金可能額と確定申告の確認ポイントを公式情報から整理します。',
 };

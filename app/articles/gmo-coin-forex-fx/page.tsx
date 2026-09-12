@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: 'GMOコイン外国為替FXとは？1通貨・レバレッジ・スワップを確認', description: 'GMOコインの外国為替FXを、1通貨取引、レバレッジ、スワップポイント、証拠金の確認項目で整理します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/gmo-coin-forex-fx' }, title: 'GMOコイン外国為替FXとは？1通貨・レバレッジ・スワップを確認', description: 'GMOコインの外国為替FXを、1通貨取引、レバレッジ、スワップポイント、証拠金の確認項目で整理します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">GMOコイン / FX</p><h1>GMOコイン外国為替FXとは？<br />1通貨からの取引とコスト</h1>

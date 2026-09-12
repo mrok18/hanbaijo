@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/articles/crypto-transfer-not-reflected' },
   title: '暗号資産を送金したのに反映されない｜確認順と問い合わせ準備',
   description: '暗号資産の送金・入金が反映されないときに、TxID、承認数、ネットワーク、タグ・メモ、最低入金額を確認する順番を整理します。',
 };

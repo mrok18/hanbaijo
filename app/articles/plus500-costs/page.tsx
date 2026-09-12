@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: 'Plus500証券の手数料・スプレッド｜無料表示と実質コスト', description: 'Plus500証券のCFDで発生するスプレッド、オーバーナイト費用、為替換算などを分けて総コストを確認します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/plus500-costs' }, title: 'Plus500証券の手数料・スプレッド｜無料表示と実質コスト', description: 'Plus500証券のCFDで発生するスプレッド、オーバーナイト費用、為替換算などを分けて総コストを確認します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">PLUS500 / COST</p><h1>Plus500証券のコスト<br />無料表示の先まで確認</h1>

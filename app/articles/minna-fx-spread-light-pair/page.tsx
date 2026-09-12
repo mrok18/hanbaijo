@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/articles/minna-fx-spread-light-pair' },
   title: 'みんなのFXのスプレッド｜LIGHTペア・時間帯・例外を比較',
   description: 'みんなのFXのUSD/JPY LIGHT・通常ペアのスプレッド、適用時間、LIGHTペアの上限と原則固定の例外を公式情報で整理します。',
 };

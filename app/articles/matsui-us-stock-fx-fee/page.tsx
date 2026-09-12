@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/matsui-us-stock-fx-fee' },
   title: '松井証券の米国株は為替手数料0円？円貨決済25銭との違い',
   description: '松井証券の米国株における米ドル・日本円の事前両替0円と、円貨決済時の1ドル25銭の違いを取引金額別に計算します。',
 };

@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-cfd-index-vs-commodity' },
   title: 'DMM CFDのIndexとCommodityの違い｜22銘柄・証拠金を比較',
   description: 'DMM CFD-IndexとCommodityを、取扱銘柄、レバレッジ、必要証拠金、取引単位、円換算、調整額、入金方法から比較します。',
 };

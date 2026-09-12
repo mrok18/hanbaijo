@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: '金融商品のコスト比較｜FX・CFD・株・先物・暗号資産の見方', description: 'FX、CFD、株式、先物、暗号資産の取引コストを、売買・保有・資金移動の3段階で比較する方法を解説します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/financial-product-cost-comparison' }, title: '金融商品のコスト比較｜FX・CFD・株・先物・暗号資産の見方', description: 'FX、CFD、株式、先物、暗号資産の取引コストを、売買・保有・資金移動の3段階で比較する方法を解説します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">CROSS-ASSET / COST</p><h1>金融商品のコスト比較<br />FX・CFD・株・先物・暗号資産</h1>

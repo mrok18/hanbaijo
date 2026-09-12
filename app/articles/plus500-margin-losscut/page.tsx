@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: 'Plus500証券のロスカット｜維持証拠金を下回った場合の自動決済', description: 'Plus500証券CFDの有効証拠金、維持証拠金、自動ロスカット、元本超過損のリスクを公式情報で整理します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/plus500-margin-losscut' }, title: 'Plus500証券のロスカット｜維持証拠金を下回った場合の自動決済', description: 'Plus500証券CFDの有効証拠金、維持証拠金、自動ロスカット、元本超過損のリスクを公式情報で整理します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">PLUS500 / RISK</p><h1>Plus500証券のロスカット<br />維持証拠金を下回る前に確認</h1>

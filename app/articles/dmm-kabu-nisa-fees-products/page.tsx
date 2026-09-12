@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-kabu-nisa-fees-products' },
   title: 'DMM 株のNISAは手数料無料？国内株・米国株・為替コストを整理',
   description: 'DMM 株のNISAで取引できる国内株・米国株と、無料になる売買手数料、米国株の為替コスト、配当課税など残る費用と注意点を整理します。',
 };

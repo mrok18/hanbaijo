@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-kabu-dividend-receiving-tax' },
   title: 'DMM 株の配当金はいつ・どこに入る？受取方法と税金を整理',
   description: 'DMM 株の配当金について、3つの受取方法、株式数比例配分方式、入金時期、税率、特定口座の損益通算、NISAの注意点を整理します。',
 };

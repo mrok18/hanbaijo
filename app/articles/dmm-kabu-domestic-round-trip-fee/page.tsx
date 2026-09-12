@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-kabu-domestic-round-trip-fee' },
   title: 'DMM 株の国内株手数料｜買って売る往復コストを計算',
   description: 'DMM 株の国内株現物手数料を、買付と売却を合わせた往復コストで計算。5万円、10万円、20万円、50万円、100万円、300万円の例を整理します。',
 };

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-fx-slippage-orders' },
   title: 'DMM FXのスリッページ｜即時・指値・逆指値の違い',
   description: 'DMM FXの即時注文、指値、逆指値について、注文価格と約定価格のずれ、許容スリッページ幅、注文不成立との関係を整理します。',
 };

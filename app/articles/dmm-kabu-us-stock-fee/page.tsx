@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-kabu-us-stock-fee' },
   title: 'DMM 株の米国株手数料はいくら？為替25銭まで計算',
   description: 'DMM 株の米国株現物について、取引手数料0.495％、最低0ドル、上限22ドル、円貨決済の為替コスト1ドルあたり25銭を計算します。',
 };

@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/fx-annual-report-provider-comparison' },
   title: 'FX年間損益報告書はいつ出る？DMM FX・松井証券・JFX・TOSSYを比較',
   description: 'DMM FX・松井証券FX・JFX・TOSSYの年間損益報告書や期間損益の確認時期・場所・保存方法を比較し、複数口座の確定申告準備を整理します。',
 };

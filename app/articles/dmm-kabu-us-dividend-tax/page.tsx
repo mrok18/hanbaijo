@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-kabu-us-dividend-tax' },
   title: 'DMM 株の米国株配当金と税金｜入金日・NISA・外国税額控除',
   description: 'DMM 株の米国株配当金について、米国10％と国内20.315％の課税、NISAの国内非課税、外国税額控除、ドル入金、入金反映日を整理します。',
 };

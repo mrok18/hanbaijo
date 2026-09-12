@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/matsui-fx-spread-rules' },
   title: 'MATSUI FXのスプレッドは0.1銭？時間・数量・注文条件',
   description: 'MATSUI FXの縮小スプレッドと通常スプレッドについて、コアタイム、数量上限、注文種類、原則固定の例外を公式情報から整理します。',
 };

@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-kabu-tools-comparison' },
   title: 'DMM 株のアプリ・取引ツール比較｜かんたん・ノーマル・STANDARD・PRO+',
   description: 'DMM 株のスマホアプリ「かんたんモード」「ノーマルモード」と、PC版STANDARD・PRO+を、注文、チャート、NISA、つみたてかぶ、利用環境で比較します。',
 };

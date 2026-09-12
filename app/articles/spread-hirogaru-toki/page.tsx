@@ -1,5 +1,5 @@
 import Link from 'next/link';
-export const metadata = { title: 'スプレッドが広がるのはどんなときか' };
+export const metadata = { alternates: { canonical: '/articles/spread-hirogaru-toki' }, title: 'スプレッドが広がるのはどんなときか' };
 
 export default function Page() {
   return (

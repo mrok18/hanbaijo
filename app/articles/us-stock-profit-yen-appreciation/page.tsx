@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/us-stock-profit-yen-appreciation' },
   title: '米国株が上がったのに円換算で損？円高と損益分岐ドル円',
   description: '米国株の株価が上昇しても円換算で損失になる条件を、購入・売却時のドル円、売買手数料、為替コストから計算します。',
 };

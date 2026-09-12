@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/articles/lion-fx-trading-hours-lot' },
   title: 'LION FXの取引時間と1,000通貨｜夏時間・冬時間・メンテナンス',
   description: 'ヒロセ通商LION FXの取引時間、1Lot＝1,000通貨、日次・週次メンテナンスと週末の注文扱いを公式情報で整理します。',
 };

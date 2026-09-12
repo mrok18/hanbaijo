@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-cfd-margin-leverage' },
   title: 'DMM CFDの必要証拠金はいくら？日本225・金・原油で計算',
   description: 'DMM CFDのレバレッジと1Lotの取引単位を確認し、日本225、金スポット、原油の必要証拠金を仮定レートで計算します。',
 };

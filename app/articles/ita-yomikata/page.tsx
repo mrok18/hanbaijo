@@ -1,5 +1,5 @@
 import Link from 'next/link';
-export const metadata = { title: '取引所の「板」の読み方' };
+export const metadata = { alternates: { canonical: '/articles/ita-yomikata' }, title: '取引所の「板」の読み方' };
 
 export default function Page() {
   return (

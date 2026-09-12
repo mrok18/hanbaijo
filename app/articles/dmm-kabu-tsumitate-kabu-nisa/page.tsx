@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-kabu-tsumitate-kabu-nisa' },
   title: 'DMM 株のつみたてかぶは1,000円から｜NISA・手数料・買付日',
   description: 'DMM 株の「つみたてかぶ」について、1,000円からの積立、NISA対応、設定頻度、買付価格、手数料、資金不足時の扱いを整理します。',
 };

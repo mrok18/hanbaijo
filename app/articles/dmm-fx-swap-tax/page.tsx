@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-fx-swap-tax' },
   title: 'DMM FXスワップポイントの税金｜付与・振替・確定申告',
   description: 'DMM FXのスワップポイントがいつ付与され、振替で何が変わるか、決済・受取と確定申告の関係を公式情報から整理します。',
 };

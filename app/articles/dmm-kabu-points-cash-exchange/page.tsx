@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-kabu-points-cash-exchange' },
   title: 'DMM 株ポイントは何円？1％還元・現金交換・有効期限を計算',
   description: 'DMM 株ポイントについて、取引手数料1％の計算方法、1pt＝1円の現金交換、付与日、有効期限、NISAや手数料無料時に付かない条件を整理します。',
 };

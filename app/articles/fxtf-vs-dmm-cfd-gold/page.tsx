@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/fxtf-vs-dmm-cfd-gold' },
   title: 'FXTF MT5とDMM CFDの金CFDを比較｜1Lot・証拠金・総コスト',
   description: 'FXTF MT5とDMM CFDの金CFDを、1Lotの取引単位、証拠金率、スプレッド、新規手数料、保有中の調整額、取引ツールで比較します。',
 };

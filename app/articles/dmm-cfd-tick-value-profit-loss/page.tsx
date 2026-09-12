@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-cfd-tick-value-profit-loss' },
   title: 'DMM CFDは1ティックいくら？商品14銘柄の損益早見表',
   description: 'DMM CFDの商品14銘柄について、1Lotの取引単位と呼値から、最小値幅が何米ドル・何円の損益になるかを一覧で計算します。',
 };

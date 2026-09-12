@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/articles/esmart-fx-swap-calendar' },
   title: '三菱UFJ eスマート証券のスワップカレンダーはどこ？付与日・確認方法',
   description: '三菱UFJ eスマート証券 FXのスワップポイントについて、スマホ・PCで最新値と過去実績を見る方法、夏時間・冬時間の判定時刻、水曜3日分と祝日の変則を整理します。',
 };

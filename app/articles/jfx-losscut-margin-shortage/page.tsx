@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/articles/jfx-losscut-margin-shortage' },
   title: 'JFXのロスカット基準は？有効証拠金・必要証拠金と不足金を整理',
   description: 'JFX MATRIX TRADERのロスカット条件、判定間隔、決済順序、レート停止時の扱い、口座残高を超える損失と不足金の期限を公式書面から整理します。',
 };

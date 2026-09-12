@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/fxtf-mt4-ea-vps-start' },
   title: 'FXTF MT4でEA自動売買を始める手順｜VPS・コスト・停止対策',
   description: 'FXTF MT4のEA自動売買を、PC版導入、0.01Lot、バックテスト、建玉連動手数料、VPS、停止監視の順で公式情報から整理します。',
 };

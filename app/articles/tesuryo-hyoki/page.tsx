@@ -1,5 +1,5 @@
 import Link from 'next/link';
-export const metadata = { title: '「手数料無料」はなぜ表示できるのか' };
+export const metadata = { alternates: { canonical: '/articles/tesuryo-hyoki' }, title: '「手数料無料」はなぜ表示できるのか' };
 
 export default function Page() {
   return (

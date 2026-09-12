@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/articles/jfx-withdrawal-time-rules' },
   title: 'JFXの出金はいつ反映？リアルタイム・通常出金の時間と取消条件',
   description: 'JFX MATRIX TRADERの出金時間を整理。リアルタイム出金の金額・受付時間、時間外の着金、通常出金との違い、手数料と取消条件を解説します。',
 };

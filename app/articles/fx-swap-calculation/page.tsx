@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/fx-swap-calculation' },
   title: 'FXスワップポイントの計算方法',
   description: 'FXのスワップポイントを、1Lotあたりの表示・保有数量・付与日数から試算する方法を解説します。',
 };

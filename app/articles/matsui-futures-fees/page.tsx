@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/articles/matsui-futures-fees' },
   title: '松井証券の先物手数料｜通常・一日先物の違いと往復コスト',
   description: '松井証券の日経225先物・mini・マイクロの手数料を、通常先物と一日先物に分けて整理します。往復コストと確認項目も解説します。',
 };

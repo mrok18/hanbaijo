@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: '立花証券ストックハウスの株式手数料｜個別・定額コースを比較', description: '立花証券ストックハウスの現物株式手数料を、1注文ごとの個別コースと1日定額コース、電話取引の違いで整理します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/tachibana-stockhouse-fees' }, title: '立花証券ストックハウスの株式手数料｜個別・定額コースを比較', description: '立花証券ストックハウスの現物株式手数料を、1注文ごとの個別コースと1日定額コース、電話取引の違いで整理します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">STOCKHOUSE / STOCK COST</p><h1>ストックハウスの株式手数料<br />個別・定額コースを比較</h1>

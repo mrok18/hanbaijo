@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: 'bitbankの取引手数料｜取引所・販売所のコストを分けて確認', description: 'bitbankの板取引と販売所を、手数料・スプレッド・約定方法の違いから整理します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/bitbank-trading-fees' }, title: 'bitbankの取引手数料｜取引所・販売所のコストを分けて確認', description: 'bitbankの板取引と販売所を、手数料・スプレッド・約定方法の違いから整理します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">bitbank / COST</p><h1>bitbankの取引手数料<br />取引所と販売所を比較</h1>

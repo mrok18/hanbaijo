@@ -1,5 +1,5 @@
 import Link from 'next/link';
-export const metadata = { title: '暗号資産を買うときにかかるコストの全体像' };
+export const metadata = { alternates: { canonical: '/articles/cost-no-uchiwake' }, title: '暗号資産を買うときにかかるコストの全体像' };
 
 export default function Page() {
   return (

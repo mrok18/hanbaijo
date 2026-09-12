@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/articles/gmo-click-fx-neo-trading-rules' },
   title: 'GMOクリック証券FXネオの取引ルール｜1,000通貨・50％ロスカット・時間',
   description: 'GMOクリック証券FXネオの取引単位、注文受付時間、取引時間、証拠金維持率50％の自動ロスカット、入金・メンテナンスを公式情報で整理します。',
 };

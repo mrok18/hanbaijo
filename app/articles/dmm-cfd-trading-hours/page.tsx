@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-cfd-trading-hours' },
   title: 'DMM CFDの取引時間｜夏時間・冬時間と約定しない時間',
   description: 'DMM CFDの銘柄別取引時間、夏時間・冬時間、毎営業日のメンテナンス、取引時間外にできる操作を公式情報から整理します。',
 };

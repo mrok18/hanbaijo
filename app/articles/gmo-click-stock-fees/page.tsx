@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: 'GMOクリック証券の株式手数料｜現物・信用0円の対象外を確認', description: 'GMOクリック証券の国内株現物・信用取引の手数料無料化と、コールセンター・単元未満株・不足金などの対象外を整理します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/gmo-click-stock-fees' }, title: 'GMOクリック証券の株式手数料｜現物・信用0円の対象外を確認', description: 'GMOクリック証券の国内株現物・信用取引の手数料無料化と、コールセンター・単元未満株・不足金などの対象外を整理します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">GMO CLICK / STOCK COST</p><h1>GMOクリック証券の株式手数料<br />現物・信用の無料範囲</h1>

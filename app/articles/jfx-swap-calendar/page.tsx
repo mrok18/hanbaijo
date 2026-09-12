@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/jfx-swap-calendar' },
   title: 'JFXのスワップポイント付与日と時間｜3倍デー・祝日の確認方法',
   description: 'JFX MATRIX TRADERのスワップ付与時刻、木曜朝の3日分、USD/CAD・USD/TRYの例外、祝日カレンダーと確認画面を公式情報で整理します。',
 };

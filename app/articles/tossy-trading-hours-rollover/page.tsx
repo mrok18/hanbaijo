@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/tossy-trading-hours-rollover' },
   title: 'TOSSYの取引時間とロールオーバー｜休場・持越しを確認',
   description: 'TOSSYのアセット別取引時間、日次・週次メンテナンス、ロールオーバー、価格調整額、注文取消しの条件を公式ルールから整理します。',
 };

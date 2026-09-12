@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/articles/crypto-tax-reform-start-date' },
   title: '暗号資産の分離課税はいつから？税制改正の対象・20％・損失繰越',
   description: '暗号資産税制改正について、開始時期、特定暗号資産、20％の分離課税、3年間の損失繰越、デリバティブの扱いを公的資料から整理します。',
 };

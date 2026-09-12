@@ -1,5 +1,5 @@
 import Link from 'next/link';
-export const metadata = { title: 'メイカーとテイカー — 手数料が2種類ある理由' };
+export const metadata = { alternates: { canonical: '/articles/maker-taker' }, title: 'メイカーとテイカー — 手数料が2種類ある理由' };
 
 export default function Page() {
   return (

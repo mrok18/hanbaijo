@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-kabu-us-margin-call' },
   title: 'DMM 株の米国株信用の追証｜30％・2,500ドルと解消期限',
   description: 'DMM 株の米国株信用取引について、追証予定と確定の時刻、最低預託率30％、最低保証金2,500ドル、翌々国内営業日15時30分の期限、返済による解消を整理します。',
 };

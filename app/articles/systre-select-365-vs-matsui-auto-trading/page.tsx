@@ -4,6 +4,7 @@ import ArticleStructuredData from '@/components/ArticleStructuredData';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/systre-select-365-vs-matsui-auto-trading' },
   title: 'シストレセレクト365とMATSUI FX自動売買を比較',
   description: '選択型とリピート型、1万通貨と1通貨、利用料、対象通貨、必要資金の考え方から、2つのFX自動売買を比較します。',
 };

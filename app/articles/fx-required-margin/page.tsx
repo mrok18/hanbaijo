@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/fx-required-margin' },
   title: 'FXの必要証拠金はいくら？1万通貨で計算',
   description: '国内個人向けFXの必要証拠金を、取引金額と4％の証拠金率から計算します。1,000通貨・1万通貨の例付き。',
 };

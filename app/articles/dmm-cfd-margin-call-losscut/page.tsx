@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-cfd-margin-call-losscut' },
   title: 'DMM CFDの追証とロスカットの違い｜100％・50％を整理',
   description: 'DMM CFDの追加証拠金、マージンカット、ロスカットについて、証拠金維持率100％と50％の違い、解消方法、注意点を整理します。',
 };

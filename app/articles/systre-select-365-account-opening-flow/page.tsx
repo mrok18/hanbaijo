@@ -4,6 +4,7 @@ import ArticleStructuredData from '@/components/ArticleStructuredData';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/systre-select-365-account-opening-flow' },
   title: 'シストレセレクト365の始め方｜口座開設から稼働まで',
   description: 'くりっく365口座の有無で異なる申込経路、本人確認書類、カード登録、入金、ストラテジー稼働までを公式情報から整理します。',
 };

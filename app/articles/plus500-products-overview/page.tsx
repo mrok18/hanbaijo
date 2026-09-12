@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: 'Plus500証券の取扱商品｜FX・株式・商品CFDとノックアウトを整理', description: 'Plus500証券のFX・株式・株価指数・商品CFDとノックアウトオプションを、現物との違いとリスクから整理します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/plus500-products-overview' }, title: 'Plus500証券の取扱商品｜FX・株式・商品CFDとノックアウトを整理', description: 'Plus500証券のFX・株式・株価指数・商品CFDとノックアウトオプションを、現物との違いとリスクから整理します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">PLUS500 / PRODUCTS</p><h1>Plus500証券の取扱商品<br />FX・CFD・ノックアウトを整理</h1>

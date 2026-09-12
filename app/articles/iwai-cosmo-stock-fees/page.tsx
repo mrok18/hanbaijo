@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: '岩井コスモ証券の株式手数料｜現物・信用・デイトレを比較', description: '岩井コスモ証券の国内株手数料を、ネット取引のコース、信用・デイトレの無料条件、対面取引との違いで整理します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/iwai-cosmo-stock-fees' }, title: '岩井コスモ証券の株式手数料｜現物・信用・デイトレを比較', description: '岩井コスモ証券の国内株手数料を、ネット取引のコース、信用・デイトレの無料条件、対面取引との違いで整理します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">岩井コスモ証券 / STOCK COST</p><h1>岩井コスモ証券の株式手数料<br />現物・信用・デイトレを比較</h1>

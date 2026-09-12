@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/articles/fx-tax-rate-calculation' },
   title: '国内FXの税率は20.315％？所得税・住民税の計算方法',
   description: '国内FXの申告分離課税を、所得税15％、復興特別所得税、地方稅5％に分け、必要経費・損益通算後の課税所得から税額を試算します。',
 };

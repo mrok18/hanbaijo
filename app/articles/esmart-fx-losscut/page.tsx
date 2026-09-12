@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: '三菱UFJ eスマート証券 FXのロスカット｜維持率75％と注文取消し', description: '旧auカブコムFXこと三菱UFJ eスマート証券 FXのロスカット基準、未約定注文の取消し、強制決済と不足金リスクを整理します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/esmart-fx-losscut' }, title: '三菱UFJ eスマート証券 FXのロスカット｜維持率75％と注文取消し', description: '旧auカブコムFXこと三菱UFJ eスマート証券 FXのロスカット基準、未約定注文の取消し、強制決済と不足金リスクを整理します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">三菱UFJ eスマート証券 FX / RISK</p><h1>三菱UFJ eスマート証券 FXのロスカット<br />維持率75％を確認</h1>

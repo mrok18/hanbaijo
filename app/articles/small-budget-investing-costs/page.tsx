@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: '少額投資のコスト｜100円・1通貨でも確認したい手数料とリスク', description: '少額でFX・株式・暗号資産を始めるときに、手数料、スプレッド、最低入金、証拠金を確認する順番を整理します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/small-budget-investing-costs' }, title: '少額投資のコスト｜100円・1通貨でも確認したい手数料とリスク', description: '少額でFX・株式・暗号資産を始めるときに、手数料、スプレッド、最低入金、証拠金を確認する順番を整理します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">BEGINNER / COST</p><h1>少額投資のコスト<br />100円・1通貨でも確認する項目</h1>

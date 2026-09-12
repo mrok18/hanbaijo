@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-cfd-total-cost' },
   title: 'DMM CFDは手数料0円？スプレッド・調整額の総コスト',
   description: 'DMM CFDの取引手数料0円と総コストの違いを、スプレッド、金利調整額、価格調整額、約定差に分けて整理します。',
 };

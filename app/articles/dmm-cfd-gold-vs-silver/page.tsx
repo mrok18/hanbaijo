@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-cfd-gold-vs-silver' },
   title: 'DMM CFDの金と銀｜1Lot・必要証拠金・金利調整額を比較',
   description: 'DMM CFDの金スポットと銀スポットを、1Lot、必要証拠金、値動き、金利調整額から比較します。',
 };

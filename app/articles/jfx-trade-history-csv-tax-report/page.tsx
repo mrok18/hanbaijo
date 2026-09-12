@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/jfx-trade-history-csv-tax-report' },
   title: 'JFXの取引履歴をCSV保存する方法｜確定申告用報告書との違い',
   description: 'JFX MATRIX TRADERの約定・注文・入出金履歴を検索してCSV保存する手順と、個人口座の確定申告に使う損益計算書との違いを整理する。',
 };

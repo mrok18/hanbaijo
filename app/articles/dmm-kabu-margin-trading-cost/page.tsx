@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-kabu-margin-trading-cost' },
   title: 'DMM 株の信用取引手数料は無料？金利・貸株料・逆日歩を計算',
   description: 'DMM 株の国内信用取引について、0円の売買手数料と、買方金利、貸株料、逆日歩、事務管理費、名義書換料、デイトレ強制決済を整理します。',
 };

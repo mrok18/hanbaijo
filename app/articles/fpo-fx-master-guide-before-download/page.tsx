@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/fpo-fx-master-guide-before-download' },
   title: 'FPO FX投資マスターガイドは無料？登録前に確認する7項目',
   description: 'FPOの無料電子書籍「FX投資マスターガイド」について、全128ページの収録範囲、受取方法、メール登録、追加案内、投資リスクを確認します。',
 };

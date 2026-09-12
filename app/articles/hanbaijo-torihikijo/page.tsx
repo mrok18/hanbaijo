@@ -1,5 +1,5 @@
 import Link from 'next/link';
-export const metadata = { title: '販売所と取引所は何が違うのか' };
+export const metadata = { alternates: { canonical: '/articles/hanbaijo-torihikijo' }, title: '販売所と取引所は何が違うのか' };
 
 export default function Page() {
   return (

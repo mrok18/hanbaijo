@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/fxtf-losscut-50-100' },
   title: 'FXTFのロスカットは50％・100％｜GXとMT4の違い',
   description: 'FXTF GXとMT4の通常時50％、日次判定100％のロスカット条件、判定時刻、値洗い、強制決済の順序を比較します。',
 };

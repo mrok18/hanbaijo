@@ -4,6 +4,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/articles/fx-annual-transaction-report-tax-return' },
   title: 'FXの年間取引報告書はどこを見る？複数口座の確定申告準備',
   description: 'FXの年間取引報告書・年間損益報告書で確認する決済損益、スワップ、手数料と、複数口座の集計、確定申告書等作成コーナーへの入力準備を整理します。',
 };

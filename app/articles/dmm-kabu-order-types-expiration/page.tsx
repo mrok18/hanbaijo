@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-kabu-order-types-expiration' },
   title: 'DMM 株の注文方法｜成行・指値・逆指値・OCOと失効条件',
   description: 'DMM 株の国内株注文を、成行、指値、寄付、引け、不成、逆指値、OCO、IOC、注文期限、期限前に失効する条件、NISAの制限で整理します。',
 };

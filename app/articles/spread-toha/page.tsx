@@ -1,5 +1,5 @@
 import Link from 'next/link';
-export const metadata = { title: 'スプレッドとは何か — 「手数料無料」の正体' };
+export const metadata = { alternates: { canonical: '/articles/spread-toha' }, title: 'スプレッドとは何か — 「手数料無料」の正体' };
 
 export default function Page() {
   return (

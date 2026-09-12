@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: '三菱UFJ eスマート証券 FXの取引単位｜ミニ1,000通貨・通常・大口', description: '旧auカブコムFXこと三菱UFJ eスマート証券 FXのミニ・通常・大口を、通貨数量と注文上限から整理します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/esmart-fx-trading-unit' }, title: '三菱UFJ eスマート証券 FXの取引単位｜ミニ1,000通貨・通常・大口', description: '旧auカブコムFXこと三菱UFJ eスマート証券 FXのミニ・通常・大口を、通貨数量と注文上限から整理します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">三菱UFJ eスマート証券 FX / UNIT</p><h1>三菱UFJ eスマート証券 FX<br />ミニ・通常・大口を比較</h1>

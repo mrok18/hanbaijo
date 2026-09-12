@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/tossy-margin-by-asset' },
   title: 'TOSSYの必要証拠金｜6資産を100万円取引で比較',
   description: 'TOSSYのFX、株式、株価指数、バラエティ、商品、暗号資産CFDについて、個人の証拠金率と100万円取引時の必要額を比較します。',
 };

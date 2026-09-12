@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: 'GMOクリック証券の株主優待・配当｜権利付最終売買日を確認', description: 'GMOクリック証券で株主優待や配当の権利を得るための権利確定日、権利付最終売買日、現物保有の条件を整理します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/gmo-click-stock-rights' }, title: 'GMOクリック証券の株主優待・配当｜権利付最終売買日を確認', description: 'GMOクリック証券で株主優待や配当の権利を得るための権利確定日、権利付最終売買日、現物保有の条件を整理します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">GMO CLICK / RIGHTS</p><h1>GMOクリック証券の株主優待・配当<br />権利付最終売買日を確認</h1>

@@ -4,6 +4,7 @@ import ArticleStructuredData from '@/components/ArticleStructuredData';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/matsui-fx-auto-trading-cost' },
   title: 'MATSUI FX自動売買は100円から？必要資金とロスカットを計算',
   description: 'MATSUI FXのリピート系自動売買について、1通貨・100円からの意味、複数注文の必要証拠金、評価損への備え、コストを解説します。',
 };

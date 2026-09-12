@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-kabu-deposit-methods' },
   title: 'DMM 株の入金方法｜クイック入金5,000円・振込・反映時間',
   description: 'DMM 株のクイック入金と振込入金を、最低金額、手数料、反映時間、対応金融機関、同一名義、反映されない場合の確認手順で比較します。',
 };

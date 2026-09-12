@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/fx-position-size-calculation' },
   title: 'FXの適正ロット・取引数量の決め方｜許容損失から逆算',
   description: 'FXの取引数量を、口座資金、許容損失率、損切り幅、1pipsの損益から逆算します。1,000通貨・1万通貨へ丸める具体例付きです。',
 };

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: 'IG証券の取引コスト｜スプレッド・手数料・証拠金を分けて計算', description: 'IG証券のFX・CFDについて、スプレッド、取引手数料、調整額、必要証拠金を分けて総コストを確認する方法を解説します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/ig-trading-costs' }, title: 'IG証券の取引コスト｜スプレッド・手数料・証拠金を分けて計算', description: 'IG証券のFX・CFDについて、スプレッド、取引手数料、調整額、必要証拠金を分けて総コストを確認する方法を解説します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">IG証券 / COST</p><h1>IG証券の取引コスト<br />スプレッドと手数料を分ける</h1>

@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-kabu-margin-call-maintenance-rate' },
   title: 'DMM 株の追証はいくらから？保証金率30％・維持率20％を計算',
   description: 'DMM 株の国内信用取引について、最低保証金30万円、委託保証金率30％、最低預託率20％、追証の判定、期限、入金・返済による解消を整理します。',
 };

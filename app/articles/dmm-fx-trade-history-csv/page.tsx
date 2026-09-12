@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-fx-trade-history-csv' },
   title: 'DMM FXの取引履歴をCSV保存する方法｜約定履歴・期間損益・年間報告書',
   description: 'DMM FXのPC・スマホで約定履歴を確認し、CSV・期間損益・年間損益報告書を確定申告用に使い分ける方法を公式マニュアルから整理します。',
 };

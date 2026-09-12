@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/articles/jfx-lot-trade-unit' },
   title: 'JFXの1Lotはいくら？1,000通貨・1万通貨の例外と損益を計算',
   description: 'JFX MATRIX TRADERの基本1Lot＝1,000通貨と、メキシコペソ円など6通貨ペアの1Lot＝1万通貨を整理。損益・スプレッド・必要証拠金を計算します。',
 };

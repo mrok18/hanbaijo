@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/fxtf-mt5-btc-cfd-cost' },
   title: 'FXTF MT5のビットコインCFDは0.01Lotでいくら？証拠金・手数料',
   description: 'FXTF MT5のBTC/JPYについて、0.01Lotの想定元本、必要証拠金、建玉連動手数料、スプレッド、保有費を公式情報から計算します。',
 };

@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/fxtf-mt5-gold-cfd-margin' },
   title: 'FXTF MT5の金CFDは1Lotいくら？必要証拠金・手数料・スワップ',
   description: 'FXTF MT5の金CFD（XAU/USD）について、1Lotの取引単位、必要証拠金、建玉連動手数料、スプレッド、スワップを公式例から計算します。',
 };

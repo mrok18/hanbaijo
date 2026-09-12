@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/trading-cost-break-even-return' },
   title: '取引コストの損益分岐点は何％？手数料負けしない値幅を計算',
   description: '往復手数料、スプレッド、保有コストを取引金額に対する比率へ直し、手数料負けしないために必要な値上がり率を計算します。',
 };

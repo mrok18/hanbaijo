@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: '岡三オンラインのくりっく株365とは？取引所CFDの特徴と注意点', description: '岡三オンラインのくりっく株365について、取引所CFDの仕組み、売買方向、配当相当額、証拠金の考え方を整理します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/okasan-kabu365-overview' }, title: '岡三オンラインのくりっく株365とは？取引所CFDの特徴と注意点', description: '岡三オンラインのくりっく株365について、取引所CFDの仕組み、売買方向、配当相当額、証拠金の考え方を整理します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">岡三オンライン / くりっく株365</p><h1>くりっく株365とは？<br />取引所CFDの仕組みを整理</h1>

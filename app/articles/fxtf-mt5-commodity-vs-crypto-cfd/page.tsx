@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/fxtf-mt5-commodity-vs-crypto-cfd' },
   title: 'FXTF MT5の商品CFDと暗号資産CFDを比較｜証拠金・1Lot・手数料',
   description: 'FXTF MT5の商品CFDと暗号資産CFDを、取扱商品、専用口座、1Lot、個人レバレッジ、必要証拠金、建玉連動手数料から比較します。',
 };

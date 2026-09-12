@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/articles/jfx-order-slippage-rules' },
   title: 'JFXの注文方法とスリッページ｜成行・ストリーミング・逆指値の違い',
   description: 'JFX MATRIX TRADERの成行・ストリーミング・指値・逆指値を、約定優先、許容スリップ、注文不成立、スプレッド制限の違いから整理します。',
 };

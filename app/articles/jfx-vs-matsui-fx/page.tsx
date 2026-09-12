@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/articles/jfx-vs-matsui-fx' },
   title: 'JFXと松井証券FXを比較｜1通貨・スプレッド・スキャルピングの違い',
   description: 'JFX MATRIX TRADERと松井証券FXを公式条件で比較。最低取引単位、米ドル円スプレッド、レバレッジ、自動売買、スキャルピングの違いを整理します。',
 };

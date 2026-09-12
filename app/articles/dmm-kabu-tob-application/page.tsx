@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-kabu-tob-application' },
   title: 'DMM 株のTOB申込方法｜移管・手数料・NISA株の注意点',
   description: 'DMM 株のTOB（公開買付け）について、対象銘柄、PCでの申込、他社からの移管、無料範囲、申込取消、NISAから課税口座への振替を整理します。',
 };

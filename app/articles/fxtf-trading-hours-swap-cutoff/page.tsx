@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/fxtf-trading-hours-swap-cutoff' },
   title: 'FXTFの取引時間とメンテナンス｜スワップ判定は何時？',
   description: 'FXTF GXとMT4の夏時間・冬時間の取引停止、NY17時のスワップ付与、NZD関連通貨とEA利用時の注意点を整理します。',
 };

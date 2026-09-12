@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: 'IG証券の証拠金とロスカット｜75％・東京定時100％の違い', description: 'IG証券のレバレッジ取引における常時ロスカット75％以下と東京定時ロスカット100％未満を整理します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/ig-margin-rules' }, title: 'IG証券の証拠金とロスカット｜75％・東京定時100％の違い', description: 'IG証券のレバレッジ取引における常時ロスカット75％以下と東京定時ロスカット100％未満を整理します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">IG証券 / MARGIN</p><h1>IG証券のロスカット<br />75％と東京定時100％を比較</h1>

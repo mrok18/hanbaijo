@@ -1,5 +1,5 @@
 import Link from 'next/link';
-export const metadata = { title: 'コストを抑えて買うための手順' };
+export const metadata = { alternates: { canonical: '/articles/kounyu-tejun' }, title: 'コストを抑えて買うための手順' };
 
 export default function Page() {
   return (

@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-kabu-us-stock-order-hours' },
   title: 'DMM 株の米国株取引時間・注文方法｜逆指値は使える？',
   description: 'DMM 株の米国株現物を、夏時間・冬時間、注文受付時間、1株単位、成行・指値・IFDONE、逆指値非対応、最長30日の期限、円貨・外貨決済で整理します。',
 };

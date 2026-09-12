@@ -4,6 +4,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/articles/domestic-vs-overseas-fx-tax' },
   title: '国内FXと海外FXの税金の違い｜20.315％・総合課税・損失繰越',
   description: '国内FXといわゆる海外FXの税務を、申告分離課税、総合課税、損益通算、3年繰越から比較。業者の所在地だけでなく、登録と取引の法的区分を確認する方法も整理します。',
 };

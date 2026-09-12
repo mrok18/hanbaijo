@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-cfd-annual-profit-report' },
   title: 'DMM CFDの年間損益報告書はいつ？出力方法と確定申告準備',
   description: 'DMM CFDの年間損益報告書・期間損益報告書の違い、PCとスマホでの出力方法、FXや先物と合算する確定申告準備を整理する。',
 };

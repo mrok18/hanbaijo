@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-kabu-usd-shortage' },
   title: 'DMM 株の米ドル不足・立替金とは？強制為替取引と制限を解説',
   description: 'DMM 株の米国株で米ドル不足や立替金が発生した場合の原因、円貨・外貨決済、強制為替取引、取引・出金制限、解消方法を公式情報で整理します。',
 };

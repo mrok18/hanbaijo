@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/fx-spread-time' },
   title: 'FXのスプレッドが広がりやすい時間帯は？',
   description: 'FXのスプレッドが早朝や経済指標発表時に広がる理由と、広告表示の適用時間・配信実績の確認方法を解説します。',
 };

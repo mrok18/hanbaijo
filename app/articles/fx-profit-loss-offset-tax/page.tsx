@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/articles/fx-profit-loss-offset-tax' },
   title: 'FXの損益通算は何とできる？CFD・先物・株・暗号資産を整理',
   description: '国内FXの利益と損失を、一定のCFD・先物、株式、暗号資産と通算できるか、3年間の損失繰越に必要な申告とともに整理します。',
 };

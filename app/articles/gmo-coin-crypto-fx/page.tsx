@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: 'GMOコイン暗号資産FXとは？2倍レバレッジ・証拠金・リスク', description: 'GMOコインの暗号資産FXについて、現物との違い、2倍レバレッジ、証拠金とロスカットの確認項目を整理します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/gmo-coin-crypto-fx' }, title: 'GMOコイン暗号資産FXとは？2倍レバレッジ・証拠金・リスク', description: 'GMOコインの暗号資産FXについて、現物との違い、2倍レバレッジ、証拠金とロスカットの確認項目を整理します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">GMOコイン / CRYPTO FX</p><h1>GMOコイン暗号資産FXとは？<br />2倍レバレッジと証拠金を確認</h1>

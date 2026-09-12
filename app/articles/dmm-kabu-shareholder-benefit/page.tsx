@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-kabu-shareholder-benefit' },
   title: 'DMM 株の株主優待はいつ？権利付き最終日と探し方を整理',
   description: 'DMM 株で株主優待を受け取る条件、権利付き最終日・権利落ち日、アプリでの探し方、信用取引や単元未満株の注意点を整理します。',
 };

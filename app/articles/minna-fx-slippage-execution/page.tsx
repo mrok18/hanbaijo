@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/articles/minna-fx-slippage-execution' },
   title: 'みんなのFXのスリッページ設定｜約定率と許容幅の考え方',
   description: 'みんなのFXのスリッページの意味、許容幅を広く・狭くする違い、約定率と表示スプレッドを分けて確認する方法を整理します。',
 };

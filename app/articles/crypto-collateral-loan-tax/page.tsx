@@ -4,6 +4,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/articles/crypto-collateral-loan-tax' },
   title: '暗号資産担保ローンの税金｜借入・返済・担保売却の確認ポイント',
   description: '暗号資産担保ローンで確認したい税務上の論点を、借入時・返済時・担保売却時に分けて整理。国税庁の暗号資産資料と税制改正の注意点も案内します。',
 };

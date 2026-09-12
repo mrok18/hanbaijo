@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/matsui-fx-insufficient-funds' },
   title: '松井証券FXの不足金とは？15時期限・追証・ロスカットとの違い',
   description: '松井証券FXで決済損により不足金が発生した場合の原因、受渡日15時の解消期限、入金・スワップ振替の手順、追証・ロスカットとの違いを公式ルールで整理します。',
 };

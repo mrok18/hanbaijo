@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/tossy-tax-reporting' },
   title: 'TOSSYの確定申告｜期間損益報告書の出力方法とアセット別の税区分',
   description: 'TOSSYの期間損益報告書をアプリ・PCで出力する手順、FX・各種CFDと暗号資産CFDの税区分、日次建て直しと年末の注意点を公式情報で整理します。',
 };

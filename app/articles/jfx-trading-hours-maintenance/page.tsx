@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/articles/jfx-trading-hours-maintenance' },
   title: 'JFXの取引時間｜夏時間・冬時間・メンテナンスと土日の注文',
   description: 'JFX MATRIX TRADERの月曜開始・土曜終了、米国夏時間と冬時間、日締めメンテナンス、土日の注文受付、祝日の注意点を整理します。',
 };

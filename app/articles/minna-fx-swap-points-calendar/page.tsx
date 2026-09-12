@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/articles/minna-fx-swap-points-calendar' },
   title: 'みんなのFXのスワップポイント｜付与日・途中受取・計算方法',
   description: 'みんなのFXのスワップポイントが付与される条件、途中受取、日々変動する金額の確認方法とリスクを公式情報で整理します。',
 };

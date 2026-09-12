@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/articles/lion-fx-deposit-withdrawal' },
   title: 'LION FXの入金・出金｜クイック入金1万円・反映時間・名義の注意',
   description: 'ヒロセ通商LION FXのクイック入金、銀行振込、出金時間、手数料、名義相違で反映されない場合を公式情報で整理します。',
 };

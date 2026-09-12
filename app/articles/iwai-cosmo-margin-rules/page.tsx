@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: '岩井コスモ証券の信用取引｜保証金・金利・デイトレ条件', description: '岩井コスモ証券ネット取引の信用取引について、委託保証金、金利・貸株料、デイトレ無料条件とリスクを整理します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/iwai-cosmo-margin-rules' }, title: '岩井コスモ証券の信用取引｜保証金・金利・デイトレ条件', description: '岩井コスモ証券ネット取引の信用取引について、委託保証金、金利・貸株料、デイトレ無料条件とリスクを整理します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">岩井コスモ証券 / MARGIN</p><h1>岩井コスモ証券の信用取引<br />保証金と保有コスト</h1>

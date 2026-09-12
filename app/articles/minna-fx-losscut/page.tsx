@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: 'みんなのFXのロスカット｜証拠金維持率100％以下と不足金', description: 'みんなのFXの証拠金維持率、自動ロスカット、未約定注文の取消しと不足金リスクを公式情報で整理します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/minna-fx-losscut' }, title: 'みんなのFXのロスカット｜証拠金維持率100％以下と不足金', description: 'みんなのFXの証拠金維持率、自動ロスカット、未約定注文の取消しと不足金リスクを公式情報で整理します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">みんなのFX / RISK</p>

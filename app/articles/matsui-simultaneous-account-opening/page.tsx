@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/matsui-simultaneous-account-opening' },
   title: '松井証券で同時開設できる口座｜NISA・FX・信用・先物の申込み方',
   description: '松井証券の総合口座と同時に申込めるNISA、FX、信用、先物・オプションと、自動開設される米国株・投資信託口座を整理します。',
 };

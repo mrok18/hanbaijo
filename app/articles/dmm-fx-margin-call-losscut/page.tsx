@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/articles/dmm-fx-margin-call-losscut' },
   title: 'DMM FXの追証とロスカットの違い｜100％と50％を整理',
   description: 'DMM FXの追加証拠金とロスカットについて、判定時刻、証拠金維持率100％・50％、解消期限、強制決済の違いを解説します。',
 };

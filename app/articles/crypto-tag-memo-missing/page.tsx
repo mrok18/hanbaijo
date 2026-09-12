@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/articles/crypto-tag-memo-missing' },
   title: '暗号資産のタグ・メモを忘れた｜入金反映前に確認すること',
   description: 'XRPやATOMなどでタグ・メモを忘れた、間違えたときの確認手順と、サポートへ伝える情報を整理します。',
 };

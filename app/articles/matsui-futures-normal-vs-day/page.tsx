@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/matsui-futures-normal-vs-day' },
   title: '松井証券の先物手数料｜通常と一日先物を往復比較',
   description: '松井証券の日経225先物、mini、マイクロについて、通常先物と一日先物の片道・往復手数料を1ティック損益と比較します。',
 };

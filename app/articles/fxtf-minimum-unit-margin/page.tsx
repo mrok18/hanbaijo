@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/fxtf-minimum-unit-margin' },
   title: 'FXTFは1,000通貨から？GX・MT4のLotと必要証拠金',
   description: 'FXTF GXとMT4の最小取引単位、Lot表記、個人口座の証拠金率を整理し、米ドル/円1,000通貨の必要証拠金と損益を計算します。',
 };

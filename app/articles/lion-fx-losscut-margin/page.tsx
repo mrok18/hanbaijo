@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/articles/lion-fx-losscut-margin' },
   title: 'LION FXのロスカットと不足金｜有効比率100％未満の考え方',
   description: 'ヒロセ通商LION FXの有効比率、必要証拠金、ロスカットと不足金の関係を公式ルールで整理し、入金後に残す余力を解説します。',
 };

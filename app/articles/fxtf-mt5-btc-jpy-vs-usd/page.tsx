@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/fxtf-mt5-btc-jpy-vs-usd' },
   title: 'FXTF MT5のBTC/JPYとBTC/USDを比較｜証拠金の円換算が違う',
   description: 'FXTF MT5のBTC/JPYとBTC/USDについて、0.01Lotの取引単位、必要証拠金の計算式、スプレッドの円換算、建玉連動手数料を比較します。',
 };

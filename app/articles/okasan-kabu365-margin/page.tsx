@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: '岡三オンラインくりっく株365の証拠金｜レバレッジと維持率を確認', description: 'くりっく株365の証拠金、レバレッジ、追証・ロスカットを取引所CFDの仕組みとして整理します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/okasan-kabu365-margin' }, title: '岡三オンラインくりっく株365の証拠金｜レバレッジと維持率を確認', description: 'くりっく株365の証拠金、レバレッジ、追証・ロスカットを取引所CFDの仕組みとして整理します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">岡三オンライン / MARGIN</p><h1>くりっく株365の証拠金<br />レバレッジと余力を確認</h1>

@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/fx-cfd-futures-margin-comparison' },
   title: 'FX・CFD・先物の違い｜必要証拠金と1単位の損益を比較',
   description: 'FX、CFD、日経225先物を、取引単位、必要証拠金、最小値動きの損益、ロスカット・追証、期限の違いから同じ表で比較します。',
 };

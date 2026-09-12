@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/matsui-deposit-methods-comparison' },
   title: '松井証券の入金方法を比較｜手数料・反映時間・MATSUI Bankの違い',
   description: '松井証券のスイープ入金、MATSUI Bank入金、ネットリンク入金、らくらく振替、定期入金、銀行振込を比較します。',
 };

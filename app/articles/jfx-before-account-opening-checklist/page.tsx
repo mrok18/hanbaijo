@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/jfx-before-account-opening-checklist' },
   title: 'JFX口座開設前の確認7項目｜スキャルピング・Lot・必要資金',
   description: 'JFX MATRIX TRADERの口座開設前に、スキャルピング、取引単位、スプレッド、ツール、必要証拠金、入出金、本人確認を確認します。',
 };

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = { title: 'サクソバンク証券の取扱商品｜FX・CFD・海外株・先物を口座で整理', description: 'サクソバンク証券のFX、CFD、外国株式、ETF、先物、オプションを商品ごとのリスクと確認項目で整理します。' };
+export const metadata: Metadata = { alternates: { canonical: '/articles/saxo-products-overview' }, title: 'サクソバンク証券の取扱商品｜FX・CFD・海外株・先物を口座で整理', description: 'サクソバンク証券のFX、CFD、外国株式、ETF、先物、オプションを商品ごとのリスクと確認項目で整理します。' };
 
 export default function Page() { return <article>
   <p className="page-kicker">SAXO / PRODUCTS</p><h1>サクソバンク証券の取扱商品<br />FX・CFD・海外株を整理</h1>

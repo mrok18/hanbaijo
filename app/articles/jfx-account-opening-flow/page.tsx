@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/jfx-account-opening-flow' },
   title: 'JFXの口座開設に必要なもの｜本人確認・マイナンバー・初回入金',
   description: 'JFX MATRIX TRADERの個人口座開設について、スマホ本人確認、必要書類、審査、ID受取、初回入金1万円、取引開始までの流れを整理します。',
 };

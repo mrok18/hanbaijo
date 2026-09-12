@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/matsui-fx-leverage-margin' },
   title: '松井証券FXの必要証拠金とレバレッジ｜25倍・10倍・5倍・1倍を計算',
   description: '松井証券FXの4つのレバレッジコースと証拠金率、必要証拠金の計算式、1万通貨の例、実効レバレッジと維持率の見方を公式情報で整理します。',
 };

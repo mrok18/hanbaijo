@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/articles/gmo-click-cfd-svs' },
   title: 'GMOクリック証券CFDのS.V.Sとは？建玉ごとのロスカットと追証',
   description: 'GMOクリック証券CFDのセーフティバルブシステム（S.V.S）、建玉ごとのロスカットレート、任意証拠金、追証と不足金を公式ルールで整理します。',
 };

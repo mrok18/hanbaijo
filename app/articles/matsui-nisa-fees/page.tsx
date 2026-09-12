@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
-export const metadata={title:'松井証券NISAは手数料無料？為替・信託報酬まで確認',description:'松井証券NISAの日本株・米国株・投資信託の売買手数料と、為替手数料・信託報酬など別途残る費用を整理します。'};
+export const metadata={ alternates: { canonical: '/articles/matsui-nisa-fees' },title:'松井証券NISAは手数料無料？為替・信託報酬まで確認',description:'松井証券NISAの日本株・米国株・投資信託の売買手数料と、為替手数料・信託報酬など別途残る費用を整理します。'};
 export default function Page(){return <article><p className="page-kicker">MATSUI / NISA COST</p><h1>松井証券NISAは手数料無料？<br/>為替・信託報酬まで確認</h1><p className="lede">松井証券のNISAは、制度が続く限り日本株・米国株・投資信託の売買手数料が無料です。ただし、商品内部の費用や通貨交換まで一律0円という意味ではありません。</p>
 <h2>無料になるもの・別途確認するもの</h2><div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th>商品</th><th>インターネット売買手数料</th><th>別途確認</th></tr></thead><tbody><tr><td className="ex-name">日本株</td><td>0円</td><td>単元未満株・電話注文の条件</td></tr><tr><td className="ex-name">米国株</td><td>0円</td><td>円貨取引の為替手数料、米国配当課税</td></tr><tr><td className="ex-name">投資信託</td><td>0円</td><td>信託報酬等の保有中費用</td></tr></tbody></table></div></div>
 <div className="callout"><strong>米国株は一時的な手数料拘束に注意</strong><p>NISAでも取引終了後の一括処理まで通常口座と同額が拘束される場合があります。最終的な手数料負担と買付余力の一時拘束を分けて確認します。</p></div>

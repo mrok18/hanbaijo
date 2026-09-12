@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/fx-vps-vs-home-pc' },
   title: 'FX自動売買はVPSと自宅PCどちら？費用と停止リスク',
   description: 'FX自動売買のVPSと自宅PCを、月額費用、電気代、停電、再起動、外出先からの復旧、更新作業から比較します。',
 };

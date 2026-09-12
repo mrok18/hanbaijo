@@ -3,6 +3,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
+  alternates: { canonical: '/articles/fx-vps-auto-start-update' },
   title: 'FX VPS再起動後にEAを止めない｜自動起動と更新手順',
   description: 'Windows VPSの更新やメンテナンス後にMT4・MT5・EAが停止したままにならないよう、自動起動、ログオフ、再起動、ログ確認を整理します。',
 };

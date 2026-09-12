@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/articles/fx-etax-input-guide' },
   title: 'FXの確定申告をe-Taxで入力する順番｜先物取引・経費・繰越損失',
   description: '国内FXの確定申告について、年間取引報告書の準備から、確定申告書等作成コーナーの「先物取引」、必要経費、繰越損失、e-Tax送信までの順番を整理します。',
 };
