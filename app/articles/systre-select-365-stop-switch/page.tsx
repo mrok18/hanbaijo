@@ -17,7 +17,7 @@ export default function Page() {
     <h2>入替えで起きやすい見落とし</h2><ul><li>停止したストラテジーの建玉が残ったまま、新しいストラテジーを開始する</li><li>同じ通貨ペアの反対売買が重なり、意図しない両建てになる</li><li>推奨証拠金を個別に見て、全ストラテジーの合計を見落とす</li><li>売買サイン時の成績と、実際の約定価格・時刻に差があることを忘れる</li></ul>
     <h2>サービス自体を解約する場合</h2><p>公式FAQでは、投資顧問契約の解除が必要で、停止希望日の7日前までの連絡が案内されています。手続き前に稼働中ストラテジーを止め、未決済ポジションが残っていないか確認します。</p>
     <section className="article-sources" aria-labelledby="sources"><h2 id="sources">参照した公式資料</h2><ul><li><a href="https://www.fujitomi.co.jp/systra/faq/" target="_blank" rel="noopener noreferrer">フジトミ証券「よくある質問」</a></li><li><a href="https://www.fujitomi.co.jp/systra/feature/entry/" target="_blank" rel="noopener noreferrer">フジトミ証券「シストレセレクト365とは」</a></li><li><a href="https://www.fujitomi.co.jp/systra/" target="_blank" rel="noopener noreferrer">シストレセレクト365公式サイト</a></li></ul><p>制度情報は2026年9月7日に確認しました。実際の停止・決済操作は最新の操作マニュアルに従ってください。</p></section>
-    <p><Link href="/articles/systre-select-365-strategy-selection">ストラテジーの選び方を見る →</Link></p><p><Link href="/fx/systre-select-365">サービスのコストシートへ戻る →</Link></p>
+    <p><Link href="/articles/systre-select-365-losscut-margin-shortage">ロスカット後のストラテジー状態を見る →</Link></p><p><Link href="/articles/systre-select-365-strategy-selection">ストラテジーの選び方を見る →</Link></p><p><Link href="/fx/systre-select-365">サービスのコストシートへ戻る →</Link></p>
     <section className="article-affiliate" aria-label="関連する広告"><AffiliateOfferCard offer={AFFILIATE_OFFERS['systre-select-365']} /><p className="affiliate-disclosure">広告リンクから申込みが成立すると当サイトが報酬を受け取る場合があります。運用上の注意とは分けて掲載しています。</p></section>
   </article>;
 }
