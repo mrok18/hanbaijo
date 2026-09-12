@@ -11,7 +11,25 @@ type RelatedResource = {
   linkLabel?: string;
 };
 
-export default function StockProviderFactSheet({ provider, relatedArticles = [], affiliateOffer }: { provider: StockProvider; relatedArticles?: RelatedResource[]; affiliateOffer?: AffiliateOffer }) {
+type StockProviderFactSheetProps = {
+  provider: StockProvider;
+  relatedArticles?: RelatedResource[];
+  affiliateOffer?: AffiliateOffer;
+  heading?: string;
+};
+
+export default function StockProviderFactSheet({ provider, relatedArticles = [], affiliateOffer, heading }: StockProviderFactSheetProps) {
+  const pageHeading = heading ?? `${provider.name}の国内株手数料と取引コスト`;
+  const articleJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: pageHeading,
+    description: provider.summary,
+    dateModified: provider.reviewedAt,
+    mainEntityOfPage: `https://hanbaijo.com/stocks/${provider.slug}`,
+    author: { '@type': 'Organization', name: '金融コストウォッチ' },
+    publisher: { '@type': 'Organization', name: '金融コストウォッチ' },
+  };
   const faqJsonLd = provider.faqs?.length ? {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -24,6 +42,10 @@ export default function StockProviderFactSheet({ provider, relatedArticles = [],
 
   return (
     <div className="provider-page stock-provider-page">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd).replace(/</g, '\\u003c') }}
+      />
       {faqJsonLd && (
         <script
           type="application/ld+json"
@@ -33,7 +55,7 @@ export default function StockProviderFactSheet({ provider, relatedArticles = [],
       <section className="provider-hero provider-compact-hero stock-provider-hero">
         <div>
           <p className="page-kicker">STOCK COST FACT SHEET</p>
-          <h1>{provider.name}の国内株手数料と取引コスト</h1>
+          <h1>{pageHeading}</h1>
           <p className="provider-headline">{provider.headline}</p>
           <p className="lede">{provider.summary}</p>
           <div className="hero-actions">
