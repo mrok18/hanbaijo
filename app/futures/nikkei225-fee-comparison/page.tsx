@@ -2,8 +2,8 @@ import Link from 'next/link';
 
 export const metadata = {
   alternates: { canonical: '/futures/nikkei225-fee-comparison' },
-  title: '日経225先物の手数料比較｜ラージ・mini・マイクロ',
-  description: '松井証券と楽天証券の日経225先物、mini、マイクロの標準手数料を、片道と往復で比較します。',
+  title: '日経225先物の手数料比較｜225先物・mini・マイクロ2社',
+  description: '日経225先物（225先物）・mini・マイクロの手数料を松井証券と楽天証券で比較。1枚あたりの片道・往復料金と1ティックに対する負担を整理します。',
 };
 
 const FEES = [
@@ -18,14 +18,19 @@ export default function Page() {
       <header className="comparison-intro futures-comparison-intro">
         <div>
           <p className="page-kicker">NIKKEI 225 FUTURES / PUBLISHED DATA</p>
-          <h1>先物手数料を、<br /><em>1ティックと比較。</em></h1>
-          <p className="lede">松井証券と楽天証券の標準インターネット手数料を、商品・片道・往復に分けました。</p>
+          <h1>日経225先物の手数料を、<br /><em>1ティックと比較。</em></h1>
+          <p className="lede">225先物・mini・マイクロについて、松井証券と楽天証券の標準インターネット手数料を片道・往復に分けて比較します。</p>
         </div>
         <aside>
-          <span>CHECKED</span><strong>2026-09-07</strong>
+          <span>CHECKED</span><strong>2026-09-13</strong>
           <p>税込・1枚あたりの公称値。証拠金額は変動するため、この表に固定値として入れていません。</p>
         </aside>
       </header>
+
+      <div className="callout">
+        <strong>結論：日経225先物1枚の片道手数料は、松井証券220円・楽天証券275円</strong>
+        <p>miniは両社38.5円、マイクロは両社11円です。往復は新規と返済で同額かかる前提なら、それぞれ2倍で試算できます。</p>
+      </div>
 
       <section className="comparison-result" aria-labelledby="futures-comparison-title">
         <div className="comparison-result-head">
@@ -67,14 +72,24 @@ export default function Page() {
         </div>
       </section>
 
+      <section className="comparison-section" aria-labelledby="futures-next-checks">
+        <div><p className="section-index">04 / NEXT CHECK</p><h2 id="futures-next-checks">証拠金と取引時間は、手数料と分けて確認</h2></div>
+        <div className="fx-metric-grid comparison-points">
+          <article><b>01</b><h3>日経225先物の証拠金</h3><p>必要額は固定ではなく、VaR方式と証券会社の設定で変わります。</p><Link href="/articles/futures-margin">必要証拠金の仕組みを見る →</Link></article>
+          <article><b>02</b><h3>日経225先物の取引時間</h3><p>日中立会と翌朝までのナイトセッションを取引日の区切りとともに確認します。</p><Link href="/articles/nikkei225-futures-night-session">取引時間を見る →</Link></article>
+          <article><b>03</b><h3>手数料込み損益</h3><p>商品、枚数、値幅を入力し、往復手数料を引いた損益を計算します。</p><Link href="/tools/matsui-futures-cost-calculator">計算機を使う →</Link></article>
+          <article><b>04</b><h3>1ティックの損益</h3><p>取引単位と呼値から、ラージ・mini・マイクロの最小値動きを確認します。</p><Link href="/articles/futures-tick-value">計算方法を見る →</Link></article>
+        </div>
+      </section>
+
       <section className="comparison-sources" aria-labelledby="futures-provider-sources">
-        <div><p className="section-index">04 / SOURCES</p><h2 id="futures-provider-sources">公式料金表</h2></div>
+        <div><p className="section-index">05 / SOURCES</p><h2 id="futures-provider-sources">公式料金表</h2></div>
         <ul>
           <li><a href="https://www.matsui.co.jp/fee/" target="_blank" rel="noopener noreferrer"><span>松井証券</span><b>公式情報 ↗</b></a></li>
           <li><a href="https://www.rakuten-sec.co.jp/web/fop/futures/commission/" target="_blank" rel="noopener noreferrer"><span>楽天証券</span><b>公式情報 ↗</b></a></li>
           <li><a href="https://www.jpx.co.jp/corporate/learning/resources/tvdivq0000003toh-att/fu_pu.pdf" target="_blank" rel="noopener noreferrer"><span>日本取引所グループ</span><b>取引単位・呼値 ↗</b></a></li>
         </ul>
-        <p>対象は現時点で公式料金を同条件に整理できた2社です。比較対象は順次追加します。</p>
+        <p>2026年9月13日に公式料金を再確認。対象は同条件に整理できた2社で、比較対象は順次追加します。</p>
       </section>
 
       <div className="comparison-actions">

@@ -2,19 +2,31 @@ import Link from 'next/link';
 
 export const metadata = {
   alternates: { canonical: '/articles/futures-margin' },
-  title: '先物の証拠金と取引金額は何が違う？',
-  description: '先物の証拠金を購入代金と混同しないために、取引金額、損益、VaR方式、証券会社の設定額を整理します。',
+  title: '日経225先物の証拠金はいくら？必要額が変わる理由と確認方法',
+  description: '日経225先物・mini・マイクロの必要証拠金が固定額ではない理由を解説。VaR方式、証券会社の設定、取引金額との違い、取引前の確認方法を整理します。',
 };
 
 export default function Page() {
   return (
     <article>
       <p className="page-kicker">FUTURES MARGIN</p>
-      <h1>先物の証拠金と<br />取引金額は何が違う？</h1>
+      <h1>日経225先物の証拠金はいくら？<br />必要額が変わる理由</h1>
       <p className="lede">
-        証拠金は先物を「その金額で買う」代金ではなく、取引の履行を担保するために差し入れる資金です。
-        損益は証拠金ではなく、先物価格と取引単位に応じて動きます。
+        日経225先物の必要証拠金は固定額ではありません。VaR方式で求める取引所の所要額を基に証券会社が設定するため、
+        商品、建玉の組合せ、相場環境、確認日によって変わります。
       </p>
+
+      <div className="callout">
+        <strong>結論：最新の必要証拠金は、取引直前に証券会社の画面で確認</strong>
+        <p>記事中に固定額を置くと変動後に誤差が生じます。日経225先物・mini・マイクロの区分、買建・売建、枚数を入力したシミュレーターまたは注文画面の表示を確認してください。</p>
+      </div>
+
+      <h2>必要証拠金が決まる3つの要素</h2>
+      <ol>
+        <li><strong>VaR方式の所要額：</strong>複数の市場変動シナリオから想定損失を計算します。</li>
+        <li><strong>証券会社の設定：</strong>取引所基準以上の額や掛目を会社ごとに設定できます。</li>
+        <li><strong>建玉の組合せ：</strong>買いと売り、商品や限月の組合せによりポートフォリオ単位で計算されます。</li>
+      </ol>
 
       <h2>取引金額は価格 × 取引単位</h2>
       <div className="formula-box">
@@ -26,7 +38,7 @@ export default function Page() {
         日経225先物1枚は4,000万円です。
       </p>
 
-      <h2>証拠金は日々変わり得る</h2>
+      <h2>日経225先物の証拠金は日々変わり得る</h2>
       <p>
         日本証券クリアリング機構は、先物・オプションの証拠金をVaR方式で計算しています。
         過去の市場データなどから複数のシナリオを作り、ポートフォリオ単位の損失額をもとに必要額を算出する仕組みです。
@@ -58,11 +70,13 @@ export default function Page() {
           <li><a href="https://www.jpx.co.jp/derivatives/rules/margin/01.html" target="_blank" rel="noopener noreferrer">日本取引所グループ「顧客が差し入れる証拠金」</a></li>
           <li><a href="https://www.jpx.co.jp/jscc/seisan/sakimono/shokokin_seido/VaR.html" target="_blank" rel="noopener noreferrer">日本証券クリアリング機構「VaR方式とは」</a></li>
         </ul>
-        <p>制度は2026年9月7日に確認。必要証拠金は固定値ではありません。</p>
+        <p>制度は2026年9月13日に再確認。必要証拠金は固定値ではありません。</p>
       </section>
 
       <p><Link href="/articles/futures-tick-value">1ティックの計算も読む →</Link></p>
       <p><Link href="/tools/nikkei225-margin-buffer-calculator">証拠金余力を値幅・ティックへ換算する →</Link></p>
+      <p><Link href="/futures/nikkei225-fee-comparison">日経225先物の手数料を2社比較する →</Link></p>
+      <p><Link href="/articles/nikkei225-futures-night-session">日中・ナイトセッションの取引時間を見る →</Link></p>
       <p><Link href="/futures">先物コスト比較へ戻る →</Link></p>
     </article>
   );

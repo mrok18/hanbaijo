@@ -226,7 +226,7 @@ export const POSTS = [
   { slug: 'stock-round-trip-cost', category: '国内株', title: '株の手数料はいくら？仕組み・買付と売却の計算方法', desc: '1注文制と1日定額、買付・売却の往復手数料、板の価格差、信用取引で残る費用を整理する。' },
   { slug: 'us-stock-fx-cost', category: '米国株', title: '米国株の為替コストを円で計算する方法', desc: '円貨決済と外貨決済の違いを整理し、1ドルあたりの為替コストを総額へ換算する。' },
   { slug: 'futures-tick-value', category: '先物', title: '先物の1ティックはいくら？日経225で計算', desc: 'ラージ・mini・マイクロの取引単位と呼値から、1ティックの損益額を計算する。' },
-  { slug: 'futures-margin', category: '先物', title: '先物の証拠金と取引金額は何が違う？', desc: '証拠金を購入代金と混同しないために、取引金額・損益・VaR方式の関係を整理する。' },
+  { slug: 'futures-margin', category: '先物', title: '日経225先物の証拠金はいくら？必要額が変わる理由と確認方法', desc: '日経225先物・mini・マイクロの必要証拠金が固定額ではない理由を、VaR方式、証券会社の設定、取引金額との違いから整理する。' },
   { slug: 'fx-spread-time', category: 'FX', title: 'FXのスプレッドが広がりやすい時間帯は？', desc: '広告表示の適用時間外や経済指標発表時に、取引コストが変わる理由と確認方法。' },
   { slug: 'fx-swap-calculation', category: 'FX', title: 'FXスワップポイントの計算方法', desc: '1Lotあたりの表示から、保有数量と付与日数に応じた金額を試算する。' },
   { slug: 'fx-required-margin', category: 'FX', title: 'FXの必要証拠金はいくら？1万通貨で計算', desc: '取引金額・必要証拠金・レバレッジの関係を、米ドル/円の例で整理する。' },
