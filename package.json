@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "audit:seo": "node scripts/audit-seo.mjs",
     "start": "next start",
     "collect": "node scripts/collect.mjs"
   },
