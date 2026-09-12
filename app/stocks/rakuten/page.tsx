@@ -8,7 +8,11 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <StockProviderFactSheet provider={STOCK_PROVIDERS.rakuten} heading="楽天証券の株取引手数料と日本株コスト" relatedArticles={[
+  return <StockProviderFactSheet
+    provider={STOCK_PROVIDERS.rakuten}
+    heading="楽天証券の株取引手数料と日本株コスト"
+    keyNumbersHeading="楽天証券の信用取引手数料と別コスト"
+    relatedArticles={[
     {
       href: '/articles/rakuten-securities-domestic-stock-fees',
       title: '手数料コースと約定後の実額を確認',

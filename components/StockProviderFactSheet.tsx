@@ -16,9 +16,10 @@ type StockProviderFactSheetProps = {
   relatedArticles?: RelatedResource[];
   affiliateOffer?: AffiliateOffer;
   heading?: string;
+  keyNumbersHeading?: string;
 };
 
-export default function StockProviderFactSheet({ provider, relatedArticles = [], affiliateOffer, heading }: StockProviderFactSheetProps) {
+export default function StockProviderFactSheet({ provider, relatedArticles = [], affiliateOffer, heading, keyNumbersHeading }: StockProviderFactSheetProps) {
   const pageHeading = heading ?? `${provider.name}の国内株手数料と取引コスト`;
   const articleJsonLd = {
     '@context': 'https://schema.org',
@@ -76,7 +77,7 @@ export default function StockProviderFactSheet({ provider, relatedArticles = [],
 
       <section className="provider-section">
         <p className="section-index">01 / KEY NUMBERS</p>
-        <h2>最初に確認する公称値</h2>
+        <h2>{keyNumbersHeading ?? '最初に確認する公称値'}</h2>
         <div className="provider-fact-grid">
           {provider.facts.map((fact, index) => (
             <article key={fact.label}><b>{String(index + 1).padStart(2, '0')}</b><h3>{fact.label}</h3><strong className="provider-fact-value">{fact.value}</strong><p>{fact.note}</p></article>
