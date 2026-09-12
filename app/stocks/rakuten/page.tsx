@@ -11,10 +11,10 @@ export default function Page() {
   return <StockProviderFactSheet provider={STOCK_PROVIDERS.rakuten} relatedArticles={[
     {
       href: '/articles/rakuten-securities-domestic-stock-fees',
-      title: '信用取引の手数料・金利・貸株料を確認',
-      description: 'ゼロコースの0円条件と、制度・一般信用の保有コストを金額で計算します。',
-      tag: 'MARGIN COST',
-      linkLabel: '信用コストを見る →',
+      title: '手数料コースと約定後の実額を確認',
+      description: '注文前の概算、取引履歴、取引報告書を使い分け、信用取引の別費用まで確認します。',
+      tag: 'FEE CHECK',
+      linkLabel: '確認方法を見る →',
     },
     {
       href: '/stocks/domestic-fee-comparison',

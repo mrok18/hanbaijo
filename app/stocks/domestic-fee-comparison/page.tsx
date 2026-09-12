@@ -191,6 +191,7 @@ export default function Page() {
           <article><b>03</b><h3>信用コスト</h3><p>取引手数料0円でも、買方金利・貸株料・管理費は別に発生します。</p></article>
           <article><b>04</b><h3>板の価格差</h3><p>売値と買値の差は取引所の注文状況で変わり、証券会社の手数料とは別です。</p></article>
         </div>
+        <p><Link href="/articles/rakuten-securities-domestic-stock-fees">楽天証券で手数料コースと約定後の実額を確認する →</Link></p>
       </section>
 
       <section className="comparison-sources" aria-labelledby="stock-provider-sources">

@@ -241,7 +241,7 @@ export const POSTS = [
   { slug: 'crypto-tag-memo-missing', category: '暗号資産', title: '暗号資産のタグ・メモを忘れた｜入金反映前に確認すること', desc: 'XRPやATOMなどでタグ・メモを忘れた、間違えたときの確認手順と、サポートへ伝える情報を整理する。' },
   { slug: 'crypto-minimum-deposit', category: '暗号資産', title: '暗号資産の最低入金額｜少額送金が反映されない理由と確認方法', desc: '最低入金額・最低入庫数量を下回ったときの扱いと、送金前に確認する項目を整理する。' },
   { slug: 'crypto-transfer-cancel', category: '暗号資産', title: '暗号資産の送金は取り消せる？完了前後の確認と対処', desc: '送金を取り消せる条件と、完了後に誤送金へ気づいた場合の対処を整理する。' },
-  { slug: 'rakuten-securities-domestic-stock-fees', category: '国内株・楽天証券', title: '楽天証券の日本株手数料は0円？ゼロコース・信用取引・確認方法', desc: '楽天証券の3つの手数料コースと、信用取引の金利・貸株料・逆日歩・管理費をまとめて確認する。' },
+  { slug: 'rakuten-securities-domestic-stock-fees', category: '国内株・楽天証券', title: '楽天証券の手数料確認方法｜日本株・ゼロコース・取引履歴', desc: '注文前の概算、約定後の取引履歴、取引報告書を使い分け、信用取引の金利など別費用も確認する。' },
   { slug: 'rakuten-fx-fees-total-cost', category: 'FX・楽天証券', title: '楽天証券FXの手数料は無料？スプレッド・スワップを円換算', desc: '楽天FXの取引手数料と実質コストを整理し、米ドル/円の時間帯・数量別スプレッドを円換算する。' },
   { slug: 'us-stock-fee-comparison', category: '米国株・比較', title: '米国株の手数料を3社比較｜DMM 株・松井証券・楽天証券', desc: '3社の0.495％・上限22ドルの売買手数料と、円貨決済・事前両替の為替コストを比較する。' },
   { slug: 'kounyu-tejun', category: '実務', title: 'コストを抑えて買うための手順', desc: '同じ金額を買うのに、どこで差がつくのかを順に確認する。' },

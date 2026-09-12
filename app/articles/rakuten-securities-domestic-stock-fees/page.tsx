@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: '楽天証券の日本株手数料は0円？ゼロコース・信用取引・確認方法',
-  description: '楽天証券の信用取引手数料はゼロコースなら0円です。制度・一般信用の買方金利、貸株料、逆日歩、事務管理費まで含め、100万円を30日保有する費用を計算します。',
+  title: '楽天証券の手数料確認方法｜日本株・ゼロコース・取引履歴',
+  description: '楽天証券の日本株手数料を、注文前の概算、約定後の取引履歴、取引報告書で確認する方法を解説。ゼロコースの条件と信用取引の金利・貸株料も整理します。',
   alternates: { canonical: '/articles/rakuten-securities-domestic-stock-fees' },
 };
 
@@ -47,6 +47,10 @@ const faqs = [
     question: '楽天証券のいちにち信用はすべて無料ですか？',
     answer: '取引手数料と金利・貸株料は0円ですが、売建銘柄によっては特別空売り料が発生します。当日中に返済しなかった場合の扱いも取引ルールで確認してください。',
   },
+  {
+    question: '楽天証券で実際にかかった手数料はどこで確認できますか？',
+    answer: '約定後の「取引履歴（国内株式）」で取引ごとの詳細を開くと、手数料や税金を確認できます。正式な記録は、原則として約定日翌日の夕刻までに電子交付される取引報告書でも確認できます。',
+  },
 ] as const;
 
 export default function Page() {
@@ -76,10 +80,10 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <p className="page-kicker">RAKUTEN SECURITIES / DOMESTIC STOCK</p>
-      <h1>楽天証券の日本株手数料は0円？<br />ゼロコースと信用取引を確認</h1>
-      <p className="lede">楽天証券の国内株は、選択中の手数料コースによって負担が変わります。「ゼロコース」なら現物・信用の取引手数料は約定代金にかかわらず0円ですが、SOR・Rクロスへの同意や、手数料以外の費用も確認が必要です。</p>
+      <h1>楽天証券の日本株手数料<br />コースと実際の支払額を確認</h1>
+      <p className="lede">楽天証券の日本株は、選択中の手数料コースと、約定後に実際にかかった金額を分けて確認します。「ゼロコース」なら現物・信用の取引手数料は約定代金にかかわらず0円ですが、SOR・Rクロスへの同意や、信用取引の金利など別費用は残ります。</p>
 
-      <div className="callout"><strong>先に結論</strong><p>国内株の現物・信用取引を0円にする基本の選択肢はゼロコースです。自動で全口座が無料になるとは限らないため、注文前に現在のコースとSOR・Rクロスの設定を確認します。</p></div>
+      <div className="callout"><strong>先に結論</strong><p>注文前は「現在の手数料コース」と注文確認画面の概算額、約定後は「取引履歴（国内株式）」の詳細、正式な記録は取引報告書で確認します。0円コースでも、信用金利など売買手数料以外の費用は別です。</p></div>
 
       <h2>国内株の3つの手数料コース</h2>
       <div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th>コース</th><th>手数料の決まり方</th><th>主な確認点</th></tr></thead><tbody>
@@ -141,6 +145,25 @@ export default function Page() {
       </ol>
       <p>公式案内では、営業日の16時までの変更は原則として翌営業日から適用されます。執行中の注文があると変更できず、当月に一度も取引がない場合に限り即日変更できるとされています。</p>
 
+      <h2>実際にかかった手数料を確認する3つの場所</h2>
+      <p>「ゼロコースを選んだか」と「今回の取引で実際にいくらかかったか」は確認場所が異なります。注文前の概算と約定後の確定情報を、次の順番で照合します。</p>
+      <div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th>確認する時点</th><th>画面・書面</th><th>確認できる内容</th></tr></thead><tbody>
+        <tr><td className="ex-name">注文前</td><td>注文確認画面</td><td><strong>概算手数料（税込）</strong>、概算受渡代金、概算損益</td></tr>
+        <tr><td className="ex-name">約定後</td><td>取引履歴（国内株式）</td><td>取引ごとの手数料、税金、受渡金額。信用返済は取引明細で諸費用の内訳も確認</td></tr>
+        <tr><td className="ex-name">正式な記録</td><td>電子交付の取引報告書</td><td>実際の取引明細。国内株はCSV保存にも対応</td></tr>
+      </tbody></table></div><p className="panel-note">注文確認を省略する設定では、注文前の概算表示を確認できません。概算と確定額を混同せず、約定後は取引履歴または取引報告書を優先します。</p></div>
+
+      <h3>スマホで約定後の手数料を確認する手順</h3>
+      <ol>
+        <li>スマートフォンサイトの「取引履歴（国内株式）」を開く</li>
+        <li>期間、現物・信用、口座、銘柄で対象取引を絞る</li>
+        <li>対象取引の詳細を開き、手数料・税金・受渡金額を確認する</li>
+      </ol>
+      <p>iSPEEDの約定照会でも手数料や受渡代金を閲覧できますが、公式ヘルプでは当日の約定履歴に手数料は表示されないと案内されています。当日中に0円と断定せず、取引履歴の詳細や後日交付される取引報告書で確定額を確認します。</p>
+
+      <h3>ゼロコースなのに受渡金額が約定代金と違う場合</h3>
+      <p>受渡金額は、買付なら手数料・諸費用を加算し、売却なら差し引いた精算額です。売買手数料が0円でも、税金、信用取引の金利・貸株料、単元未満株のスプレッドなどが含まれる場合があるため、受渡金額だけで原因を決めず明細の項目を確認します。</p>
+
       <h2>「0円」でも注文前に確認する4項目</h2>
       <div className="fx-metric-grid">
         <article><b>01</b><h3>注文経路</h3><p>オペレーター経由の電話注文には、選択中のコースとは別の手数料が適用されます。</p></article>
@@ -165,6 +188,9 @@ export default function Page() {
           <li><a href="https://www.rakuten-sec.co.jp/web/domestic/margin/rule/ground_rules.html" target="_blank" rel="noopener noreferrer">楽天証券「信用取引の基本ルール」</a></li>
           <li><a href="https://www.rakuten-sec.co.jp/web/domestic/margin/short_selling/" target="_blank" rel="noopener noreferrer">楽天証券「一般信用取引 いちにち信用」</a></li>
           <li><a href="https://www.rakuten-sec.co.jp/web/commission/change_web.html" target="_blank" rel="noopener noreferrer">楽天証券「手数料コースの確認・変更について」</a></li>
+          <li><a href="https://www.rakuten-sec.co.jp/ITS/smt/smt_ass_trad_lst-01.html" target="_blank" rel="noopener noreferrer">楽天証券「取引履歴（国内株式）の使い方」</a></li>
+          <li><a href="https://www.rakuten-sec.co.jp/smartphone/ispeed/help/iphone/order/stock_promise_inquiry.html" target="_blank" rel="noopener noreferrer">楽天証券「iSPEED 約定照会」</a></li>
+          <li><a href="https://www.rakuten-sec.co.jp/ITS/qaAcc0016.html" target="_blank" rel="noopener noreferrer">楽天証券「電子交付閲覧・報告書郵送申込の使い方」</a></li>
           <li><a href="https://www.rakuten-sec.co.jp/web/company/risk.html" target="_blank" rel="noopener noreferrer">楽天証券「投資にかかる手数料等およびリスク」</a></li>
         </ul>
         <p>手数料・条件は2026年9月12日に確認しました。変更される場合があるため、注文前に最新の公式料金表と契約締結前交付書面を確認してください。</p>
