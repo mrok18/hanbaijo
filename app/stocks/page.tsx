@@ -118,7 +118,7 @@ export default function StocksPage() {
           <h2>比較表と計算方法を使い分ける</h2>
         </div></div>
         <div className="affiliate-grid">
-          <article className="affiliate-card"><div className="affiliate-card-head"><span>COMPARE</span><b>2026-09-11確認</b></div><p className="affiliate-category">DOMESTIC STOCK FEES</p><h3>国内株4社の手数料</h3><p>GMOクリック証券、楽天証券、松井証券、DMM 株を同じ売買例で比較します。</p><Link href="/stocks/domestic-fee-comparison">比較表を見る →</Link></article>
+          <article className="affiliate-card"><div className="affiliate-card-head"><span>COMPARE</span><b>2026-09-12確認</b></div><p className="affiliate-category">DOMESTIC STOCK FEES</p><h3>国内株4社の手数料</h3><p>GMOクリック証券、楽天証券、松井証券、DMM 株を10万・50万・100万円の往復で比較します。</p><Link href="/stocks/domestic-fee-comparison">比較表を見る →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>COMPARE</span><b>2026-09-12確認</b></div><p className="affiliate-category">US STOCK FEES</p><h3>米国株3社の手数料</h3><p>DMM 株、松井証券、楽天証券を、売買手数料と決済方法別の為替コストで比較します。</p><Link href="/articles/us-stock-fee-comparison">比較表を見る →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>COMPARE</span><b>2026-09-12確認</b></div><p className="affiliate-category">FOREIGN STOCK FEES</p><h3>外国株式の市場別手数料</h3><p>米国株、中国株、ASEAN株を、料率、最低・上限手数料、為替・現地費用で比較します。</p><Link href="/articles/foreign-stock-trading-fees">比較表を見る →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>COMPARE</span><b>2026-09-12確認</b></div><p className="affiliate-category">US MARGIN FEES</p><h3>米国株信用3社の手数料</h3><p>DMM 株、松井証券、楽天証券を、通常手数料、買方金利、日計り優遇、売建対応で比較します。</p><Link href="/articles/us-stock-margin-fee-comparison">比較表を見る →</Link></article>
