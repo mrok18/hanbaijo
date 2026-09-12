@@ -2,8 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: '外国株式の売買手数料はいくら？米国株・中国株・ASEAN株を比較',
-  description: '外国株式の売買手数料を、米国株・中国株・ASEAN株で比較。最低・上限手数料、為替コスト、現地費用と10万・50万・100万円の計算例を整理します。',
+  title: '外国株式の手数料比較｜米国株・中国株・ASEAN株の売買コスト',
+  description: '外国株式の売買手数料を米国株・中国株・ASEAN株で比較。料率、最低・上限手数料、為替コスト、現地費用と10万・50万・100万円の計算例を整理します。',
+  alternates: { canonical: '/articles/foreign-stock-trading-fees' },
 };
 
 const feeExamples = [
@@ -27,7 +28,7 @@ export default function Page() {
   return <article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }} />
     <p className="page-kicker">FOREIGN STOCK / TRADING FEES</p>
-    <h1>外国株式の売買手数料はいくら？<br />米国・中国・ASEAN株を比較</h1>
+    <h1>外国株式の手数料比較<br />米国・中国・ASEAN株の売買コスト</h1>
     <p className="lede">外国株式の費用は「約定代金×料率」だけでは決まりません。最低・上限手数料、通貨交換、売却時の現地費用まで分ける必要があります。楽天証券のインターネット取引を共通例に、3市場の違いを同じ円換算額で比べます。</p>
 
     <div className="callout"><strong>結論：市場ごとに料率と上下限が違う</strong><p>米国株は0.495％で上限22ドル、中国株は0.275％で最低550円・上限5,500円、ASEAN株は1.1％で最低550円・上限なしです。同じ10万円でも手数料は約495円・550円・1,100円と変わります。</p></div>

@@ -24,6 +24,13 @@ export default function Page() {
       linkLabel: '4社比較を見る →',
     },
     {
+      href: '/articles/foreign-stock-trading-fees',
+      title: '外国株式の市場別手数料を比較',
+      description: '楽天証券の米国株、中国株、ASEAN株を、料率、最低・上限、為替・現地費用で比べます。',
+      tag: 'FOREIGN STOCKS',
+      linkLabel: '市場別比較を見る →',
+    },
+    {
       href: '/tools/cost-calculator',
       title: '株式の往復コストを金額で試算',
       description: '買付と売却の手数料、価格差を自分の取引条件で計算します。',

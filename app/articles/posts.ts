@@ -1,5 +1,5 @@
 export const POSTS = [
-  { slug: 'foreign-stock-trading-fees', category: '外国株式・比較', title: '外国株式の売買手数料はいくら？米国株・中国株・ASEAN株を比較', desc: '3市場の料率、最低・上限手数料、為替・現地費用を10万・50万・100万円の例で比べる。' },
+  { slug: 'foreign-stock-trading-fees', category: '外国株式・比較', title: '外国株式の手数料比較｜米国株・中国株・ASEAN株の売買コスト', desc: '3市場の料率、最低・上限手数料、為替・現地費用を10万・50万・100万円の例で比べる。' },
   { slug: 'us-stock-margin-fee-comparison', category: '米国株信用・比較', title: '米国株信用取引の手数料を3社比較｜DMM 株・松井証券・楽天証券', desc: '通常手数料0.33％・上限16.5ドル、買方金利、日計り優遇、売建対応を3社で比較する。' },
   { slug: 'crypto-collateral-loan-tax', category: '暗号資産・税金', title: '暗号資産担保ローンの税金｜借入・返済・担保売却の確認ポイント', desc: '暗号資産担保ローンの借入・返済・追加担保・強制決済を税務記録の観点から整理し、公式資料と税制改正の確認方法を案内する。' },
   { slug: 'crypto-collateral-loan-risk-checklist', category: '暗号資産・ローン', title: '暗号資産担保ローンとは？BTC・ETHを担保に借りる前の確認項目', desc: '暗号資産を売却せず借りる仕組みを、担保掛目、金利、追加担保、強制決済、税務と事業者リスクから整理する。' },
