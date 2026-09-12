@@ -219,7 +219,7 @@ export const POSTS = [
   { slug: 'matsui-fx-auto-trading-cost', category: 'FX・自動売買', title: 'MATSUI FX自動売買は100円から？必要資金を計算', desc: '複数注文の必要証拠金と評価損を分け、100円で始める場合にも必要な余裕資金を整理する。' },
   { slug: 'matsui-fx-one-currency', category: 'FX・松井証券', title: 'MATSUI FXは100円から？1通貨の必要証拠金と損益', desc: '100円の意味を、為替レート・取引数量・レバレッジコースに分けて具体的に計算する。' },
   { slug: 'matsui-fx-one-currency-order', category: 'FX・松井証券', title: '松井証券FXの1通貨注文方法｜0.0001入力と数量表示の注意点', desc: '1万通貨単位で表示される数量欄の換算、PC・スマホの入力手順、証拠金・スプレッド・損益の確認を整理する。' },
-  { slug: 'matsui-account-types', category: '証券・FX', title: '松井証券の総合口座とは？FX専用口座との違い', desc: '総合口座でできること、商品別の追加口座、FX専用口座から切り替える手続きを整理する。' },
+  { slug: 'matsui-account-types', category: '証券・FX', title: '松井証券のFX専用口座とは？総合口座との違い', desc: 'FX専用口座でできること、開設できる人、申込手順、総合口座へ切り替える方法を整理する。' },
   { slug: 'fx-zero-spread-total-cost', category: 'FX', title: 'FXの0.0銭は本当に無料？別手数料まで総額で確認', desc: 'ゼロスプレッドと取引コスト0円を区別し、数量連動手数料や約定差を含めて判断する。' },
   { slug: 'fx-swap-three-days', category: 'FX', title: 'FXのスワップが3日分・4日分付くのはなぜ？', desc: 'ロールオーバーと受渡日の関係、土日・祝日をまたぐ変則付与の確認方法を整理する。' },
   { slug: 'fx-margin-ratio-vs-usage', category: 'FX', title: '証拠金維持率と使用率の違い｜100%の意味は逆', desc: '維持率と使用率の計算方向を分け、ロスカットまでの余力を読み違えない方法。' },

@@ -4,8 +4,8 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata: Metadata = {
-  title: '松井証券の総合口座とは？FX専用口座との違い・できること',
-  description: '松井証券の総合口座とは、日本株をはじめ各商品を利用するための入口です。FX専用口座との違い、追加口座、FX専用から総合口座への切替方法を整理します。',
+  title: '松井証券のFX専用口座とは？総合口座との違い・開設条件・切替方法',
+  description: '松井証券のFX専用口座でできること、総合口座との違い、開設できる人、申込手順、FX専用口座から総合口座への切替方法を公式情報で整理します。',
   alternates: { canonical: '/articles/matsui-account-types' },
 };
 
@@ -28,12 +28,16 @@ const ACCOUNT_TYPES = [
 
 const FAQS = [
   {
-    question: '松井証券の総合口座とは何ですか？',
-    answer: '日本株をはじめ、松井証券が扱う各商品を利用するための基本となる証券口座です。商品によっては、総合口座に加えてFX、信用取引、先物・オプション、NISAなどの追加口座の申込みや審査が必要です。',
+    question: '松井証券のFX専用口座とは何ですか？',
+    answer: 'MATSUI FXだけを取引できる個人向けの口座です。日本株、投資信託、NISA、先物などを取引するには、FX専用口座から総合口座への切替が必要です。',
   },
   {
-    question: '総合口座を開けば、すべての商品をすぐ取引できますか？',
-    answer: 'いいえ。総合口座は各商品の入口ですが、FX、信用取引、先物・オプション、NISAなどは商品ごとの口座開設や審査が必要です。総合口座の申込時に同時申込みできる口座と、開設後に追加できる口座があります。',
+    question: 'FX専用口座と総合口座の違いは何ですか？',
+    answer: 'FX専用口座はMATSUI FXだけが対象です。総合口座は日本株などの基本口座で、米国株口座と投資信託口座が同時に開設され、NISA、信用取引、先物・オプション、FXなどの関連口座も申し込めます。',
+  },
+  {
+    question: '松井証券のFX専用口座は誰でも開設できますか？',
+    answer: '新しく松井証券に申し込む個人が対象です。法人、未成年者、すでに松井証券の総合口座を持っている人はFX専用口座を開設できません。既存の総合口座保有者は、総合口座からFX口座を追加します。',
   },
   {
     question: 'FX専用口座から総合口座へ切り替えられますか？',
@@ -48,7 +52,7 @@ export default function Page() {
     headline: metadata.title,
     description: metadata.description,
     datePublished: '2026-09-07',
-    dateModified: '2026-09-12',
+    dateModified: '2026-09-13',
     mainEntityOfPage: 'https://hanbaijo.com/articles/matsui-account-types',
     author: { '@type': 'Organization', name: '金融コストウォッチ' },
     publisher: { '@type': 'Organization', name: '金融コストウォッチ' },
@@ -68,9 +72,18 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <p className="page-kicker">MATSUI ACCOUNT GUIDE</p>
-      <h1>松井証券の総合口座とは？<br />FX専用口座との違い・できること</h1>
-      <p className="lede">松井証券の総合口座とは、日本株をはじめ、米国株・投資信託・FX・先物など各商品を利用するための基本となる証券口座です。FX取引だけに用途を絞った「FX専用口座」と、利用できる商品の入口が異なります。</p>
-      <div className="callout"><strong>結論：株・NISAも使うなら総合口座</strong><p>FXだけを始めるならFX専用口座も選べます。日本株など他の商品も使う予定があるなら、最初から総合口座を選ぶと、後日の書面による切替を省けます。</p></div>
+      <h1>松井証券のFX専用口座とは？<br />総合口座との違い・開設条件・切替方法</h1>
+      <p className="lede">松井証券のFX専用口座とは、MATSUI FXだけを利用できる個人向け口座です。FXだけを始める人は申込先を絞れますが、日本株・投資信託・NISA・先物などを利用するには総合口座への切替が必要です。</p>
+      <div className="callout"><strong>結論：FXだけなら専用口座、他商品も使うなら総合口座</strong><p>FX専用口座は新規の個人が対象です。株やNISAも使う予定があるなら、最初から総合口座とFX口座を同時に申し込むと、後日の書面による切替を省けます。</p></div>
+
+      <h2>松井証券のFX専用口座でできること</h2>
+      <p>FX専用口座で取引できる商品はMATSUI FXのみです。FX口座の機能や取引条件は利用できますが、総合口座を前提とする日本株などの取引はできません。</p>
+      <ul>
+        <li>対象商品：MATSUI FX</li>
+        <li>申込対象：新しく松井証券に申し込む個人</li>
+        <li>申込方法：口座開設画面で「FX専用口座」を選ぶ</li>
+        <li>他商品を使う場合：書面で総合口座へ切り替える</li>
+      </ul>
 
       <h2>松井証券の総合口座でできること</h2>
       <p>総合口座は、松井証券が提供する複数の商品・サービスを管理する土台です。公式の口座開設案内では、日本株、米国株、投資信託、NISA、FX、先物・オプションが取引可能なサービスとして示されています。</p>
@@ -92,9 +105,24 @@ export default function Page() {
         </table>
       </div><p className="panel-note">開設できる関連口座や同時申込の対象は、年齢、居住地、投資経験、申込方法などの基準で異なります。</p></div>
 
+      <h2>FX専用口座を開設できる人・できない人</h2>
+      <p>松井証券の案内では、FX専用口座は新規に口座開設する個人が対象です。法人、未成年者、すでに松井証券の総合口座を持っている人は申し込めません。</p>
+      <p>すでに総合口座を持っている場合はFX専用口座を新設するのではなく、お客様サイトからFX口座を追加します。FX専用口座の申込時にはMATSUI Bankを同時申込できないため、必要なら専用口座の開設完了後に手続きします。</p>
+
+      <h2>FX専用口座の開設手順</h2>
+      <ol>
+        <li>松井証券の口座開設画面で「FX専用口座」を選ぶ</li>
+        <li>メールアドレスを登録し、届いた認証コードを入力する</li>
+        <li>氏名・住所などの口座開設情報を入力する</li>
+        <li>本人確認書類とマイナンバー確認書類を提出する</li>
+        <li>開設完了後、案内されたログイン情報でFXお客様サイトへ入る</li>
+      </ol>
+      <p>スマートフォンのeKYCは、松井証券休業日を除き、申込内容や提出画像に不備がなければ最短即日の開設案内です。利用開始日は審査・申込状況で変わるため、即日を保証するものではありません。</p>
+
       <h2>FX専用口座から総合口座への切替方法</h2>
       <p>FX専用口座の開設後に日本株など他の商品を取引する場合は、総合口座への切替が必要です。松井証券の取引ルールでは、お客様サイトの「口座管理」→「書類請求・申込」から「切替申込書（FX専用→総合口座）」を請求し、書面で手続きすると案内されています。</p>
-      <p>総合口座へ切り替えた後も、開設済みのFX口座は引き続き利用できます。切替はFX口座を閉じる手続きではなく、利用できる商品の入口を広げる手続きです。</p>
+      <p>切替申込書には本人確認書類のコピー1点を添えて返送します。総合口座へ切り替えた後もFX口座は継続利用でき、ログインID・パスワード・取引暗証番号も変わりません。切替はFX口座を閉じる手続きではなく、利用できる商品の入口を広げる手続きです。</p>
+      <p>切替時には投資信託口座と米国株口座が総合口座と同時に開設されます。NISA、信用取引、先物・オプション、米国株信用取引は、切替完了後に別途申し込みます。</p>
 
       <h2>総合口座では関連口座を同時に申し込める</h2>
       <p>オンラインの総合口座申込では、条件を満たせばNISA、信用取引、先物・オプション、FXなどの関連口座を同時に申し込めます。ただし、総合口座を開けば全商品が無条件で取引可能になるわけではなく、商品ごとの申込・審査があります。</p>
@@ -132,9 +160,11 @@ export default function Page() {
           <li><a href="https://www.matsui.co.jp/apply/" target="_blank" rel="noopener noreferrer">松井証券「口座開設」</a></li>
           <li><a href="https://www.matsui.co.jp/apply/fx-account/" target="_blank" rel="noopener noreferrer">松井証券「FX専用口座開設完了までの流れ」</a></li>
           <li><a href="https://www.matsui.co.jp/fx/rule/" target="_blank" rel="noopener noreferrer">松井証券「FX 取引ルール」</a></li>
+          <li><a href="https://support.matsui.co.jp/faq/show/47571?site_domain=faq" target="_blank" rel="noopener noreferrer">松井証券「FX専用口座から総合口座への切替方法」</a></li>
+          <li><a href="https://support.matsui.co.jp/faq/show/47605?site_domain=faq" target="_blank" rel="noopener noreferrer">松井証券「FX専用口座の開設方法」</a></li>
           <li><a href="https://support.matsui.co.jp/faq/show/48197?site_domain=faq" target="_blank" rel="noopener noreferrer">松井証券「松井証券の口座開設方法を教えてください」</a></li>
         </ul>
-        <p>口座の対象商品・切替方法は2026年9月12日に確認しました。最新の申込条件は公式画面を確認してください。</p>
+        <p>口座の対象商品・開設条件・切替方法は2026年9月13日に確認しました。最新の申込条件は公式画面を確認してください。</p>
       </section>
 
       <p><Link href="/fx/matsui">MATSUI FXのコストシートを見る →</Link></p>
