@@ -20,10 +20,13 @@ const ROWS = [
 export default function Page() {
   return (
     <article>
-      <ArticleStructuredData slug="systre-select-365-vs-otc-fx" publishedAt="2026-09-07" />
+      <ArticleStructuredData slug="systre-select-365-vs-otc-fx" publishedAt="2026-09-07" modifiedAt="2026-09-13" />
       <p className="page-kicker">SYSTRE SELECT 365 / MARKET STRUCTURE</p>
       <h1>シストレセレクト365と店頭FXの違い<br />取引所FXを選ぶ意味</h1>
       <p className="lede">シストレセレクト365は、店頭FXではなく東京金融取引所の「くりっく365」で自動売買します。違いは自動・手動だけではなく、価格を提示する仕組み、スワップ、手数料、証拠金にあります。</p>
+
+      <h2>くりっく365のシストレとは？</h2>
+      <p>くりっく365のシストレとは、東京金融取引所の取引所FX「くりっく365」を対象に、選んだストラテジーを自動で売買するサービスです。シストレセレクト365はフジトミ証券の投資助言サービスで、利用には同社のくりっく365口座と別途契約が必要です。</p>
 
       <div className="callout"><strong>取引所FXが常に安いとは限らない</strong><p>価格の透明性やスワップの一本値には特徴がありますが、取扱会社の手数料や実際のスプレッドを含めた総額では、取引条件ごとに結果が変わります。</p></div>
 
