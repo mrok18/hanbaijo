@@ -4,15 +4,15 @@ import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
   alternates: { canonical: '/articles/matsui-deposit-methods-comparison' },
-  title: '松井証券の入金方法を比較｜手数料・反映時間・MATSUI Bankの違い',
-  description: '松井証券のスイープ入金、MATSUI Bank入金、ネットリンク入金、らくらく振替、定期入金、銀行振込を比較します。',
+  title: 'ネットリンク入金とらくらく振替入金の違い｜松井証券の手数料・反映時間',
+  description: '松井証券のネットリンク入金とらくらく振替入金の違いを、操作場所、事前登録、手数料、反映時間、利用時の注意点で比較します。',
 };
 
 export default function Page() {
   return <article>
     <p className="page-kicker">MATSUI / DEPOSIT METHODS</p>
-    <h1>松井証券の入金方法を比較<br />手数料・反映時間の違い</h1>
-    <p className="lede">松井証券の総合口座には6種類の入金方法があります。今すぐ取引したい場合、積立資金を自動で用意したい場合、普段の銀行から振り込みたい場合で使い分けます。</p>
+    <h1>ネットリンク入金とらくらく振替入金の違い<br />松井証券の手数料・反映時間</h1>
+    <p className="lede">松井証券のネットリンク入金とらくらく振替入金はどちらもリアルタイム・手数料無料ですが、操作する画面と初回の口座登録が異なります。総合口座の6種類の入金方法から、用途に合う方式を選びます。</p>
 
     <h2>6種類の入金方法</h2>
     <div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th>方法</th><th>反映</th><th>手数料</th><th>事前準備</th></tr></thead><tbody>
@@ -24,8 +24,14 @@ export default function Page() {
       <tr><td className="ex-name">銀行振込入金</td><td>確認後。営業日日中は通常30〜60分</td><td>利用者負担</td><td>専用振込先の確認</td></tr>
     </tbody></table></div></div>
 
-    <h2>今すぐ入金するなら3つのリアルタイム方式</h2>
+    <h2>ネットリンク入金とらくらく振替入金の違い</h2>
     <p>MATSUI Bank入金、ネットリンク入金、らくらく振替入金は、銀行口座から松井証券の総合口座へリアルタイムで入金する方式です。いずれも松井証券側の振替手数料は無料ですが、利用できる金融機関と事前設定が異なります。</p>
+    <div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th>比較項目</th><th>ネットリンク入金</th><th>らくらく振替入金</th></tr></thead><tbody>
+      <tr><td className="ex-name">操作する画面</td><td>提携金融機関のネットバンキング</td><td>松井証券のお客様サイト</td></tr>
+      <tr><td className="ex-name">初回設定</td><td>利用時に金融機関へ接続</td><td>初回に銀行口座を登録</td></tr>
+      <tr><td className="ex-name">反映・手数料</td><td>リアルタイム・無料</td><td>リアルタイム・無料</td></tr>
+      <tr><td className="ex-name">向いているケース</td><td>銀行側の認証でその都度入金したい</td><td>登録後の入力を簡単にしたい</td></tr>
+    </tbody></table></div></div>
     <ul>
       <li><strong>MATSUI Bank入金：</strong>MATSUI Bank口座から金額を指定して振替</li>
       <li><strong>ネットリンク入金：</strong>提携金融機関のネットバンキング画面で手続き</li>
