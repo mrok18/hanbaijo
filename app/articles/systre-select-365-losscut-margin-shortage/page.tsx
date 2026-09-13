@@ -5,8 +5,8 @@ import ArticleStructuredData from '@/components/ArticleStructuredData';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata: Metadata = {
-  title: 'シストレセレクト365のロスカット｜基準・発動後の停止',
-  description: 'シストレセレクト365のロスカット基準は有効比率100％以下です。1分間隔の判定、150％のアラート、全建玉決済、発動後のストラテジー停止、証拠金不足との違いを整理します。',
+  title: 'シストレ ロスカット｜セレクト365の基準・発動後の停止',
+  description: 'シストレのロスカット基準を、シストレセレクト365の有効比率100％・150％アラート・全建玉決済・発動後のストラテジー停止・証拠金不足との違いから整理します。',
   alternates: { canonical: '/articles/systre-select-365-losscut-margin-shortage' },
 };
 
@@ -42,11 +42,11 @@ export default function Page() {
 
   return (
     <article>
-      <ArticleStructuredData slug="systre-select-365-losscut-margin-shortage" publishedAt="2026-09-07" modifiedAt="2026-09-12" />
+      <ArticleStructuredData slug="systre-select-365-losscut-margin-shortage" publishedAt="2026-09-07" modifiedAt="2026-09-13" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd).replace(/</g, '\\u003c') }} />
       <p className="page-kicker">SYSTRE SELECT 365 / RISK CONTROL</p>
-      <h1>シストレセレクト365のロスカット<br />基準と発動後の停止を確認</h1>
-      <p className="lede">シストレでもロスカットは回避されません。フジトミ証券のくりっく365では、1分ごとの確認で有効比率が100％以下になると、未約定注文を取り消し、口座内の全建玉へ決済注文を発注します。</p>
+      <h1>シストレのロスカット｜セレクト365の基準と発動後の停止</h1>
+      <p className="lede">シストレのロスカットは、シストレセレクト365では有効比率が100％以下になると発動します。1分ごとの確認で未約定注文を取り消し、口座内の全建玉へ決済注文を発注するため、アラート・証拠金不足との違いも分けて確認します。</p>
 
       <div className="callout"><strong>結論：100％以下で全建玉を決済、発動後は稼働状態も確認</strong><p>150％以下はメールアラート、100％以下はロスカットです。ロスカット時に建玉を持っていたストラテジーは、その後の決済シグナルで停止するため、建玉照会だけでなく稼働状況も確認します。</p></div>
 
@@ -112,7 +112,7 @@ export default function Page() {
         <li><a href="https://www.fujitomi.co.jp/click365/feature/fxmargin/" target="_blank" rel="noopener noreferrer">フジトミ証券「証拠金基準額」</a></li>
         <li><a href="https://www.fujitomi.co.jp/systra/feature/howto-a/" target="_blank" rel="noopener noreferrer">フジトミ証券「推奨証拠金について」</a></li>
         <li><a href="https://www.fujitomi.co.jp/systra/faq/" target="_blank" rel="noopener noreferrer">フジトミ証券「シストレセレクト365 よくある質問」</a></li>
-      </ul><p>ロスカット基準と発動後の動作は2026年9月12日に確認しました。発生時は取引画面の不足額・期限・稼働状況を優先してください。</p></section>
+      </ul><p>ロスカット基準と発動後の動作は2026年9月13日に確認しました。発生時は取引画面の不足額・期限・稼働状況を優先してください。</p></section>
 
       <p><Link href="/fx/systre-select-365">シストレセレクト365のコストシートを見る →</Link></p>
       <p><Link href="/articles/systre-select-365-recommended-margin">推奨証拠金と最大DDを見る →</Link></p>
