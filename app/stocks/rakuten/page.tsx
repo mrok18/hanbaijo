@@ -2,16 +2,16 @@ import StockProviderFactSheet from '@/components/StockProviderFactSheet';
 import { STOCK_PROVIDERS } from '@/lib/stock-providers';
 
 export const metadata = {
-  title: '楽天証券ゼロコースのデメリット｜手数料0円の条件と注意点',
-  description: '楽天証券ゼロコースは国内株の現物・信用手数料が0円。SOR・Rクロス利用同意、信用コストや対象外取引などデメリット・注意点を公式情報から整理します。',
+  title: '楽天証券の信用取引手数料は0円？ゼロコースの条件と別コスト',
+  description: '楽天証券の国内株信用取引手数料はゼロコースなら0円。買方金利・貸株料・品貸料など別コストと、SOR・Rクロスの利用同意条件を公式情報から確認します。',
   alternates: { canonical: '/stocks/rakuten' },
 };
 
 export default function Page() {
   return <StockProviderFactSheet
     provider={STOCK_PROVIDERS.rakuten}
-    heading="楽天証券ゼロコースのデメリット｜手数料0円の条件"
-    keyNumbersHeading="ゼロコースの手数料0円と注意点"
+    heading="楽天証券の信用取引手数料は0円？ゼロコースの条件と別コスト"
+    keyNumbersHeading="信用取引手数料0円と別コスト"
     relatedArticles={[
     {
       href: '/articles/rakuten-securities-domestic-stock-fees',

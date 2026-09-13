@@ -44,7 +44,7 @@ export const STOCK_PROVIDERS: Record<string, StockProvider> = {
     slug: 'rakuten',
     name: '楽天証券',
     shortName: '楽天証券',
-    reviewedAt: '2026-09-13',
+    reviewedAt: '2026-09-14',
     headline: 'ゼロコースなら、国内株の現物・信用手数料は0円。',
     summary: '楽天証券の日本株（国内株）手数料を、ゼロコースの0円条件とSOR・Rクロスへの同意を含め、信用取引の別コストまで確認します。',
     feeModel: 'ゼロコースは約定代金にかかわらず0円',
