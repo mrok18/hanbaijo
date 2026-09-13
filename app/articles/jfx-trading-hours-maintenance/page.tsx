@@ -2,17 +2,17 @@ import Link from 'next/link';
 
 export const metadata = {
   alternates: { canonical: '/articles/jfx-trading-hours-maintenance' },
-  title: 'JFXの取引時間｜夏時間・冬時間・メンテナンスと土日の注文',
-  description: 'JFX MATRIX TRADERの月曜開始・土曜終了、米国夏時間と冬時間、日締めメンテナンス、土日の注文受付、祝日の注意点を整理します。',
+  title: 'JFXのメンテナンス時間｜日締め・週末の取引停止と注文可否',
+  description: 'JFXの毎営業日の日締めメンテナンス時間を夏時間・冬時間で整理し、週末の取引停止と予約注文の可否、注文前の注意点を公式情報から確認します。',
 };
 
 export default function Page() {
   return <article>
     <p className="page-kicker">JFX / TRADING HOURS</p>
-    <h1>JFXの取引時間<br />夏時間・冬時間・土日の注文を整理</h1>
-    <p className="lede">JFXは平日ほぼ24時間取引できますが、米国の夏時間・冬時間で月曜開始と土曜終了が1時間変わります。さらに毎営業日の日締めで通信が切断されるため、「市場が開いている時間」と「実際に操作できる時間」を分けて確認します。</p>
+    <h1>JFXのメンテナンス時間<br />日締め・週末の取引停止と注文可否</h1>
+    <p className="lede">JFXの毎営業日の日締めメンテナンスは、米国夏時間なら5:59前後、冬時間なら6:59前後に始まり、通常15分程度（最大30分程度）が目安です。市場の取引時間と実際に操作できる時間を分け、週末の予約注文が可能な時間帯も確認します。</p>
 
-    <h2>MATRIX TRADERの取引時間</h2>
+    <h2>MATRIX TRADERの取引時間とメンテナンス時間</h2>
     <div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th>区分</th><th>取引開始</th><th>取引終了</th><th>日締め開始</th></tr></thead><tbody>
       <tr><td className="ex-name">米国夏時間</td><td>月曜 6:30</td><td>土曜 5:30</td><td>毎営業日 5:59</td></tr>
       <tr><td className="ex-name">米国冬時間</td><td>月曜 7:00</td><td>土曜 6:30</td><td>毎営業日 6:59</td></tr>
