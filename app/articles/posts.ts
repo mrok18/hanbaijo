@@ -40,7 +40,7 @@ export const POSTS = [
   { slug: 'dmm-kabu-nisa-account-opening', category: 'NISA・DMM 株', title: 'DMM 株のNISA口座開設方法｜同時申込・追加申込・金融機関変更', desc: '新規アカウントとの同時申込、既存利用者の追加申込、他社からの金融機関変更に必要な書類を整理する。' },
   { slug: 'dmm-kabu-account-opening-documents', category: '証券・DMM 株', title: 'DMM 株の口座開設に必要なもの｜本人確認・マイナンバー・開始まで', desc: '本人確認とマイナンバー確認の組合せ、スマホと郵送の違い、審査から取引開始までを整理する。' },
   { slug: 'fx-etax-input-guide', category: 'FX・税金', title: 'FXの確定申告をe-Taxで入力する順番｜先物取引・経費・繰越損失', desc: '年間報告書の準備から、作成コーナーの「先物取引」、必要経費、繰越損失、e-Tax送信までを順番に整理する。' },
-  { slug: 'fx-loss-carryforward-filing', category: 'FX・税金', title: 'FX損失を3年繰り越す確定申告｜取引しない年も必要？', desc: '損失発生年、利益が出た年、取引しない年に必要な連続申告と、計算明細書・繰越損失用付表を整理する。' },
+  { slug: 'fx-loss-carryforward-filing', category: 'FX・税金', title: 'くりっく365の損失繰越｜3年控除と確定申告の続け方', desc: 'くりっく365の損失繰越の可否、翌年以後3年間の控除、取引しない年も続ける連続申告を整理する。' },
   { slug: 'domestic-vs-overseas-fx-tax', category: 'FX・税金', title: '国内FXと海外FXの税金の違い｜20.315％・総合課税・損失繰越', desc: '申告分離課税と総合課税、損益通算、3年繰越を比較し、金融庁登録と取引の法的区分を確認する。' },
   { slug: 'fx-tax-rate-calculation', category: 'FX・税金', title: '国内FXの税率は20.315％？所得税・住民税の計算方法', desc: '所得税15％、復興特別所得税、地方稅5％の内訳と、必要経費・損益通算後の税額を計算する。' },
   { slug: 'fx-profit-under-200k-tax-return', category: 'FX・税金', title: 'FX利益20万円以下なら確定申告は不要？住民税・還付申告の注意', desc: '会社員の所得税申告が不要になる条件と、20万円以下でも別判定の住民税、還付申告、損失繰越を確認する。' },

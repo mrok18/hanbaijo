@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   alternates: { canonical: '/articles/fx-loss-carryforward-filing' },
-  title: 'FX損失を3年繰り越す確定申告｜取引しない年も必要？',
-  description: '国内FX等の損失繰越について、損失が出た年、利益が出た年、取引しない年に必要な申告と、計算明細書・申告書付表を時系列で整理します。',
+  title: 'くりっく365の損失繰越｜3年控除と確定申告の続け方',
+  description: 'くりっく365の損失繰越はできるのか、翌年以後3年間の控除、損失発生年から取引しない年も続ける確定申告を整理します。',
 };
 
 const timeline = [
@@ -17,7 +17,7 @@ const timeline = [
 export default function Page() {
   const jsonLd = {
     '@context': 'https://schema.org', '@type': 'Article', headline: metadata.title,
-    description: metadata.description, datePublished: '2026-09-09', dateModified: '2026-09-09',
+    description: metadata.description, datePublished: '2026-09-09', dateModified: '2026-09-13',
     mainEntityOfPage: 'https://hanbaijo.com/articles/fx-loss-carryforward-filing',
     author: { '@type': 'Organization', name: '金融コストウォッチ' },
     publisher: { '@type': 'Organization', name: '金融コストウォッチ' },
@@ -26,8 +26,11 @@ export default function Page() {
   return <article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
     <p className="page-kicker">FX TAX / LOSS CARRYFORWARD</p>
-    <h1>FX損失を3年繰り越す確定申告<br />取引しない年も必要？</h1>
+    <h1>くりっく365の損失繰越<br />3年控除と確定申告の続け方</h1>
     <p className="lede">国内の一定のFX・CFD・先物で生じた損失は、要件を満たせば翌年以後3年間繰り越せます。重要なのは、損失が出た最初の年に申告し、その後も必要書類を付けて連続して申告することです。</p>
+
+    <h2>くりっく365の損失繰越はできる？</h2>
+    <p>できます。くりっく365の損失は「先物取引に係る雑所得等」の損失として、損益通算しても残った分を翌年以後3年間繰り越せます。適用には損失が出た年に確定申告を行い、その後も取引がない年を含めて連続して申告することが必要です。</p>
 
     <div className="callout"><strong>取引がない年も、繰越を残すなら申告を続ける</strong><p>国税庁は、損失発生年に所定の明細書・付表を添付して申告し、その後も連続して付表を添付した確定申告書を提出することを要件としています。</p></div>
 
@@ -68,7 +71,7 @@ export default function Page() {
       <li><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1522.htm" rel="noreferrer">国税庁 No.1522「先物取引に係る雑所得等の課税の特例」</a></li>
       <li><a href="https://www.nta.go.jp/taxes/shiraberu/shinkoku/syotoku/r07.htm" rel="noreferrer">国税庁「令和7年分 確定申告書等の様式・手引き等」</a></li>
     </ul>
-    <p><small>確認日：2026年9月9日。2026年分の申告様式は公表後に最新資料を確認してください。期限後申告など個別事情がある場合は税務署または税理士へ確認してください。</small></p>
+    <p><small>確認日：2026年9月13日。2026年分の申告様式は公表後に最新資料を確認してください。期限後申告など個別事情がある場合は税務署または税理士へ確認してください。</small></p>
     <p><Link href="/articles">解説記事一覧へ戻る →</Link></p>
   </article>;
 }
