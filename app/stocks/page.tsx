@@ -3,8 +3,8 @@ import Link from 'next/link';
 import { STOCK_PROVIDER_LIST } from '@/lib/stock-providers';
 
 export const metadata: Metadata = {
-  title: '株式手数料ガイド｜国内株・米国株・信用取引のコスト比較',
-  description: '株式手数料の仕組みと計算方法を解説。国内株、米国株・外国株式、信用取引に分け、売買手数料、為替コスト、金利を比較できる専門ページへ案内します。',
+  title: '米国株式の手数料比較｜国内株・外国株のコストも整理',
+  description: '米国株式の手数料比較で見る売買手数料、為替コスト、現地費用、NISA条件を整理。国内株・外国株式・信用取引の比較表と計算方法も案内します。',
   alternates: { canonical: '/stocks' },
 };
 
@@ -50,12 +50,12 @@ export default function StocksPage() {
       <section className="fx-hero">
         <div>
           <p className="page-kicker">STOCK COST GUIDE</p>
-          <h1>株式手数料の仕組みと比較<br /><em>国内株・米国株・信用取引</em></h1>
+          <h1>米国株式の手数料比較と仕組み<br /><em>国内株・外国株・信用取引も整理</em></h1>
           <p className="lede">
-            株式の手数料は、国内株、米国株・外国株式、現物・信用で確認項目が変わります。
-            売買手数料だけでなく、板の価格差、為替コスト、信用金利まで分け、
-            知りたい対象に合う比較表と計算方法へ案内します。
+            米国株式の手数料比較では、売買手数料だけでなく、円とドルを交換する為替コスト、現地費用、NISAの無料条件まで確認します。
+            国内株・外国株式・信用取引は費用の種類が異なるため、対象ごとの比較表と計算方法へ案内します。
           </p>
+          <div className="callout"><strong>米国株式の比較で最初に見る4項目</strong><p>売買手数料、為替コスト、現地費用、NISAなどの適用条件を同じ取引金額・決済方法でそろえると、見かけの手数料0円だけでは分からない実負担を比べられます。</p></div>
           <div className="hero-actions">
             <Link className="button primary" href="/stocks/domestic-fee-comparison">国内株4社を比較</Link>
             <Link className="button secondary" href="/tools/cost-calculator">自分の金額で計算</Link>
@@ -81,7 +81,7 @@ export default function StocksPage() {
           <div>
             <p className="section-index">CHOOSE YOUR NEXT STEP</p>
             <h2 id="stock-paths-title">株の手数料を目的別に調べる</h2>
-            <p>国内株、米国株・外国株式、手数料の仕組みを混ぜずに確認できます。</p>
+            <p>米国株式、国内株、外国株式、手数料の仕組みを混ぜずに確認できます。</p>
           </div>
           <Link href="#stock-provider-directory">証券会社別に見る →</Link>
         </div>
@@ -135,15 +135,16 @@ export default function StocksPage() {
       <section className="fx-section">
         <div className="section-heading"><div>
           <p className="section-index">03 / DOMESTIC &amp; US</p>
-          <h2>国内株と米国株で、追加項目が変わる</h2>
+          <h2>米国株式の手数料比較は、4つの費用を分ける</h2>
         </div></div>
         <div className="data-panel"><div className="table-scroll">
           <table className="rates fx-target-table">
             <thead><tr><th>対象</th><th>共通して確認</th><th>追加で確認</th></tr></thead>
             <tbody>
               <tr><td className="ex-name">国内株・現物</td><td>売買手数料・板の価格差</td><td>単元株数・注文条件</td></tr>
+              <tr><td className="ex-name">米国株式</td><td>売買手数料・為替コスト</td><td>現地費用・NISA・決済方法</td></tr>
               <tr><td className="ex-name">国内株・信用</td><td>売買手数料・板の価格差</td><td>信用金利・貸株料・管理費</td></tr>
-              <tr><td className="ex-name">米国株</td><td>売買手数料・市場の価格差</td><td>為替・現地費用・決済方法</td></tr>
+              <tr><td className="ex-name">外国株式</td><td>売買手数料・為替コスト</td><td>市場別の現地費用・取扱銘柄</td></tr>
             </tbody>
           </table>
         </div><p className="panel-note">税金は口座区分や個別事情で異なるため、取引コストとは分けて確認してください。</p></div>
