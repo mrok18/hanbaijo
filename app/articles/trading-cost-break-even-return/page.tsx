@@ -4,15 +4,15 @@ import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
   alternates: { canonical: '/articles/trading-cost-break-even-return' },
-  title: '取引コストの損益分岐点は何％？手数料負けしない値幅を計算',
-  description: '往復手数料、スプレッド、保有コストを取引金額に対する比率へ直し、手数料負けしないために必要な値上がり率を計算します。',
+  title: 'FXの手数料負けを防ぐ｜スプレッド込み損益分岐点を計算',
+  description: 'FXの手数料負けを防ぐため、スプレッドと取引手数料を往復コストへ直し、損益分岐点・必要な値幅を計算します。株・CFD・先物にも応用できる式を整理。',
 };
 
 export default function Page() {
   return <article>
     <p className="page-kicker">COST / BREAK-EVEN RETURN</p>
-    <h1>取引コストの損益分岐点は何％？<br />手数料負けしない値幅を計算</h1>
-    <p className="lede">利益が出る最低ラインは、買値に戻ることではありません。スプレッド、往復手数料、保有コストを回収して、初めて損益がゼロになります。異なる金融商品も取引金額に対する割合へ直すと比較できます。</p>
+    <h1>FXの手数料負けを防ぐ<br />スプレッド込みの損益分岐点を計算</h1>
+    <p className="lede">FXでは取引手数料が無料でも、スプレッドはポジションを持った瞬間のコストです。往復のスプレッドと手数料、保有中のスワップを合計し、何pips動けば損益ゼロに戻るかを計算します。</p>
 
     <h2>結論：総コストを取引金額で割る</h2>
     <div className="formula-box">

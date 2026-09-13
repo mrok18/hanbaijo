@@ -168,7 +168,7 @@ export const POSTS = [
   { slug: 'jfx-scalping-spread-cost', category: 'FX・JFX', title: 'JFXはスキャルピング向き？米ドル円の時間帯別スプレッドを計算', desc: '米ドル/円0.2銭と早朝5.9銭を、1,000通貨・1万通貨・取引回数ごとの円コストへ換算する。' },
   { slug: 'nikkei225-micro-profit-loss', category: '先物・日経225', title: '日経225マイクロは1円・1ティックでいくら？損益早見表', desc: '日経225マイクロ先物の10倍という取引単位と5円の呼値から、1枚の値動き損益と手数料分岐を計算する。' },
   { slug: 'fx-swap-spread-break-even-days', category: 'FX・スワップ', title: 'FXスワップでスプレッドを回収するまで何日？損益分岐を計算', desc: 'スプレッド相当額を1日分の受取スワップで割り、初期コスト回収日数と為替変動の影響を計算する。' },
-  { slug: 'trading-cost-break-even-return', category: '資金管理・計算', title: '取引コストの損益分岐点は何％？手数料負けしない値幅を計算', desc: '往復手数料、スプレッド、保有コストを取引金額に対する比率へ直し、利益に必要な値幅を計算する。' },
+  { slug: 'trading-cost-break-even-return', category: '資金管理・計算', title: 'FXの手数料負けを防ぐ｜スプレッド込み損益分岐点を計算', desc: 'スプレッド・手数料・保有コストを合算し、FXで損益ゼロに戻る必要な値幅を計算する。' },
   { slug: 'us-stock-yen-sensitivity', category: '米国株・為替', title: '米国株はドル円が1円動くといくら変わる？為替感応度早見表', desc: '保有する米国株のドル評価額から、ドル円が1円・5円・10円動いた場合の円換算額の変化を計算する。' },
   { slug: 'us-stock-loss-yen-depreciation', category: '米国株・為替', title: '米国株が下がっても円換算で利益？円安と損益分岐ドル円', desc: '株価下落と円安を同時に計算し、円換算で利益が残るドル円の境界とコストの影響を整理する。' },
   { slug: 'us-stock-profit-yen-appreciation', category: '米国株・為替', title: '米国株が上がったのに円換算で損？円高と損益分岐ドル円', desc: '株価上昇率と円高を同時に計算し、売買コストを含む円換算損益の見方を整理する。' },
