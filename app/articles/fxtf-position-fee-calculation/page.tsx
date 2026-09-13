@@ -4,12 +4,12 @@ import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
   alternates: { canonical: '/articles/fxtf-position-fee-calculation' },
-  title: 'FXTFの建玉連動手数料とは？保有中の数量を含めて計算',
-  description: 'FXTFの建玉連動手数料を、新規注文、同一銘柄・同一売買方向の保有数量、手数料ランク、1万通貨あたり金額に分けて計算します。',
+  title: 'FXTFの建玉連動手数料｜保有数量＋新規注文の計算方法',
+  description: 'FXTFの建玉連動手数料を、同一銘柄・同一売買方向の保有数量＋新規注文で決まるランクと、1万通貨あたりの手数料を例で計算します。',
 };
 
 export default function Page() {
-  return <article><p className="page-kicker">FXTF / POSITION-LINKED FEE</p><h1>FXTFの建玉連動手数料<br />新規注文量だけでは決まらない</h1><p className="lede">手数料ランクは、銘柄と売買方向ごとに、保有中の建玉数量と新規発注数量の合計で決まります。適用単価を掛ける対象は新規注文数量です。決済時の追加手数料はありません。</p>
+  return <article><p className="page-kicker">FXTF / POSITION-LINKED FEE</p><h1>FXTFの建玉連動手数料｜保有数量＋新規注文で計算</h1><p className="lede">FXTFの建玉連動手数料は、同一銘柄・同じ売買方向の保有数量と新規注文の合計でランク判定します。手数料を掛けるのは新規注文数量だけで、決済時の追加手数料はありません。</p>
 
     <h2>計算は3段階</h2><ol><li><strong>銘柄と売買方向を分ける：</strong>USD/JPYの買いと売りは別に集計します。</li><li><strong>保有建玉＋新規注文を合計：</strong>同一銘柄・同一方向へ積み増す場合の合計数量でランクを決めます。</li><li><strong>新規注文数量へ単価を掛ける：</strong>ランクの1万通貨あたり手数料を、新たに約定する数量へ適用します。</li></ol><div className="formula-box"><code>ランク判定数量 ＝ 同一銘柄・同一方向の保有数量 ＋ 新規注文数量</code><code>手数料 ＝ 新規注文数量 ÷ 10,000通貨 × 適用単価</code><small>端数処理、銘柄別単価、最新ランクは公式手数料表を確認してください。</small></div>
 
@@ -20,7 +20,7 @@ export default function Page() {
     <h2>短期売買は回数で積み上げる</h2><div className="formula-box"><code>期間手数料 ＝ 各新規約定の建玉連動手数料の合計</code><code>総取引コスト ＝ 建玉連動手数料 ＋ スプレッド負担 ＋ 支払スワップ ＋ 約定差</code><small>受取スワップは別に加算。公式手数料表を保存せず、取引履歴の実額で検証します。</small></div>
 
     <section className="article-affiliate" aria-label="FXTFの広告"><AffiliateOfferCard offer={AFFILIATE_OFFERS.fxtf} /><p className="affiliate-disclosure">広告リンクから申込みが成立すると、当サイトが報酬を受け取る場合があります。手数料ランクや金額は市場動向で変更されるため、発注前に公式表を確認してください。</p></section>
-    <section className="article-sources" aria-labelledby="sources"><h2 id="sources">参照した公式資料</h2><ul><li><a href="https://www.fxtrade.co.jp/positionfee/" target="_blank" rel="noopener noreferrer">FXTF「建玉連動手数料」</a></li><li><a href="https://www.fxtrade.co.jp/2026-02-21/" target="_blank" rel="noopener noreferrer">FXTF「2026年3月2日 建玉連動手数料変更」</a></li><li><a href="https://www.fxtrade.co.jp/gx-intro/" target="_blank" rel="noopener noreferrer">FXTF「GX-FX取引概要」</a></li></ul><p>計算方法と公式例は2026年9月8日に確認しました。料金表の最新単価を優先してください。</p></section>
+    <section className="article-sources" aria-labelledby="sources"><h2 id="sources">参照した公式資料</h2><ul><li><a href="https://www.fxtrade.co.jp/positionfee/" target="_blank" rel="noopener noreferrer">FXTF「建玉連動手数料」</a></li><li><a href="https://www.fxtrade.co.jp/2026-02-21/" target="_blank" rel="noopener noreferrer">FXTF「2026年3月2日 建玉連動手数料変更」</a></li><li><a href="https://www.fxtrade.co.jp/gx-intro/" target="_blank" rel="noopener noreferrer">FXTF「GX-FX取引概要」</a></li></ul><p>計算方法と公式例は2026年9月13日に確認しました。料金表の最新単価を優先してください。</p></section>
     <p><Link href="/articles/fx-zero-spread-total-cost">0.0銭表示と総コストの関係を見る →</Link></p><p><Link href="/articles/fxtf-minimum-unit-margin">1,000通貨の必要証拠金を計算する →</Link></p><p><Link href="/fx/fxtf">FXTFの公式条件一覧へ →</Link></p>
   </article>;
 }
