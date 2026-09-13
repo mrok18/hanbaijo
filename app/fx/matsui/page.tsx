@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 import { FX_PROVIDERS } from '@/lib/fx-providers';
 
-export const metadata = { title: '松井証券FXの手数料は無料？スプレッド・スワップ・受渡決済', description: '松井証券MATSUI FXの取引・口座・ロスカット・自動売買手数料の無料範囲と、スプレッド、スワップ、受渡決済手数料を円換算します。', alternates: { canonical: '/fx/matsui' } };
+export const metadata = { title: '松井証券 FX 手数料は無料？スプレッド・スワップ・受渡決済', description: '松井証券FXの手数料が無料になる範囲と、別に残るスプレッド・スワップ・受渡決済手数料を円換算します。', alternates: { canonical: '/fx/matsui' } };
 
 const faq = [
   { q: '松井証券FXの取引手数料はいくらですか？', a: '通常のFX取引手数料は無料です。口座開設・口座維持・ロスカット・出金の各手数料も無料と案内されています。ただし、スプレッドやスワップ、受渡決済を選ぶ場合の手数料は別です。' },
@@ -13,13 +13,14 @@ const faq = [
 
 export default function Page() {
   const jsonLd = { '@context': 'https://schema.org', '@graph': [
-    { '@type': 'WebPage', name: metadata.title, description: metadata.description, dateModified: '2026-09-12', url: 'https://hanbaijo.com/fx/matsui' },
+    { '@type': 'WebPage', name: metadata.title, description: metadata.description, dateModified: '2026-09-13', url: 'https://hanbaijo.com/fx/matsui' },
     { '@type': 'FAQPage', mainEntity: faq.map((item) => ({ '@type': 'Question', name: item.q, acceptedAnswer: { '@type': 'Answer', text: item.a } })) },
   ] };
 
   const details = <section className="provider-section" aria-labelledby="matsui-fee-breakdown">
     <p className="section-index">03 / FEE BREAKDOWN</p>
-    <h2 id="matsui-fee-breakdown">松井証券FXの無料範囲と残るコスト</h2>
+    <h2 id="matsui-fee-breakdown">松井証券FXの手数料はいくら？無料範囲と残るコスト</h2>
+    <p>結論、通常のFX取引手数料は無料です。ただし、スプレッド・スワップポイント・受渡決済を選ぶ場合の手数料は別にかかるため、「手数料0円」と「総コスト0円」を分けて確認します。</p>
     <div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th>項目</th><th>公称条件</th><th>確認ポイント</th></tr></thead><tbody>
       <tr><td className="ex-name">FX取引手数料</td><td><strong>0円</strong></td><td>全32通貨ペア</td></tr>
       <tr><td className="ex-name">口座開設・維持</td><td><strong>0円</strong></td><td>通常の口座費用</td></tr>
@@ -28,7 +29,7 @@ export default function Page() {
       <tr><td className="ex-name">スプレッド</td><td>変動</td><td>通貨ペア・数量・注文・時間帯で確認</td></tr>
       <tr><td className="ex-name">スワップポイント</td><td>受取または支払</td><td>建玉を翌取引日へ持ち越すと発生</td></tr>
       <tr><td className="ex-name">受渡決済手数料</td><td><strong>数量×1～20円</strong></td><td>通貨別。受渡決済を選ぶ場合のみ</td></tr>
-    </tbody></table></div><p className="panel-note">2026年9月12日確認。通常の反対売買を前提とする取引手数料と、例外的な受渡決済手数料を混同しないでください。条件は変更される場合があります。</p></div>
+    </tbody></table></div><p className="panel-note">2026年9月13日確認。通常の反対売買を前提とする取引手数料と、例外的な受渡決済手数料を混同しないでください。条件は変更される場合があります。</p></div>
 
     <h2>米ドル／円スプレッドを円換算</h2>
     <div className="formula-box"><code>スプレッド相当額 ＝ スプレッド（銭）÷100 × 取引通貨数</code><small>0.1銭＝0.001円、0.2銭＝0.002円として計算。</small></div>
@@ -58,7 +59,7 @@ export default function Page() {
     <p><Link href="/tools/matsui-fx-spread-calculator">取引数量と回数からスプレッドを計算する →</Link></p>
   </section>;
 
-  return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }} /><FxProviderFactSheet provider={FX_PROVIDERS.matsui} affiliateOffer={AFFILIATE_OFFERS['matsui-fx']} pageTitle={<>松井証券FXの手数料は無料？<br />スプレッド・スワップまで確認</>} reviewedAt="2026-09-12" details={details} relatedArticles={[
+  return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }} /><FxProviderFactSheet provider={FX_PROVIDERS.matsui} affiliateOffer={AFFILIATE_OFFERS['matsui-fx']} pageTitle={<>松井証券FXの手数料は無料？<br />スプレッド・スワップまで確認</>} reviewedAt="2026-09-13" details={details} relatedArticles={[
     { href: '/articles/matsui-fx-auto-trading-setting', title: '自動売買の設定方法', description: 'レンジ、値幅、益出し幅、数量、停止ライン、100件上限を整理します。' },
     { href: '/articles/systre-select-365-vs-matsui-auto-trading', title: 'シストレセレクト365と比較', description: 'リピート型と選択型、1通貨と1万通貨、費用・必要資金の違いを比較します。' },
     { href: '/articles/matsui-simultaneous-account-opening', title: '総合口座と同時に申込める口座', description: 'FX・NISA・信用・先物を同時申込みする場合と、後から追加する場合を整理します。' },
