@@ -4,7 +4,7 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata: Metadata = {
-  title: '0.2銭は何円？FXスプレッドを1,000通貨・1万通貨で計算',
+  title: 'FXの0.2銭は何円？スプレッドを数量別に計算',
   description: 'FXの0.2銭は1通貨あたり0.002円です。1,000通貨なら2円、1万通貨なら20円、10万通貨なら200円になる計算式と注意点を解説します。',
   alternates: { canonical: '/articles/fx-spread-cost' },
 };
@@ -46,7 +46,7 @@ export default function Page() {
     headline: metadata.title,
     description: metadata.description,
     datePublished: '2026-09-07',
-    dateModified: '2026-09-12',
+    dateModified: '2026-09-13',
     mainEntityOfPage: 'https://hanbaijo.com/articles/fx-spread-cost',
     author: { '@type': 'Organization', name: '金融コストウォッチ' },
     publisher: { '@type': 'Organization', name: '金融コストウォッチ' },
@@ -66,9 +66,9 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <p className="page-kicker">FX SPREAD CALCULATION</p>
-      <h1>0.2銭は何円？<br />FXスプレッドを数量別に計算</h1>
+      <h1>FXの0.2銭は何円？<br />スプレッドを数量別に計算</h1>
       <p className="lede">
-        FXの0.2銭は、1通貨あたり0.002円です。実際の負担額は取引数量を掛けて求めるため、
+        FXの0.2銭は何円かというと、1通貨あたり0.002円です。実際の負担額は取引数量を掛けて求めるため、
         1,000通貨なら2円、1万通貨なら20円、10万通貨なら200円になります。
       </p>
 
@@ -160,7 +160,7 @@ export default function Page() {
         <li><a href="https://faq.jfx.co.jp/faq/detail?category=36&amp;id=481&amp;site=FX557CTV" rel="noreferrer">JFX「スプレッドの計算方法を教えてください」</a></li>
         <li><a href="https://www.fsa.go.jp/ordinary/iwagai/" rel="noreferrer">金融庁「いわゆる外国為替証拠金取引について」</a></li>
       </ul>
-      <p><small>確認日：2026年9月12日。計算結果は説明用の試算であり、実際の提示幅や約定価格を保証するものではありません。</small></p>
+      <p><small>確認日：2026年9月13日。計算結果は説明用の試算であり、実際の提示幅や約定価格を保証するものではありません。</small></p>
 
       <p><Link href="/tools/fx-pip-value-calculator">1pipsの損益とスプレッド相当額を計算する →</Link></p>
       <p><Link href="/articles/fx-spread-monthly-cost">0.2銭の月間コストを取引回数別に見る →</Link></p>
