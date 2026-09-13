@@ -18,7 +18,7 @@ const cases = [
 export default function Page() {
   const jsonLd = {
     '@context': 'https://schema.org', '@type': 'Article', headline: metadata.title,
-    description: metadata.description, datePublished: '2026-09-09', dateModified: '2026-09-09',
+    description: metadata.description, datePublished: '2026-09-09', dateModified: '2026-09-13',
     mainEntityOfPage: 'https://hanbaijo.com/articles/fx-profit-under-200k-tax-return',
     author: { '@type': 'Organization', name: '金融コストウォッチ' },
     publisher: { '@type': 'Organization', name: '金融コストウォッチ' },
@@ -66,10 +66,9 @@ export default function Page() {
         20万円以下だからといってFX所得だけを除外できません。国税庁は、確定申告を行う場合は20万円以下の所得も併せて申告する必要があると示しています。
       </p>
 
-      <h2>住民税は別に申告が必要な場合がある</h2>
+      <h2>FXが20万円以下でも住民税の申告は必要？</h2>
       <p>
-        20万円以下の制度は所得税の確定申告に関するものです。国税庁も、所得税の確定申告が不要でも住民税の申告が必要な場合があると注意喚起しています。
-        手続きや期限は居住地の市区町村に確認します。
+        FXの所得が20万円以下でも、20万円以下の申告不要制度は所得税の確定申告に関するものです。住民税にはそのまま適用されないため、所得税の申告が不要でも住民税の申告が必要な場合があります。手続きや期限、非課税判定は居住地の市区町村に確認します。
       </p>
 
       <h2>損失繰越を使うなら「申告不要」でも申告</h2>
@@ -96,7 +95,7 @@ export default function Page() {
         <li><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1522.htm" rel="noreferrer">国税庁 No.1522「先物取引に係る雑所得等の課税の特例」</a></li>
         <li><a href="https://www.nta.go.jp/taxes/shiraberu/shinkoku/tokushu/shinkoku-nagare/shinkoku-nagare.htm" rel="noreferrer">国税庁「申告が必要かなどを調べる」</a></li>
       </ul>
-      <p><small>確認日：2026年9月9日。申告要否は給与の状況、他の所得、控除、居住地により異なります。個別の判断は税務署、市区町村または税理士へ確認してください。</small></p>
+      <p><small>確認日：2026年9月13日。申告要否は給与の状況、他の所得、控除、居住地により異なります。個別の判断は税務署、市区町村または税理士へ確認してください。</small></p>
       <p><Link href="/articles">解説記事一覧へ戻る →</Link></p>
     </article>
   );
