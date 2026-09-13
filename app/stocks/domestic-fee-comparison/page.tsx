@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: '国内株式の売買手数料を4社比較｜松井証券・楽天・GMO・DMM【2026年】',
-  description: '国内株式の売買手数料を、松井証券、楽天証券、GMOクリック証券、DMM 株で比較。10万円・50万円・100万円の同日往復と別日売却で、ボックスレートと0円条件の違いを確認できます。',
+  title: '松井証券の手数料比較｜国内株4社の往復コストと無料条件【2026年】',
+  description: '松井証券の手数料を楽天・GMO・DMMと比較。1日約定代金50万円まで0円、100万円まで1,100円のボックスレートと、同日・別日売買の違いを整理します。',
   alternates: { canonical: '/stocks/domestic-fee-comparison' },
 };
 
@@ -84,7 +84,7 @@ export default function Page() {
     headline: metadata.title,
     description: metadata.description,
     datePublished: '2026-09-07',
-    dateModified: '2026-09-12',
+    dateModified: '2026-09-13',
     mainEntityOfPage: 'https://hanbaijo.com/stocks/domestic-fee-comparison',
     author: { '@type': 'Organization', name: '金融コストウォッチ' },
     publisher: { '@type': 'Organization', name: '金融コストウォッチ' },
@@ -112,8 +112,8 @@ export default function Page() {
       <header className="comparison-intro">
         <div>
           <p className="page-kicker">DOMESTIC STOCK / PUBLISHED DATA</p>
-          <h1>松井証券・楽天・GMO・DMMの<br /><em>国内株式の売買手数料を4社比較。</em></h1>
-          <p className="lede">10万円・50万円・100万円で買い、同じ金額で売る例にそろえました。料金体系が「1注文ごと」か「1日定額」かで、取引日による差も確認します。</p>
+          <h1>松井証券の手数料比較<br /><em>国内株4社の往復コストと無料条件</em></h1>
+          <p className="lede">松井証券の手数料比較では、1日の約定代金合計で決まるボックスレートを基準に、楽天・GMO・DMMと同じ条件で比べます。10万円・50万円・100万円の同日往復と別日売却で、無料条件と取引日による差を確認します。</p>
         </div>
         <aside>
           <span>CHECKED</span><strong>2026-09-12</strong>
