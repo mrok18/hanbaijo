@@ -5,8 +5,8 @@ import ArticleStructuredData from '@/components/ArticleStructuredData';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata: Metadata = {
-  title: 'CFDの調整額とは？価格・金利・権利調整額の違い',
-  description: 'CFDの価格調整額・金利調整額・権利調整額（配当金調整額）の違いを、対象商品、発生時点、受払い、計算例で整理します。',
+  title: 'CFD調整額とは？価格・金利・権利調整額の違い',
+  description: 'CFD調整額とは何かを、価格・金利・権利の3種類、発生するタイミング、受け取り・支払いの違いと計算例で整理します。',
   alternates: { canonical: '/articles/cfd-price-adjustment' },
 };
 
@@ -38,11 +38,12 @@ export default function Page() {
 
   return (
     <article>
-      <ArticleStructuredData slug="cfd-price-adjustment" publishedAt="2026-09-07" modifiedAt="2026-09-12" />
+      <ArticleStructuredData slug="cfd-price-adjustment" publishedAt="2026-09-07" modifiedAt="2026-09-14" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd).replace(/</g, '\\u003c') }} />
       <p className="page-kicker">CFD / THREE ADJUSTMENTS</p>
       <h1>CFDの調整額とは？<br />価格・金利・権利の違い</h1>
       <p className="lede">CFDの「調整額」は1種類ではありません。参照先物の限月交代に伴う価格調整額、建玉の持ち越しに伴う金利調整額、配当や企業行動を反映する権利調整額に分けると、発生日と受払いを読み違えにくくなります。</p>
+      <p>CFD調整額とは、売買手数料とは別に建玉へ反映される受け払いです。価格調整額・金利調整額・権利調整額の3種類があり、銘柄の参照原資産と保有タイミングで発生する種類が変わります。</p>
 
       <div className="callout"><strong>先に確認するのは、銘柄が何を参照しているか</strong><p>同じCFDでも、先物、スポット、株式・ETFのどれを参照するかで対象の調整額が変わります。名称と計算方法も会社ごとに異なるため、取引画面の銘柄詳細と調整額カレンダーを優先します。</p></div>
 
@@ -113,7 +114,7 @@ export default function Page() {
           <li><a href="https://fx.dmm.com/policy/regulation/overview_cfd.pdf" target="_blank" rel="noopener noreferrer">DMM CFD「店頭商品デリバティブ取引説明書」</a></li>
           <li><a href="https://www.ig.com/jp/help-and-support/cfds/fees-and-charges/what-are-igs-shares-cfd-product-details" target="_blank" rel="noopener noreferrer">IG証券「株式CFD 銘柄詳細情報」</a></li>
         </ul>
-        <p>制度・商品情報は2026年9月12日に確認しました。最新の発生日と金額は各社の取引画面・公式カレンダーを確認してください。</p>
+        <p>制度・商品情報は2026年9月14日に確認しました。最新の発生日と金額は各社の取引画面・公式カレンダーを確認してください。</p>
       </section>
 
       <p><Link href="/articles/dmm-cfd-adjustment-calendar">DMM CFDの調整額カレンダーを確認する →</Link></p>
