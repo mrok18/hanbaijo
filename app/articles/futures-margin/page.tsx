@@ -2,23 +2,44 @@ import Link from 'next/link';
 
 export const metadata = {
   alternates: { canonical: '/articles/futures-margin' },
-  title: '日経225先物の証拠金はいくら？必要額が変わる理由と確認方法',
-  description: '日経225先物・mini・マイクロの必要証拠金が固定額ではない理由を解説。VaR方式、証券会社の設定、取引金額との違い、取引前の確認方法を整理します。',
+  title: '日経225 証拠金はいくら？必要証拠金の目安と変動理由',
+  description: '日経225先物の証拠金はいくらかを確認する方法を解説。公式の掲載例、VaR方式、証券会社ごとの上乗せ、取引金額との違いを整理します。',
 };
 
 export default function Page() {
   return (
     <article>
       <p className="page-kicker">FUTURES MARGIN</p>
-      <h1>日経225先物の証拠金はいくら？<br />必要額が変わる理由</h1>
+      <h1>日経225 証拠金はいくら？<br />必要額の目安と確認方法</h1>
       <p className="lede">
-        日経225先物の必要証拠金は固定額ではありません。VaR方式で求める取引所の所要額を基に証券会社が設定するため、
+        日経225先物の証拠金はいくらかという問いに、全社共通の固定額はありません。VaR方式で求める取引所の所要額を基に証券会社が設定するため、
         商品、建玉の組合せ、相場環境、確認日によって変わります。
       </p>
 
       <div className="callout">
         <strong>結論：最新の必要証拠金は、取引直前に証券会社の画面で確認</strong>
-        <p>記事中に固定額を置くと変動後に誤差が生じます。日経225先物・mini・マイクロの区分、買建・売建、枚数を入力したシミュレーターまたは注文画面の表示を確認してください。</p>
+        <p>日経225先物・mini・マイクロの区分、買建・売建、枚数を入力したシミュレーターまたは注文画面の表示を確認してください。固定額だけを転記すると、VaR更新後に不足するおそれがあります。</p>
+      </div>
+
+      <h2>日経225 証拠金はいくら？公式の例と現在額の見方</h2>
+      <p>
+        日本取引所グループ（JPX）が示す<strong>公式の掲載例</strong>では、日経225先物の価格30,000円・取引単位1,000倍のとき、
+        取引金額は3,000万円、証拠金は売り160万円・買い170万円です。これは制度を理解するための例であり、現在の必要額ではありません。
+        実際の1枚あたりVaR証拠金額はJSCCの銘柄別データで確認し、注文時は証券会社の上乗せ後の金額を優先します。
+      </p>
+      <div className="data-panel">
+        <div className="table-scroll">
+          <table className="rates comparison-table">
+            <thead><tr><th>確認項目</th><th>数字・見方</th><th>注意点</th></tr></thead>
+            <tbody>
+              <tr><td>日経225先物（公式例）</td><td>証拠金160万円／170万円</td><td>価格30,000円時の売り／買いの掲載例。現在額ではない</td></tr>
+              <tr><td>日経225先物の取引単位</td><td>日経225 × 1,000倍</td><td>価格40,000円なら想定取引金額は4,000万円</td></tr>
+              <tr><td>日経225mini</td><td>日経225 × 100倍</td><td>先物本体の10分の1の取引単位。証拠金は別途変動</td></tr>
+              <tr><td>日経225マイクロ</td><td>日経225 × 10倍</td><td>先物本体の100分の1の取引単位。証拠金は別途変動</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="panel-note">JPXの商品概要にある例を転記。JSCCの銘柄別VaR証拠金額は営業日ごとに更新されるため、申込・発注画面の表示を優先します。</p>
       </div>
 
       <h2>必要証拠金が決まる3つの要素</h2>
@@ -68,9 +89,10 @@ export default function Page() {
         <h2 id="sources">参照した公式資料</h2>
         <ul>
           <li><a href="https://www.jpx.co.jp/derivatives/rules/margin/01.html" target="_blank" rel="noopener noreferrer">日本取引所グループ「顧客が差し入れる証拠金」</a></li>
+          <li><a href="https://www.jpx.co.jp/jscc/datafeed/margin/archive" target="_blank" rel="noopener noreferrer">JSCC「銘柄別VaR証拠金額」</a></li>
           <li><a href="https://www.jpx.co.jp/jscc/seisan/sakimono/shokokin_seido/VaR.html" target="_blank" rel="noopener noreferrer">日本証券クリアリング機構「VaR方式とは」</a></li>
         </ul>
-        <p>制度は2026年9月13日に再確認。必要証拠金は固定値ではありません。</p>
+        <p>制度と掲載例は2026年9月15日に再確認。必要証拠金は固定値ではありません。</p>
       </section>
 
       <p><Link href="/articles/futures-tick-value">1ティックの計算も読む →</Link></p>
