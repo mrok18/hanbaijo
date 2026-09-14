@@ -25,7 +25,8 @@ export default function Page() {
   const number = new Intl.NumberFormat('ja-JP', { maximumFractionDigits: 2 });
 
   return <div className="calculator-page">
-    <header className="calculator-intro"><p className="page-kicker">FX POSITION SIZE CALCULATOR</p><h1>損失額から、<br /><em>取引数量を逆算。</em></h1><p className="lede">口座資金の何％まで損失を許容するかを先に決め、損切り幅とスプレッドを含めて最大取引数量を試算します。必要証拠金ではなく、損失許容額を起点にした数量管理です。</p><div className="calculator-proof"><span>1通貨・1,000通貨・1万通貨刻み</span><span>スプレッドを加算</span><span>円絡み通貨ペアに対応</span><span>入力は端末内で計算</span></div></header>
+    <header className="calculator-intro"><p className="page-kicker">FX CALCULATION / POSITION SIZE</p><h1>FX計算で、<br /><em>損失許容額から数量を逆算。</em></h1><p className="lede">FX計算は、目的に合わせて式を分けることが大切です。このページでは口座資金の何％まで損失を許容するかを先に決め、損切り幅とスプレッドを含めて最大取引数量を試算します。必要証拠金ではなく、損失許容額を起点にした数量管理です。</p><div className="calculator-proof"><span>FX計算：損失許容額→数量</span><span>1通貨・1,000通貨・1万通貨刻み</span><span>スプレッドを加算</span><span>入力は端末内で計算</span></div></header>
+    <section className="callout"><strong>FX計算の基本式を目的ごとに分ける</strong><p>取引数量は、許容損失額÷（損切り幅＋スプレッド）÷1通貨あたりのpips損益で逆算します。値動きの損益や1pipsの円換算は<Link href="/tools/fx-pip-value-calculator">pips計算機</Link>、注文に必要な担保額は<Link href="/articles/fx-required-margin">必要証拠金の解説</Link>で確認し、同じ金額として混ぜないようにします。</p></section>
     <div className="calculator-shell"><div className="calculator-grid"><section className="calculator-inputs"><div className="calculator-panel-head"><div><span>INPUT</span><h2>資金・損切り条件</h2></div></div><div className="field-grid">
       <label><span>口座資金（円）</span><input type="number" min="0" step="10000" value={balance} onChange={e => setBalance(Number(e.target.value))} /></label>
       <label><span>1回の許容リスク（％）</span><input type="number" min="0" step="0.1" value={riskPercent} onChange={e => setRiskPercent(Number(e.target.value))} /></label>

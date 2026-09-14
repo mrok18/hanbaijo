@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   alternates: { canonical: '/tools/fx-position-size-calculator' },
-  title: 'FX取引数量計算機｜許容損失と損切り幅から逆算',
-  description: '口座資金、許容リスク率、損切り幅、1通貨あたりの1pips損益から、FXの取引数量と想定損失を逆算します。',
+  title: 'FX計算｜損益・損切り幅から取引数量を逆算',
+  description: 'FX計算で確認したい損失許容額と取引数量を、口座資金、許容リスク率、損切り幅、スプレッドから試算。pips損益や必要証拠金との違いも整理します。',
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) { return children; }
