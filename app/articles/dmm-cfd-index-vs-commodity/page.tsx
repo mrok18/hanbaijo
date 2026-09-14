@@ -4,8 +4,8 @@ import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
   alternates: { canonical: '/articles/dmm-cfd-index-vs-commodity' },
-  title: 'DMM CFDのIndexとCommodityの違い｜22銘柄・証拠金を比較',
-  description: 'DMM CFD-IndexとCommodityを、取扱銘柄、レバレッジ、必要証拠金、取引単位、円換算、調整額、入金方法から比較します。',
+  title: 'DMM CFD｜Index・Commodityの違いと22銘柄・証拠金',
+  description: 'DMM CFDのIndexとCommodityの違いを、22銘柄、レバレッジ、必要証拠金、取引単位、円換算、調整額、入金方法から比較します。',
 };
 
 const indexRows = [
@@ -16,14 +16,16 @@ const indexRows = [
 export default function Page() {
   const jsonLd = {
     '@context': 'https://schema.org', '@type': 'Article', headline: metadata.title, description: metadata.description,
-    datePublished: '2026-09-09', dateModified: '2026-09-09', mainEntityOfPage: 'https://hanbaijo.com/articles/dmm-cfd-index-vs-commodity',
+    datePublished: '2026-09-09', dateModified: '2026-09-14', mainEntityOfPage: 'https://hanbaijo.com/articles/dmm-cfd-index-vs-commodity',
     author: { '@type': 'Organization', name: '金融コストウォッチ' }, publisher: { '@type': 'Organization', name: '金融コストウォッチ' },
   };
   return <article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }} />
     <p className="page-kicker">DMM CFD / INDEX VS COMMODITY</p>
-    <h1>IndexとCommodityの違い<br />22銘柄を同じ基準で比較</h1>
-    <p className="lede">DMM CFDは株価指数8銘柄と商品14銘柄を扱います。銘柄だけでなく、レバレッジ、取引単位、円換算レート、保有中の調整額が異なるため、同じ1Lotでも必要資金と値動きの影響は同じではありません。</p>
+    <h1>DMM CFDのIndexとCommodity<br />22銘柄・証拠金を比較</h1>
+    <p className="lede">DMM CFDの違いを確認するときは、株価指数のIndexと商品14銘柄のCommodityを分けます。レバレッジ、取引単位、円換算レート、保有中の調整額が異なるため、同じ1Lotでも必要資金と値動きの影響は同じではありません。</p>
+
+    <div className="callout"><strong>DMM CFDはIndexとCommodityの2系統</strong><p>Indexは株価指数8銘柄・レバレッジ10倍、Commodityは商品14銘柄・レバレッジ20倍です。売買手数料が無料でも、スプレッドと保有中の調整額は別に確認します。</p></div>
 
     <div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th>比較項目</th><th>DMM CFD-Index</th><th>DMM CFD-Commodity</th></tr></thead><tbody>
       <tr><td className="ex-name">対象</td><td>株価指数8銘柄</td><td>商品14銘柄</td></tr>
@@ -66,7 +68,7 @@ export default function Page() {
       <li><a href="https://fx.dmm.com/cfd/service/outline_commodity/" target="_blank" rel="noopener noreferrer">DMM CFD-Commodity「サービス概要」</a></li>
       <li><a href="https://fx.dmm.com/cfd/service/lineup/" target="_blank" rel="noopener noreferrer">DMM CFD「取扱銘柄」</a></li>
       <li><a href="https://fx.dmm.com/support/faqs/article/00115/" target="_blank" rel="noopener noreferrer">DMM FX/CFD FAQ「必要証拠金の計算」</a></li>
-    </ul><p>銘柄数・取引単位・証拠金条件は2026年9月9日に確認しました。</p></section>
+    </ul><p>銘柄数・取引単位・証拠金条件は2026年9月14日に確認しました。</p></section>
 
     <section className="article-affiliate" aria-label="DMM CFDの広告"><AffiliateOfferCard offer={AFFILIATE_OFFERS['dmm-cfd']} /><p className="affiliate-disclosure">上記はアクセストレードの提携広告です。広告報酬は比較内容・計算式・評価に影響しません。CFDは元本や利益が保証されず、証拠金を上回る損失が生じる可能性があります。</p></section>
     <p><Link href="/articles/dmm-cfd-account-opening-documents">口座開設の必要書類を確認 →</Link></p>
