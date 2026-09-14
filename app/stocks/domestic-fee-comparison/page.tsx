@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import AffiliateOfferCard from '@/components/AffiliateOfferCard';
+import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata: Metadata = {
   title: '国内株式 手数料比較｜松井証券・楽天・GMO・DMMの往復コスト',
@@ -220,6 +222,12 @@ export default function Page() {
           ))}
         </div>
       </section>
+
+      <section className="provider-offer" aria-labelledby="domestic-affiliate-title">
+        <div><p className="section-index">PARTNER LINK / DMM 株</p><h2 id="domestic-affiliate-title">比較条件を確認したら、DMM 株の公式情報へ</h2><p>比較表のDMM 株の条件を、国内株・米国株・NISAの公式料金と取引ルールで確認できます。広告リンクは比較結果や掲載順位とは分離しています。</p></div>
+        <AffiliateOfferCard offer={AFFILIATE_OFFERS['dmm-kabu']} />
+      </section>
+      <p className="affiliate-disclosure">上記はDMM 株の提携広告です。広告リンク経由で申込みが成立した場合、当サイトが報酬を受け取ることがあります。</p>
 
       <div className="comparison-actions">
         <Link className="button primary" href="/tools/cost-calculator">自分の金額で試算</Link>

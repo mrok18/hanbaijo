@@ -28,6 +28,13 @@ export default function Page() {
       linkLabel: '4社比較を見る →',
     },
     {
+      href: '/stocks/dmm-kabu',
+      title: 'DMM 株の公式条件と広告リンクを確認',
+      description: 'DMM 株の国内株・米国株・NISAの手数料と取引条件を、比較結果から分離して確認します。',
+      tag: 'PARTNER LINK',
+      linkLabel: 'DMM 株の公式情報を見る →',
+    },
+    {
       href: '/articles/foreign-stock-trading-fees',
       title: '外国株式の市場別手数料を比較',
       description: '楽天証券の米国株、中国株、ASEAN株を、料率、最低・上限、為替・現地費用で比べます。',

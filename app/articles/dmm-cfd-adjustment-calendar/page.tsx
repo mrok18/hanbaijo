@@ -4,16 +4,26 @@ import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
   alternates: { canonical: '/articles/dmm-cfd-adjustment-calendar' },
-  title: 'DMM CFDの調整額カレンダー｜金利・価格調整の違い',
-  description: 'DMM CFDの金利調整額と価格調整額について、対象銘柄、発生タイミング、未約定注文への影響を公式情報から整理します。',
+  title: 'CFD 金利調整額がマイナス｜支払い条件と価格調整額の違い',
+  description: 'CFDの金利調整額がマイナスになるときの支払い条件を、買い・売りの方向、発生日、Lot数とあわせて解説。価格調整額との違いも整理します。',
 };
 
 export default function Page() {
   return (
     <article>
-      <p className="page-kicker">DMM CFD / ADJUSTMENT CALENDAR</p>
-      <h1>DMM CFDの調整額カレンダー<br />金利・価格調整の違い</h1>
-      <p className="lede">DMM CFDでは、保有銘柄がスポットを参照するか先物を参照するかで、発生する調整額が変わります。受取額だけでなく、発生日と参照価格の変化をセットで確認します。</p>
+      <p className="page-kicker">DMM CFD / NEGATIVE ADJUSTMENT</p>
+      <h1>CFD 金利調整額がマイナスになる理由<br />支払い条件と価格調整額を確認</h1>
+      <p className="lede">CFDの金利調整額がマイナス（−）なら、その保有方向では受取りではなく支払いです。銘柄ごとのカレンダーで符号と発生日を確認し、Lot数を掛けた金額を保有コストとして見積もります。</p>
+
+      <div className="callout"><strong>金利調整額がマイナスなら口座から支払う</strong><p>マイナス表示は支払い、プラス表示は受取りとして期間損益へ記録します。買い・売りのどちらがマイナスになるかは銘柄と金利環境で変わるため、表示額をそのまま固定値と考えず、発注前に最新の公式カレンダーを再確認してください。</p></div>
+
+      <h2>マイナス表示の読み方</h2>
+      <div className="fx-metric-grid">
+        <article><b>01</b><h3>符号</h3><p>マイナスは支払い、プラスは受取りとして期間損益へ記録します。</p></article>
+        <article><b>02</b><h3>方向</h3><p>同じ銘柄でも買い・売りで符号が分かれるため、建玉方向の欄を確認します。</p></article>
+        <article><b>03</b><h3>単位</h3><p>1Lotまたは1取引単位の表示額を保有数量へ掛け、円換算条件を別記します。</p></article>
+        <article><b>04</b><h3>変動</h3><p>金利差や市場条件で金額・符号が変わり得るため、発注前に最新値を再確認します。</p></article>
+      </div>
 
       <h2>対象銘柄を先に分ける</h2>
       <div className="data-panel"><div className="table-scroll"><table className="rates comparison-table">
@@ -24,7 +34,7 @@ export default function Page() {
         </tbody>
       </table></div></div>
 
-      <div className="callout"><strong>「受取り＝利益」とは限りません</strong><p>価格調整額は限月切替による評価損益を相殺するためのものです。調整額だけを切り離さず、切替前後の参照価格と合算して見ます。</p></div>
+      <div className="callout"><strong>価格調整額も「受取り＝利益」とは限りません</strong><p>価格調整額は限月切替による評価損益を相殺するためのものです。金利調整額のマイナス（支払い）とは別の仕組みなので、調整額だけを切り離さず、切替前後の参照価格と合算して見ます。</p></div>
 
       <h2>カレンダーを見る順番</h2>
       <div className="fx-metric-grid">
@@ -44,16 +54,17 @@ export default function Page() {
       </ul>
 
       <h2>保有コストの集計式</h2>
-      <div className="formula-box"><code>期間中の調整額 ＝ 各発生日の1Lotあたり調整額 × 保有Lot数 の合計</code><small>受取りをプラス、支払いをマイナスとして集計し、スプレッド相当額とは別に記録します。</small></div>
+      <div className="formula-box"><code>期間中の受払額 ＝ 各発生日の表示額（マイナスは支払い） × 保有Lot数 の合計</code><small>受取りをプラス、支払いをマイナスとして集計し、スプレッド相当額とは別に記録します。</small></div>
 
       <section className="article-sources" aria-labelledby="sources"><h2 id="sources">参照した公式資料</h2><ul>
         <li><a href="https://fx.dmm.com/cfd/service/swapcalendar/" target="_blank" rel="noopener noreferrer">DMM CFD「金利調整額・価格調整額」</a></li>
         <li><a href="https://fx.dmm.com/policy/regulation/overview_cfd.pdf" target="_blank" rel="noopener noreferrer">DMM CFD「店頭商品デリバティブ取引説明書」</a></li>
         <li><a href="https://fx.dmm.com/manual/plus_cfd.pdf" target="_blank" rel="noopener noreferrer">DMMCFD PLUS 操作マニュアル</a></li>
-      </ul><p>制度・商品情報は2026年9月7日に確認しました。最新の発生日と金額は公式カレンダーを確認してください。</p></section>
+      </ul><p>制度・商品情報は2026年9月14日に確認しました。最新の発生日と金額は公式カレンダーを確認してください。</p></section>
 
       <p><Link href="/articles/dmm-cfd-trading-hours">DMM CFDの取引時間を見る →</Link></p>
       <p><Link href="/articles/dmm-cfd-total-cost">DMM CFDの総コストを見る →</Link></p>
+      <p><Link href="/articles/cfd-price-adjustment">CFDの価格調整額の仕組みを見る →</Link></p>
       <section className="article-affiliate" aria-label="関連する広告"><AffiliateOfferCard offer={AFFILIATE_OFFERS['dmm-cfd']} /><p className="affiliate-disclosure">広告リンクから申込みが成立すると当サイトが報酬を受け取る場合があります。調整額の説明・評価とは分けて掲載しています。</p></section>
     </article>
   );

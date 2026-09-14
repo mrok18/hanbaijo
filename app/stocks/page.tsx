@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { STOCK_PROVIDER_LIST } from '@/lib/stock-providers';
+import AffiliateOfferCard from '@/components/AffiliateOfferCard';
+import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata: Metadata = {
   title: '米国株・外国株式 手数料 比較｜売買・為替・現地費用を整理',
@@ -222,6 +224,12 @@ export default function StocksPage() {
           ))}
         </div>
       </section>
+
+      <section className="provider-offer" aria-labelledby="stocks-affiliate-title">
+        <div><p className="section-index">PARTNER LINK / DMM 株</p><h2 id="stocks-affiliate-title">比較のあとに、DMM 株の公式条件を確認</h2><p>国内株・米国株・NISAの手数料や取引条件を、DMM 株の公式ページで確認できます。比較表の評価と広告リンクは分けて掲載しています。</p></div>
+        <AffiliateOfferCard offer={AFFILIATE_OFFERS['dmm-kabu']} />
+      </section>
+      <p className="affiliate-disclosure">上記はDMM 株の提携広告です。広告リンク経由で申込みが成立した場合、当サイトが報酬を受け取ることがあります。</p>
 
       <section className="fx-next">
         <div><span>NEXT</span><h2>4社の料金体系を比べる。</h2></div>
