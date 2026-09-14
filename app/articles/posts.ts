@@ -129,7 +129,7 @@ export const POSTS = [
   { slug: 'fxtf-losscut-50-100', category: 'FX・FXTF', title: 'FXTFのロスカットは50％・100％｜GXとMT4の違い', desc: '通常時50％と日次判定100％を区別し、GXとMT4の判定時刻・境界条件の違いを整理する。' },
   { slug: 'fxtf-position-fee-calculation', category: 'FX・FXTF', title: 'FXTFの建玉連動手数料｜保有数量＋新規注文の計算方法', desc: '保有数量と新規注文の合計で決まるランクを、1万通貨あたりの手数料と公式例で計算する。' },
   { slug: 'fxtf-account-opening-flow', category: 'FX・FXTF', title: 'FXTFの口座開設手順｜必要書類・提出先・取引開始まで', desc: 'スマホ本人確認と通常開設を分け、確認書類の提出方法、公式メール・郵送先、審査後の流れを整理する。' },
-  { slug: 'tossy-margin-call-losscut', category: 'CFD・TOSSY', title: 'TOSSYの追証・ロスカット｜6資産へ及ぶマージンカット', desc: 'ロスカットと追加証拠金を区別し、未解消時に他のアセット区分まで強制決済される仕組みを整理する。' },
+  { slug: 'tossy-margin-call-losscut', category: 'CFD・TOSSY', title: 'TOSSY 追証｜追加証拠金・マージンカットとロスカットの違い', desc: '維持率100％未満の追証、全区分に及ぶマージンカット、区分別ロスカットを整理する。' },
   { slug: 'tossy-fees-total-cost', category: 'CFD・TOSSY', title: 'TOSSYの手数料は無料？スプレッド・調整額まで計算', desc: '口座管理費・取引手数料0円だけで判断せず、スプレッド、金利・権利・価格調整、スリッページを整理する。' },
   { slug: 'tossy-margin-by-asset', category: 'CFD・TOSSY', title: 'TOSSYの必要証拠金｜6資産を100万円取引で比較', desc: 'FX、株式、株価指数、バラエティ、商品、暗号資産CFDの証拠金率を同じ取引金額で比較する。' },
   { slug: 'tossy-account-opening-flow', category: 'CFD・TOSSY', title: 'TOSSYの口座開設手順｜必要書類と取引開始前の確認', desc: '申込、本人確認、審査、ログイン情報取得、入金、商品別書面確認までを順番に整理する。' },

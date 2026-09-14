@@ -4,12 +4,12 @@ import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
   alternates: { canonical: '/articles/tossy-margin-call-losscut' },
-  title: 'TOSSYの追証・ロスカット｜6資産へ及ぶマージンカット',
-  description: 'TOSSYの追加証拠金、マージンカット、ロスカットを区別し、1区分の証拠金不足が他のアセット区分へ及ぶ仕組みを整理します。',
+  title: 'TOSSY 追証｜追加証拠金・マージンカットとロスカットの違い',
+  description: 'TOSSYの追証を、証拠金維持率100％未満の追加証拠金、全区分に及ぶマージンカット、区分別ロスカットに分けて整理します。',
 };
 
 export default function Page() {
-  return <article><p className="page-kicker">TOSSY / MARGIN CALL & LOSS CUT</p><h1>TOSSYの追証とロスカット<br />強制決済される範囲が違う</h1><p className="lede">ロスカットは各アセット区分の維持率低下による強制決済、マージンカットは追加証拠金を期限までに解消できない場合の強制決済です。TOSSYでは、未解消の追証が他区分のポジションへ及ぶ点を先に確認します。</p>
+  return <article><p className="page-kicker">TOSSY / MARGIN CALL & LOSS CUT</p><h1>TOSSYの追証とは？<br />追加証拠金とマージンカットの違い</h1><p className="lede">tossy 追証を調べるときは、証拠金維持率100％未満で発生する追加証拠金、期限切れで全区分に及ぶマージンカット、区分ごとのロスカットを分けて確認します。TOSSYでは、未解消の追証が他アセット区分のポジションへ及ぶ点が重要です。</p><div className="callout"><strong>結論：TOSSYは維持率100％未満で追証が発生</strong><p>解消期限までに追証額を0円にできないと、ロスカット処理中の区分を除く全アセット区分の全建玉がマージンカットの対象になります。判定時刻・解消期限は商品区分ごとの最新書面を確認してください。</p></div><p className="panel-note">公式条件の確認日：2026年9月14日。維持率の計算対象、判定時刻、解消期限は変更される場合があります。</p>
 
     <h2>3つの仕組みを混同しない</h2><div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th>仕組み</th><th>発生・執行の考え方</th><th>決済範囲</th></tr></thead><tbody><tr><td className="ex-name">追加証拠金</td><td>日次判定で必要額が発生</td><td>期限までに解消が必要</td></tr><tr><td className="ex-name">マージンカット</td><td>追加証拠金を期限までに未解消</td><td>原則、全アセット区分</td></tr><tr><td className="ex-name">ロスカット</td><td>区分の維持率が所定水準を下回る</td><td>該当アセット区分</td></tr></tbody></table></div><p className="panel-note">ロスカット処理中の区分など例外があります。判定時刻、解消期限、執行条件は利用商品の最新説明書を確認してください。</p></div>
 
@@ -22,7 +22,7 @@ export default function Page() {
     <h2>毎日確認する4項目</h2><ul><li>アセット区分ごとの証拠金維持率</li><li>口座全体と各区分の余力</li><li>追加証拠金額と解消期限</li><li>未約定注文、スプレッド拡大、調整額の予定</li></ul>
 
     <section className="article-affiliate" aria-label="TOSSYの広告"><AffiliateOfferCard offer={AFFILIATE_OFFERS.tossy} /><p className="affiliate-disclosure">広告リンクから登録と所定条件の達成が確認された場合、当サイトが報酬を受け取ることがあります。ロスカットは損失を限定する保証ではなく、余裕を持った資金管理が必要です。</p></section>
-    <section className="article-sources" aria-labelledby="sources"><h2 id="sources">参照した公式資料</h2><ul><li><a href="https://securities.dmm.com/pre-tossy/_pdf/regulation/rules.pdf" target="_blank" rel="noopener noreferrer">DMM.com証券「約款（TOSSY）」</a></li><li><a href="https://securities.dmm.com/pre-tossy/_pdf/regulation/overview-commodity.pdf" target="_blank" rel="noopener noreferrer">DMM.com証券「TOSSY 商品CFD取引説明書」</a></li><li><a href="https://securities.dmm.com/notice/" target="_blank" rel="noopener noreferrer">DMM.com証券「金融商品取引法及び商品先物取引法に基づく表示」</a></li></ul><p>追証・ロスカット条件は2026年9月8日に確認しました。商品区分により判定・解消時刻が異なるため、保有商品の最新書面と取引画面を優先してください。</p></section>
+    <section className="article-sources" aria-labelledby="sources"><h2 id="sources">参照した公式資料</h2><ul><li><a href="https://securities.dmm.com/pre-tossy/_pdf/regulation/rules.pdf" target="_blank" rel="noopener noreferrer">DMM.com証券「約款（TOSSY）」</a></li><li><a href="https://securities.dmm.com/pre-tossy/_pdf/regulation/overview-commodity.pdf" target="_blank" rel="noopener noreferrer">DMM.com証券「TOSSY 商品CFD取引説明書」</a></li><li><a href="https://securities.dmm.com/notice/" target="_blank" rel="noopener noreferrer">DMM.com証券「金融商品取引法及び商品先物取引法に基づく表示」</a></li></ul><p>追証・ロスカット条件は2026年9月14日に確認しました。商品区分により判定・解消時刻が異なるため、保有商品の最新書面と取引画面を優先してください。</p></section>
     <p><Link href="/articles/tossy-margin-by-asset">6資産の必要証拠金を比較する →</Link></p><p><Link href="/articles/tossy-fees-total-cost">スプレッド・調整額を含む総コストを見る →</Link></p><p><Link href="/cfd/tossy">TOSSYの公式条件一覧へ →</Link></p>
   </article>;
 }
