@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: '松井証券の手数料比較｜国内株4社の往復コストと無料条件【2026年】',
-  description: '松井証券の手数料を楽天・GMO・DMMと比較。1日約定代金50万円まで0円、100万円まで1,100円のボックスレートと、同日・別日売買の違いを整理します。',
+  title: '国内株式 手数料比較｜松井証券・楽天・GMO・DMMの往復コスト',
+  description: '国内株式の手数料を、10万・50万・100万円の同日往復と別日売却で比較。松井証券・楽天・GMOクリック証券・DMM 株の無料条件と別コストを整理します。',
   alternates: { canonical: '/stocks/domestic-fee-comparison' },
 };
 
@@ -112,14 +112,16 @@ export default function Page() {
       <header className="comparison-intro">
         <div>
           <p className="page-kicker">DOMESTIC STOCK / PUBLISHED DATA</p>
-          <h1>松井証券の手数料比較<br /><em>国内株4社の往復コストと無料条件</em></h1>
-          <p className="lede">松井証券の手数料比較では、1日の約定代金合計で決まるボックスレートを基準に、楽天・GMO・DMMと同じ条件で比べます。10万円・50万円・100万円の同日往復と別日売却で、無料条件と取引日による差を確認します。</p>
+          <h1>国内株式の手数料比較<br /><em>松井証券・楽天・GMO・DMMの往復コスト</em></h1>
+          <p className="lede">国内株式 手数料を比較するなら、1注文制・1日定額・条件付き0円を分けます。松井証券・楽天・GMOクリック証券・DMM 株を同じ条件で比べ、10万円・50万円・100万円の同日往復と別日売却で実際の負担を確認します。</p>
         </div>
         <aside>
-          <span>CHECKED</span><strong>2026-09-12</strong>
+          <span>CHECKED</span><strong>2026-09-14</strong>
           <p>各社公式料金表の公称値。掲載4社の比較であり、全証券会社を網羅したランキングではありません。</p>
         </aside>
       </header>
+
+      <div className="callout"><strong>国内株式の手数料は、売買代金と料金体系をそろえて比較</strong><p>同じ50万円の売買でも、1注文ごとに課金する会社、1日の約定代金を合算する会社、コースや同意が必要な0円プランで結果が変わります。まず現物・インターネット取引の条件をそろえ、信用金利や単元未満株の費用は別に確認してください。</p></div>
 
       <section className="comparison-section" aria-labelledby="stock-fee-quick-answer">
         <p className="section-index">QUICK ANSWER / 50万円の往復</p>
@@ -203,7 +205,7 @@ export default function Page() {
         <ul>
           {PROVIDERS.map((provider) => <li key={provider.name}><a href={provider.source} target="_blank" rel="noopener noreferrer"><span>{provider.name}</span><b>公式情報 ↗</b></a></li>)}
         </ul>
-        <p>2026年9月12日確認。料金は変更される場合があります。申込み・取引前に必ずリンク先の最新情報と契約締結前交付書面を確認してください。</p>
+        <p>2026年9月14日確認。料金は変更される場合があります。申込み・取引前に必ずリンク先の最新情報と契約締結前交付書面を確認してください。</p>
       </section>
 
       <section className="comparison-section" aria-labelledby="domestic-stock-fee-faq">
