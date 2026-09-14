@@ -4,15 +4,17 @@ import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
   alternates: { canonical: '/articles/jfx-required-margin-leverage' },
-  title: 'JFXの必要証拠金はいくら？最大・実効レバレッジを計算',
-  description: 'JFXの必要証拠金はいくらかを、米ドル円1,000通貨の公式例（5,900円）で確認。最大レバレッジと実効レバレッジの計算、当日の確認方法を整理します。',
+  title: 'JFX レバレッジ｜最大25倍以下と実効倍率・必要証拠金の計算',
+  description: 'JFXのレバレッジは何倍かを、個人口座の最大25倍以下と実効レバレッジに分けて解説。必要証拠金5,900円の公式例、計算式、確認方法を整理します。',
 };
 
 export default function Page() {
   return <article>
     <p className="page-kicker">JFX / MARGIN &amp; LEVERAGE</p>
-    <h1>JFXの必要証拠金はいくら？<br />最大・実効レバレッジを計算</h1>
-    <p className="lede">JFXの必要証拠金は通貨ペアと取引数量で決まり、米ドル円1,000通貨の公式例では5,900円です。個人口座は最大25倍以内ですが、25倍・10倍などのコースを選ぶ方式ではありません。実際の倍率は、保有する全ポジションの想定元本と、その時点の有効証拠金から自動計算されます。</p>
+    <h1>JFX レバレッジは何倍？<br />最大倍率と実効レバレッジを計算</h1>
+    <p className="lede">JFXのレバレッジは、個人口座の最大25倍以下という上限と、口座資金で変わる実効レバレッジを分けて考えます。必要証拠金は通貨ペアと取引数量で決まり、米ドル円1,000通貨の公式例では5,900円です。</p>
+
+    <div className="callout"><strong>結論：JFXはレバレッジ倍率を設定する取引コースではありません</strong><p>個人口座の必要証拠金は想定元本の4％以上（最大25倍以下）に設定され、実際の倍率は入金額・取引数量・評価損益から自動計算されます。倍率を抑えるときは入金額を増やすか、保有数量を減らします。</p></div>
 
     <h2>JFXの必要証拠金はいくら？公式例で先に確認</h2>
     <p>JFX公式の米ドル円145.541円・1,000通貨の例では、想定元本145,541円に4％を掛け、100円未満を切り上げた必要証拠金は5,900円です。必要証拠金は通貨ペア別に算出され、予告なく変更されるため、注文前は当日の一覧または取引画面を確認します。</p>
@@ -29,7 +31,7 @@ export default function Page() {
       <tr><td className="ex-name">有効証拠金</td><td>評価損益を反映した口座の資金</td><td>預託証拠金 ＋ 評価損益</td></tr>
     </tbody></table></div></div>
 
-    <h2>最大レバレッジは必要証拠金から計算</h2>
+    <h2>JFX レバレッジは必要証拠金から計算</h2>
     <div className="formula-box"><code>最大レバレッジ ＝ 想定元本 ÷ 必要証拠金</code><small>JFXの個人口座では、必要証拠金が想定元本の4％以上となるため最大25倍以下です。</small></div>
     <p>必要証拠金は通貨ペアごとに算出され、前営業日の終値などをもとに更新されます。単純に現在レートの4％と一致するとは限らないため、実際に必要な金額は当日のJFXニュースまたは取引画面で確認します。</p>
 
@@ -79,7 +81,7 @@ export default function Page() {
       <li><a href="https://faq.jfx.co.jp/faq/detail?category=34&amp;id=196&amp;site=FX557CTV" target="_blank" rel="noopener noreferrer">JFX FAQ「必要証拠金はいくらですか」</a></li>
       <li><a href="https://faq.jfx.co.jp/faq/detail?category=34&amp;id=190&amp;site=FX557CTV" target="_blank" rel="noopener noreferrer">JFX FAQ「レバレッジはどこで設定できますか」</a></li>
       <li><a href="https://www.jfx.co.jp/trading_rule/loscut/" target="_blank" rel="noopener noreferrer">JFX「ロスカットのルール」</a></li>
-    </ul><p>取引条件は2026年9月14日に公式ページで確認しました。必要証拠金は予告なく変更される場合があるため、注文前に取引画面を確認してください。</p></section>
+    </ul><p>取引条件は2026年9月15日に公式ページで確認しました。必要証拠金は予告なく変更される場合があるため、注文前に取引画面を確認してください。</p></section>
 
     <p><Link href="/articles/jfx-lot-trade-unit">JFXの1Lotと通貨数の例外を見る →</Link></p>
     <p><Link href="/articles/jfx-losscut-margin-shortage">ロスカットと不足金のルールを見る →</Link></p>
