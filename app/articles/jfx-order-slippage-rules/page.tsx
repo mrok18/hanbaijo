@@ -2,15 +2,17 @@ import Link from 'next/link';
 
 export const metadata = {
   alternates: { canonical: '/articles/jfx-order-slippage-rules' },
-  title: 'JFXの注文方法とスリッページ｜成行・ストリーミング・逆指値の違い',
-  description: 'JFX MATRIX TRADERの成行・ストリーミング・指値・逆指値を、約定優先、許容スリップ、注文不成立、スプレッド制限の違いから整理します。',
+  title: 'FXストリーミング注文｜成行・許容スリップと約定条件',
+  description: 'FXのストリーミング注文を、成行・指値・逆指値と比較。許容スリップ、注文不成立、スプレッド制限が約定へ与える影響をJFX公式情報で整理します。',
 };
 
 export default function Page() {
   return <article>
     <p className="page-kicker">JFX / ORDER EXECUTION</p>
-    <h1>JFXの注文方法とスリッページ<br />成行・ストリーミング・逆指値の違い</h1>
-    <p className="lede">JFXは27種類の注文方法を案内していますが、短期売買で先に理解したいのは「約定を優先するか」「価格のずれを制限するか」です。成行、ストリーミング、指値、逆指値の約定条件と、許容スプレッド・許容スリップの役割を分けて確認します。</p>
+    <h1>FXストリーミング注文の仕組み<br />成行・許容スリップと約定条件</h1>
+    <p className="lede">FXのストリーミング注文は、表示レートを基準に発注し、許容スリップの範囲内で約定させる注文です。JFXの成行・ストリーミング・指値・逆指値を、約定を優先するか、価格のずれを制限するかで比較します。</p>
+
+    <div className="callout"><strong>FXストリーミングは不利なずれを許容幅で制限</strong><p>許容スリップを超えて不利に動けば注文は不成立となり、有利な方向なら実際のレートで約定します。許容スプレッドは発注時の提示幅を制御するため、2つを分けて設定・確認します。</p></div>
 
     <h2>4つの基本注文を先に比較</h2>
     <div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th>注文</th><th>価格の指定</th><th>主な特徴</th><th>注意点</th></tr></thead><tbody>
