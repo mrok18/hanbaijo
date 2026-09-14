@@ -222,7 +222,7 @@ export const POSTS = [
   { slug: 'matsui-account-types', category: '証券・FX', title: '松井証券のFX専用口座とは？総合口座との違い', desc: '松井証券の総合口座とは何か、FX専用口座との違い、開設できる人、申込手順、切替方法を整理する。' },
   { slug: 'fx-zero-spread-total-cost', category: 'FX', title: 'FXの0.0銭は本当に無料？別手数料まで総額で確認', desc: 'ゼロスプレッドと取引コスト0円を区別し、数量連動手数料や約定差を含めて判断する。' },
   { slug: 'fx-swap-three-days', category: 'FX', title: 'FXのスワップが3日分・4日分付くのはなぜ？', desc: 'ロールオーバーと受渡日の関係、土日・祝日をまたぐ変則付与の確認方法を整理する。' },
-  { slug: 'fx-margin-ratio-vs-usage', category: 'FX', title: '証拠金維持率と使用率の違い｜100%の意味は逆', desc: '維持率と使用率の計算方向を分け、ロスカットまでの余力を読み違えない方法。' },
+  { slug: 'fx-margin-ratio-vs-usage', category: 'FX', title: 'くりっく365 証拠金維持率｜50％ロスカット・100％アラートの計算', desc: 'くりっく365の維持率の式とGMOクリック証券の50％ロスカット・100％アラート、使用率との違いを整理する。' },
   { slug: 'stock-round-trip-cost', category: '国内株', title: '株の手数料はいくら？仕組み・買付と売却の計算方法', desc: '1注文制と1日定額、買付・売却の往復手数料、板の価格差、信用取引で残る費用を整理する。' },
   { slug: 'us-stock-fx-cost', category: '米国株', title: '米国株の為替コストを円で計算する方法', desc: '円貨決済と外貨決済の違いを整理し、1ドルあたりの為替コストを総額へ換算する。' },
   { slug: 'futures-tick-value', category: '先物', title: '先物の1ティックはいくら？日経225で計算', desc: 'ラージ・mini・マイクロの取引単位と呼値から、1ティックの損益額を計算する。' },
