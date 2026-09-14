@@ -4,15 +4,17 @@ import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
   alternates: { canonical: '/articles/matsui-us-stock-fx-fee' },
-  title: '松井証券の米国株は為替手数料0円？円貨決済25銭との違い',
-  description: '松井証券の米国株における米ドル・日本円の事前両替0円と、円貨決済時の1ドル25銭の違いを取引金額別に計算します。',
+  title: '松井証券 為替手数料｜米国株の0円両替と円貨決済25銭',
+  description: '松井証券の為替手数料を、米国株の事前両替0銭と円貨決済1ドル25銭に分けて整理。1,000・5,000・10,000ドルの片道コストと往復の考え方を確認します。',
 };
 
 export default function Page() {
   return <article>
     <p className="page-kicker">MATSUI / US STOCK FX COST</p>
-    <h1>松井証券の米国株は為替手数料0円？<br />円貨決済25銭との違い</h1>
-    <p className="lede">「米ドルと日本円の両替は0円」と「円貨決済では1ドル25銭」は、対象となる取引方法が違います。米国株の注文前に米ドルへ両替する場合と、円のまま注文する場合を分けて確認します。</p>
+    <h1>松井証券の為替手数料<br />米国株の0円両替と円貨決済25銭</h1>
+    <p className="lede">松井証券 為替手数料を確認するときは、米国株を注文する通貨を分けます。注文前に米ドルへ事前両替する場合は0銭、円のまま円貨決済する場合は1ドル25銭として、取引金額別の負担を計算します。</p>
+
+    <div className="callout"><strong>松井証券 為替手数料の結論：事前両替は0銭、円貨決済は1ドル25銭</strong><p>「手数料0円」は米ドルと日本円の事前両替に限った条件です。円貨決済では約定に伴う交換コストが別にかかるため、注文画面の取引通貨を確認してください。</p></div>
 
     <h2>結論：無料なのは事前両替</h2>
     <div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th>方法</th><th>為替コスト</th><th>処理</th></tr></thead><tbody>
@@ -41,7 +43,7 @@ export default function Page() {
       <li><a href="https://www.matsui.co.jp/us-stock/domestic/fee/" target="_blank" rel="noopener noreferrer">松井証券「米国株現物取引 手数料」</a></li>
       <li><a href="https://www.matsui.co.jp/nisa/about/" target="_blank" rel="noopener noreferrer">松井証券「新NISA 概要・魅力」</a></li>
       <li><a href="https://support.matsui.co.jp/faq/show/35810" target="_blank" rel="noopener noreferrer">松井証券Q&amp;A「米国株の手数料はどのように計算しますか」</a></li>
-    </ul><p>取引条件は2026年9月8日に確認しました。条件変更時は公式情報を優先してください。</p></section>
+    </ul><p>取引条件は2026年9月14日に確認しました。条件変更時は公式情報を優先してください。</p></section>
 
     <p><Link href="/tools/matsui-us-stock-cost-calculator">松井証券の米国株往復コストを計算する →</Link></p>
     <p><Link href="/articles/us-stock-fx-cost">為替コストの一般的な計算方法を見る →</Link></p>
