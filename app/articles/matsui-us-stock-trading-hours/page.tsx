@@ -4,15 +4,15 @@ import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
   alternates: { canonical: '/articles/matsui-us-stock-trading-hours' },
-  title: '松井証券の米国株取引時間｜プレマーケットと23時間化予定',
-  description: '松井証券の米国株について、夏時間・冬時間のプレマーケットと通常取引時間、2026年12月予定の23時間取引を整理します。',
+  title: '松井証券 取引時間｜米国株の夏冬時間・プレマーケット・23時間化',
+  description: '松井証券の取引時間を、米国株の夏時間・冬時間、プレマーケット、通常取引、2026年12月予定の23時間化に分けて整理します。',
 };
 
 export default function Page() {
   return <article>
     <p className="page-kicker">MATSUI / US STOCK HOURS</p>
-    <h1>松井証券の米国株取引時間<br />プレマーケットと23時間化予定</h1>
-    <p className="lede">松井証券では通常取引の前にプレマーケットを利用できます。米国の夏時間と冬時間で日本時間が1時間変わること、2026年12月には取引時間の拡大が予定されていることを分けて整理します。</p>
+    <h1>松井証券の取引時間<br />米国株の夏冬時間・プレマーケット・23時間化</h1>
+    <p className="lede">松井証券 取引時間を確認するときは、米国株の夏時間・冬時間とプレマーケット・通常取引を分けます。日本時間が1時間変わる点と、2026年12月に予定される23時間化を現行ルールと切り分けて整理します。</p>
 
     <h2>現在の取引時間</h2>
     <div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th>区分</th><th>夏時間</th><th>冬時間</th></tr></thead><tbody>
@@ -32,7 +32,7 @@ export default function Page() {
     <div className="callout"><strong>開始直前1分の訂正・取消に注意</strong><p>プレマーケット前にSOR経由でNYSE Arcaへ発注された注文は、開始前の1分間に訂正・取消が有効とならず「取消訂正中」になる場合があります。発注前に公式ルールを確認してください。</p></div>
 
     <h2>2026年12月から23時間取引を予定</h2>
-    <p>松井証券は、2026年12月6日（日）の対応後、12月7日（月）午前11:00から米国株の取引時間を現行12時間から23時間へ拡大する予定と発表しています。この記事の確認日である2026年9月8日時点では開始前です。</p>
+    <p>松井証券は、2026年12月6日（日）の対応後、12月7日（月）午前11:00から米国株の取引時間を現行12時間から23時間へ拡大する予定と発表しています。この記事の確認日である2026年9月14日時点では開始前です。</p>
     <div className="formula-box"><code>現行：1日12時間 → 予定：1日23時間</code><small>開始日や対象銘柄、メンテナンス時間などは実施時の公式案内を優先してください。</small></div>
 
     <h2>取引前チェック</h2>
@@ -42,7 +42,7 @@ export default function Page() {
       <li><a href="https://www.matsui.co.jp/us-stock/domestic/rule/" target="_blank" rel="noopener noreferrer">松井証券「米国株現物取引 取引ルール」</a></li>
       <li><a href="https://support.matsui.co.jp/faq/show/52049" target="_blank" rel="noopener noreferrer">松井証券Q&amp;A「米国株のプレマーケットとはなんですか」</a></li>
       <li><a href="https://www.matsui.co.jp/news/2026/detail_0728_01.html" target="_blank" rel="noopener noreferrer">松井証券「米国株の取引時間を23時間に拡大します」</a></li>
-    </ul><p>取引時間と今後の予定は2026年9月8日に確認しました。</p></section>
+    </ul><p>取引時間と今後の予定は2026年9月14日に確認しました。</p></section>
 
     <p><Link href="/tools/matsui-us-stock-cost-calculator">米国株の往復コストを計算する →</Link></p>
     <p><Link href="/articles/matsui-us-stock-fx-fee">松井証券の米国株為替コストを見る →</Link></p>
