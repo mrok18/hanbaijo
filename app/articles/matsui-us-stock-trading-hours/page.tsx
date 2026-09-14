@@ -4,17 +4,18 @@ import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
   alternates: { canonical: '/articles/matsui-us-stock-trading-hours' },
-  title: '松井証券 取引時間｜米国株の夏冬時間・プレマーケット・23時間化',
-  description: '松井証券の取引時間を、米国株の夏時間・冬時間、プレマーケット、通常取引、2026年12月予定の23時間化に分けて整理します。',
+  title: '米国株 プレマーケットとは？｜松井証券の取引時間と注意点',
+  description: '米国株のプレマーケットとは、通常取引前の時間外取引です。松井証券の夏時間17:00〜22:30・冬時間18:00〜23:30、注文条件や注意点を整理します。',
 };
 
 export default function Page() {
   return <article>
     <p className="page-kicker">MATSUI / US STOCK HOURS</p>
-    <h1>松井証券の取引時間<br />米国株の夏冬時間・プレマーケット・23時間化</h1>
-    <p className="lede">松井証券 取引時間を確認するときは、米国株の夏時間・冬時間とプレマーケット・通常取引を分けます。日本時間が1時間変わる点と、2026年12月に予定される23時間化を現行ルールと切り分けて整理します。</p>
+    <h1>米国株 プレマーケットとは？<br />松井証券の時間・注文条件</h1>
+    <p className="lede">米国株のプレマーケットとは、通常取引が始まる前の時間外取引セッションです。松井証券の夏時間・冬時間を確認しながら、通常取引との違い、注文条件、流動性の注意点を整理します。</p>
+    <div className="callout"><strong>結論：プレマーケットは通常取引前の時間外取引</strong><p>松井証券では夏時間17:00〜22:30、冬時間18:00〜23:30（日本時間）。参加者が少なく価格・約定条件が通常時間と異なるため、注文可能時間・取消条件・気配値を確認します。</p></div>
 
-    <h2>現在の取引時間</h2>
+    <h2>米国株 プレマーケットとは？現在の取引時間</h2>
     <div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th>区分</th><th>夏時間</th><th>冬時間</th></tr></thead><tbody>
       <tr><td className="ex-name">プレマーケット</td><td>17:00〜22:30</td><td>18:00〜23:30</td></tr>
       <tr><td className="ex-name">通常取引</td><td>22:30〜翌5:00</td><td>23:30〜翌6:00</td></tr>
@@ -42,7 +43,7 @@ export default function Page() {
       <li><a href="https://www.matsui.co.jp/us-stock/domestic/rule/" target="_blank" rel="noopener noreferrer">松井証券「米国株現物取引 取引ルール」</a></li>
       <li><a href="https://support.matsui.co.jp/faq/show/52049" target="_blank" rel="noopener noreferrer">松井証券Q&amp;A「米国株のプレマーケットとはなんですか」</a></li>
       <li><a href="https://www.matsui.co.jp/news/2026/detail_0728_01.html" target="_blank" rel="noopener noreferrer">松井証券「米国株の取引時間を23時間に拡大します」</a></li>
-    </ul><p>取引時間と今後の予定は2026年9月14日に確認しました。</p></section>
+    </ul><p>取引時間と今後の予定は2026年9月15日に確認しました。</p></section>
 
     <p><Link href="/tools/matsui-us-stock-cost-calculator">米国株の往復コストを計算する →</Link></p>
     <p><Link href="/articles/matsui-us-stock-fx-fee">松井証券の米国株為替コストを見る →</Link></p>
