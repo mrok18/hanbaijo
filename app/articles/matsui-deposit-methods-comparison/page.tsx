@@ -4,17 +4,18 @@ import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
   alternates: { canonical: '/articles/matsui-deposit-methods-comparison' },
-  title: 'ネットリンク入金とらくらく振替入金の違い｜松井証券の手数料・反映時間',
-  description: '松井証券のネットリンク入金とらくらく振替入金の違いを、操作場所、事前登録、手数料、反映時間、利用時の注意点で比較します。',
+  title: '松井証券 入金手数料｜無料の方法と銀行振込の注意点',
+  description: '松井証券の入金手数料を、ネットリンク・らくらく振替・MATSUI Bankなど無料の方法と銀行振込に分けて整理。反映時間と注意点も確認できます。',
 };
 
 export default function Page() {
   return <article>
     <p className="page-kicker">MATSUI / DEPOSIT METHODS</p>
-    <h1>ネットリンク入金とらくらく振替入金の違い<br />松井証券の手数料・反映時間</h1>
-    <p className="lede">松井証券のネットリンク入金とらくらく振替入金はどちらもリアルタイム・手数料無料ですが、操作する画面と初回の口座登録が異なります。総合口座の6種類の入金方法から、用途に合う方式を選びます。</p>
+    <h1>松井証券 入金手数料<br />無料の方法と銀行振込の注意点</h1>
+    <p className="lede">松井証券の入金手数料は、ネットリンク入金・らくらく振替入金・MATSUI Bank入金・定期入金などが無料です。銀行振込だけは入金手数料が利用者負担になるため、反映時間とあわせて6種類の違いを確認します。</p>
+    <div className="callout"><strong>結論：即時入金は手数料無料、銀行振込は利用者負担</strong><p>松井証券公式では、ネットリンク入金・らくらく振替入金・MATSUI Bank入金・スイープ入金・定期入金の振替／振込手数料は無料です。銀行振込入金は金融機関側の入金手数料がかかる場合があります。</p></div>
 
-    <h2>6種類の入金方法</h2>
+    <h2>松井証券 入金手数料を6種類で比較</h2>
     <div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th>方法</th><th>反映</th><th>手数料</th><th>事前準備</th></tr></thead><tbody>
       <tr><td className="ex-name">スイープ入金</td><td>発注時に自動・リアルタイム</td><td>無料</td><td>MATSUI Bank口座・設定</td></tr>
       <tr><td className="ex-name">MATSUI Bank入金</td><td>リアルタイム</td><td>無料</td><td>MATSUI Bank口座</td></tr>
@@ -74,7 +75,7 @@ export default function Page() {
       <li><a href="https://www.matsui.co.jp/service/money/deposit/" target="_blank" rel="noopener noreferrer">松井証券「入金」</a></li>
       <li><a href="https://support.matsui.co.jp/faq/show/1863?site_domain=faq" target="_blank" rel="noopener noreferrer">松井証券Q&amp;A「入金の方法」</a></li>
       <li><a href="https://www.matsui.co.jp/info/money-01/index2.html" target="_blank" rel="noopener noreferrer">松井証券「入金方法のご案内」</a></li>
-    </ul><p>入金条件は2026年9月8日に公式ページで確認しました。対応銀行、利用時間、反映時間は変更される場合があります。</p></section>
+    </ul><p>入金条件は2026年9月15日に公式ページで確認しました。対応銀行、利用時間、反映時間は変更される場合があります。</p></section>
 
     <p><Link href="/articles/matsui-ekyc-required-documents">口座開設のeKYCと必要書類を見る →</Link></p>
     <p><Link href="/articles/matsui-simultaneous-account-opening">同時開設できる商品口座を見る →</Link></p>
