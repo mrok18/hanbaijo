@@ -192,7 +192,7 @@ export default function FxPage() {
           <div>
             <p className="section-index">06 / PARTNERED SERVICES</p>
             <h2 id="fx-partner-title">取引条件を公式サイトで確認する</h2>
-            <p>以下はA8.netで提携済みの広告です。報酬額は、比較結果や掲載順位に反映しません。</p>
+            <p>以下はA8.netまたはアクセストレードで提携済みの広告です。報酬額は、比較結果や掲載順位に反映しません。</p>
           </div>
         </div>
         <div className="affiliate-grid">
@@ -203,6 +203,7 @@ export default function FxPage() {
           <AffiliateOfferCard offer={AFFILIATE_OFFERS['systre-select-365']} />
           <AffiliateOfferCard offer={AFFILIATE_OFFERS['ablenet-vps']} />
           <AffiliateOfferCard offer={AFFILIATE_OFFERS['fpo-fx-guide']} />
+          <AffiliateOfferCard offer={AFFILIATE_OFFERS['monex-fxplus']} />
         </div>
         <p className="affiliate-disclosure">
           広告リンク経由で申込み等が行われた場合、当サイトが報酬を受け取ることがあります。
