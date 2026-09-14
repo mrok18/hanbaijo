@@ -28,7 +28,7 @@ export default function Page() {
   const dollar = new Intl.NumberFormat('ja-JP', { maximumFractionDigits: 2 });
 
   return <div className="calculator-page">
-    <header className="calculator-intro"><p className="page-kicker">US STOCK ROUND-TRIP CALCULATOR</p><h1>米国株の往復コストを、<br /><em>円で見える化。</em></h1><p className="lede">松井証券の米国株現物取引を対象に、買付・売却の手数料、円貨決済の為替コスト、値幅損益を同じ条件で概算します。</p><div className="calculator-proof"><span>入力は端末内で計算</span><span>NISA切替対応</span><span>円貨・外貨決済を比較</span><span>2026年9月8日確認</span></div></header>
+    <header className="calculator-intro"><p className="page-kicker">US STOCK ROUND-TRIP CALCULATOR</p><h1>松井証券の米国株手数料を、<br /><em>往復コストで計算。</em></h1><p className="lede">松井証券の米国株手数料を対象に、買付・売却の手数料、円貨決済の為替コスト、値幅損益を同じ条件で概算します。NISA口座と外貨決済も切り替えて比較できます。</p><div className="calculator-proof"><span>入力は端末内で計算</span><span>NISA切替対応</span><span>円貨・外貨決済を比較</span><span>2026年9月14日確認</span></div></header>
     <div className="calculator-shell"><div className="calculator-grid"><section className="calculator-inputs"><div className="calculator-panel-head"><div><span>INPUT</span><h2>取引条件</h2></div></div><div className="field-grid">
       <label><span>株数</span><input type="number" min="0" step="1" value={shares} onChange={e => setShares(Number(e.target.value))} /></label>
       <label><span>米ドル円</span><input type="number" min="0" step="0.01" value={usdJpy} onChange={e => setUsdJpy(Number(e.target.value))} /></label>
