@@ -3,8 +3,8 @@ import Link from 'next/link';
 import { STOCK_PROVIDER_LIST } from '@/lib/stock-providers';
 
 export const metadata: Metadata = {
-  title: '米国株信用取引の手数料比較｜買方金利・売建・現物コストも整理',
-  description: '米国株の信用取引手数料比較を、DMM 株・松井証券・楽天証券の取引手数料、買方金利、売建対応で整理。現物の為替コスト・NISA条件と分け、比較記事と計算方法へ案内します。',
+  title: '米国株 手数料 比較｜現物・信用の売買・為替・金利を整理',
+  description: '米国株の手数料比較を、現物・信用の売買手数料、為替コスト、買方金利、売建対応に分けて整理。DMM 株・松井証券・楽天証券の条件と計算方法を案内します。',
   alternates: { canonical: '/stocks' },
 };
 
@@ -50,12 +50,12 @@ export default function StocksPage() {
       <section className="fx-hero">
         <div>
           <p className="page-kicker">STOCK COST GUIDE</p>
-          <h1>米国株信用取引の手数料比較と仕組み<br /><em>現物・国内株・外国株のコストも整理</em></h1>
+          <h1>米国株の手数料比較と仕組み<br /><em>現物・信用・為替コストを整理</em></h1>
           <p className="lede">
-            米国株 信用取引 手数料 比較では、売買手数料だけでなく、買方金利、売建の貸株料、SEC Fee、優遇条件まで確認します。
+            米国株 手数料 比較では、現物と信用を分け、売買手数料だけでなく、為替コスト、買方金利、売建の貸株料、SEC Fee、優遇条件まで確認します。
             現物の為替コスト・NISA条件、国内株・外国株式の費用は対象を分け、同じ取引金額と保有日数で比べられる比較表・計算方法へ案内します。
           </p>
-          <div className="callout"><strong>米国株式の比較で最初に見る4項目</strong><p>売買手数料、為替コスト、現地費用、NISAなどの適用条件を同じ取引金額・決済方法でそろえると、見かけの手数料0円だけでは分からない実負担を比べられます。</p></div>
+          <div className="callout"><strong>米国株 手数料 比較で最初に見る4項目</strong><p>売買手数料、為替コスト、現地費用、NISAなどの適用条件を同じ取引金額・決済方法でそろえると、見かけの手数料0円だけでは分からない実負担を比べられます。</p></div>
           <div className="callout"><strong>米国株信用の手数料比較は、0.33％の外側を見る</strong><p>DMM 株・松井証券・楽天証券は通常の取引手数料が約定代金×0.33％（上限16.5ドル）で並びます。差が出るのは買方金利、売建対応、日計り・大口優遇、SEC Feeなどです。</p></div>
           <div className="hero-actions">
             <Link className="button primary" href="/stocks/domestic-fee-comparison">国内株4社を比較</Link>
@@ -158,10 +158,10 @@ export default function StocksPage() {
           <h2>比較表と計算方法を使い分ける</h2>
         </div></div>
         <div className="affiliate-grid">
-          <article className="affiliate-card"><div className="affiliate-card-head"><span>COMPARE</span><b>2026-09-12確認</b></div><p className="affiliate-category">DOMESTIC STOCK FEES</p><h3>国内株4社の手数料</h3><p>GMOクリック証券、楽天証券、松井証券、DMM 株を10万・50万・100万円の往復で比較します。</p><Link href="/stocks/domestic-fee-comparison">比較表を見る →</Link></article>
-          <article className="affiliate-card"><div className="affiliate-card-head"><span>COMPARE</span><b>2026-09-12確認</b></div><p className="affiliate-category">US STOCK FEES</p><h3>米国株3社の手数料</h3><p>DMM 株、松井証券、楽天証券を、売買手数料と決済方法別の為替コストで比較します。</p><Link href="/articles/us-stock-fee-comparison">比較表を見る →</Link></article>
-          <article className="affiliate-card"><div className="affiliate-card-head"><span>COMPARE</span><b>2026-09-12確認</b></div><p className="affiliate-category">FOREIGN STOCK FEES</p><h3>外国株式の市場別手数料</h3><p>米国株、中国株、ASEAN株を、料率、最低・上限手数料、為替・現地費用で比較します。</p><Link href="/articles/foreign-stock-trading-fees">比較表を見る →</Link></article>
-          <article className="affiliate-card"><div className="affiliate-card-head"><span>COMPARE</span><b>2026-09-12確認</b></div><p className="affiliate-category">US MARGIN FEES</p><h3>米国株信用3社の手数料</h3><p>DMM 株、松井証券、楽天証券を、通常手数料、買方金利、日計り優遇、売建対応で比較します。</p><Link href="/articles/us-stock-margin-fee-comparison">比較表を見る →</Link></article>
+          <article className="affiliate-card"><div className="affiliate-card-head"><span>COMPARE</span><b>2026-09-14確認</b></div><p className="affiliate-category">DOMESTIC STOCK FEES</p><h3>国内株4社の手数料</h3><p>GMOクリック証券、楽天証券、松井証券、DMM 株を10万・50万・100万円の往復で比較します。</p><Link href="/stocks/domestic-fee-comparison">比較表を見る →</Link></article>
+          <article className="affiliate-card"><div className="affiliate-card-head"><span>COMPARE</span><b>2026-09-14確認</b></div><p className="affiliate-category">US STOCK FEES</p><h3>米国株3社の手数料</h3><p>DMM 株、松井証券、楽天証券を、売買手数料と決済方法別の為替コストで比較します。</p><Link href="/articles/us-stock-fee-comparison">比較表を見る →</Link></article>
+          <article className="affiliate-card"><div className="affiliate-card-head"><span>COMPARE</span><b>2026-09-14確認</b></div><p className="affiliate-category">FOREIGN STOCK FEES</p><h3>外国株式の市場別手数料</h3><p>米国株、中国株、ASEAN株を、料率、最低・上限手数料、為替・現地費用で比較します。</p><Link href="/articles/foreign-stock-trading-fees">比較表を見る →</Link></article>
+          <article className="affiliate-card"><div className="affiliate-card-head"><span>COMPARE</span><b>2026-09-14確認</b></div><p className="affiliate-category">US MARGIN FEES</p><h3>米国株信用3社の手数料</h3><p>DMM 株、松井証券、楽天証券を、通常手数料、買方金利、日計り優遇、売建対応で比較します。</p><Link href="/articles/us-stock-margin-fee-comparison">比較表を見る →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>GUIDE</span><b>国内株</b></div><p className="affiliate-category">ROUND-TRIP COST</p><h3>往復コストの計算</h3><p>買付と売却の手数料、板の価格差を1つの式で整理します。</p><Link href="/articles/stock-round-trip-cost">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>GUIDE</span><b>米国株</b></div><p className="affiliate-category">FX CONVERSION</p><h3>為替コストの計算</h3><p>1ドルあたりの為替コストを、購入金額全体の円負担へ直します。</p><Link href="/articles/us-stock-fx-cost">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>GUIDE</span><b>松井証券</b></div><p className="affiliate-category">ACCOUNT TYPES</p><h3>FX専用口座と総合口座</h3><p>FXだけ使う場合と、株・NISA・先物へ広げる場合の入口を整理します。</p><Link href="/articles/matsui-account-types">記事を読む →</Link></article>
