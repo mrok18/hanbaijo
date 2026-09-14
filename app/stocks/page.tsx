@@ -3,8 +3,8 @@ import Link from 'next/link';
 import { STOCK_PROVIDER_LIST } from '@/lib/stock-providers';
 
 export const metadata: Metadata = {
-  title: '米国株式の手数料比較｜国内株・外国株のコストも整理',
-  description: '米国株式の手数料比較で見る売買手数料、為替コスト、現地費用、NISA条件を整理。国内株・外国株式・信用取引の比較表と計算方法も案内します。',
+  title: '米国株信用取引の手数料比較｜買方金利・売建・現物コストも整理',
+  description: '米国株の信用取引手数料比較を、DMM 株・松井証券・楽天証券の取引手数料、買方金利、売建対応で整理。現物の為替コスト・NISA条件と分け、比較記事と計算方法へ案内します。',
   alternates: { canonical: '/stocks' },
 };
 
@@ -50,14 +50,16 @@ export default function StocksPage() {
       <section className="fx-hero">
         <div>
           <p className="page-kicker">STOCK COST GUIDE</p>
-          <h1>米国株式の手数料比較と仕組み<br /><em>国内株・外国株・信用取引も整理</em></h1>
+          <h1>米国株信用取引の手数料比較と仕組み<br /><em>現物・国内株・外国株のコストも整理</em></h1>
           <p className="lede">
-            米国株式の手数料比較では、売買手数料だけでなく、円とドルを交換する為替コスト、現地費用、NISAの無料条件まで確認します。
-            国内株・外国株式・信用取引は費用の種類が異なるため、対象ごとの比較表と計算方法へ案内します。
+            米国株 信用取引 手数料 比較では、売買手数料だけでなく、買方金利、売建の貸株料、SEC Fee、優遇条件まで確認します。
+            現物の為替コスト・NISA条件、国内株・外国株式の費用は対象を分け、同じ取引金額と保有日数で比べられる比較表・計算方法へ案内します。
           </p>
           <div className="callout"><strong>米国株式の比較で最初に見る4項目</strong><p>売買手数料、為替コスト、現地費用、NISAなどの適用条件を同じ取引金額・決済方法でそろえると、見かけの手数料0円だけでは分からない実負担を比べられます。</p></div>
+          <div className="callout"><strong>米国株信用の手数料比較は、0.33％の外側を見る</strong><p>DMM 株・松井証券・楽天証券は通常の取引手数料が約定代金×0.33％（上限16.5ドル）で並びます。差が出るのは買方金利、売建対応、日計り・大口優遇、SEC Feeなどです。</p></div>
           <div className="hero-actions">
             <Link className="button primary" href="/stocks/domestic-fee-comparison">国内株4社を比較</Link>
+            <Link className="button secondary" href="/articles/us-stock-margin-fee-comparison">米国株信用3社を比較</Link>
             <Link className="button secondary" href="/tools/cost-calculator">自分の金額で計算</Link>
           </div>
         </div>
@@ -198,8 +200,11 @@ export default function StocksPage() {
         <ul>
           <li><a href="https://www.jpx.co.jp/equities/trading/domestic/03.html" target="_blank" rel="noopener noreferrer">日本取引所グループ「売買単位」</a></li>
           <li><a href="https://www.jpx.co.jp/equities/trading/domestic/07.html" target="_blank" rel="noopener noreferrer">日本取引所グループ「呼値の単位」</a></li>
+          <li><a href="https://kabu.dmm.com/us/margin/outline/" target="_blank" rel="noopener noreferrer">DMM 株「米国株信用取引の商品概要・取引ルール」</a></li>
+          <li><a href="https://www.matsui.co.jp/us-stock/margin/fee/" target="_blank" rel="noopener noreferrer">松井証券「米国株信用取引 手数料」</a></li>
+          <li><a href="https://www.rakuten-sec.co.jp/web/us/margin/commission.html" target="_blank" rel="noopener noreferrer">楽天証券「米国株式信用取引 手数料／金利／貸株料」</a></li>
         </ul>
-        <p>制度・用語は2026年9月7日に確認。個別会社の最新条件は各社公式サイトを確認してください。</p>
+        <p>制度・用語と米国株信用の料金条件は2026年9月14日に確認。金利、優遇条件、対象銘柄、現地費用は変わる可能性があるため、発注前に各社公式サイトを確認してください。</p>
       </section>
 
       <section className="fx-section" aria-labelledby="stock-provider-directory">
