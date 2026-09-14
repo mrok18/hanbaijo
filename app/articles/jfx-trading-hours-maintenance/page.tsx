@@ -2,15 +2,17 @@ import Link from 'next/link';
 
 export const metadata = {
   alternates: { canonical: '/articles/jfx-trading-hours-maintenance' },
-  title: 'JFXのメンテナンス時間｜日締め・週末の取引停止と注文可否',
-  description: 'JFXの毎営業日の日締めメンテナンス時間を夏時間・冬時間で整理し、週末の取引停止と予約注文の可否、注文前の注意点を公式情報から確認します。',
+  title: 'JFX 取引時間｜夏時間・冬時間とメンテナンスの停止時刻',
+  description: 'JFXの取引時間を夏時間・冬時間に分け、日締めメンテナンスの停止時刻、週末の予約注文、注文前の注意点を公式情報から確認します。',
 };
 
 export default function Page() {
   return <article>
     <p className="page-kicker">JFX / TRADING HOURS</p>
-    <h1>JFXのメンテナンス時間<br />日締め・週末の取引停止と注文可否</h1>
-    <p className="lede">JFXの毎営業日の日締めメンテナンスは、米国夏時間なら5:59前後、冬時間なら6:59前後に始まり、通常15分程度（最大30分程度）が目安です。市場の取引時間と実際に操作できる時間を分け、週末の予約注文が可能な時間帯も確認します。</p>
+    <h1>JFX 取引時間とメンテナンス<br />夏時間・冬時間の停止時刻と注文可否</h1>
+    <p className="lede">JFXの取引時間は、米国夏時間なら月曜6:30〜土曜5:30、冬時間なら月曜7:00〜土曜6:30（日本時間）です。日締めメンテナンス中は通信が切断されるため、取引できる時間と注文受付の時間を分けて確認します。</p>
+
+    <div className="callout"><strong>JFX 取引時間の結論</strong><p>成行・ストリーミング注文は市場の取引時間内に限られます。メンテナンス時間を除き、指値などの予約注文は土日も受け付けますが、週末に約定するわけではありません。夏時間・冬時間の切替日や臨時メンテナンスは公式のお知らせを優先してください。</p></div>
 
     <h2>MATRIX TRADERの取引時間とメンテナンス時間</h2>
     <div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th>区分</th><th>取引開始</th><th>取引終了</th><th>日締め開始</th></tr></thead><tbody>
@@ -53,7 +55,7 @@ export default function Page() {
       <li><a href="https://faq.jfx.co.jp/faq/detail?category=33&amp;id=180&amp;site=FX557CTV" target="_blank" rel="noopener noreferrer">JFX FAQ「注文できない時間帯」</a></li>
       <li><a href="https://faq.jfx.co.jp/faq/detail?category=33&amp;id=437&amp;site=FX557CTV" target="_blank" rel="noopener noreferrer">JFX FAQ「夏時間・冬時間の始まり」</a></li>
       <li><a href="https://faq.jfx.co.jp/faq/detail?category=37&amp;id=237&amp;site=FX557CTV" target="_blank" rel="noopener noreferrer">JFX FAQ「時間指定指値・逆指値注文」</a></li>
-    </ul><p>取引時間は2026年9月8日に公式ページで確認しました。祝日・臨時メンテナンス時は最新のお知らせを優先してください。</p></section>
+    </ul><p>取引時間は2026年9月14日に公式ページで確認しました。祝日・臨時メンテナンス時は最新のお知らせを優先してください。</p></section>
 
     <p><Link href="/articles/jfx-scalping-spread-cost">JFXの時間帯別スプレッドを見る →</Link></p>
     <p><Link href="/articles/jfx-order-slippage-rules">注文方法とスリッページを確認する →</Link></p>
