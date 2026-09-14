@@ -2,8 +2,8 @@ import Link from 'next/link';
 
 export const metadata = {
   alternates: { canonical: '/futures/nikkei225-fee-comparison' },
-  title: '日経225先物の手数料比較｜225先物・mini・マイクロ2社',
-  description: '日経225先物（225先物）・mini・マイクロの手数料を松井証券と楽天証券で比較。1枚あたりの片道・往復料金と1ティックに対する負担を整理します。',
+  title: '225先物 手数料比較｜日経225先物・mini・マイクロ2社',
+  description: '225先物の手数料を松井証券と楽天証券で比較。日経225先物・mini・マイクロの1枚あたり片道・往復料金と、1ティックに対する負担を整理します。',
 };
 
 const FEES = [
@@ -18,17 +18,17 @@ export default function Page() {
       <header className="comparison-intro futures-comparison-intro">
         <div>
           <p className="page-kicker">NIKKEI 225 FUTURES / PUBLISHED DATA</p>
-          <h1>日経225先物の手数料を、<br /><em>1ティックと比較。</em></h1>
-          <p className="lede">225先物・mini・マイクロについて、松井証券と楽天証券の標準インターネット手数料を片道・往復に分けて比較します。</p>
+          <h1>225先物の手数料比較<br /><em>日経225先物・mini・マイクロ2社</em></h1>
+          <p className="lede">225先物 手数料を比べるときは、ラージ・mini・マイクロを分け、標準インターネット取引の片道と往復をそろえます。松井証券と楽天証券を同じ条件で比較し、1ティックに対する負担も確認します。</p>
         </div>
         <aside>
-          <span>CHECKED</span><strong>2026-09-13</strong>
+          <span>CHECKED</span><strong>2026-09-14</strong>
           <p>税込・1枚あたりの公称値。証拠金額は変動するため、この表に固定値として入れていません。</p>
         </aside>
       </header>
 
       <div className="callout">
-        <strong>結論：日経225先物1枚の片道手数料は、松井証券220円・楽天証券275円</strong>
+        <strong>225先物 手数料の結論：日経225先物1枚の片道は松井証券220円・楽天証券275円</strong>
         <p>miniは両社38.5円、マイクロは両社11円です。往復は新規と返済で同額かかる前提なら、それぞれ2倍で試算できます。</p>
       </div>
 
@@ -89,7 +89,7 @@ export default function Page() {
           <li><a href="https://www.rakuten-sec.co.jp/web/fop/futures/commission/" target="_blank" rel="noopener noreferrer"><span>楽天証券</span><b>公式情報 ↗</b></a></li>
           <li><a href="https://www.jpx.co.jp/corporate/learning/resources/tvdivq0000003toh-att/fu_pu.pdf" target="_blank" rel="noopener noreferrer"><span>日本取引所グループ</span><b>取引単位・呼値 ↗</b></a></li>
         </ul>
-        <p>2026年9月13日に公式料金を再確認。対象は同条件に整理できた2社で、比較対象は順次追加します。</p>
+        <p>2026年9月14日に公式料金を再確認。対象は同条件に整理できた2社で、比較対象は順次追加します。</p>
       </section>
 
       <div className="comparison-actions">
