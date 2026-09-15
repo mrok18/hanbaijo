@@ -2,14 +2,14 @@ import Link from 'next/link';
 
 export const metadata = {
   alternates: { canonical: '/articles/jfx-trading-hours-maintenance' },
-  title: 'JFX 取引時間｜夏時間・冬時間とメンテナンスの停止時刻',
-  description: 'JFXの取引時間を夏時間・冬時間に分け、日締めメンテナンスの停止時刻、週末の予約注文、注文前の注意点を公式情報から確認します。',
+  title: 'JFX メンテナンス時間｜取引時間・夏冬時間と注文可否',
+  description: 'JFXのメンテナンス時間と取引時間を夏時間・冬時間に分け、日締めの停止時刻、週末の予約注文、注文前の注意点を公式情報から確認します。',
 };
 
 export default function Page() {
   return <article>
     <p className="page-kicker">JFX / TRADING HOURS</p>
-    <h1>JFX 取引時間とメンテナンス<br />夏時間・冬時間の停止時刻と注文可否</h1>
+    <h1>JFX メンテナンス時間｜取引時間<br />夏時間・冬時間の停止時刻と注文可否</h1>
     <p className="lede">JFXの取引時間は、米国夏時間なら月曜6:30〜土曜5:30、冬時間なら月曜7:00〜土曜6:30（日本時間）です。日締めメンテナンス中は通信が切断されるため、取引できる時間と注文受付の時間を分けて確認します。</p>
 
     <div className="callout"><strong>JFX 取引時間の結論</strong><p>成行・ストリーミング注文は市場の取引時間内に限られます。メンテナンス時間を除き、指値などの予約注文は土日も受け付けますが、週末に約定するわけではありません。夏時間・冬時間の切替日や臨時メンテナンスは公式のお知らせを優先してください。</p></div>
