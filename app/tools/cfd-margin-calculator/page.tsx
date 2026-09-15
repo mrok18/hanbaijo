@@ -39,14 +39,14 @@ export default function Page() {
   const yen = new Intl.NumberFormat('ja-JP', { maximumFractionDigits: 2 });
 
   return <div className="calculator-page">
-    <header className="calculator-intro"><p className="page-kicker">CFD MARGIN CALCULATOR</p><h1>商品CFDの必要証拠金を<br /><em>銘柄単位で計算。</em></h1><p className="lede">DMM CFDの商品14銘柄の公式取引単位を使い、価格・Lot数・米ドル円から概算します。</p></header>
+    <header className="calculator-intro"><p className="page-kicker">CFD TRADING CALCULATOR</p><h1>CFD Trading Calculator<br /><em>商品CFDの必要証拠金を計算。</em></h1><p className="lede">CFD trading calculatorとして、DMM CFDの商品14銘柄の取引単位を使い、価格・Lot数・米ドル円から必要証拠金を日本語で概算します。</p></header>
     <div className="calculator-shell"><section className="calculator-inputs"><div className="field-grid">
       <label className="wide"><span>銘柄</span><select value={productIndex} onChange={e => setProductIndex(Number(e.target.value))}>{PRODUCTS.map((item, index) => <option value={index} key={item.name}>{item.name}（1Lot＝{item.unitLabel}）</option>)}</select></label>
       <label><span>商品価格（米ドル・画面表示値）</span><input type="number" min="0" value={price} onChange={e => setPrice(Number(e.target.value))} /></label>
       <label><span>Lot数</span><input type="number" min="1" step="1" value={lots} onChange={e => setLots(Number(e.target.value))} /></label>
       <label><span>米ドル円</span><input type="number" min="0" value={usdJpy} onChange={e => setUsdJpy(Number(e.target.value))} /></label>
     </div></section><section className="calculator-result"><div className="result-head"><span>ESTIMATE</span><h2>必要証拠金概算</h2></div><div className="total-cost"><strong>{yen.format(result.margin)}</strong><span>円</span></div><p>取引総額：約{yen.format(result.notional)}円</p><p>表示価格が1.0ドル動く場合：約{yen.format(result.oneDollarMove)}円／保有Lot</p><p>計算式：価格 × 公式取引単位 × Lot数 × 米ドル円 × 5％</p></section></div>
-    <div className="callout"><strong>物理量を二重に掛けない</strong><p>コーンの1Lot＝1単位（100ブッシェル）のような銘柄は、公式計算式へ掛ける取引単位が1です。100をさらに掛けません。実際の必要証拠金は取引画面を優先してください。</p></div>
+    <div className="callout"><strong>CFD Trading Calculatorの見方</strong><p>表示価格×公式取引単位×Lot数×米ドル円×5％で必要証拠金を概算します。コーンの1Lot＝1単位（100ブッシェル）のような銘柄は取引単位が1で、100をさらに掛けません。実際の必要証拠金は取引画面を優先してください。</p></div>
     <p><Link href="/articles/dmm-cfd-tick-value-profit-loss">14銘柄の1ティック損益を見る →</Link></p>
     <p><Link href="/tools/dmm-cfd-tick-value-calculator">14銘柄の値動き損益を計算する →</Link></p>
     <p><Link href="/articles/dmm-cfd-commodity-lot-list">14銘柄の取引単位と公式資料を見る →</Link></p>
