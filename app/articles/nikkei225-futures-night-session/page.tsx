@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: '日経225先物の取引時間｜日中・ナイト・注文受付を整理',
-  description: '日経225先物・mini・マイクロの取引時間を、日中8:45〜15:45、ナイト17:00〜翌6:00の立会、注文受付、取消不可時間、祝日・SQ日の注意点に分けて解説します。',
+  title: '日経225 取引時間｜先物の日中・ナイト・注文受付を整理',
+  description: '日経225の取引時間を先物・mini・マイクロに分け、日中8:45〜15:45、ナイト17:00〜翌6:00の立会、注文受付、取消不可時間、祝日・SQ日の注意点を解説します。',
   alternates: { canonical: '/articles/nikkei225-futures-night-session' },
 };
 
@@ -42,7 +42,7 @@ export default function Page() {
     <article>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd).replace(/</g, '\\u003c') }} />
       <p className="page-kicker">NIKKEI 225 FUTURES / TRADING HOURS</p>
-      <h1>日経225先物の取引時間<br />日中・ナイト・注文受付を整理</h1>
+      <h1>日経225 取引時間｜先物の日中・ナイト<br />注文受付と休場日の注意点</h1>
       <p className="lede">
         日経225先物・日経225mini・日経225マイクロ先物の立会時間は、日中が<strong>8:45〜15:45</strong>、
         ナイト・セッションが<strong>17:00〜翌6:00</strong>です。ザラバの終了時刻、注文受付、注文を取り消せない時間は別なので、時計だけでなく取引所の区分まで確認します。
