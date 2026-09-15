@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
-export const metadata={ alternates: { canonical: '/articles/matsui-one-day-margin-cost' },title:'松井証券 信用取引の手数料｜一日信用0円と翌日持越し費用',description:'松井証券の信用取引手数料を、一日信用の売買0円・金利0％・貸株料0％と、翌日持越しやプレミアム空売り、任意決済の費用に分けて整理します。'};
-export default function Page(){return <article><p className="page-kicker">MATSUI / DAY MARGIN</p><h1>松井証券の信用取引手数料<br/>一日信用0円と持越し費用</h1><p className="lede">松井証券 信用取引 手数料を、一日信用・制度信用・無期限信用で分けて確認します。一日信用はインターネット経由の日計りなら新規・返済と現引・現渡が無料ですが、翌営業日まで残った建玉や対象外の操作には別の費用が生じます。</p>
+export const metadata={ alternates: { canonical: '/articles/matsui-one-day-margin-cost' },title:'松井証券 信用取引 手数料｜一日信用0円と持越し費用',description:'松井証券の信用取引手数料を、一日信用の売買0円・金利0％・貸株料0％と、翌日持越しやプレミアム空売り、任意決済の費用に分けて整理します。'};
+export default function Page(){return <article><p className="page-kicker">MATSUI / DAY MARGIN</p><h1>松井証券 信用取引 手数料<br/>一日信用0円と持越し費用</h1><p className="lede">松井証券 信用取引 手数料を、一日信用・制度信用・無期限信用で分けて確認します。一日信用はインターネット経由の日計りなら新規・返済と現引・現渡が無料ですが、翌営業日まで残った建玉や対象外の操作には別の費用が生じます。</p>
 <div className="callout"><strong>結論：一日信用は当日中なら売買0円・金利/貸株料0％</strong><p>新規建日の大引けまでに反対売買、または15:45までに現引・現渡を行う条件です。決済できず翌営業日に松井証券が任意決済すると、1注文あたり3,250円（税込3,575円）がかかります。</p></div>
 <p className="panel-note">公式条件の確認日：2026年9月14日。金利・貸株料・プレミアム空売り料や対象銘柄は変更される場合があります。</p>
 <h2>コストを4つに分ける</h2><div className="fx-metric-grid"><article><b>TRADE</b><h3>売買手数料</h3><p>ネット経由の新規・返済は無料。電話取引は別条件です。</p></article><article><b>RATE</b><h3>金利・貸株料</h3><p>公式料金表では年利0.0％。別途諸経費があります。</p></article><article><b>PREMIUM</b><h3>空売り料</h3><p>プレミアム空売りは銘柄別料金がかかり、日々変動します。</p></article><article><b>DEADLINE</b><h3>任意決済</h3><p>期日超過の任意決済は1注文3,250円、税込3,575円です。</p></article></div>
