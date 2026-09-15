@@ -247,6 +247,6 @@ export const POSTS = [
   { slug: 'kounyu-tejun', category: '実務', title: 'コストを抑えて買うための手順', desc: '同じ金額を買うのに、どこで差がつくのかを順に確認する。' },
   { slug: 'tesuryo-hyoki', category: '基礎知識', title: '「手数料無料」はなぜ表示できるのか', desc: '表示として誤りではないが、負担がないという意味でもない。その構造。' },
   { slug: 'ita-yomikata', category: '実務', title: '取引所の「板」の読み方', desc: '指値と成行、そしてスプレッドが決まる仕組み。' },
-  { slug: 'maker-taker', category: '基礎知識', title: 'メイカーとテイカー — 手数料が2種類ある理由', desc: '注文の出し方で手数料が変わる。その理由と実務上の意味。' },
+  { slug: 'maker-taker', category: '基礎知識', title: 'メイカーとは？テイカーとの違い・手数料の仕組み', desc: 'メイカーとテイカーの判定条件、指値・成行の違い、手数料と約定しやすさのトレードオフを整理する。' },
   { slug: 'yogo', category: '用語', title: '金融コスト用語集', desc: '当サイトで使う用語を、計算との関係がわかるように整理します。' },
 ] as const;
