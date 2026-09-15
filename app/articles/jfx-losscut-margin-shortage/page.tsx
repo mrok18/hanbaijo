@@ -2,14 +2,29 @@ import Link from 'next/link';
 
 export const metadata = {
   alternates: { canonical: '/articles/jfx-losscut-margin-shortage' },
-  title: 'JFXのロスカット基準は？有効証拠金・必要証拠金と不足金を整理',
-  description: 'JFX MATRIX TRADERのロスカット条件、判定間隔、決済順序、レート停止時の扱い、口座残高を超える損失と不足金の期限を公式書面から整理します。',
+  title: 'JFX ロスカット｜基準・不足金・判定時間を確認',
+  description: 'JFX MATRIX TRADERのロスカット基準、判定間隔、決済順序、レート停止時の扱い、不足金の期限を公式書面から整理します。',
 };
+
+const FAQS = [
+  {
+    question: 'JFXのロスカット基準は何ですか？',
+    answer: '有効証拠金が必要証拠金を下回るとロスカットの対象になります。数秒（1〜10秒程度）ごとに判定され、基準到達時と同じ価格での決済は保証されません。',
+  },
+  {
+    question: 'JFXでロスカットされると不足金は発生しますか？',
+    answer: '相場急変やレート停止などで、預けた資金を超える損失や不足金が残る可能性があります。不足金が発生した場合は、公式書面の期限と取引画面の案内を確認します。',
+  },
+  {
+    question: 'ロスカットを避けるにはどうすればよいですか？',
+    answer: '必要証拠金ぎりぎりまで建てず、許容損失額と損切り幅から数量を逆算します。スプレッドや想定スリッページも加えて余力を残します。',
+  },
+];
 
 export default function Page() {
   return <article>
     <p className="page-kicker">JFX / MARGIN CONTROL</p>
-    <h1>JFXのロスカット基準は？<br />不足金まで分けて確認</h1>
+    <h1>JFX ロスカット｜基準と不足金<br />判定時間・決済順序を確認</h1>
     <p className="lede">MATRIX TRADERでは、有効証拠金が必要証拠金を下回るとロスカットの対象になります。ただし、基準は損失上限でも決済価格の保証でもありません。判定から決済、不足金が残る場合までを順に整理します。</p>
 
     <h2>基準は「有効証拠金＜必要証拠金」</h2>
@@ -36,6 +51,14 @@ export default function Page() {
       <li>損失額が許容範囲に収まる数量へ切り下げる</li>
       <li>必要証拠金を引いても十分な余力が残るか確認する</li>
     </ol>
+
+    <h2>JFXロスカットのFAQ</h2>
+    {FAQS.map((faq) => (
+      <section key={faq.question}>
+        <h3>{faq.question}</h3>
+        <p>{faq.answer}</p>
+      </section>
+    ))}
 
     <section className="article-sources" aria-labelledby="sources"><h2 id="sources">参照した公式資料</h2><ul>
       <li><a href="https://www.jfx.co.jp/pdf/document.pdf" target="_blank" rel="noopener noreferrer">JFX「契約締結前交付書面（MATRIX TRADER 個人のお客様）」</a></li>
