@@ -4,14 +4,14 @@ import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
   alternates: { canonical: '/articles/matsui-us-stock-fx-fee' },
-  title: '松井証券の外国株手数料｜米国株の売買・為替コストを整理',
-  description: '松井証券の外国株（米国株）手数料を、売買手数料0.495%・上限22米ドル、事前両替0銭、円貨決済25銭／米ドル、NISA無料に分けて整理します。',
+  title: '松井証券 米国株 手数料は高い？売買・為替コストを整理',
+  description: '松井証券の米国株手数料は高いのか、売買手数料0.495%・上限22米ドル、事前両替0銭、円貨決済25銭／米ドル、NISA無料に分けて整理します。',
 };
 
 export default function Page() {
   return <article>
     <p className="page-kicker">MATSUI / US STOCK FX COST</p>
-    <h1>松井証券の外国株手数料<br />米国株の売買・為替コストを整理</h1>
+    <h1>松井証券 米国株 手数料は高い？<br />売買・為替コストを整理</h1>
     <p className="lede">松井証券の外国株（米国株）手数料は、売買手数料と為替コストを分けて確認します。通常取引の約定代金×0.495％（上限22米ドル）に加え、注文前に米ドルへ事前両替する場合は0銭、円貨決済では1ドル25銭がかかります。</p>
 
     <div className="callout"><strong>松井証券の外国株手数料：売買0.495％、両替は事前0銭</strong><p>通常の米国株売買手数料は約定代金×0.495％（税込、上限22米ドル）です。米ドルと日本円の事前両替は為替手数料0銭ですが、円貨決済では25銭／米ドルが別にかかります。NISAの売買手数料無料も口座区分をそろえて確認します。</p></div>
