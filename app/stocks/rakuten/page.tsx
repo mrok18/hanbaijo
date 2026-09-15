@@ -2,8 +2,8 @@ import StockProviderFactSheet from '@/components/StockProviderFactSheet';
 import { STOCK_PROVIDERS } from '@/lib/stock-providers';
 
 export const metadata = {
-  title: '楽天証券 日本株 売買手数料｜現物・信用の0円条件',
-  description: '楽天証券の日本株（国内株式）売買手数料を、現物・信用のゼロコース0円条件、SOR・Rクロスの同意、金利・貸株料など別コストに分けて確認します。',
+  title: '楽天証券 手数料｜日本株の売買とFXの確認ポイント',
+  description: '楽天証券の日本株（国内株式）売買手数料を、現物・信用のゼロコース0円条件、SOR・Rクロスの同意、金利・貸株料など別コストに分けて確認します。FXの取引手数料・スプレッド・スワップは専用記事へ案内します。',
   alternates: { canonical: '/stocks/rakuten' },
 };
 
