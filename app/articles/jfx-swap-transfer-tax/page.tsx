@@ -2,15 +2,30 @@ import Link from 'next/link';
 
 export const metadata = {
   alternates: { canonical: '/articles/jfx-swap-transfer-tax' },
-  title: 'JFXのスワップ振替とは？決済せず出金する方法と税金の注意点',
-  description: 'JFX MATRIX TRADERのスワップ振替を整理。ポジションを決済せず1円単位で確定・出金する流れ、未実現スワップとの違い、確定申告と年末の注意点を解説します。',
+  title: 'JFX スワップ振替｜1円単位の方法・税金・取引日',
+  description: 'JFX MATRIX TRADERのスワップ振替を解説。ポジションを決済せず1円単位で確定・出金する方法、税金と休日・年末の取引日を確認できます。',
 };
+
+const FAQS = [
+  {
+    question: 'JFXのスワップ振替とは何ですか？',
+    answer: '未決済ポジションを保有したまま、未実現スワップの一部または全部を確定損益へ振り替える機能です。振替後は預託証拠金へ反映され、出金手続きができます。',
+  },
+  {
+    question: 'スワップ振替は1円単位で指定できますか？',
+    answer: 'JFX公式FAQでは、振替可能な未実現スワップの範囲内で1円単位の金額指定が可能と案内されています。必要額だけを確定する運用もできます。',
+  },
+  {
+    question: 'スワップ振替をした日はいつの損益になりますか？',
+    answer: '休日や取引時間外の振替は操作日にかかわらず翌営業日付になる場合があります。年末は取引日が翌年になる可能性があるため、画面の取引日と公式案内を確認してください。',
+  },
+];
 
 export default function Page() {
   return <article>
     <p className="page-kicker">JFX / SWAP TRANSFER</p>
-    <h1>JFXのスワップ振替とは？<br />出金と税金を分けて確認</h1>
-    <p className="lede">MATRIX TRADERでは、ポジションを決済せずに未実現スワップだけを確定できます。確定後は出金できますが、税務上の扱いも変わります。「受け取ったように見える日」と「取引日」がずれる場合もあるため、年末は特に注意が必要です。</p>
+    <h1>JFX スワップ振替｜1円単位の方法<br />税金と取引日を確認</h1>
+    <p className="lede">MATRIX TRADERでは、ポジションを決済せずに未実現スワップだけを確定できます。確定後は出金できますが、税務上の扱いも変わります。1円単位の指定方法と、休日・年末に「操作日」と「取引日」がずれる注意点を整理します。</p>
 
     <h2>スワップ振替で変わること</h2>
     <div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th>比較</th><th>振替前</th><th>振替後</th></tr></thead><tbody>
@@ -39,6 +54,10 @@ export default function Page() {
       <article><b>STEP 3</b><h3>取引日を確認</h3><p>休日・年末は翌営業日に注意</p></article>
       <article><b>STEP 4</b><h3>余力を再確認</h3><p>出金後の証拠金余力を確認</p></article>
     </div>
+
+    <section className="article-faq" aria-labelledby="faq"><h2 id="faq">JFXスワップ振替のFAQ</h2>
+      {FAQS.map((item) => <div className="faq-item" key={item.question}><h3>{item.question}</h3><p>{item.answer}</p></div>)}
+    </section>
 
     <section className="article-sources" aria-labelledby="sources"><h2 id="sources">参照した公式資料</h2><ul>
       <li><a href="https://www.jfx.co.jp/trading_rule/tax/" target="_blank" rel="noopener noreferrer">JFX「確定申告について」</a></li>
