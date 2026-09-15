@@ -2,8 +2,47 @@ import Link from 'next/link';
 
 export const metadata = {
   alternates: { canonical: '/futures/nikkei225-fee-comparison' },
-  title: '225先物 手数料比較｜日経225先物・mini・マイクロ2社',
+  title: '日経225先物 手数料比較｜ラージ・mini・マイクロ2社',
   description: '225先物の手数料を松井証券と楽天証券で比較。日経225先物・mini・マイクロの1枚あたり片道・往復料金と、1ティックに対する負担を整理します。',
+};
+
+const FAQS = [
+  {
+    question: '日経225先物の手数料は、片道と往復でいくらですか？',
+    answer: '標準インターネット取引では、ラージは松井証券220円・楽天証券275円（片道）で、往復はそれぞれ440円・550円です。miniとマイクロは別料金なので商品区分を確認します。',
+  },
+  {
+    question: '日経225miniとマイクロは、手数料だけで選べますか？',
+    answer: '手数料に加えて1ティックの金額、必要証拠金、取引単位を確認します。マイクロは最小値動きが50円のため、往復手数料22円が1ティックの44％に相当します。',
+  },
+  {
+    question: '比較した料金はいつ確認した情報ですか？',
+    answer: '松井証券・楽天証券の公式料金を2026年9月14日に確認しています。一日先物、J-NET、電話注文、SQ決済は別条件のため、発注前に公式料金表を確認してください。',
+  },
+];
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Article',
+      headline: metadata.title,
+      description: metadata.description,
+      datePublished: '2026-09-14',
+      dateModified: '2026-09-16',
+      mainEntityOfPage: 'https://hanbaijo.com/futures/nikkei225-fee-comparison',
+      author: { '@type': 'Organization', name: '金融コストウォッチ' },
+      publisher: { '@type': 'Organization', name: '金融コストウォッチ' },
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: FAQS.map((faq) => ({
+        '@type': 'Question',
+        name: faq.question,
+        acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+      })),
+    },
+  ],
 };
 
 const FEES = [
@@ -15,6 +54,7 @@ const FEES = [
 export default function Page() {
   return (
     <div className="comparison-page futures-comparison-page">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, '\\u003c') }} />
       <header className="comparison-intro futures-comparison-intro">
         <div>
           <p className="page-kicker">NIKKEI 225 FUTURES / PUBLISHED DATA</p>
@@ -79,6 +119,15 @@ export default function Page() {
           <article><b>02</b><h3>日経225先物の取引時間</h3><p>日中立会と翌朝までのナイトセッションを取引日の区切りとともに確認します。</p><Link href="/articles/nikkei225-futures-night-session">取引時間を見る →</Link></article>
           <article><b>03</b><h3>手数料込み損益</h3><p>商品、枚数、値幅を入力し、往復手数料を引いた損益を計算します。</p><Link href="/tools/matsui-futures-cost-calculator">計算機を使う →</Link></article>
           <article><b>04</b><h3>1ティックの損益</h3><p>取引単位と呼値から、ラージ・mini・マイクロの最小値動きを確認します。</p><Link href="/articles/futures-tick-value">計算方法を見る →</Link></article>
+        </div>
+      </section>
+
+      <section className="comparison-section" aria-labelledby="futures-faq">
+        <p className="section-index">FAQ / COST CHECK</p><h2 id="futures-faq">日経225先物の手数料でよくある確認</h2>
+        <div className="provider-faq-list">
+          {FAQS.map((faq) => (
+            <article key={faq.question}><h3>{faq.question}</h3><p>{faq.answer}</p></article>
+          ))}
         </div>
       </section>
 
