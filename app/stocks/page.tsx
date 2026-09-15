@@ -10,6 +10,21 @@ export const metadata: Metadata = {
   alternates: { canonical: '/stocks' },
 };
 
+const STOCK_FAQS = [
+  {
+    question: '株の手数料は、売買手数料だけを比べればよいですか？',
+    answer: '売買手数料に加えて、国内株は板の価格差や信用金利、米国株・外国株は為替コストと現地費用まで同じ取引金額で確認します。',
+  },
+  {
+    question: '手数料0円なら、実際の負担も0円ですか？',
+    answer: '必ずしも0円ではありません。無料条件の対象外となる注文や、為替・金利・貸株料など別の費用が残るため、取引条件をそろえて往復コストを計算します。',
+  },
+  {
+    question: '比較表の数字はいつ確認した情報ですか？',
+    answer: '制度と各社の公式料金条件を2026年9月14日に確認しています。条件は変更される場合があるため、発注前は各社公式ページの最新情報を確認してください。',
+  },
+];
+
 export default function StocksPage() {
   const collectionJsonLd = {
     '@context': 'https://schema.org',
@@ -20,6 +35,7 @@ export default function StocksPage() {
         url: 'https://hanbaijo.com/stocks',
         name: metadata.title,
         description: metadata.description,
+        dateModified: '2026-09-16',
         inLanguage: 'ja-JP',
         mainEntity: { '@id': 'https://hanbaijo.com/stocks#guides' },
       },
@@ -34,6 +50,15 @@ export default function StocksPage() {
           { '@type': 'ListItem', position: 3, name: '外国株式の売買手数料比較', url: 'https://hanbaijo.com/articles/foreign-stock-trading-fees' },
           { '@type': 'ListItem', position: 4, name: '株の手数料の仕組みと計算方法', url: 'https://hanbaijo.com/articles/stock-round-trip-cost' },
         ],
+      },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://hanbaijo.com/stocks#faq',
+        mainEntity: STOCK_FAQS.map((faq) => ({
+          '@type': 'Question',
+          name: faq.question,
+          acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+        })),
       },
       {
         '@type': 'BreadcrumbList',
@@ -195,6 +220,21 @@ export default function StocksPage() {
           <article className="affiliate-card"><div className="affiliate-card-head"><span>US ORDER</span><b>DMM 株</b></div><p className="affiliate-category">US TRADING HOURS</p><h3>米国株の時間と注文</h3><p>夏冬の取引時間、1株単位、IFDONE、逆指値非対応、決済通貨を整理します。</p><Link href="/articles/dmm-kabu-us-stock-order-hours">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>US DIVIDEND</span><b>DMM 株</b></div><p className="affiliate-category">DIVIDEND TAX</p><h3>米国株の配当金と税金</h3><p>米国・国内課税、NISA、外国税額控除、ドル入金と反映日を整理します。</p><Link href="/articles/dmm-kabu-us-dividend-tax">記事を読む →</Link></article>
           <article className="affiliate-card"><div className="affiliate-card-head"><span>USD ALERT</span><b>DMM 株</b></div><p className="affiliate-category">USD SHORTAGE</p><h3>米ドル不足・立替金</h3><p>強制為替取引、取引・出金制限、円貨・外貨決済、解消手順を整理します。</p><Link href="/articles/dmm-kabu-usd-shortage">記事を読む →</Link></article>
+        </div>
+      </section>
+
+      <section className="fx-section" aria-labelledby="stock-faq">
+        <div className="section-heading"><div>
+          <p className="section-index">FAQ / COST CHECK</p>
+          <h2 id="stock-faq">株の手数料比較でよくある確認</h2>
+        </div></div>
+        <div className="provider-faq-list">
+          {STOCK_FAQS.map((faq) => (
+            <article key={faq.question}>
+              <h3>{faq.question}</h3>
+              <p>{faq.answer}</p>
+            </article>
+          ))}
         </div>
       </section>
 
