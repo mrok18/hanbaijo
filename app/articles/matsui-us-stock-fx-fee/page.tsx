@@ -4,17 +4,24 @@ import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
   alternates: { canonical: '/articles/matsui-us-stock-fx-fee' },
-  title: '松井証券 為替手数料｜米国株の0円両替と円貨決済25銭',
-  description: '松井証券の為替手数料を、米国株の事前両替0銭と円貨決済1ドル25銭に分けて整理。1,000・5,000・10,000ドルの片道コストと往復の考え方を確認します。',
+  title: '松井証券の外国株手数料｜米国株の売買・為替コストを整理',
+  description: '松井証券の外国株（米国株）手数料を、売買手数料0.495%・上限22米ドル、事前両替0銭、円貨決済25銭／米ドル、NISA無料に分けて整理します。',
 };
 
 export default function Page() {
   return <article>
     <p className="page-kicker">MATSUI / US STOCK FX COST</p>
-    <h1>松井証券の為替手数料<br />米国株の0円両替と円貨決済25銭</h1>
-    <p className="lede">松井証券 為替手数料を確認するときは、米国株を注文する通貨を分けます。注文前に米ドルへ事前両替する場合は0銭、円のまま円貨決済する場合は1ドル25銭として、取引金額別の負担を計算します。</p>
+    <h1>松井証券の外国株手数料<br />米国株の売買・為替コストを整理</h1>
+    <p className="lede">松井証券の外国株（米国株）手数料は、売買手数料と為替コストを分けて確認します。通常取引の約定代金×0.495％（上限22米ドル）に加え、注文前に米ドルへ事前両替する場合は0銭、円貨決済では1ドル25銭がかかります。</p>
 
-    <div className="callout"><strong>松井証券 為替手数料の結論：事前両替は0銭、円貨決済は1ドル25銭</strong><p>「手数料0円」は米ドルと日本円の事前両替に限った条件です。円貨決済では約定に伴う交換コストが別にかかるため、注文画面の取引通貨を確認してください。</p></div>
+    <div className="callout"><strong>松井証券の外国株手数料：売買0.495％、両替は事前0銭</strong><p>通常の米国株売買手数料は約定代金×0.495％（税込、上限22米ドル）です。米ドルと日本円の事前両替は為替手数料0銭ですが、円貨決済では25銭／米ドルが別にかかります。NISAの売買手数料無料も口座区分をそろえて確認します。</p></div>
+
+    <h2>外国株（米国株）の売買手数料</h2>
+    <div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th>条件</th><th>売買手数料</th><th>追加コスト</th></tr></thead><tbody>
+      <tr><td className="ex-name">通常口座・米ドル決済</td><td><strong>約定代金×0.495％</strong><br />上限22米ドル</td><td>事前両替なら為替手数料0銭</td></tr>
+      <tr><td className="ex-name">通常口座・円貨決済</td><td><strong>約定代金×0.495％</strong><br />上限22米ドル</td><td>25銭／米ドルを為替レートに含む</td></tr>
+      <tr><td className="ex-name">NISA口座</td><td><strong>0米ドル</strong></td><td>円貨決済の為替コストは別に確認</td></tr>
+    </tbody></table></div><p className="panel-note">松井証券の公式料金表に基づく整理です。最低手数料は0米ドルですが、約定代金が2.22米ドル以下の場合は手数料無料となる条件があります。</p></div>
 
     <h2>結論：無料なのは事前両替</h2>
     <div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th>方法</th><th>為替コスト</th><th>処理</th></tr></thead><tbody>
