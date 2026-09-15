@@ -5,8 +5,8 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata: Metadata = {
-  title: '米国株・外国株式 手数料 比較｜売買・為替・現地費用を整理',
-  description: '米国株・外国株式の売買手数料を比較し、為替コスト、現地費用、信用取引やNISAの条件を整理。DMM 株・松井証券・楽天証券の違いと計算方法を案内します。',
+  title: '外国株式 手数料 比較｜米国株・中国株・ASEAN株の売買コスト',
+  description: '外国株式の手数料を比較し、米国株・中国株・ASEAN株の売買手数料、為替コスト、現地費用、NISA条件を同じ基準で整理します。',
   alternates: { canonical: '/stocks' },
 };
 
@@ -52,12 +52,12 @@ export default function StocksPage() {
       <section className="fx-hero">
         <div>
           <p className="page-kicker">STOCK COST GUIDE</p>
-          <h1>米国株・外国株式の手数料比較と仕組み<br /><em>売買・為替・現地費用を整理</em></h1>
+          <h1>外国株式 手数料 比較と仕組み<br /><em>米国株・中国株・ASEAN株の売買コスト</em></h1>
           <p className="lede">
-            米国株 手数料 比較や外国株式 売買 手数料を調べるときは、現物と信用を分け、売買手数料だけでなく、為替コスト、買方金利、売建の貸株料、SEC Fee、優遇条件まで確認します。
-            米国株・中国株・ASEAN株など市場ごとの費用を対象別に切り分け、同じ取引金額と保有日数で比べられる比較表・計算方法へ案内します。
+            外国株式 手数料 比較では、米国株・中国株・ASEAN株など市場ごとに、売買手数料、為替コスト、現地費用を分けて確認します。
+            現物と信用、NISAの適用条件も同じ取引金額と保有日数でそろえ、比較表・計算方法へ案内します。
           </p>
-          <div className="callout"><strong>米国株 手数料 比較で最初に見る4項目</strong><p>売買手数料、為替コスト、現地費用、NISAなどの適用条件を同じ取引金額・決済方法でそろえると、見かけの手数料0円だけでは分からない実負担を比べられます。</p></div>
+          <div className="callout"><strong>結論：外国株式は市場別に4つの費用を比較</strong><p>売買手数料、為替コスト、現地費用、NISAなどの適用条件を同じ取引金額・決済方法でそろえると、見かけの手数料0円だけでは分からない実負担を比べられます。</p></div>
           <div className="callout"><strong>外国株式の売買手数料は市場別に比較</strong><p>米国株、中国株、ASEAN株では料率、最低・上限手数料、為替コスト、現地費用が異なります。市場別の条件を同じ取引金額へ換算して比べると、売買手数料だけでは見えない差を確認できます。<br /><Link href="/articles/foreign-stock-trading-fees">外国株式の市場別比較を見る →</Link></p></div>
           <div className="callout"><strong>米国株信用の手数料比較は、0.33％の外側を見る</strong><p>DMM 株・松井証券・楽天証券は通常の取引手数料が約定代金×0.33％（上限16.5ドル）で並びます。差が出るのは買方金利、売建対応、日計り・大口優遇、SEC Feeなどです。</p></div>
           <div className="hero-actions">
