@@ -4,8 +4,8 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata: Metadata = {
-  title: '国内株式 手数料比較｜松井証券・楽天・GMO・DMMの往復コスト',
-  description: '国内株式の手数料を、10万・50万・100万円の同日往復と別日売却で比較。松井証券・楽天・GMOクリック証券・DMM 株の無料条件と別コストを整理します。',
+  title: '国内株式 売買 手数料比較｜松井証券・楽天・GMO・DMMの往復コスト',
+  description: '国内株式の売買手数料を、10万・50万・100万円の同日往復と別日売却で比較。松井証券・楽天・GMOクリック証券・DMM 株の無料条件と別コストを整理します。',
   alternates: { canonical: '/stocks/domestic-fee-comparison' },
 };
 
@@ -114,8 +114,8 @@ export default function Page() {
       <header className="comparison-intro">
         <div>
           <p className="page-kicker">DOMESTIC STOCK / PUBLISHED DATA</p>
-          <h1>国内株式の手数料比較<br /><em>松井証券・楽天・GMO・DMMの往復コスト</em></h1>
-          <p className="lede">国内株式 手数料を比較するなら、1注文制・1日定額・条件付き0円を分けます。松井証券・楽天・GMOクリック証券・DMM 株を同じ条件で比べ、10万円・50万円・100万円の同日往復と別日売却で実際の負担を確認します。</p>
+          <h1>国内株式の売買手数料比較<br /><em>松井証券・楽天・GMO・DMMの往復コスト</em></h1>
+          <p className="lede">国内株式の売買手数料を比較するなら、1注文制・1日定額・条件付き0円を分けます。松井証券・楽天・GMOクリック証券・DMM 株を同じ条件で比べ、10万円・50万円・100万円の同日往復と別日売却で実際の負担を確認します。</p>
         </div>
         <aside>
           <span>CHECKED</span><strong>2026-09-14</strong>
