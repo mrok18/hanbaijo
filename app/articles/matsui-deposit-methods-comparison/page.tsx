@@ -4,15 +4,30 @@ import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
   alternates: { canonical: '/articles/matsui-deposit-methods-comparison' },
-  title: '松井証券の入金方法｜手数料無料の6種類と反映時間',
-  description: '松井証券の入金方法を、ネットリンク・らくらく振替・MATSUI Bankなど手数料無料の方法と銀行振込に分けて整理。反映時間と注意点も確認できます。',
+  title: '松井バンク 振込手数料｜松井証券の入金方法と反映時間',
+  description: '松井バンク（MATSUI Bank）から松井証券へ入金する振込手数料と反映時間を解説。無料の即時入金と銀行振込の利用者負担を比較し、注意点も確認できます。',
 };
+
+const FAQS = [
+  {
+    question: '松井バンクの入金手数料はかかりますか？',
+    answer: 'MATSUI Bank入金とスイープ入金の振替手数料は無料です。銀行振込で入金する場合は、利用する金融機関の振込手数料が利用者負担になることがあります。',
+  },
+  {
+    question: '松井バンクから松井証券へはいつ反映されますか？',
+    answer: 'MATSUI Bank入金は原則リアルタイムで反映されます。ただし、メンテナンスや金融機関の稼働状況によって遅れる場合があるため、入出金履歴も確認してください。',
+  },
+  {
+    question: '松井バンク入金と銀行振込の違いは何ですか？',
+    answer: '松井バンク入金は無料・リアルタイムで手続きできます。一方、銀行振込は専用口座へ送金し、営業日日中でも通常30〜60分かかり、振込手数料は利用者負担です。',
+  },
+];
 
 export default function Page() {
   return <article>
     <p className="page-kicker">MATSUI / DEPOSIT METHODS</p>
-    <h1>松井証券の入金方法<br />手数料無料の6種類と反映時間</h1>
-    <p className="lede">松井証券の入金方法は、ネットリンク入金・らくらく振替入金・MATSUI Bank入金・定期入金など6種類です。手数料無料の方法と銀行振込（利用者負担）を、反映時間や事前設定とあわせて比較します。</p>
+    <h1>松井バンク 振込手数料｜松井証券の入金方法<br />無料条件と反映時間</h1>
+    <p className="lede">松井証券の入金方法は、ネットリンク入金・らくらく振替入金・MATSUI Bank入金・定期入金など6種類です。松井バンクの振込手数料が無料になる条件と、銀行振込（利用者負担）の違いを反映時間や事前設定とあわせて比較します。</p>
     <div className="callout"><strong>結論：即時入金は手数料無料、銀行振込は利用者負担</strong><p>松井証券公式では、ネットリンク入金・らくらく振替入金・MATSUI Bank入金・スイープ入金・定期入金の振替／振込手数料は無料です。銀行振込入金は金融機関側の入金手数料がかかる場合があります。</p></div>
 
     <h2>松井証券 入金手数料を6種類で比較</h2>
@@ -68,6 +83,10 @@ export default function Page() {
     <section className="article-affiliate" aria-label="松井証券の広告">
       <AffiliateOfferCard offer={AFFILIATE_OFFERS['matsui-fx']} />
       <p className="affiliate-disclosure">広告リンクから申込みが成立すると、当サイトが報酬を受け取る場合があります。対応金融機関・利用時間は公式サイトで確認してください。</p>
+    </section>
+
+    <section className="article-faq" aria-labelledby="faq"><h2 id="faq">松井バンク振込手数料のFAQ</h2>
+      {FAQS.map((item) => <div className="faq-item" key={item.question}><h3>{item.question}</h3><p>{item.answer}</p></div>)}
     </section>
 
     <section className="article-sources" aria-labelledby="sources"><h2 id="sources">参照した公式資料</h2><ul>
