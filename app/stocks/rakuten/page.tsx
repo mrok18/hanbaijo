@@ -2,16 +2,16 @@ import StockProviderFactSheet from '@/components/StockProviderFactSheet';
 import { STOCK_PROVIDERS } from '@/lib/stock-providers';
 
 export const metadata = {
-  title: '楽天証券の株・取引手数料｜日本株の売買とFX',
-  description: '楽天証券の株・取引手数料を、日本株（国内株式）の現物・信用、ゼロコース0円条件、SOR・Rクロスの同意、金利・貸株料など別コストに分けて確認します。FXの取引手数料・スプレッド・スワップは専用記事へ案内します。',
+  title: '楽天証券 信用取引 手数料｜国内株の売買コストと確認ポイント',
+  description: '楽天証券の信用取引手数料を、国内株式の現物手数料、0円条件、信用取引の金利・貸株料などに分けて確認します。注文前に公式条件と実際の取引コストを確認できます。',
   alternates: { canonical: '/stocks/rakuten' },
 };
 
 export default function Page() {
   return <StockProviderFactSheet
     provider={STOCK_PROVIDERS.rakuten}
-    heading="楽天証券の株・取引手数料｜日本株の売買と0円条件"
-    keyNumbersHeading="楽天証券の株・取引手数料と別コスト"
+    heading="楽天証券 信用取引 手数料｜国内株の売買コストと0円条件"
+    keyNumbersHeading="楽天証券の信用取引手数料と別コスト"
     relatedArticles={[
     {
       href: '/articles/rakuten-securities-domestic-stock-fees',
