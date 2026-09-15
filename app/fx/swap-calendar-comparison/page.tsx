@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'FXスワップカレンダー10社比較｜単位・付与日数・確認先【2026年】',
-  description: 'FX10社のスワップカレンダーを、米ドル円の表示単位、付与日数、更新・付与タイミングで比較。1万通貨・1日分へそろえる計算式と公式確認先をまとめます。',
+  title: 'スワップ カレンダー比較｜FX10社の確認先・付与日数・単位【2026年】',
+  description: 'スワップカレンダーをFX10社で比較し、米ドル円の表示単位、付与日数、更新・付与タイミングを整理。1万通貨・1日分へそろえる計算式と公式確認先をまとめます。',
   alternates: { canonical: '/fx/swap-calendar-comparison' },
 };
 
@@ -85,7 +85,7 @@ export default function Page() {
       <header className="comparison-intro fx-swap-comparison-intro">
         <div>
           <p className="page-kicker">FX SWAP CALENDAR / PUBLISHED DATA</p>
-          <h1>スワップの金額より先に、<br /><em>単位と付与日数をそろえる。</em></h1>
+          <h1>スワップ カレンダー比較｜FX10社の確認先と付与日数<br /><em>表示単位をそろえて見る。</em></h1>
           <p className="lede">同じ「100円」でも、1,000通貨か1万通貨か、1日分か3日分かで意味が変わります。10社の公式な確認場所と表示ルールを整理しました。</p>
         </div>
         <aside>
