@@ -2,8 +2,8 @@ import StockProviderFactSheet from '@/components/StockProviderFactSheet';
 import { STOCK_PROVIDERS } from '@/lib/stock-providers';
 
 export const metadata = {
-  title: '楽天証券 国内株式 手数料｜現物・信用の0円条件と別コスト',
-  description: '楽天証券の国内株式手数料を、現物・信用のゼロコース0円条件、SOR・Rクロスの同意、金利・貸株料など別コストに分けて確認します。',
+  title: '楽天証券 手数料｜国内株式とFXの確認ポイント',
+  description: '楽天証券の国内株式手数料を、現物・信用のゼロコース0円条件、SOR・Rクロスの同意、金利・貸株料など別コストに分けて確認します。FXの取引手数料・スプレッド・スワップは専用記事へ案内します。',
   alternates: { canonical: '/stocks/rakuten' },
 };
 
@@ -19,6 +19,13 @@ export default function Page() {
       description: '注文前の概算、取引履歴、取引報告書を使い分け、ゼロコースの適用と信用取引の別費用まで確認します。',
       tag: 'FEE CHECK',
       linkLabel: '確認方法を見る →',
+    },
+    {
+      href: '/articles/rakuten-fx-fees-total-cost',
+      title: '楽天証券 FX 手数料を確認',
+      description: '楽天FXの取引手数料0円だけでなく、時間帯・数量別スプレッド、スワップ、スリッページを総コストで確認します。',
+      tag: 'FX FEES',
+      linkLabel: 'FXの手数料を見る →',
     },
     {
       href: '/stocks/domestic-fee-comparison',
