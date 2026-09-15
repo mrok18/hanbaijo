@@ -58,7 +58,7 @@ export default function Page() {
       <header className="comparison-intro futures-comparison-intro">
         <div>
           <p className="page-kicker">NIKKEI 225 FUTURES / PUBLISHED DATA</p>
-          <h1>225先物の手数料比較<br /><em>日経225先物・mini・マイクロ2社</em></h1>
+          <h1>日経225先物 手数料比較<br /><em>ラージ・mini・マイクロ2社</em></h1>
           <p className="lede">225先物 手数料を比べるときは、ラージ・mini・マイクロを分け、標準インターネット取引の片道と往復をそろえます。松井証券と楽天証券を同じ条件で比較し、1ティックに対する負担も確認します。</p>
         </div>
         <aside>
