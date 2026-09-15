@@ -4,8 +4,8 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata: Metadata = {
-  title: '国内株式 売買 手数料比較｜松井証券・楽天・GMO・DMMの往復コスト',
-  description: '国内株式の売買手数料を、10万・50万・100万円の同日往復と別日売却で比較。松井証券・楽天・GMOクリック証券・DMM 株の無料条件と別コストを整理します。',
+  title: '株の売買手数料比較｜国内株4社の往復コストと無料条件',
+  description: '株の売買手数料を国内株式4社で比較。10万・50万・100万円の同日往復と別日売却をそろえ、1注文制・1日定額・条件付き0円の違いと別コストを整理します。',
   alternates: { canonical: '/stocks/domestic-fee-comparison' },
 };
 
@@ -29,6 +29,10 @@ const FAQS = [
   {
     question: '国内株式の手数料は、1注文と1日定額のどちらで比べますか？',
     answer: '売買回数と取引日をそろえて比べます。1注文制は買付と売却の各注文に料金がかかり、1日定額制は同じ日に成立した約定代金を合算するため、同じ金額でも取引日によって結果が変わります。',
+  },
+  {
+    question: '株の売買手数料は、何をそろえて比較すればよいですか？',
+    answer: '現物か信用か、1注文制か1日定額制か、買付と売却を同日に行うかをそろえます。無料条件がある場合はコース・年齢・取引経路も確認し、信用金利や単元未満株の費用は売買手数料と分けて比較します。',
   },
 ] as const;
 
@@ -114,8 +118,8 @@ export default function Page() {
       <header className="comparison-intro">
         <div>
           <p className="page-kicker">DOMESTIC STOCK / PUBLISHED DATA</p>
-          <h1>国内株式の売買手数料比較<br /><em>松井証券・楽天・GMO・DMMの往復コスト</em></h1>
-          <p className="lede">国内株式の売買手数料を比較するなら、1注文制・1日定額・条件付き0円を分けます。松井証券・楽天・GMOクリック証券・DMM 株を同じ条件で比べ、10万円・50万円・100万円の同日往復と別日売却で実際の負担を確認します。</p>
+          <h1>株の売買手数料比較<br /><em>国内株式4社の往復コストと無料条件</em></h1>
+          <p className="lede">株の売買手数料を比較するなら、まず国内株式の現物取引で条件をそろえ、1注文制・1日定額・条件付き0円を分けます。松井証券・楽天・GMOクリック証券・DMM 株を同じ条件で比べ、10万円・50万円・100万円の同日往復と別日売却で実際の負担を確認します。</p>
         </div>
         <aside>
           <span>CHECKED</span><strong>2026-09-14</strong>
