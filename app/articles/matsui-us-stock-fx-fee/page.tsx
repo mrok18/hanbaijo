@@ -2,17 +2,34 @@ import Link from 'next/link';
 import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
+const FAQS = [
+  {
+    question: '松井証券のアメリカ株（米国株）手数料はいくらですか？',
+    answer: '特定・一般口座の現物取引は約定代金の0.495％（税込、上限22米ドル）です。約定代金が2.22米ドル以下の場合は売買手数料が無料になる条件があります。',
+  },
+  {
+    question: '松井証券の米国株で円貨決済をすると為替手数料はいくらですか？',
+    answer: '円貨決済では1米ドルあたり25銭の為替コストがかかります。事前に米ドルへ両替して外貨決済する場合は、公式案内上の為替手数料は0銭です。',
+  },
+  {
+    question: 'NISAなら松井証券のアメリカ株手数料はすべて無料ですか？',
+    answer: 'NISA口座の米国株売買手数料は0米ドルですが、円貨決済の為替コストは別に発生します。売買手数料と通貨交換コストを分けて確認してください。',
+  },
+] as const;
+
 export const metadata = {
   alternates: { canonical: '/articles/matsui-us-stock-fx-fee' },
-  title: '松井証券 米国株 手数料は高い？売買・為替コストを整理',
-  description: '松井証券の米国株手数料は高いのか、売買手数料0.495%・上限22米ドル、事前両替0銭、円貨決済25銭／米ドル、NISA無料に分けて整理します。',
+  title: '松井証券 アメリカ株（米国株）手数料｜売買・為替コスト',
+  description: '松井証券のアメリカ株（米国株）手数料を、売買0.495%・上限22米ドル、事前両替0銭、円貨決済25銭／米ドル、NISA無料に分けて整理します。',
 };
 
 export default function Page() {
+  const faqJsonLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: FAQS.map((faq) => ({ '@type': 'Question', name: faq.question, acceptedAnswer: { '@type': 'Answer', text: faq.answer } })) };
   return <article>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd).replace(/</g, '\\u003c') }} />
     <p className="page-kicker">MATSUI / US STOCK FX COST</p>
-    <h1>松井証券 米国株 手数料は高い？<br />売買・為替コストを整理</h1>
-    <p className="lede">松井証券の外国株（米国株）手数料は、売買手数料と為替コストを分けて確認します。通常取引の約定代金×0.495％（上限22米ドル）に加え、注文前に米ドルへ事前両替する場合は0銭、円貨決済では1ドル25銭がかかります。</p>
+    <h1>松井証券 アメリカ株（米国株）手数料は高い？<br />売買・為替コストを整理</h1>
+    <p className="lede">松井証券のアメリカ株（米国株）手数料は、売買手数料と為替コストを分けて確認します。通常取引の約定代金×0.495％（上限22米ドル）に加え、注文前に米ドルへ事前両替する場合は0銭、円貨決済では1ドル25銭がかかります。</p>
 
     <div className="callout"><strong>松井証券の外国株手数料：売買0.495％、両替は事前0銭</strong><p>通常の米国株売買手数料は約定代金×0.495％（税込、上限22米ドル）です。米ドルと日本円の事前両替は為替手数料0銭ですが、円貨決済では25銭／米ドルが別にかかります。NISAの売買手数料無料も口座区分をそろえて確認します。</p></div>
 
@@ -56,6 +73,7 @@ export default function Page() {
     <p><Link href="/articles/us-stock-fx-cost">為替コストの一般的な計算方法を見る →</Link></p>
     <p><Link href="/articles/matsui-us-stock-trading-hours">松井証券の米国株取引時間を見る →</Link></p>
     <p><Link href="/stocks/matsui">松井証券の株式コストシートへ →</Link></p>
+    <section className="calculator-explain" aria-labelledby="matsui-us-stock-fee-faq"><p className="section-index">FAQ / MATSUI US STOCK</p><h2 id="matsui-us-stock-fee-faq">松井証券アメリカ株手数料のよくある質問</h2><div className="provider-faq-list">{FAQS.map((faq) => <article key={faq.question}><h3>{faq.question}</h3><p>{faq.answer}</p></article>)}</div></section>
     <section className="article-affiliate" aria-label="関連する広告"><AffiliateOfferCard offer={AFFILIATE_OFFERS['matsui-fx']} /><p className="affiliate-disclosure">松井証券への広告リンクです。申込み成立時に当サイトが報酬を受け取る場合があります。</p></section>
   </article>;
 }
