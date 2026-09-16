@@ -4,15 +4,23 @@ import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
   alternates: { canonical: '/articles/trading-cost-break-even-return' },
-  title: 'FXの手数料負けを防ぐ｜スプレッド込み損益分岐点を計算',
-  description: 'FXの手数料負けを防ぐため、スプレッドと取引手数料を往復コストへ直し、損益分岐点・必要な値幅を計算します。株・CFD・先物にも応用できる式を整理。',
+  title: 'FX手数料負けとは？スプレッド込み損益分岐点を計算',
+  description: 'FX手数料負けとは、スプレッドや取引手数料で利益が消える状態です。往復コストをpipsと円へ換算し、損益分岐点と回避手順を計算します。',
 };
+
+const FAQS = [
+  { question: 'FXの手数料負けとは何ですか？', answer: '値動きによる粗利益より、往復スプレッド・取引手数料・スワップなどの総コストが大きくなり、決済後の損益がマイナスになる状態です。' },
+  { question: '何pips動けば手数料負けを回避できますか？', answer: '往復総コストを1pipsあたりの損益で割った値が目安です。たとえば1万通貨で1pipsが100円、総コストが800円なら、8pipsを超える値幅が損益分岐ラインになります。' },
+  { question: '手数料負けを防ぐにはどうすればよいですか？', answer: '取引前にスプレッドをpipsへ換算し、取引手数料と想定保有日数分のスワップを合算します。短期売買では平均値幅と比較し、コストを回収できる見込みがない取引を避けます。' },
+];
 
 export default function Page() {
   return <article>
     <p className="page-kicker">COST / BREAK-EVEN RETURN</p>
-    <h1>FXの手数料負けを防ぐ<br />スプレッド込みの損益分岐点を計算</h1>
-    <p className="lede">FXでは取引手数料が無料でも、スプレッドはポジションを持った瞬間のコストです。往復のスプレッドと手数料、保有中のスワップを合計し、何pips動けば損益ゼロに戻るかを計算します。</p>
+    <h1>FX手数料負けとは？<br />スプレッド込みの損益分岐点を計算</h1>
+    <p className="lede">FXの手数料負けは、値動きによる粗利益がスプレッド・取引手数料・スワップの合計を下回る状態です。往復コストを円とpipsへ直し、何pips動けば損益ゼロに戻るかを取引前に確認します。</p>
+
+    <div className="callout"><strong>先に答え：手数料負けの境界は「総コスト÷1pipsの損益」</strong><p>1万通貨で1pips＝100円、往復コスト＝800円なら、8pipsが損益分岐ラインです。値動きが8pips以下なら、方向が合っていても手数料負けになります。</p></div>
 
     <h2>結論：総コストを取引金額で割る</h2>
     <div className="formula-box">
@@ -38,6 +46,13 @@ export default function Page() {
     </div>
     <p>先物やCFDでは、価格が1単位動いたときの損益が商品ごとに違います。その場合は総コストを1ティック・1ポイント当たりの損益で割り、必要なティック数やポイント数へ換算します。</p>
 
+    <h2>FXの手数料負けをpipsで判定する</h2>
+    <div className="formula-box">
+      <code>必要pips ＝ 往復総コスト ÷ 1pipsあたりの損益</code>
+      <small>1万通貨のドル円では、1pips（0.01円）の損益は約100円です。通貨ペア・取引数量で変わるため、口座の取引単位に合わせて再計算します。</small>
+    </div>
+    <p>たとえばスプレッド0.2pips、取引手数料0円、スワップを含む往復総コストが0.8pips相当なら、往復で0.8pipsを超える値幅が必要です。エントリー直後はスプレッド分だけ含み損になるため、狭い値幅を狙うほどコストの影響率が上がります。</p>
+
     <h2>商品ごとに総コストへ含めるもの</h2>
     <div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th>商品</th><th>主な売買コスト</th><th>保有時に確認するコスト</th></tr></thead><tbody>
       <tr><td className="ex-name">国内株</td><td>売買手数料、信用取引の諸費用</td><td>信用金利、貸株料、品貸料</td></tr>
@@ -59,11 +74,15 @@ export default function Page() {
     <p>価格が1％上がっても、往復コストが0.8％なら手取り利益率は概算0.2％です。さらに税金や為替変動があれば、口座上の最終損益は変わります。商品を比較するときは「手数料無料」という表示ではなく、同じ取引金額と保有期間で総額を揃えます。</p>
     <div className="callout"><strong>損益分岐点は利益目標ではありません</strong><p>損益がゼロになる境界を示すだけで、値上がりや約定を保証するものではありません。スリッページ、急変時のスプレッド拡大、税金など計算外の要素もあります。</p></div>
 
+    <h2>FX手数料負けに関するよくある質問</h2>
+    <div className="faq-list">{FAQS.map((item) => <details key={item.question}><summary>{item.question}</summary><p>{item.answer}</p></details>)}</div>
+
     <p><Link href="/tools/trading-break-even-calculator">専用計算機で損益分岐率と必要値幅を計算する →</Link></p>
     <p><Link href="/tools/cost-calculator">共通取引コスト計算機で総額を試す →</Link></p>
     <p><Link href="/articles/risk-reward-break-even-win-rate">リスクリワードと損益分岐勝率を見る →</Link></p>
     <p><Link href="/articles/stock-round-trip-cost">国内株の往復コストを見る →</Link></p>
     <p><Link href="/articles/fx-spread-cost">FXスプレッドを円換算する →</Link></p>
-    <section className="article-affiliate" aria-label="関連する広告"><AffiliateOfferCard offer={AFFILIATE_OFFERS['dmm-cfd']} /><p className="affiliate-disclosure">DMM CFDへの広告リンクです。申込み成立時に当サイトが報酬を受け取る場合があります。</p></section>
+    <section className="article-affiliate" aria-label="関連する広告"><AffiliateOfferCard offer={AFFILIATE_OFFERS['monex-fxplus']} /><p className="affiliate-disclosure">マネックス証券 FXPLUSへの広告リンクです。申込み成立時に当サイトが報酬を受け取る場合があります。掲載条件と取引コストの説明は分けています。</p></section>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: FAQS.map((item) => ({ '@type': 'Question', name: item.question, acceptedAnswer: { '@type': 'Answer', text: item.answer } })) }) }} />
   </article>;
 }
