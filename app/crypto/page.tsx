@@ -8,17 +8,27 @@ import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const revalidate = 60;
 export const metadata: Metadata = {
-  title: '暗号資産のスプレッド実測｜BTC/JPYの販売所・取引所比較',
-  description: 'BTC/JPYの公開APIから取得した気配値をもとに、暗号資産の販売所・取引所スプレッドと片道コストを比較します。',
+  title: '暗号資産 スプレッド｜BTC/JPY販売所・取引所の実測比較',
+  description: '暗号資産のスプレッドをBTC/JPY公開APIで実測。販売所・取引所の買値と売値の差、100万円あたり片道コスト、約定時の注意点を同じ条件で比較します。',
   alternates: { canonical: '/crypto' },
 };
 
 export default async function CryptoPage() {
   const snap = await measureAll();
   const live = snap.rows.filter((row) => !row.error && row.spreadPct !== null);
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: '暗号資産のスプレッドとは何ですか？', acceptedAnswer: { '@type': 'Answer', text: '買値（ask）と売値（bid）の差です。買ってすぐ売る場合は、この価格差が売買コストの目安になります。' } },
+      { '@type': 'Question', name: '販売所と取引所のスプレッドは同じですか？', acceptedAnswer: { '@type': 'Answer', text: '同じではありません。販売所は事業者が提示する価格、取引所は板の最良気配を使うため、形式と約定条件を分けて確認します。' } },
+      { '@type': 'Question', name: '暗号資産のスプレッドを円換算するには？', acceptedAnswer: { '@type': 'Answer', text: 'スプレッド率に取引金額を掛けて概算します。このページでは100万円分を買った場合の片道コストとして表示しています。実際の約定価格や数量制限は各社の最新条件を確認してください。' } },
+    ],
+  };
   return <div className="content-page">
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
     <p className="page-kicker">CRYPTO / LIVE DATA</p>
-    <h1>暗号資産のコストを<br />同じ条件で見る</h1>
+    <h1>暗号資産 スプレッドを<br />同じ条件で見る</h1>
     <p className="lede">BTC/JPYの公開APIから気配値を取得し、販売所と取引所の売買スプレッドを同じ計算方法で比較しています。広告掲載の有無と順位は分けて表示します。</p>
     <div className="callout"><strong>最終計測：{jst(snap.measuredAt)}</strong><p>取得成功 {live.length} / {snap.rows.length}件。失敗した値は補完せず、次回計測まで欠測として扱います。</p></div>
     <section aria-labelledby="crypto-next-steps">
@@ -34,6 +44,7 @@ export default async function CryptoPage() {
       {snap.rows.map((row) => row.error ? <tr key={row.id}><td>{row.name}</td><td>{row.venue === 'dealer' ? '販売所' : '取引所'}</td><td colSpan={4}>取得エラー（次回再試行）</td></tr> : <tr key={row.id}><td><a href={row.url} target="_blank" rel="noopener noreferrer">{row.name}</a></td><td>{row.venue === 'dealer' ? '販売所' : '取引所'}</td><td className="num">{jpy(row.ask!)}</td><td className="num">{jpy(row.bid!)}</td><td className="num"><strong>{pct(row.spreadPct!)}</strong></td><td className="num">約{jpy(estimateOneWaySpreadCost(1_000_000, row.spreadPct!))}円</td></tr>)}
     </tbody></table></div>
     <h2>数字の読み方</h2><ul><li>買値（ask）と売値（bid）の差がスプレッドです。</li><li>100万円片道は、スプレッドの半分を片道コストとして試算しています。</li><li>販売所は提示価格、取引所は板の最良気配であり、約定を保証する値ではありません。</li></ul>
+    <section className="article-faq" aria-labelledby="crypto-faq"><h2 id="crypto-faq">暗号資産スプレッドのFAQ</h2><details><summary>暗号資産のスプレッドとは何ですか？</summary><p>買値（ask）と売値（bid）の差です。買ってすぐ売る場合は、この価格差が売買コストの目安になります。</p></details><details><summary>販売所と取引所のスプレッドは同じですか？</summary><p>同じではありません。販売所は事業者が提示する価格、取引所は板の最良気配を使うため、形式と約定条件を分けて確認します。</p></details><details><summary>暗号資産のスプレッドを円換算するには？</summary><p>スプレッド率に取引金額を掛けて概算します。このページでは100万円分を買った場合の片道コストとして表示しています。実際の約定価格や数量制限は各社の最新条件を確認してください。</p></details></section>
     <div className="post-list"><div><Link href="/articles/gmo-coin-trading-fees">GMOコインの手数料｜販売所・取引所・暗号資産FX →</Link><p>サービスごとのコストを公式情報で整理</p></div><div><Link href="/articles/gmo-coin-api-public-private">GMOコインAPIのPublic・Private比較 →</Link><p>自動取得とキー管理の注意点を確認</p></div><div><Link href="/articles/gmo-coin-forex-fx">GMOコイン外国為替FXの取引単位 →</Link><p>暗号資産以外のFX商品も確認</p></div><div><Link href="/articles/bitbank-trading-fees">bitbankの取引手数料と販売所の差 →</Link><p>板取引と提示価格の違いを確認</p></div><div><Link href="/articles/crypto-collateral-loan-risk-checklist">暗号資産担保ローンの確認項目 →</Link><p>担保掛目・LTV・強制決済を整理</p></div><div><Link href="/articles/hanbaijo-torihikijo">販売所と取引所は何が違うのか →</Link><p>暗号資産の基本構造を読む</p></div></div>
     <section className="article-sources" aria-labelledby="sources"><h2 id="sources">データ・参照先</h2><ul><li><a href="https://coin.z.com/jp/" target="_blank" rel="noopener noreferrer">GMOコイン公式サイト</a></li><li><a href="https://bitbank.cc/" target="_blank" rel="noopener noreferrer">bitbank公式サイト</a></li><li><a href="https://bitflyer.com/" target="_blank" rel="noopener noreferrer">bitFlyer公式サイト</a></li></ul><p>公開APIの取得値を自動更新しています。各社の利用規約・API仕様・取引画面をあわせてご確認ください。</p></section>
     <section className="article-affiliate" aria-label="暗号資産担保ローンの広告"><AffiliateOfferCard offer={AFFILIATE_OFFERS['digital-asset-loan']} /><p className="affiliate-disclosure">暗号資産担保ローンへの広告リンクです。広告の有無や報酬額は、実測値・比較結果・掲載順位に影響しません。</p></section>
