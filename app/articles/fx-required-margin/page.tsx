@@ -6,8 +6,8 @@ import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata: Metadata = {
   alternates: { canonical: '/articles/fx-required-margin' },
-  title: '証拠金 計算｜FXの必要証拠金を1万通貨で計算',
-  description: 'FXの証拠金計算を、為替レート×取引数量×4％の式で整理します。1,000通貨・1万通貨の必要証拠金、維持率と余裕額の確認方法も解説します。',
+  title: 'FX 証拠金 計算｜必要証拠金を1万通貨で試算',
+  description: 'FXの証拠金計算・必要証拠金を、為替レート×取引数量×4％の式で整理します。1,000通貨・1万通貨の試算、維持率と余裕額の確認方法も解説します。',
 };
 
 const FAQS = [
@@ -41,7 +41,7 @@ export default function Page() {
       <ArticleStructuredData slug="fx-required-margin" publishedAt="2026-09-07" modifiedAt="2026-09-16" includeBreadcrumb={false} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd).replace(/</g, '\\u003c') }} />
       <p className="page-kicker">FX MARGIN</p>
-      <h1>証拠金 計算｜FXの必要証拠金はいくら？</h1>
+      <h1>FX 証拠金 計算｜必要証拠金はいくら？</h1>
       <p className="lede">
         FXの証拠金計算は、取引金額に証拠金率を掛けて求めます。国内の個人向け店頭FXでは、取引金額の4％以上の証拠金が必要です。
         これはレバレッジ25倍以下に相当します。まず取引金額を出し、その4％を計算します。
