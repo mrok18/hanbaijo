@@ -4,8 +4,8 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata: Metadata = {
-  title: '松井証券のFX専用口座とは？総合口座との違い・開設条件・切替方法',
-  description: '松井証券のFX専用口座でできること、総合口座との違い、開設できる人、申込手順、FX専用口座から総合口座への切替方法を公式情報で整理します。',
+  title: '松井証券 FX手数料と専用口座｜無料範囲・総合口座との違い',
+  description: '松井証券FXの取引手数料が無料になる範囲と、スプレッド・スワップ・受渡決済手数料を確認。FX専用口座と総合口座の違い、開設条件、切替方法も公式情報で整理します。',
   alternates: { canonical: '/articles/matsui-account-types' },
 };
 
@@ -56,7 +56,7 @@ export default function Page() {
     headline: metadata.title,
     description: metadata.description,
     datePublished: '2026-09-07',
-    dateModified: '2026-09-13',
+    dateModified: '2026-09-17',
     mainEntityOfPage: 'https://hanbaijo.com/articles/matsui-account-types',
     author: { '@type': 'Organization', name: '金融コストウォッチ' },
     publisher: { '@type': 'Organization', name: '金融コストウォッチ' },
@@ -76,9 +76,9 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <p className="page-kicker">MATSUI ACCOUNT GUIDE</p>
-      <h1>松井証券のFX専用口座とは？<br />総合口座との違い・開設条件・切替方法</h1>
-      <p className="lede">松井証券のFX専用口座とは、MATSUI FXだけを利用できる個人向け口座です。FXだけを始める人は申込先を絞れますが、日本株・投資信託・NISA・先物などを利用するには総合口座への切替が必要です。</p>
-      <div className="callout"><strong>結論：FXだけなら専用口座、他商品も使うなら総合口座</strong><p>FX専用口座は新規の個人が対象です。株やNISAも使う予定があるなら、最初から総合口座とFX口座を同時に申し込むと、後日の書面による切替を省けます。</p></div>
+      <h1>松井証券 FX手数料と専用口座<br />無料範囲・総合口座との違い</h1>
+      <p className="lede">松井証券FXの通常の取引手数料は無料ですが、スプレッド・スワップ・受渡決済手数料は別に確認が必要です。FX専用口座はMATSUI FXだけを利用でき、株・NISA・先物などを使う場合は総合口座への切替が必要です。</p>
+      <div className="callout"><strong>結論：取引手数料0円でも総コストは残る</strong><p>通常のFX取引手数料・口座開設・維持・ロスカットは無料です。一方、スプレッドとスワップ、受渡決済を選ぶ場合の手数料は別にかかるため、料金を確認してから口座を選びます。</p></div>
 
       <h2>松井証券のFX専用口座でできること</h2>
       <p>FX専用口座で取引できる商品はMATSUI FXのみです。FX口座の機能や取引条件は利用できますが、総合口座を前提とする日本株などの取引はできません。</p>
@@ -88,6 +88,16 @@ export default function Page() {
         <li>申込方法：口座開設画面で「FX専用口座」を選ぶ</li>
         <li>他商品を使う場合：書面で総合口座へ切り替える</li>
       </ul>
+
+      <h2>松井証券FXの手数料はいくら？</h2>
+      <p>通常のFX取引手数料は無料です。ただし、買値と売値の差であるスプレッド、建玉を翌取引日へ持ち越したときのスワップ、受渡決済を選ぶ場合の通貨別手数料は残ります。「手数料0円」と「総コスト0円」を分けて確認してください。</p>
+      <div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th>項目</th><th>条件</th><th>確認ポイント</th></tr></thead><tbody>
+        <tr><td className="ex-name">通常のFX取引手数料</td><td><strong>0円</strong></td><td>通常の反対売買</td></tr>
+        <tr><td className="ex-name">口座開設・維持・ロスカット</td><td><strong>0円</strong></td><td>約定価格の差や損失は別</td></tr>
+        <tr><td className="ex-name">スプレッド</td><td>変動</td><td>通貨ペア・数量・注文方法・時間帯</td></tr>
+        <tr><td className="ex-name">スワップ</td><td>受取または支払</td><td>持ち越し日数と付与額</td></tr>
+        <tr><td className="ex-name">受渡決済手数料</td><td><strong>数量×1～20円</strong></td><td>受渡決済を選ぶ場合のみ</td></tr>
+      </tbody></table></div><p className="panel-note">2026年9月17日確認。スプレッドとスワップは市場環境で変動し、条件は変更される場合があります。詳細な通貨別条件は<a href="/fx/matsui">松井証券FXの手数料シート</a>で確認できます。</p></div>
 
       <h2>松井証券の総合口座とは？</h2>
       <p>松井証券の総合口座とは、日本株をはじめ、同社の複数の商品・サービスを利用するための基本口座です。公式の口座開設案内では、日本株、米国株、投資信託、NISA、FX、先物・オプションが取引可能なサービスとして示されています。</p>
