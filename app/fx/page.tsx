@@ -5,8 +5,8 @@ import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 import { FX_PROVIDER_LIST } from '@/lib/fx-providers';
 
 export const metadata: Metadata = {
-  title: 'FX会社比較｜スプレッド・スワップ・取引コスト【2026年】',
-  description: 'FX会社をスプレッドだけで選ばないために、年間コスト、スワップ、最小取引単位、ロスカットを共通条件で比較。無料計算機で自分の数量に換算できます。',
+  title: 'FX手数料・スプレッド比較｜スワップと取引コスト【2026年】',
+  description: 'FXの手数料とスプレッドを同じ条件で比較し、年間コスト、スワップ、最小取引単位、ロスカットまで整理。無料計算機で自分の数量に換算できます。',
   alternates: { canonical: '/fx' },
 };
 
@@ -31,7 +31,7 @@ export default function FxPage() {
       <section className="fx-hero">
         <div>
           <p className="page-kicker">FX COST GUIDE</p>
-          <h1>FXの「狭い」を、<br /><em>円で確かめる。</em></h1>
+          <h1>FXの手数料とスプレッドを、<br /><em>円で確かめる。</em></h1>
           <p className="lede">
             広告のスプレッドだけでは、実際の負担は決まりません。取引数量、時間帯、約定、スワップまで分け、
             同じ条件で比べられる形に整理します。
