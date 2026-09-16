@@ -2,8 +2,8 @@ import Link from 'next/link';
 
 export const metadata = {
   alternates: { canonical: '/articles/dmm-fx-mini-normal-large' },
-  title: 'DMM FXのミニ・通常・ラージの違い｜取引単位とコスト',
-  description: 'DMM FXのミニ・通常・ラージ通貨ペアについて、1Lotの通貨数、必要証拠金、損益、注文上限、スプレッド条件の違いを解説します。',
+  title: 'FXミニとは？DMM FXのミニ・通常・ラージ比較｜取引単位とコスト',
+  description: 'FXミニとは何かをDMM FXで解説。ミニ・通常・ラージの1Lotの通貨数、必要証拠金、損益、注文上限、スプレッド条件を比較します。',
 };
 
 const TYPES = [
@@ -12,11 +12,37 @@ const TYPES = [
   { type: 'ラージ', pairs: '主要4通貨ペア', lot: '10,000通貨', order: '200Lot', margin: '6万円', move: '±1万円', spread: '基準スプレッドなし' },
 ] as const;
 
+const FAQS = [
+  {
+    question: 'FXミニとは何通貨から取引できますか？',
+    answer: 'DMM FXのミニ通貨ペアは1Lotが1,000通貨です。米ドル/円、ユーロ/円、ポンド/円、豪ドル/円の主要4通貨ペアが対象です。',
+  },
+  {
+    question: 'FXミニは通常のFXより手数料が安いですか？',
+    answer: '数量が10分の1なので、同じレート変動なら必要証拠金と損益の金額もおおむね10分の1です。ただし、ミニは基準スプレッドの適用対象外のため、注文直前のBid・Askを確認してコストを判断します。',
+  },
+  {
+    question: 'DMM FXのミニ・通常・ラージはどう選べばよいですか？',
+    answer: '1,000通貨単位で損失を抑えて調整したいならミニ、対象通貨ペアと公表スプレッドを重視するなら通常、主要4通貨ペアで100Lot超の単一注文が必要ならラージが目安です。',
+  },
+] as const;
+
 export default function Page() {
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: FAQS.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: { '@type': 'Answer', text: item.answer },
+    })),
+  };
+
   return (
     <article>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <p className="page-kicker">DMM FX / LOT TYPES</p>
-      <h1>DMM FXのミニ・通常・ラージは何が違う？<br />取引単位とコストを比較</h1>
+      <h1>FXミニとは？DMM FXのミニ・通常・ラージは何が違う？<br />取引単位とコストを比較</h1>
       <p className="lede">3種類は名前だけでなく、1Lotの通貨数、対象通貨ペア、注文上限、スプレッド条件が異なります。少額取引ならミニが候補ですが、「10分の1の数量」と「10分の1の取引コスト」は同じ意味ではありません。</p>
 
       <div className="callout"><strong>先に結論</strong><p>米ドル/円を1Lot取引する場合、ミニは1,000通貨、通常とラージは1万通貨です。ただし、ミニとラージには基準スプレッド（原則固定）がありません。注文画面の実際のBid・Askを見てから判断します。</p></div>
@@ -61,6 +87,16 @@ export default function Page() {
         <li><strong>ラージ：</strong>主要4通貨ペアで100Lotを超える単一注文が必要</li>
       </ul>
       <p>最小資金だけで決めず、スプレッドを円換算した金額、損切り時の想定損失、保有期間中のスワップまで合わせて比較します。</p>
+
+      <section className="faq" aria-labelledby="faq">
+        <h2 id="faq">FXミニに関するよくある質問</h2>
+        {FAQS.map((item) => (
+          <details key={item.question}>
+            <summary>{item.question}</summary>
+            <p>{item.answer}</p>
+          </details>
+        ))}
+      </section>
 
       <section className="article-sources" aria-labelledby="sources">
         <h2 id="sources">参照した公式資料</h2>
