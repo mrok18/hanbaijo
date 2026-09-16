@@ -1,5 +1,5 @@
 export interface AffiliateOffer {
-  id: 'fxtf' | 'systre-select-365' | 'dmm-cfd' | 'dmm-kabu' | 'matsui-fx' | 'jfx' | 'tossy' | 'ablenet-vps' | 'fpo-fx-guide' | 'digital-asset-loan' | 'monex-fxplus';
+  id: 'fxtf' | 'systre-select-365' | 'dmm-cfd' | 'dmm-kabu' | 'matsui-fx' | 'jfx' | 'tossy' | 'ablenet-vps' | 'fpo-fx-guide' | 'digital-asset-loan' | 'monex-fxplus' | 'hirose-fx-a8' | 'hirose-fx-accesstrade';
   name: string;
   category: string;
   description: string;
@@ -28,6 +28,26 @@ export const AFFILIATE_OFFERS: Record<AffiliateOffer['id'], AffiliateOffer> = {
     linkLabel: 'マネックス証券 FXPLUSの公式情報を確認',
     href: 'https://h.accesstrade.net/sp/cc?rk=0100pldt00oyio',
     impressionSrc: 'https://h.accesstrade.net/sp/rr?rk=0100pldt00oyio',
+    network: 'accesstrade',
+  },
+  'hirose-fx-a8': {
+    id: 'hirose-fx-a8',
+    name: 'ヒロセ通商 LION FX（A8.net）',
+    category: 'FX・ヒロセ通商',
+    description: 'ヒロセ通商LION FXの公式情報、取引条件、リスクを確認できます。口座開設前に最新のスプレッド、取引単位、ロスカット条件を確認してください。',
+    linkLabel: 'ヒロセ通商 LION FXの公式情報を確認（A8.net）',
+    href: 'https://px.a8.net/svt/ejp?a8mat=4BC5IR+G994FM+1FOU+62MDE',
+    impressionSrc: 'https://www13.a8.net/0.gif?a8mat=4BC5IR+G994FM+1FOU+62MDE',
+    network: 'a8',
+  },
+  'hirose-fx-accesstrade': {
+    id: 'hirose-fx-accesstrade',
+    name: 'ヒロセ通商 LION FX（アクセストレード）',
+    category: 'FX・ヒロセ通商',
+    description: 'ヒロセ通商LION FXの公式情報、取引条件、リスクを確認できます。口座開設前に最新のスプレッド、取引単位、ロスカット条件を確認してください。',
+    linkLabel: 'ヒロセ通商 LION FXの公式情報を確認（アクセストレード）',
+    href: 'https://h.accesstrade.net/sp/cc?rk=01002xr400oyio',
+    impressionSrc: 'https://h.accesstrade.net/sp/rr?rk=01002xr400oyio',
     network: 'accesstrade',
   },
   fxtf: {

@@ -92,7 +92,7 @@ export default function FxProviderFactSheet({ provider, affiliateOffer, relatedA
           <section className="provider-offer" aria-label={`${provider.name}の広告`}>
             <div className="section-heading">
               <div><p className="section-index">ADVERTISEMENT</p><h2>最新の取引条件を公式サイトで確認する</h2></div>
-              <p>以下はA8.netの提携広告です。掲載報酬は、公称値・試算値・将来の実測順位に影響しません。</p>
+              <p>以下は提携ネットワーク経由の広告です。掲載報酬は、公称値・試算値・将来の実測順位に影響しません。</p>
             </div>
             <AffiliateOfferCard offer={affiliateOffer} />
           </section>

@@ -18,7 +18,7 @@ const REVIEW_TARGETS = [
   { name: 'MATSUI FX', scope: 'FX', status: '公式条件を整理済み・広告掲載中', href: '/fx/matsui' },
   { name: 'GMOクリック証券 FXネオ', scope: 'FX', status: '公式条件を整理済み・広告提携審査中', href: '/fx/gmo-click' },
   { name: 'LIGHT FX', scope: 'FX', status: '公式条件を整理済み・広告提携審査中', href: '/fx/lightfx' },
-  { name: 'ヒロセ通商 LION FX', scope: 'FX', status: '公式条件を整理済み・広告提携審査中', href: '/fx/lion-fx' },
+  { name: 'ヒロセ通商 LION FX', scope: 'FX', status: '公式条件を整理済み・A8.net/アクセストレード広告掲載中', href: '/fx/lion-fx' },
   { name: 'JFX MATRIX TRADER', scope: 'FX', status: '公式条件を整理済み・広告掲載中', href: '/fx/jfx' },
   { name: 'みんなのFX', scope: 'FX', status: '公式条件を整理済み・広告提携審査中', href: '/fx/minna-fx' },
   { name: '三菱UFJ eスマート証券 FX', scope: 'FX', status: '公式条件を整理済み・広告提携審査中', href: '/fx/au-kabucom-fx' },
@@ -204,6 +204,8 @@ export default function FxPage() {
           <AffiliateOfferCard offer={AFFILIATE_OFFERS['ablenet-vps']} />
           <AffiliateOfferCard offer={AFFILIATE_OFFERS['fpo-fx-guide']} />
           <AffiliateOfferCard offer={AFFILIATE_OFFERS['monex-fxplus']} />
+          <AffiliateOfferCard offer={AFFILIATE_OFFERS['hirose-fx-a8']} />
+          <AffiliateOfferCard offer={AFFILIATE_OFFERS['hirose-fx-accesstrade']} />
         </div>
         <p className="affiliate-disclosure">
           広告リンク経由で申込み等が行われた場合、当サイトが報酬を受け取ることがあります。
