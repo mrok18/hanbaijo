@@ -5,8 +5,8 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata: Metadata = {
-  title: '株式 手数料 比較｜アメリカ株・国内株・外国株のコスト',
-  description: '株式の手数料比較をするため、アメリカ株（米国株）・国内株式・中国株・ASEAN株の売買手数料、為替コスト、現地費用、NISA条件を同じ基準で整理します。',
+  title: '国内株式 手数料比較｜米国株・外国株の売買コストも整理',
+  description: '国内株式の手数料を、1注文制・1日定額・条件付き0円の違いと無料条件で整理。米国株・中国株・ASEAN株の売買手数料、為替コスト、現地費用、NISA条件も同じ基準で比較します。',
   alternates: { canonical: '/stocks' },
 };
 
@@ -43,7 +43,7 @@ export default function StocksPage() {
         url: 'https://hanbaijo.com/stocks',
         name: metadata.title,
         description: metadata.description,
-        dateModified: '2026-09-16',
+        dateModified: '2026-09-17',
         inLanguage: 'ja-JP',
         mainEntity: { '@id': 'https://hanbaijo.com/stocks#guides' },
       },
@@ -85,10 +85,10 @@ export default function StocksPage() {
       <section className="fx-hero">
         <div>
           <p className="page-kicker">STOCK COST GUIDE</p>
-          <h1>株式の手数料比較と仕組み<br /><em>アメリカ株・国内株・外国株の売買コスト</em></h1>
+          <h1>国内株式の手数料比較と仕組み<br /><em>米国株・外国株の売買コストも整理</em></h1>
           <p className="lede">
-            株の手数料比較では、アメリカ株（米国株）・国内株・中国株・ASEAN株など市場ごとに、売買手数料、為替コスト、現地費用を分けて確認します。
-            現物と信用、NISAの適用条件も同じ取引金額と保有日数でそろえ、比較表・計算方法へ案内します。
+            国内株式の手数料比較では、1注文制・1日定額・条件付き0円を分け、現物と信用、NISAの適用条件をそろえて確認します。
+            米国株・中国株・ASEAN株も、売買手数料、為替コスト、現地費用を同じ取引金額で比べられるよう比較表・計算方法へ案内します。
           </p>
           <div className="callout"><strong>結論：外国株式は市場別に4つの費用を比較</strong><p>売買手数料、為替コスト、現地費用、NISAなどの適用条件を同じ取引金額・決済方法でそろえると、見かけの手数料0円だけでは分からない実負担を比べられます。</p></div>
           <div className="callout"><strong>外国株式の売買手数料は市場別に比較</strong><p>米国株、中国株、ASEAN株では料率、最低・上限手数料、為替コスト、現地費用が異なります。市場別の条件を同じ取引金額へ換算して比べると、売買手数料だけでは見えない差を確認できます。<br /><Link href="/articles/foreign-stock-trading-fees">外国株式の市場別比較を見る →</Link></p></div>
