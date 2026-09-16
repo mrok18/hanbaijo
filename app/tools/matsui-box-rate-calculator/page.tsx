@@ -19,7 +19,7 @@ export default function Page() {
   const yen = new Intl.NumberFormat('ja-JP', { maximumFractionDigits: 0 });
 
   return <div className="calculator-page">
-    <header className="calculator-intro"><p className="page-kicker">MATSUI BOX RATE CALCULATOR</p><h1>1日の約定代金を、<br /><em>合算して判定。</em></h1><p className="lede">松井証券の通常の国内株取引を対象に、現物と信用の1日約定代金を合算し、ボックスレートの概算手数料を表示します。</p><div className="calculator-proof"><span>買付・売却を合算</span><span>現物・信用を合算</span><span>25歳以下の無料条件に対応</span><span>2026年9月8日確認</span></div></header>
+    <header className="calculator-intro"><p className="page-kicker">MATSUI BOX RATE CALCULATOR</p><h1>ボックスレートを計算して、<br /><em>1日の手数料を判定。</em></h1><p className="lede">松井証券の通常の国内株取引を対象に、現物と信用の1日約定代金を合算し、ボックスレートの概算手数料を表示します。</p><div className="calculator-proof"><span>買付・売却を合算</span><span>現物・信用を合算</span><span>25歳以下の無料条件に対応</span><span>2026年9月8日確認</span></div></header>
     <div className="calculator-shell"><div className="calculator-grid"><section className="calculator-inputs"><div className="calculator-panel-head"><div><span>INPUT</span><h2>当日の約定代金</h2></div></div><div className="field-grid">
       <label className="wide"><span>年齢区分</span><select value={ageGroup} onChange={e => setAgeGroup(e.target.value as 'over25' | 'under26')}><option value="over25">26歳以上</option><option value="under26">25歳以下</option></select></label>
       <label><span>現物買付（円）</span><input type="number" min="0" step="10000" value={buy} onChange={e => setBuy(Number(e.target.value))} /></label>
