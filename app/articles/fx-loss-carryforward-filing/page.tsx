@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   alternates: { canonical: '/articles/fx-loss-carryforward-filing' },
-  title: 'くりっく365の損失繰越｜3年控除と確定申告の続け方',
-  description: 'くりっく365の損失繰越はできるのか、翌年以後3年間の控除、損失発生年から取引しない年も続ける確定申告を整理します。',
+  title: 'FX確定申告の損失の書き方｜3年繰越と申告の続け方',
+  description: 'FXの損失を確定申告に書く方法と、翌年以後3年間の繰越控除を整理。損失発生年から取引がない年も続ける申告の手順を確認できます。',
 };
 
 const timeline = [
@@ -17,7 +17,7 @@ const timeline = [
 export default function Page() {
   const jsonLd = {
     '@context': 'https://schema.org', '@type': 'Article', headline: metadata.title,
-    description: metadata.description, datePublished: '2026-09-09', dateModified: '2026-09-13',
+    description: metadata.description, datePublished: '2026-09-09', dateModified: '2026-09-16',
     mainEntityOfPage: 'https://hanbaijo.com/articles/fx-loss-carryforward-filing',
     author: { '@type': 'Organization', name: '金融コストウォッチ' },
     publisher: { '@type': 'Organization', name: '金融コストウォッチ' },
@@ -26,7 +26,7 @@ export default function Page() {
   return <article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
     <p className="page-kicker">FX TAX / LOSS CARRYFORWARD</p>
-    <h1>くりっく365の損失繰越<br />3年控除と確定申告の続け方</h1>
+    <h1>FX確定申告での損失の書き方<br />3年繰越と申告の続け方</h1>
     <p className="lede">国内の一定のFX・CFD・先物で生じた損失は、要件を満たせば翌年以後3年間繰り越せます。重要なのは、損失が出た最初の年に申告し、その後も必要書類を付けて連続して申告することです。</p>
 
     <h2>くりっく365の損失繰越はできる？</h2>
@@ -71,7 +71,7 @@ export default function Page() {
       <li><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1522.htm" rel="noreferrer">国税庁 No.1522「先物取引に係る雑所得等の課税の特例」</a></li>
       <li><a href="https://www.nta.go.jp/taxes/shiraberu/shinkoku/syotoku/r07.htm" rel="noreferrer">国税庁「令和7年分 確定申告書等の様式・手引き等」</a></li>
     </ul>
-    <p><small>確認日：2026年9月13日。2026年分の申告様式は公表後に最新資料を確認してください。期限後申告など個別事情がある場合は税務署または税理士へ確認してください。</small></p>
+    <p><small>確認日：2026年9月16日。2026年分の申告様式は公表後に最新資料を確認してください。期限後申告など個別事情がある場合は税務署または税理士へ確認してください。</small></p>
     <p><Link href="/articles">解説記事一覧へ戻る →</Link></p>
   </article>;
 }
