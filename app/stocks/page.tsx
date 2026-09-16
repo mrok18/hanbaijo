@@ -5,8 +5,8 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata: Metadata = {
-  title: 'アメリカ株 手数料 比較｜米国株・国内株・外国株のコスト',
-  description: 'アメリカ株（米国株）の手数料比較を軸に、国内株式・中国株・ASEAN株の売買手数料、為替コスト、現地費用、NISA条件を同じ基準で整理します。',
+  title: '株の手数料比較｜アメリカ株・国内株・外国株のコスト',
+  description: '株の手数料を比較するため、アメリカ株（米国株）・国内株式・中国株・ASEAN株の売買手数料、為替コスト、現地費用、NISA条件を同じ基準で整理します。',
   alternates: { canonical: '/stocks' },
 };
 
@@ -29,7 +29,7 @@ const STOCK_FAQS = [
   },
   {
     question: '比較表の数字はいつ確認した情報ですか？',
-    answer: '制度と各社の公式料金条件を2026年9月14日に確認しています。条件は変更される場合があるため、発注前は各社公式ページの最新情報を確認してください。',
+    answer: '制度と各社の公式料金条件を2026年9月16日に確認しています。条件は変更される場合があるため、発注前は各社公式ページの最新情報を確認してください。',
   },
 ];
 
@@ -85,9 +85,9 @@ export default function StocksPage() {
       <section className="fx-hero">
         <div>
           <p className="page-kicker">STOCK COST GUIDE</p>
-          <h1>アメリカ株 手数料 比較と仕組み<br /><em>米国株式・国内株・外国株の売買コスト</em></h1>
+          <h1>株の手数料比較と仕組み<br /><em>アメリカ株・国内株・外国株の売買コスト</em></h1>
           <p className="lede">
-            アメリカ株（米国株）手数料比較では、米国株・国内株・中国株・ASEAN株など市場ごとに、売買手数料、為替コスト、現地費用を分けて確認します。
+            株の手数料比較では、アメリカ株（米国株）・国内株・中国株・ASEAN株など市場ごとに、売買手数料、為替コスト、現地費用を分けて確認します。
             現物と信用、NISAの適用条件も同じ取引金額と保有日数でそろえ、比較表・計算方法へ案内します。
           </p>
           <div className="callout"><strong>結論：外国株式は市場別に4つの費用を比較</strong><p>売買手数料、為替コスト、現地費用、NISAなどの適用条件を同じ取引金額・決済方法でそろえると、見かけの手数料0円だけでは分からない実負担を比べられます。</p></div>
@@ -255,7 +255,7 @@ export default function StocksPage() {
           <li><a href="https://www.matsui.co.jp/us-stock/margin/fee/" target="_blank" rel="noopener noreferrer">松井証券「米国株信用取引 手数料」</a></li>
           <li><a href="https://www.rakuten-sec.co.jp/web/us/margin/commission.html" target="_blank" rel="noopener noreferrer">楽天証券「米国株式信用取引 手数料／金利／貸株料」</a></li>
         </ul>
-        <p>制度・用語と米国株信用の料金条件は2026年9月14日に確認。金利、優遇条件、対象銘柄、現地費用は変わる可能性があるため、発注前に各社公式サイトを確認してください。</p>
+        <p>制度・用語と米国株信用の料金条件は2026年9月16日に確認。金利、優遇条件、対象銘柄、現地費用は変わる可能性があるため、発注前に各社公式サイトを確認してください。</p>
       </section>
 
       <section className="fx-section" aria-labelledby="stock-provider-directory">
