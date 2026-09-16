@@ -4,12 +4,16 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata: Metadata = {
-  title: '株の売買手数料比較｜国内株4社の往復コストと無料条件',
-  description: '株の売買手数料を国内株式4社で比較。10万・50万・100万円の同日往復と別日売却をそろえ、1注文制・1日定額・条件付き0円の違いと別コストを整理します。',
+  title: '株の手数料比較｜国内株4社の売買コストと無料条件',
+  description: '株の手数料を国内株式4社で比較。10万・50万・100万円の同日往復と別日売却をそろえ、1注文制・1日定額・条件付き0円の違いと別コストを整理します。',
   alternates: { canonical: '/stocks/domestic-fee-comparison' },
 };
 
 const FAQS = [
+  {
+    question: '株の手数料はいくらですか？初心者は何を比べればよいですか？',
+    answer: '株の手数料は、証券会社・料金コース・1回の約定代金・1日の合計額で変わります。現物か信用か、買付と売却を同日に行うか、無料条件（コース・年齢・取引経路）をそろえて確認するのが基本です。このページでは国内株式の現物・インターネット取引を前提に、10万円・50万円・100万円の往復を比較しています。',
+  },
   {
     question: '松井証券の国内株手数料は、他社より高いですか？',
     answer: '取引金額、売買日、年齢で変わるため、一律にはいえません。26歳以上が50万円を同日に買って売る例では、松井証券は1日合計100万円となり1,100円です。同条件ではGMOクリック証券が0円、楽天証券はゼロコースなら0円、DMM 株は396円ですが、松井証券も買付日と売却日を分ければ各日50万円で無料枠内です。25歳以下はボックスレート手数料が無料です。',
@@ -90,7 +94,7 @@ export default function Page() {
     headline: metadata.title,
     description: metadata.description,
     datePublished: '2026-09-07',
-    dateModified: '2026-09-13',
+    dateModified: '2026-09-16',
     mainEntityOfPage: 'https://hanbaijo.com/stocks/domestic-fee-comparison',
     author: { '@type': 'Organization', name: '金融コストウォッチ' },
     publisher: { '@type': 'Organization', name: '金融コストウォッチ' },
@@ -119,10 +123,10 @@ export default function Page() {
         <div>
           <p className="page-kicker">DOMESTIC STOCK / PUBLISHED DATA</p>
           <h1>株の売買手数料比較<br /><em>国内株式4社の往復コストと無料条件</em></h1>
-          <p className="lede">株の売買手数料を比較するなら、まず国内株式の現物取引で条件をそろえ、1注文制・1日定額・条件付き0円を分けます。松井証券・楽天・GMOクリック証券・DMM 株を同じ条件で比べ、10万円・50万円・100万円の同日往復と別日売却で実際の負担を確認します。</p>
+          <p className="lede">株の手数料を比較するなら、まず国内株式の現物取引で条件をそろえ、1注文制・1日定額・条件付き0円を分けます。松井証券・楽天・GMOクリック証券・DMM 株を同じ条件で比べ、10万円・50万円・100万円の同日往復と別日売却で実際の負担を確認します。</p>
         </div>
         <aside>
-          <span>CHECKED</span><strong>2026-09-14</strong>
+          <span>CHECKED</span><strong>2026-09-16</strong>
           <p>各社公式料金表の公称値。掲載4社の比較であり、全証券会社を網羅したランキングではありません。</p>
         </aside>
       </header>
@@ -211,7 +215,7 @@ export default function Page() {
         <ul>
           {PROVIDERS.map((provider) => <li key={provider.name}><a href={provider.source} target="_blank" rel="noopener noreferrer"><span>{provider.name}</span><b>公式情報 ↗</b></a></li>)}
         </ul>
-        <p>2026年9月14日確認。料金は変更される場合があります。申込み・取引前に必ずリンク先の最新情報と契約締結前交付書面を確認してください。</p>
+        <p>2026年9月16日確認。料金は変更される場合があります。申込み・取引前に必ずリンク先の最新情報と契約締結前交付書面を確認してください。</p>
       </section>
 
       <section className="comparison-section" aria-labelledby="domestic-stock-fee-faq">
