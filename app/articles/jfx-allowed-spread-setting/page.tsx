@@ -4,8 +4,8 @@ import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
   alternates: { canonical: '/articles/jfx-allowed-spread-setting' },
-  title: 'JFX許容スプレッド設定とは？急拡大時の注文を止める方法',
-  description: 'JFX MATRIX TRADERの許容スプレッドを、許容スリップとの違い、設定手順、注文が不成立になる条件、米ドル円のコスト例から整理します。',
+  title: 'JFX スプレッド｜許容スプレッド設定と急拡大時の注文制限',
+  description: 'JFXのスプレッドを許容スプレッド設定で管理する方法を解説。許容スリップとの違い、設定手順、注文が不成立になる条件、米ドル円のコスト例を整理します。',
 };
 
 const faq = [
@@ -23,7 +23,7 @@ export default function Page() {
   return <article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }} />
     <p className="page-kicker">JFX / ORDER SETTINGS</p>
-    <h1>JFX許容スプレッド設定とは？<br />急拡大時の注文を止める方法</h1>
+    <h1>JFX スプレッド｜許容スプレッド設定で<br />急拡大時の注文を制限する方法</h1>
     <p className="lede">許容スプレッドは、MATRIX TRADERで注文を出す前に「この幅を超えたら発注しない」と上限を決める機能です。指標発表や早朝など、画面を見ている間にスプレッドが広がる場面の誤発注を減らすために使います。</p>
 
     <h2>許容スプレッドの仕組み</h2>
