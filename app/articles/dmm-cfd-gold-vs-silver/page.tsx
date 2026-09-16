@@ -37,7 +37,7 @@ export default function Page() {
   };
 
   return <article>
-    <ArticleStructuredData slug="dmm-cfd-gold-vs-silver" publishedAt="2026-09-08" modifiedAt="2026-09-16" />
+    <ArticleStructuredData slug="dmm-cfd-gold-vs-silver" publishedAt="2026-09-08" modifiedAt="2026-09-16" includeBreadcrumb={false} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd).replace(/</g, '\\u003c') }} />
     <p className="page-kicker">DMM CFD / GOLD VS SILVER</p>
     <h1>銀 CFDとは？<br />1Lot・必要証拠金・調整額</h1>

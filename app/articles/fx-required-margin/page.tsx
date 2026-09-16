@@ -1,22 +1,55 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import AffiliateOfferCard from '@/components/AffiliateOfferCard';
+import ArticleStructuredData from '@/components/ArticleStructuredData';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
-export const metadata = {
+export const metadata: Metadata = {
   alternates: { canonical: '/articles/fx-required-margin' },
-  title: 'FXの必要証拠金はいくら？1万通貨で計算',
-  description: '国内個人向けFXの必要証拠金を、取引金額と4％の証拠金率から計算します。1,000通貨・1万通貨の例付き。',
+  title: '証拠金 計算｜FXの必要証拠金を1万通貨で計算',
+  description: 'FXの証拠金計算を、為替レート×取引数量×4％の式で整理します。1,000通貨・1万通貨の必要証拠金、維持率と余裕額の確認方法も解説します。',
 };
 
+const FAQS = [
+  {
+    question: 'FXの証拠金計算はどの式で求めますか？',
+    answer: '取引金額（為替レート×取引数量）に証拠金率を掛けます。国内個人向け店頭FXの法令上の最低水準を使う目安では、取引金額×4％で必要証拠金を計算します。',
+  },
+  {
+    question: '1万通貨の必要証拠金はいくらですか？',
+    answer: '米ドル/円が150円なら取引金額は150万円で、4％を掛けた必要証拠金の目安は6万円です。実際の必要額は通貨ペア、会社のルール、相場状況で変わるため取引画面を確認してください。',
+  },
+  {
+    question: '必要証拠金ぴったりで取引してもよいですか？',
+    answer: '必要証拠金は最低ラインであり、損失に耐える余裕資金ではありません。証拠金維持率、ロスカット水準、追加入金のルールを確認し、余裕額を残して数量を決めます。',
+  },
+] as const;
+
 export default function Page() {
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: FAQS.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+    })),
+  };
+
   return (
     <article>
+      <ArticleStructuredData slug="fx-required-margin" publishedAt="2026-09-07" modifiedAt="2026-09-16" includeBreadcrumb={false} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd).replace(/</g, '\\u003c') }} />
       <p className="page-kicker">FX MARGIN</p>
-      <h1>FXの必要証拠金はいくら？1万通貨で計算</h1>
+      <h1>証拠金 計算｜FXの必要証拠金はいくら？</h1>
       <p className="lede">
-        国内の個人向け店頭FXでは、取引金額の4％以上の証拠金が必要です。
+        FXの証拠金計算は、取引金額に証拠金率を掛けて求めます。国内の個人向け店頭FXでは、取引金額の4％以上の証拠金が必要です。
         これはレバレッジ25倍以下に相当します。まず取引金額を出し、その4％を計算します。
       </p>
+      <div className="callout">
+        <strong>証拠金計算は「為替レート×数量×4％」</strong>
+        <p>米ドル/円150円・1万通貨なら、150円×10,000通貨×4％＝6万円が目安です。最低ラインと余裕資金は分けて考えます。</p>
+      </div>
 
       <h2>必要証拠金の計算式</h2>
       <div className="formula-box">
@@ -49,12 +82,20 @@ export default function Page() {
         </p>
       </div>
 
+      <h2>証拠金計算に関するFAQ</h2>
+      {FAQS.map((faq) => (
+        <section key={faq.question}>
+          <h3>{faq.question}</h3>
+          <p>{faq.answer}</p>
+        </section>
+      ))}
+
       <section className="article-sources" aria-labelledby="sources">
         <h2 id="sources">参照した公式資料</h2>
         <ul>
           <li><a href="https://www.fsa.go.jp/ordinary/iwagai/" target="_blank" rel="noopener noreferrer">金融庁「外国為替証拠金取引について」</a></li>
         </ul>
-        <p>制度内容は2026年9月7日に確認しました。</p>
+        <p>制度内容は2026年9月16日に確認しました。証拠金率や必要額は変更される場合があるため、発注前に各社の公式情報を確認してください。</p>
       </section>
 
       <p><Link href="/tools/fx-position-size-calculator">許容損失から取引数量を逆算する →</Link></p>

@@ -21,6 +21,7 @@ const SELF_MANAGED_SCHEMA_SLUGS = new Set([
 // These pages already emit their own Article object, but rely on the shared
 // component for a consistent BreadcrumbList.
 const INLINE_ARTICLE_SCHEMA_SLUGS = new Set([
+  'dmm-cfd-gold-vs-silver',
   'crypto-collateral-loan-tax',
   'crypto-tax-reform-start-date',
   'dmm-cfd-account-opening-documents',
@@ -72,6 +73,7 @@ const INLINE_ARTICLE_SCHEMA_SLUGS = new Set([
   'fx-multiple-accounts-cost-risk',
   'fx-profit-loss-offset-tax',
   'fx-profit-under-200k-tax-return',
+  'fx-required-margin',
   'fx-spread-cost',
   'fx-spread-difference-annual-cost',
   'fx-spread-monthly-cost',
