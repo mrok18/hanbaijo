@@ -4,8 +4,8 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata: Metadata = {
-  title: 'FXの0.2銭は何円？スプレッドを数量別に計算',
-  description: 'FXの0.2銭は1通貨あたり0.002円です。1,000通貨なら2円、1万通貨なら20円、10万通貨なら200円になる計算式と注意点を解説します。',
+  title: 'FX スプレッド 計算｜0.2銭は何円？数量別早見表',
+  description: 'FXのスプレッド計算を、銭から円へ直す式と数量別の早見表で解説。0.2銭は1万通貨で20円、1,000通貨で2円になる計算と実際の注意点を確認できます。',
   alternates: { canonical: '/articles/fx-spread-cost' },
 };
 
@@ -25,6 +25,10 @@ const spreadRows = [
 ] as const;
 
 const faqs = [
+  {
+    question: 'FXのスプレッドはどう計算しますか？',
+    answer: '円を含む通貨ペアでは、スプレッド（銭）を100で割って円へ直し、取引数量を掛けます。たとえば0.2銭なら0.002円×1万通貨＝20円です。スワップやスリッページは別に確認します。',
+  },
   {
     question: 'FXの0.2銭は何円ですか？',
     answer: '0.2銭は1通貨あたり0.002円です。スプレッド相当額は取引数量で変わり、1,000通貨なら2円、1万通貨なら20円、10万通貨なら200円です。',
@@ -46,7 +50,7 @@ export default function Page() {
     headline: metadata.title,
     description: metadata.description,
     datePublished: '2026-09-07',
-    dateModified: '2026-09-13',
+    dateModified: '2026-09-16',
     mainEntityOfPage: 'https://hanbaijo.com/articles/fx-spread-cost',
     author: { '@type': 'Organization', name: '金融コストウォッチ' },
     publisher: { '@type': 'Organization', name: '金融コストウォッチ' },
@@ -66,14 +70,14 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <p className="page-kicker">FX SPREAD CALCULATION</p>
-      <h1>FXの0.2銭は何円？<br />スプレッドを数量別に計算</h1>
+      <h1>FX スプレッド 計算｜0.2銭は何円？<br />数量別のコストを確認</h1>
       <p className="lede">
-        FXの0.2銭は何円かというと、1通貨あたり0.002円です。実際の負担額は取引数量を掛けて求めるため、
+        FXのスプレッド計算は、表示幅を円へ直して取引数量を掛けます。0.2銭は1通貨あたり0.002円で、
         1,000通貨なら2円、1万通貨なら20円、10万通貨なら200円になります。
       </p>
 
       <div className="callout">
-        <strong>結論：0.2銭は1万通貨で20円</strong>
+        <strong>結論：FXのスプレッド0.2銭は1万通貨で20円</strong>
         <p>「0.2銭＝0.2円」ではありません。1銭＝0.01円なので、0.2銭を円へ直すと0.002円です。</p>
       </div>
 
@@ -160,7 +164,7 @@ export default function Page() {
         <li><a href="https://faq.jfx.co.jp/faq/detail?category=36&amp;id=481&amp;site=FX557CTV" rel="noreferrer">JFX「スプレッドの計算方法を教えてください」</a></li>
         <li><a href="https://www.fsa.go.jp/ordinary/iwagai/" rel="noreferrer">金融庁「いわゆる外国為替証拠金取引について」</a></li>
       </ul>
-      <p><small>確認日：2026年9月13日。計算結果は説明用の試算であり、実際の提示幅や約定価格を保証するものではありません。</small></p>
+      <p><small>確認日：2026年9月16日。計算結果は説明用の試算であり、実際の提示幅や約定価格を保証するものではありません。</small></p>
 
       <p><Link href="/tools/fx-pip-value-calculator">1pipsの損益とスプレッド相当額を計算する →</Link></p>
       <p><Link href="/articles/fx-spread-monthly-cost">0.2銭の月間コストを取引回数別に見る →</Link></p>
