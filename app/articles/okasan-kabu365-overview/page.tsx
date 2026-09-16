@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import ArticleStructuredData from '@/components/ArticleStructuredData';
 
 export const metadata: Metadata = { alternates: { canonical: '/articles/okasan-kabu365-overview' }, title: '岡三オンラインのくりっく株365とは？手数料・配当・証拠金を整理', description: '岡三オンラインのくりっく株365について、取引所CFDの仕組み、手数料などのコスト、売買方向、配当相当額、証拠金の考え方を整理します。' };
 
@@ -13,7 +12,6 @@ const FAQS = [
 export default function Page() {
   const faqJsonLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: FAQS.map((faq) => ({ '@type': 'Question', name: faq.question, acceptedAnswer: { '@type': 'Answer', text: faq.answer } })) };
   return <article>
-  <ArticleStructuredData slug="okasan-kabu365-overview" publishedAt="2026-09-10" modifiedAt="2026-09-16" />
   <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd).replace(/</g, '\\u003c') }} />
   <p className="page-kicker">岡三オンライン / くりっく株365</p><h1>くりっく株365とは？<br />取引所CFDの仕組みを整理</h1>
   <p className="lede">くりっく株365は東京金融取引所に上場する株価指数証拠金取引です。現物株と同じ「株価指数」という名前でも、証拠金取引・売り建て・配当相当額の扱いが異なります。</p>

@@ -15,6 +15,12 @@ const annualRows = [
   { size: '10万通貨', once: '100円', daily1: '24,000円', daily5: '120,000円' },
 ] as const;
 
+const FAQS = [
+  { question: 'FXの0.1銭は何円の差ですか？', answer: '0.1銭は0.001円です。1万通貨なら1往復あたり10円、10万通貨なら100円の差になります。売買の片道ではなく往復の差として試算します。' },
+  { question: '0.1銭のスプレッド差は必ず年間コスト差になりますか？', answer: 'いいえ。表示スプレッドの適用時間、数量上限、約定差、相場急変時の拡大を含まない単純計算です。自分の取引時間帯と注文数量で再計算してください。' },
+  { question: 'スプレッド0.1銭の会社を選べば最も安いですか？', answer: '必ずしもそうではありません。スプレッド以外にスワップ、約定力、入出金、取引単位やキャンペーン条件も合計し、実際の取引スタイルに合うか確認します。' },
+] as const;
+
 export default function Page() {
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -22,15 +28,21 @@ export default function Page() {
     headline: metadata.title,
     description: metadata.description,
     datePublished: '2026-09-09',
-    dateModified: '2026-09-09',
+    dateModified: '2026-09-16',
     mainEntityOfPage: 'https://hanbaijo.com/articles/fx-spread-difference-annual-cost',
     author: { '@type': 'Organization', name: '金融コストウォッチ' },
     publisher: { '@type': 'Organization', name: '金融コストウォッチ' },
+  };
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: FAQS.map((faq) => ({ '@type': 'Question', name: faq.question, acceptedAnswer: { '@type': 'Answer', text: faq.answer } })),
   };
 
   return (
     <article>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd).replace(/</g, '\\u003c') }} />
       <p className="page-kicker">FX ANNUAL COST GAP</p>
       <h1>FXのスプレッド差0.1銭は<br />年間いくら？</h1>
       <p className="lede">
@@ -91,6 +103,14 @@ export default function Page() {
         <li><Link href="/articles/fx-spread-time">スプレッドが広がりやすい時間帯</Link></li>
         <li><Link href="/tools/trading-break-even-calculator">取引コストを回収する損益分岐値幅</Link></li>
       </ul>
+
+      <h2>0.1銭のスプレッド差FAQ</h2>
+      {FAQS.map((faq) => (
+        <section key={faq.question}>
+          <h3>{faq.question}</h3>
+          <p>{faq.answer}</p>
+        </section>
+      ))}
 
       <section className="article-affiliate" aria-label="提携中のFXサービス">
         <AffiliateOfferCard offer={AFFILIATE_OFFERS.jfx} />
