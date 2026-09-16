@@ -5,12 +5,16 @@ import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata: Metadata = {
-  title: '国内株式 手数料 比較｜株の売買コストと米国株・外国株の違い',
-  description: '国内株式の手数料比較を軸に、米国株式・中国株・ASEAN株の売買手数料、為替コスト、現地費用、NISA条件を同じ基準で整理します。',
+  title: 'アメリカ株 手数料 比較｜米国株・国内株・外国株のコスト',
+  description: 'アメリカ株（米国株）の手数料比較を軸に、国内株式・中国株・ASEAN株の売買手数料、為替コスト、現地費用、NISA条件を同じ基準で整理します。',
   alternates: { canonical: '/stocks' },
 };
 
 const STOCK_FAQS = [
+  {
+    question: 'アメリカ株の手数料比較で、最初に確認する費用は何ですか？',
+    answer: '売買手数料だけでなく、円貨決済や事前両替の為替コスト、現地費用、NISAの対象条件を同じ取引金額で確認します。証券会社ごとに料率・最低手数料・上限も異なるため、米国株と国内株を分けて比較します。',
+  },
   {
     question: '国内株式の手数料比較で、最初に条件をそろえる項目は何ですか？',
     answer: '現物か信用か、1注文制か1日定額制か、買付と売却を同日に行うかをそろえます。無料コースは適用条件を確認し、信用金利や板の価格差など別コストは売買手数料と分けて比較します。',
@@ -81,9 +85,9 @@ export default function StocksPage() {
       <section className="fx-hero">
         <div>
           <p className="page-kicker">STOCK COST GUIDE</p>
-          <h1>国内株式 手数料 比較と仕組み<br /><em>米国株式・国内株・外国株の売買コスト</em></h1>
+          <h1>アメリカ株 手数料 比較と仕組み<br /><em>米国株式・国内株・外国株の売買コスト</em></h1>
           <p className="lede">
-            国内株式 手数料 比較では、国内株・米国株・中国株・ASEAN株など市場ごとに、売買手数料、為替コスト、現地費用を分けて確認します。
+            アメリカ株（米国株）手数料比較では、米国株・国内株・中国株・ASEAN株など市場ごとに、売買手数料、為替コスト、現地費用を分けて確認します。
             現物と信用、NISAの適用条件も同じ取引金額と保有日数でそろえ、比較表・計算方法へ案内します。
           </p>
           <div className="callout"><strong>結論：外国株式は市場別に4つの費用を比較</strong><p>売買手数料、為替コスト、現地費用、NISAなどの適用条件を同じ取引金額・決済方法でそろえると、見かけの手数料0円だけでは分からない実負担を比べられます。</p></div>
