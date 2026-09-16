@@ -44,9 +44,9 @@ export const STOCK_PROVIDERS: Record<string, StockProvider> = {
     slug: 'rakuten',
     name: '楽天証券',
     shortName: '楽天証券',
-    reviewedAt: '2026-09-14',
+    reviewedAt: '2026-09-16',
     headline: 'ゼロコースなら、国内株の現物・信用手数料は0円。',
-    summary: '楽天証券の日本株（国内株）手数料を、ゼロコースの0円条件とSOR・Rクロスへの同意を含め、信用取引の別コストまで確認します。',
+    summary: '楽天証券の国内株式売買手数料を、現物・信用それぞれのゼロコース0円条件と、SOR・Rクロスへの同意、信用取引の別コストまで確認します。',
     feeModel: 'ゼロコースは約定代金にかかわらず0円',
     bestFor: 'SOR利用条件を理解したうえで、国内株の通常手数料を0円にしたい人',
     caution: '主なデメリットは、ゼロコースの設定とSOR（Rクロスを含む）の利用同意が必要なことです。信用の金利・貸株料や対象外取引は別費用となり、IFA口座などは条件が異なります。',
@@ -64,6 +64,10 @@ export const STOCK_PROVIDERS: Record<string, StockProvider> = {
       { label: '手数料一覧', href: 'https://www.rakuten-sec.co.jp/web/commission/' },
     ],
     faqs: [
+      {
+        question: '楽天証券の国内株式の売買手数料はいくらですか？',
+        answer: 'ゼロコースを選択して条件を満たすと、国内株式の現物・信用の買いと売りの取引手数料は約定代金にかかわらず0円です。ゼロコースの設定状況とSOR（Rクロスを含む）への利用同意を注文前に確認します。',
+      },
       {
         question: '楽天証券の手数料を確認するとき、最初に何を見ればよいですか？',
         answer: '国内株の現物・信用の別、ゼロコースの設定、SOR（Rクロスを含む）への利用同意を先に確認します。そのうえで信用金利・貸株料や単元未満株など、取引手数料とは別の費用を確認します。',
