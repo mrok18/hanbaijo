@@ -5,7 +5,7 @@ import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 export const metadata = {
   alternates: { canonical: '/articles/matsui-deposit-methods-comparison' },
   title: '松井証券 入金 反映 時間｜方法別の手数料とリアルタイム条件',
-  description: '松井証券の入金反映時間を、MATSUI Bank・ネットリンク入金・らくらく振替入金・銀行振込で比較。手数料が無料になる条件と、反映されないときの確認手順を解説します。',
+  description: '松井証券の入金反映時間を、MATSUI Bank・ネットリンク入金・らくらく振替入金・銀行振込で比較。ネットリンク入金とらくらく振替入金の違い、手数料が無料になる条件、反映されないときの確認手順を解説します。',
 };
 
 const FAQS = [
@@ -38,7 +38,7 @@ export default function Page() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd).replace(/</g, '\\u003c') }} />
     <p className="page-kicker">MATSUI / DEPOSIT METHODS</p>
     <h1>松井証券 入金 反映 時間｜方法別の手数料と<br />リアルタイム条件</h1>
-    <p className="lede">松井証券の銀行口座から入金する方法は、ネットリンク入金・らくらく振替入金・MATSUI Bank入金・定期入金など6種類です。松井証券の銀行口座を使った入金で振込手数料が無料になる条件と、銀行振込（利用者負担）の違いを反映時間や事前設定とあわせて比較します。</p>
+    <p className="lede">松井証券の銀行口座から入金する方法は、ネットリンク入金・らくらく振替入金・MATSUI Bank入金・定期入金など6種類です。ネットリンク入金とらくらく振替入金の違い、松井証券の銀行口座を使った入金で振込手数料が無料になる条件と、銀行振込（利用者負担）の違いを反映時間や事前設定とあわせて比較します。</p>
     <div className="callout"><strong>結論：即時入金は手数料無料、銀行振込は利用者負担</strong><p>松井証券公式では、ネットリンク入金・らくらく振替入金・MATSUI Bank入金・スイープ入金・定期入金の振替／振込手数料は無料です。銀行振込入金は金融機関側の入金手数料がかかる場合があります。</p></div>
 
     <h2>松井証券の入金反映時間は方法で変わる</h2>
