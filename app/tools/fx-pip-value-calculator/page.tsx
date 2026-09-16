@@ -32,7 +32,7 @@ export default function Page() {
   const number = new Intl.NumberFormat('ja-JP', { maximumFractionDigits: 4 });
 
   return <div className="calculator-page">
-    <header className="calculator-intro"><p className="page-kicker">FX PIP VALUE CALCULATOR</p><h1>FX pips計算ツールで、<br /><em>1pipsを円損益へ。</em></h1><p className="lede">FX pips計算ツールは、取引数量と通貨ペア右側の決済通貨から1pipsの損益を求めます。円絡み以外は決済通貨の円換算レートを使い、指定した値幅とスプレッドも円で確認できます。</p><div className="calculator-proof"><span>円絡み・ドルストレート対応</span><span>1通貨から入力可能</span><span>スプレッドを円換算</span><span>2026年9月14日確認</span></div></header>
+    <header className="calculator-intro"><p className="page-kicker">FX PIP VALUE CALCULATOR</p><h1>FXのpips計算ツールで、<br /><em>1pipsを円損益へ。</em></h1><p className="lede">FXのpips計算ツールは、取引数量と通貨ペア右側の決済通貨から1pipsの損益を求めます。円絡み以外は決済通貨の円換算レートを使い、指定した値幅とスプレッドも円で確認できます。</p><div className="calculator-proof"><span>円絡み・ドルストレート対応</span><span>1通貨から入力可能</span><span>スプレッドを円換算</span><span>2026年9月16日確認</span></div></header>
     <section className="callout"><strong>FX pips計算の基本式</strong><p>1pipsあたりの円損益は、取引数量×1pipsの値幅×決済通貨の円換算レートで求めます。円絡みは1pips＝0.01円、円以外を決済通貨とするペアは0.0001決済通貨として計算します。</p></section>
     <div className="calculator-shell"><div className="calculator-grid"><section className="calculator-inputs"><div className="calculator-panel-head"><div><span>INPUT</span><h2>通貨ペア・数量</h2></div></div><div className="field-grid">
       <label><span>取引数量（通貨）</span><input type="number" min="0" step="1" value={units} onChange={e => setUnits(Number(e.target.value))} /></label>
