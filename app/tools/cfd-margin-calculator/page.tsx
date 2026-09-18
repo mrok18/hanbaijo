@@ -50,6 +50,7 @@ export default function Page() {
     <p><Link href="/articles/dmm-cfd-tick-value-profit-loss">14銘柄の1ティック損益を見る →</Link></p>
     <p><Link href="/tools/dmm-cfd-tick-value-calculator">14銘柄の値動き損益を計算する →</Link></p>
     <p><Link href="/articles/dmm-cfd-commodity-lot-list">14銘柄の取引単位と公式資料を見る →</Link></p>
+    <section className="article-sources" aria-labelledby="cfd-calculator-sources"><h2 id="cfd-calculator-sources">計算根拠と確認日</h2><ul><li><a href="https://fx.dmm.com/cfd/service/outline_commodity/" target="_blank" rel="noopener noreferrer">DMM CFD「商品CFD サービス概要・取引単位」</a></li><li><a href="https://fx.dmm.com/cfd/service/margin/" target="_blank" rel="noopener noreferrer">DMM CFD「証拠金シミュレーション」</a></li></ul><p>取引単位と計算条件は2026年9月18日に確認しました。必要証拠金は変動するため、発注前に公式画面を優先してください。</p></section>
     <section aria-label="DMM CFDの公式情報"><AffiliateOfferCard offer={AFFILIATE_OFFERS['dmm-cfd']} /></section>
   </div>;
 }
