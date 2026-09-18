@@ -56,7 +56,7 @@ export default function Page() {
     headline: metadata.title,
     description: metadata.description,
     datePublished: '2026-09-07',
-    dateModified: '2026-09-17',
+    dateModified: '2026-09-19',
     mainEntityOfPage: 'https://hanbaijo.com/articles/matsui-account-types',
     author: { '@type': 'Organization', name: '金融コストウォッチ' },
     publisher: { '@type': 'Organization', name: '金融コストウォッチ' },
@@ -98,6 +98,10 @@ export default function Page() {
         <tr><td className="ex-name">スワップ</td><td>受取または支払</td><td>持ち越し日数と付与額</td></tr>
         <tr><td className="ex-name">受渡決済手数料</td><td><strong>数量×1～20円</strong></td><td>受渡決済を選ぶ場合のみ</td></tr>
       </tbody></table></div><p className="panel-note">2026年9月17日確認。スプレッドとスワップは市場環境で変動し、条件は変更される場合があります。詳細な通貨別条件は<a href="/fx/matsui">松井証券FXの手数料シート</a>で確認できます。</p></div>
+
+      <h2>スプレッドを含めた総コストの試算例</h2>
+      <p>取引手数料が0円でも、スプレッドは売買コストとして残ります。たとえば1万通貨、スプレッド0.2銭、1pips＝100円という条件を仮定すると、片道のスプレッド相当額は<strong>0.2pips×100円＝20円</strong>、往復では40円です。これは松井証券の提示値を保証するものではなく、取引画面の実際のスプレッドを入力して確認するための計算例です。</p>
+      <div className="formula-box"><code>往復コストの目安 ＝ 取引数量（万通貨）× スプレッド（pips）× 1pipsの円価値 × 2</code><small>スワップ、受渡決済手数料、スリッページは別途確認</small></div>
 
       <h2>松井証券の総合口座とは？</h2>
       <p>松井証券の総合口座とは、日本株をはじめ、同社の複数の商品・サービスを利用するための基本口座です。公式の口座開設案内では、日本株、米国株、投資信託、NISA、FX、先物・オプションが取引可能なサービスとして示されています。</p>
@@ -178,7 +182,7 @@ export default function Page() {
           <li><a href="https://support.matsui.co.jp/faq/show/47605?site_domain=faq" target="_blank" rel="noopener noreferrer">松井証券「FX専用口座の開設方法」</a></li>
           <li><a href="https://support.matsui.co.jp/faq/show/48197?site_domain=faq" target="_blank" rel="noopener noreferrer">松井証券「松井証券の口座開設方法を教えてください」</a></li>
         </ul>
-        <p>口座の対象商品・開設条件・切替方法は2026年9月13日に確認しました。最新の申込条件は公式画面を確認してください。</p>
+        <p>口座の対象商品・開設条件・切替方法は2026年9月19日に確認しました。スプレッドなどの変動条件と最新の申込条件は公式画面を確認してください。</p>
       </section>
 
       <p><Link href="/fx/matsui">MATSUI FXのコストシートを見る →</Link></p>
