@@ -221,6 +221,7 @@ export const POSTS = [
   { slug: 'matsui-fx-one-currency-order', category: 'FX・松井証券', title: '松井証券FXの1通貨注文方法｜0.0001入力と数量表示の注意点', desc: '1万通貨単位で表示される数量欄の換算、PC・スマホの入力手順、証拠金・スプレッド・損益の確認を整理する。' },
   { slug: 'matsui-account-types', category: '証券・FX', title: '松井証券のFX専用口座とは？総合口座との違い', desc: '松井証券の総合口座とは何か、FX専用口座との違い、開設できる人、申込手順、切替方法を整理する。' },
   { slug: 'fx-zero-spread-total-cost', category: 'FX', title: 'FXの0.0銭は本当に無料？別手数料まで総額で確認', desc: 'ゼロスプレッドと取引コスト0円を区別し、数量連動手数料や約定差を含めて判断する。' },
+  { slug: 'fx-fee-spread-total-cost-comparison', category: 'FX・比較', title: 'FX手数料＋スプレッドの実質コスト比較｜数量と時間帯で円換算', desc: 'JFX・MATSUI FX・LION FXを同じ数量・時間帯で比較し、取引手数料、スプレッド、時間外、例外条件を円換算する。' },
   { slug: 'fx-swap-three-days', category: 'FX', title: 'FXのスワップが3日分・4日分付くのはなぜ？', desc: 'ロールオーバーと受渡日の関係、土日・祝日をまたぐ変則付与の確認方法を整理する。' },
   { slug: 'fx-margin-ratio-vs-usage', category: 'FX', title: 'くりっく365 証拠金維持率｜50％ロスカット・100％アラートの計算', desc: 'くりっく365の維持率の式とGMOクリック証券の50％ロスカット・100％アラート、使用率との違いを整理する。' },
   { slug: 'stock-round-trip-cost', category: '国内株', title: '株の手数料はいくら？仕組み・買付と売却の計算方法', desc: '1注文制と1日定額、買付・売却の往復手数料、板の価格差、信用取引で残る費用を整理する。' },

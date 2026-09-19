@@ -3,7 +3,7 @@ import Link from 'next/link';
 export const metadata = {
   alternates: { canonical: '/articles/jfx-trading-hours-maintenance' },
   title: 'JFX 取引時間｜メンテナンス・夏冬時間と注文可否',
-  description: 'JFXのメンテナンス時間と取引時間を夏時間・冬時間に分け、日締めの停止時刻、週末の予約注文、注文前の注意点を公式情報から確認します。',
+  description: 'JFXの取引時間を夏時間・冬時間、日締めメンテナンス、注文受付、ロールオーバー・スワップ、祝日変更まで公式情報から確認します。',
 };
 
 export default function Page() {
@@ -25,6 +25,15 @@ export default function Page() {
     <p>日締め作業は通常15分程度、最大30分程度と案内されています。この時間はログインできず、接続中の取引画面も通信が切断されるため、作業終了後に再ログインが必要です。</p>
     <div className="callout"><strong>早朝は時間とコストの両方を確認</strong><p>日締め付近は操作できない時間があるだけでなく、通貨ペアによって広告表示のスプレッド適用時間外になる場合があります。早朝取引では最新レートと提示スプレッドを発注直前に確認します。</p></div>
 
+    <h2>ロールオーバーとスワップの反映</h2>
+    <p>ロールオーバーは日々の取引日を切り替える処理で、JFXではロールオーバー後に未実現スワップが表示されます。ポジションを決済した時点で口座資産へ反映されるため、スワップを受け取れるかだけでなく、売買方向と付与日数を公式一覧で確認します。</p>
+    <div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th>確認する場面</th><th>起きること</th><th>発注前の確認</th></tr></thead><tbody>
+      <tr><td className="ex-name">ロールオーバー時</td><td>日締めメンテナンスで通信が切断される</td><td>停止時刻を避け、必要なら再ログインする</td></tr>
+      <tr><td className="ex-name">翌営業日のスワップ</td><td>未実現スワップとして表示される</td><td>通貨ペア・売買方向・付与日数を一覧で確認</td></tr>
+      <tr><td className="ex-name">決済・スワップ振替</td><td>確定した損益が口座資産へ反映される</td><td>受渡日と税務上の扱いを確認</td></tr>
+    </tbody></table></div></div>
+    <p>具体例として、1万通貨を保有し、仮に1日あたり支払いスワップを30円と置くと、3日分では90円です。これは説明用の仮定であり、JFXが提示する金額ではありません。実際の金額は公式スワップ一覧と付与日数を使って再計算します。</p>
+
     <h2>土日は取引不可、予約注文は受付可能</h2>
     <p>外国為替市場が休場する土日は、成行・ストリーミング注文を発注できません。一方、JFXの取引ルールでは、メンテナンス時間を除き土日も注文を受け付けるとされています。これは指値等の予約注文を登録できるという意味で、土日にその場で約定できるという意味ではありません。</p>
     <div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th>時間帯</th><th>成行・ストリーミング</th><th>指値等の予約</th></tr></thead><tbody>
@@ -36,6 +45,15 @@ export default function Page() {
     <h2>夏時間・冬時間の切替時期</h2>
     <p>JFXのFAQでは、米国夏時間は3月第2日曜日から、米国標準時間は11月第1日曜日からと案内されています。切替前後はJFXニュースや取引画面のお知らせで正式な時間を確認します。</p>
     <p>日本の祝日は原則として通常取引が可能ですが、クリスマスは短縮取引になる場合があり、元日は取引できません。海外市場の休日や流動性低下により、レート配信・スプレッド・約定にも影響が出る可能性があります。</p>
+
+    <h2>祝日・臨時メンテナンスを確認する順番</h2>
+    <ol>
+      <li>取引前にJFXの取引ルールで通常の夏時間・冬時間を確認する</li>
+      <li>祝日や年末年始は公式のお知らせと取引画面の告知を確認する</li>
+      <li>注文を置く前に、成行が受付可能か、予約注文だけ可能かを確認する</li>
+      <li>保有をまたぐ場合はスワップカレンダーとメンテナンス延長の有無を確認する</li>
+    </ol>
+    <p>公式の予定と実際のレート配信が異なる場合は、取引画面の表示を優先します。臨時変更を理由に予約注文が自動で有利な価格へ補正されるわけではありません。</p>
 
     <h2>週明けの注文で注意すること</h2>
     <p>週末に相場材料が発生すると、月曜の開始レートが金曜終値から離れることがあります。逆指値は指定レートでの約定を保証する注文ではないため、開始レート次第では想定より不利な価格で約定する可能性があります。</p>
@@ -58,8 +76,10 @@ export default function Page() {
     </ul><p>取引時間は2026年9月14日に公式ページで確認しました。祝日・臨時メンテナンス時は最新のお知らせを優先してください。</p></section>
 
     <p><Link href="/articles/jfx-scalping-spread-cost">JFXの時間帯別スプレッドを見る →</Link></p>
+    <p><Link href="/articles/jfx-swap-calendar">JFXのスワップ付与日と3倍デーを見る →</Link></p>
+    <p><Link href="/articles/jfx-swap-transfer-tax">JFXのスワップ振替と税金を見る →</Link></p>
+    <p><Link href="/articles/fx-fee-spread-total-cost-comparison">FX手数料とスプレッドの実質コスト比較を見る →</Link></p>
     <p><Link href="/articles/jfx-order-slippage-rules">注文方法とスリッページを確認する →</Link></p>
-    <p><Link href="/articles/jfx-swap-transfer-tax">日締め・スワップ振替と税金を見る →</Link></p>
     <p><Link href="/fx/jfx">JFXの取引条件一覧へ →</Link></p>
   </article>;
 }

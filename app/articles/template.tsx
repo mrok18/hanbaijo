@@ -76,6 +76,7 @@ const INLINE_ARTICLE_SCHEMA_SLUGS = new Set([
   'fx-required-margin',
   'fx-spread-cost',
   'fx-spread-difference-annual-cost',
+  'fx-fee-spread-total-cost-comparison',
   'fx-spread-monthly-cost',
   'fx-tax-deductible-expenses',
   'fx-tax-rate-calculation',
