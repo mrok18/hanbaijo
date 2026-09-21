@@ -47,6 +47,7 @@ export default function Page() {
       <label><span>米ドル円</span><input type="number" min="0" value={usdJpy} onChange={e => setUsdJpy(Number(e.target.value))} /></label>
     </div></section><section className="calculator-result"><div className="result-head"><span>ESTIMATE</span><h2>必要証拠金概算</h2></div><div className="total-cost"><strong>{yen.format(result.margin)}</strong><span>円</span></div><p>取引総額：約{yen.format(result.notional)}円</p><p>表示価格が1.0ドル動く場合：約{yen.format(result.oneDollarMove)}円／保有Lot</p><p>計算式：価格 × 公式取引単位 × Lot数 × 米ドル円 × 5％</p></section></div>
     <div className="callout"><strong>CFD Trading Calculatorの見方</strong><p>表示価格×公式取引単位×Lot数×米ドル円×5％で必要証拠金を概算します。コーンの1Lot＝1単位（100ブッシェル）のような銘柄は取引単位が1で、100をさらに掛けません。実際の必要証拠金は取引画面を優先してください。</p></div>
+    <section aria-labelledby="cfd-calculation-steps"><h2 id="cfd-calculation-steps">CFD必要証拠金の計算方法</h2><ol><li>銘柄を選び、商品価格・Lot数・米ドル円を入力します。</li><li><code>価格 × 公式取引単位 × Lot数 × 米ドル円 × 5％</code>で必要証拠金を概算します。</li><li>計算結果で取引総額と1ドル変動時の損益を確認し、発注前は公式取引画面の最新値を優先します。</li></ol></section>
     <p><Link href="/articles/dmm-cfd-tick-value-profit-loss">14銘柄の1ティック損益を見る →</Link></p>
     <p><Link href="/tools/dmm-cfd-tick-value-calculator">14銘柄の値動き損益を計算する →</Link></p>
     <p><Link href="/articles/dmm-cfd-commodity-lot-list">14銘柄の取引単位と公式資料を見る →</Link></p>
