@@ -12,9 +12,18 @@ const ROUND_TRIP_EXAMPLES = [
   { amount: '5,000ドル', commission: '44ドル（上限×2）', commissionYen: '6,600円', yenSettlement: '2,500円', total: '9,100円' },
 ] as const;
 
+const faq = [
+  { q: '米国株の売買手数料は3社で違いますか？', a: 'DMM 株・松井証券・楽天証券の通常口座では、米国株現物の売買手数料は約定代金の0.495％（税込）、上限22ドルで横並びです。2.22ドル以下の約定は0ドルですが、少額取引以外がすべて無料になるわけではありません。' },
+  { q: '米国株の為替手数料が安いのはどこですか？', a: '事前両替なら、松井証券は米ドルとの両替手数料が無料、楽天証券はリアルタイム為替取引の手数料が0銭です。DMM 株は片道25銭です。ただし楽天証券は買値と売値の差があるため、表示手数料だけでなく実際の交換レートも確認します。' },
+  { q: '米国株は円貨決済と外貨決済のどちらが安いですか？', a: '円貨決済は3社とも1ドルあたり片道25銭の為替コストがかかります。先に米ドルへ両替して外貨決済にすると、両替条件は証券会社ごとに異なるため、売買手数料と為替コストを合算して比較してください。' },
+] as const;
+
 export default function Page() {
+  const faqJsonLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((item) => ({ '@type': 'Question', name: item.q, acceptedAnswer: { '@type': 'Answer', text: item.a } })) };
+
   return (
     <article>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd).replace(/</g, '\\u003c') }} />
       <p className="page-kicker">US STOCK / FEE COMPARISON</p>
       <h1>米国株の手数料を3社比較<br />為替まで含めると差はどこに出る？</h1>
       <p className="lede">DMM 株・松井証券・楽天証券の米国株現物を、通常口座のインターネット取引で比較します。3社とも基本の売買手数料は同じです。差が出るのは、円貨決済か、先に米ドルへ両替して外貨決済するかという部分です。</p>
@@ -51,7 +60,7 @@ export default function Page() {
         </table>
       </div><p className="panel-note">株価・為替レートが変わらない単純例。税金、市場の売値と買値の差、約定差、現地費用、端数処理は含みません。</p></div>
 
-      <h2>事前両替なら為替コストに差が出る</h2>
+      <h2>米国株の為替手数料が安いのは？事前両替で比較</h2>
       <div className="fx-metric-grid">
         <article><b>DMM 株</b><h3>片道25銭</h3><p>円貨決済でも、事前に行う為替取引でも1ドルあたり片道25銭です。</p></article>
         <article><b>松井証券</b><h3>両替手数料0円</h3><p>日本円から米ドル、米ドルから日本円への事前両替は無料です。</p></article>
@@ -59,6 +68,9 @@ export default function Page() {
         <article><b>COMMON</b><h3>外貨決済を選ぶ</h3><p>先に両替した米ドルを使うには、株の注文時に外貨決済を選びます。</p></article>
       </div>
       <p>1,000ドルを買って将来円へ戻す単純比較なら、DMM 株は往復500円、松井証券は両替手数料0円です。楽天証券はリアルタイム為替取引の手数料表示は往復0銭ですが、実際の交換レートには買値と売値の差があるため、完全な無コストとは限りません。</p>
+
+      <h2>米国株手数料のよくある質問</h2>
+      {faq.map((item) => <section key={item.q}><h3>{item.q}</h3><p>{item.a}</p></section>)}
 
       <h2>NISAは3社とも米国株の売買手数料無料</h2>
       <p>3社ともNISA口座内の米国株現物は売買手数料無料です。ただし、円貨決済の為替コストまで自動的に無料になるわけではありません。NISAでも、決済方法と両替条件を分けて確認します。</p>
@@ -83,7 +95,7 @@ export default function Page() {
           <li><a href="https://www.rakuten-sec.co.jp/web/currency/forex/commission.html" target="_blank" rel="noopener noreferrer">楽天証券「外国為替の手数料」</a></li>
           <li><a href="https://www.rakuten-sec.co.jp/web/nisa/commission/" target="_blank" rel="noopener noreferrer">楽天証券「日米株式の取引手数料が無料」</a></li>
         </ul>
-        <p>料金・条件は2026年9月12日に確認しました。取引前に各社の最新料金表と注文画面を確認してください。</p>
+        <p>料金・条件は2026年9月25日に確認しました。取引前に各社の最新料金表と注文画面を確認してください。</p>
       </section>
 
       <p><Link href="/articles/dmm-kabu-us-stock-fee">DMM 株の米国株手数料を詳しく見る →</Link></p>
