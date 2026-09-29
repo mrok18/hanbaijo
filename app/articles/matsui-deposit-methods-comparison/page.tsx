@@ -4,8 +4,8 @@ import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 
 export const metadata = {
   alternates: { canonical: '/articles/matsui-deposit-methods-comparison' },
-  title: '松井証券 入金 反映 時間｜方法別の手数料とリアルタイム条件',
-  description: '松井証券の入金反映時間を、MATSUI Bank・ネットリンク入金・らくらく振替入金・銀行振込で比較。ネットリンク入金とらくらく振替入金の違い、手数料が無料になる条件、反映されないときの確認手順を解説します。',
+  title: 'ネットリンク入金・らくらく振替入金の違い｜松井証券の反映時間・手数料',
+  description: '松井証券のネットリンク入金とらくらく振替入金の違いを、対応金融機関数、初回登録、反映時間、手数料で比較。銀行振込との違いや反映されないときの確認手順も解説します。',
 };
 
 const FAQS = [
@@ -20,6 +20,10 @@ const FAQS = [
   {
     question: '松井バンク入金と銀行振込の違いは何ですか？',
     answer: '松井バンク入金は無料・リアルタイムで手続きできます。一方、銀行振込は専用口座へ送金し、営業日日中でも通常30〜60分かかり、振込手数料は利用者負担です。',
+  },
+  {
+    question: 'ネットリンク入金とらくらく振替入金の違いは何ですか？',
+    answer: 'ネットリンク入金は提携17行のネットバンキング画面で手続きし、らくらく振替入金は対応する4行の口座を初回登録した後、松井証券のお客様サイト内で手続きします。松井証券の手数料はどちらも無料ですが、らくらく振替入金は銀行側の確認後に反映される場合があります。',
   },
 ];
 
@@ -37,9 +41,9 @@ export default function Page() {
   return <article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd).replace(/</g, '\\u003c') }} />
     <p className="page-kicker">MATSUI / DEPOSIT METHODS</p>
-    <h1>松井証券 入金 反映 時間｜方法別の手数料と<br />リアルタイム条件</h1>
-    <p className="lede">松井証券の銀行口座から入金する方法は、ネットリンク入金・らくらく振替入金・MATSUI Bank入金・定期入金など6種類です。ネットリンク入金とらくらく振替入金の違い、松井証券の銀行口座を使った入金で振込手数料が無料になる条件と、銀行振込（利用者負担）の違いを反映時間や事前設定とあわせて比較します。</p>
-    <div className="callout"><strong>結論：即時入金は手数料無料、銀行振込は利用者負担</strong><p>松井証券公式では、ネットリンク入金・らくらく振替入金・MATSUI Bank入金・スイープ入金・定期入金の振替／振込手数料は無料です。銀行振込入金は金融機関側の入金手数料がかかる場合があります。</p></div>
+    <h1>ネットリンク入金・らくらく振替入金の違い<br />松井証券の反映時間と手数料</h1>
+    <p className="lede">ネットリンク入金は提携17行のネットバンキングで都度手続きし、らくらく振替入金は対応4行を初回登録して松井証券のサイト内で振り替えます。どちらも松井証券の手数料は無料ですが、反映条件と使える銀行が違います。</p>
+    <div className="callout"><strong>結論：都度認証ならネットリンク、登録後の操作を短くするなららくらく振替</strong><p>ネットリンク入金は提携金融機関のネットバンキング契約が必要です。らくらく振替入金は初回の銀行口座登録が必要で、2回目以降は松井証券のお客様サイト内で完了します。どちらも原則リアルタイムですが、銀行側の確認やメンテナンスで遅れる場合があります。</p></div>
 
     <h2>松井証券の入金反映時間は方法で変わる</h2>
     <p>松井証券の入金反映時間は、リアルタイムで反映される方法と、数営業日かかる方法に分かれます。取引直前ならネットリンク入金・らくらく振替入金・MATSUI Bank入金、積立用なら定期入金、対象サービスを使わない場合は銀行振込を選びます。</p>
@@ -48,18 +52,19 @@ export default function Page() {
     <div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th>方法</th><th>反映</th><th>手数料</th><th>事前準備</th></tr></thead><tbody>
       <tr><td className="ex-name">スイープ入金</td><td>発注時に自動・リアルタイム</td><td>無料</td><td>MATSUI Bank口座・設定</td></tr>
       <tr><td className="ex-name">MATSUI Bank入金</td><td>リアルタイム</td><td>無料</td><td>MATSUI Bank口座</td></tr>
-      <tr><td className="ex-name">ネットリンク入金</td><td>リアルタイム</td><td>無料</td><td>対象銀行のネットバンキング</td></tr>
-      <tr><td className="ex-name">らくらく振替入金</td><td>リアルタイム</td><td>無料</td><td>初回に銀行口座登録</td></tr>
+      <tr><td className="ex-name">ネットリンク入金</td><td>原則リアルタイム</td><td>無料</td><td>提携17行・ネットバンキング契約</td></tr>
+      <tr><td className="ex-name">らくらく振替入金</td><td>原則リアルタイム</td><td>無料</td><td>対応4行・初回に銀行口座登録</td></tr>
       <tr><td className="ex-name">定期入金</td><td>引落しから原則5営業日後</td><td>無料</td><td>銀行口座・金額の設定</td></tr>
       <tr><td className="ex-name">銀行振込入金</td><td>確認後。営業日日中は通常30〜60分</td><td>利用者負担</td><td>専用振込先の確認</td></tr>
     </tbody></table></div></div>
 
     <h2>ネットリンク入金とらくらく振替入金の違い</h2>
-    <p>MATSUI Bank入金、ネットリンク入金、らくらく振替入金は、銀行口座から松井証券の総合口座へリアルタイムで入金する方式です。いずれも松井証券側の振替手数料は無料ですが、利用できる金融機関と事前設定が異なります。</p>
+    <p>ネットリンク入金は提携17行のネットバンキング画面へ移動して認証する方式、らくらく振替入金はみずほ銀行・三菱UFJ銀行・三井住友銀行・ゆうちょ銀行など対応4行を初回登録し、松井証券のお客様サイト内で金額を指定する方式です。松井証券側の手数料はどちらも無料ですが、反映は「必ず即時」ではなく、銀行側の確認・利用時間・メンテナンスの影響を受けます。</p>
     <div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th>比較項目</th><th>ネットリンク入金</th><th>らくらく振替入金</th></tr></thead><tbody>
+      <tr><td className="ex-name">対応金融機関</td><td>提携17行</td><td>対応4行（みずほ・三菱UFJ・三井住友・ゆうちょ等）</td></tr>
       <tr><td className="ex-name">操作する画面</td><td>提携金融機関のネットバンキング</td><td>松井証券のお客様サイト</td></tr>
-      <tr><td className="ex-name">初回設定</td><td>利用時に金融機関へ接続</td><td>初回に銀行口座を登録</td></tr>
-      <tr><td className="ex-name">反映・手数料</td><td>リアルタイム・無料</td><td>リアルタイム・無料</td></tr>
+      <tr><td className="ex-name">初回設定</td><td>ネットバンキング契約が必要</td><td>初回に銀行口座を登録</td></tr>
+      <tr><td className="ex-name">反映・手数料</td><td>原則リアルタイム・無料</td><td>原則リアルタイム・無料（銀行確認で遅れる場合あり）</td></tr>
       <tr><td className="ex-name">向いているケース</td><td>銀行側の認証でその都度入金したい</td><td>登録後の入力を簡単にしたい</td></tr>
     </tbody></table></div></div>
     <ul>
@@ -67,6 +72,7 @@ export default function Page() {
       <li><strong>ネットリンク入金：</strong>提携金融機関のネットバンキング画面で手続き</li>
       <li><strong>らくらく振替入金：</strong>初回登録後は松井証券サイト内で金額入力だけで完了</li>
     </ul>
+    <p><Link href="/stocks/matsui">松井証券の口座・国内株コストを見る →</Link> <Link href="/articles/matsui-withdrawal-methods-comparison">入金後の出金方法を比較する →</Link></p>
 
     <h2>ネットリンク入金は終了ボタンまで進む</h2>
     <p>金融機関側で振込操作が終わった後、松井証券のお客様サイトへ戻る指定ボタンを押します。ブラウザを閉じるなどして正常終了しなかった場合、入金をリアルタイムで余力へ反映できないことがあります。</p>
@@ -99,7 +105,7 @@ export default function Page() {
       <p className="affiliate-disclosure">広告リンクから申込みが成立すると、当サイトが報酬を受け取る場合があります。対応金融機関・利用時間は公式サイトで確認してください。</p>
     </section>
 
-    <section className="article-faq" aria-labelledby="faq"><h2 id="faq">松井バンク振込手数料のFAQ</h2>
+    <section className="article-faq" aria-labelledby="faq"><h2 id="faq">ネットリンク入金・らくらく振替入金のFAQ</h2>
       {FAQS.map((item) => <div className="faq-item" key={item.question}><h3>{item.question}</h3><p>{item.answer}</p></div>)}
     </section>
 
@@ -107,8 +113,9 @@ export default function Page() {
       <li><a href="https://www.matsui.co.jp/service/money/rule/" target="_blank" rel="noopener noreferrer">松井証券「入出金 取引ルール」</a></li>
       <li><a href="https://www.matsui.co.jp/service/money/deposit/" target="_blank" rel="noopener noreferrer">松井証券「入金」</a></li>
       <li><a href="https://support.matsui.co.jp/faq/show/1863?site_domain=faq" target="_blank" rel="noopener noreferrer">松井証券Q&amp;A「入金の方法」</a></li>
+      <li><a href="https://support.matsui.co.jp/faq/show/1857?site_domain=faq" target="_blank" rel="noopener noreferrer">松井証券Q&amp;A「ネットリンク入金とは何ですか」</a></li>
       <li><a href="https://www.matsui.co.jp/info/money-01/index2.html" target="_blank" rel="noopener noreferrer">松井証券「入金方法のご案内」</a></li>
-    </ul><p>入金条件は2026年9月15日に公式ページで確認しました。対応銀行、利用時間、反映時間は変更される場合があります。</p></section>
+    </ul><p>入金条件は2026年9月28日に公式ページで確認しました。対応銀行、利用時間、反映時間は変更される場合があります。</p></section>
 
     <p><Link href="/articles/matsui-ekyc-required-documents">口座開設のeKYCと必要書類を見る →</Link></p>
     <p><Link href="/articles/matsui-simultaneous-account-opening">同時開設できる商品口座を見る →</Link></p>

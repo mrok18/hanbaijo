@@ -1,5 +1,5 @@
 export interface AffiliateOffer {
-  id: 'fxtf' | 'systre-select-365' | 'dmm-cfd' | 'dmm-kabu' | 'matsui-fx' | 'jfx' | 'tossy' | 'ablenet-vps' | 'fpo-fx-guide' | 'digital-asset-loan' | 'monex-fxplus' | 'hirose-fx-a8' | 'hirose-fx-accesstrade';
+  id: 'fxtf' | 'systre-select-365' | 'dmm-cfd' | 'dmm-kabu' | 'matsui-fx' | 'jfx' | 'tossy' | 'ablenet-vps' | 'fpo-fx-guide' | 'digital-asset-loan' | 'monex-fxplus' | 'hirose-fx-a8' | 'hirose-fx-accesstrade' | 'iwai-cosmo';
   name: string;
   category: string;
   description: string;
@@ -48,6 +48,16 @@ export const AFFILIATE_OFFERS: Record<AffiliateOffer['id'], AffiliateOffer> = {
     linkLabel: 'ヒロセ通商 LION FXの公式情報を確認（アクセストレード）',
     href: 'https://h.accesstrade.net/sp/cc?rk=01002xr400oyio',
     impressionSrc: 'https://h.accesstrade.net/sp/rr?rk=01002xr400oyio',
+    network: 'accesstrade',
+  },
+  'iwai-cosmo': {
+    id: 'iwai-cosmo',
+    name: '岩井コスモ証券',
+    category: '国内株・信用取引・NISA',
+    description: '岩井コスモ証券のネット取引、国内株、信用取引、NISAの最新条件を公式サイトで確認できます。',
+    linkLabel: '岩井コスモ証券「ネット取引」',
+    href: 'https://h.accesstrade.net/sp/cc?rk=0100ip8800oyio',
+    impressionSrc: 'https://h.accesstrade.net/sp/rr?rk=0100ip8800oyio',
     network: 'accesstrade',
   },
   fxtf: {
