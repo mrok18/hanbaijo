@@ -89,6 +89,14 @@ export default function Page() {
     <p>銀行振込入金では、利用者ごとに用意された専用の入金先銀行口座を確認して送金します。営業日の日中は通常30〜60分で反映されますが、銀行や松井証券側の確認状況、時間外、休日では遅れる可能性があります。</p>
     <div className="formula-box"><code>実質入金コスト ＝ 銀行の振込手数料 ＋ 入金待ちによる機会コスト</code><small>無料の即時入金が使える場合でも、焦って予定外の取引を増やさないことが大切です。</small></div>
 
+    <h2>入金が反映されないときの確認手順</h2>
+    <ol>
+      <li>ネットリンク入金は、金融機関側の振込完了後に松井証券へ戻るボタンまで押したか確認する。</li>
+      <li>らくらく振替入金は、初回の銀行口座登録が完了しているか、利用時間・メンテナンス中でないか確認する。</li>
+      <li>銀行振込は、専用の入金先口座と口座名義を確認し、営業日の日中でも30〜60分程度は待つ。</li>
+      <li>銀行の出金履歴と松井証券の入出金履歴を照合し、解消しない場合は公式サポートへ問い合わせる。</li>
+    </ol>
+
     <p><Link href="/articles/matsui-withdrawal-methods-comparison">翌営業日・即時・MATSUI Bankの出金方法を見る →</Link></p>
 
     <h2>目的別の選び方</h2>
@@ -115,7 +123,7 @@ export default function Page() {
       <li><a href="https://support.matsui.co.jp/faq/show/1863?site_domain=faq" target="_blank" rel="noopener noreferrer">松井証券Q&amp;A「入金の方法」</a></li>
       <li><a href="https://support.matsui.co.jp/faq/show/1857?site_domain=faq" target="_blank" rel="noopener noreferrer">松井証券Q&amp;A「ネットリンク入金とは何ですか」</a></li>
       <li><a href="https://www.matsui.co.jp/info/money-01/index2.html" target="_blank" rel="noopener noreferrer">松井証券「入金方法のご案内」</a></li>
-    </ul><p>入金条件は2026年9月28日に公式ページで確認しました。対応銀行、利用時間、反映時間は変更される場合があります。</p></section>
+    </ul><p>入金条件は2026年10月10日に公式ページで確認しました。対応銀行、利用時間、反映時間は変更される場合があります。</p></section>
 
     <p><Link href="/articles/matsui-ekyc-required-documents">口座開設のeKYCと必要書類を見る →</Link></p>
     <p><Link href="/articles/matsui-simultaneous-account-opening">同時開設できる商品口座を見る →</Link></p>

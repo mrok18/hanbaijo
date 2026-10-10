@@ -93,6 +93,16 @@ export default function Page() {
         </div><p className="panel-note">往復は新規と返済で同じ標準手数料がかかると仮定して2倍した試算値。SQ決済、一日先物、J-NET、電話注文などは別条件です。</p></div>
       </section>
 
+      <section className="comparison-section">
+        <h2>枚数を掛けて片道・往復を計算する</h2>
+        <p>表の手数料は約定1枚あたりです。複数枚を取引する場合は、片道手数料または往復手数料に枚数を掛けます。証拠金や値動きは含めず、手数料だけを比較する計算です。</p>
+        <div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th>商品・枚数</th><th>松井証券の往復</th><th>楽天証券の往復</th></tr></thead><tbody>
+          <tr><td className="ex-name">日経225先物 1枚</td><td>220円 × 2 × 1 ＝ 440円</td><td>275円 × 2 × 1 ＝ 550円</td></tr>
+          <tr><td className="ex-name">日経225mini 2枚</td><td>38.5円 × 2 × 2 ＝ 154円</td><td>38.5円 × 2 × 2 ＝ 154円</td></tr>
+          <tr><td className="ex-name">日経225マイクロ 5枚</td><td>11円 × 2 × 5 ＝ 110円</td><td>11円 × 2 × 5 ＝ 110円</td></tr>
+        </tbody></table></div></div>
+      </section>
+
       <section className="comparison-section split-explain">
         <div><p className="section-index">02 / INTERPRETATION</p><h2>マイクロでは、手数料が1ティックに近い</h2></div>
         <div>
@@ -138,7 +148,7 @@ export default function Page() {
           <li><a href="https://www.rakuten-sec.co.jp/web/fop/futures/commission/" target="_blank" rel="noopener noreferrer"><span>楽天証券</span><b>公式情報 ↗</b></a></li>
           <li><a href="https://www.jpx.co.jp/corporate/learning/resources/tvdivq0000003toh-att/fu_pu.pdf" target="_blank" rel="noopener noreferrer"><span>日本取引所グループ</span><b>取引単位・呼値 ↗</b></a></li>
         </ul>
-        <p>2026年9月14日に公式料金を再確認。対象は同条件に整理できた2社で、比較対象は順次追加します。</p>
+        <p>2026年10月10日に公式料金を再確認。対象は同条件に整理できた2社で、比較対象は順次追加します。</p>
       </section>
 
       <div className="comparison-actions">

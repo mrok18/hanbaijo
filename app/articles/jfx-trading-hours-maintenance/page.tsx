@@ -31,7 +31,7 @@ export default function Page() {
 
     <h2>日締めでは通信が切断される</h2>
     <p>日締め作業は通常15分程度、最大30分程度と案内されています。この時間はログインできず、接続中の取引画面も通信が切断されるため、作業終了後に再ログインが必要です。</p>
-    <div className="callout"><strong>早朝は時間とコストの両方を確認</strong><p>日締め付近は操作できない時間があるだけでなく、通貨ペアによって広告表示のスプレッド適用時間外になる場合があります。早朝取引では最新レートと提示スプレッドを発注直前に確認します。</p></div>
+    <div className="callout"><strong>早朝は時間とコストの両方を確認</strong><p>日締め付近は操作できない時間があるだけでなく、通貨ペアによって提示スプレッドの適用時間外になる場合があります。早朝取引では最新レートと提示スプレッドを発注直前に確認します。</p></div>
 
     <h2>ロールオーバーとスワップの反映</h2>
     <p>ロールオーバーは日々の取引日を切り替える処理で、JFXではロールオーバー後に未実現スワップが表示されます。ポジションを決済した時点で口座資産へ反映されるため、スワップを受け取れるかだけでなく、売買方向と付与日数を公式一覧で確認します。</p>
@@ -85,7 +85,7 @@ export default function Page() {
       <li><a href="https://faq.jfx.co.jp/faq/detail?category=33&amp;id=180&amp;site=FX557CTV" target="_blank" rel="noopener noreferrer">JFX FAQ「注文できない時間帯」</a></li>
       <li><a href="https://faq.jfx.co.jp/faq/detail?category=33&amp;id=437&amp;site=FX557CTV" target="_blank" rel="noopener noreferrer">JFX FAQ「夏時間・冬時間の始まり」</a></li>
       <li><a href="https://faq.jfx.co.jp/faq/detail?category=37&amp;id=237&amp;site=FX557CTV" target="_blank" rel="noopener noreferrer">JFX FAQ「時間指定指値・逆指値注文」</a></li>
-    </ul><p>取引時間・メンテナンス条件は2026年9月24日に公式ページとFAQで確認しました。祝日・臨時メンテナンス時は最新のお知らせを優先してください。</p></section>
+    </ul><p>取引時間・メンテナンス条件は2026年10月10日に公式ページとFAQで確認しました。祝日・臨時メンテナンス時は最新のお知らせを優先してください。</p></section>
 
     <p><Link href="/articles/jfx-scalping-spread-cost">JFXの時間帯別スプレッドを見る →</Link></p>
     <p><Link href="/articles/jfx-swap-calendar">JFXのスワップ付与日と3倍デーを見る →</Link></p>
