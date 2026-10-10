@@ -69,24 +69,24 @@ export default async function Home() {
     <>
       <section className="home-hero">
         <div className="hero-copy">
-          <p className="eyebrow"><span /> FX / CFD / STOCKS / CRYPTO</p>
-          <h1>投資の利益を削るコストを、<br /><em>同じ条件で比べる。</em></h1>
+          <p className="eyebrow"><span /> 投資の取引コスト比較・計算サイト</p>
+          <h1><span className="hero-products">FX・株・CFD・先物・暗号資産の</span>取引コストを、<br /><em>円で比べる。</em></h1>
           <p className="hero-lede">
-            FXを起点に、CFD、株式、先物、暗号資産まで。スプレッド、手数料、金利、為替コストを、
-            公称値・実測値・試算値に分けて可視化します。
+            金融コストウォッチは、スプレッド・手数料・スワップ・金利・為替コストを同じ条件で比較できるサイトです。
+            計算ツールに数量・回数・保有日数などを入力すると、1回の取引や月間・年間の負担額を試算できます。
           </p>
           <div className="hero-actions">
-            <Link className="button primary" href="/fx">FXコスト比較を見る</Link>
-            <Link className="button secondary" href="/tools/fx-spread-annual-cost-calculator">年間コスト差を試算</Link>
+            <Link className="button primary" href="/markets">商品・会社を比較する</Link>
+            <Link className="button secondary" href="/tools">自分の条件で試算する</Link>
           </div>
           <p className="hero-proof">
-            <span>FX比較ページ公開</span><span>広告と順位を分離</span><span>BTC実測は継続稼働</span>
+            <span>公式値・実測値・試算値を区別</span><span>広告と順位を分離</span><span>無料の計算ツール</span>
           </p>
         </div>
 
         <aside className="live-console" aria-label="最新のBTCスプレッド計測サマリー">
           <div className="console-head">
-            <span><i /> LIVE MEASUREMENT</span>
+            <span><i /> 比較の一例：ビットコイン</span>
             <strong>BTC / JPY</strong>
           </div>
           {widestDealer && narrowestExchange ? (
