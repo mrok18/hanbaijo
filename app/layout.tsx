@@ -49,6 +49,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <meta name="google-adsense-account" content="ca-pub-2826552314565242" />
         <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2826552314565242"
+          crossOrigin="anonymous"
+        />
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd).replace(/</g, '\\u003c') }}
         />

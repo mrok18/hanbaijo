@@ -39,6 +39,21 @@ export default function PrivacyPage() {
         詳細は<Link href="/method">計測・算出方法</Link>でも公開しています。
       </p>
 
+      <h2>Google AdSenseによる広告配信</h2>
+      <p>
+        当サイトではGoogle AdSenseによる広告が配信される場合があります。Googleなどの第三者配信事業者は、Cookie等を使用して、
+        当サイトや他のウェブサイトへの過去のアクセス情報などに基づく広告を配信することがあります。Googleの広告Cookieにより、
+        Googleおよびそのパートナーがユーザーに適した広告を表示できる場合があります。
+      </p>
+      <p>
+        広告のパーソナライズは、<a href="https://www.google.com/settings/ads" rel="noreferrer">Google広告設定</a>で確認・管理でき、パーソナライズド広告を無効にできます。
+        第三者配信事業者のCookieを利用したパーソナライズド広告については、<a href="https://www.aboutads.info/choices/" rel="noreferrer">aboutads.infoの選択ページ</a>でも無効化を選択できます。
+        Googleによる情報の取扱い、Cookie、広告配信の仕組みは、
+        <a href="https://policies.google.com/technologies/partner-sites?hl=ja" rel="noreferrer">Googleのサービスを使用するサイトやアプリから収集した情報のGoogleによる使用</a>、
+        <a href="https://support.google.com/adsense/answer/7549925?hl=ja" rel="noreferrer">AdSenseがCookieを使用する仕組み</a>、
+        <a href="https://support.google.com/adsense/answer/1348695?hl=ja" rel="noreferrer">AdSenseの必須コンテンツ</a>をご確認ください。
+      </p>
+
       <h2>3. 計算機の入力情報</h2>
       <p>
         当サイトの計算機はブラウザ内で計算します。取引金額、口座資金、取引数量、損切り幅、手数料等の入力値は、
@@ -80,7 +95,7 @@ export default function PrivacyPage() {
       <p>
         利用サービスや法令、運営方法の変更に応じて本方針を改定する場合があります。重要な変更は当ページで告知します。
       </p>
-      <p><small>制定・最終更新：2026年9月9日</small></p>
+      <p><small>制定：2026年9月9日／最終更新：2026年10月10日（Google AdSenseの広告配信説明を追加）</small></p>
     </article>
   );
 }
