@@ -3,7 +3,7 @@ import { useMemo, useRef, useState } from 'react';
 
 export interface Series { key: 'dealer' | 'exchange'; label: string; color: string; points: [number, number][] }
 
-const W = 900, H = 260, PAD = { t: 14, r: 16, b: 26, l: 52 };
+const W = 900, H = 280, PAD = { t: 26, r: 16, b: 34, l: 82 };
 const IW = W - PAD.l - PAD.r, IH = H - PAD.t - PAD.b;
 
 export default function SpreadChart({ series }: { series: Series[] }) {
@@ -59,11 +59,12 @@ export default function SpreadChart({ series }: { series: Series[] }) {
   const tipRight = hx > W * 0.6;
 
   return (
-    <div className="card">
+    <div className="card spread-chart">
+      <div className="table-scroll">
       <svg
         ref={svgRef}
         viewBox={`0 0 ${W} ${H}`}
-        style={{ width: '100%', height: 'auto', display: 'block' }}
+        style={{ width: '100%', minWidth: 900, height: 'auto', display: 'block' }}
         role="img"
         aria-label="販売所と取引所のスプレッド推移（対数目盛）"
         onMouseMove={onMove}
@@ -71,12 +72,12 @@ export default function SpreadChart({ series }: { series: Series[] }) {
       >
         {ticks.map((v) => (
           <g key={v}>
-            <line x1={PAD.l} x2={W - PAD.r} y1={y(v)} y2={y(v)} stroke="var(--border)" strokeWidth={1} />
-            <text x={PAD.l - 8} y={y(v) + 4} textAnchor="end" fontSize={11} fill="var(--text-muted)">{fmtPct(v)}</text>
+            <line x1={PAD.l} x2={W - PAD.r} y1={y(v)} y2={y(v)} stroke="var(--line)" strokeWidth={1} />
+            <text x={PAD.l - 8} y={y(v) + 4} textAnchor="end" fontSize={14} fill="var(--ink-soft)">{fmtPct(v)}</text>
           </g>
         ))}
-        <text x={PAD.l} y={H - 8} fontSize={11} fill="var(--text-muted)">{fmtTime(t0)}</text>
-        <text x={W - PAD.r} y={H - 8} fontSize={11} fill="var(--text-muted)" textAnchor="end">{fmtTime(t1)}</text>
+        <text x={PAD.l} y={H - 8} fontSize={14} fill="var(--ink-soft)">{fmtTime(t0)}</text>
+        <text x={W - PAD.r} y={H - 8} fontSize={14} fill="var(--ink-soft)" textAnchor="end">{fmtTime(t1)}</text>
 
         {series.map((s) => (
           <path
@@ -89,7 +90,7 @@ export default function SpreadChart({ series }: { series: Series[] }) {
         {series.map((s) => {
           const last = s.points[s.points.length - 1];
           return last ? (
-            <text key={s.key} x={x(last[0]) - 6} y={y(last[1]) - 9} textAnchor="end" fontSize={12} fontWeight={600} fill="var(--text-primary)">
+            <text key={s.key} x={x(last[0]) - 6} y={y(last[1]) - 9} textAnchor="end" fontSize={15} fontWeight={600} fill="var(--ink)">
               {s.label}
             </text>
           ) : null;
@@ -97,24 +98,25 @@ export default function SpreadChart({ series }: { series: Series[] }) {
 
         {hover != null && hoverPts.length > 0 && (
           <g>
-            <line x1={hx} x2={hx} y1={PAD.t} y2={PAD.t + IH} stroke="var(--border-strong)" strokeWidth={1} />
+            <line x1={hx} x2={hx} y1={PAD.t} y2={PAD.t + IH} stroke="var(--line-strong)" strokeWidth={1} />
             {hoverPts.map(({ s, p }) => (
-              <circle key={s.key} cx={x(p![0])} cy={y(p![1])} r={4.5} fill={s.color} stroke="var(--surface-1)" strokeWidth={2} />
+              <circle key={s.key} cx={x(p![0])} cy={y(p![1])} r={4.5} fill={s.color} stroke="var(--paper)" strokeWidth={2} />
             ))}
-            <g transform={`translate(${tipRight ? hx - 172 : hx + 10}, ${PAD.t + 6})`}>
-              <rect width={162} height={22 + hoverPts.length * 18} rx={6} fill="var(--surface-1)" stroke="var(--border-strong)" />
-              <text x={10} y={16} fontSize={11} fill="var(--text-muted)">{fmtTime(hoverPts[0].p![0])}</text>
+            <g transform={`translate(${tipRight ? hx - 270 : hx + 10}, ${PAD.t + 6})`}>
+              <rect width={260} height={32 + hoverPts.length * 26} rx={6} fill="var(--paper)" stroke="var(--line-strong)" />
+              <text x={10} y={22} fontSize={14} fill="var(--ink-soft)">{fmtTime(hoverPts[0].p![0])}</text>
               {hoverPts.map(({ s, p }, i) => (
-                <g key={s.key} transform={`translate(10, ${32 + i * 18})`}>
+                <g key={s.key} transform={`translate(10, ${50 + i * 26})`}>
                   <rect width={9} height={9} y={-8} rx={2} fill={s.color} />
-                  <text x={15} fontSize={12} fill="var(--text-secondary)">{s.label}</text>
-                  <text x={152} textAnchor="end" fontSize={12} fontWeight={600} fill="var(--text-primary)">{fmtPct(p![1])}</text>
+                  <text x={15} fontSize={15} fill="var(--ink-soft)">{s.label}</text>
+                  <text x={240} textAnchor="end" fontSize={15} fontWeight={600} fill="var(--ink)">{fmtPct(p![1])}</text>
                 </g>
               ))}
             </g>
           </g>
         )}
       </svg>
+      </div>
       <p className="muted" style={{ padding: '0 16px 14px', margin: 0 }}>
         縦軸は対数目盛です（社ごとに 5 桁以上の差があるため）。マウスを重ねると各時点の値が表示されます。
       </p>

@@ -807,3 +807,224 @@ article li + li { margin-top: 8px; }
   .explain-grid article { min-height: 170px; }
   .explain-grid h3 { margin-top: 30px; }
 }
+
+/* Desktop reading scale. Mobile keeps the original component sizes above. */
+@media (min-width: 961px) {
+  :root {
+    --text-label: .875rem; /* 14px */
+    --text-note: .9375rem; /* 15px */
+    --text-compact: 1rem; /* 16px */
+    --text-body: 1.125rem; /* 18px */
+    --text-subheading: 1.25rem; /* 20px */
+    --muted: #566762;
+  }
+
+  .brand-domain,
+  .live-pill,
+  .eyebrow, .section-index,
+  .console-head span,
+  .console-compare small,
+  .console-foot,
+  .home-path-card > span,
+  .market-card-top > span,
+  .market-card-top b,
+  .fx-launch-grid span,
+  .fx-launch-grid p,
+  .tool-promo dt,
+  .measure-stamp span,
+  .data-panel-head p,
+  .legend,
+  table.rates th,
+  .venue-tag,
+  .err,
+  .panel-note,
+  .chart-period,
+  .feature-article > span,
+  .ad-disclosure,
+  .article-index li > span,
+  .featured-card > span,
+  .page-kicker,
+  .status-card-head span,
+  .status-card-head b,
+  .status-card li,
+  .fx-status-panel > span,
+  .fx-status-panel dt,
+  .fx-metric-grid article > b,
+  .fx-metric-grid p,
+  .fx-formula span,
+  .fx-formula small,
+  .research-badge,
+  .fx-next span,
+  .affiliate-card-head span,
+  .affiliate-card-head b,
+  .affiliate-category,
+  .affiliate-disclosure,
+  .formula-box small,
+  .comparison-intro aside span,
+  .provider-stamp > span,
+  .provider-fact-grid article > b,
+  .provider-source span,
+  .provider-no-ad span,
+  .provider-directory span,
+  .provider-guide-group-head span,
+  .calculator-proof,
+  .preset-strip span,
+  .calculator-panel-head span, .result-head > span,
+  .origin-badge,
+  .number-input b,
+  .field-grid small,
+  .effective-rate,
+  .cost-row > div,
+  .cost-row strong,
+  .break-even,
+  .calculator-result > p,
+  .explain-grid article > b,
+  .explain-grid p,
+  .calculator-caution span,
+  .footer-brand p,
+  .footer-links a,
+  .footer-notes p,
+  .copyright { font-size: var(--text-label); }
+
+  .muted,
+  .hero-proof,
+  .console-head strong,
+  .console-label,
+  .console-impact span,
+  .home-path-card > b,
+  .section-heading > a,
+  .market-card > p,
+  .fx-launch-copy > a,
+  .tool-promo a,
+  .tool-promo dd,
+  .measure-stamp strong,
+  .insight-kicker,
+  .insight-card > p,
+  table.rates,
+  .chart-empty,
+  .text-link-light,
+  .standard-list b,
+  .standard-list span,
+  .feature-article > p,
+  .feature-article > b,
+  .official-grid a,
+  .post-list p,
+  .article-directory-head > span,
+  .article-search span,
+  .article-categories button,
+  .empty-search button,
+  .cta-list .go,
+  .status-card > p,
+  .status-card > a,
+  .roadmap-list li > b,
+  .roadmap-list p,
+  .transparency-note p,
+  .fx-status-panel > p,
+  .fx-status-panel dd,
+  .fx-example > div > p:not(.section-index),
+  .fx-next p,
+  .affiliate-card > p:not(.affiliate-category),
+  .affiliate-card > a,
+  .method-labels p,
+  .article-sources li, .article-sources p,
+  .comparison-table td > small,
+  .comparison-sources a b,
+  .comparison-sources > p,
+  .provider-stamp dt,
+  .provider-checklist p,
+  .provider-directory b,
+  .preset-strip strong,
+  .field-grid label > span:first-child,
+  .calculator-caution p { font-size: var(--text-note); }
+
+  .site-header nav a,
+  .button,
+  .home-path-card > p,
+  .section-heading p:not(.section-index),
+  .fx-launch-copy > p:not(.section-index),
+  .tool-promo > div > p:not(.section-index),
+  .method-band > div > p:not(.section-index),
+  .standard-list strong,
+  .featured-card > p,
+  .cta-list a,
+  .transparency-note strong,
+  .method-labels b,
+  .formula-box code,
+  .comparison-intro aside p,
+  .comparison-table td > strong,
+  .comparison-scope,
+  .comparison-sources a,
+  .provider-stamp dd,
+  .provider-fact-grid p,
+  .provider-checklist li,
+  .provider-source a,
+  .provider-faq-list p,
+  .provider-offer > div > p:not(.section-index),
+  .provider-no-ad p,
+  .provider-directory p,
+  .provider-data-note,
+  .total-cost span { font-size: var(--text-compact); }
+
+  body,
+  .brand-name,
+  .lede,
+  .fx-launch-grid strong,
+  .data-panel-head h3,
+  .post-list a,
+  .article-index li > b,
+  .featured-card > a,
+  .roadmap-list strong,
+  .stocks-page, .futures-page,
+  .fx-hero .lede,
+  .fx-metric-grid h3,
+  .comparison-page,
+  .comparison-intro .lede,
+  .comparison-table .result-value,
+  .provider-page,
+  .provider-hero .lede,
+  .provider-source strong,
+  .calculator-intro .lede,
+  .number-input input,
+  .break-even strong,
+  .explain-grid h3,
+  .footer-brand strong { font-size: var(--text-body); }
+
+  h3,
+  .fx-formula strong,
+  .provider-stamp > strong,
+  .provider-fact-grid h3,
+  .provider-faq-list h3 { font-size: var(--text-subheading); }
+
+  body { line-height: 1.85; }
+  .hero-lede { font-size: var(--text-body); }
+  table.rates { font-size: var(--text-compact); }
+  table.rates th { font-size: var(--text-note); }
+  .field-grid label > span:first-child { font-size: var(--text-compact); }
+  .number-input { min-height: 52px; }
+  .field-grid small { line-height: 1.7; }
+  .button { padding-block: 10px; min-height: 52px; }
+  .header-inner { height: auto; min-height: 84px; padding-block: 14px; gap: 16px; }
+  .site-header nav { min-width: 0; flex-wrap: wrap; justify-content: flex-end; }
+  .site-header nav a { padding: 6px 8px; }
+  .brand-domain { letter-spacing: .08em; }
+  .market-card-top, .status-card-head, .affiliate-card-head,
+  .console-head, .console-foot, .calculator-panel-head { flex-wrap: wrap; }
+  .market-card > p, .preset-strip strong, .preset-strip span {
+    white-space: normal; overflow: visible; text-overflow: clip;
+  }
+  .market-card > p { line-height: 1.7; }
+  .console-head span, .console-head strong, .brand-domain,
+  .page-kicker, .fx-status-panel > span, .provider-stamp > span,
+  .provider-source span, .calculator-panel-head span, .result-head > span,
+  .fx-launch-grid span, .fx-formula span, .calculator-caution span {
+    line-height: 1.5;
+  }
+  .console-head span { letter-spacing: .04em; }
+  .console-label, .console-compare small, .console-impact span, .console-foot,
+  .fx-launch-copy > p:not(.section-index), .fx-launch-grid p,
+  .fx-status-panel > p, .fx-status-panel dt, .fx-example > div > p:not(.section-index),
+  .fx-formula small, .standard-list span, .provider-stamp dt,
+  .comparison-intro aside p, .comparison-sources > p,
+  .effective-rate, .cost-row > div, .break-even, .calculator-result > p,
+  .footer-brand p, .footer-notes p, .copyright { color: rgba(255, 255, 255, .76); }
+}
