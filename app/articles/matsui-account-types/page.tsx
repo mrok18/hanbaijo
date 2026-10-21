@@ -56,7 +56,7 @@ export default function Page() {
     headline: metadata.title,
     description: metadata.description,
     datePublished: '2026-09-07',
-    dateModified: '2026-09-19',
+    dateModified: '2026-10-20',
     mainEntityOfPage: 'https://hanbaijo.com/articles/matsui-account-types',
     author: { '@type': 'Organization', name: '金融コストウォッチ' },
     publisher: { '@type': 'Organization', name: '金融コストウォッチ' },
@@ -100,8 +100,9 @@ export default function Page() {
       </tbody></table></div><p className="panel-note">2026年9月17日確認。スプレッドとスワップは市場環境で変動し、条件は変更される場合があります。詳細な通貨別条件は<a href="/fx/matsui">松井証券FXの手数料シート</a>で確認できます。</p></div>
 
       <h2>スプレッドを含めた総コストの試算例</h2>
-      <p>取引手数料が0円でも、スプレッドは売買コストとして残ります。たとえば1万通貨、スプレッド0.2銭、1pips＝100円という条件を仮定すると、片道のスプレッド相当額は<strong>0.2pips×100円＝20円</strong>、往復では40円です。これは松井証券の提示値を保証するものではなく、取引画面の実際のスプレッドを入力して確認するための計算例です。</p>
-      <div className="formula-box"><code>往復コストの目安 ＝ 取引数量（万通貨）× スプレッド（pips）× 1pipsの円価値 × 2</code><small>スワップ、受渡決済手数料、スリッページは別途確認</small></div>
+      <p>取引手数料が0円でも、スプレッドは売買コストとして残ります。たとえば米ドル/円の売値（Bid）が150.000円、買値（Ask）が150.002円のまま変わらず、1万通貨を買ってすぐに売ると、差額は<strong>0.002円×10,000通貨＝20円</strong>です。この1往復を40円と二重に数えません。価格・スプレッドは説明用の仮定で、松井証券の実際の提示値ではありません。</p>
+      <div className="formula-box"><code>スプレッド相当額（円）＝ スプレッド（pips）× その取引数量の1pipsあたり円価値</code><small>例：1万通貨の米ドル/円なら0.2pips×100円＝20円。スプレッドやレートが変わる場合の実際の損益、スワップ、受渡決済手数料、スリッページは別途確認</small></div>
+      <p><Link href="/tools/fx-pip-value-calculator">取引数量とスプレッドを円で試算する →</Link> 数量10,000、決済通貨JPY、スプレッド0.2pipsで、スプレッド相当額20円を確認できます。</p>
 
       <h2>松井証券の総合口座とは？</h2>
       <p>松井証券の総合口座とは、日本株をはじめ、同社の複数の商品・サービスを利用するための基本口座です。公式の口座開設案内では、日本株、米国株、投資信託、NISA、FX、先物・オプションが取引可能なサービスとして示されています。</p>
@@ -178,6 +179,7 @@ export default function Page() {
           <li><a href="https://www.matsui.co.jp/apply/" target="_blank" rel="noopener noreferrer">松井証券「口座開設」</a></li>
           <li><a href="https://www.matsui.co.jp/apply/fx-account/" target="_blank" rel="noopener noreferrer">松井証券「FX専用口座開設完了までの流れ」</a></li>
           <li><a href="https://www.matsui.co.jp/fx/rule/" target="_blank" rel="noopener noreferrer">松井証券「FX 取引ルール」</a></li>
+          <li><a href="https://www.matsui.co.jp/fx/study/article/glossary/spread/index.html" target="_blank" rel="noopener noreferrer">松井証券「スプレッドの仕組みとコストの計算方法」（計算方法を2026年10月20日に照合）</a></li>
           <li><a href="https://support.matsui.co.jp/faq/show/47571?site_domain=faq" target="_blank" rel="noopener noreferrer">松井証券「FX専用口座から総合口座への切替方法」</a></li>
           <li><a href="https://support.matsui.co.jp/faq/show/47605?site_domain=faq" target="_blank" rel="noopener noreferrer">松井証券「FX専用口座の開設方法」</a></li>
           <li><a href="https://support.matsui.co.jp/faq/show/48197?site_domain=faq" target="_blank" rel="noopener noreferrer">松井証券「松井証券の口座開設方法を教えてください」</a></li>
