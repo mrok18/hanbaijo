@@ -21,7 +21,9 @@ export default function Page() {
       <h1>DMM 株の米国株手数料はいくら？<br />為替25銭まで計算</h1>
       <p className="lede">米国株現物の取引手数料は約定代金の0.495％で、上限は22ドルです。「0ドル～」はすべての取引が無料という意味ではありません。円貨決済では、さらに1ドルあたり片道25銭の為替コストを確認します。</p>
 
-      <div className="callout"><strong>総額は2段階で計算</strong><p>米国株の売買手数料と、円からドル・ドルから円の為替コストを分けます。往復する場合は買付と売却の両方を数えます。</p></div>
+      <div className="callout"><strong>例：1,000ドルの往復コストは約1,985円</strong><p>各1,000ドルを買付・売却し、為替が1ドル＝150円で変わらない円貨決済の例です。往復の売買手数料9.90ドル（1,485円）と為替コスト500円を合計しています。税金・配当・市場の価格差等を除く概算です。</p></div>
+      <p><Link href="/tools/us-stock-fx-profit-calculator">自分の株価・為替で円換算損益を試算する →</Link>：買値・売値、株数、購入時・売却時のドル円を入力できます。通常の料率で試算する場合は、片道売買手数料0.495％・片道為替コスト25銭を使います。</p>
+      <p>この計算機は汎用の概算用で、最低・上限手数料や税金・配当は反映しません。約定代金2.22ドル以下の0ドル、4,444.45ドル以上の上限22ドルは自動適用されないため、該当する場合は本文の料金式・上限適用例と公式条件を確認してください。</p>
 
       <h2>米国株現物の取引手数料</h2>
       <div className="formula-box">
@@ -76,7 +78,7 @@ export default function Page() {
           <li><a href="https://kabu.dmm.com/support/faqs/article/00165/" target="_blank" rel="noopener noreferrer">DMM 株「米国株式（現物取引）の売買手数料」</a></li>
           <li><a href="https://kabu.dmm.com/support/faqs/article/00166/" target="_blank" rel="noopener noreferrer">DMM 株「米国株式（現物取引）で発生する費用」</a></li>
         </ul>
-        <p>料金は2026年9月7日に確認しました。取引前に公式料金表と適用為替レートを確認してください。</p>
+        <p>売買手数料と片道為替コストは2026年10月24日にDMM 株の公式FAQで再確認しました。取引前に公式料金表と適用為替レートを確認してください。</p>
       </section>
 
       <section className="article-affiliate" aria-label="DMM 株の広告">
