@@ -39,7 +39,8 @@ export default function NikkeiPositionSizeCalculator() {
       <label className="wide"><span>1枚の必要証拠金（円）</span><input type="number" min="0" step="1000" value={marginPerLot} onChange={e => setMarginPerLot(Number(e.target.value))} /><small>取引画面に表示された最新額を入力</small></label>
     </div></section>
     <section className="calculator-result"><div className="result-head"><span>POSITION SIZE</span><h2>最大枚数の目安</h2></div><div className="total-cost"><strong>{number.format(result.lots)}</strong><span>枚</span></div>
-      <p>許容損失額：約{number.format(result.riskBudget)}円</p><p>コスト込み損切り幅：{number.format(result.totalPoints)}円（約{number.format(result.stopTicks)}ティック）</p><p>1枚の想定損失：約{number.format(result.lossPerLot)}円</p><p>リスク基準の上限：{number.format(result.lotsByRisk)}枚</p><p>証拠金基準の上限：{number.format(result.lotsByMargin)}枚</p><p>表示枚数の想定損失：約{number.format(result.estimatedLoss)}円</p><p>表示枚数の必要証拠金：約{number.format(result.requiredMargin)}円</p>
+      <p>許容損失額：約{number.format(result.riskBudget)}円</p><p>スリッページ加算後の損切り幅：{number.format(result.totalPoints)}円（約{number.format(result.stopTicks)}ティック）</p><p>1枚の想定損失：約{number.format(result.lossPerLot)}円</p><p>リスク基準の上限：{number.format(result.lotsByRisk)}枚</p><p>証拠金基準の上限：{number.format(result.lotsByMargin)}枚</p><p>表示枚数の想定損失：約{number.format(result.estimatedLoss)}円</p><p>表示枚数の必要証拠金：約{number.format(result.requiredMargin)}円</p>
+      <p>想定損失と枚数の目安には売買手数料を含みません。手数料を含む総損失は別に確認してください。</p>
       {result.lots === 0 && <p><strong>この条件では1枚未満です。より小さい商品か、損切り幅・資金条件を検討してください。</strong></p>}
     </section>
   </div></div>;
