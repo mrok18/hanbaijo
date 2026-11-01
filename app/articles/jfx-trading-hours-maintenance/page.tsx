@@ -2,8 +2,8 @@ import Link from 'next/link';
 
 export const metadata = {
   alternates: { canonical: '/articles/jfx-trading-hours-maintenance' },
-  title: 'JFX取引時間は何時？夏時間・冬時間とメンテナンス',
-  description: 'JFXの取引時間を夏時間・冬時間の開始・終了時刻から確認。日締めメンテナンス、土日の予約注文、注文可否、祝日変更も公式情報で整理します。',
+  title: 'JFX取引時間・メンテナンス｜2026年11月2日から冬時間',
+  description: 'JFXは2026年11月2日から米国冬時間へ。取引時間は日本時間の月曜7:00〜土曜6:30、日締めメンテナンスは6:59から通常15分・最大30分程度。夏時間との違いと土日の注文可否を公式告知で確認できます。',
 };
 
 const faq = [
@@ -17,10 +17,14 @@ export default function Page() {
   return <article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }} />
     <p className="page-kicker">JFX / TRADING HOURS</p>
-    <h1>JFX取引時間は何時？<br />夏時間・冬時間のメンテナンスと注文可否</h1>
-    <p className="lede">JFXは米国夏時間なら月曜6:30〜土曜5:30、冬時間なら月曜7:00〜土曜6:30（日本時間）が取引時間です。日締めメンテナンス中は通信が切断されるため、取引できる時間と注文受付の時間を分けて確認します。</p>
+    <h1>JFXの取引時間とメンテナンス<br />2026年11月2日から冬時間</h1>
+    <p className="lede">JFXは2026年11月2日（月）から米国冬時間に切り替わり、取引時間は月曜7:00〜土曜6:30（日本時間）です。日締めメンテナンスは6:59から通常15分程度、最大30分程度。取引可能な時間と、土日も受け付ける予約注文を分けて確認します。</p>
 
     <div className="callout"><strong>JFX 取引時間の結論</strong><p>成行・ストリーミング注文は市場の取引時間内に限られます。メンテナンス時間を除き、指値などの予約注文は土日も受け付けますが、週末に約定するわけではありません。夏時間・冬時間の切替日や臨時メンテナンスは公式のお知らせを優先してください。</p></div>
+
+    <h2>2026年11月2日から適用される冬時間</h2>
+    <p>JFXの2026年10月23日付「米国標準時間切替に伴う取引時間変更のお知らせ」では、11月2日からMATRIX TRADER・ビギナーFXの取引時間を月曜7:00〜土曜6:30、ロールオーバーを日本時間7:00に変更すると案内しています。日締めメンテナンスの開始は取引ルール上6:59で、ロールオーバー時刻とは分けて確認してください。</p>
+    <p><a href="https://www.jfx.co.jp/newslist/" target="_blank" rel="noopener noreferrer">JFXニュースで2026年10月23日付の冬時間切替告知を確認する →</a></p>
 
     <h2>MATRIX TRADERの取引時間とメンテナンス時間</h2>
     <div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th>区分</th><th>取引開始</th><th>取引終了</th><th>日締め開始</th></tr></thead><tbody>
@@ -80,12 +84,13 @@ export default function Page() {
 
     <section className="article-sources" aria-labelledby="sources"><h2 id="sources">参照した公式資料</h2><ul>
       <li><a href="https://www.jfx.co.jp/trading_rule/" target="_blank" rel="noopener noreferrer">JFX「取引ルール」</a></li>
+      <li><a href="https://www.jfx.co.jp/newslist/" target="_blank" rel="noopener noreferrer">JFXニュース「米国標準時間切替に伴う取引時間変更のお知らせ」（2026年10月23日）</a></li>
       <li><a href="https://www.jfx.co.jp/newslist/maintenancelist/" target="_blank" rel="noopener noreferrer">JFX「メンテナンス情報」</a></li>
       <li><a href="https://faq.jfx.co.jp/faq/detail?category=33&amp;id=182&amp;site=FX557CTV" target="_blank" rel="noopener noreferrer">JFX FAQ「取引可能時間」</a></li>
       <li><a href="https://faq.jfx.co.jp/faq/detail?category=33&amp;id=180&amp;site=FX557CTV" target="_blank" rel="noopener noreferrer">JFX FAQ「注文できない時間帯」</a></li>
       <li><a href="https://faq.jfx.co.jp/faq/detail?category=33&amp;id=437&amp;site=FX557CTV" target="_blank" rel="noopener noreferrer">JFX FAQ「夏時間・冬時間の始まり」</a></li>
       <li><a href="https://faq.jfx.co.jp/faq/detail?category=37&amp;id=237&amp;site=FX557CTV" target="_blank" rel="noopener noreferrer">JFX FAQ「時間指定指値・逆指値注文」</a></li>
-    </ul><p>取引時間・メンテナンス条件は2026年10月10日に公式ページとFAQで確認しました。祝日・臨時メンテナンス時は最新のお知らせを優先してください。</p></section>
+    </ul><p>冬時間の適用日・取引時間・ロールオーバー時刻は2026年11月2日に10月23日付の公式告知で確認しました。通常のメンテナンス時刻は同日に取引ルールと照合しています。その他のFAQは2026年10月10日の確認内容です。祝日・臨時メンテナンス時は最新のお知らせを優先してください。</p></section>
 
     <p><Link href="/articles/jfx-scalping-spread-cost">JFXの時間帯別スプレッドを見る →</Link></p>
     <p><Link href="/articles/jfx-swap-calendar">JFXのスワップ付与日と3倍デーを見る →</Link></p>
