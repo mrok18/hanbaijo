@@ -125,7 +125,7 @@ export default function Page() {
       </div><p className="panel-note">開設できる関連口座や同時申込の対象は、年齢、居住地、投資経験、申込方法などの基準で異なります。</p></div>
 
       <section aria-labelledby="account-next-step">
-        <h3 id="account-next-step">希望する口座から、次に確認する案内を選ぶ</h3>
+        <h3 id="account-next-step" style={{ scrollMarginTop: 96 }}>希望する口座から、次に確認する案内を選ぶ</h3>
         <ul>
           <li><strong>新規でFX専用口座だけを希望：</strong><a href="https://www.matsui.co.jp/apply/fx-account/">FX専用口座の公式開設案内を見る →</a></li>
           <li><strong>新規で総合口座とFX口座の両方を希望：</strong><Link href="/fx/matsui">同時申込の条件・申込案内を見る →</Link></li>
@@ -178,7 +178,7 @@ export default function Page() {
       <div className="callout"><strong>広告提携と比較評価は分離します</strong><p>金融コストウォッチは松井証券の広告プログラムと提携しています。提携状況や報酬額を公称値・試算・掲載順位へ反映しません。</p></div>
 
       <section className="article-affiliate" aria-label="松井証券の広告">
-        <p><strong>この広告は証券（総合）口座の新規開設向けです。</strong>FX専用口座だけの申込や、既存口座の追加・切替は、<a href="#account-next-step">希望別の案内</a>から確認してください。</p>
+        <p><strong>この広告は証券（総合）口座の新規開設向けです。</strong>FX専用口座だけの申込や、既存口座の追加・切替は、<a href="#account-next-step" style={{ whiteSpace: 'nowrap' }}>希望別の案内</a>から確認してください。</p>
         <AffiliateOfferCard offer={AFFILIATE_OFFERS['matsui-fx']} />
         <p className="affiliate-disclosure">広告リンクから申込みが成立すると、当サイトが報酬を受け取る場合があります。口座の申込条件と取引リスクは公式サイトで確認してください。</p>
       </section>
