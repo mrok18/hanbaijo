@@ -59,7 +59,7 @@ export default function Page() {
     <p><Link href="/tools/matsui-fx-spread-calculator">取引数量と回数からスプレッドを計算する →</Link></p>
   </section>;
 
-  return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }} /><FxProviderFactSheet provider={FX_PROVIDERS.matsui} affiliateOffer={AFFILIATE_OFFERS['matsui-fx']} pageTitle={<>松井証券FXの手数料は無料？<br />スプレッド・スワップまで確認</>} reviewedAt="2026-09-13" details={details} relatedArticles={[
+  return <><p className="affiliate-disclosure" style={{ fontSize: 14 }}>広告：本ページはアフィリエイト広告を含みます。</p><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }} /><FxProviderFactSheet provider={FX_PROVIDERS.matsui} affiliateOffer={AFFILIATE_OFFERS['matsui-fx-accesstrade']} pageTitle={<>松井証券FXの手数料は無料？<br />スプレッド・スワップまで確認</>} reviewedAt="2026-09-13" details={details} relatedArticles={[
     { href: '/articles/matsui-fx-auto-trading-setting', title: '自動売買の設定方法', description: 'レンジ、値幅、益出し幅、数量、停止ライン、100件上限を整理します。' },
     { href: '/articles/systre-select-365-vs-matsui-auto-trading', title: 'シストレセレクト365と比較', description: 'リピート型と選択型、1通貨と1万通貨、費用・必要資金の違いを比較します。' },
     { href: '/articles/matsui-simultaneous-account-opening', title: '総合口座と同時に申込める口座', description: 'FX・NISA・信用・先物を同時申込みする場合と、後から追加する場合を整理します。' },

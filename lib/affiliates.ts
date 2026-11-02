@@ -1,11 +1,12 @@
 export interface AffiliateOffer {
-  id: 'fxtf' | 'systre-select-365' | 'dmm-cfd' | 'dmm-kabu' | 'matsui-fx' | 'jfx' | 'tossy' | 'ablenet-vps' | 'fpo-fx-guide' | 'digital-asset-loan' | 'monex-fxplus' | 'hirose-fx-a8' | 'hirose-fx-accesstrade' | 'iwai-cosmo';
+  id: 'fxtf' | 'systre-select-365' | 'dmm-cfd' | 'dmm-kabu' | 'matsui-fx' | 'matsui-fx-accesstrade' | 'jfx' | 'tossy' | 'ablenet-vps' | 'fpo-fx-guide' | 'digital-asset-loan' | 'monex-fxplus' | 'hirose-fx-a8' | 'hirose-fx-accesstrade' | 'iwai-cosmo';
   name: string;
   category: string;
   description: string;
   linkLabel: string;
   href: string;
   impressionSrc: string;
+  impressionBorder?: '0';
   network?: 'a8' | 'accesstrade';
 }
 
@@ -105,6 +106,17 @@ export const AFFILIATE_OFFERS: Record<AffiliateOffer['id'], AffiliateOffer> = {
     linkLabel: '松井証券',
     href: 'https://px.a8.net/svt/ejp?a8mat=4BC5IS+3KMEQ+3XCC+64C3M',
     impressionSrc: 'https://www10.a8.net/0.gif?a8mat=4BC5IS+3KMEQ+3XCC+64C3M',
+  },
+  'matsui-fx-accesstrade': {
+    id: 'matsui-fx-accesstrade',
+    name: '松井証券FX',
+    category: 'FX',
+    description: '松井証券の総合口座とFX口座を同時に申し込む方向けの案内です。口座開設の条件と取引リスクを公式サイトで確認してください。',
+    linkLabel: '松井証券のFX',
+    href: 'https://h.accesstrade.net/sp/cc?rk=0100ohhx00oyio',
+    impressionSrc: 'https://h.accesstrade.net/sp/rr?rk=0100ohhx00oyio',
+    impressionBorder: '0',
+    network: 'accesstrade',
   },
   jfx: {
     id: 'jfx',

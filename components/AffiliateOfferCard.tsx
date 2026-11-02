@@ -33,7 +33,7 @@ export default function AffiliateOfferCard({ offer }: { offer: AffiliateOffer })
           {offer.linkLabel}
           {/* アクセストレード指定の計測画像はリンクコード内に保持 */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img className="affiliate-pixel" src={offer.impressionSrc} width="1" height="1" alt="" />
+          <img className="affiliate-pixel" src={offer.impressionSrc} width="1" height="1" alt="" {...(offer.impressionBorder ? { border: offer.impressionBorder } : {})} />
         </a>
       ) : <>
         <a href={offer.href} target="_blank" rel="nofollow sponsored noopener noreferrer" onClick={trackAffiliateClick}>
