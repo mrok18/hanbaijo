@@ -11,6 +11,7 @@ export const metadata = {
 export default function Page() {
   return (
     <article>
+      <p className="affiliate-disclosure" style={{ fontSize: 14 }}>広告：本ページはアフィリエイト広告を含みます。</p>
       <p className="page-kicker">MATSUI FX / SPREAD RULES</p>
       <h1>MATSUI FXのスプレッドは0.1銭？<br />時間・数量・注文条件</h1>
       <p className="lede">米ドル/円0.1銭は、すべての注文・時間・数量に一律適用される数字ではありません。コアタイム、数量上限、成行注文という条件を満たす「縮小スプレッド」と、通常スプレッドを分けて確認します。</p>
@@ -27,7 +28,7 @@ export default function Page() {
             <tr><td className="ex-name">コアタイム外</td><td className="num"><strong>0.2～6.0銭</strong></td><td className="num">—</td><td>通常条件</td><td>翌3:00～翌9:00</td></tr>
           </tbody>
         </table>
-      </div><p className="panel-note">2026年9月7日に公式一覧で確認した米ドル/円の公称値。原則固定には例外があり、将来変更される場合があります。</p></div>
+      </div><p className="panel-note">2026年11月2日に公式一覧で確認した米ドル/円の公称値。原則固定には例外があり、将来変更される場合があります。</p></div>
 
       <h2>0.1銭を円換算するといくらか</h2>
       <div className="formula-box">
@@ -66,7 +67,7 @@ export default function Page() {
           <li><a href="https://www.matsui.co.jp/news/2026/detail_0401_01.html" target="_blank" rel="noopener noreferrer">松井証券「通常スプレッド引き下げとコアタイム制導入」</a></li>
           <li><a href="https://www.matsui.co.jp/fx/list/pdf/spread.pdf" target="_blank" rel="noopener noreferrer">松井証券「提示スプレッド等に関する実績情報」</a></li>
         </ul>
-        <p>条件は2026年9月7日に確認しました。取引時は公式一覧と取引画面の提示値を優先してください。</p>
+        <p>米ドル/円のスプレッド・数量上限・対象注文・コアタイムは2026年11月2日に公式一覧と取引ルールで再確認しました。取引時は公式一覧と取引画面の提示値を優先してください。</p>
       </section>
 
       <p><Link href="/tools/matsui-fx-spread-calculator">通貨数・取引回数からスプレッドコストを計算する →</Link></p>
@@ -74,8 +75,9 @@ export default function Page() {
       <p><Link href="/articles/matsui-fx-one-currency">MATSUI FXの1通貨取引を計算する →</Link></p>
       <p><Link href="/articles/fx-spread-cost">FXスプレッドを円換算する →</Link></p>
 
-      <section className="article-affiliate" aria-label="松井証券の広告">
-        <AffiliateOfferCard offer={AFFILIATE_OFFERS['matsui-fx']} />
+      <section className="article-affiliate" aria-label="松井証券FXの広告">
+        <AffiliateOfferCard offer={AFFILIATE_OFFERS['matsui-fx-accesstrade']} />
+        <p style={{ fontSize: 14 }}>FXは元本および利益が保証されず、預けた証拠金を上回る損失が生じる場合があります。契約締結前交付書面を確認してください。</p>
         <p className="affiliate-disclosure">広告リンクから申込みが成立すると、当サイトが報酬を受け取る場合があります。条件・計算の説明とは分けて掲載しています。</p>
       </section>
     </article>
