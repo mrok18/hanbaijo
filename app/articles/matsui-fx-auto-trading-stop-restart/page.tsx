@@ -12,7 +12,7 @@ export const metadata = {
 export default function Page() {
   return (
     <article>
-      <ArticleStructuredData slug="matsui-fx-auto-trading-stop-restart" publishedAt="2026-09-07" />
+      <ArticleStructuredData slug="matsui-fx-auto-trading-stop-restart" publishedAt="2026-09-07" modifiedAt="2026-11-02" />
       <p className="page-kicker">MATSUI FX / AUTO TRADING CONTROL</p>
       <h1>MATSUI FX自動売買の停止・再開<br />建玉と注文はどうなる？</h1>
       <p className="lede">「運用停止」は必ずしも全決済ではありません。停止時に建玉を残すか、決済注文を残すかで、その後のリスクと手作業が変わります。</p>
@@ -36,7 +36,13 @@ export default function Page() {
         <li>レートが運用停止ラインへ到達し、損切りが確定した</li>
         <li>約定取消し等により有効な自動売買注文がなくなった</li>
       </ul>
-      <p>自動停止後、松井証券側で自動的に運用は再開されません。証拠金余力不足で個別の新規注文が出せなかった場合も、余力を解消したうえで利用者自身の「再開」操作が必要です。</p>
+      <h3>注文グループと個別注文で再開手順が異なる</h3>
+      <p>停止後に松井証券側で自動的に運用が再開されるわけではありません。公式FAQでは、再開する対象を次のように分けています。</p>
+      <ul>
+        <li><strong>停止中の注文グループ：</strong>対象グループの編集画面で再開方法を確認します。以前の運用実績を引き継ぐ方法と、以前と同じ設定値で新しく開始する方法があります。</li>
+        <li><strong>余力不足で発注されなかった個別注文：</strong>余力不足を解消したうえで、対象グループの注文詳細から個別注文の再開方法を確認します。</li>
+      </ul>
+      <p><a href="https://support.matsui.co.jp/faq/show/42600?site_domain=faq" target="_blank" rel="noopener noreferrer">注文グループ・個別注文の再開手順を公式FAQで確認 →</a></p>
 
       <h2>再開前のチェック</h2>
       <div className="fx-metric-grid">
@@ -51,7 +57,7 @@ export default function Page() {
         <li><a href="https://www.matsui.co.jp/fx/auto-trading/order/" target="_blank" rel="noopener noreferrer">松井証券「自動売買の注文方法」</a></li>
         <li><a href="https://support.matsui.co.jp/faq/show/42069?site_domain=faq" target="_blank" rel="noopener noreferrer">松井証券Q&amp;A「運用停止方法」</a></li>
         <li><a href="https://support.matsui.co.jp/faq/show/42600?site_domain=faq" target="_blank" rel="noopener noreferrer">松井証券Q&amp;A「再開方法」</a></li>
-      </ul><p>取引ルール・操作情報は2026年9月7日に確認しました。</p></section>
+      </ul><p>停止方法・自動停止条件・再開対象の区分は2026年11月2日に公式取引ルールとFAQで確認しました。操作時は公式の最新画面を確認してください。</p></section>
 
       <p><Link href="/articles/matsui-fx-auto-trading-cost">自動売買の必要資金を見る →</Link></p>
       <p><Link href="/fx/matsui">MATSUI FXのコストシートへ戻る →</Link></p>
