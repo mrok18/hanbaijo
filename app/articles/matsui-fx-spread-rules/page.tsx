@@ -14,11 +14,11 @@ export default function Page() {
       <p className="affiliate-disclosure" style={{ fontSize: 14 }}>広告：本ページはアフィリエイト広告を含みます。</p>
       <p className="page-kicker">MATSUI FX / SPREAD RULES</p>
       <h1>MATSUI FXのスプレッドは0.1銭？<br />時間・数量・注文条件</h1>
-      <p className="lede">米ドル/円0.1銭は、すべての注文・時間・数量に一律適用される数字ではありません。コアタイム、数量上限、成行注文という条件を満たす「縮小スプレッド」と、通常スプレッドを分けて確認します。</p>
+      <p className="lede">米ドル/円0.1銭の「縮小スプレッド」は、注文数量と注文方法の条件を満たす場合に適用されます。「通常スプレッド」は、コアタイム内と時間外で表示値が異なります。どちらも相場急変や流動性低下時には拡大する場合があります。</p>
 
       <div className="callout"><strong>広告の最小値だけで総コストを計算しない</strong><p>まず注文数量と注文方法を確認し、次に取引する時間帯を当てはめます。市場急変や流動性低下時には原則固定の対象時間内でも広がる場合があります。</p></div>
 
-      <h2>米ドル/円の4つの表示条件</h2>
+      <h2>米ドル/円のスプレッドと適用条件</h2>
       <div className="data-panel"><div className="table-scroll">
         <table className="rates comparison-table">
           <thead><tr><th>区分</th><th className="num">スプレッド</th><th className="num">数量上限</th><th>対象注文</th><th>時間</th></tr></thead>
