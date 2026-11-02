@@ -56,7 +56,7 @@ export default function Page() {
     headline: metadata.title,
     description: metadata.description,
     datePublished: '2026-09-07',
-    dateModified: '2026-10-20',
+    dateModified: '2026-11-02',
     mainEntityOfPage: 'https://hanbaijo.com/articles/matsui-account-types',
     author: { '@type': 'Organization', name: '金融コストウォッチ' },
     publisher: { '@type': 'Organization', name: '金融コストウォッチ' },
@@ -124,6 +124,16 @@ export default function Page() {
         </table>
       </div><p className="panel-note">開設できる関連口座や同時申込の対象は、年齢、居住地、投資経験、申込方法などの基準で異なります。</p></div>
 
+      <section aria-labelledby="account-next-step">
+        <h3 id="account-next-step">希望する口座から、次に確認する案内を選ぶ</h3>
+        <ul>
+          <li><strong>新規でFX専用口座だけを希望：</strong><a href="https://www.matsui.co.jp/apply/fx-account/">FX専用口座の公式開設案内を見る →</a></li>
+          <li><strong>新規で総合口座とFX口座の両方を希望：</strong><Link href="/fx/matsui">同時申込の条件・申込案内を見る →</Link></li>
+          <li><strong>すでに口座を持っている：</strong><a href="https://support.matsui.co.jp/faq/show/1677?site_domain=faq">総合口座にFX口座を追加する公式手順</a>、または<a href="https://support.matsui.co.jp/faq/show/47571?site_domain=faq">FX専用から総合口座へ切り替える公式手順</a>を確認してください。</li>
+        </ul>
+        <p>上記の申込区分と公式手順の案内先は2026年11月2日に確認しました。開設には各口座の条件・審査があります。</p>
+      </section>
+
       <h2>FX専用口座を開設できる人・できない人</h2>
       <p>松井証券の案内では、FX専用口座は新規に口座開設する個人が対象です。法人、未成年者、すでに松井証券の総合口座を持っている人は申し込めません。</p>
       <p>すでに総合口座を持っている場合はFX専用口座を新設するのではなく、お客様サイトからFX口座を追加します。FX専用口座の申込時にはMATSUI Bankを同時申込できないため、必要なら専用口座の開設完了後に手続きします。</p>
@@ -168,6 +178,7 @@ export default function Page() {
       <div className="callout"><strong>広告提携と比較評価は分離します</strong><p>金融コストウォッチは松井証券の広告プログラムと提携しています。提携状況や報酬額を公称値・試算・掲載順位へ反映しません。</p></div>
 
       <section className="article-affiliate" aria-label="松井証券の広告">
+        <p><strong>この広告は証券（総合）口座の新規開設向けです。</strong>FX専用口座だけの申込や、既存口座の追加・切替は、<a href="#account-next-step">希望別の案内</a>から確認してください。</p>
         <AffiliateOfferCard offer={AFFILIATE_OFFERS['matsui-fx']} />
         <p className="affiliate-disclosure">広告リンクから申込みが成立すると、当サイトが報酬を受け取る場合があります。口座の申込条件と取引リスクは公式サイトで確認してください。</p>
       </section>
