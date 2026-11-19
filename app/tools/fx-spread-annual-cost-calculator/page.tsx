@@ -3,6 +3,7 @@ import Link from 'next/link';
 import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
 import FxSpreadAnnualCostCalculator from './FxSpreadAnnualCostCalculator';
+import styles from './next-steps.module.css';
 
 export const metadata: Metadata = {
   alternates: { canonical: '/tools/fx-spread-annual-cost-calculator' },
@@ -38,7 +39,8 @@ export default function Page() {
         <Link href="/tools/trading-break-even-calculator">損益分岐を計算</Link>
       </nav>
 
-      <section className="article-affiliate" aria-label="提携中のFXサービス">
+      <section id="fx-service-conditions" tabIndex={-1} className={`article-affiliate ${styles.advertising}`} aria-label="提携中のFXサービス">
+        <h2>掲載中サービスの公式条件（広告）</h2>
         <AffiliateOfferCard offer={AFFILIATE_OFFERS.jfx} />
         <AffiliateOfferCard offer={AFFILIATE_OFFERS['matsui-fx']} />
         <p className="affiliate-disclosure">広告リンクから申込みが成立すると、当サイトが報酬を受け取る場合があります。広告報酬は計算結果に影響しません。</p>

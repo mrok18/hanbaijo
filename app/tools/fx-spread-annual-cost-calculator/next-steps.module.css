@@ -1,0 +1,9 @@
+.nextSteps { margin-top: 24px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.35); }
+.nextSteps h3 { margin: 0 0 12px; color: #fff; font-size: 20px; line-height: 1.6; }
+.nextSteps p { font-size: 15px; line-height: 1.8; }
+.nextSteps a { display: block; margin-top: 12px; padding: 14px 16px; border: 1px solid #fff; border-radius: 8px; background: #fff; color: var(--ink); font-size: 16px; font-weight: 700; line-height: 1.6; text-decoration: none; }
+.nextSteps a:last-child { background: transparent; color: #fff; }
+.nextSteps a:hover { text-decoration: underline; }
+.nextSteps a:focus-visible { outline: 3px solid var(--signal); outline-offset: 3px; }
+.advertising { scroll-margin-top: 110px; }
+.advertising h2 { font-size: 24px; line-height: 1.6; }

@@ -1,6 +1,7 @@
 'use client';
 
 import { useMemo, useState } from 'react';
+import ResultNextSteps from './ResultNextSteps';
 
 export default function FxSpreadAnnualCostCalculator() {
   const [spreadA, setSpreadA] = useState(0.2);
@@ -64,6 +65,7 @@ export default function FxSpreadAnnualCostCalculator() {
           <p>比較B：月{yen.format(result.monthlyB)}円／期間合計{yen.format(result.annualB)}円</p>
           <p>期間中の往復回数：{count.format(result.annualRounds)}回</p>
           <small>入力したスプレッドどおりに全注文が約定する仮定の試算です。</small>
+          <ResultNextSteps />
         </section>
       </div>
     </div>
