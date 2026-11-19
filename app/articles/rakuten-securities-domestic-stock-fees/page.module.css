@@ -1,0 +1,38 @@
+.article {
+  width: 100%;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.nextSteps {
+  margin: 24px 0 36px;
+  padding: 22px;
+  border: 1px solid var(--line-strong);
+  border-radius: 15px;
+  background: var(--paper);
+}
+
+.nextSteps h2 { margin: 0 0 10px; padding: 0; font-size: 22px; }
+.nextSteps > p { margin: 0 0 16px; }
+.choices { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.choices a { display: flex; flex-direction: column; gap: 10px; padding: 16px; border: 1px solid var(--line-strong); border-radius: 10px; text-decoration: none; }
+.choices a:hover { background: var(--blue-soft); }
+.choices a:focus-visible, .article :global(.table-scroll):focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+.choices strong { font-size: 17px; line-height: 1.6; }
+.choices span, .note { color: var(--ink-soft); font-size: 15px; line-height: 1.8; }
+.nextSteps .note { margin: 16px 0 0; }
+.exampleLink { margin: 20px 0; padding: 20px; border-left: 4px solid var(--blue); background: var(--paper); }
+.exampleLink p { margin: 0 0 12px; }
+.exampleLink a { display: inline-block; padding: 8px 0; font-size: 17px; font-weight: 700; }
+.article :global(.table-scroll) { max-width: 100%; overscroll-behavior-x: contain; }
+.scrollHint { display: none; }
+
+@media (max-width: 640px) {
+  .nextSteps { padding: 18px; }
+  .choices { grid-template-columns: minmax(0, 1fr); }
+  .choices a { gap: 5px; padding: 14px; }
+  .article :global(table.rates) { min-width: 560px; }
+  .article :global(table.rates).compactTable { min-width: 0; }
+  .article .compactTable th, .article .compactTable td { white-space: normal; padding: 12px 10px; font-size: 14px; }
+  .scrollHint { display: block; margin: 12px 0 8px; color: var(--ink-soft); font-size: 14px; }
+}

@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import NextStepLink from './NextStepLink';
+import styles from './page.module.css';
 
 export const metadata: Metadata = {
   title: '楽天証券の手数料確認方法｜日本株・ゼロコース・取引履歴',
@@ -60,7 +62,7 @@ export default function Page() {
     headline: metadata.title,
     description: metadata.description,
     datePublished: '2026-09-11',
-    dateModified: '2026-09-12',
+    dateModified: '2026-11-19',
     mainEntityOfPage: 'https://hanbaijo.com/articles/rakuten-securities-domestic-stock-fees',
     author: { '@type': 'Organization', name: '金融コストウォッチ' },
     publisher: { '@type': 'Organization', name: '金融コストウォッチ' },
@@ -76,7 +78,7 @@ export default function Page() {
   };
 
   return (
-    <article>
+    <article className={styles.article}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <p className="page-kicker">RAKUTEN SECURITIES / DOMESTIC STOCK</p>
@@ -85,8 +87,20 @@ export default function Page() {
 
       <div className="callout"><strong>先に結論</strong><p>注文前は「現在の手数料コース」と注文確認画面の概算額、約定後は「取引履歴（国内株式）」の詳細、正式な記録は取引報告書で確認します。0円コースでも、信用金利など売買手数料以外の費用は別です。</p></div>
 
+      <nav className={styles.nextSteps} aria-label="手数料を確認した次のステップ">
+        <h2>自分の取引では、いくらかかる？</h2>
+        <p>料金の仕組みを読むだけでなく、金額を比べる・試算する・条件を確かめるところまで進めます。</p>
+        <div className={styles.choices}>
+          <NextStepLink destination="compare" placement="summary"><strong>国内株4社の手数料を比べる →</strong><span>同じ売買金額で比較。無料になる条件も確認できます。</span></NextStepLink>
+          <NextStepLink destination="calculate" placement="summary"><strong>自分の金額でコストを試算 →</strong><span>無料計算機で取引金額・手数料・保有日数を入力します。</span></NextStepLink>
+          <NextStepLink destination="conditions" placement="summary"><strong>楽天の条件・公式資料を確認 →</strong><span>株式コストシートで条件を整理し、公式資料へ進めます。</span></NextStepLink>
+        </div>
+        <p className={styles.note}>計算機では「国内株」の入力例を選び、各項目を自分の条件に変更してください。入力例は楽天証券の料金ではなく、結果は概算です。</p>
+      </nav>
+
       <h2>国内株の3つの手数料コース</h2>
-      <div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th>コース</th><th>手数料の決まり方</th><th>主な確認点</th></tr></thead><tbody>
+      <p className={styles.scrollHint}>横長の表は、表の中を左右にスクロールして確認できます。</p>
+      <div className="data-panel"><div className="table-scroll" tabIndex={0} role="region" aria-label="国内株の3つの手数料コース"><table className="rates comparison-table"><thead><tr><th>コース</th><th>手数料の決まり方</th><th>主な確認点</th></tr></thead><tbody>
         <tr><td className="ex-name">ゼロコース</td><td><strong>現物・信用とも0円</strong></td><td>約定代金にかかわらず無料。SOR（Rクロスを含む）の利用同意が必要</td></tr>
         <tr><td className="ex-name">超割コース</td><td>1回の約定代金で決定</td><td>通常は段階制。大口優遇の条件達成時は現物・信用とも0円</td></tr>
         <tr><td className="ex-name">いちにち定額コース</td><td>1日の約定代金合計で決定</td><td>現物と信用を合算し、100万円まで0円</td></tr>
@@ -97,29 +111,34 @@ export default function Page() {
       <p>「手数料無料」という表示は売買手数料を指します。信用取引の買方金利、貸株料、逆日歩、事務管理費などや、電話注文の費用まで一律に0円になる意味ではありません。</p>
 
       <h2>超割コースの現物手数料</h2>
-      <div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th className="num">1回の約定代金</th><th className="num">現物手数料（税込）</th></tr></thead><tbody>{SPOT_FEES.map(([value, fee]) => (
+      <div className="data-panel"><div className="table-scroll" tabIndex={0} role="region" aria-label="超割コースの現物手数料"><table className={`rates comparison-table ${styles.compactTable}`}><thead><tr><th className="num">1回の約定代金</th><th className="num">現物手数料（税込）</th></tr></thead><tbody>{SPOT_FEES.map(([value, fee]) => (
         <tr key={value}><td className="num ex-name">{value}</td><td className="num"><strong>{fee}</strong></td></tr>
       ))}</tbody></table></div><p className="panel-note">超割コースは取引手数料の1％分をポイントバック。大口優遇の条件を満たすと、現物・信用の取引手数料は0円になり、優遇は一度の条件達成から3か月間適用されます。</p></div>
 
       <h2>超割コースの信用取引手数料</h2>
-      <div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th className="num">1回の約定代金</th><th className="num">信用手数料（税込）</th></tr></thead><tbody>{MARGIN_FEES.map(([value, fee]) => (
+      <div className="data-panel"><div className="table-scroll" tabIndex={0} role="region" aria-label="超割コースの信用取引手数料"><table className={`rates comparison-table ${styles.compactTable}`}><thead><tr><th className="num">1回の約定代金</th><th className="num">信用手数料（税込）</th></tr></thead><tbody>{MARGIN_FEES.map(([value, fee]) => (
         <tr key={value}><td className="num ex-name">{value}</td><td className="num"><strong>{fee}</strong></td></tr>
       ))}</tbody></table></div><p className="panel-note">売買手数料とは別に、建玉の種類と保有日数に応じた金利・貸株料などを確認します。</p></div>
 
       <h2>信用取引は金利・貸株料まで含めて計算</h2>
       <p>ゼロコースで売買手数料が0円でも、建玉を保有すると買建には買方金利、売建には貸株料がかかります。制度信用の売建では、株券が不足した日に逆日歩が加わる場合があります。</p>
-      <div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th>信用取引の種類</th><th>通常の保有コスト</th><th>追加の確認点</th></tr></thead><tbody>{MARGIN_HOLDING_COSTS.map(([type, cost, note]) => (
+      <div className="data-panel"><div className="table-scroll" tabIndex={0} role="region" aria-label="信用取引の保有コスト"><table className="rates comparison-table"><thead><tr><th>信用取引の種類</th><th>通常の保有コスト</th><th>追加の確認点</th></tr></thead><tbody>{MARGIN_HOLDING_COSTS.map(([type, cost, note]) => (
         <tr key={type}><td className="ex-name">{type}</td><td><strong>{cost}</strong></td><td>{note}</td></tr>
       ))}</tbody></table></div><p className="panel-note">年率は2026年9月12日に楽天証券公式ページで確認。優遇金利には取引額・建玉残高などの判定条件があります。</p></div>
 
       <h2>100万円を30日保有した場合の概算</h2>
       <div className="formula-box"><code>保有コスト ＝ 建玉金額 × 年率 × 保有日数 ÷ 365</code><small>単純化した概算。実際は受渡日ベースの日数、建玉金額、適用金利、端数処理などで変わります。</small></div>
-      <div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th>例</th><th className="num">計算</th><th className="num">概算額</th></tr></thead><tbody>
+      <div className="data-panel"><div className="table-scroll" tabIndex={0} role="region" aria-label="100万円を30日保有した場合の概算"><table className="rates comparison-table"><thead><tr><th>例</th><th className="num">計算</th><th className="num">概算額</th></tr></thead><tbody>
         <tr><td className="ex-name">制度信用・買建</td><td className="num">100万円 × 2.80％ × 30日 ÷ 365</td><td className="num"><strong>約2,301円</strong></td></tr>
         <tr><td className="ex-name">制度信用・売建</td><td className="num">100万円 × 1.10％ × 30日 ÷ 365</td><td className="num"><strong>約904円</strong></td></tr>
         <tr><td className="ex-name">一般信用「短期」・売建</td><td className="num">100万円 × 3.90％ × 30日 ÷ 365</td><td className="num"><strong>約3,205円</strong></td></tr>
       </tbody></table></div><p className="panel-note">制度信用の売建で逆日歩が発生した場合や、配当落調整金・事務管理費などは上表に含みません。</p></div>
 
+      <aside className={styles.exampleLink} aria-label="保有コストの試算">
+        <p><strong>100万円・30日を、自分の金額と日数に変えると？</strong></p>
+        <p>無料計算機の「国内株」を選び、取引金額・年間の保有コスト率・保有日数を入力してください。入力例の手数料やスプレッドも、ご自身の条件へ変更します。逆日歩など未確定の費用は自動反映されません。</p>
+        <NextStepLink destination="calculate" placement="holding_example">自分の保有期間でコストを試算する →</NextStepLink>
+      </aside>
       <h2>長期保有・権利日またぎで加わる費用</h2>
       <ul>
         <li><strong>事務管理費：</strong>新規建ての約定日から1カ月を経過するごとに、通常は1株あたり11銭（税込）。同一銘柄・同一日・同一売買方向ごとに最低110円、上限1,100円です。</li>
@@ -129,7 +148,7 @@ export default function Page() {
       </ul>
 
       <h2>いちにち定額コースは現物と信用を合算</h2>
-      <div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th className="num">1日の約定代金合計</th><th className="num">手数料（税込）</th></tr></thead><tbody>
+      <div className="data-panel"><div className="table-scroll" tabIndex={0} role="region" aria-label="いちにち定額コースの手数料"><table className={`rates comparison-table ${styles.compactTable}`}><thead><tr><th className="num">1日の約定代金合計</th><th className="num">手数料（税込）</th></tr></thead><tbody>
         <tr><td className="num ex-name">100万円まで</td><td className="num"><strong>0円</strong></td></tr>
         <tr><td className="num ex-name">200万円まで</td><td className="num"><strong>2,200円</strong></td></tr>
         <tr><td className="num ex-name">300万円まで</td><td className="num"><strong>3,300円</strong></td></tr>
@@ -147,7 +166,7 @@ export default function Page() {
 
       <h2>実際にかかった手数料を確認する3つの場所</h2>
       <p>「ゼロコースを選んだか」と「今回の取引で実際にいくらかかったか」は確認場所が異なります。注文前の概算と約定後の確定情報を、次の順番で照合します。</p>
-      <div className="data-panel"><div className="table-scroll"><table className="rates comparison-table"><thead><tr><th>確認する時点</th><th>画面・書面</th><th>確認できる内容</th></tr></thead><tbody>
+      <div className="data-panel"><div className="table-scroll" tabIndex={0} role="region" aria-label="手数料を確認する画面と書面"><table className="rates comparison-table"><thead><tr><th>確認する時点</th><th>画面・書面</th><th>確認できる内容</th></tr></thead><tbody>
         <tr><td className="ex-name">注文前</td><td>注文確認画面</td><td><strong>概算手数料（税込）</strong>、概算受渡代金、概算損益</td></tr>
         <tr><td className="ex-name">約定後</td><td>取引履歴（国内株式）</td><td>取引ごとの手数料、税金、受渡金額。信用返済は取引明細で諸費用の内訳も確認</td></tr>
         <tr><td className="ex-name">正式な記録</td><td>電子交付の取引報告書</td><td>実際の取引明細。国内株はCSV保存にも対応</td></tr>
