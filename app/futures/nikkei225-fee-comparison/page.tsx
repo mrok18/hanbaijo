@@ -6,6 +6,9 @@ export const metadata = {
   description: '225先物の手数料を松井証券と楽天証券で比較。日経225先物・mini・マイクロの1枚あたり片道・往復料金と、1ティックに対する負担を整理します。',
 };
 
+const CHECKED_DATE = '2026-11-20';
+const CHECKED_LABEL = '2026年11月20日';
+
 const FAQS = [
   {
     question: '日経225先物の手数料は、片道と往復でいくらですか？',
@@ -17,7 +20,7 @@ const FAQS = [
   },
   {
     question: '比較した料金はいつ確認した情報ですか？',
-    answer: '松井証券・楽天証券の公式料金を2026年9月14日に確認しています。一日先物、J-NET、電話注文、SQ決済は別条件のため、発注前に公式料金表を確認してください。',
+    answer: `松井証券・楽天証券の公式料金を${CHECKED_LABEL}に確認しています。一日先物やJ-NETの別料金、SQ決済・電話注文の扱いは各社の公式料金表で確認してください。`,
   },
 ];
 
@@ -29,7 +32,7 @@ const structuredData = {
       headline: metadata.title,
       description: metadata.description,
       datePublished: '2026-09-14',
-      dateModified: '2026-09-16',
+      dateModified: CHECKED_DATE,
       mainEntityOfPage: 'https://hanbaijo.com/futures/nikkei225-fee-comparison',
       author: { '@type': 'Organization', name: '金融コストウォッチ' },
       publisher: { '@type': 'Organization', name: '金融コストウォッチ' },
@@ -57,12 +60,12 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, '\\u003c') }} />
       <header className="comparison-intro futures-comparison-intro">
         <div>
-          <p className="page-kicker">NIKKEI 225 FUTURES / PUBLISHED DATA</p>
+          <p className="page-kicker" style={{ margin: '0 0 16px' }}>NIKKEI 225 FUTURES / PUBLISHED DATA</p>
           <h1>日経225先物 手数料比較<br /><em>ラージ・mini・マイクロ2社</em></h1>
           <p className="lede">225先物 手数料を比べるときは、ラージ・mini・マイクロを分け、標準インターネット取引の片道と往復をそろえます。松井証券と楽天証券を同じ条件で比較し、1ティックに対する負担も確認します。</p>
         </div>
         <aside>
-          <span>CHECKED</span><strong>2026-09-14</strong>
+          <span>CHECKED</span><strong>{CHECKED_DATE}</strong>
           <p>税込・1枚あたりの公称値。証拠金額は変動するため、この表に固定値として入れていません。</p>
         </aside>
       </header>
@@ -90,7 +93,7 @@ export default function Page() {
               ))}
             </tbody>
           </table>
-        </div><p className="panel-note">往復は新規と返済で同じ標準手数料がかかると仮定して2倍した試算値。SQ決済、一日先物、J-NET、電話注文などは別条件です。</p></div>
+        </div><p className="panel-note">往復は新規と返済で同じ標準手数料がかかると仮定して2倍した試算値。一日先物やJ-NETの別料金は含みません。SQ決済・電話注文の扱いは各社の公式料金表で確認してください。楽天証券のminiには1円未満切捨ての表記があるため、実際の請求額と単純な掛け算の試算は異なる場合があります。</p></div>
       </section>
 
       <section className="comparison-section">
@@ -113,11 +116,11 @@ export default function Page() {
       </section>
 
       <section className="comparison-section">
-        <p className="section-index">03 / EXCEPTIONS</p><h2>別料金になる取引を分ける</h2>
+        <p className="section-index">03 / EXCEPTIONS</p><h2>標準比較と区別して確認する条件</h2>
         <div className="fx-metric-grid comparison-points">
           <article><b>01</b><h3>一日先物</h3><p>松井証券には通常取引と異なる手数料・取引ルールがあります。</p></article>
           <article><b>02</b><h3>J-NET</h3><p>楽天証券ではラージ・miniのJ-NET取引に別手数料があります。</p></article>
-          <article><b>03</b><h3>SQ決済</h3><p>最終決済時の手数料や扱いは通常の反対売買と分けて確認します。</p></article>
+          <article><b>03</b><h3>SQ決済</h3><p>松井証券の通常先物では、自動最終決済・任意決済・電話取引も同じ手数料です。各社の適用条件を個別に確認します。</p></article>
           <article><b>04</b><h3>証拠金</h3><p>日々変動し、証券会社の掛目もあるため、取引直前の画面で確認します。</p></article>
         </div>
       </section>
@@ -144,16 +147,16 @@ export default function Page() {
       <section className="comparison-sources" aria-labelledby="futures-provider-sources">
         <div><p className="section-index">05 / SOURCES</p><h2 id="futures-provider-sources">公式料金表</h2></div>
         <ul>
-          <li><a href="https://www.matsui.co.jp/fee/" target="_blank" rel="noopener noreferrer"><span>松井証券</span><b>公式情報 ↗</b></a></li>
+          <li><a href="https://www.matsui.co.jp/fop/futures/fee/" target="_blank" rel="noopener noreferrer"><span>松井証券</span><b>公式情報 ↗</b></a></li>
           <li><a href="https://www.rakuten-sec.co.jp/web/fop/futures/commission/" target="_blank" rel="noopener noreferrer"><span>楽天証券</span><b>公式情報 ↗</b></a></li>
           <li><a href="https://www.jpx.co.jp/corporate/learning/resources/tvdivq0000003toh-att/fu_pu.pdf" target="_blank" rel="noopener noreferrer"><span>日本取引所グループ</span><b>取引単位・呼値 ↗</b></a></li>
         </ul>
-        <p>2026年10月10日に公式料金を再確認。対象は同条件に整理できた2社で、比較対象は順次追加します。</p>
+        <p>{CHECKED_LABEL}に公式料金と適用条件を再確認。対象は同条件に整理できた2社で、比較対象は順次追加します。</p>
       </section>
 
       <div className="comparison-actions">
         <Link className="button primary" href="/articles/matsui-futures-normal-vs-day">松井証券の通常・一日先物を比較</Link>
-        <Link className="button primary" href="/tools/cost-calculator">先物プリセットで試算</Link>
+        <Link className="button primary" href="/tools/cost-calculator">計算機で「先物」の入力例を選ぶ</Link>
         <Link className="button secondary" href="/futures">先物コスト比較へ戻る</Link>
       </div>
     </div>

@@ -69,7 +69,7 @@ export default function Page() {
             </tbody>
           </table>
         </div>
-        <p className="panel-note">上表は大阪取引所の取引所スケジュールです。証券会社のシステム上の注文受付時間やメンテナンス時間は、これより短い場合があります。</p>
+        <p className="panel-note">上表は大阪取引所の取引所スケジュールです。寄付き前と夜間の引け前の注文受付には、後述するノンキャンセル・ピリオド（新規注文は可能、訂正・取消しは不可）を含みます。証券会社のシステム上の注文受付時間やメンテナンス時間は、これより短い場合があります。</p>
       </div>
 
       <h2>取引時間と注文受付時間は同じではない</h2>
@@ -123,10 +123,10 @@ export default function Page() {
         <ul>
           <li><a href="https://www.jpx.co.jp/derivatives/products/domestic/225futures/01.html" target="_blank" rel="noopener noreferrer">JPX「日経225先物 制度概要」</a></li>
           <li><a href="https://www.jpx.co.jp/derivatives/rules/trading-hours/" target="_blank" rel="noopener noreferrer">JPX「立会時間」</a></li>
-          <li><a href="https://www.jpx.co.jp/derivatives/rules/holidaytrading.html" target="_blank" rel="noopener noreferrer">JPX「祝日取引」</a></li>
+          <li><a href="https://www.jpx.co.jp/derivatives/rules/holidaytrading/index.html" target="_blank" rel="noopener noreferrer">JPX「祝日取引」</a></li>
           <li><a href="https://www.rakuten-sec.co.jp/web/fop/futures/rule/session/" target="_blank" rel="noopener noreferrer">楽天証券「株価指数先物 取引時間／注文受付時間」</a></li>
         </ul>
-        <p>取引時間・注文受付区分は2026年9月13日に確認しました。実際の注文受付とメンテナンス時間は利用する証券会社の最新案内を優先してください。</p>
+        <p>取引時間・注文受付区分・祝日取引の扱いは2026年11月20日に公式資料で再確認しました。実際の注文受付とメンテナンス時間は利用する証券会社の最新案内を優先してください。</p>
       </section>
 
       <p><Link href="/articles/nikkei225-futures-sq-settlement">SQと取引最終日を確認する →</Link></p>
