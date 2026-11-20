@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import FuturesNavigationLink from '@/components/FuturesNavigationLink';
 
 export const metadata: Metadata = {
   title: '日経225 取引時間｜先物の日中・ナイト・注文受付を整理',
@@ -130,7 +131,7 @@ export default function Page() {
       </section>
 
       <p><Link href="/articles/nikkei225-futures-sq-settlement">SQと取引最終日を確認する →</Link></p>
-      <p><Link href="/futures/nikkei225-fee-comparison">日経225先物の手数料を比較する →</Link></p>
+      <p><FuturesNavigationLink target="night_fee">日経225先物の手数料を比較する →</FuturesNavigationLink></p>
       <p><Link href="/futures">先物比較へ戻る →</Link></p>
     </article>
   );

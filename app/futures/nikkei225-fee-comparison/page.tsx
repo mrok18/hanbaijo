@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import FuturesNavigationLink from '@/components/FuturesNavigationLink';
 
 export const metadata = {
   alternates: { canonical: '/futures/nikkei225-fee-comparison' },
@@ -130,7 +131,7 @@ export default function Page() {
         <div className="fx-metric-grid comparison-points">
           <article><b>01</b><h3>日経225先物の証拠金</h3><p>必要額は固定ではなく、VaR方式と証券会社の設定で変わります。</p><Link href="/articles/futures-margin">必要証拠金の仕組みを見る →</Link></article>
           <article><b>02</b><h3>日経225先物の取引時間</h3><p>日中立会と翌朝までのナイトセッションを取引日の区切りとともに確認します。</p><Link href="/articles/nikkei225-futures-night-session">取引時間を見る →</Link></article>
-          <article><b>03</b><h3>手数料込み損益</h3><p>商品、枚数、値幅を入力し、往復手数料を引いた損益を計算します。</p><Link href="/tools/matsui-futures-cost-calculator">計算機を使う →</Link></article>
+          <article><b>03</b><h3>手数料込み損益</h3><p>商品、枚数、値幅を入力し、往復手数料を引いた損益を計算します。</p><FuturesNavigationLink target="fee_matsui_calculator">計算機を使う →</FuturesNavigationLink></article>
           <article><b>04</b><h3>1ティックの損益</h3><p>取引単位と呼値から、ラージ・mini・マイクロの最小値動きを確認します。</p><Link href="/articles/futures-tick-value">計算方法を見る →</Link></article>
         </div>
       </section>
@@ -156,7 +157,7 @@ export default function Page() {
 
       <div className="comparison-actions">
         <Link className="button primary" href="/articles/matsui-futures-normal-vs-day">松井証券の通常・一日先物を比較</Link>
-        <Link className="button primary" href="/tools/cost-calculator">計算機で「先物」の入力例を選ぶ</Link>
+        <FuturesNavigationLink className="button primary" target="fee_generic_calculator">計算機で「先物」の入力例を選ぶ</FuturesNavigationLink>
         <Link className="button secondary" href="/futures">先物コスト比較へ戻る</Link>
       </div>
     </div>
