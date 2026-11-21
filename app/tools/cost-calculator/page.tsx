@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import CostCalculator from './CostCalculator';
+import CalculatorNavigationLink from '@/components/CalculatorNavigationLink';
 
 export const metadata: Metadata = {
   title: '取引コスト計算機｜スプレッド・手数料・金利を円換算',
@@ -55,9 +56,9 @@ export default function CostCalculatorPage() {
       <CostCalculator />
 
       <div className="comparison-actions" aria-label="用途別の計算と比較">
-        <Link className="button primary" href="/tools/fx-spread-annual-cost-calculator">FXの年間コスト差を計算</Link>
-        <Link className="button secondary" href="/tools/fx-swap-break-even-calculator">スワップの回収日数を計算</Link>
-        <Link className="button secondary" href="/stocks/domestic-fee-comparison">国内株4社の手数料を比較</Link>
+        <CalculatorNavigationLink className="button primary" target="annual">FXの年間コスト差を計算</CalculatorNavigationLink>
+        <CalculatorNavigationLink className="button secondary" target="swap">スワップの回収日数を計算</CalculatorNavigationLink>
+        <CalculatorNavigationLink className="button secondary" target="stocks">国内株4社の手数料を比較</CalculatorNavigationLink>
       </div>
 
       <nav className="calculator-proof" aria-label="取引コストの確認資料">
