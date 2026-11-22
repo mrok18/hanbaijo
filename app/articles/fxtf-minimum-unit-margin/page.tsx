@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import AffiliateOfferCard from '@/components/AffiliateOfferCard';
 import { AFFILIATE_OFFERS } from '@/lib/affiliates';
+import CostNextStep from './CostNextStep';
 
 export const metadata = {
   alternates: { canonical: '/articles/fxtf-minimum-unit-margin' },
@@ -60,6 +61,8 @@ export default function Page() {
         <article><b>PRICE MOVE</b><h3>評価損への余力</h3><p>1,000通貨でも1円逆行すれば1,000円の評価損です。想定逆行幅から資金を決めます。</p></article>
       </div>
 
+      <CostNextStep />
+
       <h2>1,000通貨から始める確認手順</h2>
       <ol>
         <li>GXかMT4かを決め、1Lotの定義を確認する</li>
@@ -79,7 +82,6 @@ export default function Page() {
         <p>取引単位・証拠金率は2026年9月7日に確認しました。実際の必要額と手数料は取引画面・公式料金表を確認してください。</p>
       </section>
 
-      <p><Link href="/fx/fxtf">FXTFのコストシートを見る →</Link></p>
       <p><Link href="/articles/fxtf-gx-mt4-mt5-difference">FXTF GX・MT4・MT5の違いを見る →</Link></p>
       <p><Link href="/articles/fxtf-losscut-50-100">証拠金維持率50％・100％の違いを見る →</Link></p>
       <p><Link href="/articles/fxtf-position-fee-calculation">取引数量から建玉連動手数料を確認する →</Link></p>
