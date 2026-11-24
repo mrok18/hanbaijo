@@ -115,6 +115,7 @@ gtag('config', '${GA_ID}');`}
               <Link href="/privacy">プライバシーポリシー</Link>
               <Link href="/disclaimer">免責事項</Link>
               <Link href="/contact">お問い合わせ</Link>
+              <a href="https://hp-toban.com/">関連サービス：HP当番</a>
             </div>
             <div className="footer-notes">
               <p>
