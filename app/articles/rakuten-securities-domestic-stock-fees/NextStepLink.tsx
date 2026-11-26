@@ -18,6 +18,9 @@ export default function NextStepLink({ destination, placement, children }: {
   function recordClick() {
     // Use the existing GA/consent setup; navigation also works without analytics.
     try {
+      const hostname = window.location.hostname;
+      if (hostname !== 'hanbaijo.com' && hostname !== 'www.hanbaijo.com') return;
+      if (window['ga-disable-G-J7HHCQK42T'] === true) return;
       window.gtag?.('event', 'navigation_click', {
         page_path: '/articles/rakuten-securities-domestic-stock-fees',
         link_url: href,
