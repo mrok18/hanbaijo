@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import HomeHeroNavigationLink from './HomeHeroNavigationLink';
 import { measureAll } from '@/lib/exchanges.mjs';
 import { recent } from '@/lib/history';
 import { jpy, pct, jst } from '@/lib/format';
@@ -76,8 +77,8 @@ export default async function Home() {
             計算ツールに数量・回数・保有日数などを入力すると、1回の取引や月間・年間の負担額を試算できます。
           </p>
           <div className="hero-actions">
-            <Link className="button primary" href="/markets">商品・会社を比較する</Link>
-            <Link className="button secondary" href="/tools">自分の条件で試算する</Link>
+            <HomeHeroNavigationLink className="button primary" target="markets">商品・会社を比較する</HomeHeroNavigationLink>
+            <HomeHeroNavigationLink className="button secondary" target="tools">自分の条件で試算する</HomeHeroNavigationLink>
           </div>
           <p className="hero-proof">
             <span>公式値・実測値・試算値を区別</span><span>広告と順位を分離</span><span>無料の計算ツール</span>
